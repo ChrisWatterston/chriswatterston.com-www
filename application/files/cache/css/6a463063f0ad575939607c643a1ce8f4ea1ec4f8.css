@@ -1,0 +1,6 @@
+.googleMapCanvas{width:100%;border:0px none;height:400px}.googleMapCanvas img{max-width:none !important}
+
+div.alert-success{border:1px solid #05A000 !important;background-color:#B5ECB4 !important;padding:8px;margin-bottom:8px}div.alert-error,div.alert-danger{border:1px solid #f00 !important;background-color:#E4B5B5 !important;padding:8px;margin-bottom:8px}
+
+div.ccm-block-type-form div.form-group{margin-bottom:10px}div.ccm-block-type-form span.text-muted{opacity:.50}div.ccm-block-type-form div.form-group label.control-label{font-weight:bold;display:block}
+

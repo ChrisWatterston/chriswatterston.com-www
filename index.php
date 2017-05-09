@@ -30,16 +30,19 @@ fbq('track', 'ViewContent');
 fbq('track', 'Lead');
 </script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1673334912907615&ev=PageView&noscript=1"/></noscript>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12746728-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 <style>*,body,div,p{font-family:"justus-pro",serif;}</style>
 </head>
 <body>
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NPMWMJ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NPMWMJ');</script>
 	<div id="cw-wrap" style="width:100%;background:transparent;margin-top:10%;">
 		<div style="color:#229B8C;font-weight:400;width:675px;margin:0 auto;text-align:center;">
 			<p style="font-size:1.2em;">You're thinking this design is a pretty blank and boring set-up - i get that!<br />But we're building something brand new from the ground up so things tend to start out this way.</p>

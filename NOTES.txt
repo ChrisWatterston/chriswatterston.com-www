@@ -1,0 +1,20 @@
+ACCESS TOKEN----------
+EAACEdEose0cBAM5Kk0UcP0FiZCY4lOjJqp2nZAJXq5vGZBIoPCoBCEEUZB3ZC2LxL4FkneFfw1ZCMWZATSdOF4SmMzgxjm7DKGTS5ZCSi7Rip86ZCL2368xLSuAs5nuNEGTDOjXw5hefztNNOZBtibSEMfg1b6fYbUAeHXPJgCtyk9PFSoZBZBqVK43x30KE8CZAsxAAZD
+
+EXPLORER ----------
+https://graph.facebook.com/v2.9/chriswatterston.co/?fields=posts.limit(4)%7Bfull_picture%2Cmessage%2Ctype%2Clink%7D%2Clink&access_token=EAACEdEose0cBANuTIKdliSKhcbUtswmU1touJWiMQpLSZBWGPFGdeqFD1T6zB7Xbn84DusfluuCofTdvLnhyu8x9uzOo1c9pcSSs23aAP0ZCYH3wesWqg9rJrYxJ6ZCtYNYTv3VM1kJj8AFmFG2jIRaTu4X4oagcWHCesIkqeX9hkY90rzO
+
+
+CODE ----------
+$request = new FacebookRequest(
+  $session,
+  'GET',
+  '/chriswatterston.co/',
+  array(
+    'fields' => 'posts.limit(4){full_picture,message,type,link},link'
+  )
+);
+
+$response = $request->execute();
+$graphObject = $response->getGraphObject();
+/* handle the result */

@@ -1,0 +1,49 @@
+// core.scss
+
+/* Chris Watterston - Stylesheet */
+
+// Colours
+$col-green: #009788;		// rgba(0,151,136,1)
+$col-lime: #06d6a0;			// rgba(6,214,160,1)
+$col-blue: #a0cfd3;			// rgba(160,2017,211,1)
+$col-yellow: #f6bd60;		// rgba(246,189,96,1)
+$col-grey: #454851;			// rgba(69,72,81,1)
+
+$col-white: #FFFFFF;
+$col-black: #000000;
+
+// Columns
+$col-max: 1200px;
+$col-one: 100%;
+
+// Typeface
+$type-pri: "ff-dagny-web-pro",sans-serif;
+$type-sec: "museo-sans",sans-serif;
+
+// Typography
+$type-sml: 0.95em;
+$type-def: 1em;
+$type-med: 1.1em;
+$type-lrg: 1.3em;
+
+// Animation
+$abtn-speed: 0.2s;
+$abtn-trans: 0.9;
+
+// Import
+@import '_reset.scss';
+
+/* Framework */
+#cw-wrap {
+	
+	
+	
+}
+
+
+
+
+// Import
+@import '_typography.scss';
+@import '_responsive.scss';
+@import '_print.scss';

@@ -1,0 +1,9 @@
+// _print.scss
+
+/* Print */
+@media print {
+	body, .wsc-wrap, section {color:#000 !important;}
+	a, a:link, a:visited {color:$col-green !important;text-decoration:none !important;}
+	section.banner, section.intro .bimg {display:none !important;}
+	section.intro, section.details, .cntr, footer.main {background:none !important;}
+}

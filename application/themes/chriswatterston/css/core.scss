@@ -17,14 +17,16 @@ $col-max: 1200px;
 $col-one: 100%;
 
 // Typeface
-$type-pri: "ff-dagny-web-pro",sans-serif;
-$type-sec: "museo-sans",sans-serif;
+$type-pri: "tablet-gothic-condensed-1","tablet-gothic-condensed-2",sans-serif;
+$type-sec: "open-sans-1","open-sans-2",sans-serif;
 
 // Typography
+$type-xsml: 0.6em;
 $type-sml: 0.95em;
 $type-def: 1em;
 $type-med: 1.1em;
-$type-lrg: 1.3em;
+$type-lrg: 1.6em;
+$type-xlrg: 2.5em;
 
 // Animation
 $abtn-speed: 0.2s;
@@ -35,7 +37,50 @@ $abtn-trans: 0.9;
 
 /* Framework */
 #cw-wrap {
+	header, section, footer {
+		width:$col-one;
+		border:1px solid red;
+	}
+	.contain {
+		position:relative;
+		width:$col-max;
+		margin:0 auto;
+		border:1px solid aqua;
+	}
+	.cols {
+		display:inline-block;
+		width:$col-one;
+		margin-bottom:-5px;
+	}
 	
+	header.main {
+		background-color:#9f988e;
+		padding:30px 60px;
+		section.navigation-wrap {
+			.cols {
+				.col {
+					float:left;
+					width:$col-one / 2;
+					border:1px solid green;
+				}
+			}
+		}
+		section.introduction-wrap {
+			.intro {
+				width:$col-one;
+				border:1px solid purple;
+			}
+		}
+		section.latestupdates-wrap {
+			.contain {
+				.cols {
+					.col.latest {
+						border:1px solid gray;
+					}
+				}				
+			}
+		}
+	}
 	
 	
 }

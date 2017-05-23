@@ -1,14 +1,29 @@
+<?php
+	defined('C5_EXECUTE') or die("Access Denied.");
+/*
+	$gno = \Page::getByPath('/');
+	$globalNotice = $gno->getAttribute('enable_global_notice');
+*/
+?>
 <!DOCTYPE html>
 <html class="no-js" lang="en-GB">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<title>Framework Core</title>
-<link rel="stylesheet" type="text/css" href="css/core.css" />
-<link rel="shortcut icon" href="/img/icns/icon-32x32.png" />
-<link rel="apple-touch-icon-precomposed" href="/img/icns/icon-114x114.png" sizes="114x114" />
-<link rel="apple-touch-icon-precomposed" href="/img/icns/icon-72x72.png" sizes="72x72" />
-<link rel="apple-touch-icon-precomposed" href="/img/icns/icon-57x57.png" />
+
+<?php
+	View::element('header_required', [
+	    'pageTitle' => isset($pageTitle) ? $pageTitle : '',
+	    'pageDescription' => isset($pageDescription) ? $pageDescription : '',
+	    'pageMetaKeywords' => isset($pageMetaKeywords) ? $pageMetaKeywords : ''
+	]);
+?>
+
+<link rel="stylesheet" type="text/css" href="<?php echo $view->getThemePath()?>/css/core.css" />
+<link rel="shortcut icon" href="<?php echo $view->getThemePath()?>/img/icns/icon-32x32.png" />
+<link rel="apple-touch-icon-precomposed" href="<?php echo $view->getThemePath()?>/img/icns/icon-114x114.png" sizes="114x114" />
+<link rel="apple-touch-icon-precomposed" href="<?php echo $view->getThemePath()?>/img/icns/icon-72x72.png" sizes="72x72" />
+<link rel="apple-touch-icon-precomposed" href="<?php echo $view->getThemePath()?>/img/icns/icon-57x57.png" />
 
 <meta property="og:site_name" content="Lamington London" />
 <meta property="og:title" content="Printed shirts. Silky tees. Luxe tops."/>
@@ -17,9 +32,6 @@
 <meta property="og:url" content="http://www.lamingtonlondon.com/">
 <meta property="og:type" content="product"/>
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
 <script src="https://use.typekit.net/aut5day.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
@@ -27,4 +39,4 @@
 </head>
 <body>
 <!--[if lte IE 8]><p class="ie-upgrade">Your internet browser is outdated, for which an <a href="http://updatemybrowser.org/" title="Browsercheck - Update my browser" target="_blank">update is highly recommended</a>&#33;<br />Not doing so will cause visible issues while viewing our website, and leave you vulnerable to security threats throughout the internet.</p></p><![endif]-->
-<div id="cw-wrap">
+<div id="cw-wrap" class="<?php echo $c->getPageWrapperClass()?>">

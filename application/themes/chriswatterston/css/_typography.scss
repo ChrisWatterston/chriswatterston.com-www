@@ -3,11 +3,14 @@
 
 #cw-wrap {
 	/* Headings */
-	h1, h1 *, * h1 {font-size:$type-lrg;}
+	h1, h1 *, * h1 {
+		font-size:$type-xlrg;
+	}
+	
 	h2, h2 *, * h2 {
-		@extend h1;
 		font-size:$type-lrg;
 	}
+	
 	h3, h3 *, * h3 {
 		@extend h1;
 		font-size:$type-med;
@@ -50,14 +53,34 @@
 		height:auto;
 	}
 
-	/* Text Colours */
-	*.colour-pri-one, .colour-pri-one * {color:$col-green;}
-	*.colour-pri-two, .colour-pri-two * {color:$col-green;}
-	*.colour-pri-three, .colour-pri-three * {color:$col-green;}
-
+	/* Text Colours and Styles */
+	*.colour-green, .colour-green * {color:$col-green;}
+	*.colour-lime, .colour-lime * {color:$col-lime;}
+	*.colour-blue, .colour-blue * {color:$col-blue;}
+	*.colour-yellow, .colour-yellow * {color:$col-yellow;}
+	*.colour-grey, .colour-grey * {color:$col-grey;}
 	*.colour-white, .colour-white * {color:$col-white;}
 	*.colour-black, .colour-black * {color:$col-black;}
 	
+	*.type-light .type-light * {font-weight:300;}
+	*.type-regular, .type-regular {font-weight:400;}
+	*.type-semibold, .type-semibold * {font-weight:600;}
+	*.type-bold .type-bold * {font-weight:700;}
+	
+	*.type-center, .type-center * {text-align:center;}
+
+	*.type-lowercase, .type-lowercase * {text-transform:lowercase;}
+	*.type-uppercase, .type-uppercase * {text-transform:uppercase;}
+	
+	*.type-ampersand {
+		background:url('../img/cons/icon-ampersand.svg') center center no-repeat;
+		background-size:contain;
+		font-size:0;
+		padding:25px 10px;
+		
+// 		background-color:$col-blue;
+	}
+
 	// Forms
 	.input {
 		margin-bottom:10px;
@@ -390,7 +413,16 @@
 	}
 
 	// Area Specific
-	
+	header.main {
+		section.introduction-wrap {
+			.intro {
+				h1 {
+					position:relative;
+					padding-top:10px;
+				}
+			}
+		}
+	}	
 	
 }
 // Designed by tag

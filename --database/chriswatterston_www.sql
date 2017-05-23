@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 22, 2017 at 04:26 PM
+-- Generation Time: May 23, 2017 at 04:51 PM
 -- Server version: 5.7.13
 -- PHP Version: 5.6.23
 
@@ -213,7 +213,13 @@ INSERT INTO `Areas` (`arID`, `cID`, `arHandle`, `arOverrideCollectionPermissions
 (21, 157, 'Main', 0, 0, 0, 0),
 (22, 1, 'Footer Navigation', 0, 0, 1, 0),
 (23, 158, 'Main', 0, 0, 0, 0),
-(24, 1, 'Footer Contact', 0, 0, 1, 0);
+(24, 1, 'Footer Contact', 0, 0, 1, 0),
+(25, 159, 'Main', 0, 0, 0, 0),
+(26, 160, 'Main', 0, 0, 0, 0),
+(27, 161, 'Main', 0, 0, 0, 0),
+(28, 162, 'Main', 0, 0, 0, 0),
+(29, 163, 'Main', 0, 0, 0, 0),
+(30, 164, 'Main', 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -1227,7 +1233,30 @@ INSERT INTO `Blocks` (`bID`, `bName`, `bDateAdded`, `bDateModified`, `bFilename`
 (13, '', '2017-05-22 16:00:00', '2017-05-22 16:00:00', NULL, '0', 36, 1, NULL),
 (14, '', '2017-05-22 16:00:00', '2017-05-22 16:00:00', NULL, '0', 12, 1, NULL),
 (15, '', '2017-05-22 16:00:00', '2017-05-22 16:00:00', NULL, '0', 12, 1, NULL),
-(16, '', '2017-05-22 16:00:01', '2017-05-22 16:00:01', NULL, '0', 2, 1, NULL);
+(16, '', '2017-05-22 16:00:01', '2017-05-22 16:00:01', NULL, '0', 2, 1, NULL),
+(17, '', '2017-05-23 15:22:01', '2017-05-23 15:22:01', NULL, '0', 14, 1, NULL),
+(18, '', '2017-05-23 15:22:20', '2017-05-23 15:22:20', NULL, '0', 14, 1, NULL),
+(19, '', '2017-05-23 15:25:30', '2017-05-23 15:25:30', NULL, '0', 13, 1, NULL),
+(20, '', '2017-05-23 15:25:57', '2017-05-23 15:25:57', NULL, '0', 13, 1, NULL),
+(21, '', '2017-05-23 15:26:32', '2017-05-23 15:26:32', 'chris-watterston-header-navigation', '1', 13, 1, NULL),
+(22, '', '2017-05-23 15:28:38', '2017-05-23 15:28:38', NULL, '0', 14, 1, NULL),
+(23, '', '2017-05-23 15:29:24', '2017-05-23 15:29:24', NULL, '0', 14, 1, NULL),
+(25, '', '2017-05-23 15:30:42', '2017-05-23 15:30:42', NULL, '0', 14, 1, NULL),
+(27, '', '2017-05-23 15:30:55', '2017-05-23 15:30:55', NULL, '0', 14, 1, NULL),
+(29, '', '2017-05-23 15:31:04', '2017-05-23 15:31:04', NULL, '0', 14, 1, NULL),
+(31, '', '2017-05-23 15:31:17', '2017-05-23 15:31:17', NULL, '0', 14, 1, NULL),
+(33, '', '2017-05-23 15:31:28', '2017-05-23 15:31:28', NULL, '0', 14, 1, NULL),
+(35, '', '2017-05-23 15:32:36', '2017-05-23 15:32:36', NULL, '0', 14, 1, NULL),
+(36, '', '2017-05-23 15:58:52', '2017-05-23 15:58:52', NULL, '1', 14, 1, NULL),
+(37, '', '2017-05-23 15:59:25', '2017-05-23 15:59:25', NULL, '1', 14, 1, NULL),
+(38, '', '2017-05-23 16:00:06', '2017-05-23 16:00:06', NULL, '1', 14, 1, NULL),
+(39, '', '2017-05-23 16:10:16', '2017-05-23 16:10:16', NULL, '1', 14, 1, NULL),
+(40, '', '2017-05-23 16:15:31', '2017-05-23 16:15:31', NULL, '1', 14, 1, NULL),
+(41, '', '2017-05-23 16:16:31', '2017-05-23 16:16:31', NULL, '1', 14, 1, NULL),
+(42, '', '2017-05-23 16:17:07', '2017-05-23 16:17:07', NULL, '1', 14, 1, NULL),
+(43, '', '2017-05-23 16:39:10', '2017-05-23 16:39:10', NULL, '1', 14, 1, NULL),
+(44, '', '2017-05-23 16:40:52', '2017-05-23 16:40:52', NULL, '1', 14, 1, NULL),
+(45, '', '2017-05-23 16:41:36', '2017-05-23 16:41:36', NULL, '1', 14, 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -1450,6 +1479,32 @@ CREATE TABLE `btContentLocal` (
   `bID` int(10) UNSIGNED NOT NULL,
   `content` longtext COLLATE utf8_unicode_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `btContentLocal`
+--
+
+INSERT INTO `btContentLocal` (`bID`, `content`) VALUES
+(17, '<ul>\r\n	<li><a href="#">become a client</a></li>\r\n	<li><a href="#">let&rsquo;s talk?</a></li>\r\n</ul>\r\n'),
+(18, '<p>Copyright &copy; 2017 Chris Watterston. All rights reserved.</p>\r\n'),
+(22, '<p>Yeh, I&rsquo;m a trusted and flexible geek who&rsquo;s passionate about my family and the design &amp; building of your</p>\r\n'),
+(23, '<h1>websites | mobile apps</h1>\r\n'),
+(25, ''),
+(27, ''),
+(29, ''),
+(31, ''),
+(33, ''),
+(35, ''),
+(36, '<h3>Yeh, I&rsquo;m a trusted and flexible geek who&rsquo;s passionate about my family and the design &amp; building of your</h3>\r\n'),
+(37, '<h2>Yeh, I&rsquo;m a trusted and flexible geek who&rsquo;s passionate about my family and the design &amp; building of your</h2>\r\n'),
+(38, '<h2 class="colour-white type-light">Yeh, I&rsquo;m a trusted and flexible geek who&rsquo;s passionate about my family and the design &amp; building of your</h2>\r\n'),
+(39, '<h1 class="colour-white type-semibold type-uppercase">Websites | Mobile Apps</h1>\r\n'),
+(40, '<h1 class="colour-white type-semibold type-uppercase">Websites <span class="type-ampersand">&amp;</span> Mobile Apps</h1>\r\n'),
+(41, '<h1 class="colour-white type-semibold type-uppercase">Websites <span class="type-ampersand colour-lime">&amp;</span> Mobile Apps</h1>\r\n'),
+(42, '<h1 class="colour-white type-semibold type-uppercase">Websites <span class="type-ampersand">&amp;</span> Mobile Apps</h1>\r\n'),
+(43, '<h1 class="colour-white type-semibold type-uppercase">Websites <b class="type-ampersand">&amp;</b> Mobile Apps</h1>\r\n'),
+(44, '<h1 class="colour-white type-semibold type-uppercase">Websites</h1>\r\n\r\n<div class="type-ampersand">&amp;</div>\r\n\r\n<p>Mobile Apps</p>\r\n'),
+(45, '<h1 class="colour-white type-semibold type-uppercase">Websites <em class="type-ampersand">&amp;</em> Mobile Apps</h1>\r\n');
 
 -- --------------------------------------------------------
 
@@ -1834,6 +1889,15 @@ CREATE TABLE `btNavigation` (
   `displaySubPageLevelsNum` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
   `displayUnavailablePages` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `btNavigation`
+--
+
+INSERT INTO `btNavigation` (`bID`, `orderBy`, `displayPages`, `displayPagesCID`, `displayPagesIncludeSelf`, `displaySubPages`, `displaySubPageLevels`, `displaySubPageLevelsNum`, `displayUnavailablePages`) VALUES
+(19, 'display_asc', 'top', 0, 0, 'none', 'enough', 0, 0),
+(20, 'display_asc', 'top', 0, 0, 'none', 'enough', 0, 0),
+(21, 'display_asc', 'top', 0, 0, 'none', 'enough', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -2323,7 +2387,7 @@ CREATE TABLE `Collections` (
 --
 
 INSERT INTO `Collections` (`cID`, `cDateAdded`, `cDateModified`, `cHandle`) VALUES
-(1, '2017-05-22 15:59:25', '2017-05-22 16:00:01', NULL),
+(1, '2017-05-22 15:59:25', '2017-05-23 14:51:24', NULL),
 (2, '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'dashboard'),
 (3, '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'sitemap'),
 (4, '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'full'),
@@ -2476,11 +2540,17 @@ INSERT INTO `Collections` (`cID`, `cDateAdded`, `cDateModified`, `cHandle`) VALU
 (151, '2017-05-22 16:00:00', '2017-05-22 16:00:00', 'page_not_found'),
 (152, '2017-05-22 16:00:00', '2017-05-22 16:00:00', 'desktop'),
 (153, '2017-05-22 16:00:01', '2017-05-22 16:00:01', NULL),
-(154, '2017-05-22 16:01:20', '2017-05-22 16:01:20', 'header-site-title'),
-(155, '2017-05-22 16:01:21', '2017-05-22 16:01:21', 'header-navigation'),
-(156, '2017-05-22 16:01:21', '2017-05-22 16:01:21', 'footer-legal'),
-(157, '2017-05-22 16:01:21', '2017-05-22 16:01:21', 'footer-navigation'),
-(158, '2017-05-22 16:01:21', '2017-05-22 16:01:21', 'footer-contact');
+(154, '2017-05-22 16:01:20', '2017-05-23 16:41:37', 'header-site-title'),
+(155, '2017-05-22 16:01:21', '2017-05-23 15:27:18', 'header-navigation'),
+(156, '2017-05-22 16:01:21', '2017-05-23 15:22:22', 'footer-legal'),
+(157, '2017-05-22 16:01:21', '2017-05-23 15:25:44', 'footer-navigation'),
+(158, '2017-05-22 16:01:21', '2017-05-23 15:22:02', 'footer-contact'),
+(159, '2017-05-23 15:30:41', '2017-05-23 15:30:42', ''),
+(160, '2017-05-23 15:30:55', '2017-05-23 15:30:55', ''),
+(161, '2017-05-23 15:31:03', '2017-05-23 15:31:04', ''),
+(162, '2017-05-23 15:31:17', '2017-05-23 15:31:17', ''),
+(163, '2017-05-23 15:31:28', '2017-05-23 15:31:28', ''),
+(164, '2017-05-23 15:32:36', '2017-05-23 15:32:56', '');
 
 -- --------------------------------------------------------
 
@@ -2677,7 +2747,43 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (138, 1, 13, 'Main', 13, 4, 1, 0, 0, 0, 0, 0),
 (139, 1, 14, 'Main', 14, 0, 1, 0, 0, 0, 0, 0),
 (152, 1, 15, 'Main', 15, 0, 1, 0, 0, 0, 0, 0),
-(153, 1, 16, 'Main', 16, 0, 1, 0, 0, 0, 0, 0);
+(153, 1, 16, 'Main', 16, 0, 1, 0, 0, 0, 0, 0),
+(154, 2, 22, 'Main', 21, 0, 1, 0, 0, 0, 0, 0),
+(154, 3, 22, 'Main', 21, 0, 0, 0, 0, 0, 0, 0),
+(154, 3, 23, 'Main', 22, 1, 1, 0, 0, 0, 0, 0),
+(154, 4, 23, 'Main', 22, 1, 0, 0, 0, 0, 0, 0),
+(154, 4, 36, 'Main', 21, 0, 1, 0, 0, 0, 0, 0),
+(154, 5, 23, 'Main', 22, 1, 0, 0, 0, 0, 0, 0),
+(154, 5, 37, 'Main', 21, 0, 1, 0, 0, 0, 0, 0),
+(154, 6, 23, 'Main', 22, 1, 0, 0, 0, 0, 0, 0),
+(154, 6, 38, 'Main', 21, 0, 1, 0, 0, 0, 0, 0),
+(154, 7, 38, 'Main', 21, 0, 0, 0, 0, 0, 0, 0),
+(154, 7, 39, 'Main', 22, 1, 1, 0, 0, 0, 0, 0),
+(154, 8, 38, 'Main', 21, 0, 0, 0, 0, 0, 0, 0),
+(154, 8, 40, 'Main', 22, 1, 1, 0, 0, 0, 0, 0),
+(154, 9, 38, 'Main', 21, 0, 0, 0, 0, 0, 0, 0),
+(154, 9, 41, 'Main', 22, 1, 1, 0, 0, 0, 0, 0),
+(154, 10, 38, 'Main', 21, 0, 0, 0, 0, 0, 0, 0),
+(154, 10, 42, 'Main', 22, 1, 1, 0, 0, 0, 0, 0),
+(154, 11, 38, 'Main', 21, 0, 0, 0, 0, 0, 0, 0),
+(154, 11, 43, 'Main', 22, 1, 1, 0, 0, 0, 0, 0),
+(154, 12, 38, 'Main', 21, 0, 0, 0, 0, 0, 0, 0),
+(154, 12, 44, 'Main', 22, 1, 1, 0, 0, 0, 0, 0),
+(154, 13, 38, 'Main', 21, 0, 0, 0, 0, 0, 0, 0),
+(154, 13, 45, 'Main', 22, 1, 1, 0, 0, 0, 0, 0),
+(155, 2, 20, 'Main', 20, 0, 1, 0, 0, 0, 0, 0),
+(155, 3, 21, 'Main', 20, 0, 1, 0, 0, 0, 0, 0),
+(156, 2, 18, 'Main', 18, 0, 1, 0, 0, 0, 0, 0),
+(157, 2, 19, 'Main', 19, 0, 1, 0, 0, 0, 0, 0),
+(158, 2, 17, 'Main', 17, 0, 1, 0, 0, 0, 0, 0),
+(159, 1, 25, 'Main', 23, 0, 1, 0, 0, 0, 0, 0),
+(160, 1, 27, 'Main', 24, 0, 1, 0, 0, 0, 0, 0),
+(161, 1, 29, 'Main', 25, 0, 1, 0, 0, 0, 0, 0),
+(162, 1, 31, 'Main', 26, 0, 1, 0, 0, 0, 0, 0),
+(163, 1, 33, 'Main', 27, 0, 1, 0, 0, 0, 0, 0),
+(164, 1, 35, 'Main', 28, 0, 1, 0, 0, 0, 0, 0),
+(164, 2, 35, 'Main', 28, 0, 0, 0, 0, 0, 0, 0),
+(164, 3, 35, 'Main', 28, 0, 0, 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -2787,7 +2893,9 @@ CREATE TABLE `CollectionVersions` (
 --
 
 INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescription`, `cvDatePublic`, `cvDateCreated`, `cvComments`, `cvIsApproved`, `cvIsNew`, `cvAuthorUID`, `cvApproverUID`, `pThemeID`, `pTemplateID`, `cvActivateDatetime`, `cvPublishDate`) VALUES
-(1, 1, 'Home', '', '', '2017-05-22 15:59:25', '2017-05-22 15:59:25', 'Initial Version', 1, 0, 1, NULL, 1, 4, NULL, NULL),
+(1, 1, 'Home', '', '', '2017-05-22 15:59:25', '2017-05-22 15:59:25', 'Initial Version', 0, 0, 1, NULL, 2, 4, NULL, NULL),
+(1, 2, 'Home', '', '', '2017-05-22 15:59:25', '2017-05-23 14:51:13', 'New Version 2', 0, 0, 1, 1, 2, 4, NULL, NULL),
+(1, 3, 'Home', '', '', '2017-05-22 15:59:25', '2017-05-23 14:51:24', 'New Version 3', 1, 0, 1, 1, 2, 5, NULL, NULL),
 (2, 1, 'Dashboard', 'dashboard', '', '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'Initial Version', 1, 0, 1, NULL, 0, 0, NULL, NULL),
 (3, 1, 'Sitemap', 'sitemap', 'Whole world at a glance.', '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'Initial Version', 1, 0, 1, NULL, 0, 0, NULL, NULL),
 (4, 1, 'Full Sitemap', 'full', '', '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'Initial Version', 1, 0, 1, NULL, 0, 0, NULL, NULL),
@@ -2935,16 +3043,41 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (146, 1, 'Private Messages', 'messages', 'Inbox for site-specific messages.', '2017-05-22 16:00:00', '2017-05-22 16:00:00', 'Initial Version', 1, 0, 1, NULL, 0, 0, NULL, NULL),
 (147, 1, 'Page Forbidden', 'page_forbidden', '', '2017-05-22 16:00:00', '2017-05-22 16:00:00', 'Initial Version', 1, 0, 1, NULL, 0, 0, NULL, NULL),
 (148, 1, 'Download File', 'download_file', '', '2017-05-22 16:00:00', '2017-05-22 16:00:00', 'Initial Version', 1, 0, 1, NULL, 0, 0, NULL, NULL),
-(149, 1, 'Drafts', '!drafts', '', '2017-05-22 16:00:00', '2017-05-22 16:00:00', 'Initial Version', 1, 0, 1, NULL, 1, 0, NULL, NULL),
-(150, 1, 'Stacks', '!stacks', '', '2017-05-22 16:00:00', '2017-05-22 16:00:00', 'Initial Version', 1, 0, 1, NULL, 1, 0, NULL, NULL),
-(151, 1, 'Page Not Found', 'page_not_found', '', '2017-05-22 16:00:00', '2017-05-22 16:00:00', 'Initial Version', 1, 0, 1, NULL, 1, 0, NULL, NULL),
-(152, 1, 'Welcome Back', 'desktop', '', '2017-05-22 16:00:00', '2017-05-22 16:00:00', 'Initial Version', 1, 0, 1, NULL, 1, 0, NULL, NULL),
+(149, 1, 'Drafts', '!drafts', '', '2017-05-22 16:00:00', '2017-05-22 16:00:00', 'Initial Version', 1, 0, 1, NULL, 2, 0, NULL, NULL),
+(150, 1, 'Stacks', '!stacks', '', '2017-05-22 16:00:00', '2017-05-22 16:00:00', 'Initial Version', 1, 0, 1, NULL, 2, 0, NULL, NULL),
+(151, 1, 'Page Not Found', 'page_not_found', '', '2017-05-22 16:00:00', '2017-05-22 16:00:00', 'Initial Version', 1, 0, 1, NULL, 2, 0, NULL, NULL),
+(152, 1, 'Welcome Back', 'desktop', '', '2017-05-22 16:00:00', '2017-05-22 16:00:00', 'Initial Version', 1, 0, 1, NULL, 2, 0, NULL, NULL),
 (153, 1, '', NULL, NULL, '2017-05-22 16:00:01', '2017-05-22 16:00:01', 'Initial Version', 1, 0, NULL, NULL, 0, 4, NULL, NULL),
-(154, 1, 'Header Site Title', 'header-site-title', NULL, '2017-05-22 16:01:20', '2017-05-22 16:01:20', 'Initial Version', 1, 0, 1, NULL, 1, 0, NULL, NULL),
-(155, 1, 'Header Navigation', 'header-navigation', NULL, '2017-05-22 16:01:21', '2017-05-22 16:01:21', 'Initial Version', 1, 0, 1, NULL, 1, 0, NULL, NULL),
-(156, 1, 'Footer Legal', 'footer-legal', NULL, '2017-05-22 16:01:21', '2017-05-22 16:01:21', 'Initial Version', 1, 0, 1, NULL, 1, 0, NULL, NULL),
-(157, 1, 'Footer Navigation', 'footer-navigation', NULL, '2017-05-22 16:01:21', '2017-05-22 16:01:21', 'Initial Version', 1, 0, 1, NULL, 1, 0, NULL, NULL),
-(158, 1, 'Footer Contact', 'footer-contact', NULL, '2017-05-22 16:01:21', '2017-05-22 16:01:21', 'Initial Version', 1, 0, 1, NULL, 1, 0, NULL, NULL);
+(154, 1, 'Header Site Title', 'header-site-title', NULL, '2017-05-22 16:01:20', '2017-05-22 16:01:20', 'Initial Version', 0, 0, 1, NULL, 2, 0, NULL, NULL),
+(154, 2, 'Header Site Title', 'header-site-title', NULL, '2017-05-22 16:01:20', '2017-05-23 15:28:38', 'New Version 2', 0, 0, 1, 1, 2, 0, NULL, NULL),
+(154, 3, 'Header Site Title', 'header-site-title', NULL, '2017-05-22 16:01:20', '2017-05-23 15:29:24', 'New Version 3', 0, 0, 1, 1, 2, 0, NULL, NULL),
+(154, 4, 'Header Site Title', 'header-site-title', NULL, '2017-05-22 16:01:20', '2017-05-23 15:58:52', 'New Version 4', 0, 0, 1, 1, 2, 0, NULL, NULL),
+(154, 5, 'Header Site Title', 'header-site-title', NULL, '2017-05-22 16:01:20', '2017-05-23 15:59:25', 'New Version 5', 0, 0, 1, 1, 2, 0, NULL, NULL),
+(154, 6, 'Header Site Title', 'header-site-title', NULL, '2017-05-22 16:01:20', '2017-05-23 16:00:06', 'New Version 6', 0, 0, 1, 1, 2, 0, NULL, NULL),
+(154, 7, 'Header Site Title', 'header-site-title', NULL, '2017-05-22 16:01:20', '2017-05-23 16:10:16', 'New Version 7', 0, 0, 1, 1, 2, 0, NULL, NULL),
+(154, 8, 'Header Site Title', 'header-site-title', NULL, '2017-05-22 16:01:20', '2017-05-23 16:15:31', 'New Version 8', 0, 0, 1, 1, 2, 0, NULL, NULL),
+(154, 9, 'Header Site Title', 'header-site-title', NULL, '2017-05-22 16:01:20', '2017-05-23 16:16:31', 'New Version 9', 0, 0, 1, 1, 2, 0, NULL, NULL),
+(154, 10, 'Header Site Title', 'header-site-title', NULL, '2017-05-22 16:01:20', '2017-05-23 16:17:07', 'New Version 10', 0, 0, 1, 1, 2, 0, NULL, NULL),
+(154, 11, 'Header Site Title', 'header-site-title', NULL, '2017-05-22 16:01:20', '2017-05-23 16:39:10', 'New Version 11', 0, 0, 1, 1, 2, 0, NULL, NULL),
+(154, 12, 'Header Site Title', 'header-site-title', NULL, '2017-05-22 16:01:20', '2017-05-23 16:40:52', 'New Version 12', 0, 0, 1, 1, 2, 0, NULL, NULL),
+(154, 13, 'Header Site Title', 'header-site-title', NULL, '2017-05-22 16:01:20', '2017-05-23 16:41:36', 'New Version 13', 1, 0, 1, 1, 2, 0, NULL, NULL),
+(155, 1, 'Header Navigation', 'header-navigation', NULL, '2017-05-22 16:01:21', '2017-05-22 16:01:21', 'Initial Version', 0, 0, 1, NULL, 2, 0, NULL, NULL),
+(155, 2, 'Header Navigation', 'header-navigation', NULL, '2017-05-22 16:01:21', '2017-05-23 15:25:57', 'New Version 2', 0, 0, 1, 1, 2, 0, NULL, NULL),
+(155, 3, 'Header Navigation', 'header-navigation', NULL, '2017-05-22 16:01:21', '2017-05-23 15:26:32', 'New Version 3', 1, 0, 1, 1, 2, 0, NULL, NULL),
+(156, 1, 'Footer Legal', 'footer-legal', NULL, '2017-05-22 16:01:21', '2017-05-22 16:01:21', 'Initial Version', 0, 0, 1, NULL, 2, 0, NULL, NULL),
+(156, 2, 'Footer Legal', 'footer-legal', NULL, '2017-05-22 16:01:21', '2017-05-23 15:22:20', 'New Version 2', 1, 0, 1, 1, 2, 0, NULL, NULL),
+(157, 1, 'Footer Navigation', 'footer-navigation', NULL, '2017-05-22 16:01:21', '2017-05-22 16:01:21', 'Initial Version', 0, 0, 1, NULL, 2, 0, NULL, NULL),
+(157, 2, 'Footer Navigation', 'footer-navigation', NULL, '2017-05-22 16:01:21', '2017-05-23 15:25:30', 'New Version 2', 1, 0, 1, 1, 2, 0, NULL, NULL),
+(158, 1, 'Footer Contact', 'footer-contact', NULL, '2017-05-22 16:01:21', '2017-05-22 16:01:21', 'Initial Version', 0, 0, 1, NULL, 2, 0, NULL, NULL),
+(158, 2, 'Footer Contact', 'footer-contact', NULL, '2017-05-22 16:01:21', '2017-05-23 15:22:01', 'New Version 2', 1, 0, 1, 1, 2, 0, NULL, NULL),
+(159, 1, 'Services', 'services', '', '2017-05-23 15:30:41', '2017-05-23 15:30:41', 'Initial Version', 1, 0, 1, 1, 2, 4, NULL, NULL),
+(160, 1, 'About Us', 'about-us', '', '2017-05-23 15:30:55', '2017-05-23 15:30:55', 'Initial Version', 1, 0, 1, 1, 2, 4, NULL, NULL),
+(161, 1, 'Blog', 'blog', '', '2017-05-23 15:31:03', '2017-05-23 15:31:03', 'Initial Version', 1, 0, 1, 1, 2, 4, NULL, NULL),
+(162, 1, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-05-23 15:31:17', 'Initial Version', 1, 0, 1, 1, 2, 4, NULL, NULL),
+(163, 1, 'Store', 'store', '', '2017-05-23 15:31:28', '2017-05-23 15:31:28', 'Initial Version', 1, 0, 1, 1, 2, 4, NULL, NULL),
+(164, 1, 'get in contact', 'get-in-contact', '', '2017-05-23 15:32:36', '2017-05-23 15:32:36', 'Initial Version', 0, 0, 1, 1, 2, 4, NULL, NULL),
+(164, 2, 'Get in Contact', 'get-in-contact', '', '2017-05-23 15:32:00', '2017-05-23 15:32:46', 'New Version 2', 0, 0, 1, 1, 2, 4, NULL, NULL),
+(164, 3, 'Get in Contact', 'get-in-contact', '', '2017-05-23 15:32:00', '2017-05-23 15:32:56', 'New Version 3', 1, 0, 1, 1, 2, 4, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -3003,7 +3136,7 @@ CREATE TABLE `ConfigStore` (
 
 INSERT INTO `ConfigStore` (`cfKey`, `timestamp`, `cfValue`, `uID`, `pkgID`) VALUES
 ('MAIN_HELP_LAST_VIEWED', '2017-05-22 15:01:21', '1495465281', 1, 0),
-('NEWSFLOW_LAST_VIEWED', '2017-05-22 15:00:01', 'FIRSTRUN', 1, 0);
+('NEWSFLOW_LAST_VIEWED', '2017-05-22 15:00:01', '0', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -4598,7 +4731,14 @@ INSERT INTO `PagePaths` (`cPath`, `ppID`, `cID`, `ppIsCanonical`, `ppGeneratedFr
 ('/!stacks/header-navigation', 153, 155, 1, 1),
 ('/!stacks/footer-legal', 154, 156, 1, 1),
 ('/!stacks/footer-navigation', 155, 157, 1, 1),
-('/!stacks/footer-contact', 156, 158, 1, 1);
+('/!stacks/footer-contact', 156, 158, 1, 1),
+('', 157, 1, 1, 1),
+('/services', 158, 159, 1, 1),
+('/about-us', 159, 160, 1, 1),
+('/blog', 160, 161, 1, 1),
+('/case-studies', 161, 162, 1, 1),
+('/store', 162, 163, 1, 1),
+('/get-in-contact', 163, 164, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -4775,7 +4915,7 @@ CREATE TABLE `Pages` (
 --
 
 INSERT INTO `Pages` (`cID`, `siteTreeID`, `ptID`, `cIsTemplate`, `uID`, `cIsCheckedOut`, `cCheckedOutUID`, `cCheckedOutDatetime`, `cCheckedOutDatetimeLastEdit`, `cOverrideTemplatePermissions`, `cInheritPermissionsFromCID`, `cInheritPermissionsFrom`, `cFilename`, `cPointerID`, `cPointerExternalLink`, `cPointerExternalLinkNewWindow`, `cIsActive`, `cChildren`, `cDisplayOrder`, `cParentID`, `pkgID`, `cDraftTargetParentPageID`, `cCacheFullPageContent`, `cCacheFullPageContentOverrideLifetime`, `cCacheFullPageContentLifetimeCustom`, `cIsSystemPage`) VALUES
-(1, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'OVERRIDE', NULL, 0, NULL, 0, 1, 11, 0, 0, 0, 0, -1, '0', 0, 0),
+(1, 1, 6, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'OVERRIDE', NULL, 0, NULL, 0, 1, 17, 0, 0, 0, 0, -1, '0', 0, 0),
 (2, 0, 0, 0, 1, 0, NULL, NULL, NULL, 1, 2, 'OVERRIDE', '/dashboard/view.php', 0, NULL, 0, 1, 11, 0, 0, 0, 0, -1, '0', 0, 1),
 (3, 0, 0, 0, 1, 0, NULL, NULL, NULL, 1, 2, 'PARENT', '/dashboard/sitemap/view.php', 0, NULL, 0, 1, 3, 1, 2, 0, 0, -1, '0', 0, 1),
 (4, 0, 0, 0, 1, 0, NULL, NULL, NULL, 1, 2, 'PARENT', '/dashboard/sitemap/full.php', 0, NULL, 0, 1, 0, 0, 3, 0, 0, -1, '0', 0, 1),
@@ -4932,7 +5072,13 @@ INSERT INTO `Pages` (`cID`, `siteTreeID`, `ptID`, `cIsTemplate`, `uID`, `cIsChec
 (155, 1, 1, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 1, 150, 0, 0, -1, '0', 0, 1),
 (156, 1, 1, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 2, 150, 0, 0, -1, '0', 0, 1),
 (157, 1, 1, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 3, 150, 0, 0, -1, '0', 0, 1),
-(158, 1, 1, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 4, 150, 0, 0, -1, '0', 0, 1);
+(158, 1, 1, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 4, 150, 0, 0, -1, '0', 0, 1),
+(159, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 1, 1, 0, 1, -1, '0', 0, 0),
+(160, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 2, 1, 0, 1, -1, '0', 0, 0),
+(161, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 3, 1, 0, 1, -1, '0', 0, 0),
+(162, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 4, 1, 0, 1, -1, '0', 0, 0),
+(163, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 5, 1, 0, 1, -1, '0', 0, 0),
+(164, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 6, 1, 0, 1, -1, '0', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -4957,7 +5103,7 @@ CREATE TABLE `PageSearchIndex` (
 --
 
 INSERT INTO `PageSearchIndex` (`cID`, `content`, `cName`, `cDescription`, `cPath`, `cDatePublic`, `cDateLastIndexed`, `cDateLastSitemapped`, `cRequiresReindex`) VALUES
-(1, '', 'Home', '', NULL, '2017-05-22 15:59:25', '2017-05-22 16:08:34', NULL, 0),
+(1, '', 'Home', '', '', '2017-05-22 15:59:25', '2017-05-23 14:51:27', NULL, 0),
 (2, '', 'Dashboard', '', '/dashboard', '2017-05-22 15:59:51', '2017-05-22 16:08:35', NULL, 0),
 (3, '', 'Sitemap', 'Whole world at a glance.', '/dashboard/sitemap', '2017-05-22 15:59:51', '2017-05-22 16:08:35', NULL, 0),
 (4, '', 'Full Sitemap', '', '/dashboard/sitemap/full', '2017-05-22 15:59:51', '2017-05-22 16:08:35', NULL, 0),
@@ -5106,11 +5252,17 @@ INSERT INTO `PageSearchIndex` (`cID`, `content`, `cName`, `cDescription`, `cPath
 (151, '', 'Page Not Found', '', '/page_not_found', '2017-05-22 16:00:00', '2017-05-22 16:09:30', NULL, 0),
 (152, '', 'Welcome Back', '', '/account/welcome', '2017-05-22 16:00:00', '2017-05-22 16:09:30', NULL, 0),
 (153, '', '', NULL, NULL, '2017-05-22 16:00:01', '2017-05-22 16:09:31', NULL, 0),
-(154, '', 'Header Site Title', NULL, '/!stacks/header-site-title', '2017-05-22 16:01:20', '2017-05-22 16:09:31', NULL, 0),
-(155, '', 'Header Navigation', NULL, '/!stacks/header-navigation', '2017-05-22 16:01:21', '2017-05-22 16:09:31', NULL, 0),
-(156, '', 'Footer Legal', NULL, '/!stacks/footer-legal', '2017-05-22 16:01:21', '2017-05-22 16:09:32', NULL, 0),
-(157, '', 'Footer Navigation', NULL, '/!stacks/footer-navigation', '2017-05-22 16:01:21', '2017-05-22 16:09:32', NULL, 0),
-(158, '', 'Footer Contact', NULL, '/!stacks/footer-contact', '2017-05-22 16:01:21', '2017-05-22 16:09:33', NULL, 0);
+(154, 'Yeh, I’m a trusted and flexible geek who’s passionate about my family and the design & building of your\r\n Websites & Mobile Apps\r\n ', 'Header Site Title', NULL, '/!stacks/header-site-title', '2017-05-22 16:01:20', '2017-05-23 16:41:38', NULL, 0),
+(155, '', 'Header Navigation', NULL, '/!stacks/header-navigation', '2017-05-22 16:01:21', '2017-05-23 15:27:19', NULL, 0),
+(156, ' Copyright © 2017 Chris Watterston. All rights reserved. \r\n ', 'Footer Legal', NULL, '/!stacks/footer-legal', '2017-05-22 16:01:21', '2017-05-23 15:22:22', NULL, 0),
+(157, '', 'Footer Navigation', NULL, '/!stacks/footer-navigation', '2017-05-22 16:01:21', '2017-05-23 15:25:45', NULL, 0),
+(158, '\r\n	become a client\r\n	let’s talk?\r\n\r\n ', 'Footer Contact', NULL, '/!stacks/footer-contact', '2017-05-22 16:01:21', '2017-05-23 15:22:03', NULL, 0),
+(159, '', 'Services', '', '/services', '2017-05-23 15:30:41', '2017-05-23 15:31:50', NULL, 0),
+(160, '', 'About Us', '', '/about-us', '2017-05-23 15:30:55', '2017-05-23 15:31:50', NULL, 0),
+(161, '', 'Blog', '', '/blog', '2017-05-23 15:31:03', '2017-05-23 15:31:50', NULL, 0),
+(162, '', 'Case Studies', '', '/case-studies', '2017-05-23 15:31:17', '2017-05-23 15:31:50', NULL, 0),
+(163, '', 'Store', '', '/store', '2017-05-23 15:31:28', '2017-05-23 15:31:50', NULL, 0),
+(164, '', 'Get in Contact', '', '/get-in-contact', '2017-05-23 15:32:00', '2017-05-23 15:34:18', NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -5135,7 +5287,8 @@ INSERT INTO `PageTemplates` (`pTemplateID`, `pTemplateHandle`, `pTemplateIcon`, 
 (1, 'core_stack', '', 'Stack', 1, 0),
 (2, 'desktop', '', 'Desktop', 1, 0),
 (3, 'dashboard_full', '', 'Dashboard Full', 1, 0),
-(4, 'full', 'full.png', 'Full', 0, 0);
+(4, 'full', 'full.png', 'Full', 0, 0),
+(5, 'home', 'blank.png', 'Home', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -5170,7 +5323,8 @@ CREATE TABLE `PageThemes` (
 --
 
 INSERT INTO `PageThemes` (`pThemeID`, `pThemeHandle`, `pThemeName`, `pThemeDescription`, `pkgID`, `pThemeHasCustomClass`) VALUES
-(1, 'elemental', 'Elemental', 'Elegant, spacious theme with support for blogs, portfolios, layouts and more.', 0, 1);
+(1, 'elemental', 'Elemental', 'Elegant, spacious theme with support for blogs, portfolios, layouts and more.', 0, 1),
+(2, 'chriswatterston', 'Chris Watterston', 'The \'Chris Watterston\' theme has been designed and developed by Chris Watterston, for the use by \'Chris Watterston Designs\' in Sunbury-on-Thames, Surrey ONLY. Please contact hello@chriswatterston.com for all website and theme support.', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -5222,7 +5376,9 @@ INSERT INTO `PageTypeComposerFormLayoutSetControls` (`ptComposerFormLayoutSetCon
 (3, 1, 1, 'O:81:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\UrlSlugCorePageProperty":12:{s:17:"\0*\0propertyHandle";s:8:"url_slug";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:8:"url_slug";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:9:"file-text";}s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 2, NULL, NULL, NULL, 0),
 (4, 1, 1, 'O:86:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\PageTemplateCorePageProperty":12:{s:17:"\0*\0propertyHandle";s:13:"page_template";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:13:"page_template";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:8:"list-alt";}s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 3, NULL, NULL, NULL, 0),
 (5, 1, 1, 'O:87:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\PublishTargetCorePageProperty":12:{s:17:"\0*\0propertyHandle";s:14:"publish_target";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:14:"publish_target";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:8:"download";}s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 4, NULL, NULL, NULL, 0),
-(6, 2, 3, 'O:53:"Concrete\\Core\\Page\\Type\\Composer\\Control\\BlockControl":15:{s:7:"\0*\0btID";i:14;s:30:"\0*\0ptComposerControlTypeHandle";s:5:"block";s:5:"\0*\0bt";b:0;s:4:"\0*\0b";b:0;s:13:"\0*\0controller";N;s:30:"\0*\0ptComposerControlIdentifier";i:14;s:24:"\0*\0ptComposerControlName";s:7:"Content";s:27:"\0*\0ptComposerControlIconSRC";s:33:"/concrete/blocks/content/icon.png";s:33:"\0*\0ptComposerControlIconFormatter";N;s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 0, 'Body', NULL, NULL, 0);
+(6, 2, 3, 'O:53:"Concrete\\Core\\Page\\Type\\Composer\\Control\\BlockControl":15:{s:7:"\0*\0btID";i:14;s:30:"\0*\0ptComposerControlTypeHandle";s:5:"block";s:5:"\0*\0bt";b:0;s:4:"\0*\0b";b:0;s:13:"\0*\0controller";N;s:30:"\0*\0ptComposerControlIdentifier";i:14;s:24:"\0*\0ptComposerControlName";s:7:"Content";s:27:"\0*\0ptComposerControlIconSRC";s:33:"/concrete/blocks/content/icon.png";s:33:"\0*\0ptComposerControlIconFormatter";N;s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 0, 'Body', NULL, NULL, 0),
+(7, 3, 1, 'O:78:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\NameCorePageProperty":12:{s:37:"\0*\0ptComposerControlRequiredByDefault";b:1;s:17:"\0*\0propertyHandle";s:4:"name";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:4:"name";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:9:"file-text";}s:20:"\0*\0ptComposerControl";N;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 0, NULL, NULL, NULL, 1),
+(10, 3, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:2;}', 1, '', '', '', 1);
 
 -- --------------------------------------------------------
 
@@ -5244,7 +5400,8 @@ CREATE TABLE `PageTypeComposerFormLayoutSets` (
 
 INSERT INTO `PageTypeComposerFormLayoutSets` (`ptComposerFormLayoutSetID`, `ptID`, `ptComposerFormLayoutSetName`, `ptComposerFormLayoutSetDescription`, `ptComposerFormLayoutSetDisplayOrder`) VALUES
 (1, 5, 'Basics', '', 0),
-(2, 5, 'Content', '', 1);
+(2, 5, 'Content', '', 1),
+(3, 6, 'Default', '', 0);
 
 -- --------------------------------------------------------
 
@@ -5261,6 +5418,18 @@ CREATE TABLE `PageTypeComposerOutputBlocks` (
   `ptComposerFormLayoutSetControlID` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `bID` int(10) UNSIGNED DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `PageTypeComposerOutputBlocks`
+--
+
+INSERT INTO `PageTypeComposerOutputBlocks` (`ptComposerOutputBlockID`, `cID`, `cvID`, `arHandle`, `cbDisplayOrder`, `ptComposerFormLayoutSetControlID`, `bID`) VALUES
+(2, 159, 1, 'Main', 0, 6, 25),
+(4, 160, 1, 'Main', 0, 6, 27),
+(6, 161, 1, 'Main', 0, 6, 29),
+(8, 162, 1, 'Main', 0, 6, 31),
+(10, 163, 1, 'Main', 0, 6, 33),
+(12, 164, 1, 'Main', 0, 6, 35);
 
 -- --------------------------------------------------------
 
@@ -5280,7 +5449,8 @@ CREATE TABLE `PageTypeComposerOutputControls` (
 --
 
 INSERT INTO `PageTypeComposerOutputControls` (`ptComposerOutputControlID`, `pTemplateID`, `ptID`, `ptComposerFormLayoutSetControlID`) VALUES
-(1, 4, 5, 6);
+(1, 4, 5, 6),
+(2, 5, 5, 6);
 
 -- --------------------------------------------------------
 
@@ -5312,6 +5482,14 @@ CREATE TABLE `PageTypePageTemplates` (
   `pTemplateID` int(10) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `PageTypePageTemplates`
+--
+
+INSERT INTO `PageTypePageTemplates` (`ptID`, `pTemplateID`) VALUES
+(5, 5),
+(6, 5);
+
 -- --------------------------------------------------------
 
 --
@@ -5334,26 +5512,31 @@ INSERT INTO `PageTypePermissionAssignments` (`ptID`, `pkID`, `paID`) VALUES
 (3, 60, 9),
 (4, 60, 9),
 (5, 60, 9),
+(6, 60, 9),
 (1, 61, 9),
 (2, 61, 9),
 (3, 61, 9),
 (4, 61, 9),
 (5, 61, 9),
+(6, 61, 9),
 (1, 62, 9),
 (2, 62, 9),
 (3, 62, 9),
 (4, 62, 9),
 (5, 62, 9),
+(6, 62, 9),
 (1, 63, 9),
 (2, 63, 9),
 (3, 63, 9),
 (4, 63, 9),
 (5, 63, 9),
+(6, 63, 9),
 (1, 64, 31),
 (2, 64, 32),
 (3, 64, 33),
 (4, 64, 34),
-(5, 64, 36);
+(5, 64, 36),
+(6, 64, 101);
 
 -- --------------------------------------------------------
 
@@ -5408,7 +5591,8 @@ INSERT INTO `PageTypes` (`ptID`, `ptName`, `ptHandle`, `ptPublishTargetTypeID`, 
 (2, 'Stack Category', 'core_stack_category', 3, 0, 'A', 1, 0, 1, 0, 0, 'O:68:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\AllConfiguration":7:{s:21:"\0*\0selectorFormFactor";N;s:22:"\0*\0startingPointPageID";N;s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"3";s:25:"ptPublishTargetTypeHandle";s:3:"all";s:9:"pkgHandle";b:0;s:17:"startingPointPage";N;}', 1),
 (3, 'Desktop', 'core_desktop', 3, 0, 'A', 1, 0, 2, 0, 0, 'O:68:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\AllConfiguration":7:{s:21:"\0*\0selectorFormFactor";N;s:22:"\0*\0startingPointPageID";N;s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"3";s:25:"ptPublishTargetTypeHandle";s:3:"all";s:9:"pkgHandle";b:0;s:17:"startingPointPage";N;}', 1),
 (4, 'Dashboard Full', 'dashboard_full', 3, 0, 'A', 1, 0, 3, 0, 0, 'O:68:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\AllConfiguration":7:{s:21:"\0*\0selectorFormFactor";N;s:22:"\0*\0startingPointPageID";N;s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"3";s:25:"ptPublishTargetTypeHandle";s:3:"all";s:9:"pkgHandle";b:0;s:17:"startingPointPage";N;}', 1),
-(5, 'Page', 'page', 3, 4, 'A', 0, 1, 0, 0, 0, 'O:68:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\AllConfiguration":6:{s:21:"\0*\0selectorFormFactor";N;s:22:"\0*\0startingPointPageID";N;s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"3";s:25:"ptPublishTargetTypeHandle";s:3:"all";s:9:"pkgHandle";b:0;}', 1);
+(5, 'Default', 'default', 3, 4, 'X', 0, 1, 0, 0, 0, 'O:68:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\AllConfiguration":7:{s:21:"\0*\0selectorFormFactor";s:0:"";s:22:"\0*\0startingPointPageID";N;s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"3";s:25:"ptPublishTargetTypeHandle";s:3:"all";s:9:"pkgHandle";b:0;s:17:"startingPointPage";s:1:"0";}', 1),
+(6, 'Home', 'home', 3, 5, 'C', 0, 0, 1, 0, 0, 'O:68:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\AllConfiguration":7:{s:21:"\0*\0selectorFormFactor";s:0:"";s:22:"\0*\0startingPointPageID";N;s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"3";s:25:"ptPublishTargetTypeHandle";s:3:"all";s:9:"pkgHandle";b:0;s:17:"startingPointPage";s:1:"0";}', 1);
 
 -- --------------------------------------------------------
 
@@ -5536,7 +5720,8 @@ INSERT INTO `PermissionAccess` (`paID`, `paIsInUse`) VALUES
 (97, 1),
 (98, 1),
 (99, 1),
-(100, 1);
+(100, 1),
+(101, 1);
 
 -- --------------------------------------------------------
 
@@ -5868,7 +6053,8 @@ INSERT INTO `PermissionAccessList` (`paID`, `peID`, `pdID`, `accessType`) VALUES
 (98, 1, 0, 10),
 (99, 1, 0, 10),
 (100, 1, 0, 10),
-(100, 7, 0, 10);
+(100, 7, 0, 10),
+(101, 3, 0, 10);
 
 -- --------------------------------------------------------
 
@@ -6137,6 +6323,13 @@ CREATE TABLE `Piles` (
   `state` varchar(64) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `Piles`
+--
+
+INSERT INTO `Piles` (`pID`, `uID`, `isDefault`, `timestamp`, `name`, `state`) VALUES
+(1, 1, 1, '2017-05-23 14:21:27', NULL, 'READY');
+
 -- --------------------------------------------------------
 
 --
@@ -6329,7 +6522,7 @@ CREATE TABLE `Sites` (
 --
 
 INSERT INTO `Sites` (`siteID`, `pThemeID`, `siteIsDefault`, `siteHandle`, `siteTypeID`) VALUES
-(1, 1, 1, 'default', 1);
+(1, 2, 1, 'default', 1);
 
 -- --------------------------------------------------------
 
@@ -7093,7 +7286,7 @@ CREATE TABLE `Users` (
 --
 
 INSERT INTO `Users` (`uID`, `uName`, `uEmail`, `uPassword`, `uIsActive`, `uIsFullRecord`, `uIsValidated`, `uDateAdded`, `uLastPasswordChange`, `uHasAvatar`, `uLastOnline`, `uLastLogin`, `uPreviousLogin`, `uNumLogins`, `uLastAuthTypeID`, `uLastIP`, `uTimezone`, `uDefaultLanguage`, `uIsPasswordReset`) VALUES
-(1, 'admin', 'hello@chriswatterston.com', '$2a$12$kJV9yqhfCBt8k6DX6w7xxuSypfc/T0vGL5u2G3M2LTUpzYnRPmRvG', 1, 1, 1, '2017-05-22 15:59:23', '2017-05-22 15:59:23', 0, 1495466166, 1495465163, 0, 1, 0, '7f000001', NULL, NULL, 0);
+(1, 'admin', 'hello@chriswatterston.com', '$2a$12$kJV9yqhfCBt8k6DX6w7xxuSypfc/T0vGL5u2G3M2LTUpzYnRPmRvG', 1, 1, 1, '2017-05-22 15:59:23', '2017-05-22 15:59:23', 0, 1495554258, 1495546718, 1495465163, 2, 1, '7f000001', NULL, NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -7207,6 +7400,39 @@ CREATE TABLE `WorkflowProgressHistory` (
   `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `object` text COLLATE utf8_unicode_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `WorkflowProgressHistory`
+--
+
+INSERT INTO `WorkflowProgressHistory` (`wphID`, `wpID`, `timestamp`, `object`) VALUES
+(1, 1, '2017-05-23 13:51:13', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:1:"1";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:1:"2";}'),
+(2, 2, '2017-05-23 13:51:24', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:1:"2";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:1:"3";}'),
+(3, 3, '2017-05-23 14:22:02', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:1:"3";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"158";s:4:"cvID";s:1:"2";}'),
+(4, 4, '2017-05-23 14:22:22', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:1:"4";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"156";s:4:"cvID";s:1:"2";}'),
+(5, 5, '2017-05-23 14:25:44', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:1:"5";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"157";s:4:"cvID";s:1:"2";}'),
+(6, 6, '2017-05-23 14:25:59', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:1:"6";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"155";s:4:"cvID";s:1:"2";}'),
+(7, 7, '2017-05-23 14:27:18', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:1:"7";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"155";s:4:"cvID";s:1:"3";}'),
+(8, 8, '2017-05-23 14:28:40', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:1:"8";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"154";s:4:"cvID";s:1:"2";}'),
+(9, 9, '2017-05-23 14:29:25', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:1:"9";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"154";s:4:"cvID";s:1:"3";}'),
+(10, 10, '2017-05-23 14:30:42', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"10";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"159";s:4:"cvID";s:1:"1";}'),
+(11, 11, '2017-05-23 14:30:55', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"11";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"160";s:4:"cvID";s:1:"1";}'),
+(12, 12, '2017-05-23 14:31:04', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"12";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"161";s:4:"cvID";s:1:"1";}'),
+(13, 13, '2017-05-23 14:31:17', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"13";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"162";s:4:"cvID";s:1:"1";}'),
+(14, 14, '2017-05-23 14:31:28', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"14";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"163";s:4:"cvID";s:1:"1";}'),
+(15, 15, '2017-05-23 14:32:36', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"15";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"164";s:4:"cvID";s:1:"1";}'),
+(16, 16, '2017-05-23 14:32:46', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"16";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"164";s:4:"cvID";s:1:"2";}'),
+(17, 17, '2017-05-23 14:32:56', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"17";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"164";s:4:"cvID";s:1:"3";}'),
+(18, 18, '2017-05-23 14:58:54', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"18";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"154";s:4:"cvID";s:1:"4";}'),
+(19, 19, '2017-05-23 14:59:26', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"19";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"154";s:4:"cvID";s:1:"5";}'),
+(20, 20, '2017-05-23 15:00:08', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"20";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"154";s:4:"cvID";s:1:"6";}'),
+(21, 21, '2017-05-23 15:10:17', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"21";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"154";s:4:"cvID";s:1:"7";}'),
+(22, 22, '2017-05-23 15:15:33', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"22";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"154";s:4:"cvID";s:1:"8";}'),
+(23, 23, '2017-05-23 15:16:33', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"23";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"154";s:4:"cvID";s:1:"9";}'),
+(24, 24, '2017-05-23 15:17:08', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"24";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"154";s:4:"cvID";s:2:"10";}'),
+(25, 25, '2017-05-23 15:39:12', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"25";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"154";s:4:"cvID";s:2:"11";}'),
+(26, 26, '2017-05-23 15:40:54', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"26";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"154";s:4:"cvID";s:2:"12";}'),
+(27, 27, '2017-05-23 15:41:37', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"27";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"154";s:4:"cvID";s:2:"13";}');
 
 -- --------------------------------------------------------
 
@@ -9488,7 +9714,7 @@ ALTER TABLE `AreaLayoutThemeGridColumns`
 -- AUTO_INCREMENT for table `Areas`
 --
 ALTER TABLE `Areas`
-  MODIFY `arID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `arID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 --
 -- AUTO_INCREMENT for table `atSelectedSocialLinks`
 --
@@ -9553,7 +9779,7 @@ ALTER TABLE `BannedWords`
 -- AUTO_INCREMENT for table `Blocks`
 --
 ALTER TABLE `Blocks`
-  MODIFY `bID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `bID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 --
 -- AUTO_INCREMENT for table `BlockTypes`
 --
@@ -9613,7 +9839,7 @@ ALTER TABLE `btSurveyResults`
 -- AUTO_INCREMENT for table `Collections`
 --
 ALTER TABLE `Collections`
-  MODIFY `cID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=159;
+  MODIFY `cID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=165;
 --
 -- AUTO_INCREMENT for table `ConversationDiscussions`
 --
@@ -9833,17 +10059,17 @@ ALTER TABLE `PageFeeds`
 -- AUTO_INCREMENT for table `PagePaths`
 --
 ALTER TABLE `PagePaths`
-  MODIFY `ppID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=157;
+  MODIFY `ppID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=164;
 --
 -- AUTO_INCREMENT for table `PageTemplates`
 --
 ALTER TABLE `PageTemplates`
-  MODIFY `pTemplateID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `pTemplateID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `PageThemes`
 --
 ALTER TABLE `PageThemes`
-  MODIFY `pThemeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `pThemeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `PageTypeComposerControlTypes`
 --
@@ -9853,22 +10079,22 @@ ALTER TABLE `PageTypeComposerControlTypes`
 -- AUTO_INCREMENT for table `PageTypeComposerFormLayoutSetControls`
 --
 ALTER TABLE `PageTypeComposerFormLayoutSetControls`
-  MODIFY `ptComposerFormLayoutSetControlID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `ptComposerFormLayoutSetControlID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `PageTypeComposerFormLayoutSets`
 --
 ALTER TABLE `PageTypeComposerFormLayoutSets`
-  MODIFY `ptComposerFormLayoutSetID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ptComposerFormLayoutSetID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `PageTypeComposerOutputBlocks`
 --
 ALTER TABLE `PageTypeComposerOutputBlocks`
-  MODIFY `ptComposerOutputBlockID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `ptComposerOutputBlockID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `PageTypeComposerOutputControls`
 --
 ALTER TABLE `PageTypeComposerOutputControls`
-  MODIFY `ptComposerOutputControlID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ptComposerOutputControlID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `PageTypePublishTargetTypes`
 --
@@ -9878,12 +10104,12 @@ ALTER TABLE `PageTypePublishTargetTypes`
 -- AUTO_INCREMENT for table `PageTypes`
 --
 ALTER TABLE `PageTypes`
-  MODIFY `ptID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `ptID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `PermissionAccess`
 --
 ALTER TABLE `PermissionAccess`
-  MODIFY `paID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+  MODIFY `paID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=102;
 --
 -- AUTO_INCREMENT for table `PermissionAccessEntities`
 --
@@ -9923,7 +10149,7 @@ ALTER TABLE `PileContents`
 -- AUTO_INCREMENT for table `Piles`
 --
 ALTER TABLE `Piles`
-  MODIFY `pID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `pID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `QueueMessages`
 --
@@ -10088,7 +10314,7 @@ ALTER TABLE `UserValidationHashes`
 -- AUTO_INCREMENT for table `WorkflowProgress`
 --
 ALTER TABLE `WorkflowProgress`
-  MODIFY `wpID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `wpID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 --
 -- AUTO_INCREMENT for table `WorkflowProgressCategories`
 --
@@ -10098,12 +10324,12 @@ ALTER TABLE `WorkflowProgressCategories`
 -- AUTO_INCREMENT for table `WorkflowProgressHistory`
 --
 ALTER TABLE `WorkflowProgressHistory`
-  MODIFY `wphID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `wphID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 --
 -- AUTO_INCREMENT for table `WorkflowRequestObjects`
 --
 ALTER TABLE `WorkflowRequestObjects`
-  MODIFY `wrID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `wrID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 --
 -- AUTO_INCREMENT for table `Workflows`
 --

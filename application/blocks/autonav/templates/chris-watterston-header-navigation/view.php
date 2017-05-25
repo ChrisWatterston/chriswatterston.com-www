@@ -1,3 +1,8 @@
+<div class="nav-triggers-wrap type-right">
+	<a href="#" title="Contact for services enquires" class="contact colour-white type-lowercase type-semibold family-table">Let’s Talk?</a>
+	<a href="#" title="Try the services estimate calculator" class="contact colour-white type-lowercase type-semibold family-table">Become a Client</a>
+	<a href="#" title="Navigation" class="nav-trigger colour-lime type-lowercase type-semibold family-table">Nav</a>
+</div>
 <?php
 defined('C5_EXECUTE') or die("Access Denied.");
 $navItems = $controller->getNavItems();

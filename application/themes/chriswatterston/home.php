@@ -40,26 +40,46 @@
 </header>
 
 
+
+
+
 <section class="body">
 	
 	<section class="feed-wrap">
 		<div class="feed-header">
-			<h2>Heading</h2>
-			<p>introduction</p>
+			<h2 class="main-heading colour-lime type-uppercase">Recent case studies. Show and tell.</h2>
+			<p class="sub-heading colour-white">The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online presence has never been so important.</p>
 		</div>
 		<div class="feed-body">
-			feed
-			<?php
-			    $fff = new Area('Edit Me');
-			    $fff->display($c);
-		    ?>
+			<div class="contain">
+				<div class="cols newsfeed-entrys">
+					<?php
+					    $bcf1 = new Area('Content Area One');
+					    $bcf1->display($c);
+				    ?>
+				</div>
+			</div>
 		</div>
 		<div class="feed-footer">
-			footer
+			<div class="feed-stroke">
+				<div class="contain">
+					<div class="cols">
+						<div class="col title">
+							one
+						</div>
+						<div class="one topics">
+							two
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	
 </section>
+
+
+
 
 
 <footer class="main">

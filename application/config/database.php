@@ -8,7 +8,7 @@ return [
             'server' => 'phpmyadmin.dev',
             'database' => 'chriswatterston_www',
             'username' => 'root',
-            'password' => 'rootroot',
+            'password' => 'root',
             'charset' => 'utf8',
         ],
     ],

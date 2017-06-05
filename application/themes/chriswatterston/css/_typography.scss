@@ -61,6 +61,9 @@
 	*.colour-grey, .colour-grey * {color:$col-grey;}
 	*.colour-white, .colour-white * {color:$col-white;}
 	*.colour-black, .colour-black * {color:$col-black;}
+
+	*.colour-facebook, .colour-facebook * {color:$col-facebook;}
+
 	
 	*.type-light .type-light * {font-weight:300;}
 	*.type-regular, .type-regular {font-weight:400;}
@@ -187,7 +190,7 @@
 		width:auto !important;
 		background:$col-orange;
 		color:$col-white;
-		padding:14px 60px 13px;
+		padding:14px 60px 12px;
 		font-weight:600;
 		cursor:pointer !important;
 		-webkit-transition-duration:$abtn-speed;
@@ -200,6 +203,7 @@
 	.abtn.blue {background:$col-blue;}
 	.abtn.yellow {background:$col-yellow;}
 	.abtn.grey {background:$col-grey;}
+	.abtn.facebook {background:$col-facebook;}
 	
 	.abtn:hover, input[type="submit"]:hover {opacity:$abtn-trans;}
 
@@ -522,6 +526,9 @@
 								p.description {
 									width:$col-one - 40;
 									padding:20px 0 40px 0;
+								}
+								.news-content.desc-rich {
+									p {width:$col-one - 20;}
 								}
 							}
 						}

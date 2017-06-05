@@ -65,7 +65,7 @@
 
 			var feedRecognition = $('#feed-recognition .feed-body').height();
 			$('#feed-recognition .feed-footer .feed-stroke').height(feedRecognition - 130);
-			$('#feed-recognition .feed-footer').css('margin-top', '-400px');
+			$('#feed-recognition .feed-footer').css('margin-top', '-380px');
 		});
 	</script>
 	
@@ -81,7 +81,7 @@
 		</div>
 		<div class="feed-body">
 			<div class="contain">
-				<div class="cols newsfeed-entrys">
+				<div class="cols newsfeed-entrys flex-row">
 					<?php
 					    $bcf1 = new Area('Content Area One');
 					    $bcf1->display($c);
@@ -110,7 +110,7 @@
 
 
 	
-	<section class="feed-wrap blue" id="feed-recognition">
+	<section class="feed-wrap last blue" id="feed-recognition">
 		<div class="feed-header">
 			<h1 class="main-heading colour-blue type-uppercase">
 				<strong>Recognition from us.</strong> Success isn’t built overnight.
@@ -133,8 +133,9 @@
 			<div class="feed-stroke">
 				<div class="contain">
 					<div class="cols">
-						<div class="col title">
-							<h3 class="colour-blue type-uppercase type-semibold">Friendly facebook</h3>
+						<div class="col title facebook">
+							<h3 class="colour-facebook type-uppercase type-semibold">Friendly facebook</h3>
+							<a href="#" class="abtn facebook">Let’s Connect</a>
 						</div>
 						<div class="col topics">
 							<?php

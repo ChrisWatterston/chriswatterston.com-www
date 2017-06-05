@@ -12,6 +12,8 @@ $col-orange: #ff9f1c;		// rgba(255,159,28,1)
 $col-white: #FFFFFF;
 $col-black: #000000;
 
+$col-facebook: #3b5998;
+
 // Columns
 $col-max: 1052px;
 $col-one: 100%;
@@ -52,6 +54,10 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 		display:inline-block;
 		width:$col-one;
 		margin-bottom:-5px;
+	}
+	.flex-row {
+		display:flex;
+		flex-flow:row wrap;		
 	}
 	
 	header.main {
@@ -155,9 +161,8 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 	
 	section.body {
 		section.feed-wrap {
-			border:5px solid gray !important;
-
 			display:inline-block;
+			padding-top:60px;
 			.feed-header {
 				position:relative;
 				width:$col-one - 25;
@@ -188,8 +193,6 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 				margin-top:-100px;
 				.contain {
 					.cols.newsfeed-entrys {
-						display:flex;
-						flex-flow:row wrap;
 						.col.newsfeed-entry {
 							position:relative;
 							display:inline-block;
@@ -206,6 +209,10 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 								z-index:+5;
 								background-size:cover;
 							}
+							.news-img.img-rich {
+								width:$col-one;
+								height:$col-one - 30;
+							}
 							.news-content-wrap {
 								position:relative;
 								z-index:+10;
@@ -213,6 +220,10 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 								background-image:url('../img/cons/bkgrnd-post-full-white.svg');
 								background-position:right bottom;
 								background-repeat:no-repeat;
+							}
+							.news-content-wrap.wrap-rich {
+								padding-bottom:240px;
+								background-image:url('../img/cons/bkgrnd-recog-full-white.svg');
 							}
 							a.hidden {
 								position:absolute;
@@ -317,6 +328,15 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 					border:2px solid $col-yellow;
 					.contain .cols .col.title {
 						background-image:url('../img/cons/bkgrnd-services-yellow.svg');
+					}
+				}
+			}
+		}
+		section.feed-wrap {
+			.feed-footer {
+				.feed-stroke {
+					.contain .cols .col.title.facebook {
+						background-image:url('../img/cons/bkgrnd-services-facebook.svg');
 					}
 				}
 			}

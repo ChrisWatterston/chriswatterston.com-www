@@ -17,7 +17,7 @@
 		$url = ($page->getCollectionPointerExternalLink() != '') ? $page->getCollectionPointerExternalLink() : $nh->getLinkToCollection($page);
         $img = false;
         
-		$posttypetitle = $page->getAttribute('description_meta');
+		$posttypetitle = $page->getAttribute('description_rich');
         
         
 	    if ($displayThumbnail) {
@@ -31,9 +31,9 @@
 		?>
 		
 		<div class="col newsfeed-entry entry-<?php echo $i; ?>">
-			<div class="news-img" style="background-image:url('<?php echo $tagSrc; ?>');"></div>
-			<div class="news-content-wrap">
-				<div class="news-content">
+			<div class="news-img img-rich" style="background-image:url('<?php echo $tagSrc; ?>');"></div>
+			<div class="news-content-wrap wrap-rich">
+				<div class="news-content desc-rich">
 					<?php echo $posttypetitle; ?>
 				</div>
 			</div>

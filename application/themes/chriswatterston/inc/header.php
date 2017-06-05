@@ -17,6 +17,8 @@
 	    'pageDescription' => isset($pageDescription) ? $pageDescription : '',
 	    'pageMetaKeywords' => isset($pageMetaKeywords) ? $pageMetaKeywords : ''
 	]);
+	
+    $this->requireAsset('javascript', 'jquery');
 ?>
 
 <link rel="stylesheet" type="text/css" href="<?php echo $view->getThemePath()?>/css/core.css" />

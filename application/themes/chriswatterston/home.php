@@ -5,6 +5,15 @@
 
 <header class="main">
 	<section class="navigation-wrap">
+		
+		<script type="text/javascript">
+		$(document).ready(function() {
+			var heightOne = $('.newsfeed-entry.entry-2').height();
+			var heightTwo = $('.newsfeed-entry.entry-2').height();
+			$('.contain .sidebar-link-wrap').height(heightOne + heightTwo - 40);
+		});
+		</script>
+		
 		<div class="cols">
 			<div class="col branding">
 				<img src="<?php echo $view->getThemePath()?>/img/brnd/chriswatterston-logo.svg" class="logo" />
@@ -35,6 +44,9 @@
 				    $hlfe->display($c);
 			    ?>
 			</div>
+			<div class="sidebar-link-wrap">
+				<a href="#" class="sidebar-link">View All Updates</a>
+			</div>
 		</div>
 	</section>
 </header>
@@ -45,9 +57,26 @@
 
 <section class="body">
 	
-	<section class="feed-wrap">
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var feedCaseStudies = $('#feed-casestudies .feed-body').height();
+			$('#feed-casestudies .feed-footer .feed-stroke').height(feedCaseStudies - 130);
+			$('#feed-casestudies .feed-footer').css('margin-top', '-400px');
+
+			var feedRecognition = $('#feed-recognition .feed-body').height();
+			$('#feed-recognition .feed-footer .feed-stroke').height(feedRecognition - 130);
+			$('#feed-recognition .feed-footer').css('margin-top', '-400px');
+		});
+	</script>
+	
+	
+	<section class="feed-wrap lime" id="feed-casestudies">
 		<div class="feed-header">
-			<h2 class="main-heading colour-lime type-uppercase">Recent case studies. Show and tell.</h2>
+			<h1 class="main-heading colour-lime type-uppercase">
+				<strong>Recent case studies.</strong> Show and tell.
+			</h1>
+		</div>
+		<div class="feed-desc">
 			<p class="sub-heading colour-white">The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online presence has never been so important.</p>
 		</div>
 		<div class="feed-body">
@@ -65,16 +94,61 @@
 				<div class="contain">
 					<div class="cols">
 						<div class="col title">
-							one
+							<h3 class="colour-lime type-uppercase type-semibold">filter case studies</h3>
 						</div>
-						<div class="one topics">
-							two
+						<div class="col topics">
+							<?php
+							    $bcf2 = new Area('Content Area Footer One');
+							    $bcf2->display($c);
+						    ?>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+
+	
+	<section class="feed-wrap blue" id="feed-recognition">
+		<div class="feed-header">
+			<h1 class="main-heading colour-blue type-uppercase">
+				<strong>Recognition from us.</strong> Success isn’t built overnight.
+			</h1>
+		</div>
+		<div class="feed-desc">
+			<p class="sub-heading colour-white">The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online presence has never been so important.</p>
+		</div>
+		<div class="feed-body">
+			<div class="contain">
+				<div class="cols newsfeed-entrys">
+					<?php
+					    $bcf3 = new Area('Content Area Two');
+					    $bcf3->display($c);
+				    ?>
+				</div>
+			</div>
+		</div>
+		<div class="feed-footer">
+			<div class="feed-stroke">
+				<div class="contain">
+					<div class="cols">
+						<div class="col title">
+							<h3 class="colour-blue type-uppercase type-semibold">Friendly facebook</h3>
+						</div>
+						<div class="col topics">
+							<?php
+							    $bcf4 = new Area('Content Area Footer Two');
+							    $bcf4->display($c);
+						    ?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
 	
 </section>
 

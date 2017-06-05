@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 25, 2017 at 11:23 AM
+-- Generation Time: Jun 05, 2017 at 07:00 AM
 -- Server version: 5.7.13
 -- PHP Version: 5.6.24
 
@@ -229,7 +229,16 @@ INSERT INTO `Areas` (`arID`, `cID`, `arHandle`, `arOverrideCollectionPermissions
 (37, 1, 'Header Latest Feed', 0, 0, 0, 0),
 (38, 169, 'Edit Me', 0, 0, 0, 0),
 (39, 170, 'Edit Me', 0, 0, 0, 0),
-(40, 171, 'Edit Me', 0, 0, 0, 0);
+(40, 171, 'Edit Me', 0, 0, 0, 0),
+(41, 1, 'Content Area One', 0, 0, 0, 0),
+(42, 1, 'Content Area Footer', 0, 0, 0, 0),
+(43, 173, 'Edit Me', 0, 0, 0, 0),
+(44, 1, 'Content Area Two', 0, 0, 0, 0),
+(45, 1, 'Content Area Footer Two', 0, 0, 0, 0),
+(46, 1, 'Content Area Footer One', 0, 0, 0, 0),
+(47, 174, 'Main', 0, 0, 0, 0),
+(48, 176, 'Edit Me', 0, 0, 0, 0),
+(49, 151, 'Main', 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -307,7 +316,9 @@ INSERT INTO `atBoolean` (`value`, `avID`) VALUES
 (1, 125),
 (1, 126),
 (1, 235),
-(1, 268);
+(1, 268),
+(0, 331),
+(0, 345);
 
 -- --------------------------------------------------------
 
@@ -482,7 +493,16 @@ INSERT INTO `atDefault` (`value`, `avID`) VALUES
 ('Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', 270),
 ('tester, sausage', 271),
 ('Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', 274),
-('tester, sausage', 275);
+('tester, sausage', 275),
+('Morbi sit amet odio est. Etiam ex quam, viverra ac porta ut, lobortis non ipsum. Praesent sollicitudin orci in ante placerat, eu gravida massa iaculis. Phasellus a est varius, imperdiet mi nec, hendrerit tortor. Nulla tincidunt magna nec tincidunt vehicula. Phasellus tristique tempor diam, vitae luctus enim aliquam eu. Cras dapibus vehicula libero quis interdum.', 323),
+('1970 boat, broom speed boat, project boat', 324),
+('Morbi sit amet odio est. Etiam ex quam, viverra ac porta ut, lobortis non ipsum. Praesent sollicitudin orci in ante placerat, eu gravida massa iaculis. Phasellus a est varius, imperdiet mi nec, hendrerit tortor. Nulla tincidunt magna nec tincidunt vehicula. Phasellus tristique tempor diam, vitae luctus enim aliquam eu. Cras dapibus vehicula libero quis interdum.', 328),
+('1970 boat, broom speed boat, project boat', 329),
+('<h2>A mobile app for every side of education.</h2>\n\n<h2>Starting with your SKOOL.</h2>\n\n<p>Areas of education are turning digital, and so are parent demands. Parents like to be updated in a convenient way. A way that doesn&#39;t always require them to visit a blog, download a document or search your website relentlessly.</p>\n\n<p><a class="abtn" href="#">Find Out More</a></p>\n', 341),
+('', 342),
+('', 343),
+('', 344),
+('<h2>A mobile app for every side of education.</h2>\n\n<h2>Starting with your SKOOL.</h2>\n\n<p>Areas of education are turning digital, and so are parent demands. Parents like to be updated in a convenient way. A way that doesn&#39;t always require them to visit a blog, download a document or search your website relentlessly.</p>\n\n<p><a class="abtn" href="#">Find Out More</a></p>\n', 347);
 
 -- --------------------------------------------------------
 
@@ -561,7 +581,12 @@ INSERT INTO `atFile` (`fID`, `avID`) VALUES
 (1, 263),
 (1, 267),
 (1, 272),
-(1, 276);
+(1, 276),
+(1, 325),
+(1, 330),
+(2, 339),
+(2, 340),
+(2, 346);
 
 -- --------------------------------------------------------
 
@@ -600,7 +625,11 @@ INSERT INTO `atNumber` (`value`, `avID`) VALUES
 ('2.0000', 117),
 ('1.0000', 124),
 ('1024.0000', 187),
-('768.0000', 188);
+('768.0000', 188),
+('512.0000', 333),
+('342.0000', 334),
+('512.0000', 335),
+('342.0000', 336);
 
 -- --------------------------------------------------------
 
@@ -660,7 +689,9 @@ INSERT INTO `atSelectedTopics` (`avTreeTopicNodeID`, `treeNodeID`, `avID`) VALUE
 (22, 26, 269),
 (23, 26, 273),
 (24, 18, 277),
-(25, 26, 277);
+(25, 26, 277),
+(27, 18, 327),
+(28, 18, 332);
 
 -- --------------------------------------------------------
 
@@ -755,7 +786,8 @@ INSERT INTO `atTextareaSettings` (`akTextareaDisplayMode`, `akID`) VALUES
 ('', 2),
 ('text', 3),
 ('', 6),
-('', 9);
+('', 9),
+('rich_text', 23);
 
 -- --------------------------------------------------------
 
@@ -798,7 +830,9 @@ INSERT INTO `atTopic` (`avID`) VALUES
 (264),
 (269),
 (273),
-(277);
+(277),
+(327),
+(332);
 
 -- --------------------------------------------------------
 
@@ -887,7 +921,8 @@ INSERT INTO `AttributeKeys` (`akID`, `akHandle`, `akName`, `akIsSearchable`, `ak
 (19, 'duration', 'Duration', 1, 0, 0, 6, 3, NULL, 'filekey'),
 (20, 'thumbnail', 'Thumbnail', 0, 0, 0, 5, 1, NULL, 'pagekey'),
 (21, 'micro_post', 'Micro Post', 1, 0, 1, 3, 1, NULL, 'pagekey'),
-(22, 'post_topics', 'Post Topics', 1, 0, 1, 13, 1, NULL, 'pagekey');
+(22, 'post_topics', 'Post Topics', 1, 0, 1, 13, 1, NULL, 'pagekey'),
+(23, 'description_rich', 'Description (Rich)', 1, 0, 1, 2, 1, NULL, 'pagekey');
 
 -- --------------------------------------------------------
 
@@ -918,7 +953,8 @@ INSERT INTO `AttributeSetKeys` (`asDisplayOrder`, `akID`, `asID`) VALUES
 (3, 13, 1),
 (1, 20, 3),
 (2, 21, 3),
-(3, 22, 3);
+(3, 22, 3),
+(4, 23, 3);
 
 -- --------------------------------------------------------
 
@@ -1063,6 +1099,7 @@ CREATE TABLE `AttributeValues` (
 --
 
 INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
+(342, 1),
 (205, 2),
 (210, 2),
 (211, 2),
@@ -1073,6 +1110,9 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (265, 2),
 (270, 2),
 (274, 2),
+(323, 2),
+(328, 2),
+(343, 2),
 (2, 3),
 (3, 3),
 (4, 3),
@@ -1167,6 +1207,8 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (266, 3),
 (271, 3),
 (275, 3),
+(324, 3),
+(329, 3),
 (117, 4),
 (124, 4),
 (118, 5),
@@ -1200,12 +1242,18 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (70, 7),
 (119, 7),
 (126, 7),
+(344, 9),
 (25, 12),
 (44, 12),
 (64, 12),
 (109, 12),
+(345, 13),
 (187, 16),
+(333, 16),
+(335, 16),
 (188, 17),
+(334, 17),
+(336, 17),
 (206, 20),
 (212, 20),
 (215, 20),
@@ -1215,8 +1263,14 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (267, 20),
 (272, 20),
 (276, 20),
+(325, 20),
+(330, 20),
+(339, 20),
+(340, 20),
+(346, 20),
 (235, 21),
 (268, 21),
+(331, 21),
 (208, 22),
 (213, 22),
 (216, 22),
@@ -1225,7 +1279,11 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (264, 22),
 (269, 22),
 (273, 22),
-(277, 22);
+(277, 22),
+(327, 22),
+(332, 22),
+(341, 23),
+(347, 23);
 
 -- --------------------------------------------------------
 
@@ -1419,7 +1477,23 @@ INSERT INTO `Blocks` (`bID`, `bName`, `bDateAdded`, `bDateModified`, `bFilename`
 (62, '', '2017-05-25 09:04:51', '2017-05-25 09:04:51', '', '1', 13, 1, NULL),
 (63, '', '2017-05-25 10:12:22', '2017-05-25 10:12:22', 'chris-watterston-instagram', '1', 30, 1, NULL),
 (64, '', '2017-05-25 10:12:58', '2017-05-25 10:12:58', 'chris-watterston-instagram', '1', 30, 1, NULL),
-(65, '', '2017-05-25 11:00:37', '2017-05-25 11:00:37', NULL, '1', 26, 1, NULL);
+(65, '', '2017-05-25 11:00:37', '2017-05-25 11:00:37', NULL, '1', 26, 1, NULL),
+(66, '', '2017-05-25 12:50:56', '2017-05-25 12:52:04', 'chris-watterston-latest-case-studies', '0', 35, 1, NULL),
+(67, '', '2017-05-25 12:54:02', '2017-05-25 12:54:02', 'chris-watterston-latest-case-studies', '1', 35, 1, NULL),
+(68, '', '2017-05-26 09:45:35', '2017-05-26 09:46:08', NULL, '0', 25, 1, NULL),
+(69, '', '2017-05-26 09:48:19', '2017-05-26 09:48:19', 'chris-watterston-home-topics', '1', 25, 1, NULL),
+(70, '', '2017-05-30 13:46:24', '2017-05-30 13:46:24', 'chris-watterston-latest-case-studies', '1', 35, 1, NULL),
+(71, '', '2017-05-30 13:48:11', '2017-05-30 13:48:28', 'chris-watterston-latest-case-studies', '1', 35, 1, NULL),
+(72, '', '2017-05-30 13:54:09', '2017-05-30 13:54:30', 'chris-watterston-latest-case-studies', '1', 35, 1, NULL),
+(74, '', '2017-06-02 12:24:13', '2017-06-02 12:27:17', 'chris-watterston-home-topics', '0', 25, 1, NULL),
+(75, '', '2017-06-02 12:32:03', '2017-06-02 12:32:03', NULL, '0', 30, 1, NULL),
+(76, '', '2017-06-02 12:33:29', '2017-06-02 12:33:43', 'chris-watterston-latest-recognition', '0', 35, 1, NULL),
+(77, '', '2017-06-02 12:35:45', '2017-06-02 12:35:45', 'chris-watterston-latest-recognition', '1', 35, 1, NULL),
+(78, '', '2017-06-02 12:36:04', '2017-06-02 12:36:04', 'chris-watterston-facebook', '1', 30, 1, NULL),
+(79, '', '2017-06-02 12:57:17', '2017-06-02 12:57:34', 'chris-watterston-latest-recognition', '1', 35, 1, NULL),
+(81, '', '2017-06-02 13:01:26', '2017-06-02 13:01:26', NULL, '0', 3, 1, NULL),
+(83, '', '2017-06-02 14:58:32', '2017-06-02 14:58:32', NULL, '0', 14, 1, NULL),
+(84, '', '2017-06-02 15:04:10', '2017-06-02 15:04:10', 'chris-watterston-latest-recognition', '1', 35, 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -1676,7 +1750,10 @@ INSERT INTO `btContentLocal` (`bID`, `content`) VALUES
 (58, '<p class="colour-white type-lowercase type-semibold family-table">Copyright &copy; 2017 Chris Watterston. All rights reserved.</p>\r\n'),
 (59, '<p class="colour-white family-table">Copyright &copy; 2017 Chris Watterston. All rights reserved.</p>\r\n'),
 (63, 'Instagram feed here...'),
-(64, 'Instagram feed here...');
+(64, 'Instagram feed here...'),
+(75, 'Facebook feed here...'),
+(78, 'Facebook feed here...'),
+(83, '');
 
 -- --------------------------------------------------------
 
@@ -1748,6 +1825,13 @@ CREATE TABLE `btCoreScrapbookDisplay` (
   `bID` int(10) UNSIGNED NOT NULL,
   `bOriginalID` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `btCoreScrapbookDisplay`
+--
+
+INSERT INTO `btCoreScrapbookDisplay` (`bID`, `bOriginalID`) VALUES
+(81, 79);
 
 -- --------------------------------------------------------
 
@@ -2156,7 +2240,16 @@ CREATE TABLE `btPageList` (
 INSERT INTO `btPageList` (`bID`, `num`, `orderBy`, `cParentID`, `cThis`, `cThisParent`, `useButtonForLink`, `buttonLinkText`, `pageListTitle`, `filterByRelated`, `filterByCustomTopic`, `filterDateOption`, `filterDateDays`, `filterDateStart`, `filterDateEnd`, `relatedTopicAttributeKeyHandle`, `customTopicAttributeKeyHandle`, `customTopicTreeNodeID`, `includeName`, `includeDescription`, `includeDate`, `includeAllDescendents`, `paginate`, `displayAliases`, `ignorePermissions`, `enableExternalFiltering`, `ptID`, `pfID`, `truncateSummaries`, `displayFeaturedOnly`, `noResultsMessage`, `displayThumbnail`, `truncateChars`) VALUES
 (53, 3, 'chrono_desc', 0, 0, 1, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, '', 1, 200),
 (54, 3, 'chrono_desc', 0, 0, 1, 0, '', '', 0, 1, '', 0, NULL, NULL, '', 'post_topics', 26, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, '', 1, 200),
-(55, 3, 'chrono_desc', 0, 0, 1, 0, '', '', 0, 1, '', 0, NULL, NULL, '', 'post_topics', 26, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, '', 1, 200);
+(55, 3, 'chrono_desc', 0, 0, 1, 0, '', '', 0, 1, '', 0, NULL, NULL, '', 'post_topics', 26, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, '', 1, 200),
+(66, 4, 'chrono_desc', 0, 0, 1, 0, '', '', 1, 0, '', 0, NULL, NULL, 'post_topics', '', 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, '', 1, 200),
+(67, 4, 'chrono_desc', 0, 0, 1, 0, '', '', 0, 1, '', 0, NULL, NULL, '', 'post_topics', 8, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, '', 1, 200),
+(70, 4, 'chrono_desc', 0, 0, 1, 0, '', '', 0, 1, '', 0, NULL, NULL, '', 'post_topics', 8, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, '', 1, 210),
+(71, 4, 'chrono_desc', 0, 0, 1, 0, '', '', 0, 1, '', 0, NULL, NULL, '', 'post_topics', 8, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, '', 1, 200),
+(72, 4, 'chrono_desc', 0, 0, 1, 0, '', '', 0, 1, '', 0, NULL, NULL, '', 'post_topics', 8, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, '', 1, 230),
+(76, 4, 'display_asc', 0, 0, 1, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, '', 1, 400),
+(77, 4, 'display_asc', 0, 0, 1, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, '', 1, 400),
+(79, 4, 'display_asc', 0, 0, 1, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 1, 0, 0, 0, 0, 0, 0, 7, 0, 1, 0, '', 1, 400),
+(84, 4, 'display_asc', 0, 0, 1, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 0, 0, 0, 0, 0, 0, 0, 9, 0, 1, 0, '', 1, 400);
 
 -- --------------------------------------------------------
 
@@ -2361,6 +2454,15 @@ CREATE TABLE `btTopicList` (
   `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `btTopicList`
+--
+
+INSERT INTO `btTopicList` (`bID`, `mode`, `topicAttributeKeyHandle`, `topicTreeID`, `cParentID`, `title`) VALUES
+(68, 'S', 'post_topics', 4, 0, ''),
+(69, 'S', 'post_topics', 4, 0, ''),
+(74, 'S', 'post_topics', 4, 0, 'Topics');
+
 -- --------------------------------------------------------
 
 --
@@ -2430,7 +2532,8 @@ INSERT INTO `CollectionAttributeKeys` (`akID`) VALUES
 (13),
 (20),
 (21),
-(22);
+(22),
+(23);
 
 -- --------------------------------------------------------
 
@@ -2582,6 +2685,20 @@ INSERT INTO `CollectionAttributeValues` (`cID`, `cvID`, `akID`, `avID`) VALUES
 (1, 4, 2, 210),
 (1, 5, 2, 210),
 (1, 6, 2, 210),
+(1, 7, 2, 210),
+(1, 8, 2, 210),
+(1, 9, 2, 210),
+(1, 10, 2, 210),
+(1, 11, 2, 210),
+(1, 12, 2, 210),
+(1, 13, 2, 210),
+(1, 14, 2, 210),
+(1, 15, 2, 210),
+(1, 16, 2, 210),
+(1, 17, 2, 210),
+(1, 18, 2, 210),
+(1, 19, 2, 210),
+(1, 20, 2, 210),
 (168, 2, 2, 211),
 (168, 2, 20, 212),
 (168, 2, 22, 213),
@@ -2612,7 +2729,25 @@ INSERT INTO `CollectionAttributeValues` (`cID`, `cvID`, `akID`, `avID`) VALUES
 (171, 3, 2, 274),
 (171, 3, 3, 275),
 (171, 3, 20, 276),
-(171, 3, 22, 277);
+(171, 3, 22, 277),
+(173, 1, 2, 323),
+(173, 1, 3, 324),
+(173, 1, 20, 325),
+(173, 1, 22, 327),
+(173, 2, 2, 328),
+(173, 2, 3, 329),
+(173, 2, 20, 330),
+(173, 2, 21, 331),
+(173, 2, 22, 332),
+(176, 1, 20, 339),
+(176, 2, 20, 340),
+(176, 2, 23, 341),
+(174, 3, 1, 342),
+(174, 3, 2, 343),
+(174, 3, 9, 344),
+(174, 3, 13, 345),
+(176, 3, 20, 346),
+(176, 3, 23, 347);
 
 -- --------------------------------------------------------
 
@@ -2632,7 +2767,7 @@ CREATE TABLE `Collections` (
 --
 
 INSERT INTO `Collections` (`cID`, `cDateAdded`, `cDateModified`, `cHandle`) VALUES
-(1, '2017-05-22 15:59:25', '2017-05-24 11:11:33', NULL),
+(1, '2017-05-22 15:59:25', '2017-06-02 15:04:26', NULL),
 (2, '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'dashboard'),
 (3, '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'sitemap'),
 (4, '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'full'),
@@ -2802,7 +2937,12 @@ INSERT INTO `Collections` (`cID`, `cDateAdded`, `cDateModified`, `cHandle`) VALU
 (168, '2017-05-24 10:53:29', '2017-05-24 12:55:15', ''),
 (169, '2017-05-24 11:07:06', '2017-05-24 12:56:05', ''),
 (170, '2017-05-24 11:08:13', '2017-05-24 11:08:13', ''),
-(171, '2017-05-24 11:08:23', '2017-05-24 13:12:56', '');
+(171, '2017-05-24 11:08:23', '2017-05-24 13:12:56', ''),
+(172, '2017-05-25 12:53:39', '2017-05-25 12:53:39', NULL),
+(173, '2017-05-30 13:41:33', '2017-05-30 13:43:38', ''),
+(174, '2017-06-02 14:58:31', '2017-06-02 15:20:21', ''),
+(175, '2017-06-02 15:09:34', '2017-06-02 15:09:34', NULL),
+(176, '2017-06-02 15:13:48', '2017-06-02 15:22:10', '');
 
 -- --------------------------------------------------------
 
@@ -2827,130 +2967,134 @@ CREATE TABLE `CollectionSearchIndexAttributes` (
   `ak_exclude_sitemapxml` tinyint(1) DEFAULT '0',
   `ak_micro_post` tinyint(1) DEFAULT '0',
   `ak_post_topics` longtext COLLATE utf8_unicode_ci,
-  `ak_casestudy_topics` longtext COLLATE utf8_unicode_ci
+  `ak_casestudy_topics` longtext COLLATE utf8_unicode_ci,
+  `ak_description_rich` longtext COLLATE utf8_unicode_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `CollectionSearchIndexAttributes`
 --
 
-INSERT INTO `CollectionSearchIndexAttributes` (`cID`, `ak_meta_title`, `ak_meta_description`, `ak_meta_keywords`, `ak_desktop_priority`, `ak_is_desktop`, `ak_icon_dashboard`, `ak_exclude_nav`, `ak_exclude_page_list`, `ak_header_extra_content`, `ak_tags`, `ak_is_featured`, `ak_exclude_search_index`, `ak_exclude_sitemapxml`, `ak_micro_post`, `ak_post_topics`, `ak_casestudy_topics`) VALUES
-(1, NULL, 'Welcome to Chris Watterston', NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(2, NULL, NULL, NULL, '0.0000', 0, 'fa fa-th-large', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(3, NULL, NULL, 'pages, add page, delete page, copy, move, alias', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(4, NULL, NULL, 'pages, add page, delete page, copy, move, alias', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(5, NULL, NULL, 'pages, add page, delete page, copy, move, alias, bulk', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(6, NULL, NULL, 'find page, search page, search, find, pages, sitemap', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(8, NULL, NULL, 'add file, delete file, copy, move, alias, resize, crop, rename, images, title, attribute', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(9, NULL, NULL, 'file, file attributes, title, attribute, description, rename', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(10, NULL, NULL, 'files, category, categories', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(11, NULL, NULL, 'new file set', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(12, NULL, NULL, 'users, groups, people, find, delete user, remove user, change password, password', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(13, NULL, NULL, 'find, search, people, delete user, remove user, change password, password', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(14, NULL, NULL, 'user, group, people, permissions, expire, badges', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(15, NULL, NULL, 'user attributes, user data, gather data, registration data', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(16, NULL, NULL, 'new user, create', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(17, NULL, NULL, 'new user group, new group, group, create', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(19, NULL, NULL, 'group set', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(20, NULL, NULL, 'community, points, karma', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(22, NULL, NULL, 'action, community actions', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(25, NULL, NULL, 'forms, log, error, email, mysql, exception, survey', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(26, NULL, NULL, 'forms, questions, response, data', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(27, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 1, 0, 0, NULL, NULL),
-(28, NULL, NULL, 'questions, quiz, response', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(29, NULL, NULL, 'forms, log, error, email, mysql, exception, survey, history', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(31, NULL, NULL, 'new theme, theme, active theme, change theme, template, css', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(32, NULL, NULL, 'page types', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(34, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(35, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(36, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(37, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(38, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(39, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(41, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(42, NULL, NULL, 'page attributes, custom', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(43, NULL, NULL, 'single, page, custom, application', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(44, NULL, NULL, 'atom, rss, feed, syndication', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(46, NULL, NULL, NULL, '0.0000', 0, 'icon-bullhorn', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(48, NULL, NULL, 'stacks, global areas, reusable content, scrapbook, copy, paste, paste block, copy block, site name, logo', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(50, NULL, NULL, 'edit stacks, view stacks, all stacks', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 1, 0, 0, NULL, NULL),
-(51, NULL, NULL, 'block, refresh, custom', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(52, NULL, NULL, 'add-on, addon, add on, package, app, ecommerce, discussions, forums, themes, templates, blocks', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(53, NULL, NULL, 'add-on, addon, ecommerce, install, discussions, forums, themes, templates, blocks', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(54, NULL, NULL, 'update, upgrade', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(55, NULL, NULL, 'concrete5.org, my account, marketplace', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(56, NULL, NULL, 'buy theme, new theme, marketplace, template', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(57, NULL, NULL, 'buy addon, buy add on, buy add-on, purchase addon, purchase add on, purchase add-on, find addon, new addon, marketplace', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(58, NULL, NULL, 'dashboard, configuration', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(60, NULL, NULL, 'website name, title', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(61, NULL, NULL, 'accessibility, easy mode', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(62, NULL, NULL, 'sharing, facebook, twitter', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(63, NULL, NULL, 'logo, favicon, iphone, icon, bookmark', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(64, NULL, NULL, 'tinymce, content block, fonts, editor, content, overlay', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(65, NULL, NULL, 'translate, translation, internationalization, multilingual', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(66, NULL, NULL, 'timezone, profile, locale', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(67, NULL, NULL, 'site attributes', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 1, 0, 0, NULL, NULL),
-(69, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(70, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(71, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(72, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(73, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(74, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(76, NULL, NULL, 'multilingual, localization, internationalization, i18n', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(82, NULL, NULL, 'vanity, pretty url, redirection, hostname, canonical, seo, pageview, view', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(83, NULL, NULL, 'bulk, seo, change keywords, engine, optimization, search', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(84, NULL, NULL, 'traffic, statistics, google analytics, quant, pageviews, hits', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(85, NULL, NULL, 'pretty, slug', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(86, NULL, NULL, 'configure search, site search, search option', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(88, NULL, NULL, 'file options, file manager, upload, modify', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(89, NULL, NULL, 'security, files, media, extension, manager, upload', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(90, NULL, NULL, 'images, picture, responsive, retina', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(91, NULL, NULL, 'uploading, upload, images, image, resizing, manager', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(92, NULL, NULL, 'security, alternate storage, hide files', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(94, NULL, NULL, 'cache option, change cache, override, turn on cache, turn off cache, no cache, page cache, caching', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(95, NULL, NULL, 'cache option, turn off cache, no cache, page cache, caching', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(96, NULL, NULL, 'index search, reindex search, build sitemap, sitemap.xml, clear old versions, page versions, remove old', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(97, NULL, NULL, 'queries, database, mysql', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(99, NULL, NULL, 'editors, hide site, offline, private, public, access', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(100, NULL, NULL, 'security, actions, administrator, admin, package, marketplace, search', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(104, NULL, NULL, 'security, lock ip, lock out, block ip, address, restrict, access', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(105, NULL, NULL, 'security, registration', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(106, NULL, NULL, 'antispam, block spam, security', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(107, NULL, NULL, 'lock site, under construction, hide, hidden', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(109, NULL, NULL, 'profile, login, redirect, specific, dashboard, administrators', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(110, NULL, NULL, 'member profile, member page, community, forums, social, avatar', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(111, NULL, NULL, 'signup, new user, community, public registration, public, registration', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(112, NULL, NULL, 'auth, authentication, types, oauth, facebook, login, registration', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(113, NULL, NULL, 'global, password, reset, change password, force, sign out', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(115, NULL, NULL, 'smtp, mail settings', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(116, NULL, NULL, 'email server, mail settings, mail configuration, external, internal', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(117, NULL, NULL, 'test smtp, test mail', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(118, NULL, NULL, 'email server, mail settings, mail configuration, private message, message system, import, email, message', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(119, NULL, NULL, 'conversations', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(120, NULL, NULL, 'conversations', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(121, NULL, NULL, 'conversations ratings, ratings, community, community points', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(122, NULL, NULL, 'conversations bad words, banned words, banned, bad words, bad, words, list', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(124, NULL, NULL, 'attribute configuration', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(125, NULL, NULL, 'attributes, sets', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(126, NULL, NULL, 'attributes, types', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(127, NULL, NULL, 'topics, tags, taxonomy', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(129, NULL, NULL, NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 1, 0, 0, NULL, NULL),
-(130, NULL, NULL, 'overrides, system info, debug, support, help', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(131, NULL, NULL, 'errors, exceptions, develop, support, help', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(132, NULL, NULL, 'email, logging, logs, smtp, pop, errors, mysql, log', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(133, NULL, NULL, 'network, proxy server', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(134, NULL, NULL, 'database, entities, doctrine, orm', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(135, NULL, NULL, 'export, backup, database, sql, mysql, encryption, restore', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(137, NULL, NULL, 'upgrade, new version, update', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(138, NULL, NULL, NULL, '2.0000', 1, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(140, NULL, NULL, NULL, '0.0000', 0, 'fa fa-trash-o', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(143, NULL, NULL, NULL, '0.0000', 0, 'fa fa-briefcase', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(149, NULL, NULL, NULL, '0.0000', 0, 'fa fa-edit', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(150, NULL, NULL, NULL, '0.0000', 0, 'fa fa-th', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(152, NULL, NULL, NULL, '1.0000', 1, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL),
-(168, NULL, 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Posts/News||/Latest Feed||', NULL),
-(169, NULL, 'Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat. Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in.', 'hello, world', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 1, '||/Posts/Family||/Latest Feed||', NULL),
-(171, NULL, 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', 'tester, sausage', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Posts/Inspirational||/Latest Feed||', NULL);
+INSERT INTO `CollectionSearchIndexAttributes` (`cID`, `ak_meta_title`, `ak_meta_description`, `ak_meta_keywords`, `ak_desktop_priority`, `ak_is_desktop`, `ak_icon_dashboard`, `ak_exclude_nav`, `ak_exclude_page_list`, `ak_header_extra_content`, `ak_tags`, `ak_is_featured`, `ak_exclude_search_index`, `ak_exclude_sitemapxml`, `ak_micro_post`, `ak_post_topics`, `ak_casestudy_topics`, `ak_description_rich`) VALUES
+(1, NULL, 'Welcome to Chris Watterston', NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(2, NULL, NULL, NULL, '0.0000', 0, 'fa fa-th-large', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(3, NULL, NULL, 'pages, add page, delete page, copy, move, alias', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(4, NULL, NULL, 'pages, add page, delete page, copy, move, alias', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(5, NULL, NULL, 'pages, add page, delete page, copy, move, alias, bulk', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(6, NULL, NULL, 'find page, search page, search, find, pages, sitemap', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(8, NULL, NULL, 'add file, delete file, copy, move, alias, resize, crop, rename, images, title, attribute', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(9, NULL, NULL, 'file, file attributes, title, attribute, description, rename', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(10, NULL, NULL, 'files, category, categories', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(11, NULL, NULL, 'new file set', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(12, NULL, NULL, 'users, groups, people, find, delete user, remove user, change password, password', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(13, NULL, NULL, 'find, search, people, delete user, remove user, change password, password', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(14, NULL, NULL, 'user, group, people, permissions, expire, badges', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(15, NULL, NULL, 'user attributes, user data, gather data, registration data', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(16, NULL, NULL, 'new user, create', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(17, NULL, NULL, 'new user group, new group, group, create', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(19, NULL, NULL, 'group set', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(20, NULL, NULL, 'community, points, karma', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(22, NULL, NULL, 'action, community actions', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(25, NULL, NULL, 'forms, log, error, email, mysql, exception, survey', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(26, NULL, NULL, 'forms, questions, response, data', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(27, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 1, 0, 0, NULL, NULL, NULL),
+(28, NULL, NULL, 'questions, quiz, response', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(29, NULL, NULL, 'forms, log, error, email, mysql, exception, survey, history', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(31, NULL, NULL, 'new theme, theme, active theme, change theme, template, css', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(32, NULL, NULL, 'page types', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(34, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(35, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(36, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(37, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(38, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(39, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(41, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(42, NULL, NULL, 'page attributes, custom', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(43, NULL, NULL, 'single, page, custom, application', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(44, NULL, NULL, 'atom, rss, feed, syndication', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(46, NULL, NULL, NULL, '0.0000', 0, 'icon-bullhorn', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(48, NULL, NULL, 'stacks, global areas, reusable content, scrapbook, copy, paste, paste block, copy block, site name, logo', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(50, NULL, NULL, 'edit stacks, view stacks, all stacks', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 1, 0, 0, NULL, NULL, NULL),
+(51, NULL, NULL, 'block, refresh, custom', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(52, NULL, NULL, 'add-on, addon, add on, package, app, ecommerce, discussions, forums, themes, templates, blocks', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(53, NULL, NULL, 'add-on, addon, ecommerce, install, discussions, forums, themes, templates, blocks', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(54, NULL, NULL, 'update, upgrade', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(55, NULL, NULL, 'concrete5.org, my account, marketplace', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(56, NULL, NULL, 'buy theme, new theme, marketplace, template', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(57, NULL, NULL, 'buy addon, buy add on, buy add-on, purchase addon, purchase add on, purchase add-on, find addon, new addon, marketplace', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(58, NULL, NULL, 'dashboard, configuration', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(60, NULL, NULL, 'website name, title', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(61, NULL, NULL, 'accessibility, easy mode', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(62, NULL, NULL, 'sharing, facebook, twitter', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(63, NULL, NULL, 'logo, favicon, iphone, icon, bookmark', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(64, NULL, NULL, 'tinymce, content block, fonts, editor, content, overlay', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(65, NULL, NULL, 'translate, translation, internationalization, multilingual', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(66, NULL, NULL, 'timezone, profile, locale', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(67, NULL, NULL, 'site attributes', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 1, 0, 0, NULL, NULL, NULL),
+(69, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(70, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(71, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(72, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(73, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(74, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(76, NULL, NULL, 'multilingual, localization, internationalization, i18n', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(82, NULL, NULL, 'vanity, pretty url, redirection, hostname, canonical, seo, pageview, view', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(83, NULL, NULL, 'bulk, seo, change keywords, engine, optimization, search', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(84, NULL, NULL, 'traffic, statistics, google analytics, quant, pageviews, hits', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(85, NULL, NULL, 'pretty, slug', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(86, NULL, NULL, 'configure search, site search, search option', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(88, NULL, NULL, 'file options, file manager, upload, modify', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(89, NULL, NULL, 'security, files, media, extension, manager, upload', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(90, NULL, NULL, 'images, picture, responsive, retina', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(91, NULL, NULL, 'uploading, upload, images, image, resizing, manager', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(92, NULL, NULL, 'security, alternate storage, hide files', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(94, NULL, NULL, 'cache option, change cache, override, turn on cache, turn off cache, no cache, page cache, caching', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(95, NULL, NULL, 'cache option, turn off cache, no cache, page cache, caching', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(96, NULL, NULL, 'index search, reindex search, build sitemap, sitemap.xml, clear old versions, page versions, remove old', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(97, NULL, NULL, 'queries, database, mysql', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(99, NULL, NULL, 'editors, hide site, offline, private, public, access', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(100, NULL, NULL, 'security, actions, administrator, admin, package, marketplace, search', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(104, NULL, NULL, 'security, lock ip, lock out, block ip, address, restrict, access', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(105, NULL, NULL, 'security, registration', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(106, NULL, NULL, 'antispam, block spam, security', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(107, NULL, NULL, 'lock site, under construction, hide, hidden', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(109, NULL, NULL, 'profile, login, redirect, specific, dashboard, administrators', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(110, NULL, NULL, 'member profile, member page, community, forums, social, avatar', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(111, NULL, NULL, 'signup, new user, community, public registration, public, registration', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(112, NULL, NULL, 'auth, authentication, types, oauth, facebook, login, registration', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(113, NULL, NULL, 'global, password, reset, change password, force, sign out', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(115, NULL, NULL, 'smtp, mail settings', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(116, NULL, NULL, 'email server, mail settings, mail configuration, external, internal', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(117, NULL, NULL, 'test smtp, test mail', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(118, NULL, NULL, 'email server, mail settings, mail configuration, private message, message system, import, email, message', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(119, NULL, NULL, 'conversations', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(120, NULL, NULL, 'conversations', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(121, NULL, NULL, 'conversations ratings, ratings, community, community points', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(122, NULL, NULL, 'conversations bad words, banned words, banned, bad words, bad, words, list', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(124, NULL, NULL, 'attribute configuration', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(125, NULL, NULL, 'attributes, sets', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(126, NULL, NULL, 'attributes, types', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(127, NULL, NULL, 'topics, tags, taxonomy', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(129, NULL, NULL, NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 1, 0, 0, NULL, NULL, NULL),
+(130, NULL, NULL, 'overrides, system info, debug, support, help', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(131, NULL, NULL, 'errors, exceptions, develop, support, help', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(132, NULL, NULL, 'email, logging, logs, smtp, pop, errors, mysql, log', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(133, NULL, NULL, 'network, proxy server', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(134, NULL, NULL, 'database, entities, doctrine, orm', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(135, NULL, NULL, 'export, backup, database, sql, mysql, encryption, restore', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(137, NULL, NULL, 'upgrade, new version, update', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(138, NULL, NULL, NULL, '2.0000', 1, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(140, NULL, NULL, NULL, '0.0000', 0, 'fa fa-trash-o', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(143, NULL, NULL, NULL, '0.0000', 0, 'fa fa-briefcase', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(149, NULL, NULL, NULL, '0.0000', 0, 'fa fa-edit', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(150, NULL, NULL, NULL, '0.0000', 0, 'fa fa-th', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(152, NULL, NULL, NULL, '1.0000', 1, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(168, NULL, 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Posts/News||/Latest Feed||', NULL, NULL),
+(169, NULL, 'Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat. Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in.', 'hello, world', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 1, '||/Posts/Family||/Latest Feed||', NULL, NULL),
+(171, NULL, 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', 'tester, sausage', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Posts/Inspirational||/Latest Feed||', NULL, NULL),
+(173, NULL, 'Morbi sit amet odio est. Etiam ex quam, viverra ac porta ut, lobortis non ipsum. Praesent sollicitudin orci in ante placerat, eu gravida massa iaculis. Phasellus a est varius, imperdiet mi nec, hendrerit tortor. Nulla tincidunt magna nec tincidunt vehicula. Phasellus tristique tempor diam, vitae luctus enim aliquam eu. Cras dapibus vehicula libero quis interdum.', '1970 boat, broom speed boat, project boat', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, '||/Posts/Inspirational||', NULL, NULL),
+(174, '', '', NULL, '0.0000', 0, NULL, 0, 0, '', NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(176, NULL, NULL, NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, '<h2>A mobile app for every side of education.</h2>\n\n<h2>Starting with your SKOOL.</h2>\n\n<p>Areas of education are turning digital, and so are parent demands. Parents like to be updated in a convenient way. A way that doesn&#39;t always require them to visit a blog, download a document or search your website relentlessly.</p>\n\n<p><a class="abtn" href="#">Find Out More</a></p>\n');
 
 -- --------------------------------------------------------
 
@@ -2994,6 +3138,55 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (1, 4, 53, 'Header Latest Feed', 34, 0, 1, 0, 0, 0, 0, 0),
 (1, 5, 54, 'Header Latest Feed', 34, 0, 1, 0, 0, 0, 0, 0),
 (1, 6, 55, 'Header Latest Feed', 34, 0, 1, 0, 0, 0, 0, 0),
+(1, 7, 55, 'Header Latest Feed', 34, 0, 0, 0, 0, 0, 0, 0),
+(1, 7, 66, 'Content Area One', 35, 0, 1, 0, 0, 0, 0, 0),
+(1, 8, 55, 'Header Latest Feed', 34, 0, 0, 0, 0, 0, 0, 0),
+(1, 8, 67, 'Content Area One', 35, 0, 1, 0, 0, 0, 0, 0),
+(1, 9, 55, 'Header Latest Feed', 34, 0, 0, 0, 0, 0, 0, 0),
+(1, 9, 67, 'Content Area One', 35, 0, 0, 0, 0, 0, 0, 0),
+(1, 9, 68, 'Content Area Footer', 36, 0, 1, 0, 0, 0, 0, 0),
+(1, 10, 55, 'Header Latest Feed', 34, 0, 0, 0, 0, 0, 0, 0),
+(1, 10, 67, 'Content Area One', 35, 0, 0, 0, 0, 0, 0, 0),
+(1, 10, 69, 'Content Area Footer', 36, 0, 1, 0, 0, 0, 0, 0),
+(1, 11, 55, 'Header Latest Feed', 34, 0, 0, 0, 0, 0, 0, 0),
+(1, 11, 69, 'Content Area Footer', 36, 0, 0, 0, 0, 0, 0, 0),
+(1, 11, 70, 'Content Area One', 35, 0, 1, 0, 0, 0, 0, 0),
+(1, 12, 55, 'Header Latest Feed', 34, 0, 0, 0, 0, 0, 0, 0),
+(1, 12, 69, 'Content Area Footer', 36, 0, 0, 0, 0, 0, 0, 0),
+(1, 12, 71, 'Content Area One', 35, 0, 1, 0, 0, 0, 0, 0),
+(1, 13, 55, 'Header Latest Feed', 34, 0, 0, 0, 0, 0, 0, 0),
+(1, 13, 69, 'Content Area Footer', 36, 0, 0, 0, 0, 0, 0, 0),
+(1, 13, 72, 'Content Area One', 35, 0, 1, 0, 0, 0, 0, 0),
+(1, 14, 55, 'Header Latest Feed', 34, 0, 0, 0, 0, 0, 0, 0),
+(1, 14, 72, 'Content Area One', 35, 0, 0, 0, 0, 0, 0, 0),
+(1, 15, 55, 'Header Latest Feed', 34, 0, 0, 0, 0, 0, 0, 0),
+(1, 15, 72, 'Content Area One', 35, 0, 0, 0, 0, 0, 0, 0),
+(1, 15, 74, 'Content Area Footer One', 37, 0, 1, 0, 0, 0, 0, 0),
+(1, 16, 55, 'Header Latest Feed', 34, 0, 0, 0, 0, 0, 0, 0),
+(1, 16, 72, 'Content Area One', 35, 0, 0, 0, 0, 0, 0, 0),
+(1, 16, 74, 'Content Area Footer One', 37, 0, 0, 0, 0, 0, 0, 0),
+(1, 16, 75, 'Content Area Two', 38, 0, 1, 0, 0, 0, 0, 0),
+(1, 16, 76, 'Content Area Footer Two', 39, 0, 1, 0, 0, 0, 0, 0),
+(1, 17, 55, 'Header Latest Feed', 34, 0, 0, 0, 0, 0, 0, 0),
+(1, 17, 72, 'Content Area One', 35, 0, 0, 0, 0, 0, 0, 0),
+(1, 17, 74, 'Content Area Footer One', 37, 0, 0, 0, 0, 0, 0, 0),
+(1, 17, 77, 'Content Area Footer Two', 39, 0, 1, 0, 0, 0, 0, 0),
+(1, 17, 78, 'Content Area Two', 38, 0, 1, 0, 0, 0, 0, 0),
+(1, 18, 55, 'Header Latest Feed', 34, 0, 0, 0, 0, 0, 0, 0),
+(1, 18, 72, 'Content Area One', 35, 0, 0, 0, 0, 0, 0, 0),
+(1, 18, 74, 'Content Area Footer One', 37, 0, 0, 0, 0, 0, 0, 0),
+(1, 18, 78, 'Content Area Two', 38, 0, 0, 0, 0, 0, 0, 0),
+(1, 18, 79, 'Content Area Footer Two', 39, 0, 1, 0, 0, 0, 0, 0),
+(1, 19, 55, 'Header Latest Feed', 34, 0, 0, 0, 0, 0, 0, 0),
+(1, 19, 72, 'Content Area One', 35, 0, 0, 0, 0, 0, 0, 0),
+(1, 19, 74, 'Content Area Footer One', 37, 0, 0, 0, 0, 0, 0, 0),
+(1, 19, 78, 'Content Area Footer Two', 38, 0, 0, 0, 0, 0, 0, 0),
+(1, 19, 81, 'Content Area Two', 40, 0, 1, 0, 0, 0, 0, 0),
+(1, 20, 55, 'Header Latest Feed', 34, 0, 0, 0, 0, 0, 0, 0),
+(1, 20, 72, 'Content Area One', 35, 0, 0, 0, 0, 0, 0, 0),
+(1, 20, 74, 'Content Area Footer One', 37, 0, 0, 0, 0, 0, 0, 0),
+(1, 20, 78, 'Content Area Footer Two', 38, 0, 0, 0, 0, 0, 0, 0),
+(1, 20, 84, 'Content Area Two', NULL, 0, 1, 0, 0, 0, 0, 0),
 (138, 1, 1, 'Main', 1, 0, 1, 0, 0, 0, 0, 0),
 (138, 1, 2, 'Main', 2, 1, 1, 0, 0, 0, 0, 0),
 (138, 1, 3, 'Main : 1', 3, 0, 1, 0, 0, 0, 0, 0),
@@ -3071,7 +3264,10 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (166, 4, 51, 'Main', 32, 0, 0, 0, 0, 0, 0, 0),
 (166, 4, 63, 'Main', 33, 1, 1, 0, 0, 0, 0, 0),
 (166, 5, 51, 'Main', 32, 0, 0, 0, 0, 0, 0, 0),
-(166, 5, 64, 'Main', 33, 1, 1, 0, 0, 0, 0, 0);
+(166, 5, 64, 'Main', 33, 1, 1, 0, 0, 0, 0, 0),
+(174, 1, 83, 'Main', 41, 0, 1, 0, 0, 0, 0, 0),
+(174, 2, 83, 'Main', 41, 0, 0, 0, 0, 0, 0, 0),
+(174, 3, 83, 'Main', 41, 0, 0, 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -3188,7 +3384,21 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (1, 3, 'Home', '', '', '2017-05-22 15:59:25', '2017-05-23 14:51:24', 'New Version 3', 0, 0, 1, 1, 2, 5, NULL, NULL),
 (1, 4, 'Home', '', '', '2017-05-22 15:59:25', '2017-05-24 10:59:34', 'Version 4', 0, 0, 1, 1, 2, 5, NULL, NULL),
 (1, 5, 'Home', '', '', '2017-05-22 15:59:25', '2017-05-24 11:03:55', 'Version 5', 0, 0, 1, 1, 2, 5, NULL, NULL),
-(1, 6, 'Home', '', '', '2017-05-22 15:59:25', '2017-05-24 11:09:53', 'Version 6', 1, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 6, 'Home', '', '', '2017-05-22 15:59:25', '2017-05-24 11:09:53', 'Version 6', 0, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 7, 'Home', '', '', '2017-05-22 15:59:25', '2017-05-25 12:50:56', 'Version 7', 0, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 8, 'Home', '', '', '2017-05-22 15:59:25', '2017-05-25 12:54:02', 'Version 8', 0, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 9, 'Home', '', '', '2017-05-22 15:59:25', '2017-05-26 09:45:35', 'Version 9', 0, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 10, 'Home', '', '', '2017-05-22 15:59:25', '2017-05-26 09:48:18', 'Version 10', 0, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 11, 'Home', '', '', '2017-05-22 15:59:25', '2017-05-30 13:46:23', 'Version 11', 0, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 12, 'Home', '', '', '2017-05-22 15:59:25', '2017-05-30 13:48:10', 'Version 12', 0, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 13, 'Home', '', '', '2017-05-22 15:59:25', '2017-05-30 13:54:09', 'Version 13', 0, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 14, 'Home', '', '', '2017-05-22 15:59:25', '2017-06-02 12:23:22', 'Version 14', 0, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 15, 'Home', '', '', '2017-05-22 15:59:25', '2017-06-02 12:24:13', 'Version 15', 0, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 16, 'Home', '', '', '2017-05-22 15:59:25', '2017-06-02 12:32:03', 'Version 16', 0, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 17, 'Home', '', '', '2017-05-22 15:59:25', '2017-06-02 12:35:45', 'Version 17', 0, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 18, 'Home', '', '', '2017-05-22 15:59:25', '2017-06-02 12:57:17', 'Version 18', 0, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 19, 'Home', '', '', '2017-05-22 15:59:25', '2017-06-02 13:00:44', 'Version 19', 0, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 20, 'Home', '', '', '2017-05-22 15:59:25', '2017-06-02 15:04:10', 'Version 20', 1, 0, 1, 1, 2, 5, NULL, NULL),
 (2, 1, 'Dashboard', 'dashboard', '', '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'Initial Version', 1, 0, 1, NULL, 0, 0, NULL, NULL),
 (3, 1, 'Sitemap', 'sitemap', 'Whole world at a glance.', '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'Initial Version', 1, 0, 1, NULL, 0, 0, NULL, NULL),
 (4, 1, 'Full Sitemap', 'full', '', '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'Initial Version', 1, 0, 1, NULL, 0, 0, NULL, NULL),
@@ -3401,7 +3611,17 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (170, 1, '', '', NULL, '2017-05-24 11:08:13', '2017-05-24 11:08:13', 'Initial Version', 0, 1, 1, NULL, 0, 6, NULL, NULL),
 (171, 1, 'Entering 2017 with a new desk and mindset', 'entering-2017-with-a-new-desk-and-mindset', 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', '2017-05-24 11:08:00', '2017-05-24 11:08:23', 'Initial Version', 0, 0, 1, 1, 0, 6, NULL, NULL),
 (171, 2, 'Entering 2017 with a new desk and mindset', 'entering-2017-with-a-new-desk-and-mindset', 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', '2017-05-24 11:08:00', '2017-05-24 12:56:48', 'New Version 2', 0, 0, 1, 1, 0, 6, NULL, NULL),
-(171, 3, 'Entering 2017 with a new desk and mindset', 'entering-2017-with-a-new-desk-and-mindset', 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', '2017-05-24 11:08:00', '2017-05-24 13:12:56', 'New Version 3', 1, 0, 1, 1, 0, 6, NULL, NULL);
+(171, 3, 'Entering 2017 with a new desk and mindset', 'entering-2017-with-a-new-desk-and-mindset', 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', '2017-05-24 11:08:00', '2017-05-24 13:12:56', 'New Version 3', 1, 0, 1, 1, 0, 6, NULL, NULL),
+(172, 1, '', NULL, NULL, '2017-05-25 12:53:39', '2017-05-25 12:53:39', 'Initial Version', 1, 0, NULL, NULL, 0, 5, NULL, NULL),
+(173, 1, '1970\'s Speed boat project finally finish!', '1970s-speed-boat-project-finally-finish', 'Morbi sit amet odio est. Etiam ex quam, viverra ac porta ut, lobortis non ipsum. Praesent sollicitudin orci in ante placerat, eu gravida massa iaculis. Phasellus a est varius, imperdiet mi nec, hendrerit tortor. Nulla tincidunt magna nec tincidunt vehicula. Phasellus tristique tempor diam, vitae luctus enim aliquam eu. Cras dapibus vehicula libero quis interdum.', '2017-05-02 13:41:00', '2017-05-30 13:41:33', 'Initial Version', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(173, 2, '1970\'s Speed boat project finally finish!', '1970s-speed-boat-project-finally-finish', 'Morbi sit amet odio est. Etiam ex quam, viverra ac porta ut, lobortis non ipsum. Praesent sollicitudin orci in ante placerat, eu gravida massa iaculis. Phasellus a est varius, imperdiet mi nec, hendrerit tortor. Nulla tincidunt magna nec tincidunt vehicula. Phasellus tristique tempor diam, vitae luctus enim aliquam eu. Cras dapibus vehicula libero quis interdum.', '2017-05-02 13:41:00', '2017-05-30 13:43:34', 'New Version 2', 1, 0, 1, 1, 0, 6, NULL, NULL),
+(174, 1, 'Recognition', 'recognition', '', '2017-06-02 14:58:31', '2017-06-02 14:58:31', 'Initial Version', 0, 0, 1, 1, 2, 4, NULL, NULL),
+(174, 2, 'Products', 'recognition', '', '2017-06-02 14:58:00', '2017-06-02 15:20:09', 'New Version 2', 0, 0, 1, 1, 2, 4, NULL, NULL),
+(174, 3, 'Products', 'products', '', '2017-06-02 14:58:00', '2017-06-02 15:20:21', 'New Version 3', 1, 0, 1, 1, 2, 4, NULL, NULL),
+(175, 1, '', NULL, NULL, '2017-06-02 15:09:34', '2017-06-02 15:09:34', 'Initial Version', 1, 0, NULL, NULL, 0, 7, NULL, NULL),
+(176, 1, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:48', '2017-06-02 15:13:48', 'Initial Version', 0, 0, 1, 1, 2, 7, NULL, NULL),
+(176, 2, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-02 15:17:36', 'New Version 2', 0, 0, 1, 1, 2, 7, NULL, NULL),
+(176, 3, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-02 15:22:10', 'New Version 3', 1, 0, 1, 1, 2, 7, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -3459,7 +3679,7 @@ CREATE TABLE `ConfigStore` (
 --
 
 INSERT INTO `ConfigStore` (`cfKey`, `timestamp`, `cfValue`, `uID`, `pkgID`) VALUES
-('file_manager.sort.7', '2017-05-24 09:57:03', '["folderItemName","desc"]', 1, 0),
+('file_manager.sort.7', '2017-05-24 09:57:03', '["folderItemModified","desc"]', 1, 0),
 ('MAIN_HELP_LAST_VIEWED', '2017-05-22 15:01:21', '1495465281', 1, 0),
 ('NEWSFLOW_LAST_VIEWED', '2017-05-22 15:00:01', '0', 1, 0);
 
@@ -3996,7 +4216,11 @@ CREATE TABLE `FileAttributeValues` (
 
 INSERT INTO `FileAttributeValues` (`fID`, `fvID`, `akID`, `avID`) VALUES
 (1, 1, 16, 187),
-(1, 1, 17, 188);
+(1, 1, 17, 188),
+(2, 1, 16, 333),
+(2, 1, 17, 334),
+(3, 1, 16, 335),
+(3, 1, 17, 336);
 
 -- --------------------------------------------------------
 
@@ -4019,7 +4243,11 @@ CREATE TABLE `FileImageThumbnailPaths` (
 
 INSERT INTO `FileImageThumbnailPaths` (`fileID`, `fileVersionID`, `thumbnailTypeHandle`, `storageLocationID`, `path`, `isBuilt`) VALUES
 (1, 1, 'file_manager_listing', 1, '/thumbnails/file_manager_listing/3714/9561/9802/temp-image.jpg', 1),
-(1, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/3714/9561/9802/temp-image.jpg', 1);
+(1, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/3714/9561/9802/temp-image.jpg', 1),
+(2, 1, 'file_manager_listing', 1, '/thumbnails/file_manager_listing/9114/9641/2713/skoolping-example.jpg', 1),
+(2, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/9114/9641/2713/skoolping-example.jpg', 1),
+(3, 1, 'file_manager_listing', 1, '/thumbnails/file_manager_listing/4514/9641/2757/image.jpg', 1),
+(3, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/4514/9641/2757/image.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -4115,7 +4343,9 @@ CREATE TABLE `Files` (
 --
 
 INSERT INTO `Files` (`fID`, `fDateAdded`, `fPassword`, `fOverrideSetPermissions`, `ocID`, `folderTreeNodeID`, `uID`, `fslID`) VALUES
-(1, '2017-05-24 10:56:42', NULL, 0, 0, 7, 1, 1);
+(1, '2017-05-24 10:56:42', NULL, 0, 0, 7, 1, 1),
+(2, '2017-06-02 15:11:53', NULL, 0, 0, 7, 1, 1),
+(3, '2017-06-02 15:12:37', NULL, 0, 0, 7, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -4135,7 +4365,9 @@ CREATE TABLE `FileSearchIndexAttributes` (
 --
 
 INSERT INTO `FileSearchIndexAttributes` (`fID`, `ak_width`, `ak_height`, `ak_duration`) VALUES
-(1, '1024.0000', '768.0000', '0.0000');
+(1, '1024.0000', '768.0000', '0.0000'),
+(2, '512.0000', '342.0000', '0.0000'),
+(3, '512.0000', '342.0000', '0.0000');
 
 -- --------------------------------------------------------
 
@@ -4290,7 +4522,9 @@ CREATE TABLE `FileVersions` (
 --
 
 INSERT INTO `FileVersions` (`fvID`, `fvFilename`, `fvPrefix`, `fvDateAdded`, `fvActivateDateTime`, `fvIsApproved`, `fvAuthorUID`, `fvSize`, `fvApproverUID`, `fvTitle`, `fvDescription`, `fvExtension`, `fvType`, `fvTags`, `fvHasListingThumbnail`, `fvHasDetailThumbnail`, `fID`) VALUES
-(1, 'temp-image.jpg', '371495619802', '2017-05-24 10:56:42', '2017-05-24 10:56:42', 1, 1, 102515, 1, 'temp-image.jpg', '', 'jpg', 1, '', 1, 1, 1);
+(1, 'temp-image.jpg', '371495619802', '2017-05-24 10:56:42', '2017-05-24 10:56:42', 1, 1, 102515, 1, 'temp-image.jpg', '', 'jpg', 1, '', 1, 1, 1),
+(1, 'skoolping-example.jpg', '911496412713', '2017-06-02 15:11:53', '2017-06-02 15:11:53', 1, 1, 11108, 1, 'skoolping-example.jpg', '', 'jpg', 1, '', 1, 1, 2),
+(1, 'image.png', '451496412757', '2017-06-02 15:12:37', '2017-06-02 15:12:37', 1, 1, 187056, 1, 'image.png', '', 'png', 1, '', 1, 1, 3);
 
 -- --------------------------------------------------------
 
@@ -4780,7 +5014,13 @@ INSERT INTO `Logs` (`logID`, `channel`, `time`, `message`, `uID`, `level`) VALUE
 (17, 'exceptions', 1495627726, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/blocks/page_list/templates/chris-watterston-latest-home/view.php:29 Cannot use object of type Concrete\\Core\\Tree\\Node\\Type\\Topic as array (1)\n', 1, 600),
 (18, 'exceptions', 1495627900, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/blocks/page_list/templates/chris-watterston-latest-home/view.php:29 syntax error, unexpected \',\' (4)\n', 1, 600),
 (19, 'exceptions', 1495627909, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/blocks/page_list/templates/chris-watterston-latest-home/view.php:29 syntax error, unexpected \',\' (4)\n', 1, 600),
-(20, 'exceptions', 1495628765, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/blocks/page_list/templates/chris-watterston-latest-home/view.php:29 syntax error, unexpected \':\' (4)\n', 1, 600);
+(20, 'exceptions', 1495628765, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/blocks/page_list/templates/chris-watterston-latest-home/view.php:29 syntax error, unexpected \':\' (4)\n', 1, 600),
+(21, 'exceptions', 1495713194, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/blocks/page_list/templates/chris-watterston-latest-case-studies/view.php:25 Call to a member function getTreeNodeDisplayName() on null (1)\n', 1, 600),
+(22, 'application', 1496392469, 'Session Invalidated. Session user agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" did not match provided agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"', 1, 100),
+(23, 'exceptions', 1496394928, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/themes/chriswatterston/inc/header.php:21 Call to undefined method Concrete\\Core\\Page\\Page::requireAsset() (1)\n', 0, 600),
+(24, 'exceptions', 1496394956, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/concrete/src/Http/ResponseAssetGroup.php:213 "jquery" is not a valid asset group handle (0)\n', 0, 600),
+(25, 'exceptions', 1496395007, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/themes/chriswatterston/inc/header.php:21 syntax error, unexpected \'public\' (T_PUBLIC) (4)\n', 0, 600),
+(26, 'exceptions', 1496402534, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/themes/chriswatterston/home.php:142 Call to a member function display() on null (1)\n', 1, 600);
 
 -- --------------------------------------------------------
 
@@ -5146,7 +5386,10 @@ INSERT INTO `PagePaths` (`cPath`, `ppID`, `cID`, `ppIsCanonical`, `ppGeneratedFr
 ('/blog/new-dji-drone-and-my-first-arial-shots', 166, 168, 1, 1),
 ('/blog/building-a-hobbit-adventure-for-my-kids', 167, 169, 1, 1),
 ('/!drafts/170', 168, 170, 1, 1),
-('/blog/entering-2017-with-a-new-desk-and-mindset', 169, 171, 1, 1);
+('/blog/entering-2017-with-a-new-desk-and-mindset', 169, 171, 1, 1),
+('/blog/1970s-speed-boat-project-finally-finish', 170, 173, 1, 1),
+('/products', 171, 174, 1, 1),
+('/products/a-mobile-app-for-every-side-of-education-starting-with-your-skool', 172, 176, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -5323,7 +5566,7 @@ CREATE TABLE `Pages` (
 --
 
 INSERT INTO `Pages` (`cID`, `siteTreeID`, `ptID`, `cIsTemplate`, `uID`, `cIsCheckedOut`, `cCheckedOutUID`, `cCheckedOutDatetime`, `cCheckedOutDatetimeLastEdit`, `cOverrideTemplatePermissions`, `cInheritPermissionsFromCID`, `cInheritPermissionsFrom`, `cFilename`, `cPointerID`, `cPointerExternalLink`, `cPointerExternalLinkNewWindow`, `cIsActive`, `cChildren`, `cDisplayOrder`, `cParentID`, `pkgID`, `cDraftTargetParentPageID`, `cCacheFullPageContent`, `cCacheFullPageContentOverrideLifetime`, `cCacheFullPageContentLifetimeCustom`, `cIsSystemPage`) VALUES
-(1, 1, 6, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'OVERRIDE', NULL, 0, NULL, 0, 1, 17, 0, 0, 0, 0, -1, '0', 0, 0),
+(1, 1, 6, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'OVERRIDE', NULL, 0, NULL, 0, 1, 18, 0, 0, 0, 0, -1, '0', 0, 0),
 (2, 0, 0, 0, 1, 0, NULL, NULL, NULL, 1, 2, 'OVERRIDE', '/dashboard/view.php', 0, NULL, 0, 1, 11, 0, 0, 0, 0, -1, '0', 0, 1),
 (3, 0, 0, 0, 1, 0, NULL, NULL, NULL, 1, 2, 'PARENT', '/dashboard/sitemap/view.php', 0, NULL, 0, 1, 3, 1, 2, 0, 0, -1, '0', 0, 1),
 (4, 0, 0, 0, 1, 0, NULL, NULL, NULL, 1, 2, 'PARENT', '/dashboard/sitemap/full.php', 0, NULL, 0, 1, 0, 0, 3, 0, 0, -1, '0', 0, 1),
@@ -5481,10 +5724,10 @@ INSERT INTO `Pages` (`cID`, `siteTreeID`, `ptID`, `cIsTemplate`, `uID`, `cIsChec
 (156, 1, 1, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 2, 150, 0, 0, -1, '0', 0, 1),
 (157, 1, 1, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 3, 150, 0, 0, -1, '0', 0, 1),
 (158, 1, 1, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 4, 150, 0, 0, -1, '0', 0, 1),
-(159, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 1, 1, 0, 1, -1, '0', 0, 0),
-(160, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 2, 1, 0, 1, -1, '0', 0, 0),
-(161, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 3, 3, 1, 0, 1, -1, '0', 0, 0),
-(162, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 4, 1, 0, 1, -1, '0', 0, 0),
+(159, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 0, 1, 0, 1, -1, '0', 0, 0),
+(160, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 1, 1, 0, 1, -1, '0', 0, 0),
+(161, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 4, 2, 1, 0, 1, -1, '0', 0, 0),
+(162, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 3, 1, 0, 1, -1, '0', 0, 0),
 (163, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 5, 1, 0, 1, -1, '0', 0, 0),
 (164, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 6, 1, 0, 1, -1, '0', 0, 0),
 (165, 1, 1, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 5, 150, 0, 0, -1, '0', 0, 1),
@@ -5493,7 +5736,12 @@ INSERT INTO `Pages` (`cID`, `siteTreeID`, `ptID`, `cIsTemplate`, `uID`, `cIsChec
 (168, 1, 7, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 1, 161, 0, 161, -1, '0', 0, 0),
 (169, 1, 7, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 2, 161, 0, 161, -1, '0', 0, 0),
 (170, 1, 7, 0, 1, 0, NULL, NULL, NULL, 1, 149, 'PARENT', NULL, 0, NULL, 0, 0, 0, 0, 149, 0, 161, -1, '0', 0, 1),
-(171, 1, 7, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 3, 161, 0, 161, -1, '0', 0, 0);
+(171, 1, 7, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 3, 161, 0, 161, -1, '0', 0, 0),
+(172, 1, 6, 1, NULL, 0, NULL, NULL, NULL, 1, 172, 'OVERRIDE', NULL, 0, NULL, 0, 1, 0, 0, 0, 0, 0, -1, '0', 0, 0),
+(173, 1, 7, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 4, 161, 0, 161, -1, '0', 0, 0),
+(174, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 1, 4, 1, 0, 1, -1, '0', 0, 0),
+(175, 1, 9, 1, NULL, 0, NULL, NULL, NULL, 1, 175, 'OVERRIDE', NULL, 0, NULL, 0, 1, 0, 0, 0, 0, 0, -1, '0', 0, 0),
+(176, 1, 9, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 2, 174, 0, 174, -1, '0', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -5518,7 +5766,7 @@ CREATE TABLE `PageSearchIndex` (
 --
 
 INSERT INTO `PageSearchIndex` (`cID`, `content`, `cName`, `cDescription`, `cPath`, `cDatePublic`, `cDateLastIndexed`, `cDateLastSitemapped`, `cRequiresReindex`) VALUES
-(1, '', 'Home', '', '', '2017-05-22 15:59:25', '2017-05-24 11:11:40', NULL, 0),
+(1, 'Facebook feed here... ', 'Home', '', '', '2017-05-22 15:59:25', '2017-06-02 15:04:29', NULL, 0),
 (2, '', 'Dashboard', '', '/dashboard', '2017-05-22 15:59:51', '2017-05-22 16:08:35', NULL, 0),
 (3, '', 'Sitemap', 'Whole world at a glance.', '/dashboard/sitemap', '2017-05-22 15:59:51', '2017-05-22 16:08:35', NULL, 0),
 (4, '', 'Full Sitemap', '', '/dashboard/sitemap/full', '2017-05-22 15:59:51', '2017-05-22 16:08:35', NULL, 0),
@@ -5682,7 +5930,10 @@ INSERT INTO `PageSearchIndex` (`cID`, `content`, `cName`, `cDescription`, `cPath
 (166, 'Instagram.\r\n Instagram feed here... ', 'Social Feed', NULL, '/!stacks/social-feed', '2017-05-24 10:15:54', '2017-05-25 10:13:01', NULL, 0),
 (168, '', 'New DJI Drone and my first arial shots', 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', '/blog/new-dji-drone-and-my-first-arial-shots', '2017-05-24 10:53:00', '2017-05-24 12:57:18', NULL, 0),
 (169, '', 'Building a Hobbit adventure for my kids', 'Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat. Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in.', '/blog/building-a-hobbit-adventure-for-my-kids', '2017-05-24 11:07:00', '2017-05-24 12:57:18', NULL, 0),
-(171, '', 'Entering 2017 with a new desk and mindset', 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', '/blog/entering-2017-with-a-new-desk-and-mindset', '2017-05-24 11:08:00', '2017-05-24 13:13:04', NULL, 0);
+(171, '', 'Entering 2017 with a new desk and mindset', 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', '/blog/entering-2017-with-a-new-desk-and-mindset', '2017-05-24 11:08:00', '2017-05-24 13:13:04', NULL, 0),
+(173, '', '1970\'s Speed boat project finally finish!', 'Morbi sit amet odio est. Etiam ex quam, viverra ac porta ut, lobortis non ipsum. Praesent sollicitudin orci in ante placerat, eu gravida massa iaculis. Phasellus a est varius, imperdiet mi nec, hendrerit tortor. Nulla tincidunt magna nec tincidunt vehicula. Phasellus tristique tempor diam, vitae luctus enim aliquam eu. Cras dapibus vehicula libero quis interdum.', '/blog/1970s-speed-boat-project-finally-finish', '2017-05-02 13:41:00', '2017-05-30 13:43:40', NULL, 0),
+(174, '', 'Products', '', '/products', '2017-06-02 14:58:00', '2017-06-02 15:21:43', NULL, 0),
+(176, '', 'A mobile app for every side of education. Starting with your SKOOL', '', '/products/a-mobile-app-for-every-side-of-education-starting-with-your-skool', '2017-06-02 15:13:00', '2017-06-02 15:23:03', NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -5709,7 +5960,8 @@ INSERT INTO `PageTemplates` (`pTemplateID`, `pTemplateHandle`, `pTemplateIcon`, 
 (3, 'dashboard_full', '', 'Dashboard Full', 1, 0),
 (4, 'full', 'full.png', 'Full', 0, 0),
 (5, 'home', 'blank.png', 'Home', 0, 0),
-(6, 'blog', 'left_list.png', 'Blog', 0, 0);
+(6, 'blog', 'left_list.png', 'Blog', 0, 0),
+(7, 'recognition', 'grid.png', 'Recognition', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -5816,7 +6068,14 @@ INSERT INTO `PageTypeComposerFormLayoutSetControls` (`ptComposerFormLayoutSetCon
 (26, 4, 1, 'O:85:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\DescriptionCorePageProperty":12:{s:17:"\0*\0propertyHandle";s:11:"description";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:11:"description";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:4:"font";}s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 2, '', '', '', 1),
 (27, 4, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:3;}', 4, '', '', '', 1),
 (28, 6, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:3;}', 4, '', '', '', 1),
-(29, 6, 1, 'O:85:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\DescriptionCorePageProperty":12:{s:17:"\0*\0propertyHandle";s:11:"description";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:11:"description";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:4:"font";}s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 2, '', '', '', 1);
+(29, 6, 1, 'O:85:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\DescriptionCorePageProperty":12:{s:17:"\0*\0propertyHandle";s:11:"description";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:11:"description";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:4:"font";}s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 2, '', '', '', 1),
+(30, 8, 1, 'O:78:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\NameCorePageProperty":12:{s:37:"\0*\0ptComposerControlRequiredByDefault";b:1;s:17:"\0*\0propertyHandle";s:4:"name";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:4:"name";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:9:"file-text";}s:20:"\0*\0ptComposerControl";N;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 0, NULL, NULL, NULL, 1),
+(31, 8, 1, 'O:81:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\UrlSlugCorePageProperty":12:{s:17:"\0*\0propertyHandle";s:8:"url_slug";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:8:"url_slug";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:9:"file-text";}s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 1, NULL, NULL, NULL, 0),
+(32, 8, 1, 'O:82:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\DateTimeCorePageProperty":12:{s:17:"\0*\0propertyHandle";s:9:"date_time";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:9:"date_time";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:8:"calendar";}s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 2, NULL, NULL, NULL, 0),
+(34, 8, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:2;}', 3, NULL, NULL, NULL, 0),
+(35, 8, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:3;}', 4, NULL, NULL, NULL, 0),
+(36, 9, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:20;}', 1, NULL, NULL, NULL, 0),
+(37, 9, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:23;}', 0, NULL, NULL, NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -5843,7 +6102,9 @@ INSERT INTO `PageTypeComposerFormLayoutSets` (`ptComposerFormLayoutSetID`, `ptID
 (4, 7, 'Default', '', 0),
 (5, 7, 'Bespoke', '', 1),
 (6, 8, 'Default', '', 0),
-(7, 8, 'Bespoke', '', 1);
+(7, 8, 'Bespoke', '', 1),
+(8, 9, 'Default', '', 0),
+(9, 9, 'Bespoke', '', 1);
 
 -- --------------------------------------------------------
 
@@ -5871,7 +6132,8 @@ INSERT INTO `PageTypeComposerOutputBlocks` (`ptComposerOutputBlockID`, `cID`, `c
 (6, 161, 1, 'Main', 0, 6, 29),
 (8, 162, 1, 'Main', 0, 6, 31),
 (10, 163, 1, 'Main', 0, 6, 33),
-(12, 164, 1, 'Main', 0, 6, 35);
+(12, 164, 1, 'Main', 0, 6, 35),
+(14, 174, 1, 'Main', 0, 6, 83);
 
 -- --------------------------------------------------------
 
@@ -5893,7 +6155,8 @@ CREATE TABLE `PageTypeComposerOutputControls` (
 INSERT INTO `PageTypeComposerOutputControls` (`ptComposerOutputControlID`, `pTemplateID`, `ptID`, `ptComposerFormLayoutSetControlID`) VALUES
 (1, 4, 5, 6),
 (2, 5, 5, 6),
-(3, 6, 5, 6);
+(3, 6, 5, 6),
+(4, 7, 5, 6);
 
 -- --------------------------------------------------------
 
@@ -5913,7 +6176,9 @@ CREATE TABLE `PageTypePageTemplateDefaultPages` (
 
 INSERT INTO `PageTypePageTemplateDefaultPages` (`pTemplateID`, `ptID`, `cID`) VALUES
 (4, 5, 153),
-(6, 7, 167);
+(6, 7, 167),
+(5, 6, 172),
+(7, 9, 175);
 
 -- --------------------------------------------------------
 
@@ -5934,7 +6199,8 @@ INSERT INTO `PageTypePageTemplates` (`ptID`, `pTemplateID`) VALUES
 (5, 5),
 (6, 5),
 (7, 6),
-(8, 6);
+(8, 6),
+(9, 7);
 
 -- --------------------------------------------------------
 
@@ -5961,6 +6227,7 @@ INSERT INTO `PageTypePermissionAssignments` (`ptID`, `pkID`, `paID`) VALUES
 (6, 60, 9),
 (7, 60, 9),
 (8, 60, 9),
+(9, 60, 9),
 (1, 61, 9),
 (2, 61, 9),
 (3, 61, 9),
@@ -5969,6 +6236,7 @@ INSERT INTO `PageTypePermissionAssignments` (`ptID`, `pkID`, `paID`) VALUES
 (6, 61, 9),
 (7, 61, 9),
 (8, 61, 9),
+(9, 61, 9),
 (1, 62, 9),
 (2, 62, 9),
 (3, 62, 9),
@@ -5977,6 +6245,7 @@ INSERT INTO `PageTypePermissionAssignments` (`ptID`, `pkID`, `paID`) VALUES
 (6, 62, 9),
 (7, 62, 9),
 (8, 62, 9),
+(9, 62, 9),
 (1, 63, 9),
 (2, 63, 9),
 (3, 63, 9),
@@ -5985,6 +6254,7 @@ INSERT INTO `PageTypePermissionAssignments` (`ptID`, `pkID`, `paID`) VALUES
 (6, 63, 9),
 (7, 63, 9),
 (8, 63, 9),
+(9, 63, 9),
 (1, 64, 31),
 (2, 64, 32),
 (3, 64, 33),
@@ -5992,7 +6262,8 @@ INSERT INTO `PageTypePermissionAssignments` (`ptID`, `pkID`, `paID`) VALUES
 (5, 64, 36),
 (6, 64, 101),
 (7, 64, 102),
-(8, 64, 104);
+(8, 64, 104),
+(9, 64, 105);
 
 -- --------------------------------------------------------
 
@@ -6050,7 +6321,8 @@ INSERT INTO `PageTypes` (`ptID`, `ptName`, `ptHandle`, `ptPublishTargetTypeID`, 
 (5, 'Page', 'default', 3, 4, 'X', 0, 1, 0, 0, 0, 'O:68:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\AllConfiguration":7:{s:21:"\0*\0selectorFormFactor";s:0:"";s:22:"\0*\0startingPointPageID";N;s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"3";s:25:"ptPublishTargetTypeHandle";s:3:"all";s:9:"pkgHandle";b:0;s:17:"startingPointPage";s:1:"0";}', 1),
 (6, 'Home', 'home', 3, 5, 'C', 0, 0, 1, 0, 0, 'O:68:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\AllConfiguration":7:{s:21:"\0*\0selectorFormFactor";s:0:"";s:22:"\0*\0startingPointPageID";N;s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"3";s:25:"ptPublishTargetTypeHandle";s:3:"all";s:9:"pkgHandle";b:0;s:17:"startingPointPage";s:1:"0";}', 1),
 (7, 'Blog Update', 'blog_update', 1, 6, 'C', 0, 1, 2, 1, 0, 'O:75:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\ParentPageConfiguration":5:{s:12:"\0*\0cParentID";s:3:"161";s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"1";s:25:"ptPublishTargetTypeHandle";s:11:"parent_page";s:9:"pkgHandle";b:0;}', 1),
-(8, 'Case Study Update', 'casestudy_update', 1, 6, 'C', 0, 1, 3, 1, 0, 'O:75:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\ParentPageConfiguration":5:{s:12:"\0*\0cParentID";s:3:"162";s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"1";s:25:"ptPublishTargetTypeHandle";s:11:"parent_page";s:9:"pkgHandle";b:0;}', 1);
+(8, 'Case Study Update', 'casestudy_update', 1, 6, 'C', 0, 1, 3, 1, 0, 'O:75:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\ParentPageConfiguration":5:{s:12:"\0*\0cParentID";s:3:"162";s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"1";s:25:"ptPublishTargetTypeHandle";s:11:"parent_page";s:9:"pkgHandle";b:0;}', 1),
+(9, 'Recognition', 'recognition', 1, 7, 'C', 0, 0, 4, 0, 0, 'O:75:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\ParentPageConfiguration":5:{s:12:"\0*\0cParentID";s:3:"174";s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"1";s:25:"ptPublishTargetTypeHandle";s:11:"parent_page";s:9:"pkgHandle";b:0;}', 1);
 
 -- --------------------------------------------------------
 
@@ -6189,7 +6461,8 @@ INSERT INTO `PermissionAccess` (`paID`, `paIsInUse`) VALUES
 (101, 1),
 (102, 1),
 (103, 1),
-(104, 1);
+(104, 1),
+(105, 1);
 
 -- --------------------------------------------------------
 
@@ -6525,7 +6798,8 @@ INSERT INTO `PermissionAccessList` (`paID`, `peID`, `pdID`, `accessType`) VALUES
 (101, 3, 0, 10),
 (102, 3, 0, 10),
 (103, 2, 0, 10),
-(104, 3, 0, 10);
+(104, 3, 0, 10),
+(105, 3, 0, 10);
 
 -- --------------------------------------------------------
 
@@ -6778,6 +7052,13 @@ CREATE TABLE `PileContents` (
   `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `displayOrder` int(10) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `PileContents`
+--
+
+INSERT INTO `PileContents` (`pcID`, `pID`, `itemID`, `itemType`, `quantity`, `timestamp`, `displayOrder`) VALUES
+(1, 1, 79, 'BLOCK', 1, '2017-06-02 12:01:03', 1);
 
 -- --------------------------------------------------------
 
@@ -7377,7 +7658,9 @@ CREATE TABLE `TreeFileNodes` (
 --
 
 INSERT INTO `TreeFileNodes` (`treeNodeID`, `fID`) VALUES
-(25, 1);
+(25, 1),
+(32, 2),
+(33, 3);
 
 -- --------------------------------------------------------
 
@@ -7485,7 +7768,9 @@ INSERT INTO `TreeNodes` (`treeNodeID`, `treeNodeTypeID`, `treeID`, `treeNodePare
 (28, 5, 4, 9, 6, 'iOS', '2017-05-24 12:50:45', '2017-05-24 12:50:45', 0, 8),
 (29, 5, 4, 9, 7, 'Programming', '2017-05-24 12:51:37', '2017-05-24 12:51:37', 0, 8),
 (30, 5, 4, 9, 8, 'Swift', '2017-05-24 12:51:49', '2017-05-24 12:51:49', 0, 8),
-(31, 5, 4, 9, 9, 'Development', '2017-05-24 12:52:05', '2017-05-24 12:52:05', 0, 8);
+(31, 5, 4, 9, 9, 'Development', '2017-05-24 12:52:05', '2017-05-24 12:52:05', 0, 8),
+(32, 6, 3, 7, 1, '', '2017-06-02 15:11:53', '2017-06-02 15:11:53', 0, 7),
+(33, 6, 3, 7, 2, '', '2017-06-02 15:12:37', '2017-06-02 15:12:37', 0, 7);
 
 -- --------------------------------------------------------
 
@@ -7790,7 +8075,7 @@ CREATE TABLE `Users` (
 --
 
 INSERT INTO `Users` (`uID`, `uName`, `uEmail`, `uPassword`, `uIsActive`, `uIsFullRecord`, `uIsValidated`, `uDateAdded`, `uLastPasswordChange`, `uHasAvatar`, `uLastOnline`, `uLastLogin`, `uPreviousLogin`, `uNumLogins`, `uLastAuthTypeID`, `uLastIP`, `uTimezone`, `uDefaultLanguage`, `uIsPasswordReset`) VALUES
-(1, 'admin', 'hello@chriswatterston.com', '$2a$12$kJV9yqhfCBt8k6DX6w7xxuSypfc/T0vGL5u2G3M2LTUpzYnRPmRvG', 1, 1, 1, '2017-05-22 15:59:23', '2017-05-22 15:59:23', 0, 1495707093, 1495613838, 1495546718, 3, 1, '7f000001', NULL, NULL, 0);
+(1, 'admin', 'hello@chriswatterston.com', '$2a$12$kJV9yqhfCBt8k6DX6w7xxuSypfc/T0vGL5u2G3M2LTUpzYnRPmRvG', 1, 1, 1, '2017-05-22 15:59:23', '2017-05-22 15:59:23', 0, 1496413322, 1496401895, 1495613838, 4, 1, '7f000001', NULL, NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -7963,7 +8248,29 @@ INSERT INTO `WorkflowProgressHistory` (`wphID`, `wpID`, `timestamp`, `object`) V
 (44, 44, '2017-05-24 12:12:56', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"44";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"171";s:4:"cvID";s:1:"3";}'),
 (45, 45, '2017-05-25 07:59:53', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"45";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"156";s:4:"cvID";s:1:"4";}'),
 (46, 46, '2017-05-25 09:12:59', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"46";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"166";s:4:"cvID";s:1:"5";}'),
-(47, 47, '2017-05-25 10:00:39', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"47";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"165";s:4:"cvID";s:1:"5";}');
+(47, 47, '2017-05-25 10:00:39', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"47";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"165";s:4:"cvID";s:1:"5";}'),
+(48, 48, '2017-05-25 11:52:10', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"48";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:1:"7";}'),
+(49, 49, '2017-05-25 11:54:08', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"49";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:1:"8";}'),
+(50, 50, '2017-05-26 08:46:12', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"50";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:1:"9";}'),
+(51, 51, '2017-05-26 08:48:24', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"51";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:2:"10";}'),
+(52, 52, '2017-05-30 12:43:34', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"52";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"173";s:4:"cvID";s:1:"1";}'),
+(53, 53, '2017-05-30 12:43:38', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"53";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"173";s:4:"cvID";s:1:"2";}'),
+(54, 54, '2017-05-30 12:46:29', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"54";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:2:"11";}'),
+(55, 55, '2017-05-30 12:48:37', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"55";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:2:"12";}'),
+(56, 56, '2017-05-30 12:54:39', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"56";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:2:"13";}'),
+(57, 29, '2017-06-02 11:23:26', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"29";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:2:"14";}'),
+(58, 30, '2017-06-02 11:27:21', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"30";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:2:"15";}'),
+(59, 31, '2017-06-02 11:33:49', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"31";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:2:"16";}'),
+(60, 32, '2017-06-02 11:36:10', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"32";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:2:"17";}'),
+(61, 33, '2017-06-02 11:57:40', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"33";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:2:"18";}'),
+(62, 34, '2017-06-02 12:01:36', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"34";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:2:"19";}'),
+(63, 35, '2017-06-02 13:58:32', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"35";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"174";s:4:"cvID";s:1:"1";}'),
+(64, 36, '2017-06-02 14:04:26', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"36";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:2:"20";}'),
+(65, 37, '2017-06-02 14:13:49', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"37";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"176";s:4:"cvID";s:1:"1";}'),
+(66, 38, '2017-06-02 14:17:36', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"38";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"176";s:4:"cvID";s:1:"2";}'),
+(67, 39, '2017-06-02 14:20:09', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"39";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"174";s:4:"cvID";s:1:"2";}'),
+(68, 40, '2017-06-02 14:20:21', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"40";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"174";s:4:"cvID";s:1:"3";}'),
+(69, 41, '2017-06-02 14:22:10', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"41";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"176";s:4:"cvID";s:1:"3";}');
 
 -- --------------------------------------------------------
 
@@ -10252,7 +10559,7 @@ ALTER TABLE `AreaLayoutThemeGridColumns`
 -- AUTO_INCREMENT for table `Areas`
 --
 ALTER TABLE `Areas`
-  MODIFY `arID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `arID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 --
 -- AUTO_INCREMENT for table `atSelectedSocialLinks`
 --
@@ -10262,7 +10569,7 @@ ALTER TABLE `atSelectedSocialLinks`
 -- AUTO_INCREMENT for table `atSelectedTopics`
 --
 ALTER TABLE `atSelectedTopics`
-  MODIFY `avTreeTopicNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `avTreeTopicNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 --
 -- AUTO_INCREMENT for table `atSelectOptionLists`
 --
@@ -10297,7 +10604,7 @@ ALTER TABLE `AttributeTypes`
 -- AUTO_INCREMENT for table `AttributeValues`
 --
 ALTER TABLE `AttributeValues`
-  MODIFY `avID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=278;
+  MODIFY `avID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=348;
 --
 -- AUTO_INCREMENT for table `AuthenticationTypes`
 --
@@ -10317,7 +10624,7 @@ ALTER TABLE `BannedWords`
 -- AUTO_INCREMENT for table `Blocks`
 --
 ALTER TABLE `Blocks`
-  MODIFY `bID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
+  MODIFY `bID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=85;
 --
 -- AUTO_INCREMENT for table `BlockTypes`
 --
@@ -10377,7 +10684,7 @@ ALTER TABLE `btSurveyResults`
 -- AUTO_INCREMENT for table `Collections`
 --
 ALTER TABLE `Collections`
-  MODIFY `cID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=172;
+  MODIFY `cID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=177;
 --
 -- AUTO_INCREMENT for table `ConversationDiscussions`
 --
@@ -10462,7 +10769,7 @@ ALTER TABLE `FileImageThumbnailTypes`
 -- AUTO_INCREMENT for table `Files`
 --
 ALTER TABLE `Files`
-  MODIFY `fID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `fID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `FileSetFiles`
 --
@@ -10557,7 +10864,7 @@ ALTER TABLE `JobsLog`
 -- AUTO_INCREMENT for table `Logs`
 --
 ALTER TABLE `Logs`
-  MODIFY `logID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `logID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 --
 -- AUTO_INCREMENT for table `MailImporters`
 --
@@ -10597,12 +10904,12 @@ ALTER TABLE `PageFeeds`
 -- AUTO_INCREMENT for table `PagePaths`
 --
 ALTER TABLE `PagePaths`
-  MODIFY `ppID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=170;
+  MODIFY `ppID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=173;
 --
 -- AUTO_INCREMENT for table `PageTemplates`
 --
 ALTER TABLE `PageTemplates`
-  MODIFY `pTemplateID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `pTemplateID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `PageThemes`
 --
@@ -10617,22 +10924,22 @@ ALTER TABLE `PageTypeComposerControlTypes`
 -- AUTO_INCREMENT for table `PageTypeComposerFormLayoutSetControls`
 --
 ALTER TABLE `PageTypeComposerFormLayoutSetControls`
-  MODIFY `ptComposerFormLayoutSetControlID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `ptComposerFormLayoutSetControlID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 --
 -- AUTO_INCREMENT for table `PageTypeComposerFormLayoutSets`
 --
 ALTER TABLE `PageTypeComposerFormLayoutSets`
-  MODIFY `ptComposerFormLayoutSetID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `ptComposerFormLayoutSetID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT for table `PageTypeComposerOutputBlocks`
 --
 ALTER TABLE `PageTypeComposerOutputBlocks`
-  MODIFY `ptComposerOutputBlockID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `ptComposerOutputBlockID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `PageTypeComposerOutputControls`
 --
 ALTER TABLE `PageTypeComposerOutputControls`
-  MODIFY `ptComposerOutputControlID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ptComposerOutputControlID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `PageTypePublishTargetTypes`
 --
@@ -10642,12 +10949,12 @@ ALTER TABLE `PageTypePublishTargetTypes`
 -- AUTO_INCREMENT for table `PageTypes`
 --
 ALTER TABLE `PageTypes`
-  MODIFY `ptID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `ptID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT for table `PermissionAccess`
 --
 ALTER TABLE `PermissionAccess`
-  MODIFY `paID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=105;
+  MODIFY `paID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
 --
 -- AUTO_INCREMENT for table `PermissionAccessEntities`
 --
@@ -10682,7 +10989,7 @@ ALTER TABLE `PermissionKeys`
 -- AUTO_INCREMENT for table `PileContents`
 --
 ALTER TABLE `PileContents`
-  MODIFY `pcID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `pcID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `Piles`
 --
@@ -10692,12 +10999,12 @@ ALTER TABLE `Piles`
 -- AUTO_INCREMENT for table `QueueMessages`
 --
 ALTER TABLE `QueueMessages`
-  MODIFY `message_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=318;
+  MODIFY `message_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `Queues`
 --
 ALTER TABLE `Queues`
-  MODIFY `queue_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `queue_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `SavedFileSearchQueries`
 --
@@ -10782,7 +11089,7 @@ ALTER TABLE `SystemDatabaseQueryLog`
 -- AUTO_INCREMENT for table `TreeFileNodes`
 --
 ALTER TABLE `TreeFileNodes`
-  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 --
 -- AUTO_INCREMENT for table `TreeGroupNodes`
 --
@@ -10792,7 +11099,7 @@ ALTER TABLE `TreeGroupNodes`
 -- AUTO_INCREMENT for table `TreeNodes`
 --
 ALTER TABLE `TreeNodes`
-  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 --
 -- AUTO_INCREMENT for table `TreeNodeTypes`
 --
@@ -10852,7 +11159,7 @@ ALTER TABLE `UserValidationHashes`
 -- AUTO_INCREMENT for table `WorkflowProgress`
 --
 ALTER TABLE `WorkflowProgress`
-  MODIFY `wpID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `wpID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 --
 -- AUTO_INCREMENT for table `WorkflowProgressCategories`
 --
@@ -10862,12 +11169,12 @@ ALTER TABLE `WorkflowProgressCategories`
 -- AUTO_INCREMENT for table `WorkflowProgressHistory`
 --
 ALTER TABLE `WorkflowProgressHistory`
-  MODIFY `wphID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `wphID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
 --
 -- AUTO_INCREMENT for table `WorkflowRequestObjects`
 --
 ALTER TABLE `WorkflowRequestObjects`
-  MODIFY `wrID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `wrID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 --
 -- AUTO_INCREMENT for table `Workflows`
 --

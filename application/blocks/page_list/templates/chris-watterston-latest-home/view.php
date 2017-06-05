@@ -65,6 +65,4 @@
 		
 	<?php endforeach; ?>
 	
-	<a href="#" class="sidebar-link">View All Updates</a>
-	
 <?php } ?>

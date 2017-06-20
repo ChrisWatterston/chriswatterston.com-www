@@ -33,7 +33,7 @@
 		<div class="col newsfeed-entry entry-<?php echo $i; ?>">
 			<div class="news-img img-rich" style="background-image:url('<?php echo $tagSrc; ?>');"></div>
 			<div class="news-content-wrap wrap-rich">
-				<div class="news-content desc-rich">
+				<div class="news-content desc-rich colour-grey">
 					<?php echo $posttypetitle; ?>
 				</div>
 			</div>

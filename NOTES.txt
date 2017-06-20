@@ -1,3 +1,17 @@
+TO DO ----------
+- list styling (http://chriswatterston.com-www.dev/index.php/blog/starting-2016-old-challenges)
+- check images throughout pages
+- 
+- read over all website content to ensure everything is perfect, improve where possible.
+
+
+Lost Pages ----------
+- 'There Is No Cloud' Copyright Protection (/blog/there-no-cloud-copyright-protection)
+- There is no cloud: Getting to #1 in the Sticker Mule Marketplace (/blog/there-no-cloud-getting-1-sticker-mule-marketplace)
+- Your New Website Statistics Dashboard (/blog/your-new-website-statistics-dashboard)
+
+
+
 ACCESS TOKEN----------
 EAACEdEose0cBADSZBtdgdZBoAbBCZAM1J56aSc4Vw3zgC8tUoJdVCg4sC4v42NzDIGLMgsT7NXfXaSuPEZA6ERt75iEPnXTm6hjrA6vYX3Fl5tJ4fDZBrHwYgaNz33YrEpN2SbDoN8FQoQZBXUZBLF60XZBDcQniIZCgj01kRkNyLIfIBq8hFiNdZC
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jun 05, 2017 at 07:00 AM
+-- Generation Time: Jun 20, 2017 at 05:12 PM
 -- Server version: 5.7.13
 -- PHP Version: 5.6.24
 
@@ -46,7 +46,11 @@ INSERT INTO `AreaLayoutColumns` (`arLayoutColumnID`, `arLayoutID`, `arLayoutColu
 (5, 2, 1, 6, 5),
 (6, 3, 0, 7, 6),
 (7, 3, 1, 8, 7),
-(8, 3, 2, 9, 8);
+(8, 3, 2, 9, 8),
+(9, 4, 0, 65, 9),
+(10, 4, 1, 66, 10),
+(11, 5, 0, 65, 9),
+(12, 5, 1, 66, 10);
 
 -- --------------------------------------------------------
 
@@ -59,6 +63,16 @@ CREATE TABLE `AreaLayoutCustomColumns` (
   `arLayoutColumnWidth` varchar(64) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `AreaLayoutCustomColumns`
+--
+
+INSERT INTO `AreaLayoutCustomColumns` (`arLayoutColumnID`, `arLayoutColumnWidth`) VALUES
+(9, '0'),
+(10, '0'),
+(11, '0'),
+(12, '0');
+
 -- --------------------------------------------------------
 
 --
@@ -70,6 +84,13 @@ CREATE TABLE `AreaLayoutPresets` (
   `arLayoutID` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `arLayoutPresetName` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `AreaLayoutPresets`
+--
+
+INSERT INTO `AreaLayoutPresets` (`arLayoutPresetID`, `arLayoutID`, `arLayoutPresetName`) VALUES
+(1, 5, 'TwoColumn-50-50');
 
 -- --------------------------------------------------------
 
@@ -93,7 +114,9 @@ CREATE TABLE `AreaLayouts` (
 INSERT INTO `AreaLayouts` (`arLayoutID`, `arLayoutSpacing`, `arLayoutIsCustom`, `arLayoutIsPreset`, `arLayoutMaxColumns`, `arLayoutUsesThemeGridFramework`) VALUES
 (1, 0, 0, 0, 12, 1),
 (2, 0, 0, 0, 12, 1),
-(3, 0, 0, 0, 12, 1);
+(3, 0, 0, 0, 12, 1),
+(4, 30, 0, 0, 0, 0),
+(5, 30, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -238,7 +261,43 @@ INSERT INTO `Areas` (`arID`, `cID`, `arHandle`, `arOverrideCollectionPermissions
 (46, 1, 'Content Area Footer One', 0, 0, 0, 0),
 (47, 174, 'Main', 0, 0, 0, 0),
 (48, 176, 'Edit Me', 0, 0, 0, 0),
-(49, 151, 'Main', 0, 0, 0, 0);
+(49, 151, 'Main', 0, 0, 0, 0),
+(50, 1, 'Services Area One', 0, 0, 0, 0),
+(51, 1, 'Services Area Two', 0, 0, 0, 0),
+(52, 1, 'Services Area Three', 0, 0, 0, 0),
+(53, 1, 'Services Area Four', 0, 0, 0, 0),
+(54, 171, 'Header Latest Feed', 0, 0, 0, 0),
+(55, 171, 'Services Area One', 0, 0, 0, 0),
+(56, 171, 'Services Area Two', 0, 0, 0, 0),
+(57, 171, 'Services Area Three', 0, 0, 0, 0),
+(58, 171, 'Services Area Four', 0, 0, 0, 0),
+(59, 171, 'Main Body', 0, 0, 0, 0),
+(60, 168, 'Main Body', 0, 0, 0, 0),
+(61, 176, 'Main Body', 0, 0, 0, 0),
+(62, 176, 'Main Body One', 0, 0, 0, 0),
+(63, 176, 'Main Body Two', 0, 0, 0, 0),
+(64, 176, 'Main Body Three', 0, 0, 0, 0),
+(65, 176, 'Main Body Two : 9', 0, 0, 0, 63),
+(66, 176, 'Main Body Two : 10', 0, 0, 0, 63),
+(67, 176, 'Main Description', 0, 0, 0, 0),
+(68, 159, 'Main Description', 0, 0, 0, 0),
+(69, 159, 'Main Body One', 0, 0, 0, 0),
+(70, 159, 'Main Body Two', 0, 0, 0, 0),
+(71, 159, 'Main Body Three', 0, 0, 0, 0),
+(72, 160, 'Main Description', 0, 0, 0, 0),
+(73, 160, 'Main Body One', 0, 0, 0, 0),
+(74, 160, 'Main Body Two', 0, 0, 0, 0),
+(75, 160, 'Main Body Three', 0, 0, 0, 0),
+(76, 174, 'Main Description', 0, 0, 0, 0),
+(77, 174, 'Main Body One', 0, 0, 0, 0),
+(78, 174, 'Main Body Two', 0, 0, 0, 0),
+(79, 174, 'Main Body Three', 0, 0, 0, 0),
+(80, 181, 'Main Body', 0, 0, 0, 0),
+(82, 185, 'Main Body', 0, 0, 0, 0),
+(83, 186, 'Main Body', 0, 0, 0, 0),
+(84, 187, 'Main Body', 0, 0, 0, 0),
+(85, 188, 'Main Body', 0, 0, 0, 0),
+(86, 189, 'Main Body', 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -318,7 +377,18 @@ INSERT INTO `atBoolean` (`value`, `avID`) VALUES
 (1, 235),
 (1, 268),
 (0, 331),
-(0, 345);
+(0, 345),
+(0, 351),
+(0, 355),
+(0, 369),
+(0, 376),
+(0, 380),
+(0, 385),
+(1, 609),
+(1, 615),
+(1, 631),
+(1, 1081),
+(0, 1123);
 
 -- --------------------------------------------------------
 
@@ -502,7 +572,79 @@ INSERT INTO `atDefault` (`value`, `avID`) VALUES
 ('', 342),
 ('', 343),
 ('', 344),
-('<h2>A mobile app for every side of education.</h2>\n\n<h2>Starting with your SKOOL.</h2>\n\n<p>Areas of education are turning digital, and so are parent demands. Parents like to be updated in a convenient way. A way that doesn&#39;t always require them to visit a blog, download a document or search your website relentlessly.</p>\n\n<p><a class="abtn" href="#">Find Out More</a></p>\n', 347);
+('<h2>A mobile app for every side of education.</h2>\n\n<h2>Starting with your SKOOL.</h2>\n\n<p>Areas of education are turning digital, and so are parent demands. Parents like to be updated in a convenient way. A way that doesn&#39;t always require them to visit a blog, download a document or search your website relentlessly.</p>\n\n<p><a class="abtn" href="#">Find Out More</a></p>\n', 347),
+('', 348),
+('', 349),
+('', 350),
+('', 352),
+('', 353),
+('', 354),
+('<h2><strong>The Original.</strong> The Unique.<br />\n#TherIsNoCloud</h2>\n\n<p>Over 20,000 printed units sold globally, the words are spreading far and wide!</p>\n\n<p>&quot;There is no cloud. It&#39;s just someone else&#39;s computer&quot; It&#39;s only the truth, but I wonder how many people really think there really is a &quot;cloud&quot; that stores all our data?</p>\n\n<p><a class="abtn black" href="#">Find Out More</a></p>\n', 357),
+('<h2>A mobile app for every side of education.<br /><strong>Starting with your SKOOL.</strong></h2>\n\n<p>Areas of education are turning digital, and so are parent demands. Parents like to be updated in a convenient way. A way that doesn&#39;t always require them to visit a blog, download a document or search your website relentlessly.</p>\n\n<p><a class="abtn" href="#">Find Out More</a></p>\n', 359),
+('<h2>A mobile app for every side of education.<br />\n<strong>Starting with your <span class="colour-orange">SKOOL</span>.</strong></h2>\n\n<p>Areas of education are turning digital, and so are parent demands. Parents like to be updated in a convenient way. A way that doesn&#39;t always require them to visit a blog, download a document or search your website relentlessly.</p>\n\n<p><a class="abtn" href="#">Find Out More</a></p>\n', 361),
+('<h2>A mobile app for every side of education.<br />\n<strong>Starting with your <span class="colour-skoolping">SKOOL</span>.</strong></h2>\n\n<p>Areas of education are turning digital, and so are parent demands. Parents like to be updated in a convenient way. A way that doesn&#39;t always require them to visit a blog, download a document or search your website relentlessly.</p>\n\n<p><a class="abtn skoolping" href="#">Find Out More</a></p>\n', 363),
+('<h2>A mobile app for every side of education.<br />\n<strong>Starting with your <span class="colour-skoolping">SKOOL</span></strong></h2>\n\n<p>Areas of education are turning digital, and so are parent demands. Parents like to be updated in a convenient way. A way that doesn&#39;t always require them to visit a blog, download a document or search your website relentlessly.</p>\n\n<p><a class="abtn skoolping" href="#">Find Out More</a></p>\n', 365),
+('', 366),
+('', 367),
+('', 368),
+('<h2><strong>The Original.</strong> The Unique.<br />\n#TherIsNoCloud</h2>\n\n<p>Over 20,000 printed units sold globally, the words are spreading far and wide!</p>\n\n<p>&quot;There is no cloud. It&#39;s just someone else&#39;s computer&quot; It&#39;s only the truth, but I wonder how many people really think there really is a &quot;cloud&quot; that stores all our data?</p>\n\n<p><a class="abtn black" href="#">Find Out More</a></p>\n', 371),
+('Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', 372),
+('tester, sausage', 373),
+('Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', 377),
+('tester, sausage', 378),
+('Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in.', 382),
+('tester, sausage', 383),
+('Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in.', 387),
+('tester, sausage', 388),
+('', 392),
+('', 393),
+('<h2>A mobile app for every side of education.<br />\n<strong>Starting with your <span class="colour-skoolping">SKOOL</span></strong></h2>\n\n<p>Areas of education are turning digital, and so are parent demands. Parents like to be updated in a convenient way. A way that doesn\'t always require them to visit a blog, download a document or search your website relentlessly.</p>\n\n<p><a class="abtn skoolping" href="#">Find Out More</a></p>\n', 394),
+('', 396),
+('', 397),
+('<h2>A mobile app for every side of education.<br />\n<strong>Starting with your <span class="colour-skoolping">SKOOL</span></strong></h2>\n\n<p>Areas of education are turning digital, and so are parent demands. Parents like to be updated in a convenient way. A way that doesn\'t always require them to visit a blog, download a document or search your website relentlessly.</p>\n\n<p><a class="abtn skoolping" href="#">Find Out More</a></p>\n', 398),
+('', 416),
+('', 417),
+('<h2>A mobile app for every side of education.<br />\n<strong>Starting with your <span class="colour-skoolping">SKOOL</span></strong></h2>\n\n<p>Areas of education are turning digital, and so are parent demands. Parents like to be updated in a convenient way. A way that doesn&#39;t always require them to visit a blog, download a document or search your website relentlessly.</p>\n\n<p><a class="abtn skoolping" href="#">Find Out More</a></p>\n', 418),
+('Welcome to Chris Watterston', 420),
+('welcome, chris watterston, design, ios apps, ', 421),
+('Welcome to Chris Watterston', 422),
+('welcome, chris watterston, design, ios apps, ', 423),
+('Welcome to Chris Watterston', 424),
+('', 429),
+('', 430),
+('', 431),
+('Meta Keywords', 433),
+('Meta Description', 435),
+('Meta Title', 436),
+('My \'There Is No Cloud\' Sticker', 491),
+('Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global!', 492),
+('there is no cloud, sticker, stickermule', 493),
+('My \'There Is No Cloud\' Sticker', 503),
+('Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global!', 504),
+('there is no cloud, sticker, stickermule', 505),
+('Like every Tom, Dick and Harry in the land, I set myself new targets and challenges at the start of every year. Do I ever achieve them, behave yourself! It’s so frustrating telling you that, but even more so with myself for not achieving. *sigh*', 558),
+('2016, new challenges, new start, new targets', 559),
+('A much needed Spotify widget for the Notification Centre', 605),
+('Since installing the new operating system, OS X Yosemite, like many I\'ve noticed a hell of a lot of new great features and design. But, being an every day MacBook user, I\'m finding some pretty cool, but some also pretty annoying.', 606),
+('Spotify widget, Notification Centre, iOS widget', 607),
+('A much needed Spotify widget for the Notification Centre', 611),
+('Since installing the new operating system, OS X Yosemite, like many I\'ve noticed a hell of a lot of new great features and design. But, being an every day MacBook user, I\'m finding some pretty cool, but some also pretty annoying.', 612),
+('Spotify widget, Notification Centre, iOS widget', 613),
+('A much needed Spotify widget for the Notification Center', 627),
+('Since installing the new operating system, OS X Yosemite, like many I\'ve noticed a hell of a lot of new great features and design. But, being an every day MacBook user, I\'m finding some pretty cool, but some also pretty annoying.', 628),
+('Spotify widget, Notification Centre, iOS widget', 629),
+('\'There Is No Cloud\' Copyright Protection', 1011),
+('I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO! That would place myself in the same category as the thieving scummy $&£4’ers that stole my design and many other honest designers work also - and that’s me being polite against them!', 1012),
+('stealing designers work, my design', 1013),
+('4th Month Into Self-Employment', 1077),
+('Jee. Taking a step back, it\'s been almost 4 months already. Holy Crap! Cutting a 5 year story into a nut shell, I previously worked for a secondary school within an IT department. It wasn\'t any ordinary IT department within a school, ow nooo.', 1078),
+('4 months, IT department, self employment', 1079),
+('Setting 5 Goals For 2014', 1113),
+('A warm welcome to 2014, I wish you all a happy New Year. It\'s the start of a New Year for us all, and funny enough it\'s also that time where 99.9% of us feel the need to set ourself new year resolutions, goals, targets, or whatever you call it. For me, I\'ve just rolled into my 5th month of self employment and it still feels incredible, just as it did on day one.', 1114),
+('welcome to 2014', 1115),
+('Setting 5 Goals For 2014', 1119),
+('A warm welcome to 2014, I wish you all a happy New Year. It\'s the start of a New Year for us all, and funny enough it\'s also that time where 99.9% of us feel the need to set ourself new year resolutions, goals, targets, or whatever you call it. For me, I\'ve just rolled into my 5th month of self employment and it still feels incredible, just as it did on day one.', 1120),
+('welcome to 2014', 1121);
 
 -- --------------------------------------------------------
 
@@ -584,9 +726,35 @@ INSERT INTO `atFile` (`fID`, `avID`) VALUES
 (1, 276),
 (1, 325),
 (1, 330),
+(1, 374),
+(1, 379),
+(1, 384),
+(1, 389),
+(1, 428),
+(1, 432),
+(1, 434),
+(1, 494),
+(1, 506),
+(1, 560),
+(1, 608),
+(1, 614),
+(1, 630),
+(1, 1014),
+(1, 1080),
+(1, 1116),
+(1, 1122),
 (2, 339),
 (2, 340),
-(2, 346);
+(2, 346),
+(2, 356),
+(2, 358),
+(2, 360),
+(2, 362),
+(2, 364),
+(2, 370),
+(2, 395),
+(2, 399),
+(2, 419);
 
 -- --------------------------------------------------------
 
@@ -629,7 +797,11 @@ INSERT INTO `atNumber` (`value`, `avID`) VALUES
 ('512.0000', 333),
 ('342.0000', 334),
 ('512.0000', 335),
-('342.0000', 336);
+('342.0000', 336),
+('680.0000', 617),
+('1007.0000', 618),
+('780.0000', 619),
+('811.0000', 620);
 
 -- --------------------------------------------------------
 
@@ -691,7 +863,22 @@ INSERT INTO `atSelectedTopics` (`avTreeTopicNodeID`, `treeNodeID`, `avID`) VALUE
 (24, 18, 277),
 (25, 26, 277),
 (27, 18, 327),
-(28, 18, 332);
+(28, 18, 332),
+(29, 26, 375),
+(30, 18, 381),
+(31, 26, 381),
+(32, 26, 386),
+(33, 26, 391),
+(34, 11, 496),
+(36, 11, 508),
+(37, 18, 562),
+(38, 18, 610),
+(39, 18, 616),
+(41, 18, 632),
+(42, 11, 1016),
+(43, 11, 1082),
+(44, 18, 1118),
+(45, 18, 1124);
 
 -- --------------------------------------------------------
 
@@ -832,7 +1019,21 @@ INSERT INTO `atTopic` (`avID`) VALUES
 (273),
 (277),
 (327),
-(332);
+(332),
+(375),
+(381),
+(386),
+(391),
+(496),
+(508),
+(562),
+(610),
+(616),
+(632),
+(1016),
+(1082),
+(1118),
+(1124);
 
 -- --------------------------------------------------------
 
@@ -1100,6 +1301,21 @@ CREATE TABLE `AttributeValues` (
 
 INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (342, 1),
+(348, 1),
+(352, 1),
+(366, 1),
+(424, 1),
+(429, 1),
+(436, 1),
+(491, 1),
+(503, 1),
+(605, 1),
+(611, 1),
+(627, 1),
+(1011, 1),
+(1077, 1),
+(1113, 1),
+(1119, 1),
 (205, 2),
 (210, 2),
 (211, 2),
@@ -1113,6 +1329,30 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (323, 2),
 (328, 2),
 (343, 2),
+(349, 2),
+(353, 2),
+(367, 2),
+(372, 2),
+(377, 2),
+(382, 2),
+(387, 2),
+(392, 2),
+(396, 2),
+(416, 2),
+(420, 2),
+(422, 2),
+(430, 2),
+(435, 2),
+(492, 2),
+(504, 2),
+(558, 2),
+(606, 2),
+(612, 2),
+(628, 2),
+(1012, 2),
+(1078, 2),
+(1114, 2),
+(1120, 2),
 (2, 3),
 (3, 3),
 (4, 3),
@@ -1209,6 +1449,27 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (275, 3),
 (324, 3),
 (329, 3),
+(373, 3),
+(378, 3),
+(383, 3),
+(388, 3),
+(393, 3),
+(397, 3),
+(417, 3),
+(421, 3),
+(423, 3),
+(431, 3),
+(433, 3),
+(493, 3),
+(505, 3),
+(559, 3),
+(607, 3),
+(613, 3),
+(629, 3),
+(1013, 3),
+(1079, 3),
+(1115, 3),
+(1121, 3),
 (117, 4),
 (124, 4),
 (118, 5),
@@ -1243,17 +1504,27 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (119, 7),
 (126, 7),
 (344, 9),
+(350, 9),
+(354, 9),
+(368, 9),
 (25, 12),
 (44, 12),
 (64, 12),
 (109, 12),
 (345, 13),
+(351, 13),
+(355, 13),
+(369, 13),
 (187, 16),
 (333, 16),
 (335, 16),
+(617, 16),
+(619, 16),
 (188, 17),
 (334, 17),
 (336, 17),
+(618, 17),
+(620, 17),
 (206, 20),
 (212, 20),
 (215, 20),
@@ -1268,9 +1539,43 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (339, 20),
 (340, 20),
 (346, 20),
+(356, 20),
+(358, 20),
+(360, 20),
+(362, 20),
+(364, 20),
+(370, 20),
+(374, 20),
+(379, 20),
+(384, 20),
+(389, 20),
+(395, 20),
+(399, 20),
+(419, 20),
+(428, 20),
+(432, 20),
+(434, 20),
+(494, 20),
+(506, 20),
+(560, 20),
+(608, 20),
+(614, 20),
+(630, 20),
+(1014, 20),
+(1080, 20),
+(1116, 20),
+(1122, 20),
 (235, 21),
 (268, 21),
 (331, 21),
+(376, 21),
+(380, 21),
+(385, 21),
+(609, 21),
+(615, 21),
+(631, 21),
+(1081, 21),
+(1123, 21),
 (208, 22),
 (213, 22),
 (216, 22),
@@ -1282,8 +1587,31 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (277, 22),
 (327, 22),
 (332, 22),
+(375, 22),
+(381, 22),
+(386, 22),
+(391, 22),
+(496, 22),
+(508, 22),
+(562, 22),
+(610, 22),
+(616, 22),
+(632, 22),
+(1016, 22),
+(1082, 22),
+(1118, 22),
+(1124, 22),
 (341, 23),
-(347, 23);
+(347, 23),
+(357, 23),
+(359, 23),
+(361, 23),
+(363, 23),
+(365, 23),
+(371, 23),
+(394, 23),
+(398, 23),
+(418, 23);
 
 -- --------------------------------------------------------
 
@@ -1382,6 +1710,19 @@ CREATE TABLE `BlockFeatureAssignments` (
   `bID` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `faID` int(10) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `BlockFeatureAssignments`
+--
+
+INSERT INTO `BlockFeatureAssignments` (`cID`, `cvID`, `bID`, `faID`) VALUES
+(181, 2, 117, 2),
+(181, 3, 117, 2),
+(186, 2, 128, 3),
+(186, 3, 128, 3),
+(186, 2, 129, 4),
+(186, 3, 129, 4),
+(188, 2, 131, 5);
 
 -- --------------------------------------------------------
 
@@ -1493,7 +1834,55 @@ INSERT INTO `Blocks` (`bID`, `bName`, `bDateAdded`, `bDateModified`, `bFilename`
 (79, '', '2017-06-02 12:57:17', '2017-06-02 12:57:34', 'chris-watterston-latest-recognition', '1', 35, 1, NULL),
 (81, '', '2017-06-02 13:01:26', '2017-06-02 13:01:26', NULL, '0', 3, 1, NULL),
 (83, '', '2017-06-02 14:58:32', '2017-06-02 14:58:32', NULL, '0', 14, 1, NULL),
-(84, '', '2017-06-02 15:04:10', '2017-06-02 15:04:10', 'chris-watterston-latest-recognition', '1', 35, 1, NULL);
+(84, '', '2017-06-02 15:04:10', '2017-06-02 15:04:10', 'chris-watterston-latest-recognition', '1', 35, 1, NULL),
+(85, '', '2017-06-06 16:47:21', '2017-06-06 16:47:21', NULL, '0', 14, 1, NULL),
+(86, '', '2017-06-06 16:47:45', '2017-06-06 16:47:45', NULL, '0', 14, 1, NULL),
+(87, '', '2017-06-06 16:48:01', '2017-06-06 16:48:01', NULL, '0', 14, 1, NULL),
+(88, '', '2017-06-06 16:48:18', '2017-06-06 16:48:18', NULL, '0', 14, 1, NULL),
+(89, '', '2017-06-07 10:45:30', '2017-06-07 10:45:30', NULL, '1', 14, 1, NULL),
+(90, '', '2017-06-07 10:45:46', '2017-06-07 10:45:46', NULL, '1', 14, 1, NULL),
+(91, '', '2017-06-07 10:45:55', '2017-06-07 10:45:56', NULL, '1', 14, 1, NULL),
+(92, '', '2017-06-07 10:46:06', '2017-06-07 10:46:06', NULL, '1', 14, 1, NULL),
+(93, '', '2017-06-15 16:01:09', '2017-06-15 16:01:09', NULL, '1', 14, 1, NULL),
+(94, '', '2017-06-15 16:01:23', '2017-06-15 16:01:23', NULL, '1', 14, 1, NULL),
+(95, '', '2017-06-15 16:01:34', '2017-06-15 16:01:34', NULL, '1', 14, 1, NULL),
+(96, '', '2017-06-15 16:01:47', '2017-06-15 16:01:48', NULL, '1', 14, 1, NULL),
+(97, '', '2017-06-16 12:11:12', '2017-06-16 12:11:12', NULL, '1', 14, 1, NULL),
+(98, '', '2017-06-16 12:16:40', '2017-06-16 12:16:40', NULL, '1', 14, 1, NULL),
+(99, '', '2017-06-16 12:17:44', '2017-06-16 12:17:44', NULL, '1', 14, 1, NULL),
+(100, '', '2017-06-19 11:19:05', '2017-06-19 11:19:05', 'chris-watterston-header-navigation', '1', 13, 1, NULL),
+(101, '', '2017-06-19 11:19:14', '2017-06-19 11:19:14', 'chris-watterston-header-navigation', '1', 13, 1, NULL),
+(102, '', '2017-06-19 11:19:31', '2017-06-19 11:19:31', 'chris-watterston-header-navigation', '1', 13, 1, NULL),
+(103, '', '2017-06-19 11:20:35', '2017-06-19 11:20:35', 'chris-watterston-header-navigation', '1', 13, 1, NULL),
+(105, '', '2017-06-19 16:59:11', '2017-06-19 16:59:11', NULL, '0', 1, 1, NULL),
+(106, '', '2017-06-19 16:59:47', '2017-06-19 16:59:47', NULL, '0', 14, 1, NULL),
+(107, '', '2017-06-19 17:00:06', '2017-06-19 17:00:06', NULL, '0', 14, 1, NULL),
+(108, '', '2017-06-19 17:03:05', '2017-06-19 17:03:05', NULL, '1', 1, 1, NULL),
+(109, '', '2017-06-19 17:08:32', '2017-06-19 17:08:32', NULL, '0', 14, 1, NULL),
+(110, '', '2017-06-19 17:08:56', '2017-06-19 17:08:56', NULL, '0', 14, 1, NULL),
+(111, '', '2017-06-19 17:09:28', '2017-06-19 17:09:28', NULL, '0', 14, 1, NULL),
+(112, '', '2017-06-20 10:33:16', '2017-06-20 10:33:16', NULL, '0', 14, 1, NULL),
+(113, '', '2017-06-20 10:33:17', '2017-06-20 10:33:17', NULL, '0', 14, 1, NULL),
+(114, '', '2017-06-20 14:16:25', '2017-06-20 14:16:25', NULL, '0', 14, 1, NULL),
+(115, '', '2017-06-20 14:29:25', '2017-06-20 14:29:25', NULL, '0', 14, 1, NULL),
+(116, '', '2017-06-20 15:06:22', '2017-06-20 15:06:22', NULL, '0', 14, 1, NULL),
+(117, '', '2017-06-20 15:08:02', '2017-06-20 15:08:02', NULL, '0', 32, 1, NULL),
+(118, '', '2017-06-20 15:08:43', '2017-06-20 15:08:43', NULL, '0', 14, 1, NULL),
+(119, '', '2017-06-20 15:10:51', '2017-06-20 15:10:51', NULL, '0', 30, 1, NULL),
+(120, '', '2017-06-20 15:11:18', '2017-06-20 15:11:18', NULL, '0', 31, 1, NULL),
+(122, '', '2017-06-20 15:22:11', '2017-06-20 15:22:28', NULL, '0', 14, 1, NULL),
+(123, '', '2017-06-20 15:22:51', '2017-06-20 15:22:51', NULL, '0', 14, 1, NULL),
+(124, '', '2017-06-20 15:23:33', '2017-06-20 15:23:33', NULL, '0', 14, 1, NULL),
+(125, '', '2017-06-20 15:23:48', '2017-06-20 15:23:48', NULL, '0', 14, 1, NULL),
+(126, '', '2017-06-20 15:24:10', '2017-06-20 15:24:10', NULL, '0', 14, 1, NULL),
+(127, '', '2017-06-20 15:31:15', '2017-06-20 15:31:15', NULL, '0', 14, 1, NULL),
+(128, '', '2017-06-20 15:35:10', '2017-06-20 15:36:34', NULL, '0', 32, 1, NULL),
+(129, '', '2017-06-20 15:36:16', '2017-06-20 15:36:16', NULL, '0', 32, 1, NULL),
+(130, '', '2017-06-20 16:13:32', '2017-06-20 16:13:32', NULL, '0', 14, 1, NULL),
+(131, '', '2017-06-20 16:14:22', '2017-06-20 16:14:22', NULL, '0', 32, 1, NULL),
+(132, '', '2017-06-20 16:19:22', '2017-06-20 16:19:22', NULL, '0', 14, 1, NULL),
+(133, '', '2017-06-20 16:19:39', '2017-06-20 16:19:39', NULL, '0', 14, 1, NULL),
+(134, '', '2017-06-20 16:20:45', '2017-06-20 16:21:24', NULL, '0', 14, 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -1706,6 +2095,16 @@ CREATE TABLE `btContentImage` (
   `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `btContentImage`
+--
+
+INSERT INTO `btContentImage` (`bID`, `fID`, `fOnstateID`, `maxWidth`, `maxHeight`, `externalLink`, `internalLinkCID`, `altText`, `title`) VALUES
+(117, 1, 0, 0, 0, '', 0, '', ''),
+(128, 4, 0, 0, 0, '', 0, 'Spotify Notification Center Concept Player', 'Spotify Notification Center Concept Player'),
+(129, 5, 0, 0, 0, '', 0, 'Spotify Notification Center Player Concept Design', 'Spotify Notification Center Player Concept Design'),
+(131, 1, 0, 0, 0, '', 0, '', '');
+
 -- --------------------------------------------------------
 
 --
@@ -1753,7 +2152,46 @@ INSERT INTO `btContentLocal` (`bID`, `content`) VALUES
 (64, 'Instagram feed here...'),
 (75, 'Facebook feed here...'),
 (78, 'Facebook feed here...'),
-(83, '');
+(83, ''),
+(85, '<h2>Web Design</h2>\r\n\r\n<p>The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online.</p>\r\n'),
+(86, '<h2>Print Design</h2>\r\n\r\n<p>The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online.</p>\r\n'),
+(87, '<h2>Mobile App</h2>\r\n\r\n<p>The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online.</p>\r\n'),
+(88, '<h2>Support &amp; Hosting</h2>\r\n\r\n<p>The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online.</p>\r\n'),
+(89, '<h2 class="type-semibold colour-yellow">Web Design</h2>\r\n\r\n<p>The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online.</p>\r\n'),
+(90, '<h2 class="type-semibold colour-yellow">Mobile App</h2>\r\n\r\n<p>The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online.</p>\r\n'),
+(91, '<h2 class="type-semibold colour-yellow">Print Design</h2>\r\n\r\n<p>The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online.</p>\r\n'),
+(92, '<h2 class="type-semibold colour-yellow">Support &amp; Hosting</h2>\r\n\r\n<p>The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online.</p>\r\n'),
+(93, '<h2 class="type-semibold">Web Design</h2>\r\n\r\n<p>The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online.</p>\r\n'),
+(94, '<h2 class="type-semibold">Print Design</h2>\r\n\r\n<p>The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online.</p>\r\n'),
+(95, '<h2 class="type-semibold">Mobile App</h2>\r\n\r\n<p>The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online.</p>\r\n'),
+(96, '<h2 class="type-semibold">Support &amp; Hosting</h2>\r\n\r\n<p>The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online.</p>\r\n'),
+(97, '<h1 class="colour-white type-semibold type-uppercase">Websites <i class="icon ampersand">&amp;</i> Mobile Apps</h1>\r\n'),
+(98, '<h1 class="colour-white type-semibold type-uppercase">Websites <i class="icon ampersand colour-lime type-light">&amp;</i> Mobile Apps</h1>\r\n'),
+(99, '<h1 class="colour-white type-semibold type-uppercase">Websites <i class="icon ampersand">&amp;</i> Mobile Apps</h1>\r\n'),
+(106, '<p>Chris Watterston will help achieving your ideas and dreams in a proper way. The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online presence has never been so important.</p>\r\n'),
+(107, '<p>Chris Watterston will help achieving your ideas and dreams in a proper way. The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online presence has never been so important.</p>\r\n'),
+(109, '<h2>A mobile app for every side of education.<br />\r\n<strong>Starting with your <span class="colour-skoolping">SKOOL</span></strong></h2>\r\n\r\n<p>Areas of education are turning digital, and so are parent demands. Parents like to be updated in a convenient way. A way that doesn&#39;t always require them to visit a blog, download a document or search your website relentlessly.</p>\r\n\r\n<p><a class="abtn skoolping" href="https://www.SKOOLping.co.uk/">Visit SKOOLping.co.uk</a></p>\r\n'),
+(110, '<p>Chris Watterston will help achieving your ideas and dreams in a proper way. The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online presence has never been so important.</p>\r\n'),
+(111, '<p>Chris Watterston will help achieving your ideas and dreams in a proper way. The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online presence has never been so important.</p>\r\n'),
+(112, ''),
+(113, ''),
+(114, '<p>We are a design studio and we kick perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that never fails.</p>\r\n\r\n<p>And no, we&rsquo;re not single minded. To us it doesn&rsquo;t matter whether you&rsquo;re within the educational sector, private sector, charity or just starting out on an exciting new road to success. <a href="#">We&#39;d love to have a chat.</a></p>\r\n'),
+(115, '<p>That feeling when you&rsquo;d happily live your life and work for free, but know that doing so sadly won&rsquo;t pay the bills. If you&rsquo;ve considered it and then received a slap around your chops to bring you back to reality, then you know you&rsquo;ve chosen the right path in life and love what you do - That&rsquo;s how we roll.</p>\r\n\r\n<p>I&rsquo;m Chris Watterston, an independent designer working, living and probably lacking sleep in Surrey, UK. With my years of experience, I specialise in&nbsp;<a data-concrete5-link-type="ajax" href="https://web.archive.org/web/20151103070604/http://chriswatterston.com/what-we-do/brand-identity-design">Brand Identity Design</a>,&nbsp;<a data-concrete5-link-type="ajax" href="https://web.archive.org/web/20151103070604/http://chriswatterston.com/what-we-do/website-design-and-development">Web Design and Front-End Development</a>.</p>\r\n\r\n<p>Besides running my day-to-day design business, I&rsquo;m also fortunate enough to invest and co-found an amazing family. My loving partner and our 2 beautiful daughters.</p>\r\n\r\n<p>Being an internet based design business, we&rsquo;re not limited to working only with the residents of not so sunny Surrey. But also the surrounding areas, far and beyond, and more&nbsp;commonly&nbsp;across the seas.</p>\r\n\r\n<p>As you get to&nbsp;know us further and we spark our working relationship, you&rsquo;ll start to recognise that I refer to me, myself and my business as &lsquo;We&rsquo; - Why? Because I put everything we can and have to offer into every project and solution.</p>\r\n\r\n<p>I think that&#39;s enough of the&nbsp;ins and outs&nbsp;of us. Tell me about yourself. How are you, where are you from, your interests?</p>\r\n\r\n<p>Send us a friendly message to&nbsp;<a href="mailto:hello@chriswatterston.com">hello@chriswatterston.com</a>. You&rsquo;ll probably regret it if you don&rsquo;t.</p>\r\n'),
+(116, '<h3>Why? What? When? Where?</h3>\r\n\r\n<p>Like many others, I&rsquo;ve had the pleasure of setting up many smartphones and tablets over the years and when It comes to the cloud storage part of the set-up (<a href="http://www.apple.com/uk/icloud/" target="_blank">iCloud</a>&nbsp;of&nbsp;<a href="https://onedrive.live.com/about/en-gb/" target="_blank">OneDrive</a>), the device owner look at me blankly and says &ldquo;What, yes, whatever?!&rdquo;. We are well and truly past the Nokia 5110 times of just popping in your SIM card and making a call with your market flashing arial.</p>\r\n\r\n<p>It&rsquo;s actually rather scary how many people don&rsquo;t have a bloody clue on what the &lsquo;Cloud&rsquo; actually is. Let&rsquo;s break it down for you&hellip;. it&rsquo;s basically a computer that is located in a&nbsp;<i>mostly</i>&nbsp;unknown location that is connect to you via the internet which you&rsquo;re able to store you personal data on it. Wow!</p>\r\n\r\n<p>A bit like your homes computer, but you don&rsquo;t own it or have physical access to it.<br />\r\nI tell you what, if you just pop all your finance data and holiday snaps onto a USB memory stick, i&rsquo;ll look after them for you?</p>\r\n\r\n<p>That&rsquo;s all great, now a bit more technical for you more understanding bunch. Although you should already know what it&rsquo;s all about;</p>\r\n\r\n<blockquote>Cloud computing, also known as &#39;on-demand computing&#39;, is a kind of Internet-based computing, where shared resources, data and information are provided to computers and other devices on-demand.Cloud computing is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications and services) that can be rapidly provisioned and released with minimal management effort.</blockquote>\r\n\r\n<p><em>Quoted from Wikipedia,&nbsp;</em><em><a href="https://en.wikipedia.org/wiki/Cloud_computing">https://en.wikipedia.org/wiki/Cloud_computing</a></em></p>\r\n\r\n<p>My frustration sparked in late 2014, over how business would use the phrase but not explain the term, resulting in many not have a clue about the cloud and what it actually is. Which is why I decided to design and send a sticker off to the printers,&nbsp;<a href="https://www.stickermule.com/" target="_blank">StickerMule</a>. It&rsquo;s sometimes quicker and more fun highlighting a fact for awareness with a sticker. I would of never guessed in a million years how popular and well known my sticker would become.</p>\r\n\r\n<p>Here are the current statistics from the guys over at StickerMule, where you can&nbsp;<a href="http://www.stickermule.com/marketplace/3442-there-is-no-cloud" target="_blank">grab your own &lsquo;There Is No Cloud&rsquo; stickers</a>. Or maybe a&nbsp;<a href="http://www.chriswatterston.com/shop">t-shirt or mug</a>?</p>\r\n'),
+(118, '<p>The number of; shares, likes, photos, retweets, mentions, links, hashtags, bla bla. that relate to my sticker is mind blowing and unfortunately unknown.</p>\r\n\r\n<p>Here are a few randomly picked tweets from all around the world.</p>\r\n\r\n<h1>Thank you!!</h1>\r\n');
+INSERT INTO `btContentLocal` (`bID`, `content`) VALUES
+(119, '<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">There is no cloud! It\'s just someone else\'s computer... <a href="http://t.co/u4arumoep4">pic.twitter.com/u4arumoep4</a></p>— Sticker Mule (@stickermule) <a href="https://twitter.com/stickermule/status/619496038571839488">July 10, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>\r\n\r\n\r\n<h3>Melbourne, Australia</h3>\r\n<iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">This, everytime someone says "the cloud": <a href="http://t.co/6BmeER68rq">pic.twitter.com/6BmeER68rq</a></p>— Asher Wolf (@Asher_Wolf) <a href="https://twitter.com/Asher_Wolf/status/589225619780542465">April 18, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>\r\n\r\n<h3>Toronto, Ontario</h3>\r\n<iframe id="twitter-widget-2" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">I need these. <a href="https://t.co/efXGilRU9n">https://t.co/efXGilRU9n</a> <a href="http://t.co/yWh6OyMjpz">pic.twitter.com/yWh6OyMjpz</a></p>— Paul Reinheimer (@preinheimer) <a href="https://twitter.com/preinheimer/status/588761406276820993">April 16, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>\r\n\r\n<h3>San Francisco, California</h3>\r\n<iframe id="twitter-widget-3" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">Tell me again about your mythical cloud thingy (cc <a href="https://twitter.com/g33kspeed">@g33kspeed</a>) <a href="http://t.co/XKQKWxVWgj">pic.twitter.com/XKQKWxVWgj</a></p>— Jessy Irwin (@jessysaurusrex) <a href="https://twitter.com/jessysaurusrex/status/632813991455096836">August 16, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js"></script>\r\n\r\n<h3>Rome, Italy</h3>\r\n<iframe id="twitter-widget-4" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">There is no cloud... <a href="http://t.co/k4kk1VlYMM">pic.twitter.com/k4kk1VlYMM</a></p>— Luca Matteis (@lmatteis) <a href="https://twitter.com/lmatteis/status/613007398467465216">June 22, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>\r\n\r\n<h3>Berlin, Germany</h3>\r\n<iframe id="twitter-widget-5" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">Oh <a href="https://twitter.com/stickermule">@stickermule</a> your samples are so purdy ?? <a href="https://t.co/54aOW5LP8D">pic.twitter.com/54aOW5LP8D</a></p>— Timea Konya (@timiiggy) <a href="https://twitter.com/timiiggy/status/684293400116490240">January 5, 2016</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js"></script>\r\n\r\n\r\n<h3>Boston, Massachusetts</h3>\r\n<iframe id="twitter-widget-6" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">My 1st sticker. I\'ve given away 2 of the 4 extras I bought. :) <a href="https://twitter.com/stickermule">@stickermule</a> <a href="https://twitter.com/gl33p">@gl33p</a> <a href="https://twitter.com/chriswatterston">@chriswatterston</a> <a href="https://t.co/T0T8HfLULw">pic.twitter.com/T0T8HfLULw</a></p>— Rob Reed (@robreed) <a href="https://twitter.com/robreed/status/680122492254552064">December 24, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js"></script>\r\n\r\n\r\n<h3>Europe</h3>\r\n<iframe id="twitter-widget-7" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">Hey, my <a href="https://twitter.com/stickermule">@stickermule</a> stickers arrived! Thanks guys, they look great :-) <a href="https://t.co/pMEbd2eB2U">pic.twitter.com/pMEbd2eB2U</a></p>— Marek Jan | ??? (@marek_koza) <a href="https://twitter.com/marek_koza/status/678105579307597824">December 19, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js"></script>\r\n\r\n\r\n<h3>Dublin, Republic of Ireland</h3>\r\n<iframe id="twitter-widget-8" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">Haha brilliant ! "There is no cloud, it\'s just someone else\'s computer" <a href="https://t.co/IThaVkD2Sm">pic.twitter.com/IThaVkD2Sm</a></p>— Juan Pernia (@juanrules) <a href="https://twitter.com/juanrules/status/661848042300178432">November 4, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js"></script>\r\n\r\n\r\n<h3>Gulf of Mexico</h3>\r\n<iframe id="twitter-widget-9" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">I\'m totally digging the stickers I received from <a href="https://twitter.com/stickermule">@stickermule</a> $1 sample pack! <a href="https://t.co/Wyo7PmYOBO">pic.twitter.com/Wyo7PmYOBO</a></p>— @jason_ (@jason_) <a href="https://twitter.com/jason_/status/677498906687766528">December 17, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js"></script>\r\n\r\n\r\n<h3>Milwaukee, Wisconsin</h3>\r\n<iframe id="twitter-widget-10" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr"><a href="https://twitter.com/stickermule">@stickermule</a> <a href="https://twitter.com/avocode">@avocode</a> <a href="https://twitter.com/electronjs">@electronjs</a> looks like they would go good with my collection ???? <a href="https://t.co/9HEAuUDYbS">pic.twitter.com/9HEAuUDYbS</a></p>— Jordan Jones (@jordan_jones98) <a href="https://twitter.com/jordan_jones98/status/677127791528161280">December 16, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js"></script>\r\n\r\n\r\n<h3>Virgina Beach, Virginia</h3>\r\n<iframe id="twitter-widget-11" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">Amazing stickers, as always! Thanks from Madrid <a href="https://twitter.com/stickermule">@stickermule</a>! <a href="https://t.co/XxHYJmzhPq">pic.twitter.com/XxHYJmzhPq</a></p>— Jorge Carriazo (@JorgeCarriazous) <a href="https://twitter.com/JorgeCarriazous/status/676807276733333505">December 15, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>\r\n\r\n\r\n<h3>Kranj, Slovenia</h3>\r\n<iframe id="twitter-widget-12" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">New sticker thanks to <a href="https://twitter.com/stickermule">@stickermule</a> <a href="https://t.co/xnNqORLEFw">pic.twitter.com/xnNqORLEFw</a></p>— Miha Rekar (@mr_foto) <a href="https://twitter.com/mr_foto/status/672797910426365952">December 4, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js"></script>\r\n\r\n\r\n<h3>West Virginia, US</h3>\r\n<iframe id="twitter-widget-13" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">New iPad case sticker from <a href="https://twitter.com/stickermule">@stickermule</a> showed up today! <a href="http://t.co/3zZagCJLeM">pic.twitter.com/3zZagCJLeM</a></p>— Jim Jones (@k00laidIT) <a href="https://twitter.com/k00laidIT/status/649964553716002816">October 2, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>\r\n\r\n\r\n<h3>Los Altos, California</h3>\r\n<iframe id="twitter-widget-14" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">Friends keep asking for these stickers, so just got another shipment from <a href="https://twitter.com/stickermule">@stickermule</a> <a href="http://t.co/9P9IIzRuif">pic.twitter.com/9P9IIzRuif</a></p>— Jim Fenton (@jimfenton) <a href="https://twitter.com/jimfenton/status/638460177260240896">August 31, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>\r\n\r\n\r\n<h3>Hamburg, Germany</h3>\r\n<iframe id="twitter-widget-15" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr"><a href="https://twitter.com/stickermule">@stickermule</a> finally the cloud sticker is here <a href="http://t.co/GSIlVs2z5r">pic.twitter.com/GSIlVs2z5r</a></p>— Hurricane Computing (@Hurricane_corp) <a href="https://twitter.com/Hurricane_corp/status/636446216381988864">August 26, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>\r\n\r\n\r\n<h3>Den Bosch, Netherlands</h3>\r\n<iframe id="twitter-widget-16" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">So happy with my stickers from <a href="https://twitter.com/stickermule">@stickermule</a>! Great service and personal thank you. 100 <a href="https://twitter.com/hashtag/MODX?src=hash">#MODX</a> stickers for <a href="https://twitter.com/MODXpo">@MODXpo</a> <a href="http://t.co/mVt400O6Zs">pic.twitter.com/mVt400O6Zs</a></p>— Menno Pietersen (@MennoPP) <a href="https://twitter.com/MennoPP/status/636486464579239936">August 26, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>\r\n\r\n\r\n<h3>Madison, Wisconsin</h3>\r\n<iframe id="twitter-widget-17" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">hooray for new sticker from <a href="https://twitter.com/stickermule">@stickermule</a> (thx Jen!) <a href="http://t.co/42qeVBOZxd">http://t.co/42qeVBOZxd</a> <a href="http://t.co/GlcuiO3vpo">pic.twitter.com/GlcuiO3vpo</a></p>— Ogre McClubbin\' (@rogerogeroger) <a href="https://twitter.com/rogerogeroger/status/630377857877852160">August 9, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>\r\n\r\n\r\n<h3>Japan, East Asia</h3>\r\n<iframe id="twitter-widget-18" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">Just ordered this awesome sticker from <a href="https://twitter.com/stickermule">@stickermule</a> <a href="http://t.co/xnzwBIkQxO">pic.twitter.com/xnzwBIkQxO</a></p>— Zeke (@devilsx) <a href="https://twitter.com/devilsx/status/630120428174970880">August 8, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js"></script>\r\n\r\n\r\n<h3>Dundee, Scotland</h3>\r\n<iframe id="twitter-widget-19" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">Cheers <a href="https://twitter.com/stickermule">@stickermule</a> ???? <a href="http://t.co/wJXIXfku4Y">pic.twitter.com/wJXIXfku4Y</a></p>— Michael Jack (@MikeyJck) <a href="https://twitter.com/MikeyJck/status/612973022853623808">June 22, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>\r\n\r\n\r\n<h3>Northern Virginia</h3>\r\n<iframe id="twitter-widget-20" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">Got my stickers order from <a href="https://twitter.com/stickermule">@stickermule</a> today. Turned out great! <a href="http://t.co/XvmPa08ySI">pic.twitter.com/XvmPa08ySI</a></p>— Clayton O\'Neill (@clayton_oneill) <a href="https://twitter.com/clayton_oneill/status/590224524270051328">April 20, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>\r\n\r\n\r\n<h3>Minnesota, US</h3>\r\n<iframe id="twitter-widget-21" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">Fun times ahead courtesy of <a href="https://twitter.com/stickermule">@stickermule</a> and a nudge from <a href="https://twitter.com/lusis">@lusis</a>! <a href="http://t.co/aTbUmB4XG1">pic.twitter.com/aTbUmB4XG1</a></p>— WestJonWest (@WestJonWest) <a href="https://twitter.com/WestJonWest/status/582953749620088832">March 31, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>\r\n\r\n\r\n<h3>Wellington, New Zealand</h3>\r\n<iframe id="twitter-widget-22" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">Got my <a href="https://twitter.com/stickermule">@stickermule</a> stickers! Fast delivery as well <a href="http://t.co/744mBBOKut">pic.twitter.com/744mBBOKut</a></p>— Phillip (@sitharus) <a href="https://twitter.com/sitharus/status/615658932934082560">June 29, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>\r\n\r\n\r\n<h3>Austin, Texas</h3>\r\n<iframe id="twitter-widget-23" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="und" dir="ltr">. <a href="https://twitter.com/MikeTalonNYC">@MikeTalonNYC</a> <a href="https://twitter.com/jilljubs">@jilljubs</a> <a href="http://t.co/etlNNKyRWz">pic.twitter.com/etlNNKyRWz</a></p>— Damian Karlson (@sixfootdad) <a href="https://twitter.com/sixfootdad/status/637332759925551104">August 28, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js"></script>\r\n\r\n\r\n<h3>Mechelen, Belgium</h3>\r\n<iframe id="twitter-widget-24" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/thereisnocloud?src=hash">#thereisnocloud</a> thanks for the fast delivery <a href="https://twitter.com/stickermule">@stickermule</a> <a href="http://t.co/5w6gPKYQug">pic.twitter.com/5w6gPKYQug</a></p>— Jeroen Lambrichts (@jlambrichts) <a href="https://twitter.com/jlambrichts/status/615562379863171072">June 29, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>\r\n\r\n\r\n<h3>Saint Paul, Minnesota</h3>\r\n<iframe id="twitter-widget-25" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">Livened up my monitor stand a bit with help from <a href="https://twitter.com/lindseybieda">@lindseybieda</a> <a href="https://twitter.com/chriswatterston">@chriswatterston</a> and <a href="https://twitter.com/stickermule">@stickermule</a> <a href="http://t.co/57zu5T7kXk">pic.twitter.com/57zu5T7kXk</a></p>— Fire Wally (@fire_wally) <a href="https://twitter.com/fire_wally/status/615533231656407041">June 29, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>\r\n\r\n\r\n<h3>San Francisco, California</h3>\r\n<iframe id="twitter-widget-26" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">Nice job on printing these stickers!! <a href="https://twitter.com/stickermule">@stickermule</a> <a href="http://t.co/XWBGjBwbh6">pic.twitter.com/XWBGjBwbh6</a></p>— Jennifer Basalone (@zombiegator) <a href="https://twitter.com/zombiegator/status/613135475566510080">June 23, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>\r\n\r\n\r\n<h3>Simi Valley, California</h3>\r\n<iframe id="twitter-widget-27" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">Latest from <a href="https://twitter.com/stickermule">@stickermule</a>. Lots of geeky goodness in their marketplace. Yes, <a href="https://twitter.com/nikiacosta">@nikiacosta</a>, I have a "no cloud" for you. <a href="http://t.co/KSEOJLdJDT">pic.twitter.com/KSEOJLdJDT</a></p>— Gary Kevorkian (@GARY805) <a href="https://twitter.com/GARY805/status/629369520377958400">August 6, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>\r\n\r\n\r\n<h3>Mountain View, California</h3>\r\n<iframe id="twitter-widget-28" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">&lt;3 stickers <a href="https://twitter.com/stickermule">@stickermule</a> <a href="https://twitter.com/hashtag/thereIsNoCloud?src=hash">#thereIsNoCloud</a> <a href="http://t.co/aWr5o87fN8">pic.twitter.com/aWr5o87fN8</a></p>— starbreiz (@starbreiz) <a href="https://twitter.com/starbreiz/status/621093316570972160">July 14, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>\r\n\r\n\r\n<h3>Michigan, US</h3>\r\n<iframe id="twitter-widget-29" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">It\'s true. <a href="https://twitter.com/hashtag/ThereIsNoCloud?src=hash">#ThereIsNoCloud</a> <a href="https://twitter.com/stickermule">@stickermule</a> <a href="http://t.co/YAllKd0KTH">pic.twitter.com/YAllKd0KTH</a></p>— Rockey (@analoghumanoid) <a href="https://twitter.com/analoghumanoid/status/620387351206866944">July 13, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>\r\n\r\n<iframe id="twitter-widget-30" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">Sticker order from <a href="https://twitter.com/stickermule">@stickermule</a> arrived today. Helping to build cloud awareness, one person at a time. <a href="http://t.co/1o6C6iIZ4p">pic.twitter.com/1o6C6iIZ4p</a></p>— Aaron (@Aaron2012R2) <a href="https://twitter.com/Aaron2012R2/status/615638650714505216">June 29, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js"></script>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<h3>Others</h3>\r\n<iframe id="twitter-widget-31" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">There is no <a href="https://twitter.com/hashtag/cloud?src=hash">#cloud</a> - it’s just someone else’s computer. &lt; Saw on <a href="https://twitter.com/LinkedIn">@LinkedIn</a> <a href="https://twitter.com/hashtag/Classic?src=hash">#Classic</a> :-) <a href="https://twitter.com/Steve_Lockstep">@Steve_Lockstep</a> <a href="http://t.co/zHr4jmRaXG">pic.twitter.com/zHr4jmRaXG</a></p>— Chris Olive (@ChrisEOlive) <a href="https://twitter.com/ChrisEOlive/status/598318164921995264">May 13, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>\r\n\r\n<iframe id="twitter-widget-32" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">There is no cloud... (via <a href="https://twitter.com/Asher_Wolf">@Asher_Wolf</a>) <a href="http://t.co/RhyXgys8vx">pic.twitter.com/RhyXgys8vx</a></p>— J. Grenzfurthner (@johannes_mono) <a href="https://twitter.com/johannes_mono/status/590513102845779970">April 21, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>\r\n\r\n<iframe id="twitter-widget-33" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">This sticker wins <a href="https://twitter.com/stickermule">@stickermule</a> ? <a href="https://t.co/GhOOfJXwy7">pic.twitter.com/GhOOfJXwy7</a></p>— ?Dorkfeast? (@DorkfeastTeam) <a href="https://twitter.com/DorkfeastTeam/status/679712350795116545">December 23, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js"></script>\r\n\r\n<iframe id="twitter-widget-34" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">If you buy a ThinkPad, you have to cover it in stickers, that\'s the law. <a href="https://twitter.com/stickermule">@stickermule</a> <a href="https://t.co/oS52qGF5Nr">pic.twitter.com/oS52qGF5Nr</a></p>— Fredrik (@ique) <a href="https://twitter.com/ique/status/674978276767637504">December 10, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js"></script>\r\n\r\n<iframe id="twitter-widget-35" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">This came today....h/t to <a href="https://twitter.com/Kym_Possible">@Kym_Possible</a> for leading me to them...cc:<a href="https://twitter.com/stickermule">@stickermule</a> <a href="http://t.co/2JTaFivsaN">pic.twitter.com/2JTaFivsaN</a></p>— John Stauffacher (@g33kspeed) <a href="https://twitter.com/g33kspeed/status/625852461769568256">July 28, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js"></script>\r\n\r\n<iframe id="twitter-widget-36" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">A little tongue-in-cheek humor on my work laptop, courtesy of <a href="https://twitter.com/stickermule">@stickermule</a> <a href="http://t.co/MBXD1zZ1w0">pic.twitter.com/MBXD1zZ1w0</a></p>— Sam Ferguson (@samuelferguson) <a href="https://twitter.com/samuelferguson/status/615040910682800128">June 28, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js"></script>\r\n\r\n<iframe id="twitter-widget-37" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">Happy Saturday to me! My sweet new sticker from <a href="https://twitter.com/stickermule">@stickermule</a> arrived <a href="http://t.co/FITjRdoX5M">pic.twitter.com/FITjRdoX5M</a></p>— Erin O\'Brien (@erinogirl123) <a href="https://twitter.com/erinogirl123/status/614957529714397184">June 28, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js"></script>\r\n\r\n<iframe id="twitter-widget-38" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">Another great sticker from <a href="https://twitter.com/stickermule">@stickermule</a> thanks Jen! <a href="https://twitter.com/hashtag/CIO?src=hash">#CIO</a> <a href="https://twitter.com/hashtag/Cloud?src=hash">#Cloud</a> <a href="http://t.co/WrktRssnFY">pic.twitter.com/WrktRssnFY</a></p>— Ryan Fay (@ryancfay) <a href="https://twitter.com/ryancfay/status/614233519003275264">June 26, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js"></script>\r\n\r\n<iframe id="twitter-widget-39" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">Work laptop looking good with new stickers from <a href="https://twitter.com/ejgreenberg">@ejgreenberg</a> <a href="http://t.co/NVYSprZRP3">pic.twitter.com/NVYSprZRP3</a></p>— ¯\\_(?)_/¯ (@SeanTAllen) <a href="https://twitter.com/SeanTAllen/status/650103794903162880">October 3, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="“utf-8”"></script>\r\n\r\n<iframe id="twitter-widget-40" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">Eli Neiburger: there is no cloud, it\'s just someone else\'s computer <a href="https://twitter.com/hashtag/alaac15?src=hash">#alaac15</a> <a href="http://t.co/DfAUIrruOJ">pic.twitter.com/DfAUIrruOJ</a></p>— janelofton (@jane_librarian) <a href="https://twitter.com/jane_librarian/status/614866403485573120">June 27, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js"></script>\r\n\r\n<iframe id="twitter-widget-41" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">My new laptop sticker, courtesy of <a href="https://twitter.com/lusis">@lusis</a> <a href="http://t.co/d31RSYNHrm">pic.twitter.com/d31RSYNHrm</a></p>— Randall Degges (@rdegges) <a href="https://twitter.com/rdegges/status/613389124658032640">June 23, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js"></script>\r\n\r\n<iframe id="twitter-widget-42" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">Cruise pup <a href="https://t.co/iD2Rt3LbZ2">pic.twitter.com/iD2Rt3LbZ2</a></p>— Jessy Irwin (@jessysaurusrex) <a href="https://twitter.com/jessysaurusrex/status/691846021505257473">January 26, 2016</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>\r\n\r\n<iframe id="twitter-widget-43" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><blockquote class="twitter-tweet twitter-tweet-error" lang="en" data-twitter-extracted-i1497965506807665475="true"><p lang="en" dir="ltr">My new cool laptop stickers just arrived, <a href="https://twitter.com/stickermule">@stickermule</a> ???? <a href="http://t.co/JhRwIbSpD3">pic.twitter.com/JhRwIbSpD3</a></p>— Amr Reda (@AmrReda) <a href="https://twitter.com/AmrReda/status/643704047669608448">September 15, 2015</a></blockquote>\r\n<script async="" src="http://platform.twitter.com/widgets.js"></script>'),
+(122, '<p>Finding the time to achieve in 2014/15 seemed almost impossible when I look back. Supporting and spending time with my 2 beautiful girls and partner, building a loving home, paying bills, working as an independent self employed designer, marketing, paperwork, trying to socialise with friends, exercising, cycling, gardening, 6 ducks, running 2 cars, selling 1 car, restoring my old 1980&#39;s Broom Speedboat and my MK1 Fiesta XR2... bla, bla, bla. (UPDATE: and now drone / quadcopter flying with HD camera)</p>\r\n\r\n<p>With that being said, these were my past targets and challenges&hellip;</p>\r\n'),
+(123, '<h3>2014 (this was the start of my first full year self employed)</h3>\r\n\r\n<ol>\r\n	<li>Minimise on business and personal outgoings.</li>\r\n	<li>Provide design and development solutions to a minimum of two charities.</li>\r\n	<li>Write more. Post at least one blog article per month.</li>\r\n	<li>Design, develop and launch completed personal projects for everyone to use and benefit.</li>\r\n	<li>Increase involvement within online communities. Targeting Dribbble, GitHut and Conrete5.</li>\r\n</ol>\r\n'),
+(124, '<p>For 2015, I never did set any out in stone. But they were to continue with the explosion of work at that current time and continue with the targets and challenges from 2014.</p>\r\n\r\n<h3>So, how did I do?</h3>\r\n\r\n<p>Starting was a positive, target one was a success. Too right, this was my main point. Cutting costs meant I could use these &ldquo;savings&rdquo; else where. Like marketing for example. Areas I cut or altered and made massive savings on were; server environments, domain names, everyday work and office space, cycling instead of driving when I could, and I also cut a number of online third-party services that I didn&rsquo;t really need but thought it would be nice to have. You know the ones.</p>\r\n\r\n<p>Secondly, provide design and development solutions to at least two charities. Unfortunately this didn&rsquo;t happen. Everything was in place ready for promotion, but I was just to busy at that particular time. People would say &ldquo;make the time&rdquo;, but running my &lsquo;one-man band&rsquo; business, having a family and spending time with them and living, plus everything else. I just really couldn&rsquo;t find the time. Maybe this year?</p>\r\n\r\n<p>Write more. Post at least one blog article per month. No comment&hellip;.</p>\r\n\r\n<p>I&rsquo;m now pushing and going for a post a week, starting today. This will be interesting!</p>\r\n\r\n<p>Fourth. To design, develop and launch completed personal projects for everyone to use and benefit. This had been started, but didn&rsquo;t launch. Reason, I felt it was outdated and not great.<br />\r\n<em>2016&hellip; watch this space!</em></p>\r\n\r\n<p>Lastly. Increase involvement within online communities. This was my lowest priority and kind of got forgotten about.</p>\r\n'),
+(125, '<h3>Now for 2016. In no particular order and with all extra hight priority&hellip;</h3>\r\n\r\n<ol>\r\n	<li>Learn Swift (programming language)</li>\r\n	<li>Launch new personal project, currently labeled &lsquo;ersttt.it&rsquo;</li>\r\n	<li>Develop a &ldquo;dashboard&rdquo; type area which display a number of service overview(s) I provide to clients, right through to their CMS. This means learning multiple third-party API&rsquo;s.</li>\r\n	<li>Invest in more advertising, in more areas, with more time. You know the score.</li>\r\n	<li>Blog at least once a week. This may cover; what I&rsquo;ve learnt that particular week, everyday business news, new projects I&rsquo;ve launch, personal life news, etc.</li>\r\n</ol>\r\n'),
+(126, '<p>And what is even more exciting, every single new target and challenge is already in motion!</p>\r\n'),
+(127, '<p>The first two that jumped out at me within a matter of minutes of using the new update were the very annoying &#39;Fetching...&#39; when selecting &#39;Open With&#39; on a chosen file, and lastly the&nbsp;<a href="https://twitter.com/chriswatterston/status/523049982124101632">&#39;Where<em>&#39;</em>&nbsp;data when viewing a files info</a>!</p>\r\n\r\n<p>Pushing that aside, one of the new potential-injected features of the latest release, is the new&nbsp;<a href="https://web.archive.org/web/20160214134202/http://www.apple.com/osx/all-features/#notifications">Notification Center</a>. Third-party developers have the power to throw bespoke widgets at this from all kinds of angles! With this in mind, I decided to take a screen shot of the OS X Yosemite NC, and stick together a little something that would bring a smile to my face (including many others) if the guys over at&nbsp;<a href="https://web.archive.org/web/20160214134202/https://www.spotify.com/">Spotify</a>&nbsp;brought something similar to life....&nbsp;<em>hint, hint, nudge nudge.</em></p>\r\n\r\n<p>IMPORTANT: Please understand and acknowledge that this application / widget concept is an unofficial design of the&nbsp;<a href="https://web.archive.org/web/20160214134202/https://www.spotify.com/">Spotify</a>&nbsp;Widget. You cannot buy, subscribe or download&nbsp;<a href="https://web.archive.org/web/20160214134202/https://www.spotify.com/">Spotify</a>&nbsp;services or products here. Brand credits to&nbsp;<a href="https://web.archive.org/web/20160214134202/https://www.spotify.com/">Spotify USA Inc</a>.</p>\r\n\r\n<p>Created by&nbsp;<a href="https://web.archive.org/web/20160214134202/http://www.chriswatterston.com/">Chris Watterston</a>&nbsp;just for fun and an idea I would love to see come to life.</p>\r\n\r\n<p><strong>Enjoy, and don&#39;t forget to&nbsp;</strong><a data-concrete5-link-type="image" href="https://web.archive.org/web/20160214134202/mailto:hello@chriswatterston.com">let me know what you think</a><strong>?</strong></p>\r\n'),
+(130, '<p>We were unique in what we did, not only did we supported our base school, but 30+ other schools and businesses in and around the Surrey, UK areas. That doesn&#39;t sound a lot compared to some larger companies, but bear in mind we were&nbsp;<em>just</em>&nbsp;an IT team based within a school.</p>\r\n\r\n<p>Moving &quot;Onwards and Upwards&quot; as they say, before getting into to much about the past... all that had come to an unfortunate end, and non of our team of 14 wanted or wished for it. Many of the team moved on to further their careers and love for IT, but for me, this is was when I possibly made the biggest decision of my career.</p>\r\n\r\n<p>Making a decision to become an&nbsp;<a href="http://www.chriswatterston.com/">self-employed designer</a>&nbsp;could be an easy hit for someone who&#39;s only 24 years of age, living at home with parents, paying no rent, no responsibilities, with thousands of pounds of disposable income each month, going out drinking and partying 7 night a week, with a partner who also has thousands of pounds of disposable income. Sounds like an easy life, doesn&#39;t it? Now let&#39;s spice things up a wee bit, what about if that someone was 24 years of age, lived with their partner who&#39;s a full time mum on an annual salary of &pound;0, with their 2 loveable children, bills to pay, food on the table every day without fail, luxuries, running a car and motorbike, insurance, the list goes on, as you know. So has the decision become any easier?</p>\r\n\r\n<p>When you have a love for what you do, believe in yourself, and dreamt about working for yourself for years and years, the decision becomes easier. Before finalising my decision I spent hours reading articles on the net about what to expect, what&#39;s recommended, how much money you should have saved to cover yourself for a few months, the pros and cons, etc. But I still had my mind set, I wanted and needed to work for myself, and there was an opportunity slapping me right around my chops to do so. So I did!</p>\r\n\r\n<p>My first day of what some refer to as &quot;<a href="http://explorecreaterepeat.com/articles/common-freelancing-myths">Total Freedom</a>&quot;, started on 1st September 2013. I woke up at 6:30, yes6:30am, with a smile on my face. The gut feeling of being my own boss was thrilling! And as time when on, weeks flew by, pre job stress faded away, my hair started to grow back (I&#39;m sure of it), more time for my family appeared out of thin air, I felt and became much happier. I started being myself again. Life was perfect!<br />\r\nIt wasn&#39;t that I didn&#39;t love or enjoy my previous job, Don&#39;t get me wrong, I did. It&#39;s just that it became a routine, those who know me know I HATE routine. Now everyday is a different day.</p>\r\n\r\n<p>So, the question everyones asking me these days is &quot;How successful have you been in starting out on your own&quot;. Well, incase you&#39;re wondering the same question , I&#39;ve laid out a couple of stats below to give you a rough idea...</p>\r\n'),
+(132, '<p>Enough time has passed now for me to&nbsp;<em>settle into</em>&nbsp;my new role, career, life, and I feel it&#39;s the perfect time to set myself some goals for 2014. So here they are, in no particular order...</p>\r\n'),
+(133, '<ol>\r\n	<li>Minimise on business&nbsp;<em>and personal</em>&nbsp;outgoings.</li>\r\n	<li>Provide design and development solutions to a minimum of two charities.</li>\r\n	<li>Write more. Post at least one blog article per month.</li>\r\n	<li>Design, develop and launch completed personal projects for everyone to use and benefit.</li>\r\n	<li>Increase involvement within online communities. Targeting&nbsp;<a href="https://web.archive.org/web/20160214134206/http://dribbble.com/">Dribbble</a>,&nbsp;<a href="https://web.archive.org/web/20160214134206/https://github.com/">GitHut</a>&nbsp;and&nbsp;<a href="https://web.archive.org/web/20160214134206/http://www.concrete5.org/">Conrete5</a>.</li>\r\n</ol>\r\n');
+INSERT INTO `btContentLocal` (`bID`, `content`) VALUES
+(134, '<p>So, there it is. Now let&#39;s dig a wee deeper look into each one...</p>\r\n\r\n<p><strong>1. Minimise on business and personal outgoings.</strong>&nbsp;This seams reasonable, doesn&#39;t it? Everyone knows businesses require money to make money, so I&#39;ve decided to cancel a few service that I&#39;d subscribed to over the years to save some pennies.</p>\r\n\r\n<p>The first sacrifice being&nbsp;<a href="https://web.archive.org/web/20160214134206/https://evernote.com/">Evernote</a>. I signed up to&nbsp;<a href="https://web.archive.org/web/20160214134206/https://evernote.com/premium/">Evernote&#39;s Premium Subscription</a>&nbsp;back in 2011, I used to use it for everything at my pervious place of work, but&nbsp;<em>boy</em>&nbsp;have things changed since becoming self employed. I can honestly say, I don&#39;t even remember the last time I opened up my&nbsp;<a href="https://web.archive.org/web/20160214134206/https://evernote.com/">Evernote</a>&nbsp;app to create or read a note. Really, really! I used to be a hourly user and had a tone of projects, notes, PSD files, wireframes, pictures, the list goes on, all from my pervious work place and personal life. Boom, I archived the lot off, and canceled my Premium Subscription. That&#39;s &pound;30 per year i&#39;m now saving. Woop!</p>\r\n\r\n<p>My second sacrifice was&nbsp;<a href="https://web.archive.org/web/20160214134206/https://signup.netflix.com/">Netflix</a>. Don&#39;t get me wrong, Netflix is a great service if you like watching films that are 2+ years old, or you have kids that&#39;ll watch cartoons on the iPad. I personally like to watch new films that I don&#39;t have to blow the dust off to watch, I already have them all on DVD. Here&#39;s an actual example, my other half, the love of my life, has never watched&nbsp;<a href="https://web.archive.org/web/20160214134206/http://en.wikipedia.org/wiki/Gladiator_(2000_film)">Gladiator</a>, what a film! Which I&#39;d like to add, is now 14 years old....AND IT&#39;S NOT EVEN ON NETFLIX! Excuse my french, but are you shitting me? So frustrating! So, you get the picture. That&#39;s another &pound;5.99 per month, &pound;71.88(ish) per year.</p>\r\n\r\n<p>Smiles all around, we&#39;re only on the 7th of January, and I&#39;ve already minimise my outgoing by &pound;101.88 per year. Not bad going so far.</p>\r\n\r\n<p><strong>2.&nbsp;Provide design and development solutions to at least two charities.</strong>&nbsp;I&#39;ve always enjoyed helping others, it makes me feel all good and warm inside. Like wearing a onesie fully zipped to the neck, with the heating cranked up to 30&deg; and your wood burner blazing! People who know me will know I very rarely say No, or hate having to say it. I&#39;ll find any reason to avoid the word, I&#39;d say this is probably a weakness of mine. So, moving onwards and upwards, I&#39;d give a lot of time for any individual or group with a lot of time for others. And with charities landing within this category, I&#39;ve always wanted to help a charity that needs an extra helping hand online. So, this year I&#39;m going to make sure I give my time to a minimum of two. Promise!</p>\r\n\r\n<p><strong>3. Write more. Post at least one blog article per month.</strong>&nbsp;I&#39;ll admit, my writing and grammar is crap! It always has been, and I hope it always won&#39;t be. This particular goal&#39;s to help increase my poor grammar, spelling, writing, etc, as you&#39;ve probably already noticed while reading this. You savvy lot, you! So, I&#39;ll be writing a minimum of one blog post per month. Lucky you!</p>\r\n\r\n<p><strong>4. Design, develop and launch completed personal projects for everyone to use and benefit.</strong>&nbsp;I&#39;ve always had an active mind, a thinker, and thought up a few pretty good ideas in the past for personal web projects. But with a full time job, I never did get around to completing them due to lack of time, the same old story. I could easily jump back on the bandwagon, finishing what I&#39;d started, but they&#39;re all out of date and wouldn&#39;t have any benefits or future.</p>\r\n\r\n<p>The first&nbsp;<a href="https://web.archive.org/web/20160214134206/http://en.wikipedia.org/wiki/Web_application">web app</a>&nbsp;idea I came up with back in 2010, and was called My Child&#39;s Diary. MCD&#39;s vision was to provide an&nbsp;<em>in the cloud</em>&nbsp;diary for parents to log and remember the facts, millstones, photos, events and much more, of their kids, all through the internet, phone or tablet. Allowing it to be shared with family and friends, with an added feature so parents can get the final logged experience to be exported as a PDF download or to be printed on a hardback book. But, I never got around to finishing it.</p>\r\n\r\n<p>The second&nbsp;<a href="https://web.archive.org/web/20160214134206/http://en.wikipedia.org/wiki/Web_application">web app</a>&nbsp;idea was called FancyE.at, which started late 2012, and again never did get finished. FE&#39;s vision was to bring the subject of quality, food, service and networking all into a simple, easy to use and social web app. The app would provide details such as the closest place to eat via a categorised search, personal favourite hot spots, reviews, menus, photos, share a scheduled dinner with friends, booking of tables, locations, discounts....bla, bla, bla.</p>\r\n\r\n<p>My new idea, which I&#39;ll admit did hurt a wee bit when it hit me, inspired by my other half, is already under way, with I hope to launch by 1st April 2014. The vision is aimed at new and expecting parents, with others benefiting also. BUT, I&#39;m saying no more! You&#39;ll have to wait and see once it&#39;s been launched.</p>\r\n\r\n<p><strong>5. Increase involvement within online communities. Targeting&nbsp;<a href="https://web.archive.org/web/20160214134206/http://dribbble.com/">Dribbble</a>,&nbsp;<a href="https://web.archive.org/web/20160214134206/https://github.com/">GitHut</a>&nbsp;and&nbsp;<a href="https://web.archive.org/web/20160214134206/http://www.concrete5.org/">Conrete5</a>.&nbsp;</strong>I&#39;ve always wanted to hit three communities hard, well not hard but with my online presence,&nbsp;<a href="https://web.archive.org/web/20160214134206/http://dribbble.com/">Dribbble</a>,&nbsp;<a href="https://web.archive.org/web/20160214134206/https://github.com/">GitHut</a>&nbsp;and&nbsp;<a href="https://web.archive.org/web/20160214134206/http://www.concrete5.org/">Conrete5</a>. I have accounts on all but over the years things have been stopping me doing just that. They are as follows...Dribbble, haven&#39;t been invited yet....please? GitHub and Concrete5, just not enough time. Now that times on my side, I can correct these areas and join all these other beautiful lot.</p>\r\n\r\n<p>So, thats that. Now you know my five goals for 2014, have you set any goals? If yes, then what are yours?</p>\r\n');
 
 -- --------------------------------------------------------
 
@@ -1773,7 +2211,9 @@ CREATE TABLE `btCoreAreaLayout` (
 INSERT INTO `btCoreAreaLayout` (`bID`, `arLayoutID`) VALUES
 (2, 1),
 (6, 2),
-(9, 3);
+(9, 3),
+(105, 4),
+(108, 5);
 
 -- --------------------------------------------------------
 
@@ -2157,7 +2597,11 @@ INSERT INTO `btNavigation` (`bID`, `orderBy`, `displayPages`, `displayPagesCID`,
 (56, 'display_asc', 'top', 0, 0, 'none', 'enough', 0, 0),
 (60, 'display_asc', 'top', 0, 0, 'none', 'enough', 0, 0),
 (61, 'display_asc', 'top', 0, 0, 'none', 'enough', 0, 0),
-(62, 'display_asc', 'top', 0, 0, 'none', 'enough', 0, 0);
+(62, 'display_asc', 'top', 0, 0, 'none', 'enough', 0, 0),
+(100, 'display_asc', 'top', 0, 0, 'all', 'enough', 0, 0),
+(101, 'display_asc', 'top', 0, 0, 'all', 'enough_plus1', 0, 0),
+(102, 'display_asc', 'top', 0, 0, 'all', 'custom', 2, 0),
+(103, 'display_asc', 'top', 0, 0, 'none', 'custom', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -2699,6 +3143,9 @@ INSERT INTO `CollectionAttributeValues` (`cID`, `cvID`, `akID`, `avID`) VALUES
 (1, 18, 2, 210),
 (1, 19, 2, 210),
 (1, 20, 2, 210),
+(1, 21, 2, 210),
+(1, 22, 2, 210),
+(1, 23, 2, 210),
 (168, 2, 2, 211),
 (168, 2, 20, 212),
 (168, 2, 22, 213),
@@ -2747,7 +3194,169 @@ INSERT INTO `CollectionAttributeValues` (`cID`, `cvID`, `akID`, `avID`) VALUES
 (174, 3, 9, 344),
 (174, 3, 13, 345),
 (176, 3, 20, 346),
-(176, 3, 23, 347);
+(177, 3, 20, 346),
+(177, 4, 20, 346),
+(176, 3, 23, 347),
+(177, 3, 23, 347),
+(177, 4, 23, 347),
+(177, 4, 1, 348),
+(177, 4, 2, 349),
+(177, 4, 9, 350),
+(177, 4, 13, 351),
+(177, 5, 1, 352),
+(177, 5, 2, 353),
+(177, 5, 9, 354),
+(177, 5, 13, 355),
+(177, 5, 20, 356),
+(177, 5, 23, 357),
+(176, 4, 20, 358),
+(176, 4, 23, 359),
+(176, 5, 20, 360),
+(176, 5, 23, 361),
+(176, 6, 20, 362),
+(176, 6, 23, 363),
+(176, 7, 20, 364),
+(176, 7, 23, 365),
+(177, 6, 1, 366),
+(177, 6, 2, 367),
+(177, 6, 9, 368),
+(177, 6, 13, 369),
+(177, 6, 20, 370),
+(177, 6, 23, 371),
+(171, 4, 2, 372),
+(171, 4, 3, 373),
+(171, 4, 20, 374),
+(171, 4, 22, 375),
+(171, 4, 21, 376),
+(171, 5, 2, 377),
+(171, 5, 3, 378),
+(171, 5, 20, 379),
+(171, 5, 21, 380),
+(171, 5, 22, 381),
+(171, 6, 2, 382),
+(171, 6, 3, 383),
+(171, 6, 20, 384),
+(171, 6, 21, 385),
+(171, 6, 22, 386),
+(171, 7, 2, 387),
+(171, 7, 3, 388),
+(171, 7, 20, 389),
+(171, 7, 22, 391),
+(176, 8, 2, 392),
+(176, 8, 3, 393),
+(176, 8, 23, 394),
+(176, 8, 20, 395),
+(176, 9, 2, 396),
+(176, 10, 2, 396),
+(176, 11, 2, 396),
+(176, 9, 3, 397),
+(176, 10, 3, 397),
+(176, 11, 3, 397),
+(176, 9, 23, 398),
+(176, 10, 23, 398),
+(176, 11, 23, 398),
+(176, 9, 20, 399),
+(176, 10, 20, 399),
+(176, 11, 20, 399),
+(176, 12, 2, 416),
+(176, 13, 2, 416),
+(176, 12, 3, 417),
+(176, 13, 3, 417),
+(176, 12, 23, 418),
+(176, 13, 23, 418),
+(176, 12, 20, 419),
+(176, 13, 20, 419),
+(1, 24, 2, 420),
+(1, 24, 3, 421),
+(1, 25, 2, 422),
+(1, 25, 3, 423),
+(1, 25, 1, 424),
+(159, 2, 20, 428),
+(159, 3, 1, 429),
+(159, 4, 1, 429),
+(159, 3, 2, 430),
+(159, 4, 2, 430),
+(159, 3, 3, 431),
+(159, 4, 3, 431),
+(159, 3, 20, 432),
+(159, 4, 20, 432),
+(160, 2, 3, 433),
+(160, 3, 3, 433),
+(160, 2, 20, 434),
+(160, 3, 20, 434),
+(160, 2, 2, 435),
+(160, 3, 2, 435),
+(160, 2, 1, 436),
+(160, 3, 1, 436),
+(181, 1, 1, 491),
+(181, 1, 2, 492),
+(181, 1, 3, 493),
+(181, 1, 20, 494),
+(181, 1, 22, 496),
+(181, 2, 1, 503),
+(181, 3, 1, 503),
+(181, 2, 2, 504),
+(181, 3, 2, 504),
+(181, 2, 3, 505),
+(181, 3, 3, 505),
+(181, 2, 20, 506),
+(181, 3, 20, 506),
+(181, 2, 22, 508),
+(181, 3, 22, 508),
+(185, 1, 2, 558),
+(185, 2, 2, 558),
+(185, 1, 3, 559),
+(185, 2, 3, 559),
+(185, 1, 20, 560),
+(185, 2, 20, 560),
+(185, 1, 22, 562),
+(185, 2, 22, 562),
+(186, 1, 1, 605),
+(186, 1, 2, 606),
+(186, 1, 3, 607),
+(186, 1, 20, 608),
+(186, 1, 21, 609),
+(186, 1, 22, 610),
+(186, 2, 1, 611),
+(186, 2, 2, 612),
+(186, 2, 3, 613),
+(186, 2, 20, 614),
+(186, 2, 21, 615),
+(186, 2, 22, 616),
+(186, 3, 1, 627),
+(186, 3, 2, 628),
+(186, 3, 3, 629),
+(186, 3, 20, 630),
+(186, 3, 21, 631),
+(186, 3, 22, 632),
+(187, 1, 1, 1011),
+(187, 1, 2, 1012),
+(187, 1, 3, 1013),
+(187, 1, 20, 1014),
+(187, 1, 22, 1016),
+(188, 1, 1, 1077),
+(188, 2, 1, 1077),
+(188, 1, 2, 1078),
+(188, 2, 2, 1078),
+(188, 1, 3, 1079),
+(188, 2, 3, 1079),
+(188, 1, 20, 1080),
+(188, 2, 20, 1080),
+(188, 1, 21, 1081),
+(188, 2, 21, 1081),
+(188, 1, 22, 1082),
+(188, 2, 22, 1082),
+(189, 1, 1, 1113),
+(189, 1, 2, 1114),
+(189, 1, 3, 1115),
+(189, 1, 20, 1116),
+(189, 1, 22, 1118),
+(189, 2, 1, 1119),
+(189, 2, 2, 1120),
+(189, 2, 3, 1121),
+(189, 2, 20, 1122),
+(189, 2, 21, 1123),
+(189, 2, 22, 1124);
 
 -- --------------------------------------------------------
 
@@ -2767,7 +3376,7 @@ CREATE TABLE `Collections` (
 --
 
 INSERT INTO `Collections` (`cID`, `cDateAdded`, `cDateModified`, `cHandle`) VALUES
-(1, '2017-05-22 15:59:25', '2017-06-02 15:04:26', NULL),
+(1, '2017-05-22 15:59:25', '2017-06-20 10:19:15', NULL),
 (2, '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'dashboard'),
 (3, '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'sitemap'),
 (4, '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'full'),
@@ -2920,13 +3529,13 @@ INSERT INTO `Collections` (`cID`, `cDateAdded`, `cDateModified`, `cHandle`) VALU
 (151, '2017-05-22 16:00:00', '2017-05-22 16:00:00', 'page_not_found'),
 (152, '2017-05-22 16:00:00', '2017-05-22 16:00:00', 'desktop'),
 (153, '2017-05-22 16:00:01', '2017-05-22 16:00:01', NULL),
-(154, '2017-05-22 16:01:20', '2017-05-23 16:41:37', 'header-site-title'),
-(155, '2017-05-22 16:01:21', '2017-05-23 15:27:18', 'header-navigation'),
+(154, '2017-05-22 16:01:20', '2017-06-16 12:17:47', 'header-site-title'),
+(155, '2017-05-22 16:01:21', '2017-06-19 11:20:58', 'header-navigation'),
 (156, '2017-05-22 16:01:21', '2017-05-25 08:59:53', 'footer-legal'),
 (157, '2017-05-22 16:01:21', '2017-05-23 15:25:44', 'footer-navigation'),
 (158, '2017-05-22 16:01:21', '2017-05-24 10:09:24', 'footer-contact'),
-(159, '2017-05-23 15:30:41', '2017-05-23 15:30:42', ''),
-(160, '2017-05-23 15:30:55', '2017-05-23 15:30:55', ''),
+(159, '2017-05-23 15:30:41', '2017-06-20 14:16:30', ''),
+(160, '2017-05-23 15:30:55', '2017-06-20 14:29:31', ''),
 (161, '2017-05-23 15:31:03', '2017-05-23 15:31:04', ''),
 (162, '2017-05-23 15:31:17', '2017-05-23 15:31:17', ''),
 (163, '2017-05-23 15:31:28', '2017-05-23 15:31:28', ''),
@@ -2937,12 +3546,24 @@ INSERT INTO `Collections` (`cID`, `cDateAdded`, `cDateModified`, `cHandle`) VALU
 (168, '2017-05-24 10:53:29', '2017-05-24 12:55:15', ''),
 (169, '2017-05-24 11:07:06', '2017-05-24 12:56:05', ''),
 (170, '2017-05-24 11:08:13', '2017-05-24 11:08:13', ''),
-(171, '2017-05-24 11:08:23', '2017-05-24 13:12:56', ''),
+(171, '2017-05-24 11:08:23', '2017-06-19 15:50:59', ''),
 (172, '2017-05-25 12:53:39', '2017-05-25 12:53:39', NULL),
 (173, '2017-05-30 13:41:33', '2017-05-30 13:43:38', ''),
 (174, '2017-06-02 14:58:31', '2017-06-02 15:20:21', ''),
 (175, '2017-06-02 15:09:34', '2017-06-02 15:09:34', NULL),
-(176, '2017-06-02 15:13:48', '2017-06-02 15:22:10', '');
+(176, '2017-06-02 15:13:48', '2017-06-19 17:09:40', ''),
+(177, '2017-06-06 14:45:45', '2017-06-06 14:58:07', NULL),
+(178, '2017-06-20 14:55:31', '2017-06-20 14:55:31', ''),
+(179, '2017-06-20 14:56:55', '2017-06-20 14:56:55', ''),
+(180, '2017-06-20 14:58:30', '2017-06-20 14:58:30', ''),
+(181, '2017-06-20 14:59:12', '2017-06-20 15:15:43', ''),
+(182, '2017-06-20 15:19:11', '2017-06-20 15:19:11', NULL),
+(183, '2017-06-20 15:19:11', '2017-06-20 15:19:11', ''),
+(185, '2017-06-20 15:19:35', '2017-06-20 15:25:13', ''),
+(186, '2017-06-20 15:26:44', '2017-06-20 15:37:51', ''),
+(187, '2017-06-20 15:38:24', '2017-06-20 15:51:47', ''),
+(188, '2017-06-20 16:07:36', '2017-06-20 16:14:31', ''),
+(189, '2017-06-20 16:17:15', '2017-06-20 16:21:39', '');
 
 -- --------------------------------------------------------
 
@@ -2976,7 +3597,7 @@ CREATE TABLE `CollectionSearchIndexAttributes` (
 --
 
 INSERT INTO `CollectionSearchIndexAttributes` (`cID`, `ak_meta_title`, `ak_meta_description`, `ak_meta_keywords`, `ak_desktop_priority`, `ak_is_desktop`, `ak_icon_dashboard`, `ak_exclude_nav`, `ak_exclude_page_list`, `ak_header_extra_content`, `ak_tags`, `ak_is_featured`, `ak_exclude_search_index`, `ak_exclude_sitemapxml`, `ak_micro_post`, `ak_post_topics`, `ak_casestudy_topics`, `ak_description_rich`) VALUES
-(1, NULL, 'Welcome to Chris Watterston', NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(1, 'Welcome to Chris Watterston', 'Welcome to Chris Watterston', 'welcome, chris watterston, design, ios apps, ', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
 (2, NULL, NULL, NULL, '0.0000', 0, 'fa fa-th-large', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
 (3, NULL, NULL, 'pages, add page, delete page, copy, move, alias', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
 (4, NULL, NULL, 'pages, add page, delete page, copy, move, alias', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
@@ -3089,12 +3710,21 @@ INSERT INTO `CollectionSearchIndexAttributes` (`cID`, `ak_meta_title`, `ak_meta_
 (149, NULL, NULL, NULL, '0.0000', 0, 'fa fa-edit', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
 (150, NULL, NULL, NULL, '0.0000', 0, 'fa fa-th', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
 (152, NULL, NULL, NULL, '1.0000', 1, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(159, '', '', '', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
+(160, 'Meta Title', 'Meta Description', 'Meta Keywords', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
 (168, NULL, 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Posts/News||/Latest Feed||', NULL, NULL),
 (169, NULL, 'Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat. Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in.', 'hello, world', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 1, '||/Posts/Family||/Latest Feed||', NULL, NULL),
-(171, NULL, 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', 'tester, sausage', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Posts/Inspirational||/Latest Feed||', NULL, NULL),
+(171, NULL, 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in.', 'tester, sausage', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Latest Feed||', NULL, NULL),
 (173, NULL, 'Morbi sit amet odio est. Etiam ex quam, viverra ac porta ut, lobortis non ipsum. Praesent sollicitudin orci in ante placerat, eu gravida massa iaculis. Phasellus a est varius, imperdiet mi nec, hendrerit tortor. Nulla tincidunt magna nec tincidunt vehicula. Phasellus tristique tempor diam, vitae luctus enim aliquam eu. Cras dapibus vehicula libero quis interdum.', '1970 boat, broom speed boat, project boat', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, '||/Posts/Inspirational||', NULL, NULL),
 (174, '', '', NULL, '0.0000', 0, NULL, 0, 0, '', NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(176, NULL, NULL, NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, '<h2>A mobile app for every side of education.</h2>\n\n<h2>Starting with your SKOOL.</h2>\n\n<p>Areas of education are turning digital, and so are parent demands. Parents like to be updated in a convenient way. A way that doesn&#39;t always require them to visit a blog, download a document or search your website relentlessly.</p>\n\n<p><a class="abtn" href="#">Find Out More</a></p>\n');
+(176, NULL, '', '', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, '<h2>A mobile app for every side of education.<br />\n<strong>Starting with your <span class="colour-skoolping">SKOOL</span></strong></h2>\n\n<p>Areas of education are turning digital, and so are parent demands. Parents like to be updated in a convenient way. A way that doesn&#39;t always require them to visit a blog, download a document or search your website relentlessly.</p>\n\n<p><a class="abtn skoolping" href="#">Find Out More</a></p>\n'),
+(177, '', '', NULL, '0.0000', 0, NULL, 0, 0, '', NULL, 0, 0, 0, 0, NULL, NULL, '<h2><strong>The Original.</strong> The Unique.<br />\n#TherIsNoCloud</h2>\n\n<p>Over 20,000 printed units sold globally, the words are spreading far and wide!</p>\n\n<p>&quot;There is no cloud. It&#39;s just someone else&#39;s computer&quot; It&#39;s only the truth, but I wonder how many people really think there really is a &quot;cloud&quot; that stores all our data?</p>\n\n<p><a class="abtn black" href="#">Find Out More</a></p>\n'),
+(181, 'My \'There Is No Cloud\' Sticker', 'Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global!', 'there is no cloud, sticker, stickermule', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Posts/News||', NULL, NULL),
+(185, NULL, 'Like every Tom, Dick and Harry in the land, I set myself new targets and challenges at the start of every year. Do I ever achieve them, behave yourself! It’s so frustrating telling you that, but even more so with myself for not achieving. *sigh*', '2016, new challenges, new start, new targets', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Posts/Inspirational||', NULL, NULL),
+(186, 'A much needed Spotify widget for the Notification Center', 'Since installing the new operating system, OS X Yosemite, like many I\'ve noticed a hell of a lot of new great features and design. But, being an every day MacBook user, I\'m finding some pretty cool, but some also pretty annoying.', 'Spotify widget, Notification Centre, iOS widget', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 1, '||/Posts/Inspirational||', NULL, NULL),
+(187, '\'There Is No Cloud\' Copyright Protection', 'I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO! That would place myself in the same category as the thieving scummy $&£4’ers that stole my design and many other honest designers work also - and that’s me being polite against them!', 'stealing designers work, my design', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Posts/News||', NULL, NULL),
+(188, '4th Month Into Self-Employment', 'Jee. Taking a step back, it\'s been almost 4 months already. Holy Crap! Cutting a 5 year story into a nut shell, I previously worked for a secondary school within an IT department. It wasn\'t any ordinary IT department within a school, ow nooo.', '4 months, IT department, self employment', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 1, '||/Posts/News||', NULL, NULL),
+(189, 'Setting 5 Goals For 2014', 'A warm welcome to 2014, I wish you all a happy New Year. It\'s the start of a New Year for us all, and funny enough it\'s also that time where 99.9% of us feel the need to set ourself new year resolutions, goals, targets, or whatever you call it. For me, I\'ve just rolled into my 5th month of self employment and it still feels incredible, just as it did on day one.', 'welcome to 2014', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, '||/Posts/Inspirational||', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -3187,6 +3817,51 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (1, 20, 74, 'Content Area Footer One', 37, 0, 0, 0, 0, 0, 0, 0),
 (1, 20, 78, 'Content Area Footer Two', 38, 0, 0, 0, 0, 0, 0, 0),
 (1, 20, 84, 'Content Area Two', NULL, 0, 1, 0, 0, 0, 0, 0),
+(1, 21, 55, 'Header Latest Feed', 34, 0, 0, 0, 0, 0, 0, 0),
+(1, 21, 72, 'Content Area One', 35, 0, 0, 0, 0, 0, 0, 0),
+(1, 21, 74, 'Content Area Footer One', 37, 0, 0, 0, 0, 0, 0, 0),
+(1, 21, 78, 'Content Area Footer Two', 38, 0, 0, 0, 0, 0, 0, 0),
+(1, 21, 84, 'Content Area Two', NULL, 0, 0, 0, 0, 0, 0, 0),
+(1, 21, 85, 'Services Area One', 42, 0, 1, 0, 0, 0, 0, 0),
+(1, 21, 86, 'Services Area Two', 43, 0, 1, 0, 0, 0, 0, 0),
+(1, 21, 87, 'Services Area Three', 44, 0, 1, 0, 0, 0, 0, 0),
+(1, 21, 88, 'Services Area Four', 45, 0, 1, 0, 0, 0, 0, 0),
+(1, 22, 55, 'Header Latest Feed', 34, 0, 0, 0, 0, 0, 0, 0),
+(1, 22, 72, 'Content Area One', 35, 0, 0, 0, 0, 0, 0, 0),
+(1, 22, 74, 'Content Area Footer One', 37, 0, 0, 0, 0, 0, 0, 0),
+(1, 22, 78, 'Content Area Footer Two', 38, 0, 0, 0, 0, 0, 0, 0),
+(1, 22, 84, 'Content Area Two', NULL, 0, 0, 0, 0, 0, 0, 0),
+(1, 22, 89, 'Services Area One', 42, 0, 1, 0, 0, 0, 0, 0),
+(1, 22, 90, 'Services Area Three', 44, 0, 1, 0, 0, 0, 0, 0),
+(1, 22, 91, 'Services Area Two', 43, 0, 1, 0, 0, 0, 0, 0),
+(1, 22, 92, 'Services Area Four', 45, 0, 1, 0, 0, 0, 0, 0),
+(1, 23, 55, 'Header Latest Feed', 34, 0, 0, 0, 0, 0, 0, 0),
+(1, 23, 72, 'Content Area One', 35, 0, 0, 0, 0, 0, 0, 0),
+(1, 23, 74, 'Content Area Footer One', 37, 0, 0, 0, 0, 0, 0, 0),
+(1, 23, 78, 'Content Area Footer Two', 38, 0, 0, 0, 0, 0, 0, 0),
+(1, 23, 84, 'Content Area Two', NULL, 0, 0, 0, 0, 0, 0, 0),
+(1, 23, 93, 'Services Area One', 42, 0, 1, 0, 0, 0, 0, 0),
+(1, 23, 94, 'Services Area Two', 43, 0, 1, 0, 0, 0, 0, 0),
+(1, 23, 95, 'Services Area Three', 44, 0, 1, 0, 0, 0, 0, 0),
+(1, 23, 96, 'Services Area Four', 45, 0, 1, 0, 0, 0, 0, 0),
+(1, 24, 55, 'Header Latest Feed', 34, 0, 0, 0, 0, 0, 0, 0),
+(1, 24, 72, 'Content Area One', 35, 0, 0, 0, 0, 0, 0, 0),
+(1, 24, 74, 'Content Area Footer One', 37, 0, 0, 0, 0, 0, 0, 0),
+(1, 24, 78, 'Content Area Footer Two', 38, 0, 0, 0, 0, 0, 0, 0),
+(1, 24, 84, 'Content Area Two', NULL, 0, 0, 0, 0, 0, 0, 0),
+(1, 24, 93, 'Services Area One', 42, 0, 0, 0, 0, 0, 0, 0),
+(1, 24, 94, 'Services Area Two', 43, 0, 0, 0, 0, 0, 0, 0),
+(1, 24, 95, 'Services Area Three', 44, 0, 0, 0, 0, 0, 0, 0),
+(1, 24, 96, 'Services Area Four', 45, 0, 0, 0, 0, 0, 0, 0),
+(1, 25, 55, 'Header Latest Feed', 34, 0, 0, 0, 0, 0, 0, 0),
+(1, 25, 72, 'Content Area One', 35, 0, 0, 0, 0, 0, 0, 0),
+(1, 25, 74, 'Content Area Footer One', 37, 0, 0, 0, 0, 0, 0, 0),
+(1, 25, 78, 'Content Area Footer Two', 38, 0, 0, 0, 0, 0, 0, 0),
+(1, 25, 84, 'Content Area Two', NULL, 0, 0, 0, 0, 0, 0, 0),
+(1, 25, 93, 'Services Area One', 42, 0, 0, 0, 0, 0, 0, 0),
+(1, 25, 94, 'Services Area Two', 43, 0, 0, 0, 0, 0, 0, 0),
+(1, 25, 95, 'Services Area Three', 44, 0, 0, 0, 0, 0, 0, 0),
+(1, 25, 96, 'Services Area Four', 45, 0, 0, 0, 0, 0, 0, 0),
 (138, 1, 1, 'Main', 1, 0, 1, 0, 0, 0, 0, 0),
 (138, 1, 2, 'Main', 2, 1, 1, 0, 0, 0, 0, 0),
 (138, 1, 3, 'Main : 1', 3, 0, 1, 0, 0, 0, 0, 0),
@@ -3226,9 +3901,19 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (154, 12, 44, 'Main', 22, 1, 1, 0, 0, 0, 0, 0),
 (154, 13, 38, 'Main', 21, 0, 0, 0, 0, 0, 0, 0),
 (154, 13, 45, 'Main', 22, 1, 1, 0, 0, 0, 0, 0),
+(154, 14, 38, 'Main', 21, 0, 0, 0, 0, 0, 0, 0),
+(154, 14, 97, 'Main', 22, 1, 1, 0, 0, 0, 0, 0),
+(154, 15, 38, 'Main', 21, 0, 0, 0, 0, 0, 0, 0),
+(154, 15, 98, 'Main', 22, 1, 1, 0, 0, 0, 0, 0),
+(154, 16, 38, 'Main', 21, 0, 0, 0, 0, 0, 0, 0),
+(154, 16, 99, 'Main', 22, 1, 1, 0, 0, 0, 0, 0),
 (155, 2, 20, 'Main', 20, 0, 1, 0, 0, 0, 0, 0),
 (155, 3, 21, 'Main', 20, 0, 1, 0, 0, 0, 0, 0),
 (155, 4, 56, 'Main', 20, 0, 1, 0, 0, 0, 0, 0),
+(155, 5, 100, 'Main', 20, 0, 1, 0, 0, 0, 0, 0),
+(155, 6, 101, 'Main', 20, 0, 1, 0, 0, 0, 0, 0),
+(155, 7, 102, 'Main', 20, 0, 1, 0, 0, 0, 0, 0),
+(155, 8, 103, 'Main', 20, 0, 1, 0, 0, 0, 0, 0),
 (156, 2, 18, 'Main', 18, 0, 1, 0, 0, 0, 0, 0),
 (156, 3, 58, 'Main', 18, 0, 1, 0, 0, 0, 0, 0),
 (156, 4, 59, 'Main', 18, 0, 1, 0, 0, 0, 0, 0),
@@ -3246,7 +3931,14 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (158, 6, 47, 'Main', 29, 0, 0, 0, 0, 0, 0, 0),
 (158, 6, 57, 'Main', 17, 1, 1, 0, 0, 0, 0, 0),
 (159, 1, 25, 'Main', 23, 0, 1, 0, 0, 0, 0, 0),
+(159, 2, 112, 'Main', 52, 0, 1, 0, 0, 0, 0, 0),
+(159, 3, 113, 'Main', 53, 0, 1, 0, 0, 0, 0, 0),
+(159, 4, 113, 'Main', 53, 0, 0, 0, 0, 0, 0, 0),
+(159, 4, 114, 'Main Body One', 54, 0, 1, 0, 0, 0, 0, 0),
 (160, 1, 27, 'Main', 24, 0, 1, 0, 0, 0, 0, 0),
+(160, 2, 27, 'Main', 24, 0, 0, 0, 0, 0, 0, 0),
+(160, 3, 27, 'Main', 24, 0, 0, 0, 0, 0, 0, 0),
+(160, 3, 115, 'Main Body One', 55, 0, 1, 0, 0, 0, 0, 0),
 (161, 1, 29, 'Main', 25, 0, 1, 0, 0, 0, 0, 0),
 (162, 1, 31, 'Main', 26, 0, 1, 0, 0, 0, 0, 0),
 (163, 1, 33, 'Main', 27, 0, 1, 0, 0, 0, 0, 0),
@@ -3267,7 +3959,48 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (166, 5, 64, 'Main', 33, 1, 1, 0, 0, 0, 0, 0),
 (174, 1, 83, 'Main', 41, 0, 1, 0, 0, 0, 0, 0),
 (174, 2, 83, 'Main', 41, 0, 0, 0, 0, 0, 0, 0),
-(174, 3, 83, 'Main', 41, 0, 0, 0, 0, 0, 0, 0);
+(174, 3, 83, 'Main', 41, 0, 0, 0, 0, 0, 0, 0),
+(176, 10, 105, 'Main Body Two', 46, 0, 1, 0, 0, 0, 0, 0),
+(176, 10, 106, 'Main Body Two : 9', 47, 0, 1, 0, 0, 0, 0, 0),
+(176, 10, 107, 'Main Body Two : 10', 48, 0, 1, 0, 0, 0, 0, 0),
+(176, 11, 106, 'Main Body Two : 9', 47, 0, 0, 0, 0, 0, 0, 0),
+(176, 11, 107, 'Main Body Two : 10', 48, 0, 0, 0, 0, 0, 0, 0),
+(176, 11, 108, 'Main Body Two', 46, 0, 1, 0, 0, 0, 0, 0),
+(176, 12, 106, 'Main Body Two : 9', 47, 0, 0, 0, 0, 0, 0, 0),
+(176, 12, 107, 'Main Body Two : 10', 48, 0, 0, 0, 0, 0, 0, 0),
+(176, 12, 108, 'Main Body Two', 46, 0, 0, 0, 0, 0, 0, 0),
+(176, 13, 106, 'Main Body Two : 9', 47, 0, 0, 0, 0, 0, 0, 0),
+(176, 13, 107, 'Main Body Two : 10', 48, 0, 0, 0, 0, 0, 0, 0),
+(176, 13, 108, 'Main Body Two', 46, 0, 0, 0, 0, 0, 0, 0),
+(176, 13, 109, 'Main Description', 49, 0, 1, 0, 0, 0, 0, 0),
+(176, 13, 110, 'Main Body One', 50, 0, 1, 0, 0, 0, 0, 0),
+(176, 13, 111, 'Main Body Three', 51, 0, 1, 0, 0, 0, 0, 0),
+(181, 2, 116, 'Main Body', 56, 0, 1, 0, 0, 0, 0, 0),
+(181, 2, 117, 'Main Body', 57, 1, 1, 0, 0, 0, 0, 0),
+(181, 2, 118, 'Main Body', 58, 2, 1, 0, 0, 0, 0, 0),
+(181, 2, 119, 'Main Body', 59, 4, 1, 0, 0, 0, 0, 0),
+(181, 2, 120, 'Main Body', 60, 3, 1, 0, 0, 0, 0, 0),
+(181, 3, 116, 'Main Body', 56, 0, 0, 0, 0, 0, 0, 0),
+(181, 3, 117, 'Main Body', 57, 1, 0, 0, 0, 0, 0, 0),
+(181, 3, 118, 'Main Body', 58, 2, 0, 0, 0, 0, 0, 0),
+(181, 3, 119, 'Main Body', 59, 4, 0, 0, 0, 0, 0, 0),
+(181, 3, 120, 'Main Body', 60, 3, 0, 0, 0, 0, 0, 0),
+(185, 2, 122, 'Main Body', 61, 0, 1, 0, 0, 0, 0, 0),
+(185, 2, 123, 'Main Body', 62, 1, 1, 0, 0, 0, 0, 0),
+(185, 2, 124, 'Main Body', 63, 2, 1, 0, 0, 0, 0, 0),
+(185, 2, 125, 'Main Body', 64, 3, 1, 0, 0, 0, 0, 0),
+(185, 2, 126, 'Main Body', 65, 4, 1, 0, 0, 0, 0, 0),
+(186, 2, 127, 'Main Body', 66, 0, 1, 0, 0, 0, 0, 0),
+(186, 2, 128, 'Main Body', 67, 1, 1, 0, 0, 0, 0, 0),
+(186, 2, 129, 'Main Body', 68, 2, 1, 0, 0, 0, 0, 0),
+(186, 3, 127, 'Main Body', 66, 0, 0, 0, 0, 0, 0, 0),
+(186, 3, 128, 'Main Body', 67, 1, 0, 0, 0, 0, 0, 0),
+(186, 3, 129, 'Main Body', 68, 2, 0, 0, 0, 0, 0, 0),
+(188, 2, 130, 'Main Body', 69, 0, 1, 0, 0, 0, 0, 0),
+(188, 2, 131, 'Main Body', 70, 1, 1, 0, 0, 0, 0, 0),
+(189, 2, 132, 'Main Body', 71, 0, 1, 0, 0, 0, 0, 0),
+(189, 2, 133, 'Main Body', 72, 1, 1, 0, 0, 0, 0, 0),
+(189, 2, 134, 'Main Body', 73, 2, 1, 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -3336,6 +4069,19 @@ CREATE TABLE `CollectionVersionFeatureAssignments` (
   `faID` int(10) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `CollectionVersionFeatureAssignments`
+--
+
+INSERT INTO `CollectionVersionFeatureAssignments` (`cID`, `cvID`, `faID`) VALUES
+(181, 2, 2),
+(181, 3, 2),
+(186, 2, 3),
+(186, 3, 3),
+(186, 2, 4),
+(186, 3, 4),
+(188, 2, 5);
+
 -- --------------------------------------------------------
 
 --
@@ -3398,7 +4144,12 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (1, 17, 'Home', '', '', '2017-05-22 15:59:25', '2017-06-02 12:35:45', 'Version 17', 0, 0, 1, 1, 2, 5, NULL, NULL),
 (1, 18, 'Home', '', '', '2017-05-22 15:59:25', '2017-06-02 12:57:17', 'Version 18', 0, 0, 1, 1, 2, 5, NULL, NULL),
 (1, 19, 'Home', '', '', '2017-05-22 15:59:25', '2017-06-02 13:00:44', 'Version 19', 0, 0, 1, 1, 2, 5, NULL, NULL),
-(1, 20, 'Home', '', '', '2017-05-22 15:59:25', '2017-06-02 15:04:10', 'Version 20', 1, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 20, 'Home', '', '', '2017-05-22 15:59:25', '2017-06-02 15:04:10', 'Version 20', 0, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 21, 'Home', '', '', '2017-05-22 15:59:25', '2017-06-06 16:47:21', 'Version 21', 0, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 22, 'Home', '', '', '2017-05-22 15:59:25', '2017-06-07 10:45:30', 'Version 22', 0, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 23, 'Home', '', '', '2017-05-22 15:59:25', '2017-06-15 16:01:08', 'Version 23', 0, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 24, 'Home', '', 'Welcome to Chris Watterston', '2017-05-22 15:59:00', '2017-06-20 10:18:34', 'New Version 24', 0, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 25, 'Home', '', 'Welcome to Chris Watterston', '2017-05-22 15:59:00', '2017-06-20 10:19:14', 'New Version 25', 1, 0, 1, 1, 2, 5, NULL, NULL),
 (2, 1, 'Dashboard', 'dashboard', '', '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'Initial Version', 1, 0, 1, NULL, 0, 0, NULL, NULL),
 (3, 1, 'Sitemap', 'sitemap', 'Whole world at a glance.', '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'Initial Version', 1, 0, 1, NULL, 0, 0, NULL, NULL),
 (4, 1, 'Full Sitemap', 'full', '', '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'Initial Version', 1, 0, 1, NULL, 0, 0, NULL, NULL),
@@ -3563,11 +4314,18 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (154, 10, 'Header Site Title', 'header-site-title', NULL, '2017-05-22 16:01:20', '2017-05-23 16:17:07', 'New Version 10', 0, 0, 1, 1, 2, 0, NULL, NULL),
 (154, 11, 'Header Site Title', 'header-site-title', NULL, '2017-05-22 16:01:20', '2017-05-23 16:39:10', 'New Version 11', 0, 0, 1, 1, 2, 0, NULL, NULL),
 (154, 12, 'Header Site Title', 'header-site-title', NULL, '2017-05-22 16:01:20', '2017-05-23 16:40:52', 'New Version 12', 0, 0, 1, 1, 2, 0, NULL, NULL),
-(154, 13, 'Header Site Title', 'header-site-title', NULL, '2017-05-22 16:01:20', '2017-05-23 16:41:36', 'New Version 13', 1, 0, 1, 1, 2, 0, NULL, NULL),
+(154, 13, 'Header Site Title', 'header-site-title', NULL, '2017-05-22 16:01:20', '2017-05-23 16:41:36', 'New Version 13', 0, 0, 1, 1, 2, 0, NULL, NULL),
+(154, 14, 'Header Site Title', 'header-site-title', NULL, '2017-05-22 16:01:20', '2017-06-16 12:11:12', 'New Version 14', 0, 0, 1, 1, 2, 0, NULL, NULL),
+(154, 15, 'Header Site Title', 'header-site-title', NULL, '2017-05-22 16:01:20', '2017-06-16 12:16:40', 'New Version 15', 0, 0, 1, 1, 2, 0, NULL, NULL),
+(154, 16, 'Header Site Title', 'header-site-title', NULL, '2017-05-22 16:01:20', '2017-06-16 12:17:44', 'New Version 16', 1, 0, 1, 1, 2, 0, NULL, NULL),
 (155, 1, 'Header Navigation', 'header-navigation', NULL, '2017-05-22 16:01:21', '2017-05-22 16:01:21', 'Initial Version', 0, 0, 1, NULL, 2, 0, NULL, NULL),
 (155, 2, 'Header Navigation', 'header-navigation', NULL, '2017-05-22 16:01:21', '2017-05-23 15:25:57', 'New Version 2', 0, 0, 1, 1, 2, 0, NULL, NULL),
-(155, 3, 'Header Navigation', 'header-navigation', NULL, '2017-05-22 16:01:21', '2017-05-23 15:26:32', 'New Version 3', 1, 0, 1, 1, 2, 0, NULL, NULL),
-(155, 4, 'Header Navigation', 'header-navigation', NULL, '2017-05-22 16:01:21', '2017-05-25 08:06:20', 'New Version 4', 0, 0, 1, NULL, 2, 0, NULL, NULL),
+(155, 3, 'Header Navigation', 'header-navigation', NULL, '2017-05-22 16:01:21', '2017-05-23 15:26:32', 'New Version 3', 0, 0, 1, 1, 2, 0, NULL, NULL),
+(155, 4, 'Header Navigation', 'header-navigation', NULL, '2017-05-22 16:01:21', '2017-05-25 08:06:20', 'New Version 4', 0, 0, 1, 1, 2, 0, NULL, NULL),
+(155, 5, 'Header Navigation', 'header-navigation', NULL, '2017-05-22 16:01:21', '2017-06-19 11:19:05', 'New Version 5', 0, 0, 1, NULL, 2, 0, NULL, NULL),
+(155, 6, 'Header Navigation', 'header-navigation', NULL, '2017-05-22 16:01:21', '2017-06-19 11:19:14', 'New Version 6', 0, 0, 1, NULL, 2, 0, NULL, NULL),
+(155, 7, 'Header Navigation', 'header-navigation', NULL, '2017-05-22 16:01:21', '2017-06-19 11:19:31', 'New Version 7', 0, 0, 1, 1, 2, 0, NULL, NULL),
+(155, 8, 'Header Navigation', 'header-navigation', NULL, '2017-05-22 16:01:21', '2017-06-19 11:20:35', 'New Version 8', 1, 0, 1, 1, 2, 0, NULL, NULL),
 (156, 1, 'Footer Legal', 'footer-legal', NULL, '2017-05-22 16:01:21', '2017-05-22 16:01:21', 'Initial Version', 0, 0, 1, NULL, 2, 0, NULL, NULL),
 (156, 2, 'Footer Legal', 'footer-legal', NULL, '2017-05-22 16:01:21', '2017-05-23 15:22:20', 'New Version 2', 0, 0, 1, 1, 2, 0, NULL, NULL),
 (156, 3, 'Footer Legal', 'footer-legal', NULL, '2017-05-22 16:01:21', '2017-05-25 08:59:34', 'New Version 3', 0, 0, 1, NULL, 2, 0, NULL, NULL),
@@ -3583,8 +4341,13 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (158, 4, 'Footer Contact', 'footer-contact', NULL, '2017-05-22 16:01:21', '2017-05-24 10:08:59', 'New Version 4', 1, 0, 1, 1, 2, 0, NULL, NULL),
 (158, 5, 'Footer Contact', 'footer-contact', NULL, '2017-05-22 16:01:21', '2017-05-24 10:09:39', 'New Version 5', 0, 0, 1, NULL, 2, 0, NULL, NULL),
 (158, 6, 'Footer Contact', 'footer-contact', NULL, '2017-05-22 16:01:21', '2017-05-25 08:58:51', 'New Version 6', 0, 0, 1, NULL, 2, 0, NULL, NULL),
-(159, 1, 'Services', 'services', '', '2017-05-23 15:30:41', '2017-05-23 15:30:41', 'Initial Version', 1, 0, 1, 1, 2, 4, NULL, NULL),
-(160, 1, 'About Us', 'about-us', '', '2017-05-23 15:30:55', '2017-05-23 15:30:55', 'Initial Version', 1, 0, 1, 1, 2, 4, NULL, NULL),
+(159, 1, 'Services', 'services', '', '2017-05-23 15:30:41', '2017-05-23 15:30:41', 'Initial Version', 0, 0, 1, 1, 2, 4, NULL, NULL),
+(159, 2, 'Services', 'services', '', '2017-05-23 15:30:41', '2017-06-20 10:33:15', 'New Version 2', 0, 0, 1, 1, 2, 8, NULL, NULL),
+(159, 3, 'Services', 'services', '', '2017-05-23 15:30:41', '2017-06-20 10:33:17', 'New Version 3', 0, 0, 1, 1, 2, 8, NULL, NULL),
+(159, 4, 'Services', 'services', '', '2017-05-23 15:30:41', '2017-06-20 14:16:24', 'Version 4', 1, 0, 1, 1, 2, 8, NULL, NULL),
+(160, 1, 'About Us', 'about-us', '', '2017-05-23 15:30:55', '2017-05-23 15:30:55', 'Initial Version', 0, 0, 1, 1, 2, 4, NULL, NULL),
+(160, 2, 'About Us', 'about-us', 'Description', '2017-05-23 15:30:00', '2017-06-20 14:23:02', 'New Version 2', 0, 0, 1, 1, 2, 4, NULL, NULL),
+(160, 3, 'About Us', 'about-us', 'Description', '2017-05-23 15:30:00', '2017-06-20 14:29:25', 'Version 3', 1, 0, 1, 1, 2, 4, NULL, NULL),
 (161, 1, 'Blog', 'blog', '', '2017-05-23 15:31:03', '2017-05-23 15:31:03', 'Initial Version', 1, 0, 1, 1, 2, 4, NULL, NULL),
 (162, 1, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-05-23 15:31:17', 'Initial Version', 1, 0, 1, 1, 2, 4, NULL, NULL),
 (163, 1, 'Store', 'store', '', '2017-05-23 15:31:28', '2017-05-23 15:31:28', 'Initial Version', 1, 0, 1, 1, 2, 4, NULL, NULL),
@@ -3611,7 +4374,11 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (170, 1, '', '', NULL, '2017-05-24 11:08:13', '2017-05-24 11:08:13', 'Initial Version', 0, 1, 1, NULL, 0, 6, NULL, NULL),
 (171, 1, 'Entering 2017 with a new desk and mindset', 'entering-2017-with-a-new-desk-and-mindset', 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', '2017-05-24 11:08:00', '2017-05-24 11:08:23', 'Initial Version', 0, 0, 1, 1, 0, 6, NULL, NULL),
 (171, 2, 'Entering 2017 with a new desk and mindset', 'entering-2017-with-a-new-desk-and-mindset', 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', '2017-05-24 11:08:00', '2017-05-24 12:56:48', 'New Version 2', 0, 0, 1, 1, 0, 6, NULL, NULL),
-(171, 3, 'Entering 2017 with a new desk and mindset', 'entering-2017-with-a-new-desk-and-mindset', 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', '2017-05-24 11:08:00', '2017-05-24 13:12:56', 'New Version 3', 1, 0, 1, 1, 0, 6, NULL, NULL),
+(171, 3, 'Entering 2017 with a new desk and mindset', 'entering-2017-with-a-new-desk-and-mindset', 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', '2017-05-24 11:08:00', '2017-05-24 13:12:56', 'New Version 3', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(171, 4, 'Entering 2017 with a new desk and mindset', 'entering-2017-with-a-new-desk-and-mindset', 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', '2017-05-24 11:08:00', '2017-06-16 14:51:22', 'New Version 4', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(171, 5, 'Entering 2017 with a new desk and mindset', 'entering-2017-with-a-new-desk-and-mindset', 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', '2017-05-24 11:08:00', '2017-06-16 14:51:53', 'New Version 5', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(171, 6, 'Entering 2017 with a new desk and mindset', 'entering-2017-with-a-new-desk-and-mindset', 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', '2017-05-24 11:08:00', '2017-06-16 15:03:45', 'New Version 6', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(171, 7, 'Entering 2017 with a new desk and mindset', 'entering-2017-with-a-new-desk-and-mindset', 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', '2017-05-24 11:08:00', '2017-06-19 15:50:10', 'New Version 7', 1, 0, 1, 1, 0, 6, NULL, NULL),
 (172, 1, '', NULL, NULL, '2017-05-25 12:53:39', '2017-05-25 12:53:39', 'Initial Version', 1, 0, NULL, NULL, 0, 5, NULL, NULL),
 (173, 1, '1970\'s Speed boat project finally finish!', '1970s-speed-boat-project-finally-finish', 'Morbi sit amet odio est. Etiam ex quam, viverra ac porta ut, lobortis non ipsum. Praesent sollicitudin orci in ante placerat, eu gravida massa iaculis. Phasellus a est varius, imperdiet mi nec, hendrerit tortor. Nulla tincidunt magna nec tincidunt vehicula. Phasellus tristique tempor diam, vitae luctus enim aliquam eu. Cras dapibus vehicula libero quis interdum.', '2017-05-02 13:41:00', '2017-05-30 13:41:33', 'Initial Version', 0, 0, 1, 1, 0, 6, NULL, NULL),
 (173, 2, '1970\'s Speed boat project finally finish!', '1970s-speed-boat-project-finally-finish', 'Morbi sit amet odio est. Etiam ex quam, viverra ac porta ut, lobortis non ipsum. Praesent sollicitudin orci in ante placerat, eu gravida massa iaculis. Phasellus a est varius, imperdiet mi nec, hendrerit tortor. Nulla tincidunt magna nec tincidunt vehicula. Phasellus tristique tempor diam, vitae luctus enim aliquam eu. Cras dapibus vehicula libero quis interdum.', '2017-05-02 13:41:00', '2017-05-30 13:43:34', 'New Version 2', 1, 0, 1, 1, 0, 6, NULL, NULL),
@@ -3621,7 +4388,42 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (175, 1, '', NULL, NULL, '2017-06-02 15:09:34', '2017-06-02 15:09:34', 'Initial Version', 1, 0, NULL, NULL, 0, 7, NULL, NULL),
 (176, 1, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:48', '2017-06-02 15:13:48', 'Initial Version', 0, 0, 1, 1, 2, 7, NULL, NULL),
 (176, 2, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-02 15:17:36', 'New Version 2', 0, 0, 1, 1, 2, 7, NULL, NULL),
-(176, 3, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-02 15:22:10', 'New Version 3', 1, 0, 1, 1, 2, 7, NULL, NULL);
+(176, 3, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-02 15:22:10', 'New Version 3', 0, 0, 1, 1, 2, 7, NULL, NULL),
+(176, 4, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-06 14:51:11', 'New Version 4', 0, 0, 1, 1, 2, 7, NULL, NULL),
+(176, 5, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-06 14:53:46', 'New Version 5', 0, 0, 1, 1, 2, 7, NULL, NULL),
+(176, 6, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-06 14:56:15', 'New Version 6', 0, 0, 1, 1, 2, 7, NULL, NULL),
+(176, 7, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-06 14:56:44', 'New Version 7', 0, 0, 1, 1, 2, 7, NULL, NULL),
+(176, 8, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-19 16:33:28', 'New Version 8', 0, 0, 1, 1, 2, 7, NULL, NULL),
+(176, 9, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-19 16:43:30', 'New Version 9', 0, 0, 1, 1, 2, 7, NULL, NULL),
+(176, 10, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-19 16:59:11', 'Version 10', 0, 0, 1, 1, 2, 7, NULL, NULL),
+(176, 11, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-19 17:03:04', 'Version 11', 0, 0, 1, 1, 2, 7, NULL, NULL),
+(176, 12, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-19 17:05:45', 'New Version 12', 0, 0, 1, 1, 2, 7, NULL, NULL),
+(176, 13, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-19 17:08:32', 'Version 13', 1, 0, 1, 1, 2, 7, NULL, NULL),
+(177, 1, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:48', '2017-06-06 14:45:46', 'Initial Version', 0, 0, 1, NULL, 2, 7, NULL, NULL),
+(177, 2, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-06 14:45:47', 'New Version 2', 0, 0, 1, NULL, 2, 7, NULL, NULL),
+(177, 3, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-06 14:45:48', 'New Version 3', 0, 0, 1, NULL, 2, 7, NULL, NULL),
+(177, 4, 'The Original. The Unique. #TherIsNoCloud', 'The-Original-The-Unique-TherIsNoCloud', '', '2017-06-02 15:13:00', '2017-06-06 14:46:13', 'New Version 4', 0, 0, 1, 1, 2, 7, NULL, NULL),
+(177, 5, 'The Original. The Unique. #TherIsNoCloud', 'The-Original-The-Unique-TherIsNoCloud', '', '2017-06-02 15:13:00', '2017-06-06 14:49:12', 'New Version 5', 0, 0, 1, 1, 2, 7, NULL, NULL),
+(177, 6, 'The Original. The Unique. #TherIsNoCloud', 'The-Original-The-Unique-TherIsNoCloud', '', '2017-06-02 15:13:00', '2017-06-06 14:58:07', 'New Version 6', 1, 0, 1, 1, 2, 7, NULL, NULL),
+(178, 1, '', '', NULL, '2017-06-20 14:55:31', '2017-06-20 14:55:31', 'Initial Version', 0, 1, 1, NULL, 0, 6, NULL, NULL),
+(179, 1, '', '', NULL, '2017-06-20 14:56:55', '2017-06-20 14:56:55', 'Initial Version', 0, 1, 1, NULL, 0, 6, NULL, NULL),
+(180, 1, '', '', NULL, '2017-06-20 14:58:30', '2017-06-20 14:58:30', 'Initial Version', 0, 1, 1, NULL, 0, 6, NULL, NULL),
+(181, 1, 'My \'There Is No Cloud\' Sticker', 'my-there-is-no-cloud-sticker', 'Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global!', '2016-02-13 14:59:00', '2017-06-20 14:59:12', 'Initial Version', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(181, 2, 'My \'There Is No Cloud\' Sticker', 'my-there-is-no-cloud-sticker', 'Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global!', '2016-02-13 14:59:00', '2017-06-20 15:02:33', 'New Version 2', 0, 0, 1, 1, 0, 6, NULL, NULL);
+INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescription`, `cvDatePublic`, `cvDateCreated`, `cvComments`, `cvIsApproved`, `cvIsNew`, `cvAuthorUID`, `cvApproverUID`, `pThemeID`, `pTemplateID`, `cvActivateDatetime`, `cvPublishDate`) VALUES
+(181, 3, 'My \'There Is No Cloud\' Sticker', 'my-there-is-no-cloud-sticker', 'Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global!', '2016-02-13 14:59:00', '2017-06-20 15:15:16', 'Version 3', 1, 0, 1, 1, 0, 6, NULL, NULL),
+(182, 1, '', NULL, NULL, '2017-06-20 15:19:11', '2017-06-20 15:19:11', 'Initial Version', 1, 0, NULL, NULL, 0, 6, NULL, NULL),
+(183, 1, '', '', NULL, '2017-06-20 15:19:11', '2017-06-20 15:19:11', 'Initial Version', 0, 1, 1, NULL, 0, 6, NULL, NULL),
+(185, 1, 'Starting 2016 with old challenges', 'starting-2016-old-challenges', 'Like every Tom, Dick and Harry in the land, I set myself new targets and challenges at the start of every year. Do I ever achieve them, behave yourself! It’s so frustrating telling you that, but even more so with myself for not achieving. *sigh*', '2017-06-20 15:19:00', '2017-06-20 15:19:35', 'Initial Version', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(185, 2, 'Starting 2016 with old challenges', 'starting-2016-old-challenges', 'Like every Tom, Dick and Harry in the land, I set myself new targets and challenges at the start of every year. Do I ever achieve them, behave yourself! It’s so frustrating telling you that, but even more so with myself for not achieving. *sigh*', '2017-06-20 15:19:00', '2017-06-20 15:22:10', 'Version 2', 1, 0, 1, 1, 0, 6, NULL, NULL),
+(186, 1, 'A much needed Spotify widget for the Notification Centre', 'a-much-needed-spotify-widget-for-the-notification-centre', 'Since installing the new operating system, OS X Yosemite, like many I\'ve noticed a hell of a lot of new great features and design. But, being an every day MacBook user, I\'m finding some pretty cool, but some also pretty annoying.', '2017-06-20 15:26:00', '2017-06-20 15:26:44', 'Initial Version', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(186, 2, 'A much needed Spotify widget for the Notification Centre', 'a-much-needed-spotify-widget-for-the-notification-centre', 'Since installing the new operating system, OS X Yosemite, like many I\'ve noticed a hell of a lot of new great features and design. But, being an every day MacBook user, I\'m finding some pretty cool, but some also pretty annoying.', '2017-06-20 15:26:00', '2017-06-20 15:29:51', 'Version 2', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(186, 3, 'A much needed Spotify widget for the Notification Center', 'a-much-needed-spotify-widget-for-the-notification-center', 'Since installing the new operating system, OS X Yosemite, like many I\'ve noticed a hell of a lot of new great features and design. But, being an every day MacBook user, I\'m finding some pretty cool, but some also pretty annoying.', '2017-06-20 15:26:00', '2017-06-20 15:37:47', 'New Version 3', 1, 0, 1, 1, 0, 6, NULL, NULL),
+(187, 1, '\'There Is No Cloud\' Copyright Protection', 'there-no-cloud-copyright-protection', 'I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO! That would place myself in the same category as the thieving scummy $&£4’ers that stole my design and many other honest designers work also - and that’s me being polite against them!', '2016-09-10 15:38:00', '2017-06-20 15:38:24', 'Initial Version', 1, 0, 1, 1, 0, 6, NULL, NULL),
+(188, 1, '4th Month Into Self-Employment', '4th-month-into-self-employment', 'Jee. Taking a step back, it\'s been almost 4 months already. Holy Crap! Cutting a 5 year story into a nut shell, I previously worked for a secondary school within an IT department. It wasn\'t any ordinary IT department within a school, ow nooo.', '2014-02-14 16:07:00', '2017-06-20 16:07:36', 'Initial Version', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(188, 2, '4th Month Into Self-Employment', '4th-month-into-self-employment', 'Jee. Taking a step back, it\'s been almost 4 months already. Holy Crap! Cutting a 5 year story into a nut shell, I previously worked for a secondary school within an IT department. It wasn\'t any ordinary IT department within a school, ow nooo.', '2014-02-14 16:07:00', '2017-06-20 16:13:32', 'Version 2', 1, 0, 1, 1, 0, 6, NULL, NULL),
+(189, 1, 'Setting 5 Goals For 2014', 'setting-5-goals-2014', 'A warm welcome to 2014, I wish you all a happy New Year. It\'s the start of a New Year for us all, and funny enough it\'s also that time where 99.9% of us feel the need to set ourself new year resolutions, goals, targets, or whatever you call it. For me, I\'ve just rolled into my 5th month of self employment and it still feels incredible, just as it did on day one.', '2014-02-01 16:17:00', '2017-06-20 16:17:15', 'Initial Version', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(189, 2, 'Setting 5 Goals For 2014', 'setting-5-goals-2014', 'A warm welcome to 2014, I wish you all a happy New Year. It\'s the start of a New Year for us all, and funny enough it\'s also that time where 99.9% of us feel the need to set ourself new year resolutions, goals, targets, or whatever you call it. For me, I\'ve just rolled into my 5th month of self employment and it still feels incredible, just as it did on day one.', '2014-02-01 16:17:00', '2017-06-20 16:18:45', 'Version 2', 1, 0, 1, 1, 0, 6, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -3907,6 +4709,13 @@ CREATE TABLE `Conversations` (
   `cnvEnableSubscription` tinyint(1) DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `Conversations`
+--
+
+INSERT INTO `Conversations` (`cnvID`, `cID`, `cnvDateCreated`, `cnvDateLastMessage`, `cnvParentMessageID`, `cnvAttachmentsEnabled`, `cnvMessagesTotal`, `cnvOverrideGlobalPermissions`, `cnvAttachmentOverridesEnabled`, `cnvMaxFilesGuest`, `cnvMaxFilesRegistered`, `cnvMaxFileSizeGuest`, `cnvMaxFileSizeRegistered`, `cnvFileExtensions`, `cnvNotificationOverridesEnabled`, `cnvEnableSubscription`) VALUES
+(1, 171, '2017-06-19 15:50:10', '2017-06-19 15:50:10', 0, 1, 0, 0, 0, 0, 0, 0, 0, NULL, 0, 0);
+
 -- --------------------------------------------------------
 
 --
@@ -4130,6 +4939,16 @@ CREATE TABLE `FeatureAssignments` (
   `fdObject` longtext COLLATE utf8_unicode_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `FeatureAssignments`
+--
+
+INSERT INTO `FeatureAssignments` (`faID`, `feID`, `fcID`, `fdObject`) VALUES
+(2, 5, 1, 'O:40:"Concrete\\Core\\Feature\\Detail\\ImageDetail":5:{s:6:"\0*\0src";s:48:"/application/files/3714/9561/9802/temp-image.jpg";s:8:"\0*\0width";s:4:"1024";s:9:"\0*\0height";s:3:"768";s:7:"\0*\0item";N;s:5:"error";s:0:"";}'),
+(3, 5, 1, 'O:40:"Concrete\\Core\\Feature\\Detail\\ImageDetail":5:{s:6:"\0*\0src";s:84:"/application/files/7714/9796/9189/spotify-notification-center-player-concept-GIF.gif";s:8:"\0*\0width";s:3:"680";s:9:"\0*\0height";s:4:"1007";s:7:"\0*\0item";N;s:5:"error";s:0:"";}'),
+(4, 5, 1, 'O:40:"Concrete\\Core\\Feature\\Detail\\ImageDetail":5:{s:6:"\0*\0src";s:85:"/application/files/1714/9796/9192/spotify-notification-center-player-concept-desc.jpg";s:8:"\0*\0width";s:3:"780";s:9:"\0*\0height";s:3:"811";s:7:"\0*\0item";N;s:5:"error";s:0:"";}'),
+(5, 5, 1, 'O:40:"Concrete\\Core\\Feature\\Detail\\ImageDetail":5:{s:6:"\0*\0src";s:48:"/application/files/3714/9561/9802/temp-image.jpg";s:8:"\0*\0width";s:4:"1024";s:9:"\0*\0height";s:3:"768";s:7:"\0*\0item";N;s:5:"error";s:0:"";}');
+
 -- --------------------------------------------------------
 
 --
@@ -4220,7 +5039,11 @@ INSERT INTO `FileAttributeValues` (`fID`, `fvID`, `akID`, `avID`) VALUES
 (2, 1, 16, 333),
 (2, 1, 17, 334),
 (3, 1, 16, 335),
-(3, 1, 17, 336);
+(3, 1, 17, 336),
+(4, 1, 16, 617),
+(4, 1, 17, 618),
+(5, 1, 16, 619),
+(5, 1, 17, 620);
 
 -- --------------------------------------------------------
 
@@ -4247,7 +5070,11 @@ INSERT INTO `FileImageThumbnailPaths` (`fileID`, `fileVersionID`, `thumbnailType
 (2, 1, 'file_manager_listing', 1, '/thumbnails/file_manager_listing/9114/9641/2713/skoolping-example.jpg', 1),
 (2, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/9114/9641/2713/skoolping-example.jpg', 1),
 (3, 1, 'file_manager_listing', 1, '/thumbnails/file_manager_listing/4514/9641/2757/image.jpg', 1),
-(3, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/4514/9641/2757/image.jpg', 1);
+(3, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/4514/9641/2757/image.jpg', 1),
+(4, 1, 'file_manager_listing', 1, '/thumbnails/file_manager_listing/7714/9796/9189/spotify-notification-center-player-concept-GIF.jpg', 1),
+(4, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/7714/9796/9189/spotify-notification-center-player-concept-GIF.jpg', 1),
+(5, 1, 'file_manager_listing', 1, '/thumbnails/file_manager_listing/1714/9796/9192/spotify-notification-center-player-concept-desc.jpg', 1),
+(5, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/1714/9796/9192/spotify-notification-center-player-concept-desc.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -4345,7 +5172,9 @@ CREATE TABLE `Files` (
 INSERT INTO `Files` (`fID`, `fDateAdded`, `fPassword`, `fOverrideSetPermissions`, `ocID`, `folderTreeNodeID`, `uID`, `fslID`) VALUES
 (1, '2017-05-24 10:56:42', NULL, 0, 0, 7, 1, 1),
 (2, '2017-06-02 15:11:53', NULL, 0, 0, 7, 1, 1),
-(3, '2017-06-02 15:12:37', NULL, 0, 0, 7, 1, 1);
+(3, '2017-06-02 15:12:37', NULL, 0, 0, 7, 1, 1),
+(4, '2017-06-20 15:33:09', NULL, 0, 0, 7, 1, 1),
+(5, '2017-06-20 15:33:12', NULL, 0, 0, 7, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -4367,7 +5196,9 @@ CREATE TABLE `FileSearchIndexAttributes` (
 INSERT INTO `FileSearchIndexAttributes` (`fID`, `ak_width`, `ak_height`, `ak_duration`) VALUES
 (1, '1024.0000', '768.0000', '0.0000'),
 (2, '512.0000', '342.0000', '0.0000'),
-(3, '512.0000', '342.0000', '0.0000');
+(3, '512.0000', '342.0000', '0.0000'),
+(4, '680.0000', '1007.0000', '0.0000'),
+(5, '780.0000', '811.0000', '0.0000');
 
 -- --------------------------------------------------------
 
@@ -4388,7 +5219,9 @@ CREATE TABLE `FileSetFiles` (
 --
 
 INSERT INTO `FileSetFiles` (`fsfID`, `fID`, `fsID`, `timestamp`, `fsDisplayOrder`) VALUES
-(1, 1, 1, '2017-05-24 09:56:59', 0);
+(1, 1, 1, '2017-05-24 09:56:59', 0),
+(2, 4, 1, '2017-06-20 14:34:09', 1),
+(3, 5, 1, '2017-06-20 14:34:09', 2);
 
 -- --------------------------------------------------------
 
@@ -4477,6 +5310,16 @@ CREATE TABLE `FileUsageRecord` (
   `collection_version_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `FileUsageRecord`
+--
+
+INSERT INTO `FileUsageRecord` (`file_id`, `block_id`, `collection_id`, `collection_version_id`) VALUES
+(1, 117, 181, 2),
+(4, 128, 186, 2),
+(5, 129, 186, 2),
+(1, 131, 188, 2);
+
 -- --------------------------------------------------------
 
 --
@@ -4524,7 +5367,9 @@ CREATE TABLE `FileVersions` (
 INSERT INTO `FileVersions` (`fvID`, `fvFilename`, `fvPrefix`, `fvDateAdded`, `fvActivateDateTime`, `fvIsApproved`, `fvAuthorUID`, `fvSize`, `fvApproverUID`, `fvTitle`, `fvDescription`, `fvExtension`, `fvType`, `fvTags`, `fvHasListingThumbnail`, `fvHasDetailThumbnail`, `fID`) VALUES
 (1, 'temp-image.jpg', '371495619802', '2017-05-24 10:56:42', '2017-05-24 10:56:42', 1, 1, 102515, 1, 'temp-image.jpg', '', 'jpg', 1, '', 1, 1, 1),
 (1, 'skoolping-example.jpg', '911496412713', '2017-06-02 15:11:53', '2017-06-02 15:11:53', 1, 1, 11108, 1, 'skoolping-example.jpg', '', 'jpg', 1, '', 1, 1, 2),
-(1, 'image.png', '451496412757', '2017-06-02 15:12:37', '2017-06-02 15:12:37', 1, 1, 187056, 1, 'image.png', '', 'png', 1, '', 1, 1, 3);
+(1, 'image.png', '451496412757', '2017-06-02 15:12:37', '2017-06-02 15:12:37', 1, 1, 187056, 1, 'image.png', '', 'png', 1, '', 1, 1, 3),
+(1, 'spotify-notification-center-player-concept-GIF.gif', '771497969189', '2017-06-20 15:33:09', '2017-06-20 15:33:09', 1, 1, 298191, 1, 'spotify-notification-center-player-concept-GIF.gif', '', 'gif', 1, '', 1, 1, 4),
+(1, 'spotify-notification-center-player-concept-desc.jpg', '171497969192', '2017-06-20 15:33:12', '2017-06-20 15:33:12', 1, 1, 30685, 1, 'spotify-notification-center-player-concept-desc.jpg', '', 'jpg', 1, '', 1, 1, 5);
 
 -- --------------------------------------------------------
 
@@ -5020,7 +5865,27 @@ INSERT INTO `Logs` (`logID`, `channel`, `time`, `message`, `uID`, `level`) VALUE
 (23, 'exceptions', 1496394928, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/themes/chriswatterston/inc/header.php:21 Call to undefined method Concrete\\Core\\Page\\Page::requireAsset() (1)\n', 0, 600),
 (24, 'exceptions', 1496394956, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/concrete/src/Http/ResponseAssetGroup.php:213 "jquery" is not a valid asset group handle (0)\n', 0, 600),
 (25, 'exceptions', 1496395007, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/themes/chriswatterston/inc/header.php:21 syntax error, unexpected \'public\' (T_PUBLIC) (4)\n', 0, 600),
-(26, 'exceptions', 1496402534, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/themes/chriswatterston/home.php:142 Call to a member function display() on null (1)\n', 1, 600);
+(26, 'exceptions', 1496402534, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/themes/chriswatterston/home.php:142 Call to a member function display() on null (1)\n', 1, 600),
+(27, 'exceptions', 1496736976, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/blocks/html/templates/chris-watterston-facebook/view.php:17 Call to a member function get() on null (1)\n', 1, 600),
+(28, 'exceptions', 1496736982, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/blocks/html/templates/chris-watterston-facebook/view.php:17 Call to a member function get() on null (1)\n', 1, 600),
+(29, 'exceptions', 1496751494, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/blocks/html/templates/chris-watterston-facebook/view.php:43 syntax error, unexpected \']\' (4)\n', 0, 600),
+(30, 'exceptions', 1497620970, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/themes/chriswatterston/blog.php:12 Call to a member function getAttribute() on null (1)\n', 1, 600),
+(31, 'exceptions', 1497621084, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/themes/chriswatterston/blog.php:12 Call to a member function getAttribute() on null (1)\n', 1, 600),
+(32, 'exceptions', 1497621086, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/themes/chriswatterston/blog.php:12 Call to a member function getAttribute() on null (1)\n', 1, 600),
+(33, 'exceptions', 1497621119, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/themes/chriswatterston/blog.php:12 Call to a member function getAttribute() on null (1)\n', 1, 600),
+(34, 'exceptions', 1497621548, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/themes/chriswatterston/blog.php:13 Call to a member function getCollectionDatePublicObject() on null (1)\n', 1, 600),
+(35, 'exceptions', 1497884376, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/themes/chriswatterston/blog.php:14 Call to a member function getLinkToCollection() on null (1)\n', 1, 600),
+(36, 'exceptions', 1497884454, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/themes/chriswatterston/blog.php:14 Call to a member function getLinkToCollection() on null (1)\n', 1, 600),
+(37, 'exceptions', 1497884604, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/themes/chriswatterston/blog.php:41 syntax error, unexpected \',\' (4)\n', 1, 600),
+(38, 'exceptions', 1497885466, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/themes/chriswatterston/blog.php:14 Call to undefined function Entering 2017 with a new desk and mindset() (1)\n', 1, 600),
+(39, 'exceptions', 1497886436, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/themes/chriswatterston/recognition.php:18 Call to a member function getTreeNodeDisplayName() on null (1)\n', 1, 600),
+(40, 'exceptions', 1497891645, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/concrete/src/File/Image/BasicThumbnailer.php:149 Call to a member function getFileStorageLocationObject() on null (1)\n', 1, 600),
+(41, 'exceptions', 1497964898, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/concrete/src/File/Image/BasicThumbnailer.php:149 Call to a member function getFileStorageLocationObject() on null (1)\n', 1, 600),
+(42, 'exceptions', 1497966932, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/themes/chriswatterston/blog.php:18 Call to a member function getTreeNodeDisplayName() on null (1)\n', 1, 600),
+(43, 'exceptions', 1497967016, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/application/themes/chriswatterston/blog.php:18 Call to a member function getTreeNodeDisplayName() on null (1)\n', 1, 600),
+(44, 'exceptions', 1497967063, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/concrete/src/File/Image/BasicThumbnailer.php:149 Call to a member function getFileStorageLocationObject() on null (1)\n', 1, 600),
+(45, 'exceptions', 1497967111, 'Exception Occurred: /Users/chriswatterston/Sites/chriswatterston.com-www.dev/concrete/src/File/Image/BasicThumbnailer.php:149 Call to a member function getFileStorageLocationObject() on null (1)\n', 1, 600),
+(46, 'application', 1497968366, 'Page "" at path "/!drafts/184" deleted', 1, 100);
 
 -- --------------------------------------------------------
 
@@ -5077,6 +5942,14 @@ CREATE TABLE `MultilingualPageRelations` (
   `mpRelationID` int(10) UNSIGNED NOT NULL,
   `cID` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `MultilingualPageRelations`
+--
+
+INSERT INTO `MultilingualPageRelations` (`mpLocale`, `mpLanguage`, `mpRelationID`, `cID`) VALUES
+('en_GB', 'en', 1, 176),
+('en_GB', 'en', 1, 177);
 
 -- --------------------------------------------------------
 
@@ -5389,7 +6262,18 @@ INSERT INTO `PagePaths` (`cPath`, `ppID`, `cID`, `ppIsCanonical`, `ppGeneratedFr
 ('/blog/entering-2017-with-a-new-desk-and-mindset', 169, 171, 1, 1),
 ('/blog/1970s-speed-boat-project-finally-finish', 170, 173, 1, 1),
 ('/products', 171, 174, 1, 1),
-('/products/a-mobile-app-for-every-side-of-education-starting-with-your-skool', 172, 176, 1, 1);
+('/products/a-mobile-app-for-every-side-of-education-starting-with-your-skool', 172, 176, 1, 1),
+('/products/The-Original-The-Unique-TherIsNoCloud', 173, 177, 1, 1),
+('/!drafts/178', 174, 178, 1, 1),
+('/!drafts/179', 175, 179, 1, 1),
+('/!drafts/180', 176, 180, 1, 1),
+('/blog/my-there-is-no-cloud-sticker', 177, 181, 1, 1),
+('/!drafts/183', 178, 183, 1, 1),
+('/blog/starting-2016-old-challenges', 180, 185, 1, 1),
+('/blog/a-much-needed-spotify-widget-for-the-notification-center', 181, 186, 1, 1),
+('/blog/there-no-cloud-copyright-protection', 182, 187, 1, 1),
+('/blog/4th-month-into-self-employment', 183, 188, 1, 1),
+('/blog/setting-5-goals-2014', 184, 189, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -5714,7 +6598,7 @@ INSERT INTO `Pages` (`cID`, `siteTreeID`, `ptID`, `cIsTemplate`, `uID`, `cIsChec
 (146, 0, 0, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', '/account/messages.php', 0, NULL, 0, 1, 0, 2, 143, 0, 0, -1, '0', 0, 1),
 (147, 0, 0, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', '/page_forbidden.php', 0, NULL, 0, 1, 0, 0, 0, 0, 0, -1, '0', 0, 1),
 (148, 0, 0, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', '/download_file.php', 0, NULL, 0, 1, 0, 0, 0, 0, 0, -1, '0', 0, 1),
-(149, 1, 0, 0, 1, 0, NULL, NULL, NULL, 1, 149, 'OVERRIDE', '/!drafts/view.php', 0, NULL, 0, 1, 1, 0, 0, 0, 0, -1, '0', 0, 1),
+(149, 1, 0, 0, 1, 0, NULL, NULL, NULL, 1, 149, 'OVERRIDE', '/!drafts/view.php', 0, NULL, 0, 1, 5, 0, 0, 0, 0, -1, '0', 0, 1),
 (150, 1, 0, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', '/!stacks/view.php', 0, NULL, 0, 1, 7, 0, 0, 0, 0, -1, '0', 0, 1),
 (151, 1, 0, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', '/page_not_found.php', 0, NULL, 0, 1, 0, 0, 0, 0, 0, -1, '0', 0, 1),
 (152, 1, 0, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', '/desktop.php', 0, NULL, 0, 1, 0, 0, 0, 0, 0, -1, '0', 0, 1),
@@ -5726,10 +6610,10 @@ INSERT INTO `Pages` (`cID`, `siteTreeID`, `ptID`, `cIsTemplate`, `uID`, `cIsChec
 (158, 1, 1, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 4, 150, 0, 0, -1, '0', 0, 1),
 (159, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 0, 1, 0, 1, -1, '0', 0, 0),
 (160, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 1, 1, 0, 1, -1, '0', 0, 0),
-(161, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 4, 2, 1, 0, 1, -1, '0', 0, 0),
+(161, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 10, 2, 1, 0, 1, -1, '0', 0, 0),
 (162, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 3, 1, 0, 1, -1, '0', 0, 0),
-(163, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 5, 1, 0, 1, -1, '0', 0, 0),
-(164, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 6, 1, 0, 1, -1, '0', 0, 0),
+(163, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 6, 1, 0, 1, -1, '0', 0, 0),
+(164, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 7, 1, 0, 1, -1, '0', 0, 0),
 (165, 1, 1, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 5, 150, 0, 0, -1, '0', 0, 1),
 (166, 1, 1, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 6, 150, 0, 0, -1, '0', 0, 1),
 (167, 1, 7, 1, NULL, 0, NULL, NULL, NULL, 1, 167, 'OVERRIDE', NULL, 0, NULL, 0, 1, 0, 0, 0, 0, 0, -1, '0', 0, 0),
@@ -5739,9 +6623,21 @@ INSERT INTO `Pages` (`cID`, `siteTreeID`, `ptID`, `cIsTemplate`, `uID`, `cIsChec
 (171, 1, 7, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 3, 161, 0, 161, -1, '0', 0, 0),
 (172, 1, 6, 1, NULL, 0, NULL, NULL, NULL, 1, 172, 'OVERRIDE', NULL, 0, NULL, 0, 1, 0, 0, 0, 0, 0, -1, '0', 0, 0),
 (173, 1, 7, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 4, 161, 0, 161, -1, '0', 0, 0),
-(174, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 1, 4, 1, 0, 1, -1, '0', 0, 0),
+(174, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 2, 4, 1, 0, 1, -1, '0', 0, 0),
 (175, 1, 9, 1, NULL, 0, NULL, NULL, NULL, 1, 175, 'OVERRIDE', NULL, 0, NULL, 0, 1, 0, 0, 0, 0, 0, -1, '0', 0, 0),
-(176, 1, 9, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 2, 174, 0, 174, -1, '0', 0, 0);
+(176, 1, 9, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 2, 174, 0, 174, -1, '0', 0, 0),
+(177, 1, 9, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 6, 174, 0, 0, -1, '0', 0, 0),
+(178, 1, 7, 0, 1, 0, NULL, NULL, NULL, 1, 149, 'PARENT', NULL, 0, NULL, 0, 0, 0, 1, 149, 0, 161, -1, '0', 0, 1),
+(179, 1, 7, 0, 1, 0, NULL, NULL, NULL, 1, 149, 'PARENT', NULL, 0, NULL, 0, 0, 0, 2, 149, 0, 161, -1, '0', 0, 1),
+(180, 1, 7, 0, 1, 0, NULL, NULL, NULL, 1, 149, 'PARENT', NULL, 0, NULL, 0, 0, 0, 3, 149, 0, 161, -1, '0', 0, 1),
+(181, 1, 7, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 5, 161, 0, 161, -1, '0', 0, 0),
+(182, 1, 8, 1, NULL, 0, NULL, NULL, NULL, 1, 182, 'OVERRIDE', NULL, 0, NULL, 0, 1, 0, 0, 0, 0, 0, -1, '0', 0, 0),
+(183, 1, 8, 0, 1, 0, NULL, NULL, NULL, 1, 149, 'PARENT', NULL, 0, NULL, 0, 0, 0, 4, 149, 0, 162, -1, '0', 0, 1),
+(185, 1, 7, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 6, 161, 0, 161, -1, '0', 0, 0),
+(186, 1, 7, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 7, 161, 0, 161, -1, '0', 0, 0),
+(187, 1, 7, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 8, 161, 0, 161, -1, '0', 0, 0),
+(188, 1, 7, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 9, 161, 0, 161, -1, '0', 0, 0),
+(189, 1, 7, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 10, 161, 0, 161, -1, '0', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -5766,7 +6662,7 @@ CREATE TABLE `PageSearchIndex` (
 --
 
 INSERT INTO `PageSearchIndex` (`cID`, `content`, `cName`, `cDescription`, `cPath`, `cDatePublic`, `cDateLastIndexed`, `cDateLastSitemapped`, `cRequiresReindex`) VALUES
-(1, 'Facebook feed here... ', 'Home', '', '', '2017-05-22 15:59:25', '2017-06-02 15:04:29', NULL, 0),
+(1, 'Facebook feed here... Web Design\r\n\r\n The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online. \r\n Print Design\r\n\r\n The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online. \r\n Mobile App\r\n\r\n The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online. \r\n Support & Hosting\r\n\r\n The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online. \r\n ', 'Home', 'Welcome to Chris Watterston', '', '2017-05-22 15:59:00', '2017-06-20 10:19:42', NULL, 0),
 (2, '', 'Dashboard', '', '/dashboard', '2017-05-22 15:59:51', '2017-05-22 16:08:35', NULL, 0),
 (3, '', 'Sitemap', 'Whole world at a glance.', '/dashboard/sitemap', '2017-05-22 15:59:51', '2017-05-22 16:08:35', NULL, 0),
 (4, '', 'Full Sitemap', '', '/dashboard/sitemap/full', '2017-05-22 15:59:51', '2017-05-22 16:08:35', NULL, 0),
@@ -5915,13 +6811,13 @@ INSERT INTO `PageSearchIndex` (`cID`, `content`, `cName`, `cDescription`, `cPath
 (151, '', 'Page Not Found', '', '/page_not_found', '2017-05-22 16:00:00', '2017-05-22 16:09:30', NULL, 0),
 (152, '', 'Welcome Back', '', '/account/welcome', '2017-05-22 16:00:00', '2017-05-22 16:09:30', NULL, 0),
 (153, '', '', NULL, NULL, '2017-05-22 16:00:01', '2017-05-22 16:09:31', NULL, 0),
-(154, 'Yeh, I’m a trusted and flexible geek who’s passionate about my family and the design & building of your\r\n Websites & Mobile Apps\r\n ', 'Header Site Title', NULL, '/!stacks/header-site-title', '2017-05-22 16:01:20', '2017-05-23 16:41:38', NULL, 0),
-(155, '', 'Header Navigation', NULL, '/!stacks/header-navigation', '2017-05-22 16:01:21', '2017-05-23 15:27:19', NULL, 0),
+(154, 'Yeh, I’m a trusted and flexible geek who’s passionate about my family and the design & building of your\r\n Websites & Mobile Apps\r\n ', 'Header Site Title', NULL, '/!stacks/header-site-title', '2017-05-22 16:01:20', '2017-06-16 12:17:52', NULL, 0),
+(155, '', 'Header Navigation', NULL, '/!stacks/header-navigation', '2017-05-22 16:01:21', '2017-06-19 11:21:03', NULL, 0),
 (156, 'Copyright © 2017 Chris Watterston. All rights reserved. \r\n ', 'Footer Legal', NULL, '/!stacks/footer-legal', '2017-05-22 16:01:21', '2017-05-25 08:59:55', NULL, 0),
 (157, '', 'Footer Navigation', NULL, '/!stacks/footer-navigation', '2017-05-22 16:01:21', '2017-05-23 15:25:45', NULL, 0),
 (158, '\r\n	become a client\r\n	let’s talk?\r\n\r\n Contact.\r\n ', 'Footer Contact', NULL, '/!stacks/footer-contact', '2017-05-22 16:01:21', '2017-05-24 10:09:26', NULL, 0),
-(159, '', 'Services', '', '/services', '2017-05-23 15:30:41', '2017-05-23 15:31:50', NULL, 0),
-(160, '', 'About Us', '', '/about-us', '2017-05-23 15:30:55', '2017-05-23 15:31:50', NULL, 0),
+(159, ' We are a design studio and we kick perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that never fails. \r\n\r\n And no, we’re not single minded. To us it doesn’t matter whether you’re within the educational sector, private sector, charity or just starting out on an exciting new road to success. We\'d love to have a chat. \r\n ', 'Services', '', '/services', '2017-05-23 15:30:41', '2017-06-20 14:16:34', NULL, 0),
+(160, ' That feeling when you’d happily live your life and work for free, but know that doing so sadly won’t pay the bills. If you’ve considered it and then received a slap around your chops to bring you back to reality, then you know you’ve chosen the right path in life and love what you do - That’s how we roll. \r\n\r\n I’m Chris Watterston, an independent designer working, living and probably lacking sleep in Surrey, UK. With my years of experience, I specialise in Brand Identity Design, Web Design and Front-End Development. \r\n\r\n Besides running my day-to-day design business, I’m also fortunate enough to invest and co-found an amazing family. My loving partner and our 2 beautiful daughters. \r\n\r\n Being an internet based design business, we’re not limited to working only with the residents of not so sunny Surrey. But also the surrounding areas, far and beyond, and more commonly across the seas. \r\n\r\n As you get to know us further and we spark our working relationship, you’ll start to recognise that I refer to me, myself and my business as ‘We’ - Why? Because I put everything we can and have to offer into every project and solution. \r\n\r\n I think that\'s enough of the ins and outs of us. Tell me about yourself. How are you, where are you from, your interests? \r\n\r\n Send us a friendly message to hello@chriswatterston.com. You’ll probably regret it if you don’t. \r\n ', 'About Us', 'Description', '/about-us', '2017-05-23 15:30:00', '2017-06-20 14:29:37', NULL, 0),
 (161, '', 'Blog', '', '/blog', '2017-05-23 15:31:03', '2017-05-23 15:31:50', NULL, 0),
 (162, '', 'Case Studies', '', '/case-studies', '2017-05-23 15:31:17', '2017-05-23 15:31:50', NULL, 0),
 (163, '', 'Store', '', '/store', '2017-05-23 15:31:28', '2017-05-23 15:31:50', NULL, 0),
@@ -5930,10 +6826,18 @@ INSERT INTO `PageSearchIndex` (`cID`, `content`, `cName`, `cDescription`, `cPath
 (166, 'Instagram.\r\n Instagram feed here... ', 'Social Feed', NULL, '/!stacks/social-feed', '2017-05-24 10:15:54', '2017-05-25 10:13:01', NULL, 0),
 (168, '', 'New DJI Drone and my first arial shots', 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', '/blog/new-dji-drone-and-my-first-arial-shots', '2017-05-24 10:53:00', '2017-05-24 12:57:18', NULL, 0),
 (169, '', 'Building a Hobbit adventure for my kids', 'Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat. Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in.', '/blog/building-a-hobbit-adventure-for-my-kids', '2017-05-24 11:07:00', '2017-05-24 12:57:18', NULL, 0),
-(171, '', 'Entering 2017 with a new desk and mindset', 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', '/blog/entering-2017-with-a-new-desk-and-mindset', '2017-05-24 11:08:00', '2017-05-24 13:13:04', NULL, 0),
+(171, '', 'Entering 2017 with a new desk and mindset', 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', '/blog/entering-2017-with-a-new-desk-and-mindset', '2017-05-24 11:08:00', '2017-06-19 15:51:08', NULL, 0),
 (173, '', '1970\'s Speed boat project finally finish!', 'Morbi sit amet odio est. Etiam ex quam, viverra ac porta ut, lobortis non ipsum. Praesent sollicitudin orci in ante placerat, eu gravida massa iaculis. Phasellus a est varius, imperdiet mi nec, hendrerit tortor. Nulla tincidunt magna nec tincidunt vehicula. Phasellus tristique tempor diam, vitae luctus enim aliquam eu. Cras dapibus vehicula libero quis interdum.', '/blog/1970s-speed-boat-project-finally-finish', '2017-05-02 13:41:00', '2017-05-30 13:43:40', NULL, 0),
 (174, '', 'Products', '', '/products', '2017-06-02 14:58:00', '2017-06-02 15:21:43', NULL, 0),
-(176, '', 'A mobile app for every side of education. Starting with your SKOOL', '', '/products/a-mobile-app-for-every-side-of-education-starting-with-your-skool', '2017-06-02 15:13:00', '2017-06-02 15:23:03', NULL, 0);
+(176, ' Chris Watterston will help achieving your ideas and dreams in a proper way. The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online presence has never been so important. \r\n  Chris Watterston will help achieving your ideas and dreams in a proper way. The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online presence has never been so important. \r\n A mobile app for every side of education. \r\nStarting with your SKOOL\r\n\r\n Areas of education are turning digital, and so are parent demands. Parents like to be updated in a convenient way. A way that doesn\'t always require them to visit a blog, download a document or search your website relentlessly. \r\n\r\n Visit SKOOLping.co.uk \r\n  Chris Watterston will help achieving your ideas and dreams in a proper way. The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online presence has never been so important. \r\n  Chris Watterston will help achieving your ideas and dreams in a proper way. The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online presence has never been so important. \r\n ', 'A mobile app for every side of education. Starting with your SKOOL', '', '/products/a-mobile-app-for-every-side-of-education-starting-with-your-skool', '2017-06-02 15:13:00', '2017-06-19 17:09:55', NULL, 0),
+(177, '', 'The Original. The Unique. #TherIsNoCloud', '', '/products/The-Original-The-Unique-TherIsNoCloud', '2017-06-02 15:13:00', '2017-06-06 14:58:12', NULL, 0),
+(181, 'Why? What? When? Where?\r\n\r\n Like many others, I’ve had the pleasure of setting up many smartphones and tablets over the years and when It comes to the cloud storage part of the set-up (iCloud of OneDrive), the device owner look at me blankly and says “What, yes, whatever?!”. We are well and truly past the Nokia 5110 times of just popping in your SIM card and making a call with your market flashing arial. \r\n\r\n It’s actually rather scary how many people don’t have a bloody clue on what the ‘Cloud’ actually is. Let’s break it down for you…. it’s basically a computer that is located in a mostly unknown location that is connect to you via the internet which you’re able to store you personal data on it. Wow! \r\n\r\n A bit like your homes computer, but you don’t own it or have physical access to it. \r\nI tell you what, if you just pop all your finance data and holiday snaps onto a USB memory stick, i’ll look after them for you? \r\n\r\n That’s all great, now a bit more technical for you more understanding bunch. Although you should already know what it’s all about; \r\n\r\nCloud computing, also known as \'on-demand computing\', is a kind of Internet-based computing, where shared resources, data and information are provided to computers and other devices on-demand.Cloud computing is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications and services) that can be rapidly provisioned and released with minimal management effort.\r\n\r\n Quoted from Wikipedia, https://en.wikipedia.org/wiki/Cloud_computing \r\n\r\n My frustration sparked in late 2014, over how business would use the phrase but not explain the term, resulting in many not have a clue about the cloud and what it actually is. Which is why I decided to design and send a sticker off to the printers, StickerMule. It’s sometimes quicker and more fun highlighting a fact for awareness with a sticker. I would of never guessed in a million years how popular and well known my sticker would become. \r\n\r\n Here are the current statistics from the guys over at StickerMule, where you can grab your own ‘There Is No Cloud’ stickers. Or maybe a t-shirt or mug? \r\n  The number of; shares, likes, photos, retweets, mentions, links, hashtags, bla bla. that relate to my sticker is mind blowing and unfortunately unknown. \r\n\r\n Here are a few randomly picked tweets from all around the world. \r\n\r\nThank you!!\r\n There is no cloud! It\'s just someone else\'s computer... pic.twitter.com/u4arumoep4 — Sticker Mule (@stickermule) July 10, 2015\r\n\r\n\r\n\r\nMelbourne, Australia\r\nThis, everytime someone says "the cloud": pic.twitter.com/6BmeER68rq — Asher Wolf (@Asher_Wolf) April 18, 2015\r\n\r\n\r\nToronto, Ontario\r\nI need these. https://t.co/efXGilRU9n pic.twitter.com/yWh6OyMjpz — Paul Reinheimer (@preinheimer) April 16, 2015\r\n\r\n\r\nSan Francisco, California\r\nTell me again about your mythical cloud thingy (cc @g33kspeed) pic.twitter.com/XKQKWxVWgj — Jessy Irwin (@jessysaurusrex) August 16, 2015\r\n\r\n\r\nRome, Italy\r\nThere is no cloud... pic.twitter.com/k4kk1VlYMM — Luca Matteis (@lmatteis) June 22, 2015\r\n\r\n\r\nBerlin, Germany\r\nOh @stickermule your samples are so purdy ?? pic.twitter.com/54aOW5LP8D — Timea Konya (@timiiggy) January 5, 2016\r\n\r\n\r\n\r\nBoston, Massachusetts\r\nMy 1st sticker. I\'ve given away 2 of the 4 extras I bought. :) @stickermule @gl33p @chriswatterston pic.twitter.com/T0T8HfLULw — Rob Reed (@robreed) December 24, 2015\r\n\r\n\r\n\r\nEurope\r\nHey, my @stickermule stickers arrived! Thanks guys, they look great :-) pic.twitter.com/pMEbd2eB2U — Marek Jan | ??? (@marek_koza) December 19, 2015\r\n\r\n\r\n\r\nDublin, Republic of Ireland\r\nHaha brilliant ! "There is no cloud, it\'s just someone else\'s computer" pic.twitter.com/IThaVkD2Sm — Juan Pernia (@juanrules) November 4, 2015\r\n\r\n\r\n\r\nGulf of Mexico\r\nI\'m totally digging the stickers I received from @stickermule $1 sample pack! pic.twitter.com/Wyo7PmYOBO — @jason_ (@jason_) December 17, 2015\r\n\r\n\r\n\r\nMilwaukee, Wisconsin\r\n@stickermule @avocode @electronjs looks like they would go good with my collection ???? pic.twitter.com/9HEAuUDYbS — Jordan Jones (@jordan_jones98) December 16, 2015\r\n\r\n\r\n\r\nVirgina Beach, Virginia\r\nAmazing stickers, as always! Thanks from Madrid @stickermule! pic.twitter.com/XxHYJmzhPq — Jorge Carriazo (@JorgeCarriazous) December 15, 2015\r\n\r\n\r\n\r\nKranj, Slovenia\r\nNew sticker thanks to @stickermule pic.twitter.com/xnNqORLEFw — Miha Rekar (@mr_foto) December 4, 2015\r\n\r\n\r\n\r\nWest Virginia, US\r\nNew iPad case sticker from @stickermule showed up today! pic.twitter.com/3zZagCJLeM — Jim Jones (@k00laidIT) October 2, 2015\r\n\r\n\r\n\r\nLos Altos, California\r\nFriends keep asking for these stickers, so just got another shipment from @stickermule pic.twitter.com/9P9IIzRuif — Jim Fenton (@jimfenton) August 31, 2015\r\n\r\n\r\n\r\nHamburg, Germany\r\n@stickermule finally the cloud sticker is here pic.twitter.com/GSIlVs2z5r — Hurricane Computing (@Hurricane_corp) August 26, 2015\r\n\r\n\r\n\r\nDen Bosch, Netherlands\r\nSo happy with my stickers from @stickermule! Great service and personal thank you. 100 #MODX stickers for @MODXpo pic.twitter.com/mVt400O6Zs — Menno Pietersen (@MennoPP) August 26, 2015\r\n\r\n\r\n\r\nMadison, Wisconsin\r\nhooray for new sticker from @stickermule (thx Jen!) http://t.co/42qeVBOZxd pic.twitter.com/GlcuiO3vpo — Ogre McClubbin\' (@rogerogeroger) August 9, 2015\r\n\r\n\r\n\r\nJapan, East Asia\r\nJust ordered this awesome sticker from @stickermule pic.twitter.com/xnzwBIkQxO — Zeke (@devilsx) August 8, 2015\r\n\r\n\r\n\r\nDundee, Scotland\r\nCheers @stickermule ???? pic.twitter.com/wJXIXfku4Y — Michael Jack (@MikeyJck) June 22, 2015\r\n\r\n\r\n\r\nNorthern Virginia\r\nGot my stickers order from @stickermule today. Turned out great! pic.twitter.com/XvmPa08ySI — Clayton O\'Neill (@clayton_oneill) April 20, 2015\r\n\r\n\r\n\r\nMinnesota, US\r\nFun times ahead courtesy of @stickermule and a nudge from @lusis! pic.twitter.com/aTbUmB4XG1 — WestJonWest (@WestJonWest) March 31, 2015\r\n\r\n\r\n\r\nWellington, New Zealand\r\nGot my @stickermule stickers! Fast delivery as well pic.twitter.com/744mBBOKut — Phillip (@sitharus) June 29, 2015\r\n\r\n\r\n\r\nAustin, Texas\r\n. @MikeTalonNYC @jilljubs pic.twitter.com/etlNNKyRWz — Damian Karlson (@sixfootdad) August 28, 2015\r\n\r\n\r\n\r\nMechelen, Belgium\r\n#thereisnocloud thanks for the fast delivery @stickermule pic.twitter.com/5w6gPKYQug — Jeroen Lambrichts (@jlambrichts) June 29, 2015\r\n\r\n\r\n\r\nSaint Paul, Minnesota\r\nLivened up my monitor stand a bit with help from @lindseybieda @chriswatterston and @stickermule pic.twitter.com/57zu5T7kXk — Fire Wally (@fire_wally) June 29, 2015\r\n\r\n\r\n\r\nSan Francisco, California\r\nNice job on printing these stickers!! @stickermule pic.twitter.com/XWBGjBwbh6 — Jennifer Basalone (@zombiegator) June 23, 2015\r\n\r\n\r\n\r\nSimi Valley, California\r\nLatest from @stickermule. Lots of geeky goodness in their marketplace. Yes, @nikiacosta, I have a "no cloud" for you. pic.twitter.com/KSEOJLdJDT — Gary Kevorkian (@GARY805) August 6, 2015\r\n\r\n\r\n\r\nMountain View, California\r\n<3 stickers @stickermule #thereIsNoCloud pic.twitter.com/aWr5o87fN8 — starbreiz (@starbreiz) July 14, 2015\r\n\r\n\r\n\r\nMichigan, US\r\nIt\'s true. #ThereIsNoCloud @stickermule pic.twitter.com/YAllKd0KTH — Rockey (@analoghumanoid) July 13, 2015\r\n\r\n\r\nSticker order from @stickermule arrived today. Helping to build cloud awareness, one person at a time. pic.twitter.com/1o6C6iIZ4p — Aaron (@Aaron2012R2) June 29, 2015\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nOthers\r\nThere is no #cloud - it’s just someone else’s computer. < Saw on @LinkedIn #Classic :-) @Steve_Lockstep pic.twitter.com/zHr4jmRaXG — Chris Olive (@ChrisEOlive) May 13, 2015\r\n\r\n\r\nThere is no cloud... (via @Asher_Wolf) pic.twitter.com/RhyXgys8vx — J. Grenzfurthner (@johannes_mono) April 21, 2015\r\n\r\n\r\nThis sticker wins @stickermule ? pic.twitter.com/GhOOfJXwy7 — ?Dorkfeast? (@DorkfeastTeam) December 23, 2015\r\n\r\n\r\nIf you buy a ThinkPad, you have to cover it in stickers, that\'s the law. @stickermule pic.twitter.com/oS52qGF5Nr — Fredrik (@ique) December 10, 2015\r\n\r\n\r\nThis came today....h/t to @Kym_Possible for leading me to them...cc:@stickermule pic.twitter.com/2JTaFivsaN — John Stauffacher (@g33kspeed) July 28, 2015\r\n\r\n\r\nA little tongue-in-cheek humor on my work laptop, courtesy of @stickermule pic.twitter.com/MBXD1zZ1w0 — Sam Ferguson (@samuelferguson) June 28, 2015\r\n\r\n\r\nHappy Saturday to me! My sweet new sticker from @stickermule arrived pic.twitter.com/FITjRdoX5M — Erin O\'Brien (@erinogirl123) June 28, 2015\r\n\r\n\r\nAnother great sticker from @stickermule thanks Jen! #CIO #Cloud pic.twitter.com/WrktRssnFY — Ryan Fay (@ryancfay) June 26, 2015\r\n\r\n\r\nWork laptop looking good with new stickers from @ejgreenberg pic.twitter.com/NVYSprZRP3 — ¯\\_(?)_/¯ (@SeanTAllen) October 3, 2015\r\n\r\n\r\nEli Neiburger: there is no cloud, it\'s just someone else\'s computer #alaac15 pic.twitter.com/DfAUIrruOJ — janelofton (@jane_librarian) June 27, 2015\r\n\r\n\r\nMy new laptop sticker, courtesy of @lusis pic.twitter.com/d31RSYNHrm — Randall Degges (@rdegges) June 23, 2015\r\n\r\n\r\nCruise pup pic.twitter.com/iD2Rt3LbZ2 — Jessy Irwin (@jessysaurusrex) January 26, 2016\r\n\r\n\r\nMy new cool laptop stickers just arrived, @stickermule ???? pic.twitter.com/JhRwIbSpD3 — Amr Reda (@AmrReda) September 15, 2015\r\n ', 'My \'There Is No Cloud\' Sticker', 'Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global!', '/blog/my-there-is-no-cloud-sticker', '2016-02-13 14:59:00', '2017-06-20 15:15:53', NULL, 0),
+(185, ' Finding the time to achieve in 2014/15 seemed almost impossible when I look back. Supporting and spending time with my 2 beautiful girls and partner, building a loving home, paying bills, working as an independent self employed designer, marketing, paperwork, trying to socialise with friends, exercising, cycling, gardening, 6 ducks, running 2 cars, selling 1 car, restoring my old 1980\'s Broom Speedboat and my MK1 Fiesta XR2... bla, bla, bla. (UPDATE: and now drone / quadcopter flying with HD camera) \r\n\r\n With that being said, these were my past targets and challenges… \r\n 2014 (this was the start of my first full year self employed)\r\n\r\n\r\n	Minimise on business and personal outgoings.\r\n	Provide design and development solutions to a minimum of two charities.\r\n	Write more. Post at least one blog article per month.\r\n	Design, develop and launch completed personal projects for everyone to use and benefit.\r\n	Increase involvement within online communities. Targeting Dribbble, GitHut and Conrete5.\r\n\r\n  For 2015, I never did set any out in stone. But they were to continue with the explosion of work at that current time and continue with the targets and challenges from 2014. \r\n\r\nSo, how did I do?\r\n\r\n Starting was a positive, target one was a success. Too right, this was my main point. Cutting costs meant I could use these “savings” else where. Like marketing for example. Areas I cut or altered and made massive savings on were; server environments, domain names, everyday work and office space, cycling instead of driving when I could, and I also cut a number of online third-party services that I didn’t really need but thought it would be nice to have. You know the ones. \r\n\r\n Secondly, provide design and development solutions to at least two charities. Unfortunately this didn’t happen. Everything was in place ready for promotion, but I was just to busy at that particular time. People would say “make the time”, but running my ‘one-man band’ business, having a family and spending time with them and living, plus everything else. I just really couldn’t find the time. Maybe this year? \r\n\r\n Write more. Post at least one blog article per month. No comment…. \r\n\r\n I’m now pushing and going for a post a week, starting today. This will be interesting! \r\n\r\n Fourth. To design, develop and launch completed personal projects for everyone to use and benefit. This had been started, but didn’t launch. Reason, I felt it was outdated and not great. \r\n2016… watch this space! \r\n\r\n Lastly. Increase involvement within online communities. This was my lowest priority and kind of got forgotten about. \r\n Now for 2016. In no particular order and with all extra hight priority…\r\n\r\n\r\n	Learn Swift (programming language)\r\n	Launch new personal project, currently labeled ‘ersttt.it’\r\n	Develop a “dashboard” type area which display a number of service overview(s) I provide to clients, right through to their CMS. This means learning multiple third-party API’s.\r\n	Invest in more advertising, in more areas, with more time. You know the score.\r\n	Blog at least once a week. This may cover; what I’ve learnt that particular week, everyday business news, new projects I’ve launch, personal life news, etc.\r\n\r\n  And what is even more exciting, every single new target and challenge is already in motion! \r\n ', 'Starting 2016 with old challenges', 'Like every Tom, Dick and Harry in the land, I set myself new targets and challenges at the start of every year. Do I ever achieve them, behave yourself! It’s so frustrating telling you that, but even more so with myself for not achieving. *sigh*', '/blog/starting-2016-old-challenges', '2017-06-20 15:19:00', '2017-06-20 15:25:19', NULL, 0),
+(186, ' The first two that jumped out at me within a matter of minutes of using the new update were the very annoying \'Fetching...\' when selecting \'Open With\' on a chosen file, and lastly the \'Where\' data when viewing a files info! \r\n\r\n Pushing that aside, one of the new potential-injected features of the latest release, is the new Notification Center. Third-party developers have the power to throw bespoke widgets at this from all kinds of angles! With this in mind, I decided to take a screen shot of the OS X Yosemite NC, and stick together a little something that would bring a smile to my face (including many others) if the guys over at Spotify brought something similar to life.... hint, hint, nudge nudge. \r\n\r\n IMPORTANT: Please understand and acknowledge that this application / widget concept is an unofficial design of the Spotify Widget. You cannot buy, subscribe or download Spotify services or products here. Brand credits to Spotify USA Inc. \r\n\r\n Created by Chris Watterston just for fun and an idea I would love to see come to life. \r\n\r\n Enjoy, and don\'t forget to let me know what you think? \r\n ', 'A much needed Spotify widget for the Notification Center', 'Since installing the new operating system, OS X Yosemite, like many I\'ve noticed a hell of a lot of new great features and design. But, being an every day MacBook user, I\'m finding some pretty cool, but some also pretty annoying.', '/blog/a-much-needed-spotify-widget-for-the-notification-center', '2017-06-20 15:26:00', '2017-06-20 15:37:58', NULL, 0),
+(187, '', '\'There Is No Cloud\' Copyright Protection', 'I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO! That would place myself in the same category as the thieving scummy $&£4’ers that stole my design and many other honest designers work also - and that’s me being polite against them!', '/blog/there-no-cloud-copyright-protection', '2016-09-10 15:38:00', '2017-06-20 15:51:52', NULL, 0),
+(188, ' We were unique in what we did, not only did we supported our base school, but 30+ other schools and businesses in and around the Surrey, UK areas. That doesn\'t sound a lot compared to some larger companies, but bear in mind we were just an IT team based within a school. \r\n\r\n Moving "Onwards and Upwards" as they say, before getting into to much about the past... all that had come to an unfortunate end, and non of our team of 14 wanted or wished for it. Many of the team moved on to further their careers and love for IT, but for me, this is was when I possibly made the biggest decision of my career. \r\n\r\n Making a decision to become an self-employed designer could be an easy hit for someone who\'s only 24 years of age, living at home with parents, paying no rent, no responsibilities, with thousands of pounds of disposable income each month, going out drinking and partying 7 night a week, with a partner who also has thousands of pounds of disposable income. Sounds like an easy life, doesn\'t it? Now let\'s spice things up a wee bit, what about if that someone was 24 years of age, lived with their partner who\'s a full time mum on an annual salary of £0, with their 2 loveable children, bills to pay, food on the table every day without fail, luxuries, running a car and motorbike, insurance, the list goes on, as you know. So has the decision become any easier? \r\n\r\n When you have a love for what you do, believe in yourself, and dreamt about working for yourself for years and years, the decision becomes easier. Before finalising my decision I spent hours reading articles on the net about what to expect, what\'s recommended, how much money you should have saved to cover yourself for a few months, the pros and cons, etc. But I still had my mind set, I wanted and needed to work for myself, and there was an opportunity slapping me right around my chops to do so. So I did! \r\n\r\n My first day of what some refer to as "Total Freedom", started on 1st September 2013. I woke up at 6:30, yes6:30am, with a smile on my face. The gut feeling of being my own boss was thrilling! And as time when on, weeks flew by, pre job stress faded away, my hair started to grow back (I\'m sure of it), more time for my family appeared out of thin air, I felt and became much happier. I started being myself again. Life was perfect! \r\nIt wasn\'t that I didn\'t love or enjoy my previous job, Don\'t get me wrong, I did. It\'s just that it became a routine, those who know me know I HATE routine. Now everyday is a different day. \r\n\r\n So, the question everyones asking me these days is "How successful have you been in starting out on your own". Well, incase you\'re wondering the same question , I\'ve laid out a couple of stats below to give you a rough idea... \r\n ', '4th Month Into Self-Employment', 'Jee. Taking a step back, it\'s been almost 4 months already. Holy Crap! Cutting a 5 year story into a nut shell, I previously worked for a secondary school within an IT department. It wasn\'t any ordinary IT department within a school, ow nooo.', '/blog/4th-month-into-self-employment', '2014-02-14 16:07:00', '2017-06-20 16:14:36', NULL, 0);
+INSERT INTO `PageSearchIndex` (`cID`, `content`, `cName`, `cDescription`, `cPath`, `cDatePublic`, `cDateLastIndexed`, `cDateLastSitemapped`, `cRequiresReindex`) VALUES
+(189, ' Enough time has passed now for me to settle into my new role, career, life, and I feel it\'s the perfect time to set myself some goals for 2014. So here they are, in no particular order... \r\n \r\n	Minimise on business and personal outgoings.\r\n	Provide design and development solutions to a minimum of two charities.\r\n	Write more. Post at least one blog article per month.\r\n	Design, develop and launch completed personal projects for everyone to use and benefit.\r\n	Increase involvement within online communities. Targeting Dribbble, GitHut and Conrete5.\r\n\r\n  So, there it is. Now let\'s dig a wee deeper look into each one... \r\n\r\n 1. Minimise on business and personal outgoings. This seams reasonable, doesn\'t it? Everyone knows businesses require money to make money, so I\'ve decided to cancel a few service that I\'d subscribed to over the years to save some pennies. \r\n\r\n The first sacrifice being Evernote. I signed up to Evernote\'s Premium Subscription back in 2011, I used to use it for everything at my pervious place of work, but boy have things changed since becoming self employed. I can honestly say, I don\'t even remember the last time I opened up my Evernote app to create or read a note. Really, really! I used to be a hourly user and had a tone of projects, notes, PSD files, wireframes, pictures, the list goes on, all from my pervious work place and personal life. Boom, I archived the lot off, and canceled my Premium Subscription. That\'s £30 per year i\'m now saving. Woop! \r\n\r\n My second sacrifice was Netflix. Don\'t get me wrong, Netflix is a great service if you like watching films that are 2+ years old, or you have kids that\'ll watch cartoons on the iPad. I personally like to watch new films that I don\'t have to blow the dust off to watch, I already have them all on DVD. Here\'s an actual example, my other half, the love of my life, has never watched Gladiator, what a film! Which I\'d like to add, is now 14 years old....AND IT\'S NOT EVEN ON NETFLIX! Excuse my french, but are you shitting me? So frustrating! So, you get the picture. That\'s another £5.99 per month, £71.88(ish) per year. \r\n\r\n Smiles all around, we\'re only on the 7th of January, and I\'ve already minimise my outgoing by £101.88 per year. Not bad going so far. \r\n\r\n 2. Provide design and development solutions to at least two charities. I\'ve always enjoyed helping others, it makes me feel all good and warm inside. Like wearing a onesie fully zipped to the neck, with the heating cranked up to 30° and your wood burner blazing! People who know me will know I very rarely say No, or hate having to say it. I\'ll find any reason to avoid the word, I\'d say this is probably a weakness of mine. So, moving onwards and upwards, I\'d give a lot of time for any individual or group with a lot of time for others. And with charities landing within this category, I\'ve always wanted to help a charity that needs an extra helping hand online. So, this year I\'m going to make sure I give my time to a minimum of two. Promise! \r\n\r\n 3. Write more. Post at least one blog article per month. I\'ll admit, my writing and grammar is crap! It always has been, and I hope it always won\'t be. This particular goal\'s to help increase my poor grammar, spelling, writing, etc, as you\'ve probably already noticed while reading this. You savvy lot, you! So, I\'ll be writing a minimum of one blog post per month. Lucky you! \r\n\r\n 4. Design, develop and launch completed personal projects for everyone to use and benefit. I\'ve always had an active mind, a thinker, and thought up a few pretty good ideas in the past for personal web projects. But with a full time job, I never did get around to completing them due to lack of time, the same old story. I could easily jump back on the bandwagon, finishing what I\'d started, but they\'re all out of date and wouldn\'t have any benefits or future. \r\n\r\n The first web app idea I came up with back in 2010, and was called My Child\'s Diary. MCD\'s vision was to provide an in the cloud diary for parents to log and remember the facts, millstones, photos, events and much more, of their kids, all through the internet, phone or tablet. Allowing it to be shared with family and friends, with an added feature so parents can get the final logged experience to be exported as a PDF download or to be printed on a hardback book. But, I never got around to finishing it. \r\n\r\n The second web app idea was called FancyE.at, which started late 2012, and again never did get finished. FE\'s vision was to bring the subject of quality, food, service and networking all into a simple, easy to use and social web app. The app would provide details such as the closest place to eat via a categorised search, personal favourite hot spots, reviews, menus, photos, share a scheduled dinner with friends, booking of tables, locations, discounts....bla, bla, bla. \r\n\r\n My new idea, which I\'ll admit did hurt a wee bit when it hit me, inspired by my other half, is already under way, with I hope to launch by 1st April 2014. The vision is aimed at new and expecting parents, with others benefiting also. BUT, I\'m saying no more! You\'ll have to wait and see once it\'s been launched. \r\n\r\n 5. Increase involvement within online communities. Targeting Dribbble, GitHut and Conrete5. I\'ve always wanted to hit three communities hard, well not hard but with my online presence, Dribbble, GitHut and Conrete5. I have accounts on all but over the years things have been stopping me doing just that. They are as follows...Dribbble, haven\'t been invited yet....please? GitHub and Concrete5, just not enough time. Now that times on my side, I can correct these areas and join all these other beautiful lot. \r\n\r\n So, thats that. Now you know my five goals for 2014, have you set any goals? If yes, then what are yours? \r\n ', 'Setting 5 Goals For 2014', 'A warm welcome to 2014, I wish you all a happy New Year. It\'s the start of a New Year for us all, and funny enough it\'s also that time where 99.9% of us feel the need to set ourself new year resolutions, goals, targets, or whatever you call it. For me, I\'ve just rolled into my 5th month of self employment and it still feels incredible, just as it did on day one.', '/blog/setting-5-goals-2014', '2014-02-01 16:17:00', '2017-06-20 16:21:45', NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -5961,7 +6865,8 @@ INSERT INTO `PageTemplates` (`pTemplateID`, `pTemplateHandle`, `pTemplateIcon`, 
 (4, 'full', 'full.png', 'Full', 0, 0),
 (5, 'home', 'blank.png', 'Home', 0, 0),
 (6, 'blog', 'left_list.png', 'Blog', 0, 0),
-(7, 'recognition', 'grid.png', 'Recognition', 0, 0);
+(7, 'recognition', 'grid.png', 'Recognition', 0, 0),
+(8, 'default', 'right_list.png', 'Default', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -6051,31 +6956,41 @@ INSERT INTO `PageTypeComposerFormLayoutSetControls` (`ptComposerFormLayoutSetCon
 (5, 1, 1, 'O:87:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\PublishTargetCorePageProperty":12:{s:17:"\0*\0propertyHandle";s:14:"publish_target";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:14:"publish_target";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:8:"download";}s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 4, NULL, NULL, NULL, 0),
 (6, 2, 3, 'O:53:"Concrete\\Core\\Page\\Type\\Composer\\Control\\BlockControl":15:{s:7:"\0*\0btID";i:14;s:30:"\0*\0ptComposerControlTypeHandle";s:5:"block";s:5:"\0*\0bt";b:0;s:4:"\0*\0b";b:0;s:13:"\0*\0controller";N;s:30:"\0*\0ptComposerControlIdentifier";i:14;s:24:"\0*\0ptComposerControlName";s:7:"Content";s:27:"\0*\0ptComposerControlIconSRC";s:33:"/concrete/blocks/content/icon.png";s:33:"\0*\0ptComposerControlIconFormatter";N;s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 0, 'Body', NULL, NULL, 0),
 (7, 3, 1, 'O:78:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\NameCorePageProperty":12:{s:37:"\0*\0ptComposerControlRequiredByDefault";b:1;s:17:"\0*\0propertyHandle";s:4:"name";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:4:"name";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:9:"file-text";}s:20:"\0*\0ptComposerControl";N;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 0, NULL, NULL, NULL, 1),
-(10, 3, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:2;}', 1, '', '', '', 1),
 (11, 4, 1, 'O:78:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\NameCorePageProperty":12:{s:37:"\0*\0ptComposerControlRequiredByDefault";b:1;s:17:"\0*\0propertyHandle";s:4:"name";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:4:"name";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:9:"file-text";}s:20:"\0*\0ptComposerControl";N;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 0, NULL, NULL, NULL, 1),
-(12, 4, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:2;}', 3, '', '', '', 1),
 (13, 4, 1, 'O:81:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\UrlSlugCorePageProperty":12:{s:17:"\0*\0propertyHandle";s:8:"url_slug";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:8:"url_slug";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:9:"file-text";}s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 1, NULL, NULL, NULL, 0),
-(14, 4, 1, 'O:82:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\DateTimeCorePageProperty":12:{s:17:"\0*\0propertyHandle";s:9:"date_time";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:9:"date_time";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:8:"calendar";}s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 5, NULL, NULL, NULL, 0),
-(16, 5, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:20;}', 0, '', '', '', 1),
+(14, 4, 1, 'O:82:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\DateTimeCorePageProperty":12:{s:17:"\0*\0propertyHandle";s:9:"date_time";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:9:"date_time";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:8:"calendar";}s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 3, NULL, NULL, NULL, 0),
+(16, 5, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:20;}', 0, '', '', '', 0),
 (17, 5, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:21;}', 1, '', '', '', 0),
-(18, 5, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:22;}', 2, '', '', '', 1),
 (19, 6, 1, 'O:78:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\NameCorePageProperty":12:{s:37:"\0*\0ptComposerControlRequiredByDefault";b:1;s:17:"\0*\0propertyHandle";s:4:"name";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:4:"name";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:9:"file-text";}s:20:"\0*\0ptComposerControl";N;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 0, NULL, NULL, NULL, 1),
 (20, 6, 1, 'O:81:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\UrlSlugCorePageProperty":12:{s:17:"\0*\0propertyHandle";s:8:"url_slug";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:8:"url_slug";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:9:"file-text";}s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 1, NULL, NULL, NULL, 0),
-(21, 6, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:2;}', 3, '', '', '', 1),
-(22, 6, 1, 'O:82:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\DateTimeCorePageProperty":12:{s:17:"\0*\0propertyHandle";s:9:"date_time";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:9:"date_time";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:8:"calendar";}s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 5, NULL, NULL, NULL, 0),
-(23, 7, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:20;}', 0, '', '', '', 1),
-(25, 7, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:22;}', 1, '', '', '', 1),
-(26, 4, 1, 'O:85:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\DescriptionCorePageProperty":12:{s:17:"\0*\0propertyHandle";s:11:"description";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:11:"description";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:4:"font";}s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 2, '', '', '', 1),
-(27, 4, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:3;}', 4, '', '', '', 1),
-(28, 6, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:3;}', 4, '', '', '', 1),
-(29, 6, 1, 'O:85:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\DescriptionCorePageProperty":12:{s:17:"\0*\0propertyHandle";s:11:"description";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:11:"description";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:4:"font";}s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 2, '', '', '', 1),
+(22, 6, 1, 'O:82:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\DateTimeCorePageProperty":12:{s:17:"\0*\0propertyHandle";s:9:"date_time";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:9:"date_time";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:8:"calendar";}s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 3, NULL, NULL, NULL, 0),
+(23, 7, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:20;}', 0, '', '', '', 0),
+(25, 7, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:22;}', 1, '', '', '', 0),
+(26, 4, 1, 'O:85:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\DescriptionCorePageProperty":12:{s:17:"\0*\0propertyHandle";s:11:"description";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:11:"description";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:4:"font";}s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 2, '', '', '', 0),
+(29, 6, 1, 'O:85:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\DescriptionCorePageProperty":12:{s:17:"\0*\0propertyHandle";s:11:"description";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:11:"description";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:4:"font";}s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 2, '', '', '', 0),
 (30, 8, 1, 'O:78:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\NameCorePageProperty":12:{s:37:"\0*\0ptComposerControlRequiredByDefault";b:1;s:17:"\0*\0propertyHandle";s:4:"name";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:4:"name";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:9:"file-text";}s:20:"\0*\0ptComposerControl";N;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 0, NULL, NULL, NULL, 1),
 (31, 8, 1, 'O:81:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\UrlSlugCorePageProperty":12:{s:17:"\0*\0propertyHandle";s:8:"url_slug";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:8:"url_slug";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:9:"file-text";}s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 1, NULL, NULL, NULL, 0),
 (32, 8, 1, 'O:82:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\DateTimeCorePageProperty":12:{s:17:"\0*\0propertyHandle";s:9:"date_time";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:9:"date_time";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:8:"calendar";}s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 2, NULL, NULL, NULL, 0),
-(34, 8, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:2;}', 3, NULL, NULL, NULL, 0),
-(35, 8, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:3;}', 4, NULL, NULL, NULL, 0),
 (36, 9, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:20;}', 1, NULL, NULL, NULL, 0),
-(37, 9, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:23;}', 0, NULL, NULL, NULL, 0);
+(37, 9, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:23;}', 0, NULL, NULL, NULL, 0),
+(41, 10, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:1;}', 0, NULL, NULL, NULL, 0),
+(42, 10, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:2;}', 1, NULL, NULL, NULL, 0),
+(43, 10, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:3;}', 2, NULL, NULL, NULL, 0),
+(44, 3, 1, 'O:85:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CorePageProperty\\DescriptionCorePageProperty":12:{s:17:"\0*\0propertyHandle";s:11:"description";s:30:"\0*\0ptComposerControlTypeHandle";s:18:"core_page_property";s:30:"\0*\0ptComposerControlIdentifier";s:11:"description";s:24:"\0*\0ptComposerControlName";N;s:27:"\0*\0ptComposerControlIconSRC";N;s:33:"\0*\0ptComposerControlIconFormatter";O:48:"Concrete\\Core\\Attribute\\FontAwesomeIconFormatter":1:{s:7:"\0*\0icon";s:4:"font";}s:20:"\0*\0ptComposerControl";N;s:37:"\0*\0ptComposerControlRequiredByDefault";b:0;s:41:"\0*\0ptComposerControlRequiredOnThisRequest";b:0;s:31:"\0*\0ptComposerControlCustomLabel";N;s:31:"\0*\0ptComposerControlDescription";N;s:5:"error";s:0:"";}', 1, NULL, NULL, NULL, 0),
+(45, 11, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:1;}', 0, NULL, NULL, NULL, 0),
+(46, 11, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:2;}', 1, NULL, NULL, NULL, 0),
+(47, 11, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:3;}', 2, NULL, NULL, NULL, 0),
+(48, 12, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:1;}', 0, NULL, NULL, NULL, 0),
+(49, 12, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:2;}', 1, NULL, NULL, NULL, 0),
+(50, 12, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:3;}', 2, NULL, NULL, NULL, 0),
+(51, 13, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:1;}', 0, NULL, NULL, NULL, 0),
+(52, 13, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:2;}', 1, NULL, NULL, NULL, 0),
+(53, 13, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:3;}', 2, NULL, NULL, NULL, 0),
+(54, 14, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:1;}', 0, NULL, NULL, NULL, 0),
+(55, 14, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:2;}', 1, NULL, NULL, NULL, 0),
+(56, 14, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:3;}', 2, NULL, NULL, NULL, 0),
+(57, 2, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:20;}', 1, NULL, NULL, NULL, 0),
+(58, 5, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:22;}', 2, NULL, NULL, NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -6097,14 +7012,19 @@ CREATE TABLE `PageTypeComposerFormLayoutSets` (
 
 INSERT INTO `PageTypeComposerFormLayoutSets` (`ptComposerFormLayoutSetID`, `ptID`, `ptComposerFormLayoutSetName`, `ptComposerFormLayoutSetDescription`, `ptComposerFormLayoutSetDisplayOrder`) VALUES
 (1, 5, 'Basics', '', 0),
-(2, 5, 'Content', '', 1),
+(2, 5, 'Content', '', 2),
 (3, 6, 'Default', '', 0),
 (4, 7, 'Default', '', 0),
-(5, 7, 'Bespoke', '', 1),
+(5, 7, 'Design', '', 2),
 (6, 8, 'Default', '', 0),
-(7, 8, 'Bespoke', '', 1),
+(7, 8, 'Design', '', 2),
 (8, 9, 'Default', '', 0),
-(9, 9, 'Bespoke', '', 1);
+(9, 9, 'Design', '', 2),
+(10, 5, 'SEO', '', 1),
+(11, 6, 'SEO', '', 1),
+(12, 7, 'SEO', '', 1),
+(13, 8, 'SEO', '', 1),
+(14, 9, 'SEO', '', 1);
 
 -- --------------------------------------------------------
 
@@ -6133,7 +7053,9 @@ INSERT INTO `PageTypeComposerOutputBlocks` (`ptComposerOutputBlockID`, `cID`, `c
 (8, 162, 1, 'Main', 0, 6, 31),
 (10, 163, 1, 'Main', 0, 6, 33),
 (12, 164, 1, 'Main', 0, 6, 35),
-(14, 174, 1, 'Main', 0, 6, 83);
+(14, 174, 1, 'Main', 0, 6, 83),
+(15, 159, 2, 'Main', 0, 6, 112),
+(16, 159, 3, 'Main', 0, 6, 113);
 
 -- --------------------------------------------------------
 
@@ -6156,7 +7078,8 @@ INSERT INTO `PageTypeComposerOutputControls` (`ptComposerOutputControlID`, `pTem
 (1, 4, 5, 6),
 (2, 5, 5, 6),
 (3, 6, 5, 6),
-(4, 7, 5, 6);
+(4, 7, 5, 6),
+(5, 8, 5, 6);
 
 -- --------------------------------------------------------
 
@@ -6178,7 +7101,8 @@ INSERT INTO `PageTypePageTemplateDefaultPages` (`pTemplateID`, `ptID`, `cID`) VA
 (4, 5, 153),
 (6, 7, 167),
 (5, 6, 172),
-(7, 9, 175);
+(7, 9, 175),
+(6, 8, 182);
 
 -- --------------------------------------------------------
 
@@ -6196,11 +7120,11 @@ CREATE TABLE `PageTypePageTemplates` (
 --
 
 INSERT INTO `PageTypePageTemplates` (`ptID`, `pTemplateID`) VALUES
-(5, 5),
 (6, 5),
 (7, 6),
 (8, 6),
-(9, 7);
+(9, 7),
+(5, 8);
 
 -- --------------------------------------------------------
 
@@ -6318,7 +7242,7 @@ INSERT INTO `PageTypes` (`ptID`, `ptName`, `ptHandle`, `ptPublishTargetTypeID`, 
 (2, 'Stack Category', 'core_stack_category', 3, 0, 'A', 1, 0, 1, 0, 0, 'O:68:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\AllConfiguration":7:{s:21:"\0*\0selectorFormFactor";N;s:22:"\0*\0startingPointPageID";N;s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"3";s:25:"ptPublishTargetTypeHandle";s:3:"all";s:9:"pkgHandle";b:0;s:17:"startingPointPage";N;}', 1),
 (3, 'Desktop', 'core_desktop', 3, 0, 'A', 1, 0, 2, 0, 0, 'O:68:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\AllConfiguration":7:{s:21:"\0*\0selectorFormFactor";N;s:22:"\0*\0startingPointPageID";N;s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"3";s:25:"ptPublishTargetTypeHandle";s:3:"all";s:9:"pkgHandle";b:0;s:17:"startingPointPage";N;}', 1),
 (4, 'Dashboard Full', 'dashboard_full', 3, 0, 'A', 1, 0, 3, 0, 0, 'O:68:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\AllConfiguration":7:{s:21:"\0*\0selectorFormFactor";N;s:22:"\0*\0startingPointPageID";N;s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"3";s:25:"ptPublishTargetTypeHandle";s:3:"all";s:9:"pkgHandle";b:0;s:17:"startingPointPage";N;}', 1),
-(5, 'Page', 'default', 3, 4, 'X', 0, 1, 0, 0, 0, 'O:68:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\AllConfiguration":7:{s:21:"\0*\0selectorFormFactor";s:0:"";s:22:"\0*\0startingPointPageID";N;s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"3";s:25:"ptPublishTargetTypeHandle";s:3:"all";s:9:"pkgHandle";b:0;s:17:"startingPointPage";s:1:"0";}', 1),
+(5, 'Page', 'default', 3, 8, 'C', 0, 0, 0, 0, 0, 'O:68:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\AllConfiguration":7:{s:21:"\0*\0selectorFormFactor";s:0:"";s:22:"\0*\0startingPointPageID";N;s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"3";s:25:"ptPublishTargetTypeHandle";s:3:"all";s:9:"pkgHandle";b:0;s:17:"startingPointPage";s:1:"0";}', 1),
 (6, 'Home', 'home', 3, 5, 'C', 0, 0, 1, 0, 0, 'O:68:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\AllConfiguration":7:{s:21:"\0*\0selectorFormFactor";s:0:"";s:22:"\0*\0startingPointPageID";N;s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"3";s:25:"ptPublishTargetTypeHandle";s:3:"all";s:9:"pkgHandle";b:0;s:17:"startingPointPage";s:1:"0";}', 1),
 (7, 'Blog Update', 'blog_update', 1, 6, 'C', 0, 1, 2, 1, 0, 'O:75:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\ParentPageConfiguration":5:{s:12:"\0*\0cParentID";s:3:"161";s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"1";s:25:"ptPublishTargetTypeHandle";s:11:"parent_page";s:9:"pkgHandle";b:0;}', 1),
 (8, 'Case Study Update', 'casestudy_update', 1, 6, 'C', 0, 1, 3, 1, 0, 'O:75:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\ParentPageConfiguration":5:{s:12:"\0*\0cParentID";s:3:"162";s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"1";s:25:"ptPublishTargetTypeHandle";s:11:"parent_page";s:9:"pkgHandle";b:0;}', 1),
@@ -6340,7 +7264,8 @@ CREATE TABLE `PageWorkflowProgress` (
 --
 
 INSERT INTO `PageWorkflowProgress` (`cID`, `wpID`) VALUES
-(158, 28);
+(158, 28),
+(177, 29);
 
 -- --------------------------------------------------------
 
@@ -7660,7 +8585,9 @@ CREATE TABLE `TreeFileNodes` (
 INSERT INTO `TreeFileNodes` (`treeNodeID`, `fID`) VALUES
 (25, 1),
 (32, 2),
-(33, 3);
+(33, 3),
+(34, 4),
+(35, 5);
 
 -- --------------------------------------------------------
 
@@ -7770,7 +8697,9 @@ INSERT INTO `TreeNodes` (`treeNodeID`, `treeNodeTypeID`, `treeID`, `treeNodePare
 (30, 5, 4, 9, 8, 'Swift', '2017-05-24 12:51:49', '2017-05-24 12:51:49', 0, 8),
 (31, 5, 4, 9, 9, 'Development', '2017-05-24 12:52:05', '2017-05-24 12:52:05', 0, 8),
 (32, 6, 3, 7, 1, '', '2017-06-02 15:11:53', '2017-06-02 15:11:53', 0, 7),
-(33, 6, 3, 7, 2, '', '2017-06-02 15:12:37', '2017-06-02 15:12:37', 0, 7);
+(33, 6, 3, 7, 2, '', '2017-06-02 15:12:37', '2017-06-02 15:12:37', 0, 7),
+(34, 6, 3, 7, 3, '', '2017-06-20 15:33:09', '2017-06-20 15:33:09', 0, 7),
+(35, 6, 3, 7, 4, '', '2017-06-20 15:33:12', '2017-06-20 15:33:12', 0, 7);
 
 -- --------------------------------------------------------
 
@@ -8075,7 +9004,7 @@ CREATE TABLE `Users` (
 --
 
 INSERT INTO `Users` (`uID`, `uName`, `uEmail`, `uPassword`, `uIsActive`, `uIsFullRecord`, `uIsValidated`, `uDateAdded`, `uLastPasswordChange`, `uHasAvatar`, `uLastOnline`, `uLastLogin`, `uPreviousLogin`, `uNumLogins`, `uLastAuthTypeID`, `uLastIP`, `uTimezone`, `uDefaultLanguage`, `uIsPasswordReset`) VALUES
-(1, 'admin', 'hello@chriswatterston.com', '$2a$12$kJV9yqhfCBt8k6DX6w7xxuSypfc/T0vGL5u2G3M2LTUpzYnRPmRvG', 1, 1, 1, '2017-05-22 15:59:23', '2017-05-22 15:59:23', 0, 1496413322, 1496401895, 1495613838, 4, 1, '7f000001', NULL, NULL, 0);
+(1, 'admin', 'hello@chriswatterston.com', '$2a$12$kJV9yqhfCBt8k6DX6w7xxuSypfc/T0vGL5u2G3M2LTUpzYnRPmRvG', 1, 1, 1, '2017-05-22 15:59:23', '2017-05-22 15:59:23', 0, 1497974837, 1496756417, 1496401895, 5, 1, '7f000001', NULL, NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -8161,7 +9090,8 @@ CREATE TABLE `WorkflowProgress` (
 --
 
 INSERT INTO `WorkflowProgress` (`wpID`, `wpCategoryID`, `wfID`, `wpApproved`, `wpDateAdded`, `wpDateLastAction`, `wpCurrentStatus`, `wrID`, `wpIsCompleted`) VALUES
-(28, 1, 0, 0, '2017-05-24 10:09:00', NULL, 0, 28, 0);
+(28, 1, 0, 0, '2017-05-24 10:09:00', NULL, 0, 28, 0),
+(29, 1, 0, 0, '2017-06-06 14:46:13', NULL, 0, 29, 0);
 
 -- --------------------------------------------------------
 
@@ -8270,7 +9200,55 @@ INSERT INTO `WorkflowProgressHistory` (`wphID`, `wpID`, `timestamp`, `object`) V
 (66, 38, '2017-06-02 14:17:36', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"38";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"176";s:4:"cvID";s:1:"2";}'),
 (67, 39, '2017-06-02 14:20:09', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"39";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"174";s:4:"cvID";s:1:"2";}'),
 (68, 40, '2017-06-02 14:20:21', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"40";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"174";s:4:"cvID";s:1:"3";}'),
-(69, 41, '2017-06-02 14:22:10', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"41";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"176";s:4:"cvID";s:1:"3";}');
+(69, 41, '2017-06-02 14:22:10', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"41";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"176";s:4:"cvID";s:1:"3";}'),
+(70, 29, '2017-06-06 13:46:13', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"29";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"177";s:4:"cvID";s:1:"4";}'),
+(71, 30, '2017-06-06 13:49:12', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"30";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"177";s:4:"cvID";s:1:"5";}'),
+(72, 31, '2017-06-06 13:49:18', 'O:46:"Concrete\\Core\\Workflow\\Request\\MovePageRequest":9:{s:12:"\0*\0targetCID";s:3:"174";s:14:"\0*\0wrStatusNum";i:50;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"31";s:5:"error";s:0:"";s:4:"pkID";s:2:"16";s:3:"cID";s:3:"177";s:15:"saveOldPagePath";N;}'),
+(73, 32, '2017-06-06 13:51:11', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"32";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"176";s:4:"cvID";s:1:"4";}'),
+(74, 33, '2017-06-06 13:53:46', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"33";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"176";s:4:"cvID";s:1:"5";}'),
+(75, 34, '2017-06-06 13:56:16', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"34";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"176";s:4:"cvID";s:1:"6";}'),
+(76, 35, '2017-06-06 13:56:44', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"35";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"176";s:4:"cvID";s:1:"7";}'),
+(77, 36, '2017-06-06 13:58:07', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"36";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"177";s:4:"cvID";s:1:"6";}'),
+(78, 37, '2017-06-06 15:48:22', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"37";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:2:"21";}'),
+(79, 38, '2017-06-07 09:46:09', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"38";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:2:"22";}'),
+(80, 30, '2017-06-15 15:01:52', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"30";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:2:"23";}'),
+(81, 31, '2017-06-16 11:11:15', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"31";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"154";s:4:"cvID";s:2:"14";}'),
+(82, 32, '2017-06-16 11:16:43', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"32";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"154";s:4:"cvID";s:2:"15";}'),
+(83, 33, '2017-06-16 11:17:47', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"33";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"154";s:4:"cvID";s:2:"16";}'),
+(84, 34, '2017-06-16 13:51:22', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"34";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"171";s:4:"cvID";s:1:"4";}'),
+(85, 35, '2017-06-16 13:51:53', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"35";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"171";s:4:"cvID";s:1:"5";}'),
+(86, 36, '2017-06-16 14:03:46', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"36";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"171";s:4:"cvID";s:1:"6";}'),
+(87, 37, '2017-06-19 09:28:45', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"37";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"155";s:4:"cvID";s:1:"4";}'),
+(88, 38, '2017-06-19 10:19:36', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"38";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"155";s:4:"cvID";s:1:"7";}'),
+(89, 39, '2017-06-19 10:20:58', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"39";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"155";s:4:"cvID";s:1:"8";}'),
+(90, 40, '2017-06-19 14:50:59', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"40";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"171";s:4:"cvID";s:1:"7";}'),
+(91, 41, '2017-06-19 15:34:55', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"41";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"176";s:4:"cvID";s:1:"8";}'),
+(92, 42, '2017-06-19 15:46:12', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"42";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"176";s:4:"cvID";s:1:"9";}'),
+(93, 43, '2017-06-19 16:00:15', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"43";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"176";s:4:"cvID";s:2:"10";}'),
+(94, 44, '2017-06-19 16:04:05', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"44";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"176";s:4:"cvID";s:2:"11";}'),
+(95, 45, '2017-06-19 16:07:20', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"45";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"176";s:4:"cvID";s:2:"12";}'),
+(96, 46, '2017-06-19 16:09:40', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"46";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"176";s:4:"cvID";s:2:"13";}'),
+(97, 47, '2017-06-20 09:18:34', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"47";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:2:"24";}'),
+(98, 48, '2017-06-20 09:19:15', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"48";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:2:"25";}'),
+(99, 49, '2017-06-20 09:33:16', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"49";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"159";s:4:"cvID";s:1:"2";}'),
+(100, 50, '2017-06-20 09:33:45', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"50";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"159";s:4:"cvID";s:1:"3";}'),
+(101, 51, '2017-06-20 13:16:30', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"51";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"159";s:4:"cvID";s:1:"4";}'),
+(102, 52, '2017-06-20 13:23:03', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"52";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"160";s:4:"cvID";s:1:"2";}'),
+(103, 53, '2017-06-20 13:29:31', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"53";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"160";s:4:"cvID";s:1:"3";}'),
+(104, 54, '2017-06-20 14:02:31', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"54";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"181";s:4:"cvID";s:1:"1";}'),
+(105, 55, '2017-06-20 14:11:38', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"55";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"181";s:4:"cvID";s:1:"2";}'),
+(106, 56, '2017-06-20 14:15:43', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"56";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"181";s:4:"cvID";s:1:"3";}'),
+(107, 57, '2017-06-20 14:21:24', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"57";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"185";s:4:"cvID";s:1:"1";}'),
+(108, 58, '2017-06-20 14:25:13', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"58";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"185";s:4:"cvID";s:1:"2";}'),
+(109, 59, '2017-06-20 14:29:43', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"59";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"186";s:4:"cvID";s:1:"1";}'),
+(110, 60, '2017-06-20 14:36:47', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"60";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"186";s:4:"cvID";s:1:"2";}'),
+(111, 61, '2017-06-20 14:37:51', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"61";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"186";s:4:"cvID";s:1:"3";}'),
+(112, 62, '2017-06-20 14:51:46', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"62";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"187";s:4:"cvID";s:1:"1";}');
+INSERT INTO `WorkflowProgressHistory` (`wphID`, `wpID`, `timestamp`, `object`) VALUES
+(113, 63, '2017-06-20 15:09:52', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"63";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"188";s:4:"cvID";s:1:"1";}'),
+(114, 64, '2017-06-20 15:14:31', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"64";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"188";s:4:"cvID";s:1:"2";}'),
+(115, 65, '2017-06-20 15:18:42', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"65";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"189";s:4:"cvID";s:1:"1";}'),
+(116, 66, '2017-06-20 15:21:39', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"66";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"189";s:4:"cvID";s:1:"2";}');
 
 -- --------------------------------------------------------
 
@@ -8299,7 +9277,8 @@ CREATE TABLE `WorkflowRequestObjects` (
 --
 
 INSERT INTO `WorkflowRequestObjects` (`wrID`, `wrObject`) VALUES
-(28, 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"28";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"158";s:4:"cvID";s:1:"4";}');
+(28, 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"28";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"158";s:4:"cvID";s:1:"4";}'),
+(29, 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"29";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"177";s:4:"cvID";s:1:"4";}');
 
 -- --------------------------------------------------------
 
@@ -10534,22 +11513,22 @@ ALTER TABLE `WorkflowTypes`
 -- AUTO_INCREMENT for table `AreaLayoutColumns`
 --
 ALTER TABLE `AreaLayoutColumns`
-  MODIFY `arLayoutColumnID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `arLayoutColumnID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `AreaLayoutCustomColumns`
 --
 ALTER TABLE `AreaLayoutCustomColumns`
-  MODIFY `arLayoutColumnID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `arLayoutColumnID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `AreaLayoutPresets`
 --
 ALTER TABLE `AreaLayoutPresets`
-  MODIFY `arLayoutPresetID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `arLayoutPresetID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `AreaLayouts`
 --
 ALTER TABLE `AreaLayouts`
-  MODIFY `arLayoutID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `arLayoutID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `AreaLayoutThemeGridColumns`
 --
@@ -10559,7 +11538,7 @@ ALTER TABLE `AreaLayoutThemeGridColumns`
 -- AUTO_INCREMENT for table `Areas`
 --
 ALTER TABLE `Areas`
-  MODIFY `arID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `arID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=87;
 --
 -- AUTO_INCREMENT for table `atSelectedSocialLinks`
 --
@@ -10569,7 +11548,7 @@ ALTER TABLE `atSelectedSocialLinks`
 -- AUTO_INCREMENT for table `atSelectedTopics`
 --
 ALTER TABLE `atSelectedTopics`
-  MODIFY `avTreeTopicNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `avTreeTopicNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 --
 -- AUTO_INCREMENT for table `atSelectOptionLists`
 --
@@ -10604,7 +11583,7 @@ ALTER TABLE `AttributeTypes`
 -- AUTO_INCREMENT for table `AttributeValues`
 --
 ALTER TABLE `AttributeValues`
-  MODIFY `avID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=348;
+  MODIFY `avID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1125;
 --
 -- AUTO_INCREMENT for table `AuthenticationTypes`
 --
@@ -10624,7 +11603,7 @@ ALTER TABLE `BannedWords`
 -- AUTO_INCREMENT for table `Blocks`
 --
 ALTER TABLE `Blocks`
-  MODIFY `bID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=85;
+  MODIFY `bID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=135;
 --
 -- AUTO_INCREMENT for table `BlockTypes`
 --
@@ -10684,7 +11663,7 @@ ALTER TABLE `btSurveyResults`
 -- AUTO_INCREMENT for table `Collections`
 --
 ALTER TABLE `Collections`
-  MODIFY `cID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=177;
+  MODIFY `cID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=190;
 --
 -- AUTO_INCREMENT for table `ConversationDiscussions`
 --
@@ -10724,7 +11703,7 @@ ALTER TABLE `ConversationRatingTypes`
 -- AUTO_INCREMENT for table `Conversations`
 --
 ALTER TABLE `Conversations`
-  MODIFY `cnvID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `cnvID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `DownloadStatistics`
 --
@@ -10749,7 +11728,7 @@ ALTER TABLE `ExpressFormFieldSets`
 -- AUTO_INCREMENT for table `FeatureAssignments`
 --
 ALTER TABLE `FeatureAssignments`
-  MODIFY `faID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `faID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `FeatureCategories`
 --
@@ -10769,12 +11748,12 @@ ALTER TABLE `FileImageThumbnailTypes`
 -- AUTO_INCREMENT for table `Files`
 --
 ALTER TABLE `Files`
-  MODIFY `fID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `fID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `FileSetFiles`
 --
 ALTER TABLE `FileSetFiles`
-  MODIFY `fsfID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `fsfID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `FileSets`
 --
@@ -10864,7 +11843,7 @@ ALTER TABLE `JobsLog`
 -- AUTO_INCREMENT for table `Logs`
 --
 ALTER TABLE `Logs`
-  MODIFY `logID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `logID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 --
 -- AUTO_INCREMENT for table `MailImporters`
 --
@@ -10904,12 +11883,12 @@ ALTER TABLE `PageFeeds`
 -- AUTO_INCREMENT for table `PagePaths`
 --
 ALTER TABLE `PagePaths`
-  MODIFY `ppID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=173;
+  MODIFY `ppID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=185;
 --
 -- AUTO_INCREMENT for table `PageTemplates`
 --
 ALTER TABLE `PageTemplates`
-  MODIFY `pTemplateID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `pTemplateID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `PageThemes`
 --
@@ -10924,22 +11903,22 @@ ALTER TABLE `PageTypeComposerControlTypes`
 -- AUTO_INCREMENT for table `PageTypeComposerFormLayoutSetControls`
 --
 ALTER TABLE `PageTypeComposerFormLayoutSetControls`
-  MODIFY `ptComposerFormLayoutSetControlID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `ptComposerFormLayoutSetControlID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 --
 -- AUTO_INCREMENT for table `PageTypeComposerFormLayoutSets`
 --
 ALTER TABLE `PageTypeComposerFormLayoutSets`
-  MODIFY `ptComposerFormLayoutSetID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `ptComposerFormLayoutSetID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `PageTypeComposerOutputBlocks`
 --
 ALTER TABLE `PageTypeComposerOutputBlocks`
-  MODIFY `ptComposerOutputBlockID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `ptComposerOutputBlockID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT for table `PageTypeComposerOutputControls`
 --
 ALTER TABLE `PageTypeComposerOutputControls`
-  MODIFY `ptComposerOutputControlID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ptComposerOutputControlID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `PageTypePublishTargetTypes`
 --
@@ -11089,7 +12068,7 @@ ALTER TABLE `SystemDatabaseQueryLog`
 -- AUTO_INCREMENT for table `TreeFileNodes`
 --
 ALTER TABLE `TreeFileNodes`
-  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 --
 -- AUTO_INCREMENT for table `TreeGroupNodes`
 --
@@ -11099,7 +12078,7 @@ ALTER TABLE `TreeGroupNodes`
 -- AUTO_INCREMENT for table `TreeNodes`
 --
 ALTER TABLE `TreeNodes`
-  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 --
 -- AUTO_INCREMENT for table `TreeNodeTypes`
 --
@@ -11159,7 +12138,7 @@ ALTER TABLE `UserValidationHashes`
 -- AUTO_INCREMENT for table `WorkflowProgress`
 --
 ALTER TABLE `WorkflowProgress`
-  MODIFY `wpID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `wpID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
 --
 -- AUTO_INCREMENT for table `WorkflowProgressCategories`
 --
@@ -11169,12 +12148,12 @@ ALTER TABLE `WorkflowProgressCategories`
 -- AUTO_INCREMENT for table `WorkflowProgressHistory`
 --
 ALTER TABLE `WorkflowProgressHistory`
-  MODIFY `wphID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
+  MODIFY `wphID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=117;
 --
 -- AUTO_INCREMENT for table `WorkflowRequestObjects`
 --
 ALTER TABLE `WorkflowRequestObjects`
-  MODIFY `wrID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `wrID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
 --
 -- AUTO_INCREMENT for table `Workflows`
 --

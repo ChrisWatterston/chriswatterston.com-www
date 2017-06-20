@@ -36,6 +36,7 @@
 
 <script src="https://use.typekit.net/aut5day.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script type="text/javascript" src="<?php echo $view->getThemePath()?>/js/slidenavigation.min.js"></script>
 
 <script>function isTouchDevice(){return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);}if(isTouchDevice()===true){$('html').addClass('dev-touch');}else{$('html').addClass('dev-no-touch');}</script>
 </head>

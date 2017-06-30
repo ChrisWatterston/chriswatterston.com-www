@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jun 30, 2017 at 10:37 AM
+-- Generation Time: Jun 30, 2017 at 04:09 PM
 -- Server version: 5.7.13
--- PHP Version: 5.6.24
+-- PHP Version: 5.6.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -343,7 +343,20 @@ INSERT INTO `Areas` (`arID`, `cID`, `arHandle`, `arOverrideCollectionPermissions
 (105, 162, 'Main Description', 0, 0, 0, 0),
 (106, 162, 'Main Body One', 0, 0, 0, 0),
 (107, 162, 'Main Body Two', 0, 0, 0, 0),
-(108, 162, 'Main Body Three', 0, 0, 0, 0);
+(108, 162, 'Main Body Three', 0, 0, 0, 0),
+(109, 164, 'Main Description', 0, 0, 0, 0),
+(110, 164, 'Main Body One', 0, 0, 0, 0),
+(111, 164, 'Main Body Two', 0, 0, 0, 0),
+(112, 164, 'Main Body Three', 0, 0, 0, 0),
+(113, 196, 'Main Body', 0, 0, 0, 0),
+(114, 196, 'Main Body Two', 0, 0, 0, 0),
+(115, 196, 'Main Body Three', 0, 0, 0, 0),
+(116, 197, 'Main Body', 0, 0, 0, 0),
+(117, 197, 'Main Body Two', 0, 0, 0, 0),
+(118, 197, 'Main Body Three', 0, 0, 0, 0),
+(119, 198, 'Main Body', 0, 0, 0, 0),
+(120, 198, 'Main Body Two', 0, 0, 0, 0),
+(121, 198, 'Main Body Three', 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -762,7 +775,28 @@ INSERT INTO `atDefault` (`value`, `avID`) VALUES
 ('While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', 1557),
 ('Meta Title', 1560),
 ('Meta Description', 1561),
-('Meta Keywords', 1562);
+('Meta Keywords', 1562),
+('Case Studie', 1570),
+('', 1571),
+('', 1572),
+('Surveying up a Website Redesign with CD Surveys Ltd', 1576),
+('I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', 1577),
+('website redesign, company website, surveying, design, web development, web project', 1578),
+('Surveying up a Website Redesign with CD Surveys Ltd', 1581),
+('I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', 1582),
+('website redesign, company website, surveying, design, web development, web project', 1583),
+('Surveying up a Website Redesign with CD Surveys Ltd', 1586),
+('I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', 1587),
+('website redesign, company website, surveying, design, web development, web project', 1588),
+('CD Surveys Ltd', 1591),
+('Surveying up a Website Redesign with CD Surveys Ltd', 1592),
+('I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', 1593),
+('website redesign, company website, surveying, design, web development, web project', 1594),
+('CD Surveys Ltd', 1597),
+('Surveying up a Website Redesign with CD Surveys Ltd', 1622),
+('I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', 1623),
+('website redesign, company website, surveying, design, web development, web project', 1624),
+('CD Surveys Ltd', 1627);
 
 -- --------------------------------------------------------
 
@@ -834,6 +868,7 @@ CREATE TABLE `atFile` (
 
 INSERT INTO `atFile` (`fID`, `avID`) VALUES
 (NULL, 1527),
+(NULL, 1573),
 (1, 206),
 (1, 212),
 (1, 215),
@@ -893,7 +928,12 @@ INSERT INTO `atFile` (`fID`, `avID`) VALUES
 (16, 1511),
 (16, 1517),
 (16, 1531),
-(16, 1559);
+(16, 1559),
+(19, 1579),
+(19, 1584),
+(19, 1589),
+(19, 1595),
+(19, 1625);
 
 -- --------------------------------------------------------
 
@@ -966,7 +1006,9 @@ INSERT INTO `atNumber` (`value`, `avID`) VALUES
 ('1452.0000', 1494),
 ('500.0000', 1495),
 ('454.0000', 1564),
-('327.0000', 1565);
+('327.0000', 1565),
+('580.0000', 1574),
+('215.0000', 1575);
 
 -- --------------------------------------------------------
 
@@ -1063,7 +1105,12 @@ INSERT INTO `atSelectedTopics` (`avTreeTopicNodeID`, `treeNodeID`, `avID`) VALUE
 (77, 18, 1537),
 (78, 18, 1543),
 (79, 26, 1549),
-(80, 26, 1555);
+(80, 26, 1555),
+(81, 21, 1580),
+(82, 21, 1585),
+(83, 21, 1590),
+(84, 21, 1596),
+(85, 21, 1626);
 
 -- --------------------------------------------------------
 
@@ -1177,7 +1224,8 @@ CREATE TABLE `atTextSettings` (
 --
 
 INSERT INTO `atTextSettings` (`akTextPlaceholder`, `akID`) VALUES
-('', 1);
+('', 1),
+('', 24);
 
 -- --------------------------------------------------------
 
@@ -1235,7 +1283,12 @@ INSERT INTO `atTopic` (`avID`) VALUES
 (1537),
 (1543),
 (1549),
-(1555);
+(1555),
+(1580),
+(1585),
+(1590),
+(1596),
+(1626);
 
 -- --------------------------------------------------------
 
@@ -1325,7 +1378,8 @@ INSERT INTO `AttributeKeys` (`akID`, `akHandle`, `akName`, `akIsSearchable`, `ak
 (20, 'thumbnail', 'Thumbnail', 0, 0, 0, 5, 1, NULL, 'pagekey'),
 (21, 'micro_post', 'Micro Post', 1, 0, 1, 3, 1, NULL, 'pagekey'),
 (22, 'post_topics', 'Post Topics', 1, 0, 1, 13, 1, NULL, 'pagekey'),
-(23, 'description_rich', 'Description (Rich)', 1, 0, 1, 2, 1, NULL, 'pagekey');
+(23, 'description_rich', 'Description (Rich)', 1, 0, 1, 2, 1, NULL, 'pagekey'),
+(24, 'client', 'Client', 1, 0, 1, 1, 1, NULL, 'pagekey');
 
 -- --------------------------------------------------------
 
@@ -1357,7 +1411,8 @@ INSERT INTO `AttributeSetKeys` (`asDisplayOrder`, `akID`, `asID`) VALUES
 (1, 20, 3),
 (2, 21, 3),
 (3, 22, 3),
-(4, 23, 3);
+(4, 23, 3),
+(5, 24, 3);
 
 -- --------------------------------------------------------
 
@@ -1537,6 +1592,12 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1544, 1),
 (1550, 1),
 (1560, 1),
+(1570, 1),
+(1576, 1),
+(1581, 1),
+(1586, 1),
+(1592, 1),
+(1622, 1),
 (205, 2),
 (210, 2),
 (211, 2),
@@ -1595,6 +1656,12 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1551, 2),
 (1557, 2),
 (1561, 2),
+(1571, 2),
+(1577, 2),
+(1582, 2),
+(1587, 2),
+(1593, 2),
+(1623, 2),
 (2, 3),
 (3, 3),
 (4, 3),
@@ -1732,6 +1799,12 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1546, 3),
 (1552, 3),
 (1562, 3),
+(1572, 3),
+(1578, 3),
+(1583, 3),
+(1588, 3),
+(1594, 3),
+(1624, 3),
 (117, 4),
 (124, 4),
 (118, 5),
@@ -1795,6 +1868,7 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1349, 16),
 (1494, 16),
 (1564, 16),
+(1574, 16),
 (188, 17),
 (334, 17),
 (336, 17),
@@ -1813,6 +1887,7 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1350, 17),
 (1495, 17),
 (1565, 17),
+(1575, 17),
 (206, 20),
 (212, 20),
 (215, 20),
@@ -1874,6 +1949,12 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1553, 20),
 (1559, 20),
 (1563, 20),
+(1573, 20),
+(1579, 20),
+(1584, 20),
+(1589, 20),
+(1595, 20),
+(1625, 20),
 (235, 21),
 (268, 21),
 (331, 21),
@@ -1939,6 +2020,11 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1543, 22),
 (1549, 22),
 (1555, 22),
+(1580, 22),
+(1585, 22),
+(1590, 22),
+(1596, 22),
+(1626, 22),
 (341, 23),
 (347, 23),
 (357, 23),
@@ -1949,7 +2035,10 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (371, 23),
 (394, 23),
 (398, 23),
-(418, 23);
+(418, 23),
+(1591, 24),
+(1597, 24),
+(1627, 24);
 
 -- --------------------------------------------------------
 
@@ -2351,7 +2440,16 @@ INSERT INTO `Blocks` (`bID`, `bName`, `bDateAdded`, `bDateModified`, `bFilename`
 (202, '', '2017-06-27 17:33:08', '2017-06-27 17:33:38', NULL, '1', 32, 1, NULL),
 (203, '', '2017-06-27 17:35:31', '2017-06-27 17:35:31', NULL, '0', 32, 1, NULL),
 (204, '', '2017-06-27 18:36:20', '2017-06-27 18:36:20', '', '1', 32, 1, NULL),
-(206, '', '2017-06-27 21:17:18', '2017-06-27 21:17:18', NULL, '1', 14, 1, NULL);
+(206, '', '2017-06-27 21:17:18', '2017-06-27 21:17:18', NULL, '1', 14, 1, NULL),
+(208, '', '2017-06-30 12:02:23', '2017-06-30 12:02:23', NULL, '0', 14, 1, NULL),
+(209, '', '2017-06-30 15:46:49', '2017-06-30 15:47:03', NULL, '0', 14, 1, NULL),
+(211, '', '2017-06-30 15:51:08', '2017-06-30 15:54:47', NULL, '0', 14, 1, NULL),
+(212, '', '2017-06-30 15:53:46', '2017-06-30 15:58:11', NULL, '0', 14, 1, NULL),
+(213, '', '2017-06-30 15:59:22', '2017-06-30 15:59:22', NULL, '0', 14, 1, NULL),
+(214, '', '2017-06-30 16:00:31', '2017-06-30 16:01:39', NULL, '0', 14, 1, NULL),
+(215, '', '2017-06-30 16:01:05', '2017-06-30 16:01:05', NULL, '0', 14, 1, NULL),
+(216, '', '2017-06-30 16:03:49', '2017-06-30 16:03:49', NULL, '0', 38, 1, NULL),
+(217, '', '2017-06-30 16:08:01', '2017-06-30 16:08:02', 'chris-watterston-latest-case-studies', '1', 35, 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -2716,7 +2814,14 @@ INSERT INTO `btContentLocal` (`bID`, `content`) VALUES
 (199, '<h2 class="sub-heading colour-grey title-sub"><strong>While we&#39;re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it&#39;s work life, client problem solving, personal projects or family life - we enjoy telling stories.</strong></h2>\r\n\r\n<p>Join our conversation online and <a href="#">subscribe&nbsp;to receive our monthly newsletters</a>.<br />\r\nWe&rsquo;ll only email you with important bits, never spam - pinky promise!</p>\r\n'),
 (200, ''),
 (201, ''),
-(206, '<h2 class="sub-heading colour-grey title-sub"><strong>While I&#39;m not knee deep in enjoyment with the undertaking of projects, I like to keep my clients and visitors up to date with the latest news and work from our&nbsp;studio and home in London, United Kingdom. Whether it&#39;s work life, client problem solving, learning new things, personal or family life - I enjoy telling stories.</strong></h2>\r\n\r\n<p>Join our conversation online and <a href="#">subscribe&nbsp;to receive our monthly newsletters</a>.<br />\r\nI&rsquo;ll only email you with important bits, never spam - pinky promise!</p>\r\n');
+(206, '<h2 class="sub-heading colour-grey title-sub"><strong>While I&#39;m not knee deep in enjoyment with the undertaking of projects, I like to keep my clients and visitors up to date with the latest news and work from our&nbsp;studio and home in London, United Kingdom. Whether it&#39;s work life, client problem solving, learning new things, personal or family life - I enjoy telling stories.</strong></h2>\r\n\r\n<p>Join our conversation online and <a href="#">subscribe&nbsp;to receive our monthly newsletters</a>.<br />\r\nI&rsquo;ll only email you with important bits, never spam - pinky promise!</p>\r\n'),
+(208, ''),
+(209, '<h3>Project Goal</h3>\r\n'),
+(211, '<h3>Project goal</h3>\r\n\r\n<p>Content here... define your broad project goal early in the case study, with a focus on larger issues like community, the environment or empowerment.</p>\r\n'),
+(212, '<h3 id="focus-on-process-before-artifact">Process&nbsp;and reseach&nbsp;</h3>\r\n\r\n<p>Next is a look at how we can focus on process before artifact.&nbsp;Show Research In Clear, Process-Oriented Chunks.&nbsp;Show your research with photos, charts or a list of findings, even if it is not packaged neatly.</p>\r\n'),
+(213, '<h3>Lessons Learned</h3>\r\n\r\n<p>As we looked at before, case studies should emphasize design knowledge and creative processes. Of course, that includes visual, code and UX assumptions that didn&rsquo;t hold up. There will always be lessons learned during projects, and sharing those is crucial so that others can learn from them.</p>\r\n'),
+(214, '<h3>Testimonials</h3>\r\n\r\n<blockquote>There&rsquo;s something powerful about hearing directly from users, team members and clients. Short quotes that contain personal observations about the project are often the most accessible to readers.</blockquote>\r\n'),
+(215, '<h3>Conclusion</h3>\r\n\r\n<p>I&rsquo;ve tried to show that by focusing on process rather than artifact, we can build and share in-depth case studies. The studies allow us to reframe the conversation around design process and the humanity in what we create, rather than perfect deliverables.</p>\r\n');
 
 -- --------------------------------------------------------
 
@@ -3078,6 +3183,13 @@ CREATE TABLE `btImageSlider` (
   `maxWidth` int(10) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `btImageSlider`
+--
+
+INSERT INTO `btImageSlider` (`bID`, `navigationType`, `timeout`, `speed`, `noAnimate`, `pause`, `maxWidth`) VALUES
+(216, 2, 4000, 500, 0, 0, 0);
+
 -- --------------------------------------------------------
 
 --
@@ -3095,6 +3207,14 @@ CREATE TABLE `btImageSliderEntries` (
   `description` longtext COLLATE utf8_unicode_ci,
   `sortOrder` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `btImageSliderEntries`
+--
+
+INSERT INTO `btImageSliderEntries` (`id`, `bID`, `cID`, `fID`, `linkURL`, `internalLinkCID`, `title`, `description`, `sortOrder`) VALUES
+(1, 216, 0, 16, '', 0, 'Slide Image 1', '<p>Vestibulum quis molestie quam. Mauris quis tortor nec metus ornare tincidunt eu et nunc. Ut fringilla luctus convallis.</p>\r\n', 0),
+(2, 216, 0, 1, '', 0, 'Slide Image 2', '<p>Mauris quis tortor nec metus ornare tincidunt eu et nunc. Ut fringilla luctus convallis. Vestibulum quis molestie quam.</p>\r\n', 1);
 
 -- --------------------------------------------------------
 
@@ -3224,7 +3344,8 @@ INSERT INTO `btPageList` (`bID`, `num`, `orderBy`, `cParentID`, `cThis`, `cThisP
 (84, 4, 'display_asc', 0, 0, 1, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 0, 0, 0, 0, 0, 0, 0, 9, 0, 1, 0, '', 1, 400),
 (193, 3, 'chrono_desc', 161, 1, 0, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, '', 1, 300),
 (194, 2, 'chrono_desc', 161, 1, 0, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, '', 1, 300),
-(195, 8, 'chrono_desc', 161, 1, 0, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, '', 1, 300);
+(195, 8, 'chrono_desc', 161, 1, 0, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, '', 1, 300),
+(217, 4, 'chrono_desc', 162, 0, 0, 0, '', '', 0, 1, '', 0, NULL, NULL, '', 'post_topics', 8, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, '', 1, 230);
 
 -- --------------------------------------------------------
 
@@ -3508,7 +3629,8 @@ INSERT INTO `CollectionAttributeKeys` (`akID`) VALUES
 (20),
 (21),
 (22),
-(23);
+(23),
+(24);
 
 -- --------------------------------------------------------
 
@@ -3804,8 +3926,11 @@ INSERT INTO `CollectionAttributeValues` (`cID`, `cvID`, `akID`, `avID`) VALUES
 (1, 24, 2, 420),
 (1, 24, 3, 421),
 (1, 25, 2, 422),
+(1, 26, 2, 422),
 (1, 25, 3, 423),
+(1, 26, 3, 423),
 (1, 25, 1, 424),
+(1, 26, 1, 424),
 (159, 2, 20, 428),
 (159, 3, 1, 429),
 (159, 4, 1, 429),
@@ -4136,7 +4261,61 @@ INSERT INTO `CollectionAttributeValues` (`cID`, `cvID`, `akID`, `avID`) VALUES
 (160, 4, 1, 1560),
 (160, 4, 2, 1561),
 (160, 4, 3, 1562),
-(160, 4, 20, 1563);
+(160, 4, 20, 1563),
+(162, 2, 1, 1570),
+(162, 2, 2, 1571),
+(162, 2, 3, 1572),
+(162, 2, 20, 1573),
+(195, 1, 1, 1576),
+(195, 1, 2, 1577),
+(195, 1, 3, 1578),
+(195, 1, 20, 1579),
+(195, 1, 22, 1580),
+(196, 1, 1, 1581),
+(196, 2, 1, 1581),
+(196, 3, 1, 1581),
+(196, 1, 2, 1582),
+(196, 2, 2, 1582),
+(196, 3, 2, 1582),
+(196, 1, 3, 1583),
+(196, 2, 3, 1583),
+(196, 3, 3, 1583),
+(196, 1, 20, 1584),
+(196, 2, 20, 1584),
+(196, 3, 20, 1584),
+(196, 1, 22, 1585),
+(196, 2, 22, 1585),
+(196, 3, 22, 1585),
+(196, 4, 1, 1586),
+(196, 5, 1, 1586),
+(196, 6, 1, 1586),
+(196, 4, 2, 1587),
+(196, 5, 2, 1587),
+(196, 6, 2, 1587),
+(196, 4, 3, 1588),
+(196, 5, 3, 1588),
+(196, 6, 3, 1588),
+(196, 4, 20, 1589),
+(196, 5, 20, 1589),
+(196, 6, 20, 1589),
+(196, 4, 22, 1590),
+(196, 5, 22, 1590),
+(196, 6, 22, 1590),
+(196, 4, 24, 1591),
+(196, 5, 24, 1591),
+(196, 6, 24, 1591),
+(196, 7, 1, 1592),
+(196, 7, 2, 1593),
+(196, 7, 3, 1594),
+(196, 7, 20, 1595),
+(196, 7, 22, 1596),
+(196, 7, 24, 1597),
+(198, 1, 1, 1622),
+(198, 1, 2, 1623),
+(198, 1, 3, 1624),
+(198, 1, 20, 1625),
+(198, 1, 22, 1626),
+(198, 1, 24, 1627);
 
 -- --------------------------------------------------------
 
@@ -4156,7 +4335,7 @@ CREATE TABLE `Collections` (
 --
 
 INSERT INTO `Collections` (`cID`, `cDateAdded`, `cDateModified`, `cHandle`) VALUES
-(1, '2017-05-22 15:59:25', '2017-06-20 10:19:15', NULL),
+(1, '2017-05-22 15:59:25', '2017-06-30 16:08:07', NULL),
 (2, '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'dashboard'),
 (3, '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'sitemap'),
 (4, '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'full'),
@@ -4316,7 +4495,7 @@ INSERT INTO `Collections` (`cID`, `cDateAdded`, `cDateModified`, `cHandle`) VALU
 (159, '2017-05-23 15:30:41', '2017-06-27 13:27:15', ''),
 (160, '2017-05-23 15:30:55', '2017-06-27 17:27:31', ''),
 (161, '2017-05-23 15:31:03', '2017-06-27 21:17:22', ''),
-(162, '2017-05-23 15:31:17', '2017-05-23 15:31:17', ''),
+(162, '2017-05-23 15:31:17', '2017-06-30 16:05:37', ''),
 (163, '2017-05-23 15:31:28', '2017-05-23 15:31:28', ''),
 (164, '2017-05-23 15:32:36', '2017-05-23 15:32:56', ''),
 (165, '2017-05-24 10:14:23', '2017-05-25 11:00:39', 'social-links'),
@@ -4347,7 +4526,11 @@ INSERT INTO `Collections` (`cID`, `cDateAdded`, `cDateModified`, `cHandle`) VALU
 (191, '2017-06-21 14:42:01', '2017-06-21 14:48:23', 'working-together'),
 (192, '2017-06-21 15:26:57', '2017-06-21 15:36:56', ''),
 (193, '2017-06-27 13:13:43', '2017-06-27 13:13:43', NULL),
-(194, '2017-06-27 14:31:47', '2017-06-27 14:31:47', NULL);
+(194, '2017-06-27 14:31:47', '2017-06-27 14:31:47', NULL),
+(195, '2017-06-30 15:37:14', '2017-06-30 15:37:46', ''),
+(196, '2017-06-30 15:37:39', '2017-06-30 16:05:33', ''),
+(197, '2017-06-30 15:50:37', '2017-06-30 15:50:37', NULL),
+(198, '2017-06-30 16:05:49', '2017-06-30 16:06:54', '');
 
 -- --------------------------------------------------------
 
@@ -4373,145 +4556,150 @@ CREATE TABLE `CollectionSearchIndexAttributes` (
   `ak_micro_post` tinyint(1) DEFAULT '0',
   `ak_post_topics` longtext COLLATE utf8_unicode_ci,
   `ak_casestudy_topics` longtext COLLATE utf8_unicode_ci,
-  `ak_description_rich` longtext COLLATE utf8_unicode_ci
+  `ak_description_rich` longtext COLLATE utf8_unicode_ci,
+  `ak_client` longtext COLLATE utf8_unicode_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `CollectionSearchIndexAttributes`
 --
 
-INSERT INTO `CollectionSearchIndexAttributes` (`cID`, `ak_meta_title`, `ak_meta_description`, `ak_meta_keywords`, `ak_desktop_priority`, `ak_is_desktop`, `ak_icon_dashboard`, `ak_exclude_nav`, `ak_exclude_page_list`, `ak_header_extra_content`, `ak_tags`, `ak_is_featured`, `ak_exclude_search_index`, `ak_exclude_sitemapxml`, `ak_micro_post`, `ak_post_topics`, `ak_casestudy_topics`, `ak_description_rich`) VALUES
-(1, 'Welcome to Chris Watterston', 'Welcome to Chris Watterston', 'welcome, chris watterston, design, ios apps, ', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(2, NULL, NULL, NULL, '0.0000', 0, 'fa fa-th-large', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(3, NULL, NULL, 'pages, add page, delete page, copy, move, alias', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(4, NULL, NULL, 'pages, add page, delete page, copy, move, alias', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(5, NULL, NULL, 'pages, add page, delete page, copy, move, alias, bulk', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(6, NULL, NULL, 'find page, search page, search, find, pages, sitemap', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(8, NULL, NULL, 'add file, delete file, copy, move, alias, resize, crop, rename, images, title, attribute', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(9, NULL, NULL, 'file, file attributes, title, attribute, description, rename', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(10, NULL, NULL, 'files, category, categories', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(11, NULL, NULL, 'new file set', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(12, NULL, NULL, 'users, groups, people, find, delete user, remove user, change password, password', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(13, NULL, NULL, 'find, search, people, delete user, remove user, change password, password', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(14, NULL, NULL, 'user, group, people, permissions, expire, badges', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(15, NULL, NULL, 'user attributes, user data, gather data, registration data', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(16, NULL, NULL, 'new user, create', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(17, NULL, NULL, 'new user group, new group, group, create', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(19, NULL, NULL, 'group set', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(20, NULL, NULL, 'community, points, karma', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(22, NULL, NULL, 'action, community actions', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(25, NULL, NULL, 'forms, log, error, email, mysql, exception, survey', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(26, NULL, NULL, 'forms, questions, response, data', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(27, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 1, 0, 0, NULL, NULL, NULL),
-(28, NULL, NULL, 'questions, quiz, response', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(29, NULL, NULL, 'forms, log, error, email, mysql, exception, survey, history', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(31, NULL, NULL, 'new theme, theme, active theme, change theme, template, css', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(32, NULL, NULL, 'page types', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(34, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(35, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(36, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(37, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(38, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(39, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(41, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(42, NULL, NULL, 'page attributes, custom', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(43, NULL, NULL, 'single, page, custom, application', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(44, NULL, NULL, 'atom, rss, feed, syndication', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(46, NULL, NULL, NULL, '0.0000', 0, 'icon-bullhorn', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(48, NULL, NULL, 'stacks, global areas, reusable content, scrapbook, copy, paste, paste block, copy block, site name, logo', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(50, NULL, NULL, 'edit stacks, view stacks, all stacks', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 1, 0, 0, NULL, NULL, NULL),
-(51, NULL, NULL, 'block, refresh, custom', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(52, NULL, NULL, 'add-on, addon, add on, package, app, ecommerce, discussions, forums, themes, templates, blocks', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(53, NULL, NULL, 'add-on, addon, ecommerce, install, discussions, forums, themes, templates, blocks', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(54, NULL, NULL, 'update, upgrade', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(55, NULL, NULL, 'concrete5.org, my account, marketplace', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(56, NULL, NULL, 'buy theme, new theme, marketplace, template', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(57, NULL, NULL, 'buy addon, buy add on, buy add-on, purchase addon, purchase add on, purchase add-on, find addon, new addon, marketplace', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(58, NULL, NULL, 'dashboard, configuration', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(60, NULL, NULL, 'website name, title', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(61, NULL, NULL, 'accessibility, easy mode', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(62, NULL, NULL, 'sharing, facebook, twitter', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(63, NULL, NULL, 'logo, favicon, iphone, icon, bookmark', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(64, NULL, NULL, 'tinymce, content block, fonts, editor, content, overlay', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(65, NULL, NULL, 'translate, translation, internationalization, multilingual', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(66, NULL, NULL, 'timezone, profile, locale', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(67, NULL, NULL, 'site attributes', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 1, 0, 0, NULL, NULL, NULL),
-(69, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(70, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(71, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(72, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(73, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(74, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(76, NULL, NULL, 'multilingual, localization, internationalization, i18n', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(82, NULL, NULL, 'vanity, pretty url, redirection, hostname, canonical, seo, pageview, view', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(83, NULL, NULL, 'bulk, seo, change keywords, engine, optimization, search', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(84, NULL, NULL, 'traffic, statistics, google analytics, quant, pageviews, hits', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(85, NULL, NULL, 'pretty, slug', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(86, NULL, NULL, 'configure search, site search, search option', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(88, NULL, NULL, 'file options, file manager, upload, modify', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(89, NULL, NULL, 'security, files, media, extension, manager, upload', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(90, NULL, NULL, 'images, picture, responsive, retina', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(91, NULL, NULL, 'uploading, upload, images, image, resizing, manager', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(92, NULL, NULL, 'security, alternate storage, hide files', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(94, NULL, NULL, 'cache option, change cache, override, turn on cache, turn off cache, no cache, page cache, caching', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(95, NULL, NULL, 'cache option, turn off cache, no cache, page cache, caching', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(96, NULL, NULL, 'index search, reindex search, build sitemap, sitemap.xml, clear old versions, page versions, remove old', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(97, NULL, NULL, 'queries, database, mysql', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(99, NULL, NULL, 'editors, hide site, offline, private, public, access', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(100, NULL, NULL, 'security, actions, administrator, admin, package, marketplace, search', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(104, NULL, NULL, 'security, lock ip, lock out, block ip, address, restrict, access', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(105, NULL, NULL, 'security, registration', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(106, NULL, NULL, 'antispam, block spam, security', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(107, NULL, NULL, 'lock site, under construction, hide, hidden', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(109, NULL, NULL, 'profile, login, redirect, specific, dashboard, administrators', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(110, NULL, NULL, 'member profile, member page, community, forums, social, avatar', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(111, NULL, NULL, 'signup, new user, community, public registration, public, registration', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(112, NULL, NULL, 'auth, authentication, types, oauth, facebook, login, registration', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(113, NULL, NULL, 'global, password, reset, change password, force, sign out', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(115, NULL, NULL, 'smtp, mail settings', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(116, NULL, NULL, 'email server, mail settings, mail configuration, external, internal', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(117, NULL, NULL, 'test smtp, test mail', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(118, NULL, NULL, 'email server, mail settings, mail configuration, private message, message system, import, email, message', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(119, NULL, NULL, 'conversations', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(120, NULL, NULL, 'conversations', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(121, NULL, NULL, 'conversations ratings, ratings, community, community points', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(122, NULL, NULL, 'conversations bad words, banned words, banned, bad words, bad, words, list', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(124, NULL, NULL, 'attribute configuration', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(125, NULL, NULL, 'attributes, sets', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(126, NULL, NULL, 'attributes, types', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(127, NULL, NULL, 'topics, tags, taxonomy', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(129, NULL, NULL, NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 1, 0, 0, NULL, NULL, NULL),
-(130, NULL, NULL, 'overrides, system info, debug, support, help', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(131, NULL, NULL, 'errors, exceptions, develop, support, help', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(132, NULL, NULL, 'email, logging, logs, smtp, pop, errors, mysql, log', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(133, NULL, NULL, 'network, proxy server', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(134, NULL, NULL, 'database, entities, doctrine, orm', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(135, NULL, NULL, 'export, backup, database, sql, mysql, encryption, restore', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(137, NULL, NULL, 'upgrade, new version, update', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(138, NULL, NULL, NULL, '2.0000', 1, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(140, NULL, NULL, NULL, '0.0000', 0, 'fa fa-trash-o', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(143, NULL, NULL, NULL, '0.0000', 0, 'fa fa-briefcase', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(149, NULL, NULL, NULL, '0.0000', 0, 'fa fa-edit', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(150, NULL, NULL, NULL, '0.0000', 0, 'fa fa-th', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(152, NULL, NULL, NULL, '1.0000', 1, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(159, '', '', '', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(160, 'Meta Title', 'Meta Description', 'Meta Keywords', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(161, NULL, 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(168, NULL, 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Posts/News||/Latest Feed||', NULL, NULL),
-(169, NULL, 'Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat. Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in.', 'hello, world', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 1, '||/Posts/Family||/Latest Feed||', NULL, NULL),
-(171, NULL, 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in.', 'tester, sausage', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Latest Feed||', NULL, NULL),
-(173, NULL, 'Morbi sit amet odio est. Etiam ex quam, viverra ac porta ut, lobortis non ipsum. Praesent sollicitudin orci in ante placerat, eu gravida massa iaculis. Phasellus a est varius, imperdiet mi nec, hendrerit tortor. Nulla tincidunt magna nec tincidunt vehicula. Phasellus tristique tempor diam, vitae luctus enim aliquam eu. Cras dapibus vehicula libero quis interdum.', '1970 boat, broom speed boat, project boat', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, '||/Posts/Inspirational||/Latest Feed||', NULL, NULL),
-(174, '', '', NULL, '0.0000', 0, NULL, 0, 0, '', NULL, 0, 0, 0, 0, NULL, NULL, NULL),
-(176, NULL, '', '', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, '<h2>A mobile app for every side of education.<br />\n<strong>Starting with your <span class="colour-skoolping">SKOOL</span></strong></h2>\n\n<p>Areas of education are turning digital, and so are parent demands. Parents like to be updated in a convenient way. A way that doesn&#39;t always require them to visit a blog, download a document or search your website relentlessly.</p>\n\n<p><a class="abtn skoolping" href="#">Find Out More</a></p>\n'),
-(177, '', '', NULL, '0.0000', 0, NULL, 0, 0, '', NULL, 0, 0, 0, 0, NULL, NULL, '<h2><strong>The Original.</strong> The Unique.<br />\n#TherIsNoCloud</h2>\n\n<p>Over 20,000 printed units sold globally, the words are spreading far and wide!</p>\n\n<p>&quot;There is no cloud. It&#39;s just someone else&#39;s computer&quot; It&#39;s only the truth, but I wonder how many people really think there really is a &quot;cloud&quot; that stores all our data?</p>\n\n<p><a class="abtn black" href="#">Find Out More</a></p>\n'),
-(181, 'My \'There Is No Cloud\' Sticker', 'Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global!', 'there is no cloud, sticker, stickermule', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Posts/News||', NULL, NULL),
-(185, NULL, 'Like every Tom, Dick and Harry in the land, I set myself new targets and challenges at the start of every year. Do I ever achieve them, behave yourself! It’s so frustrating telling you that, but even more so with myself for not achieving. *sigh*', '2016, new challenges, new start, new targets', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Posts/Inspirational||', NULL, NULL),
-(186, 'A much needed Spotify widget for the Notification Center', 'Since installing the new operating system, OS X Yosemite, like many I\'ve noticed a hell of a lot of new great features and design. But, being an every day MacBook user, I\'m finding some pretty cool, but some also pretty annoying.', 'Spotify widget, Notification Centre, iOS widget', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 1, '||/Posts/Inspirational||', NULL, NULL),
-(187, '\'There Is No Cloud\' Copyright Protection', 'I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO! That would place myself in the same category as the thieving scummy $&£#’ers that stole my design and many other honest designers work also - and that’s me being polite against them!', 'stealing designers work, my design', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Latest Feed||', NULL, NULL),
-(188, '4th Month Into Self-Employment', 'Jee. Taking a step back, it\'s been almost 4 months already. Holy Crap! Cutting a 5 year story into a nut shell, I previously worked for a secondary school within an IT department. It wasn\'t any ordinary IT department within a school, ow nooo.', '4 months, IT department, self employment', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 1, '||/Posts/News||', NULL, NULL),
-(189, 'Setting 5 Goals For 2014', 'A warm welcome to 2014, I wish you all a happy New Year. It\'s the start of a New Year for us all, and funny enough it\'s also that time where 99.9% of us feel the need to set ourself new year resolutions, goals, targets, or whatever you call it. For me, I\'ve just rolled into my 5th month of self employment and it still feels incredible, just as it did on day one.', 'welcome to 2014', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, '||/Posts/Inspirational||', NULL, NULL),
-(190, 'Your New Website Statistics Dashboard', 'Since the new year, we\'ve been working hard between projects to improve features and services that we provide to you - more specifically, within your Content Management System (CMS). One of the biggest changes you\'ll notice is our brand new \'Statistics Dashboard\'. You\'ll soon be able to look over your website ‘Views’, ‘Storage’, ‘Traffic’, ‘Uptime’ and a ton more. All live time!', 'cms, status dashboard', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 1, '||/Latest Feed||', NULL, NULL),
-(192, 'There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 'The Sticker Mule marketplace has been growing rapidly over the past couple of years. Sticker Mule loves seeing applications and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers.', 'sticker mule, marketplace, sticker design', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 1, '||/Posts/News||', NULL, NULL);
+INSERT INTO `CollectionSearchIndexAttributes` (`cID`, `ak_meta_title`, `ak_meta_description`, `ak_meta_keywords`, `ak_desktop_priority`, `ak_is_desktop`, `ak_icon_dashboard`, `ak_exclude_nav`, `ak_exclude_page_list`, `ak_header_extra_content`, `ak_tags`, `ak_is_featured`, `ak_exclude_search_index`, `ak_exclude_sitemapxml`, `ak_micro_post`, `ak_post_topics`, `ak_casestudy_topics`, `ak_description_rich`, `ak_client`) VALUES
+(1, 'Welcome to Chris Watterston', 'Welcome to Chris Watterston', 'welcome, chris watterston, design, ios apps, ', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(2, NULL, NULL, NULL, '0.0000', 0, 'fa fa-th-large', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(3, NULL, NULL, 'pages, add page, delete page, copy, move, alias', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(4, NULL, NULL, 'pages, add page, delete page, copy, move, alias', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(5, NULL, NULL, 'pages, add page, delete page, copy, move, alias, bulk', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(6, NULL, NULL, 'find page, search page, search, find, pages, sitemap', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(8, NULL, NULL, 'add file, delete file, copy, move, alias, resize, crop, rename, images, title, attribute', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(9, NULL, NULL, 'file, file attributes, title, attribute, description, rename', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(10, NULL, NULL, 'files, category, categories', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(11, NULL, NULL, 'new file set', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(12, NULL, NULL, 'users, groups, people, find, delete user, remove user, change password, password', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(13, NULL, NULL, 'find, search, people, delete user, remove user, change password, password', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(14, NULL, NULL, 'user, group, people, permissions, expire, badges', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(15, NULL, NULL, 'user attributes, user data, gather data, registration data', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(16, NULL, NULL, 'new user, create', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(17, NULL, NULL, 'new user group, new group, group, create', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(19, NULL, NULL, 'group set', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(20, NULL, NULL, 'community, points, karma', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(22, NULL, NULL, 'action, community actions', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(25, NULL, NULL, 'forms, log, error, email, mysql, exception, survey', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(26, NULL, NULL, 'forms, questions, response, data', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(27, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 1, 0, 0, NULL, NULL, NULL, NULL),
+(28, NULL, NULL, 'questions, quiz, response', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(29, NULL, NULL, 'forms, log, error, email, mysql, exception, survey, history', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(31, NULL, NULL, 'new theme, theme, active theme, change theme, template, css', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(32, NULL, NULL, 'page types', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(34, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(35, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(36, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(37, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(38, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(39, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(41, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(42, NULL, NULL, 'page attributes, custom', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(43, NULL, NULL, 'single, page, custom, application', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(44, NULL, NULL, 'atom, rss, feed, syndication', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(46, NULL, NULL, NULL, '0.0000', 0, 'icon-bullhorn', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(48, NULL, NULL, 'stacks, global areas, reusable content, scrapbook, copy, paste, paste block, copy block, site name, logo', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(50, NULL, NULL, 'edit stacks, view stacks, all stacks', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 1, 0, 0, NULL, NULL, NULL, NULL),
+(51, NULL, NULL, 'block, refresh, custom', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(52, NULL, NULL, 'add-on, addon, add on, package, app, ecommerce, discussions, forums, themes, templates, blocks', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(53, NULL, NULL, 'add-on, addon, ecommerce, install, discussions, forums, themes, templates, blocks', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(54, NULL, NULL, 'update, upgrade', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(55, NULL, NULL, 'concrete5.org, my account, marketplace', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(56, NULL, NULL, 'buy theme, new theme, marketplace, template', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(57, NULL, NULL, 'buy addon, buy add on, buy add-on, purchase addon, purchase add on, purchase add-on, find addon, new addon, marketplace', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(58, NULL, NULL, 'dashboard, configuration', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(60, NULL, NULL, 'website name, title', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(61, NULL, NULL, 'accessibility, easy mode', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(62, NULL, NULL, 'sharing, facebook, twitter', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(63, NULL, NULL, 'logo, favicon, iphone, icon, bookmark', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(64, NULL, NULL, 'tinymce, content block, fonts, editor, content, overlay', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(65, NULL, NULL, 'translate, translation, internationalization, multilingual', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(66, NULL, NULL, 'timezone, profile, locale', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(67, NULL, NULL, 'site attributes', '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 1, 0, 0, NULL, NULL, NULL, NULL),
+(69, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(70, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(71, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(72, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(73, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(74, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(76, NULL, NULL, 'multilingual, localization, internationalization, i18n', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(82, NULL, NULL, 'vanity, pretty url, redirection, hostname, canonical, seo, pageview, view', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(83, NULL, NULL, 'bulk, seo, change keywords, engine, optimization, search', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(84, NULL, NULL, 'traffic, statistics, google analytics, quant, pageviews, hits', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(85, NULL, NULL, 'pretty, slug', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(86, NULL, NULL, 'configure search, site search, search option', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(88, NULL, NULL, 'file options, file manager, upload, modify', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(89, NULL, NULL, 'security, files, media, extension, manager, upload', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(90, NULL, NULL, 'images, picture, responsive, retina', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(91, NULL, NULL, 'uploading, upload, images, image, resizing, manager', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(92, NULL, NULL, 'security, alternate storage, hide files', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(94, NULL, NULL, 'cache option, change cache, override, turn on cache, turn off cache, no cache, page cache, caching', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(95, NULL, NULL, 'cache option, turn off cache, no cache, page cache, caching', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(96, NULL, NULL, 'index search, reindex search, build sitemap, sitemap.xml, clear old versions, page versions, remove old', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(97, NULL, NULL, 'queries, database, mysql', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(99, NULL, NULL, 'editors, hide site, offline, private, public, access', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(100, NULL, NULL, 'security, actions, administrator, admin, package, marketplace, search', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(104, NULL, NULL, 'security, lock ip, lock out, block ip, address, restrict, access', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(105, NULL, NULL, 'security, registration', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(106, NULL, NULL, 'antispam, block spam, security', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(107, NULL, NULL, 'lock site, under construction, hide, hidden', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(109, NULL, NULL, 'profile, login, redirect, specific, dashboard, administrators', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(110, NULL, NULL, 'member profile, member page, community, forums, social, avatar', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(111, NULL, NULL, 'signup, new user, community, public registration, public, registration', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(112, NULL, NULL, 'auth, authentication, types, oauth, facebook, login, registration', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(113, NULL, NULL, 'global, password, reset, change password, force, sign out', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(115, NULL, NULL, 'smtp, mail settings', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(116, NULL, NULL, 'email server, mail settings, mail configuration, external, internal', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(117, NULL, NULL, 'test smtp, test mail', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(118, NULL, NULL, 'email server, mail settings, mail configuration, private message, message system, import, email, message', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(119, NULL, NULL, 'conversations', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(120, NULL, NULL, 'conversations', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(121, NULL, NULL, 'conversations ratings, ratings, community, community points', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(122, NULL, NULL, 'conversations bad words, banned words, banned, bad words, bad, words, list', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(124, NULL, NULL, 'attribute configuration', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(125, NULL, NULL, 'attributes, sets', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(126, NULL, NULL, 'attributes, types', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(127, NULL, NULL, 'topics, tags, taxonomy', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(129, NULL, NULL, NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 1, 0, 0, NULL, NULL, NULL, NULL),
+(130, NULL, NULL, 'overrides, system info, debug, support, help', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(131, NULL, NULL, 'errors, exceptions, develop, support, help', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(132, NULL, NULL, 'email, logging, logs, smtp, pop, errors, mysql, log', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(133, NULL, NULL, 'network, proxy server', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(134, NULL, NULL, 'database, entities, doctrine, orm', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(135, NULL, NULL, 'export, backup, database, sql, mysql, encryption, restore', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(137, NULL, NULL, 'upgrade, new version, update', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(138, NULL, NULL, NULL, '2.0000', 1, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(140, NULL, NULL, NULL, '0.0000', 0, 'fa fa-trash-o', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(143, NULL, NULL, NULL, '0.0000', 0, 'fa fa-briefcase', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(149, NULL, NULL, NULL, '0.0000', 0, 'fa fa-edit', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(150, NULL, NULL, NULL, '0.0000', 0, 'fa fa-th', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(152, NULL, NULL, NULL, '1.0000', 1, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(159, '', '', '', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(160, 'Meta Title', 'Meta Description', 'Meta Keywords', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(161, NULL, 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(162, 'Case Studie', '', '', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(168, NULL, 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Posts/News||/Latest Feed||', NULL, NULL, NULL),
+(169, NULL, 'Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat. Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in.', 'hello, world', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 1, '||/Posts/Family||/Latest Feed||', NULL, NULL, NULL),
+(171, NULL, 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in.', 'tester, sausage', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Latest Feed||', NULL, NULL, NULL),
+(173, NULL, 'Morbi sit amet odio est. Etiam ex quam, viverra ac porta ut, lobortis non ipsum. Praesent sollicitudin orci in ante placerat, eu gravida massa iaculis. Phasellus a est varius, imperdiet mi nec, hendrerit tortor. Nulla tincidunt magna nec tincidunt vehicula. Phasellus tristique tempor diam, vitae luctus enim aliquam eu. Cras dapibus vehicula libero quis interdum.', '1970 boat, broom speed boat, project boat', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, '||/Posts/Inspirational||/Latest Feed||', NULL, NULL, NULL),
+(174, '', '', NULL, '0.0000', 0, NULL, 0, 0, '', NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(176, NULL, '', '', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, '<h2>A mobile app for every side of education.<br />\n<strong>Starting with your <span class="colour-skoolping">SKOOL</span></strong></h2>\n\n<p>Areas of education are turning digital, and so are parent demands. Parents like to be updated in a convenient way. A way that doesn&#39;t always require them to visit a blog, download a document or search your website relentlessly.</p>\n\n<p><a class="abtn skoolping" href="#">Find Out More</a></p>\n', NULL),
+(177, '', '', NULL, '0.0000', 0, NULL, 0, 0, '', NULL, 0, 0, 0, 0, NULL, NULL, '<h2><strong>The Original.</strong> The Unique.<br />\n#TherIsNoCloud</h2>\n\n<p>Over 20,000 printed units sold globally, the words are spreading far and wide!</p>\n\n<p>&quot;There is no cloud. It&#39;s just someone else&#39;s computer&quot; It&#39;s only the truth, but I wonder how many people really think there really is a &quot;cloud&quot; that stores all our data?</p>\n\n<p><a class="abtn black" href="#">Find Out More</a></p>\n', NULL),
+(181, 'My \'There Is No Cloud\' Sticker', 'Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global!', 'there is no cloud, sticker, stickermule', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Posts/News||', NULL, NULL, NULL),
+(185, NULL, 'Like every Tom, Dick and Harry in the land, I set myself new targets and challenges at the start of every year. Do I ever achieve them, behave yourself! It’s so frustrating telling you that, but even more so with myself for not achieving. *sigh*', '2016, new challenges, new start, new targets', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Posts/Inspirational||', NULL, NULL, NULL),
+(186, 'A much needed Spotify widget for the Notification Center', 'Since installing the new operating system, OS X Yosemite, like many I\'ve noticed a hell of a lot of new great features and design. But, being an every day MacBook user, I\'m finding some pretty cool, but some also pretty annoying.', 'Spotify widget, Notification Centre, iOS widget', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 1, '||/Posts/Inspirational||', NULL, NULL, NULL),
+(187, '\'There Is No Cloud\' Copyright Protection', 'I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO! That would place myself in the same category as the thieving scummy $&£#’ers that stole my design and many other honest designers work also - and that’s me being polite against them!', 'stealing designers work, my design', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Latest Feed||', NULL, NULL, NULL),
+(188, '4th Month Into Self-Employment', 'Jee. Taking a step back, it\'s been almost 4 months already. Holy Crap! Cutting a 5 year story into a nut shell, I previously worked for a secondary school within an IT department. It wasn\'t any ordinary IT department within a school, ow nooo.', '4 months, IT department, self employment', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 1, '||/Posts/News||', NULL, NULL, NULL),
+(189, 'Setting 5 Goals For 2014', 'A warm welcome to 2014, I wish you all a happy New Year. It\'s the start of a New Year for us all, and funny enough it\'s also that time where 99.9% of us feel the need to set ourself new year resolutions, goals, targets, or whatever you call it. For me, I\'ve just rolled into my 5th month of self employment and it still feels incredible, just as it did on day one.', 'welcome to 2014', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, '||/Posts/Inspirational||', NULL, NULL, NULL),
+(190, 'Your New Website Statistics Dashboard', 'Since the new year, we\'ve been working hard between projects to improve features and services that we provide to you - more specifically, within your Content Management System (CMS). One of the biggest changes you\'ll notice is our brand new \'Statistics Dashboard\'. You\'ll soon be able to look over your website ‘Views’, ‘Storage’, ‘Traffic’, ‘Uptime’ and a ton more. All live time!', 'cms, status dashboard', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 1, '||/Latest Feed||', NULL, NULL, NULL),
+(192, 'There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 'The Sticker Mule marketplace has been growing rapidly over the past couple of years. Sticker Mule loves seeing applications and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers.', 'sticker mule, marketplace, sticker design', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 1, '||/Posts/News||', NULL, NULL, NULL),
+(195, 'Surveying up a Website Redesign with CD Surveys Ltd', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', 'website redesign, company website, surveying, design, web development, web project', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, '||/Posts/Web Design||', NULL, NULL, NULL),
+(196, 'Surveying up a Website Redesign with CD Surveys Ltd', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', 'website redesign, company website, surveying, design, web development, web project', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, '||/Posts/Web Design||', NULL, NULL, 'CD Surveys Ltd'),
+(198, 'Surveying up a Website Redesign with CD Surveys Ltd', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', 'website redesign, company website, surveying, design, web development, web project', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, '||/Posts/Web Design||', NULL, NULL, 'CD Surveys Ltd');
 
 -- --------------------------------------------------------
 
@@ -4649,6 +4837,15 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (1, 25, 94, 'Services Area Two', 43, 0, 0, 0, 0, 0, 0, 0),
 (1, 25, 95, 'Services Area Three', 44, 0, 0, 0, 0, 0, 0, 0),
 (1, 25, 96, 'Services Area Four', 45, 0, 0, 0, 0, 0, 0, 0),
+(1, 26, 55, 'Header Latest Feed', 34, 0, 0, 0, 0, 0, 0, 0),
+(1, 26, 74, 'Content Area Footer One', 37, 0, 0, 0, 0, 0, 0, 0),
+(1, 26, 78, 'Content Area Footer Two', 38, 0, 0, 0, 0, 0, 0, 0),
+(1, 26, 84, 'Content Area Two', NULL, 0, 0, 0, 0, 0, 0, 0),
+(1, 26, 93, 'Services Area One', 42, 0, 0, 0, 0, 0, 0, 0),
+(1, 26, 94, 'Services Area Two', 43, 0, 0, 0, 0, 0, 0, 0),
+(1, 26, 95, 'Services Area Three', 44, 0, 0, 0, 0, 0, 0, 0),
+(1, 26, 96, 'Services Area Four', 45, 0, 0, 0, 0, 0, 0, 0),
+(1, 26, 217, 'Content Area One', 35, 0, 1, 0, 0, 0, 0, 0),
 (138, 1, 1, 'Main', 1, 0, 1, 0, 0, 0, 0, 0),
 (138, 1, 2, 'Main', 2, 1, 1, 0, 0, 0, 0, 0),
 (138, 1, 3, 'Main : 1', 3, 0, 1, 0, 0, 0, 0, 0),
@@ -4788,6 +4985,7 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (161, 14, 200, 'Main', 112, 0, 0, 0, 0, 0, 0, 0),
 (161, 14, 206, 'Main Description', 109, 0, 1, 0, 0, 0, 0, 0),
 (162, 1, 31, 'Main', 26, 0, 1, 0, 0, 0, 0, 0),
+(162, 2, 208, 'Main', 115, 0, 1, 0, 0, 0, 0, 0),
 (163, 1, 33, 'Main', 27, 0, 1, 0, 0, 0, 0, 0),
 (164, 1, 35, 'Main', 28, 0, 1, 0, 0, 0, 0, 0),
 (164, 2, 35, 'Main', 28, 0, 0, 0, 0, 0, 0, 0),
@@ -5029,7 +5227,20 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (191, 6, 171, 'Main', 93, 1, 1, 0, 0, 0, 0, 0),
 (192, 2, 172, 'Main Body', 96, 0, 1, 0, 0, 0, 0, 0),
 (192, 3, 172, 'Main Body', 96, 0, 0, 0, 0, 0, 0, 0),
-(192, 4, 173, 'Main Body', 96, 0, 1, 0, 0, 0, 0, 0);
+(192, 4, 173, 'Main Body', 96, 0, 1, 0, 0, 0, 0, 0),
+(196, 5, 209, 'Main Body', 116, 0, 1, 0, 0, 0, 0, 0),
+(197, 1, 211, 'Main Body', 117, 0, 1, 0, 0, 0, 0, 0),
+(197, 1, 212, 'Main Body', 118, 1, 1, 0, 0, 0, 0, 0),
+(197, 1, 213, 'Main Body Three', 119, 0, 1, 0, 0, 0, 0, 0),
+(197, 1, 214, 'Main Body Three', 120, 1, 1, 0, 0, 0, 0, 0),
+(197, 1, 215, 'Main Body Three', 121, 2, 1, 0, 0, 0, 0, 0),
+(197, 1, 216, 'Main Body Two', 122, 0, 1, 0, 0, 0, 0, 0),
+(198, 1, 211, 'Main Body', 117, 0, 0, 0, 0, 0, 0, 0),
+(198, 1, 212, 'Main Body', 118, 1, 0, 0, 0, 0, 0, 0),
+(198, 1, 213, 'Main Body Three', 119, 0, 0, 0, 0, 0, 0, 0),
+(198, 1, 214, 'Main Body Three', 120, 1, 0, 0, 0, 0, 0, 0),
+(198, 1, 215, 'Main Body Three', 121, 2, 0, 0, 0, 0, 0, 0),
+(198, 1, 216, 'Main Body Two', 122, 0, 0, 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -5256,7 +5467,8 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (1, 22, 'Home', '', '', '2017-05-22 15:59:25', '2017-06-07 10:45:30', 'Version 22', 0, 0, 1, 1, 2, 5, NULL, NULL),
 (1, 23, 'Home', '', '', '2017-05-22 15:59:25', '2017-06-15 16:01:08', 'Version 23', 0, 0, 1, 1, 2, 5, NULL, NULL),
 (1, 24, 'Home', '', 'Welcome to Chris Watterston', '2017-05-22 15:59:00', '2017-06-20 10:18:34', 'New Version 24', 0, 0, 1, 1, 2, 5, NULL, NULL),
-(1, 25, 'Home', '', 'Welcome to Chris Watterston', '2017-05-22 15:59:00', '2017-06-20 10:19:14', 'New Version 25', 1, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 25, 'Home', '', 'Welcome to Chris Watterston', '2017-05-22 15:59:00', '2017-06-20 10:19:14', 'New Version 25', 0, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 26, 'Home', '', 'Welcome to Chris Watterston', '2017-05-22 15:59:00', '2017-06-30 16:08:01', 'Version 26', 1, 0, 1, 1, 2, 5, NULL, NULL),
 (2, 1, 'Dashboard', 'dashboard', '', '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'Initial Version', 1, 0, 1, NULL, 0, 0, NULL, NULL),
 (3, 1, 'Sitemap', 'sitemap', 'Whole world at a glance.', '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'Initial Version', 1, 0, 1, NULL, 0, 0, NULL, NULL),
 (4, 1, 'Full Sitemap', 'full', '', '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'Initial Version', 1, 0, 1, NULL, 0, 0, NULL, NULL),
@@ -5473,7 +5685,8 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (161, 12, 'News', 'blog', '', '2017-05-23 15:31:00', '2017-06-27 17:17:31', 'Version 12', 0, 0, 1, 1, 2, 9, NULL, NULL),
 (161, 13, 'News', 'blog', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', '2017-05-23 15:31:00', '2017-06-27 17:18:33', 'New Version 13', 0, 0, 1, 1, 2, 9, NULL, NULL),
 (161, 14, 'News', 'blog', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', '2017-05-23 15:31:00', '2017-06-27 21:17:18', 'Version 14', 1, 0, 1, 1, 2, 9, NULL, NULL),
-(162, 1, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-05-23 15:31:17', 'Initial Version', 1, 0, 1, 1, 2, 4, NULL, NULL),
+(162, 1, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-05-23 15:31:17', 'Initial Version', 0, 0, 1, 1, 2, 4, NULL, NULL),
+(162, 2, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-06-30 12:02:12', 'New Version 2', 1, 0, 1, 1, 2, 8, NULL, NULL),
 (163, 1, 'Store', 'store', '', '2017-05-23 15:31:28', '2017-05-23 15:31:28', 'Initial Version', 1, 0, 1, 1, 2, 4, NULL, NULL),
 (164, 1, 'get in contact', 'get-in-contact', '', '2017-05-23 15:32:36', '2017-05-23 15:32:36', 'Initial Version', 0, 0, 1, 1, 2, 4, NULL, NULL),
 (164, 2, 'Get in Contact', 'get-in-contact', '', '2017-05-23 15:32:00', '2017-05-23 15:32:46', 'New Version 2', 0, 0, 1, 1, 2, 4, NULL, NULL),
@@ -5519,9 +5732,9 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (176, 6, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-06 14:56:15', 'New Version 6', 0, 0, 1, 1, 2, 7, NULL, NULL),
 (176, 7, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-06 14:56:44', 'New Version 7', 0, 0, 1, 1, 2, 7, NULL, NULL),
 (176, 8, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-19 16:33:28', 'New Version 8', 0, 0, 1, 1, 2, 7, NULL, NULL),
-(176, 9, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-19 16:43:30', 'New Version 9', 0, 0, 1, 1, 2, 7, NULL, NULL),
-(176, 10, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-19 16:59:11', 'Version 10', 0, 0, 1, 1, 2, 7, NULL, NULL);
+(176, 9, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-19 16:43:30', 'New Version 9', 0, 0, 1, 1, 2, 7, NULL, NULL);
 INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescription`, `cvDatePublic`, `cvDateCreated`, `cvComments`, `cvIsApproved`, `cvIsNew`, `cvAuthorUID`, `cvApproverUID`, `pThemeID`, `pTemplateID`, `cvActivateDatetime`, `cvPublishDate`) VALUES
+(176, 10, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-19 16:59:11', 'Version 10', 0, 0, 1, 1, 2, 7, NULL, NULL),
 (176, 11, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-19 17:03:04', 'Version 11', 0, 0, 1, 1, 2, 7, NULL, NULL),
 (176, 12, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-19 17:05:45', 'New Version 12', 0, 0, 1, 1, 2, 7, NULL, NULL),
 (176, 13, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-19 17:08:32', 'Version 13', 0, 0, 1, 1, 2, 7, NULL, NULL),
@@ -5589,7 +5802,17 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (192, 3, 'There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 'there-no-cloud-getting-1-sticker-mule-marketplace', 'The Sticker Mule marketplace has been growing rapidly over the past couple of years. Sticker Mule loves seeing applications and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers.', '2016-04-21 15:26:00', '2017-06-21 15:33:51', 'New Version 3', 0, 0, 1, 1, 0, 6, NULL, NULL),
 (192, 4, 'There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 'there-no-cloud-getting-1-sticker-mule-marketplace', 'The Sticker Mule marketplace has been growing rapidly over the past couple of years. Sticker Mule loves seeing applications and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers.', '2016-04-21 15:26:00', '2017-06-21 15:36:47', 'Version 4', 1, 0, 1, 1, 0, 6, NULL, NULL),
 (193, 1, '', NULL, NULL, '2017-06-27 13:13:43', '2017-06-27 13:13:43', 'Initial Version', 1, 0, NULL, NULL, 0, 8, NULL, NULL),
-(194, 1, '', NULL, NULL, '2017-06-27 14:31:47', '2017-06-27 14:31:47', 'Initial Version', 1, 0, NULL, NULL, 0, 9, NULL, NULL);
+(194, 1, '', NULL, NULL, '2017-06-27 14:31:47', '2017-06-27 14:31:47', 'Initial Version', 1, 0, NULL, NULL, 0, 9, NULL, NULL),
+(195, 1, 'Surveying up a Website Redesign', 'surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 15:30:00', '2017-06-30 15:37:14', 'Initial Version', 1, 0, 1, 1, 2, 6, NULL, NULL),
+(196, 1, 'Surveying up a Website Redesign', 'surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 15:30:00', '2017-06-30 15:37:39', 'Initial Version', 0, 0, 1, 1, 2, 6, NULL, NULL),
+(196, 2, 'Surveying up a Website Redesign', 'surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 15:30:00', '2017-06-30 15:40:38', 'New Version 2', 0, 0, 1, 1, 2, 10, NULL, NULL),
+(196, 3, 'Surveying up a Website Redesign', 'surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 15:30:00', '2017-06-30 15:41:01', 'New Version 3', 0, 0, 1, 1, 2, 10, NULL, NULL),
+(196, 4, 'Surveying up a Website Redesign', 'surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 15:30:00', '2017-06-30 15:44:07', 'New Version 4', 0, 0, 1, 1, 2, 10, NULL, NULL),
+(196, 5, 'Surveying up a Website Redesign', 'surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 15:30:00', '2017-06-30 15:46:49', 'Version 5', 0, 0, 1, 1, 2, 10, NULL, NULL),
+(196, 6, 'Surveying up a Website Redesign', 'surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 15:30:00', '2017-06-30 15:50:21', 'Version 6', 0, 0, 1, 1, 2, 10, NULL, NULL),
+(196, 7, 'Surveying up a Website Redesign', 'surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 15:30:00', '2017-06-30 16:05:22', 'Version 7', 1, 0, 1, 1, 2, 10, NULL, NULL),
+(197, 1, '', NULL, NULL, '2017-06-30 15:50:37', '2017-06-30 15:50:37', 'Initial Version', 1, 0, NULL, NULL, 0, 10, NULL, NULL),
+(198, 1, 'Surveying up a Website Redesign', 'cd-surves-ltd-surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 16:05:00', '2017-06-30 16:05:49', 'Initial Version', 1, 0, 1, 1, 0, 10, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -6257,7 +6480,9 @@ INSERT INTO `FileAttributeValues` (`fID`, `fvID`, `akID`, `avID`) VALUES
 (17, 1, 16, 1494),
 (17, 1, 17, 1495),
 (18, 1, 16, 1564),
-(18, 1, 17, 1565);
+(18, 1, 17, 1565),
+(19, 1, 16, 1574),
+(19, 1, 17, 1575);
 
 -- --------------------------------------------------------
 
@@ -6314,7 +6539,9 @@ INSERT INTO `FileImageThumbnailPaths` (`fileID`, `fileVersionID`, `thumbnailType
 (17, 1, 'file_manager_listing', 1, '/thumbnails/file_manager_listing/6414/9806/2275/3months-stats-employment.jpg', 1),
 (17, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/6414/9806/2275/3months-stats-employment.jpg', 1),
 (18, 1, 'file_manager_listing', 1, '/thumbnails/file_manager_listing/3514/9858/1121/there-is-no-cloud-stats.jpg', 1),
-(18, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/3514/9858/1121/there-is-no-cloud-stats.jpg', 1);
+(18, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/3514/9858/1121/there-is-no-cloud-stats.jpg', 1),
+(19, 1, 'file_manager_listing', 1, '/thumbnails/file_manager_listing/1414/9883/3397/cdsurveys-scanner.jpg', 1),
+(19, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/1414/9883/3397/cdsurveys-scanner.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -6427,7 +6654,8 @@ INSERT INTO `Files` (`fID`, `fDateAdded`, `fPassword`, `fOverrideSetPermissions`
 (15, '2017-06-21 14:38:53', NULL, 0, 0, 7, 1, 1),
 (16, '2017-06-21 15:23:39', NULL, 0, 0, 7, 1, 1),
 (17, '2017-06-21 17:24:35', NULL, 0, 0, 7, 1, 1),
-(18, '2017-06-27 17:32:01', NULL, 0, 0, 7, 1, 1);
+(18, '2017-06-27 17:32:01', NULL, 0, 0, 7, 1, 1),
+(19, '2017-06-30 15:36:37', NULL, 0, 0, 7, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -6464,7 +6692,8 @@ INSERT INTO `FileSearchIndexAttributes` (`fID`, `ak_width`, `ak_height`, `ak_dur
 (15, '1452.0000', '1985.0000', '0.0000'),
 (16, '1440.0000', '415.0000', '0.0000'),
 (17, '1452.0000', '500.0000', '0.0000'),
-(18, '454.0000', '327.0000', '0.0000');
+(18, '454.0000', '327.0000', '0.0000'),
+(19, '580.0000', '215.0000', '0.0000');
 
 -- --------------------------------------------------------
 
@@ -6500,7 +6729,8 @@ INSERT INTO `FileSetFiles` (`fsfID`, `fID`, `fsID`, `timestamp`, `fsDisplayOrder
 (13, 15, 1, '2017-06-21 13:39:29', 11),
 (14, 16, 2, '2017-06-21 14:24:13', 1),
 (15, 17, 1, '2017-06-21 16:24:51', 12),
-(16, 18, 1, '2017-06-27 16:32:20', 13);
+(16, 18, 1, '2017-06-27 16:32:20', 13),
+(17, 19, 2, '2017-06-30 14:36:45', 2);
 
 -- --------------------------------------------------------
 
@@ -6619,7 +6849,9 @@ INSERT INTO `FileUsageRecord` (`file_id`, `block_id`, `collection_id`, `collecti
 (15, 166, 190, 3),
 (17, 174, 188, 3),
 (18, 202, 181, 4),
-(18, 203, 181, 5);
+(18, 203, 181, 5),
+(1, 216, 197, 1),
+(16, 216, 197, 1);
 
 -- --------------------------------------------------------
 
@@ -6683,7 +6915,8 @@ INSERT INTO `FileVersions` (`fvID`, `fvFilename`, `fvPrefix`, `fvDateAdded`, `fv
 (1, 'app-and-statistics-2.jpg', '491498052333', '2017-06-21 14:38:53', '2017-06-21 14:38:53', 1, 1, 161204, 1, 'app-and-statistics-2.jpg', '', 'jpg', 1, '', 1, 1, 15),
 (1, 'header-app-and-statistics.jpg', '531498055019', '2017-06-21 15:23:39', '2017-06-21 15:23:39', 1, 1, 10487, 1, 'header-app-and-statistics.jpg', '', 'jpg', 1, '', 1, 1, 16),
 (1, '3months-stats-employment.gif', '641498062275', '2017-06-21 17:24:36', '2017-06-21 17:24:36', 1, 1, 27641, 1, '3months-stats-employment.gif', '', 'gif', 1, '', 1, 1, 17),
-(1, 'there-is-no-cloud-stats.gif', '351498581121', '2017-06-27 17:32:01', '2017-06-27 17:32:01', 1, 1, 9884, 1, 'there-is-no-cloud-stats.gif', '', 'gif', 1, '', 1, 1, 18);
+(1, 'there-is-no-cloud-stats.gif', '351498581121', '2017-06-27 17:32:01', '2017-06-27 17:32:01', 1, 1, 9884, 1, 'there-is-no-cloud-stats.gif', '', 'gif', 1, '', 1, 1, 18),
+(1, 'cdsurveys-scanner.jpg', '141498833397', '2017-06-30 15:36:37', '2017-06-30 15:36:37', 1, 1, 13594, 1, 'cdsurveys-scanner.jpg', '', 'jpg', 1, '', 1, 1, 19);
 
 -- --------------------------------------------------------
 
@@ -7207,7 +7440,9 @@ INSERT INTO `Logs` (`logID`, `channel`, `time`, `message`, `uID`, `level`) VALUE
 (51, 'application', 1498058515, 'Page "1970\'s speed boat restoration project almost complete" at path "/blog/1970s-speed-boat-project-finally-finish" Moved to trash', 1, 100),
 (52, 'application', 1498058521, 'Page "Entering 2017 with a new desk and mindset" at path "/blog/entering-2017-with-a-new-desk-and-mindset" Moved to trash', 1, 100),
 (53, 'application', 1498570087, 'Page "" at path "" deleted', 1, 100),
-(54, 'application', 1498773319, 'Session Invalidated. Session user agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" did not match provided agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"', 1, 100);
+(54, 'application', 1498773319, 'Session Invalidated. Session user agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" did not match provided agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"', 1, 100),
+(55, 'application', 1498833466, 'Page "Surveying up a Website Redesign" at path "/case-studies/surveying-up-a-website-redesign" Moved to trash', 1, 100),
+(56, 'application', 1498835133, 'Page "Surveying up a Website Redesign" at path "/case-studies/surveying-up-a-website-redesign" Moved to trash', 1, 100);
 
 -- --------------------------------------------------------
 
@@ -7598,7 +7833,10 @@ INSERT INTO `PagePaths` (`cPath`, `ppID`, `cID`, `ppIsCanonical`, `ppGeneratedFr
 ('/blog/setting-5-goals-2014', 184, 189, 1, 1),
 ('/blog/your-new-website-statistics-dashboard', 185, 190, 1, 1),
 ('/!stacks/working-together', 186, 191, 1, 1),
-('/blog/there-no-cloud-getting-1-sticker-mule-marketplace', 187, 192, 1, 1);
+('/blog/there-no-cloud-getting-1-sticker-mule-marketplace', 187, 192, 1, 1),
+('/!trash/surveying-up-a-website-redesign', 188, 195, 1, 1),
+('/!trash/surveying-up-a-website-redesign-1', 189, 196, 1, 1),
+('/case-studies/cd-surves-ltd-surveying-up-a-website-redesign', 190, 198, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -7914,7 +8152,7 @@ INSERT INTO `Pages` (`cID`, `siteTreeID`, `ptID`, `cIsTemplate`, `uID`, `cIsChec
 (137, 0, 0, 0, 1, 0, NULL, NULL, NULL, 1, 2, 'PARENT', '/dashboard/system/backup/update.php', 0, NULL, 0, 1, 0, 1, 135, 0, 0, -1, '0', 0, 1),
 (138, 0, 0, 0, 1, 0, NULL, NULL, NULL, 1, 2, 'PARENT', '/dashboard/welcome.php', 0, NULL, 0, 1, 1, 0, 2, 0, 0, -1, '0', 0, 1),
 (139, 0, 0, 0, 1, 0, NULL, NULL, NULL, 1, 2, 'PARENT', NULL, 0, NULL, 0, 1, 0, 0, 138, 0, 0, -1, '0', 0, 1),
-(140, 0, 0, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', '/!trash/view.php', 0, NULL, 0, 1, 4, 0, 0, 0, 0, -1, '0', 0, 1),
+(140, 0, 0, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', '/!trash/view.php', 0, NULL, 0, 1, 6, 0, 0, 0, 0, -1, '0', 0, 1),
 (141, 0, 0, 0, 1, 0, NULL, NULL, NULL, 1, 141, 'OVERRIDE', '/login.php', 0, NULL, 0, 1, 0, 0, 0, 0, 0, -1, '0', 0, 1),
 (142, 0, 0, 0, 1, 0, NULL, NULL, NULL, 1, 142, 'OVERRIDE', '/register.php', 0, NULL, 0, 1, 0, 0, 0, 0, 0, -1, '0', 0, 1),
 (143, 0, 0, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', '/account/view.php', 0, NULL, 0, 1, 3, 0, 0, 0, 0, -1, '0', 0, 1),
@@ -7935,7 +8173,7 @@ INSERT INTO `Pages` (`cID`, `siteTreeID`, `ptID`, `cIsTemplate`, `uID`, `cIsChec
 (159, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 0, 1, 0, 1, -1, '0', 0, 0),
 (160, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 1, 1, 0, 1, -1, '0', 0, 0),
 (161, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 8, 2, 1, 0, 1, -1, '0', 0, 0),
-(162, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 3, 1, 0, 1, -1, '0', 0, 0),
+(162, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 1, 3, 1, 0, 1, -1, '0', 0, 0),
 (163, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 6, 1, 0, 1, -1, '0', 0, 0),
 (164, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 7, 1, 0, 1, -1, '0', 0, 0),
 (165, 1, 1, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 5, 150, 0, 0, -1, '0', 0, 1),
@@ -7966,7 +8204,11 @@ INSERT INTO `Pages` (`cID`, `siteTreeID`, `ptID`, `cIsTemplate`, `uID`, `cIsChec
 (191, 1, 1, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 7, 150, 0, 0, -1, '0', 0, 1),
 (192, 1, 7, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 7, 161, 0, 161, -1, '0', 0, 0),
 (193, 1, 5, 1, NULL, 0, NULL, NULL, NULL, 1, 193, 'OVERRIDE', NULL, 0, NULL, 0, 1, 0, 0, 0, 0, 0, -1, '0', 0, 0),
-(194, 1, 5, 1, NULL, 0, NULL, NULL, NULL, 1, 194, 'OVERRIDE', NULL, 0, NULL, 0, 1, 0, 0, 0, 0, 0, -1, '0', 0, 0);
+(194, 1, 5, 1, NULL, 0, NULL, NULL, NULL, 1, 194, 'OVERRIDE', NULL, 0, NULL, 0, 1, 0, 0, 0, 0, 0, -1, '0', 0, 0),
+(195, 0, 8, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 0, 0, 7, 140, 0, 162, -1, '0', 0, 1),
+(196, 0, 8, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 0, 0, 8, 140, 0, 162, -1, '0', 0, 1),
+(197, 1, 8, 1, NULL, 0, NULL, NULL, NULL, 1, 197, 'OVERRIDE', NULL, 0, NULL, 0, 1, 0, 0, 0, 0, 0, -1, '0', 0, 0),
+(198, 1, 8, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 6, 162, 0, 162, -1, '0', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -7991,7 +8233,7 @@ CREATE TABLE `PageSearchIndex` (
 --
 
 INSERT INTO `PageSearchIndex` (`cID`, `content`, `cName`, `cDescription`, `cPath`, `cDatePublic`, `cDateLastIndexed`, `cDateLastSitemapped`, `cRequiresReindex`) VALUES
-(1, 'Facebook feed here... Web Design\r\n\r\n The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online. \r\n Print Design\r\n\r\n The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online. \r\n Mobile App\r\n\r\n The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online. \r\n Support & Hosting\r\n\r\n The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online. \r\n ', 'Home', 'Welcome to Chris Watterston', '', '2017-05-22 15:59:00', '2017-06-20 10:19:42', NULL, 0),
+(1, 'Facebook feed here... Web Design\r\n\r\n The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online. \r\n Print Design\r\n\r\n The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online. \r\n Mobile App\r\n\r\n The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online. \r\n Support & Hosting\r\n\r\n The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online. \r\n ', 'Home', 'Welcome to Chris Watterston', '', '2017-05-22 15:59:00', '2017-06-30 16:08:09', NULL, 0),
 (2, '', 'Dashboard', '', '/dashboard', '2017-05-22 15:59:51', '2017-05-22 16:08:35', NULL, 0),
 (3, '', 'Sitemap', 'Whole world at a glance.', '/dashboard/sitemap', '2017-05-22 15:59:51', '2017-05-22 16:08:35', NULL, 0),
 (4, '', 'Full Sitemap', '', '/dashboard/sitemap/full', '2017-05-22 15:59:51', '2017-05-22 16:08:35', NULL, 0),
@@ -8147,7 +8389,7 @@ INSERT INTO `PageSearchIndex` (`cID`, `content`, `cName`, `cDescription`, `cPath
 (159, ' We are a design studio and we kick perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that never fails. \r\n\r\n And no, we’re not single minded. To us it doesn’t matter whether you’re within the educational sector, private sector, charity or just starting out on an exciting new road to success. We\'d love to have a chat. \r\n Branding\r\n\r\n\r\n	Brand Identity Design\r\n	Brand Guidelines\r\n	Brand Naming\r\n	Logo Design\r\n\r\n Digital\r\n\r\n\r\n	Website Design and Development\r\n	eCommerce Design\r\n	HTML Email Design\r\n\r\n Print\r\n\r\n\r\n	Print Communications\r\n	Brochure and Prospectus Design\r\n	Report Design\r\n	Stationery and Material Design\r\n\r\n Support\r\n\r\n\r\n	Managed Website Hosting\r\n	Website Support\r\n\r\n Clients\r\n\r\n We couldn’t thank these lovely lot enough, we’re so fortunate to have worked with them. They’ve kept us sane and allowed us to grow into what we’ve become today. \r\n \r\n	Annodata Limited\r\n	Tesla Installations Ltd\r\n	Designated PA\r\n	Moorfields Corporate Recovery Ltd\r\n	Pavilion Day Nursery\r\n	Sammy\'s Sunflower Fund\r\n	Spelthorne Schools Together\r\n	Reading Cricket Club\r\n	Perpool\r\n	Instyle Building and Design\r\n	John Lucas\r\n	JAC Data Ltd\r\n	JCC Wheat Construction\r\n	M&Y Air Systems Ltd\r\n\r\n\r\n\r\n	HMS Commercials\r\n	Michael Woodford Motorsport\r\n	Nicholson Plumbing and Heating\r\n	Char-asha Boutique\r\n	Bimu - Beauty In Make-Up\r\n	CD Surveys Ltd\r\n	Intelligent Transport Services Ltd\r\n	Feaver & Dust\r\n	Sally Watterston\r\n	Surrey Secondary Heads\r\n	Virginia Plumbing\r\n	Westworld Marine\r\n	UCC Coffee UK ltd\r\n\r\n\r\n\r\n	St Paul\'s Catholic College\r\n	Bushy-Hill Primary School\r\n	St. Ignatius Catholic Primary School\r\n	Our Lady of the Rosary Primary School\r\n	Salesian School\r\n	Innervate Career Services Ltd\r\n	St Michael\'s R C Primary School\r\n	Saint John Bosco College\r\n	The Marist Roman Catholic Primary School\r\n	St Paul\'s Connect\r\n	Midas Touch Landscapes\r\n	Old Blue Moses\r\n\r\n ', 'Services', '', '/services', '2017-05-23 15:30:41', '2017-06-27 13:27:17', NULL, 0),
 (160, ' That feeling when you’d happily live your life and work for free, but know that doing so sadly won’t pay the bills. If you’ve considered it and then received a slap around your chops to bring you back to reality, then you know you’ve chosen the right path in life and love what you do - That’s how we roll. \r\n\r\n I’m Chris Watterston, an independent designer working, living and probably lacking sleep in Surrey, UK. With my years of experience, I specialise in Brand Identity Design, Web Design and Front-End Development. \r\n\r\n Besides running my day-to-day design business, I’m also fortunate enough to invest and co-found an amazing family. My loving partner and our 2 beautiful daughters. \r\n\r\n Being an internet based design business, we’re not limited to working only with the residents of not so sunny Surrey. But also the surrounding areas, far and beyond, and more commonly across the seas. \r\n\r\n As you get to know us further and we spark our working relationship, you’ll start to recognise that I refer to me, myself and my business as ‘We’ - Why? Because I put everything we can and have to offer into every project and solution. \r\n\r\n I think that\'s enough of the ins and outs of us. Tell me about yourself. How are you, where are you from, your interests? \r\n\r\n Send us a friendly message to hello@chriswatterston.com. You’ll probably regret it if you don’t. \r\n ', 'About Us', 'Description', '/about-us', '2017-05-23 15:30:00', '2017-06-27 17:27:33', NULL, 0),
 (161, 'While I\'m not knee deep in enjoyment with the undertaking of projects, I like to keep my clients and visitors up to date with the latest news and work from our studio and home in London, United Kingdom. Whether it\'s work life, client problem solving, learning new things, personal or family life - I enjoy telling stories.\r\n\r\n Join our conversation online and subscribe to receive our monthly newsletters. \r\nI’ll only email you with important bits, never spam - pinky promise! \r\n ', 'News', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', '/blog', '2017-05-23 15:31:00', '2017-06-27 21:17:25', NULL, 0),
-(162, '', 'Case Studies', '', '/case-studies', '2017-05-23 15:31:17', '2017-05-23 15:31:50', NULL, 0),
+(162, '', 'Case Studies', '', '/case-studies', '2017-05-23 15:31:17', '2017-06-30 16:05:38', NULL, 0),
 (163, '', 'Store', '', '/store', '2017-05-23 15:31:28', '2017-05-23 15:31:50', NULL, 0),
 (164, '', 'Get in Contact', '', '/get-in-contact', '2017-05-23 15:32:00', '2017-05-23 15:34:18', NULL, 0),
 (165, '', 'Social Links', NULL, '/!stacks/social-links', '2017-05-24 10:14:23', '2017-05-25 11:00:42', NULL, 0),
@@ -8168,7 +8410,9 @@ INSERT INTO `PageSearchIndex` (`cID`, `content`, `cName`, `cDescription`, `cPath
 (189, ' Enough time has passed now for me to settle into my new role, career, life, and I feel it\'s the perfect time to set myself some goals for 2014. So here they are, in no particular order... \r\n \r\n	Minimise on business and personal outgoings.\r\n	Provide design and development solutions to a minimum of two charities.\r\n	Write more. Post at least one blog article per month.\r\n	Design, develop and launch completed personal projects for everyone to use and benefit.\r\n	Increase involvement within online communities. Targeting Dribbble, GitHut and Conrete5.\r\n\r\n  So, there it is. Now let\'s dig a wee deeper look into each one... \r\n\r\n 1. Minimise on business and personal outgoings. This seams reasonable, doesn\'t it? Everyone knows businesses require money to make money, so I\'ve decided to cancel a few service that I\'d subscribed to over the years to save some pennies. \r\n\r\n The first sacrifice being Evernote. I signed up to Evernote\'s Premium Subscription back in 2011, I used to use it for everything at my pervious place of work, but boy have things changed since becoming self employed. I can honestly say, I don\'t even remember the last time I opened up my Evernote app to create or read a note. Really, really! I used to be a hourly user and had a tone of projects, notes, PSD files, wireframes, pictures, the list goes on, all from my pervious work place and personal life. Boom, I archived the lot off, and canceled my Premium Subscription. That\'s £30 per year i\'m now saving. Woop! \r\n\r\n My second sacrifice was Netflix. Don\'t get me wrong, Netflix is a great service if you like watching films that are 2+ years old, or you have kids that\'ll watch cartoons on the iPad. I personally like to watch new films that I don\'t have to blow the dust off to watch, I already have them all on DVD. Here\'s an actual example, my other half, the love of my life, has never watched Gladiator, what a film! Which I\'d like to add, is now 14 years old....AND IT\'S NOT EVEN ON NETFLIX! Excuse my french, but are you shitting me? So frustrating! So, you get the picture. That\'s another £5.99 per month, £71.88(ish) per year. \r\n\r\n Smiles all around, we\'re only on the 7th of January, and I\'ve already minimise my outgoing by £101.88 per year. Not bad going so far. \r\n\r\n 2. Provide design and development solutions to at least two charities. I\'ve always enjoyed helping others, it makes me feel all good and warm inside. Like wearing a onesie fully zipped to the neck, with the heating cranked up to 30° and your wood burner blazing! People who know me will know I very rarely say No, or hate having to say it. I\'ll find any reason to avoid the word, I\'d say this is probably a weakness of mine. So, moving onwards and upwards, I\'d give a lot of time for any individual or group with a lot of time for others. And with charities landing within this category, I\'ve always wanted to help a charity that needs an extra helping hand online. So, this year I\'m going to make sure I give my time to a minimum of two. Promise! \r\n\r\n 3. Write more. Post at least one blog article per month. I\'ll admit, my writing and grammar is crap! It always has been, and I hope it always won\'t be. This particular goal\'s to help increase my poor grammar, spelling, writing, etc, as you\'ve probably already noticed while reading this. You savvy lot, you! So, I\'ll be writing a minimum of one blog post per month. Lucky you! \r\n\r\n 4. Design, develop and launch completed personal projects for everyone to use and benefit. I\'ve always had an active mind, a thinker, and thought up a few pretty good ideas in the past for personal web projects. But with a full time job, I never did get around to completing them due to lack of time, the same old story. I could easily jump back on the bandwagon, finishing what I\'d started, but they\'re all out of date and wouldn\'t have any benefits or future. \r\n\r\n The first web app idea I came up with back in 2010, and was called My Child\'s Diary. MCD\'s vision was to provide an in the cloud diary for parents to log and remember the facts, millstones, photos, events and much more, of their kids, all through the internet, phone or tablet. Allowing it to be shared with family and friends, with an added feature so parents can get the final logged experience to be exported as a PDF download or to be printed on a hardback book. But, I never got around to finishing it. \r\n\r\n The second web app idea was called FancyE.at, which started late 2012, and again never did get finished. FE\'s vision was to bring the subject of quality, food, service and networking all into a simple, easy to use and social web app. The app would provide details such as the closest place to eat via a categorised search, personal favourite hot spots, reviews, menus, photos, share a scheduled dinner with friends, booking of tables, locations, discounts....bla, bla, bla. \r\n\r\n My new idea, which I\'ll admit did hurt a wee bit when it hit me, inspired by my other half, is already under way, with I hope to launch by 1st April 2014. The vision is aimed at new and expecting parents, with others benefiting also. BUT, I\'m saying no more! You\'ll have to wait and see once it\'s been launched. \r\n\r\n 5. Increase involvement within online communities. Targeting Dribbble, GitHut and Conrete5. I\'ve always wanted to hit three communities hard, well not hard but with my online presence, Dribbble, GitHut and Conrete5. I have accounts on all but over the years things have been stopping me doing just that. They are as follows...Dribbble, haven\'t been invited yet....please? GitHub and Concrete5, just not enough time. Now that times on my side, I can correct these areas and join all these other beautiful lot. \r\n\r\n So, thats that. Now you know my five goals for 2014, have you set any goals? If yes, then what are yours? \r\n ', 'Setting 5 Goals For 2014', 'A warm welcome to 2014, I wish you all a happy New Year. It\'s the start of a New Year for us all, and funny enough it\'s also that time where 99.9% of us feel the need to set ourself new year resolutions, goals, targets, or whatever you call it. For me, I\'ve just rolled into my 5th month of self employment and it still feels incredible, just as it did on day one.', '/blog/setting-5-goals-2014', '2014-02-01 16:17:00', '2017-06-21 17:29:56', NULL, 0),
 (190, ' With every website or application we design, develop and launch, we integrate 24/7/365 monitoring, Analytics, Support, Online Style Guideline - and the list goes on. \r\n\r\n Throughout March and April, we will be rolling out our brand new \'Statistics Dashboard\'. This means that you will be able to log into your Content Management System (CMS) and see all kind of useful information that you never saw before - see for yourself. \r\n  What do you think, first impressions? Take another look below - from top to bottom. \r\n\r\n The \'Statistics Dashboard\' will be an ongoing development so will be improved and grow as time goes on. But until then, we\'ll let you know when yours is ready. \r\n Interested in working together?\r\n\r\n We love meeting new people, so shall we build something bigger together? \r\n\r\n Start today \r\n ', 'Your New Website Statistics Dashboard', 'Since the new year, we\'ve been working hard between projects to improve features and services that we provide to you - more specifically, within your Content Management System (CMS). One of the biggest changes you\'ll notice is our brand new \'Statistics Dashboard\'. You\'ll soon be able to look over your website ‘Views’, ‘Storage’, ‘Traffic’, ‘Uptime’ and a ton more. All live time!', '/blog/your-new-website-statistics-dashboard', '2016-04-13 14:11:00', '2017-06-27 16:24:40', NULL, 0),
 (191, 'Interested in working together?\r\n\r\n We love meeting new people, so shall we build something bigger together? \r\n\r\n Start today \r\n ', 'Working Together', NULL, '/!stacks/working-together', '2017-06-21 14:42:01', '2017-06-21 14:48:28', NULL, 0),
-(192, ' But what do the top selling designs have in common? Is there a secret? What can other sellers learn? \r\n\r\nThere is no cloud\r\n\r\n We connected with Chris Watterston the creator of the now famous and #1 bestselling "There is no cloud" sticker to answer those questions. \r\n\r\n Read the full story on Sticker Mule \r\n ', 'There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 'The Sticker Mule marketplace has been growing rapidly over the past couple of years. Sticker Mule loves seeing applications and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers.', '/blog/there-no-cloud-getting-1-sticker-mule-marketplace', '2016-04-21 15:26:00', '2017-06-21 15:37:05', NULL, 0);
+(192, ' But what do the top selling designs have in common? Is there a secret? What can other sellers learn? \r\n\r\nThere is no cloud\r\n\r\n We connected with Chris Watterston the creator of the now famous and #1 bestselling "There is no cloud" sticker to answer those questions. \r\n\r\n Read the full story on Sticker Mule \r\n ', 'There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 'The Sticker Mule marketplace has been growing rapidly over the past couple of years. Sticker Mule loves seeing applications and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers.', '/blog/there-no-cloud-getting-1-sticker-mule-marketplace', '2016-04-21 15:26:00', '2017-06-21 15:37:05', NULL, 0),
+(196, '', 'Surveying up a Website Redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '/case-studies/surveying-up-a-website-redesign', '2016-09-09 15:30:00', '2017-06-30 16:05:28', NULL, 0),
+(198, 'Project goal\r\n\r\n Content here... define your broad project goal early in the case study, with a focus on larger issues like community, the environment or empowerment. \r\n Process and reseach \r\n\r\n Next is a look at how we can focus on process before artifact. Show Research In Clear, Process-Oriented Chunks. Show your research with photos, charts or a list of findings, even if it is not packaged neatly. \r\n Lessons Learned\r\n\r\n As we looked at before, case studies should emphasize design knowledge and creative processes. Of course, that includes visual, code and UX assumptions that didn’t hold up. There will always be lessons learned during projects, and sharing those is crucial so that others can learn from them. \r\n Testimonials\r\n\r\nThere’s something powerful about hearing directly from users, team members and clients. Short quotes that contain personal observations about the project are often the most accessible to readers.\r\n Conclusion\r\n\r\n I’ve tried to show that by focusing on process rather than artifact, we can build and share in-depth case studies. The studies allow us to reframe the conversation around design process and the humanity in what we create, rather than perfect deliverables. \r\n Slide Image 1  Vestibulum quis molestie quam. Mauris quis tortor nec metus ornare tincidunt eu et nunc. Ut fringilla luctus convallis. \r\n Slide Image 2  Mauris quis tortor nec metus ornare tincidunt eu et nunc. Ut fringilla luctus convallis. Vestibulum quis molestie quam. \r\n  ', 'Surveying up a Website Redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '/case-studies/cd-surves-ltd-surveying-up-a-website-redesign', '2016-09-09 16:05:00', '2017-06-30 16:06:55', NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -8195,10 +8439,11 @@ INSERT INTO `PageTemplates` (`pTemplateID`, `pTemplateHandle`, `pTemplateIcon`, 
 (3, 'dashboard_full', '', 'Dashboard Full', 1, 0),
 (4, 'full', 'full.png', 'Full', 0, 0),
 (5, 'home', 'blank.png', 'Home', 0, 0),
-(6, 'blog', 'left_list.png', 'Blog', 0, 0),
+(6, 'blog', 'feature.png', 'Blog', 0, 0),
 (7, 'recognition', 'grid.png', 'Recognition', 0, 0),
 (8, 'default', 'right_list.png', 'Default', 0, 0),
-(9, 'bloglist', 'full_list.png', 'Bloglist', 0, 0);
+(9, 'bloglist', 'full_list.png', 'Blog List', 0, 0),
+(10, 'casestudy', 'feature.png', 'Case Study', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -8322,7 +8567,8 @@ INSERT INTO `PageTypeComposerFormLayoutSetControls` (`ptComposerFormLayoutSetCon
 (55, 14, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:2;}', 1, NULL, NULL, NULL, 0),
 (56, 14, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:3;}', 2, NULL, NULL, NULL, 0),
 (57, 2, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:20;}', 1, NULL, NULL, NULL, 0),
-(58, 5, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:22;}', 2, NULL, NULL, NULL, 0);
+(58, 5, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:22;}', 2, NULL, NULL, NULL, 0),
+(59, 7, 2, 'O:67:"Concrete\\Core\\Page\\Type\\Composer\\Control\\CollectionAttributeControl":1:{s:7:"\0*\0akID";i:24;}', 2, NULL, NULL, NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -8391,7 +8637,8 @@ INSERT INTO `PageTypeComposerOutputBlocks` (`ptComposerOutputBlockID`, `cID`, `c
 (17, 161, 2, 'Main', 0, 6, 190),
 (18, 161, 3, 'Main', 0, 6, 191),
 (19, 161, 13, 'Main', 0, 6, 200),
-(20, 160, 4, 'Main', 0, 6, 201);
+(20, 160, 4, 'Main', 0, 6, 201),
+(22, 162, 2, 'Main', 0, 6, 208);
 
 -- --------------------------------------------------------
 
@@ -8440,7 +8687,8 @@ INSERT INTO `PageTypePageTemplateDefaultPages` (`pTemplateID`, `ptID`, `cID`) VA
 (7, 9, 175),
 (6, 8, 182),
 (8, 5, 193),
-(9, 5, 194);
+(9, 5, 194),
+(10, 8, 197);
 
 -- --------------------------------------------------------
 
@@ -8460,10 +8708,10 @@ CREATE TABLE `PageTypePageTemplates` (
 INSERT INTO `PageTypePageTemplates` (`ptID`, `pTemplateID`) VALUES
 (6, 5),
 (7, 6),
-(8, 6),
 (9, 7),
 (5, 8),
-(5, 9);
+(5, 9),
+(8, 10);
 
 -- --------------------------------------------------------
 
@@ -8584,7 +8832,7 @@ INSERT INTO `PageTypes` (`ptID`, `ptName`, `ptHandle`, `ptPublishTargetTypeID`, 
 (5, 'Page', 'default', 3, 8, 'C', 0, 0, 0, 0, 0, 'O:68:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\AllConfiguration":7:{s:21:"\0*\0selectorFormFactor";s:0:"";s:22:"\0*\0startingPointPageID";N;s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"3";s:25:"ptPublishTargetTypeHandle";s:3:"all";s:9:"pkgHandle";b:0;s:17:"startingPointPage";s:1:"0";}', 1),
 (6, 'Home', 'home', 3, 5, 'C', 0, 0, 1, 0, 0, 'O:68:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\AllConfiguration":7:{s:21:"\0*\0selectorFormFactor";s:0:"";s:22:"\0*\0startingPointPageID";N;s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"3";s:25:"ptPublishTargetTypeHandle";s:3:"all";s:9:"pkgHandle";b:0;s:17:"startingPointPage";s:1:"0";}', 1),
 (7, 'Blog Update', 'blog_update', 1, 6, 'C', 0, 1, 2, 1, 0, 'O:75:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\ParentPageConfiguration":5:{s:12:"\0*\0cParentID";s:3:"161";s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"1";s:25:"ptPublishTargetTypeHandle";s:11:"parent_page";s:9:"pkgHandle";b:0;}', 1),
-(8, 'Case Study Update', 'casestudy_update', 1, 6, 'C', 0, 1, 3, 1, 0, 'O:75:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\ParentPageConfiguration":5:{s:12:"\0*\0cParentID";s:3:"162";s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"1";s:25:"ptPublishTargetTypeHandle";s:11:"parent_page";s:9:"pkgHandle";b:0;}', 1),
+(8, 'Case Study Update', 'casestudy_update', 1, 10, 'C', 0, 1, 3, 1, 0, 'O:75:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\ParentPageConfiguration":5:{s:12:"\0*\0cParentID";s:3:"162";s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"1";s:25:"ptPublishTargetTypeHandle";s:11:"parent_page";s:9:"pkgHandle";b:0;}', 1),
 (9, 'Recognition', 'recognition', 1, 7, 'C', 0, 0, 4, 0, 0, 'O:75:"Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\ParentPageConfiguration":5:{s:12:"\0*\0cParentID";s:3:"174";s:5:"error";s:0:"";s:21:"ptPublishTargetTypeID";s:1:"1";s:25:"ptPublishTargetTypeHandle";s:11:"parent_page";s:9:"pkgHandle";b:0;}', 1);
 
 -- --------------------------------------------------------
@@ -8604,7 +8852,8 @@ CREATE TABLE `PageWorkflowProgress` (
 
 INSERT INTO `PageWorkflowProgress` (`cID`, `wpID`) VALUES
 (158, 28),
-(177, 29);
+(177, 29),
+(195, 30);
 
 -- --------------------------------------------------------
 
@@ -9951,7 +10200,8 @@ INSERT INTO `TreeFileNodes` (`treeNodeID`, `fID`) VALUES
 (45, 15),
 (46, 16),
 (47, 17),
-(48, 18);
+(48, 18),
+(49, 19);
 
 -- --------------------------------------------------------
 
@@ -10076,7 +10326,8 @@ INSERT INTO `TreeNodes` (`treeNodeID`, `treeNodeTypeID`, `treeID`, `treeNodePare
 (45, 6, 3, 7, 14, '', '2017-06-21 14:38:53', '2017-06-21 14:38:53', 0, 7),
 (46, 6, 3, 7, 15, '', '2017-06-21 15:23:39', '2017-06-21 15:23:39', 0, 7),
 (47, 6, 3, 7, 16, '', '2017-06-21 17:24:36', '2017-06-21 17:24:36', 0, 7),
-(48, 6, 3, 7, 17, '', '2017-06-27 17:32:01', '2017-06-27 17:32:01', 0, 7);
+(48, 6, 3, 7, 17, '', '2017-06-27 17:32:01', '2017-06-27 17:32:01', 0, 7),
+(49, 6, 3, 7, 18, '', '2017-06-30 15:36:37', '2017-06-30 15:36:37', 0, 7);
 
 -- --------------------------------------------------------
 
@@ -10381,7 +10632,7 @@ CREATE TABLE `Users` (
 --
 
 INSERT INTO `Users` (`uID`, `uName`, `uEmail`, `uPassword`, `uIsActive`, `uIsFullRecord`, `uIsValidated`, `uDateAdded`, `uLastPasswordChange`, `uHasAvatar`, `uLastOnline`, `uLastLogin`, `uPreviousLogin`, `uNumLogins`, `uLastAuthTypeID`, `uLastIP`, `uTimezone`, `uDefaultLanguage`, `uIsPasswordReset`) VALUES
-(1, 'admin', 'hello@chriswatterston.com', '$2a$12$kJV9yqhfCBt8k6DX6w7xxuSypfc/T0vGL5u2G3M2LTUpzYnRPmRvG', 1, 1, 1, '2017-05-22 15:59:23', '2017-05-22 15:59:23', 0, 1498815362, 1498773437, 1496756417, 6, 1, '7f000001', NULL, NULL, 0);
+(1, 'admin', 'hello@chriswatterston.com', '$2a$12$kJV9yqhfCBt8k6DX6w7xxuSypfc/T0vGL5u2G3M2LTUpzYnRPmRvG', 1, 1, 1, '2017-05-22 15:59:23', '2017-05-22 15:59:23', 0, 1498835149, 1498773437, 1496756417, 6, 1, '7f000001', NULL, NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -10468,7 +10719,8 @@ CREATE TABLE `WorkflowProgress` (
 
 INSERT INTO `WorkflowProgress` (`wpID`, `wpCategoryID`, `wfID`, `wpApproved`, `wpDateAdded`, `wpDateLastAction`, `wpCurrentStatus`, `wrID`, `wpIsCompleted`) VALUES
 (28, 1, 0, 0, '2017-05-24 10:09:00', NULL, 0, 28, 0),
-(29, 1, 0, 0, '2017-06-06 14:46:13', NULL, 0, 29, 0);
+(29, 1, 0, 0, '2017-06-06 14:46:13', NULL, 0, 29, 0),
+(30, 1, 0, 0, '2017-06-30 15:37:14', NULL, 0, 30, 0);
 
 -- --------------------------------------------------------
 
@@ -10683,7 +10935,20 @@ INSERT INTO `WorkflowProgressHistory` (`wphID`, `wpID`, `timestamp`, `object`) V
 (171, 84, '2017-06-27 17:36:48', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"84";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"181";s:4:"cvID";s:1:"6";}'),
 (172, 85, '2017-06-27 17:38:23', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"85";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"181";s:4:"cvID";s:1:"7";}'),
 (173, 86, '2017-06-27 20:17:22', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"86";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"161";s:4:"cvID";s:2:"14";}'),
-(174, 87, '2017-06-27 20:58:06', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"87";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"186";s:4:"cvID";s:1:"5";}');
+(174, 87, '2017-06-27 20:58:06', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"87";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"186";s:4:"cvID";s:1:"5";}'),
+(175, 30, '2017-06-30 14:37:14', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"30";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"195";s:4:"cvID";s:1:"1";}'),
+(176, 31, '2017-06-30 14:37:39', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"31";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"196";s:4:"cvID";s:1:"1";}'),
+(177, 32, '2017-06-30 14:37:46', 'O:48:"Concrete\\Core\\Workflow\\Request\\DeletePageRequest":7:{s:14:"\0*\0wrStatusNum";i:100;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"32";s:5:"error";s:0:"";s:4:"pkID";s:2:"12";s:3:"cID";s:3:"195";}'),
+(178, 33, '2017-06-30 14:40:42', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"33";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"196";s:4:"cvID";s:1:"2";}'),
+(179, 34, '2017-06-30 14:41:01', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"34";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"196";s:4:"cvID";s:1:"3";}'),
+(180, 35, '2017-06-30 14:44:07', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"35";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"196";s:4:"cvID";s:1:"4";}'),
+(181, 36, '2017-06-30 14:47:16', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"36";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"196";s:4:"cvID";s:1:"5";}'),
+(182, 37, '2017-06-30 14:50:23', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"37";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"196";s:4:"cvID";s:1:"6";}'),
+(183, 38, '2017-06-30 15:05:27', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"38";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"196";s:4:"cvID";s:1:"7";}'),
+(184, 39, '2017-06-30 15:05:33', 'O:48:"Concrete\\Core\\Workflow\\Request\\DeletePageRequest":7:{s:14:"\0*\0wrStatusNum";i:100;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"39";s:5:"error";s:0:"";s:4:"pkID";s:2:"12";s:3:"cID";s:3:"196";}'),
+(185, 40, '2017-06-30 15:05:37', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"40";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"162";s:4:"cvID";s:1:"2";}'),
+(186, 41, '2017-06-30 15:06:54', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"41";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"198";s:4:"cvID";s:1:"1";}'),
+(187, 42, '2017-06-30 15:08:07', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"42";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:2:"26";}');
 
 -- --------------------------------------------------------
 
@@ -10713,7 +10978,8 @@ CREATE TABLE `WorkflowRequestObjects` (
 
 INSERT INTO `WorkflowRequestObjects` (`wrID`, `wrObject`) VALUES
 (28, 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"28";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"158";s:4:"cvID";s:1:"4";}'),
-(29, 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"29";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"177";s:4:"cvID";s:1:"4";}');
+(29, 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"29";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"177";s:4:"cvID";s:1:"4";}'),
+(30, 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"30";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"195";s:4:"cvID";s:1:"1";}');
 
 -- --------------------------------------------------------
 
@@ -12973,7 +13239,7 @@ ALTER TABLE `AreaLayoutThemeGridColumns`
 -- AUTO_INCREMENT for table `Areas`
 --
 ALTER TABLE `Areas`
-  MODIFY `arID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=109;
+  MODIFY `arID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=122;
 --
 -- AUTO_INCREMENT for table `atSelectedSocialLinks`
 --
@@ -12983,7 +13249,7 @@ ALTER TABLE `atSelectedSocialLinks`
 -- AUTO_INCREMENT for table `atSelectedTopics`
 --
 ALTER TABLE `atSelectedTopics`
-  MODIFY `avTreeTopicNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
+  MODIFY `avTreeTopicNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
 --
 -- AUTO_INCREMENT for table `atSelectOptionLists`
 --
@@ -13003,7 +13269,7 @@ ALTER TABLE `AttributeKeyCategories`
 -- AUTO_INCREMENT for table `AttributeKeys`
 --
 ALTER TABLE `AttributeKeys`
-  MODIFY `akID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `akID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 --
 -- AUTO_INCREMENT for table `AttributeSets`
 --
@@ -13018,7 +13284,7 @@ ALTER TABLE `AttributeTypes`
 -- AUTO_INCREMENT for table `AttributeValues`
 --
 ALTER TABLE `AttributeValues`
-  MODIFY `avID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1566;
+  MODIFY `avID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1628;
 --
 -- AUTO_INCREMENT for table `AuthenticationTypes`
 --
@@ -13038,7 +13304,7 @@ ALTER TABLE `BannedWords`
 -- AUTO_INCREMENT for table `Blocks`
 --
 ALTER TABLE `Blocks`
-  MODIFY `bID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=207;
+  MODIFY `bID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=218;
 --
 -- AUTO_INCREMENT for table `BlockTypes`
 --
@@ -13073,7 +13339,7 @@ ALTER TABLE `btFormQuestions`
 -- AUTO_INCREMENT for table `btImageSliderEntries`
 --
 ALTER TABLE `btImageSliderEntries`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `btShareThisPage`
 --
@@ -13098,7 +13364,7 @@ ALTER TABLE `btSurveyResults`
 -- AUTO_INCREMENT for table `Collections`
 --
 ALTER TABLE `Collections`
-  MODIFY `cID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=195;
+  MODIFY `cID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=199;
 --
 -- AUTO_INCREMENT for table `ConversationDiscussions`
 --
@@ -13183,12 +13449,12 @@ ALTER TABLE `FileImageThumbnailTypes`
 -- AUTO_INCREMENT for table `Files`
 --
 ALTER TABLE `Files`
-  MODIFY `fID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `fID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 --
 -- AUTO_INCREMENT for table `FileSetFiles`
 --
 ALTER TABLE `FileSetFiles`
-  MODIFY `fsfID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `fsfID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 --
 -- AUTO_INCREMENT for table `FileSets`
 --
@@ -13278,7 +13544,7 @@ ALTER TABLE `JobsLog`
 -- AUTO_INCREMENT for table `Logs`
 --
 ALTER TABLE `Logs`
-  MODIFY `logID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `logID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 --
 -- AUTO_INCREMENT for table `MailImporters`
 --
@@ -13318,12 +13584,12 @@ ALTER TABLE `PageFeeds`
 -- AUTO_INCREMENT for table `PagePaths`
 --
 ALTER TABLE `PagePaths`
-  MODIFY `ppID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=188;
+  MODIFY `ppID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=191;
 --
 -- AUTO_INCREMENT for table `PageTemplates`
 --
 ALTER TABLE `PageTemplates`
-  MODIFY `pTemplateID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `pTemplateID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `PageThemes`
 --
@@ -13338,7 +13604,7 @@ ALTER TABLE `PageTypeComposerControlTypes`
 -- AUTO_INCREMENT for table `PageTypeComposerFormLayoutSetControls`
 --
 ALTER TABLE `PageTypeComposerFormLayoutSetControls`
-  MODIFY `ptComposerFormLayoutSetControlID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+  MODIFY `ptComposerFormLayoutSetControlID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 --
 -- AUTO_INCREMENT for table `PageTypeComposerFormLayoutSets`
 --
@@ -13348,7 +13614,7 @@ ALTER TABLE `PageTypeComposerFormLayoutSets`
 -- AUTO_INCREMENT for table `PageTypeComposerOutputBlocks`
 --
 ALTER TABLE `PageTypeComposerOutputBlocks`
-  MODIFY `ptComposerOutputBlockID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `ptComposerOutputBlockID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 --
 -- AUTO_INCREMENT for table `PageTypeComposerOutputControls`
 --
@@ -13503,7 +13769,7 @@ ALTER TABLE `SystemDatabaseQueryLog`
 -- AUTO_INCREMENT for table `TreeFileNodes`
 --
 ALTER TABLE `TreeFileNodes`
-  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 --
 -- AUTO_INCREMENT for table `TreeGroupNodes`
 --
@@ -13513,7 +13779,7 @@ ALTER TABLE `TreeGroupNodes`
 -- AUTO_INCREMENT for table `TreeNodes`
 --
 ALTER TABLE `TreeNodes`
-  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 --
 -- AUTO_INCREMENT for table `TreeNodeTypes`
 --
@@ -13573,7 +13839,7 @@ ALTER TABLE `UserValidationHashes`
 -- AUTO_INCREMENT for table `WorkflowProgress`
 --
 ALTER TABLE `WorkflowProgress`
-  MODIFY `wpID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `wpID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 --
 -- AUTO_INCREMENT for table `WorkflowProgressCategories`
 --
@@ -13583,12 +13849,12 @@ ALTER TABLE `WorkflowProgressCategories`
 -- AUTO_INCREMENT for table `WorkflowProgressHistory`
 --
 ALTER TABLE `WorkflowProgressHistory`
-  MODIFY `wphID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=175;
+  MODIFY `wphID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=188;
 --
 -- AUTO_INCREMENT for table `WorkflowRequestObjects`
 --
 ALTER TABLE `WorkflowRequestObjects`
-  MODIFY `wrID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `wrID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 --
 -- AUTO_INCREMENT for table `Workflows`
 --

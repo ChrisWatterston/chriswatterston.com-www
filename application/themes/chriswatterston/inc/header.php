@@ -1,10 +1,4 @@
-<?php
-	defined('C5_EXECUTE') or die("Access Denied.");
-/*
-	$gno = \Page::getByPath('/');
-	$globalNotice = $gno->getAttribute('enable_global_notice');
-*/
-?>
+<?php defined('C5_EXECUTE') or die("Access Denied."); ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en-GB">
 <head>
@@ -17,8 +11,8 @@
 	    'pageDescription' => isset($pageDescription) ? $pageDescription : '',
 	    'pageMetaKeywords' => isset($pageMetaKeywords) ? $pageMetaKeywords : ''
 	]);
-	
-    $this->requireAsset('javascript', 'jquery');
+
+	$this->requireAsset('javascript', 'jquery');
 ?>
 
 <link rel="stylesheet" type="text/css" href="<?php echo $view->getThemePath()?>/css/core.css" />

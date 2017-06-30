@@ -1,34 +1,6 @@
 TO DO ----------
-- list styling (http://chriswatterston.com-www.dev/index.php/blog/starting-2016-old-challenges)
 - check images throughout pages
-- 
+- check links and link titles throughout site
+- check meta data on all pages
 - read over all website content to ensure everything is perfect, improve where possible.
 
-
-Lost Pages ----------
-- 'There Is No Cloud' Copyright Protection (/blog/there-no-cloud-copyright-protection)
-- There is no cloud: Getting to #1 in the Sticker Mule Marketplace (/blog/there-no-cloud-getting-1-sticker-mule-marketplace)
-- Your New Website Statistics Dashboard (/blog/your-new-website-statistics-dashboard)
-
-
-
-ACCESS TOKEN----------
-EAACEdEose0cBADSZBtdgdZBoAbBCZAM1J56aSc4Vw3zgC8tUoJdVCg4sC4v42NzDIGLMgsT7NXfXaSuPEZA6ERt75iEPnXTm6hjrA6vYX3Fl5tJ4fDZBrHwYgaNz33YrEpN2SbDoN8FQoQZBXUZBLF60XZBDcQniIZCgj01kRkNyLIfIBq8hFiNdZC
-
-EXPLORER ----------
-https://graph.facebook.com/v2.9/chriswatterston.co/?fields=posts.limit(4)%7Bfull_picture%2Cmessage%2Ctype%2Clink%7D%2Clink&access_token=EAACEdEose0cBADSZBtdgdZBoAbBCZAM1J56aSc4Vw3zgC8tUoJdVCg4sC4v42NzDIGLMgsT7NXfXaSuPEZA6ERt75iEPnXTm6hjrA6vYX3Fl5tJ4fDZBrHwYgaNz33YrEpN2SbDoN8FQoQZBXUZBLF60XZBDcQniIZCgj01kRkNyLIfIBq8hFiNdZC
-
-
-CODE ----------
-$request = new FacebookRequest(
-  $session,
-  'GET',
-  '/chriswatterston.co/',
-  array(
-    'fields' => 'posts.limit(4){full_picture,message,type,link},link'
-  )
-);
-
-$response = $request->execute();
-$graphObject = $response->getGraphObject();
-/* handle the result */

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jun 30, 2017 at 04:09 PM
+-- Generation Time: Jul 04, 2017 at 06:03 PM
 -- Server version: 5.7.13
 -- PHP Version: 5.6.23
 
@@ -356,7 +356,10 @@ INSERT INTO `Areas` (`arID`, `cID`, `arHandle`, `arOverrideCollectionPermissions
 (118, 197, 'Main Body Three', 0, 0, 0, 0),
 (119, 198, 'Main Body', 0, 0, 0, 0),
 (120, 198, 'Main Body Two', 0, 0, 0, 0),
-(121, 198, 'Main Body Three', 0, 0, 0, 0);
+(121, 198, 'Main Body Three', 0, 0, 0, 0),
+(122, 199, 'Main Body', 0, 0, 0, 0),
+(123, 199, 'Main Body Two', 0, 0, 0, 0),
+(124, 199, 'Main Body Three', 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -796,7 +799,19 @@ INSERT INTO `atDefault` (`value`, `avID`) VALUES
 ('Surveying up a Website Redesign with CD Surveys Ltd', 1622),
 ('I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', 1623),
 ('website redesign, company website, surveying, design, web development, web project', 1624),
-('CD Surveys Ltd', 1627);
+('CD Surveys Ltd', 1627),
+('Surveying up a Website Redesign with CD Surveys Ltd', 1732),
+('I\'ve had a long running relationship with CD Surveys Ltd for many years now, resulting in a multitude of large and small projects. Ranging from small development changes, right through to displaying database on their wall screening systems. Working with CD Surveys always gets me exciting because they are open to ideas and moving forward with technology. ', 1733),
+('website redesign, company website, surveying, design, web development, web project', 1734),
+('CD Surveys Ltd', 1737),
+('Surveying up a Website Redesign with CD Surveys Ltd', 1756),
+('I\'ve had a long running relationship with CD Surveys Ltd for many years now, resulting in a multitude of large and small projects. Ranging from small development changes, through to their network infrastructure. Working with CD Surveys always gets me exciting because they are open to ideas and moving forward with technology.', 1757),
+('website redesign, company website, surveying, design, web development, web project', 1758),
+('CD Surveys Ltd', 1761),
+('Ford van graphical sign writing', 1854),
+('An extension of our relationship with CD Surveys, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials but still ensure that the design caught everyones eye.', 1855),
+('graphical sign writing, ford sign writing, van design', 1856),
+('CD Surveys Ltd', 1859);
 
 -- --------------------------------------------------------
 
@@ -933,7 +948,10 @@ INSERT INTO `atFile` (`fID`, `avID`) VALUES
 (19, 1584),
 (19, 1589),
 (19, 1595),
-(19, 1625);
+(19, 1625),
+(19, 1735),
+(19, 1759),
+(21, 1857);
 
 -- --------------------------------------------------------
 
@@ -1008,7 +1026,11 @@ INSERT INTO `atNumber` (`value`, `avID`) VALUES
 ('454.0000', 1564),
 ('327.0000', 1565),
 ('580.0000', 1574),
-('215.0000', 1575);
+('215.0000', 1575),
+('1441.0000', 1628),
+('1137.0000', 1629),
+('595.0000', 1840),
+('450.0000', 1841);
 
 -- --------------------------------------------------------
 
@@ -1110,7 +1132,10 @@ INSERT INTO `atSelectedTopics` (`avTreeTopicNodeID`, `treeNodeID`, `avID`) VALUE
 (82, 21, 1585),
 (83, 21, 1590),
 (84, 21, 1596),
-(85, 21, 1626);
+(85, 21, 1626),
+(103, 21, 1736),
+(107, 21, 1760),
+(109, 20, 1858);
 
 -- --------------------------------------------------------
 
@@ -1288,7 +1313,10 @@ INSERT INTO `atTopic` (`avID`) VALUES
 (1585),
 (1590),
 (1596),
-(1626);
+(1626),
+(1736),
+(1760),
+(1858);
 
 -- --------------------------------------------------------
 
@@ -1598,6 +1626,9 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1586, 1),
 (1592, 1),
 (1622, 1),
+(1732, 1),
+(1756, 1),
+(1854, 1),
 (205, 2),
 (210, 2),
 (211, 2),
@@ -1662,6 +1693,9 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1587, 2),
 (1593, 2),
 (1623, 2),
+(1733, 2),
+(1757, 2),
+(1855, 2),
 (2, 3),
 (3, 3),
 (4, 3),
@@ -1805,6 +1839,9 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1588, 3),
 (1594, 3),
 (1624, 3),
+(1734, 3),
+(1758, 3),
+(1856, 3),
 (117, 4),
 (124, 4),
 (118, 5),
@@ -1869,6 +1906,8 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1494, 16),
 (1564, 16),
 (1574, 16),
+(1628, 16),
+(1840, 16),
 (188, 17),
 (334, 17),
 (336, 17),
@@ -1888,6 +1927,8 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1495, 17),
 (1565, 17),
 (1575, 17),
+(1629, 17),
+(1841, 17),
 (206, 20),
 (212, 20),
 (215, 20),
@@ -1955,6 +1996,9 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1589, 20),
 (1595, 20),
 (1625, 20),
+(1735, 20),
+(1759, 20),
+(1857, 20),
 (235, 21),
 (268, 21),
 (331, 21),
@@ -2025,6 +2069,9 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1590, 22),
 (1596, 22),
 (1626, 22),
+(1736, 22),
+(1760, 22),
+(1858, 22),
 (341, 23),
 (347, 23),
 (357, 23),
@@ -2038,7 +2085,10 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (418, 23),
 (1591, 24),
 (1597, 24),
-(1627, 24);
+(1627, 24),
+(1737, 24),
+(1761, 24),
+(1859, 24);
 
 -- --------------------------------------------------------
 
@@ -2448,8 +2498,17 @@ INSERT INTO `Blocks` (`bID`, `bName`, `bDateAdded`, `bDateModified`, `bFilename`
 (213, '', '2017-06-30 15:59:22', '2017-06-30 15:59:22', NULL, '0', 14, 1, NULL),
 (214, '', '2017-06-30 16:00:31', '2017-06-30 16:01:39', NULL, '0', 14, 1, NULL),
 (215, '', '2017-06-30 16:01:05', '2017-06-30 16:01:05', NULL, '0', 14, 1, NULL),
-(216, '', '2017-06-30 16:03:49', '2017-06-30 16:03:49', NULL, '0', 38, 1, NULL),
-(217, '', '2017-06-30 16:08:01', '2017-06-30 16:08:02', 'chris-watterston-latest-case-studies', '1', 35, 1, NULL);
+(216, '', '2017-06-30 16:03:49', '2017-07-04 12:47:24', 'chris-watterston-image-slider', '0', 38, 1, NULL),
+(217, '', '2017-06-30 16:08:01', '2017-06-30 16:08:02', 'chris-watterston-latest-case-studies', '1', 35, 1, NULL),
+(218, '', '2017-07-04 12:38:38', '2017-07-04 12:38:38', NULL, '1', 38, 1, NULL),
+(219, '', '2017-07-04 12:47:40', '2017-07-04 12:47:40', 'chris-watterston-image-slider', '1', 38, 1, NULL),
+(220, '', '2017-07-04 14:32:05', '2017-07-04 14:32:05', 'chris-watterston-image-slider', '1', 38, 1, NULL),
+(221, '', '2017-07-04 15:12:16', '2017-07-04 15:12:16', 'chris-watterston-image-slider', '1', 38, 1, NULL),
+(223, '', '2017-07-04 15:26:07', '2017-07-04 15:27:00', NULL, '1', 14, 1, NULL),
+(226, '', '2017-07-04 15:55:51', '2017-07-04 15:58:11', NULL, '1', 14, 1, NULL),
+(230, '', '2017-07-04 17:26:03', '2017-07-04 17:26:22', NULL, '1', 14, 1, NULL),
+(231, '', '2017-07-04 17:27:35', '2017-07-04 17:27:35', NULL, '1', 14, 1, NULL),
+(232, '', '2017-07-04 17:29:52', '2017-07-04 17:29:52', 'chris-watterston-image-slider', '1', 38, 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -2821,7 +2880,11 @@ INSERT INTO `btContentLocal` (`bID`, `content`) VALUES
 (212, '<h3 id="focus-on-process-before-artifact">Process&nbsp;and reseach&nbsp;</h3>\r\n\r\n<p>Next is a look at how we can focus on process before artifact.&nbsp;Show Research In Clear, Process-Oriented Chunks.&nbsp;Show your research with photos, charts or a list of findings, even if it is not packaged neatly.</p>\r\n'),
 (213, '<h3>Lessons Learned</h3>\r\n\r\n<p>As we looked at before, case studies should emphasize design knowledge and creative processes. Of course, that includes visual, code and UX assumptions that didn&rsquo;t hold up. There will always be lessons learned during projects, and sharing those is crucial so that others can learn from them.</p>\r\n'),
 (214, '<h3>Testimonials</h3>\r\n\r\n<blockquote>There&rsquo;s something powerful about hearing directly from users, team members and clients. Short quotes that contain personal observations about the project are often the most accessible to readers.</blockquote>\r\n'),
-(215, '<h3>Conclusion</h3>\r\n\r\n<p>I&rsquo;ve tried to show that by focusing on process rather than artifact, we can build and share in-depth case studies. The studies allow us to reframe the conversation around design process and the humanity in what we create, rather than perfect deliverables.</p>\r\n');
+(215, '<h3>Conclusion</h3>\r\n\r\n<p>I&rsquo;ve tried to show that by focusing on process rather than artifact, we can build and share in-depth case studies. The studies allow us to reframe the conversation around design process and the humanity in what we create, rather than perfect deliverables.</p>\r\n'),
+(223, '<h3>Project goal</h3>\r\n\r\n<p>Spending time discssing previous CD Surveys Ltd&nbsp;website with the directors, David and Andrew, it became clear that CD Surveys Ltd&nbsp;were stuck in the past in terms of their online &quot;message&quot;, web presence and technology. The website was being maintained and built in-house, with personnel that were not familar with technologies, nor pushing their website forward - afterall, their day job was being skilled in <a href="https://en.wikipedia.org/wiki/Surveying" target="_blank">Surveying</a> and <a href="https://en.wikipedia.org/wiki/Computer-aided_design" target="_blank">CAD</a> (Computer Aided Design).</p>\r\n\r\n<p>There was a need for us to take a level of control and ownership, to ensure areas didn&#39;t break or full behind. A full re-design and rebuild was actioned, with a clear messions that the visitor should feel that they have known CD Surveys Ltd for years. A blog was introduced, including more simplified copy and intuitive imagry.</p>\r\n'),
+(226, '<h3>Conclusion</h3>\r\n\r\n<p>We feel that this project has not yet come to a close, but will continue to &quot;roll&quot; and improve, alongside CD Surveys Ltd. As technology imrpoves, we have plans to continue to implement.</p>\r\n\r\n<p>The outcome was fantastic. Every idea presented within the van concept was achieved. Make sure you keep your eyes peels.</p>\r\n'),
+(230, '<h3>Conclusion</h3>\r\n\r\n<p>We feel that this project has not yet come to a close, but will continue to &quot;roll&quot; and improve, alongside CD Surveys Ltd. As technology imrpoves, we have plans to continue to implement.</p>\r\n\r\n<p>We look forward to see how this project will grow over time!</p>\r\n'),
+(231, '<h3>Conclusion</h3>\r\n\r\n<p>We feel that this project has not yet come to a close, but will continue to &quot;roll&quot; and improve, alongside CD Surveys Ltd. As technology imrpoves, we have plans to continue to implement.</p>\r\n\r\n<p>We look forward to see how this project will grow over time!</p>\r\n\r\n<p><a class="abtn" href="http://www.cdsurveys.com/" target="_blank">Take a look at their website</a></p>\r\n');
 
 -- --------------------------------------------------------
 
@@ -3188,7 +3251,12 @@ CREATE TABLE `btImageSlider` (
 --
 
 INSERT INTO `btImageSlider` (`bID`, `navigationType`, `timeout`, `speed`, `noAnimate`, `pause`, `maxWidth`) VALUES
-(216, 2, 4000, 500, 0, 0, 0);
+(216, 2, 4000, 500, 1, 0, 0),
+(218, 2, 4000, 500, 1, 0, 0),
+(219, 2, 4000, 500, 1, 0, 0),
+(220, 2, 4000, 500, 0, 0, 0),
+(221, 2, 4000, 500, 0, 0, 0),
+(232, 2, 4000, 500, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -3213,8 +3281,16 @@ CREATE TABLE `btImageSliderEntries` (
 --
 
 INSERT INTO `btImageSliderEntries` (`id`, `bID`, `cID`, `fID`, `linkURL`, `internalLinkCID`, `title`, `description`, `sortOrder`) VALUES
-(1, 216, 0, 16, '', 0, 'Slide Image 1', '<p>Vestibulum quis molestie quam. Mauris quis tortor nec metus ornare tincidunt eu et nunc. Ut fringilla luctus convallis.</p>\r\n', 0),
-(2, 216, 0, 1, '', 0, 'Slide Image 2', '<p>Mauris quis tortor nec metus ornare tincidunt eu et nunc. Ut fringilla luctus convallis. Vestibulum quis molestie quam.</p>\r\n', 1);
+(3, 216, 0, 16, '', 0, 'Slide Image 1', '<p>Vestibulum quis molestie quam. Mauris quis tortor nec metus ornare tincidunt eu et nunc. Ut fringilla luctus convallis.</p>\r\n', 0),
+(4, 216, 0, 1, '', 0, 'Slide Image 2', '<p>Mauris quis tortor nec metus ornare tincidunt eu et nunc. Ut fringilla luctus convallis. Vestibulum quis molestie quam.</p>\r\n', 1),
+(7, 218, 0, 20, '', 0, 'Slide Image 1', '<p>Vestibulum quis molestie quam. Mauris quis tortor nec metus ornare tincidunt eu et nunc. Ut fringilla luctus convallis.</p>\r\n', 0),
+(8, 218, 0, 1, '', 0, 'Slide Image 2', '<p>Mauris quis tortor nec metus ornare tincidunt eu et nunc. Ut fringilla luctus convallis. Vestibulum quis molestie quam.</p>\r\n', 1),
+(9, 219, 0, 20, '', 0, 'Slide Image 1', '<p>Vestibulum quis molestie quam. Mauris quis tortor nec metus ornare tincidunt eu et nunc. Ut fringilla luctus convallis.</p>\r\n', 0),
+(10, 219, 0, 1, '', 0, 'Slide Image 2', '<p>Mauris quis tortor nec metus ornare tincidunt eu et nunc. Ut fringilla luctus convallis. Vestibulum quis molestie quam.</p>\r\n', 1),
+(13, 220, 0, 20, '', 0, 'Slide Image 1', '<p>Vestibulum quis molestie quam. Mauris quis tortor nec metus ornare tincidunt eu et nunc. Ut fringilla luctus convallis.</p>\r\n', 0),
+(14, 220, 0, 1, '', 0, 'Slide Image 2', '<p>Mauris quis tortor nec metus ornare tincidunt eu et nunc. Ut fringilla luctus convallis. Vestibulum quis molestie quam.</p>\r\n', 1),
+(17, 221, 0, 20, '', 0, 'Jumping straight to the point', '<p>We agreed that the previous website didn&#39;t sent a very clear message to the visitor as to what CD Surveys Ltd could actully provide to the client.</p>\r\n', 0),
+(19, 232, 0, 20, '', 0, 'Jumping straight to the point', '<p>We designed the websites homepage to tell&nbsp;the visitor their message instantly, providing them a service&nbsp;in which they require.</p>\r\n', 0);
 
 -- --------------------------------------------------------
 
@@ -4311,11 +4387,77 @@ INSERT INTO `CollectionAttributeValues` (`cID`, `cvID`, `akID`, `avID`) VALUES
 (196, 7, 22, 1596),
 (196, 7, 24, 1597),
 (198, 1, 1, 1622),
+(198, 2, 1, 1622),
+(198, 3, 1, 1622),
+(198, 4, 1, 1622),
+(198, 5, 1, 1622),
+(198, 6, 1, 1622),
+(198, 7, 1, 1622),
+(198, 8, 1, 1622),
+(198, 9, 1, 1622),
 (198, 1, 2, 1623),
+(198, 2, 2, 1623),
+(198, 3, 2, 1623),
+(198, 4, 2, 1623),
+(198, 5, 2, 1623),
+(198, 6, 2, 1623),
+(198, 7, 2, 1623),
+(198, 8, 2, 1623),
+(198, 9, 2, 1623),
 (198, 1, 3, 1624),
+(198, 2, 3, 1624),
+(198, 3, 3, 1624),
+(198, 4, 3, 1624),
+(198, 5, 3, 1624),
+(198, 6, 3, 1624),
+(198, 7, 3, 1624),
+(198, 8, 3, 1624),
+(198, 9, 3, 1624),
 (198, 1, 20, 1625),
+(198, 2, 20, 1625),
+(198, 3, 20, 1625),
+(198, 4, 20, 1625),
+(198, 5, 20, 1625),
+(198, 6, 20, 1625),
+(198, 7, 20, 1625),
+(198, 8, 20, 1625),
+(198, 9, 20, 1625),
 (198, 1, 22, 1626),
-(198, 1, 24, 1627);
+(198, 2, 22, 1626),
+(198, 3, 22, 1626),
+(198, 4, 22, 1626),
+(198, 5, 22, 1626),
+(198, 6, 22, 1626),
+(198, 7, 22, 1626),
+(198, 8, 22, 1626),
+(198, 9, 22, 1626),
+(198, 1, 24, 1627),
+(198, 2, 24, 1627),
+(198, 3, 24, 1627),
+(198, 4, 24, 1627),
+(198, 5, 24, 1627),
+(198, 6, 24, 1627),
+(198, 7, 24, 1627),
+(198, 8, 24, 1627),
+(198, 9, 24, 1627),
+(198, 10, 1, 1732),
+(198, 10, 2, 1733),
+(198, 10, 3, 1734),
+(198, 10, 20, 1735),
+(198, 10, 22, 1736),
+(198, 10, 24, 1737),
+(198, 11, 1, 1756),
+(198, 11, 2, 1757),
+(198, 11, 3, 1758),
+(198, 11, 20, 1759),
+(198, 11, 22, 1760),
+(198, 11, 24, 1761),
+(199, 1, 1, 1854),
+(199, 1, 2, 1855),
+(199, 1, 3, 1856),
+(199, 1, 20, 1857),
+(199, 1, 22, 1858),
+(199, 1, 24, 1859);
 
 -- --------------------------------------------------------
 
@@ -4530,7 +4672,8 @@ INSERT INTO `Collections` (`cID`, `cDateAdded`, `cDateModified`, `cHandle`) VALU
 (195, '2017-06-30 15:37:14', '2017-06-30 15:37:46', ''),
 (196, '2017-06-30 15:37:39', '2017-06-30 16:05:33', ''),
 (197, '2017-06-30 15:50:37', '2017-06-30 15:50:37', NULL),
-(198, '2017-06-30 16:05:49', '2017-06-30 16:06:54', '');
+(198, '2017-06-30 16:05:49', '2017-07-04 17:35:46', ''),
+(199, '2017-07-04 17:47:26', '2017-07-04 17:52:19', '');
 
 -- --------------------------------------------------------
 
@@ -4699,7 +4842,8 @@ INSERT INTO `CollectionSearchIndexAttributes` (`cID`, `ak_meta_title`, `ak_meta_
 (192, 'There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 'The Sticker Mule marketplace has been growing rapidly over the past couple of years. Sticker Mule loves seeing applications and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers.', 'sticker mule, marketplace, sticker design', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 1, '||/Posts/News||', NULL, NULL, NULL),
 (195, 'Surveying up a Website Redesign with CD Surveys Ltd', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', 'website redesign, company website, surveying, design, web development, web project', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, '||/Posts/Web Design||', NULL, NULL, NULL),
 (196, 'Surveying up a Website Redesign with CD Surveys Ltd', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', 'website redesign, company website, surveying, design, web development, web project', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, '||/Posts/Web Design||', NULL, NULL, 'CD Surveys Ltd'),
-(198, 'Surveying up a Website Redesign with CD Surveys Ltd', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', 'website redesign, company website, surveying, design, web development, web project', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, '||/Posts/Web Design||', NULL, NULL, 'CD Surveys Ltd');
+(198, 'Surveying up a Website Redesign with CD Surveys Ltd', 'I\'ve had a long running relationship with CD Surveys Ltd for many years now, resulting in a multitude of large and small projects. Ranging from small development changes, through to their network infrastructure. Working with CD Surveys always gets me exciting because they are open to ideas and moving forward with technology.', 'website redesign, company website, surveying, design, web development, web project', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, '||/Posts/Web Design||', NULL, NULL, 'CD Surveys Ltd'),
+(199, 'Ford van graphical sign writing', 'An extension of our relationship with CD Surveys, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials but still ensure that the design caught everyones eye.', 'graphical sign writing, ford sign writing, van design', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, '||/Posts/Print Design||', NULL, NULL, 'CD Surveys Ltd');
 
 -- --------------------------------------------------------
 
@@ -5240,7 +5384,61 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (198, 1, 213, 'Main Body Three', 119, 0, 0, 0, 0, 0, 0, 0),
 (198, 1, 214, 'Main Body Three', 120, 1, 0, 0, 0, 0, 0, 0),
 (198, 1, 215, 'Main Body Three', 121, 2, 0, 0, 0, 0, 0, 0),
-(198, 1, 216, 'Main Body Two', 122, 0, 0, 0, 0, 0, 0, 0);
+(198, 1, 216, 'Main Body Two', 122, 0, 0, 0, 0, 0, 0, 0),
+(198, 2, 211, 'Main Body', 117, 0, 0, 0, 0, 0, 0, 0),
+(198, 2, 212, 'Main Body', 118, 1, 0, 0, 0, 0, 0, 0),
+(198, 2, 213, 'Main Body Three', 119, 0, 0, 0, 0, 0, 0, 0),
+(198, 2, 214, 'Main Body Three', 120, 1, 0, 0, 0, 0, 0, 0),
+(198, 2, 215, 'Main Body Three', 121, 2, 0, 0, 0, 0, 0, 0),
+(198, 2, 218, 'Main Body Two', 122, 0, 1, 0, 0, 0, 0, 0),
+(198, 3, 211, 'Main Body', 117, 0, 0, 0, 0, 0, 0, 0),
+(198, 3, 212, 'Main Body', 118, 1, 0, 0, 0, 0, 0, 0),
+(198, 3, 213, 'Main Body Three', 119, 0, 0, 0, 0, 0, 0, 0),
+(198, 3, 214, 'Main Body Three', 120, 1, 0, 0, 0, 0, 0, 0),
+(198, 3, 215, 'Main Body Three', 121, 2, 0, 0, 0, 0, 0, 0),
+(198, 3, 219, 'Main Body Two', 122, 0, 1, 0, 0, 0, 0, 0),
+(198, 4, 211, 'Main Body', 117, 0, 0, 0, 0, 0, 0, 0),
+(198, 4, 212, 'Main Body', 118, 1, 0, 0, 0, 0, 0, 0),
+(198, 4, 213, 'Main Body Three', 119, 0, 0, 0, 0, 0, 0, 0),
+(198, 4, 214, 'Main Body Three', 120, 1, 0, 0, 0, 0, 0, 0),
+(198, 4, 215, 'Main Body Three', 121, 2, 0, 0, 0, 0, 0, 0),
+(198, 4, 220, 'Main Body Two', 122, 0, 1, 0, 0, 0, 0, 0),
+(198, 5, 211, 'Main Body', 117, 0, 0, 0, 0, 0, 0, 0),
+(198, 5, 212, 'Main Body', 118, 1, 0, 0, 0, 0, 0, 0),
+(198, 5, 213, 'Main Body Three', 119, 0, 0, 0, 0, 0, 0, 0),
+(198, 5, 214, 'Main Body Three', 120, 1, 0, 0, 0, 0, 0, 0),
+(198, 5, 215, 'Main Body Three', 121, 2, 0, 0, 0, 0, 0, 0),
+(198, 5, 221, 'Main Body Two', 122, 0, 1, 0, 0, 0, 0, 0),
+(198, 6, 212, 'Main Body', 118, 1, 0, 0, 0, 0, 0, 0),
+(198, 6, 213, 'Main Body Three', 119, 0, 0, 0, 0, 0, 0, 0),
+(198, 6, 214, 'Main Body Three', 120, 1, 0, 0, 0, 0, 0, 0),
+(198, 6, 215, 'Main Body Three', 121, 2, 0, 0, 0, 0, 0, 0),
+(198, 6, 221, 'Main Body Two', 122, 0, 0, 0, 0, 0, 0, 0),
+(198, 6, 223, 'Main Body', 117, 0, 1, 0, 0, 0, 0, 0),
+(198, 7, 212, 'Main Body', 118, 1, 0, 0, 0, 0, 0, 0),
+(198, 7, 213, 'Main Body Three', 119, 0, 0, 0, 0, 0, 0, 0),
+(198, 7, 214, 'Main Body Three', 120, 1, 0, 0, 0, 0, 0, 0),
+(198, 7, 221, 'Main Body Two', 122, 0, 0, 0, 0, 0, 0, 0),
+(198, 7, 223, 'Main Body', 117, 0, 0, 0, 0, 0, 0, 0),
+(198, 7, 226, 'Main Body Three', 121, 2, 1, 0, 0, 0, 0, 0),
+(198, 8, 221, 'Main Body Two', 122, 0, 0, 0, 0, 0, 0, 0),
+(198, 8, 223, 'Main Body', 117, 0, 0, 0, 0, 0, 0, 0),
+(198, 8, 230, 'Main Body Three', 121, 0, 1, 0, 0, 0, 0, 0),
+(198, 9, 221, 'Main Body Two', 122, 0, 0, 0, 0, 0, 0, 0),
+(198, 9, 223, 'Main Body', 117, 0, 0, 0, 0, 0, 0, 0),
+(198, 9, 231, 'Main Body Three', 121, 0, 1, 0, 0, 0, 0, 0),
+(198, 10, 223, 'Main Body', 117, 0, 0, 0, 0, 0, 0, 0),
+(198, 10, 231, 'Main Body Three', 121, 0, 0, 0, 0, 0, 0, 0),
+(198, 10, 232, 'Main Body Two', 122, 0, 1, 0, 0, 0, 0, 0),
+(198, 11, 223, 'Main Body', 117, 0, 0, 0, 0, 0, 0, 0),
+(198, 11, 231, 'Main Body Three', 121, 0, 0, 0, 0, 0, 0, 0),
+(198, 11, 232, 'Main Body Two', 122, 0, 0, 0, 0, 0, 0, 0),
+(199, 1, 211, 'Main Body', 117, 0, 0, 0, 0, 0, 0, 0),
+(199, 1, 212, 'Main Body', 118, 1, 0, 0, 0, 0, 0, 0),
+(199, 1, 213, 'Main Body Three', 119, 0, 0, 0, 0, 0, 0, 0),
+(199, 1, 214, 'Main Body Three', 120, 1, 0, 0, 0, 0, 0, 0),
+(199, 1, 215, 'Main Body Three', 121, 2, 0, 0, 0, 0, 0, 0),
+(199, 1, 216, 'Main Body Two', 122, 0, 0, 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -5812,7 +6010,18 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (196, 6, 'Surveying up a Website Redesign', 'surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 15:30:00', '2017-06-30 15:50:21', 'Version 6', 0, 0, 1, 1, 2, 10, NULL, NULL),
 (196, 7, 'Surveying up a Website Redesign', 'surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 15:30:00', '2017-06-30 16:05:22', 'Version 7', 1, 0, 1, 1, 2, 10, NULL, NULL),
 (197, 1, '', NULL, NULL, '2017-06-30 15:50:37', '2017-06-30 15:50:37', 'Initial Version', 1, 0, NULL, NULL, 0, 10, NULL, NULL),
-(198, 1, 'Surveying up a Website Redesign', 'cd-surves-ltd-surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 16:05:00', '2017-06-30 16:05:49', 'Initial Version', 1, 0, 1, 1, 0, 10, NULL, NULL);
+(198, 1, 'Surveying up a Website Redesign', 'cd-surves-ltd-surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 16:05:00', '2017-06-30 16:05:49', 'Initial Version', 0, 0, 1, 1, 0, 10, NULL, NULL),
+(198, 2, 'Surveying up a Website Redesign', 'cd-surves-ltd-surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 16:05:00', '2017-07-04 12:38:38', 'Version 2', 0, 0, 1, 1, 0, 10, NULL, NULL),
+(198, 3, 'Surveying up a Website Redesign', 'cd-surves-ltd-surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 16:05:00', '2017-07-04 12:47:39', 'Version 3', 0, 0, 1, 1, 0, 10, NULL, NULL),
+(198, 4, 'Surveying up a Website Redesign', 'cd-surves-ltd-surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 16:05:00', '2017-07-04 14:32:05', 'Version 4', 0, 0, 1, 1, 0, 10, NULL, NULL),
+(198, 5, 'Surveying up a Website Redesign', 'cd-surves-ltd-surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 16:05:00', '2017-07-04 15:12:16', 'Version 5', 0, 0, 1, 1, 0, 10, NULL, NULL),
+(198, 6, 'Surveying up a Website Redesign', 'cd-surves-ltd-surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 16:05:00', '2017-07-04 15:26:07', 'Version 6', 0, 0, 1, 1, 0, 10, NULL, NULL),
+(198, 7, 'Surveying up a Website Redesign', 'cd-surves-ltd-surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 16:05:00', '2017-07-04 15:55:51', 'Version 7', 0, 0, 1, 1, 0, 10, NULL, NULL),
+(198, 8, 'Surveying up a Website Redesign', 'cd-surves-ltd-surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 16:05:00', '2017-07-04 17:25:05', 'Version 8', 0, 0, 1, 1, 0, 10, NULL, NULL),
+(198, 9, 'Surveying up a Website Redesign', 'cd-surves-ltd-surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 16:05:00', '2017-07-04 17:27:35', 'Version 9', 0, 0, 1, 1, 0, 10, NULL, NULL),
+(198, 10, 'Surveying up a Website Redesign', 'cd-surves-ltd-surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys Ltd for many years now, resulting in a multitude of large and small projects. Ranging from small development changes, right through to displaying database on their wall screening systems. Working with CD Surveys always gets me exciting because they are open to ideas and moving forward with technology. ', '2016-09-09 16:05:00', '2017-07-04 17:29:52', 'New Version 10', 0, 0, 1, 1, 0, 10, NULL, NULL),
+(198, 11, 'Surveying up a Website Redesign', 'cd-surves-ltd-surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys Ltd for many years now, resulting in a multitude of large and small projects. Ranging from small development changes, through to their network infrastructure. Working with CD Surveys always gets me exciting because they are open to ideas and moving forward with technology. ', '2016-09-09 16:05:00', '2017-07-04 17:35:20', 'New Version 11', 1, 0, 1, 1, 0, 10, NULL, NULL),
+(199, 1, 'Ford van graphical sign writing', 'cd-surveys-ltd-ford-van-graphical-sign-writing', 'An extension of our relationship with CD Surveys, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials but still ensure that the design caught everyones eye.', '2017-07-04 17:47:00', '2017-07-04 17:47:26', 'Initial Version', 1, 0, 1, 1, 0, 10, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -6482,7 +6691,11 @@ INSERT INTO `FileAttributeValues` (`fID`, `fvID`, `akID`, `avID`) VALUES
 (18, 1, 16, 1564),
 (18, 1, 17, 1565),
 (19, 1, 16, 1574),
-(19, 1, 17, 1575);
+(19, 1, 17, 1575),
+(20, 1, 16, 1628),
+(20, 1, 17, 1629),
+(21, 1, 16, 1840),
+(21, 1, 17, 1841);
 
 -- --------------------------------------------------------
 
@@ -6541,7 +6754,11 @@ INSERT INTO `FileImageThumbnailPaths` (`fileID`, `fileVersionID`, `thumbnailType
 (18, 1, 'file_manager_listing', 1, '/thumbnails/file_manager_listing/3514/9858/1121/there-is-no-cloud-stats.jpg', 1),
 (18, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/3514/9858/1121/there-is-no-cloud-stats.jpg', 1),
 (19, 1, 'file_manager_listing', 1, '/thumbnails/file_manager_listing/1414/9883/3397/cdsurveys-scanner.jpg', 1),
-(19, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/1414/9883/3397/cdsurveys-scanner.jpg', 1);
+(19, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/1414/9883/3397/cdsurveys-scanner.jpg', 1),
+(20, 1, 'file_manager_listing', 1, '/thumbnails/file_manager_listing/5814/9916/8291/cd-surveys-ltd-homepage-website-design.jpg', 1),
+(20, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/5814/9916/8291/cd-surveys-ltd-homepage-website-design.jpg', 1),
+(21, 1, 'file_manager_listing', 1, '/thumbnails/file_manager_listing/4014/9918/7104/cdsurveysltd-company-van-signwriting-side.jpg', 1),
+(21, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/4014/9918/7104/cdsurveysltd-company-van-signwriting-side.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -6655,7 +6872,9 @@ INSERT INTO `Files` (`fID`, `fDateAdded`, `fPassword`, `fOverrideSetPermissions`
 (16, '2017-06-21 15:23:39', NULL, 0, 0, 7, 1, 1),
 (17, '2017-06-21 17:24:35', NULL, 0, 0, 7, 1, 1),
 (18, '2017-06-27 17:32:01', NULL, 0, 0, 7, 1, 1),
-(19, '2017-06-30 15:36:37', NULL, 0, 0, 7, 1, 1);
+(19, '2017-06-30 15:36:37', NULL, 0, 0, 7, 1, 1),
+(20, '2017-07-04 12:38:11', NULL, 0, 0, 7, 1, 1),
+(21, '2017-07-04 17:51:44', NULL, 0, 0, 7, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -6693,7 +6912,9 @@ INSERT INTO `FileSearchIndexAttributes` (`fID`, `ak_width`, `ak_height`, `ak_dur
 (16, '1440.0000', '415.0000', '0.0000'),
 (17, '1452.0000', '500.0000', '0.0000'),
 (18, '454.0000', '327.0000', '0.0000'),
-(19, '580.0000', '215.0000', '0.0000');
+(19, '580.0000', '215.0000', '0.0000'),
+(20, '1441.0000', '1137.0000', '0.0000'),
+(21, '595.0000', '450.0000', '0.0000');
 
 -- --------------------------------------------------------
 
@@ -6730,7 +6951,9 @@ INSERT INTO `FileSetFiles` (`fsfID`, `fID`, `fsID`, `timestamp`, `fsDisplayOrder
 (14, 16, 2, '2017-06-21 14:24:13', 1),
 (15, 17, 1, '2017-06-21 16:24:51', 12),
 (16, 18, 1, '2017-06-27 16:32:20', 13),
-(17, 19, 2, '2017-06-30 14:36:45', 2);
+(17, 19, 2, '2017-06-30 14:36:45', 2),
+(18, 20, 3, '2017-07-04 11:38:24', 0),
+(19, 21, 3, '2017-07-04 16:51:52', 1);
 
 -- --------------------------------------------------------
 
@@ -6752,7 +6975,8 @@ CREATE TABLE `FileSets` (
 
 INSERT INTO `FileSets` (`fsID`, `fsName`, `uID`, `fsType`, `fsOverrideGlobalPermissions`) VALUES
 (1, 'Images - Blog', 1, 1, NULL),
-(2, 'Images - Header', 1, 1, NULL);
+(2, 'Images - Header', 1, 1, NULL),
+(3, 'Images - Case Study', 1, 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -6851,7 +7075,13 @@ INSERT INTO `FileUsageRecord` (`file_id`, `block_id`, `collection_id`, `collecti
 (18, 202, 181, 4),
 (18, 203, 181, 5),
 (1, 216, 197, 1),
-(16, 216, 197, 1);
+(16, 216, 197, 1),
+(1, 218, 198, 2),
+(20, 218, 198, 2),
+(1, 220, 198, 4),
+(20, 220, 198, 4),
+(20, 221, 198, 5),
+(20, 232, 198, 10);
 
 -- --------------------------------------------------------
 
@@ -6916,7 +7146,9 @@ INSERT INTO `FileVersions` (`fvID`, `fvFilename`, `fvPrefix`, `fvDateAdded`, `fv
 (1, 'header-app-and-statistics.jpg', '531498055019', '2017-06-21 15:23:39', '2017-06-21 15:23:39', 1, 1, 10487, 1, 'header-app-and-statistics.jpg', '', 'jpg', 1, '', 1, 1, 16),
 (1, '3months-stats-employment.gif', '641498062275', '2017-06-21 17:24:36', '2017-06-21 17:24:36', 1, 1, 27641, 1, '3months-stats-employment.gif', '', 'gif', 1, '', 1, 1, 17),
 (1, 'there-is-no-cloud-stats.gif', '351498581121', '2017-06-27 17:32:01', '2017-06-27 17:32:01', 1, 1, 9884, 1, 'there-is-no-cloud-stats.gif', '', 'gif', 1, '', 1, 1, 18),
-(1, 'cdsurveys-scanner.jpg', '141498833397', '2017-06-30 15:36:37', '2017-06-30 15:36:37', 1, 1, 13594, 1, 'cdsurveys-scanner.jpg', '', 'jpg', 1, '', 1, 1, 19);
+(1, 'cdsurveys-scanner.jpg', '141498833397', '2017-06-30 15:36:37', '2017-06-30 15:36:37', 1, 1, 13594, 1, 'cdsurveys-scanner.jpg', '', 'jpg', 1, '', 1, 1, 19),
+(1, 'cd-surveys-ltd-homepage-website-design.jpg', '581499168291', '2017-07-04 12:38:11', '2017-07-04 12:38:11', 1, 1, 150023, 1, 'cd-surveys-ltd-homepage-website-design.jpg', '', 'jpg', 1, '', 1, 1, 20),
+(1, 'cdsurveysltd-company-van-signwriting-side.jpg', '401499187104', '2017-07-04 17:51:44', '2017-07-04 17:51:44', 1, 1, 38313, 1, 'cdsurveysltd-company-van-signwriting-side.jpg', '', 'jpg', 1, '', 1, 1, 21);
 
 -- --------------------------------------------------------
 
@@ -7442,7 +7674,8 @@ INSERT INTO `Logs` (`logID`, `channel`, `time`, `message`, `uID`, `level`) VALUE
 (53, 'application', 1498570087, 'Page "" at path "" deleted', 1, 100),
 (54, 'application', 1498773319, 'Session Invalidated. Session user agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" did not match provided agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"', 1, 100),
 (55, 'application', 1498833466, 'Page "Surveying up a Website Redesign" at path "/case-studies/surveying-up-a-website-redesign" Moved to trash', 1, 100),
-(56, 'application', 1498835133, 'Page "Surveying up a Website Redesign" at path "/case-studies/surveying-up-a-website-redesign" Moved to trash', 1, 100);
+(56, 'application', 1498835133, 'Page "Surveying up a Website Redesign" at path "/case-studies/surveying-up-a-website-redesign" Moved to trash', 1, 100),
+(57, 'application', 1499156682, 'Session Invalidated. Session user agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" did not match provided agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"', 1, 100);
 
 -- --------------------------------------------------------
 
@@ -7836,7 +8069,8 @@ INSERT INTO `PagePaths` (`cPath`, `ppID`, `cID`, `ppIsCanonical`, `ppGeneratedFr
 ('/blog/there-no-cloud-getting-1-sticker-mule-marketplace', 187, 192, 1, 1),
 ('/!trash/surveying-up-a-website-redesign', 188, 195, 1, 1),
 ('/!trash/surveying-up-a-website-redesign-1', 189, 196, 1, 1),
-('/case-studies/cd-surves-ltd-surveying-up-a-website-redesign', 190, 198, 1, 1);
+('/case-studies/cd-surves-ltd-surveying-up-a-website-redesign', 190, 198, 1, 1),
+('/case-studies/cd-surveys-ltd-ford-van-graphical-sign-writing', 191, 199, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -8173,7 +8407,7 @@ INSERT INTO `Pages` (`cID`, `siteTreeID`, `ptID`, `cIsTemplate`, `uID`, `cIsChec
 (159, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 0, 1, 0, 1, -1, '0', 0, 0),
 (160, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 1, 1, 0, 1, -1, '0', 0, 0),
 (161, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 8, 2, 1, 0, 1, -1, '0', 0, 0),
-(162, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 1, 3, 1, 0, 1, -1, '0', 0, 0),
+(162, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 2, 3, 1, 0, 1, -1, '0', 0, 0),
 (163, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 6, 1, 0, 1, -1, '0', 0, 0),
 (164, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 7, 1, 0, 1, -1, '0', 0, 0),
 (165, 1, 1, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 5, 150, 0, 0, -1, '0', 0, 1),
@@ -8208,7 +8442,8 @@ INSERT INTO `Pages` (`cID`, `siteTreeID`, `ptID`, `cIsTemplate`, `uID`, `cIsChec
 (195, 0, 8, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 0, 0, 7, 140, 0, 162, -1, '0', 0, 1),
 (196, 0, 8, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 0, 0, 8, 140, 0, 162, -1, '0', 0, 1),
 (197, 1, 8, 1, NULL, 0, NULL, NULL, NULL, 1, 197, 'OVERRIDE', NULL, 0, NULL, 0, 1, 0, 0, 0, 0, 0, -1, '0', 0, 0),
-(198, 1, 8, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 6, 162, 0, 162, -1, '0', 0, 0);
+(198, 1, 8, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 6, 162, 0, 162, -1, '0', 0, 0),
+(199, 1, 8, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 7, 162, 0, 162, -1, '0', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -8412,7 +8647,8 @@ INSERT INTO `PageSearchIndex` (`cID`, `content`, `cName`, `cDescription`, `cPath
 (191, 'Interested in working together?\r\n\r\n We love meeting new people, so shall we build something bigger together? \r\n\r\n Start today \r\n ', 'Working Together', NULL, '/!stacks/working-together', '2017-06-21 14:42:01', '2017-06-21 14:48:28', NULL, 0),
 (192, ' But what do the top selling designs have in common? Is there a secret? What can other sellers learn? \r\n\r\nThere is no cloud\r\n\r\n We connected with Chris Watterston the creator of the now famous and #1 bestselling "There is no cloud" sticker to answer those questions. \r\n\r\n Read the full story on Sticker Mule \r\n ', 'There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 'The Sticker Mule marketplace has been growing rapidly over the past couple of years. Sticker Mule loves seeing applications and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers.', '/blog/there-no-cloud-getting-1-sticker-mule-marketplace', '2016-04-21 15:26:00', '2017-06-21 15:37:05', NULL, 0),
 (196, '', 'Surveying up a Website Redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '/case-studies/surveying-up-a-website-redesign', '2016-09-09 15:30:00', '2017-06-30 16:05:28', NULL, 0),
-(198, 'Project goal\r\n\r\n Content here... define your broad project goal early in the case study, with a focus on larger issues like community, the environment or empowerment. \r\n Process and reseach \r\n\r\n Next is a look at how we can focus on process before artifact. Show Research In Clear, Process-Oriented Chunks. Show your research with photos, charts or a list of findings, even if it is not packaged neatly. \r\n Lessons Learned\r\n\r\n As we looked at before, case studies should emphasize design knowledge and creative processes. Of course, that includes visual, code and UX assumptions that didn’t hold up. There will always be lessons learned during projects, and sharing those is crucial so that others can learn from them. \r\n Testimonials\r\n\r\nThere’s something powerful about hearing directly from users, team members and clients. Short quotes that contain personal observations about the project are often the most accessible to readers.\r\n Conclusion\r\n\r\n I’ve tried to show that by focusing on process rather than artifact, we can build and share in-depth case studies. The studies allow us to reframe the conversation around design process and the humanity in what we create, rather than perfect deliverables. \r\n Slide Image 1  Vestibulum quis molestie quam. Mauris quis tortor nec metus ornare tincidunt eu et nunc. Ut fringilla luctus convallis. \r\n Slide Image 2  Mauris quis tortor nec metus ornare tincidunt eu et nunc. Ut fringilla luctus convallis. Vestibulum quis molestie quam. \r\n  ', 'Surveying up a Website Redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '/case-studies/cd-surves-ltd-surveying-up-a-website-redesign', '2016-09-09 16:05:00', '2017-06-30 16:06:55', NULL, 0);
+(198, 'Project goal\r\n\r\n Spending time discssing previous CD Surveys Ltd website with the directors, David and Andrew, it became clear that CD Surveys Ltd were stuck in the past in terms of their online "message", web presence and technology. The website was being maintained and built in-house, with personnel that were not familar with technologies, nor pushing their website forward - afterall, their day job was being skilled in Surveying and CAD (Computer Aided Design). \r\n\r\n There was a need for us to take a level of control and ownership, to ensure areas didn\'t break or full behind. A full re-design and rebuild was actioned, with a clear messions that the visitor should feel that they have known CD Surveys Ltd for years. A blog was introduced, including more simplified copy and intuitive imagry. \r\n Conclusion\r\n\r\n We feel that this project has not yet come to a close, but will continue to "roll" and improve, alongside CD Surveys Ltd. As technology imrpoves, we have plans to continue to implement. \r\n\r\n We look forward to see how this project will grow over time! \r\n\r\n Take a look at their website \r\n Jumping straight to the point  We designed the websites homepage to tell the visitor their message instantly, providing them a service in which they require. \r\n  ', 'Surveying up a Website Redesign', 'I\'ve had a long running relationship with CD Surveys Ltd for many years now, resulting in a multitude of large and small projects. Ranging from small development changes, through to their network infrastructure. Working with CD Surveys always gets me exciting because they are open to ideas and moving forward with technology. ', '/case-studies/cd-surves-ltd-surveying-up-a-website-redesign', '2016-09-09 16:05:00', '2017-07-04 17:35:48', NULL, 0),
+(199, 'Project goal\r\n\r\n Content here... define your broad project goal early in the case study, with a focus on larger issues like community, the environment or empowerment. \r\n Process and reseach \r\n\r\n Next is a look at how we can focus on process before artifact. Show Research In Clear, Process-Oriented Chunks. Show your research with photos, charts or a list of findings, even if it is not packaged neatly. \r\n Lessons Learned\r\n\r\n As we looked at before, case studies should emphasize design knowledge and creative processes. Of course, that includes visual, code and UX assumptions that didn’t hold up. There will always be lessons learned during projects, and sharing those is crucial so that others can learn from them. \r\n Testimonials\r\n\r\nThere’s something powerful about hearing directly from users, team members and clients. Short quotes that contain personal observations about the project are often the most accessible to readers.\r\n Conclusion\r\n\r\n I’ve tried to show that by focusing on process rather than artifact, we can build and share in-depth case studies. The studies allow us to reframe the conversation around design process and the humanity in what we create, rather than perfect deliverables. \r\n Slide Image 1  Vestibulum quis molestie quam. Mauris quis tortor nec metus ornare tincidunt eu et nunc. Ut fringilla luctus convallis. \r\n Slide Image 2  Mauris quis tortor nec metus ornare tincidunt eu et nunc. Ut fringilla luctus convallis. Vestibulum quis molestie quam. \r\n  ', 'Ford van graphical sign writing', 'An extension of our relationship with CD Surveys, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials but still ensure that the design caught everyones eye.', '/case-studies/cd-surveys-ltd-ford-van-graphical-sign-writing', '2017-07-04 17:47:00', '2017-07-04 17:52:21', NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -10201,7 +10437,9 @@ INSERT INTO `TreeFileNodes` (`treeNodeID`, `fID`) VALUES
 (46, 16),
 (47, 17),
 (48, 18),
-(49, 19);
+(49, 19),
+(50, 20),
+(51, 21);
 
 -- --------------------------------------------------------
 
@@ -10327,7 +10565,9 @@ INSERT INTO `TreeNodes` (`treeNodeID`, `treeNodeTypeID`, `treeID`, `treeNodePare
 (46, 6, 3, 7, 15, '', '2017-06-21 15:23:39', '2017-06-21 15:23:39', 0, 7),
 (47, 6, 3, 7, 16, '', '2017-06-21 17:24:36', '2017-06-21 17:24:36', 0, 7),
 (48, 6, 3, 7, 17, '', '2017-06-27 17:32:01', '2017-06-27 17:32:01', 0, 7),
-(49, 6, 3, 7, 18, '', '2017-06-30 15:36:37', '2017-06-30 15:36:37', 0, 7);
+(49, 6, 3, 7, 18, '', '2017-06-30 15:36:37', '2017-06-30 15:36:37', 0, 7),
+(50, 6, 3, 7, 19, '', '2017-07-04 12:38:11', '2017-07-04 12:38:11', 0, 7),
+(51, 6, 3, 7, 20, '', '2017-07-04 17:51:44', '2017-07-04 17:51:44', 0, 7);
 
 -- --------------------------------------------------------
 
@@ -10632,7 +10872,7 @@ CREATE TABLE `Users` (
 --
 
 INSERT INTO `Users` (`uID`, `uName`, `uEmail`, `uPassword`, `uIsActive`, `uIsFullRecord`, `uIsValidated`, `uDateAdded`, `uLastPasswordChange`, `uHasAvatar`, `uLastOnline`, `uLastLogin`, `uPreviousLogin`, `uNumLogins`, `uLastAuthTypeID`, `uLastIP`, `uTimezone`, `uDefaultLanguage`, `uIsPasswordReset`) VALUES
-(1, 'admin', 'hello@chriswatterston.com', '$2a$12$kJV9yqhfCBt8k6DX6w7xxuSypfc/T0vGL5u2G3M2LTUpzYnRPmRvG', 1, 1, 1, '2017-05-22 15:59:23', '2017-05-22 15:59:23', 0, 1498835149, 1498773437, 1496756417, 6, 1, '7f000001', NULL, NULL, 0);
+(1, 'admin', 'hello@chriswatterston.com', '$2a$12$kJV9yqhfCBt8k6DX6w7xxuSypfc/T0vGL5u2G3M2LTUpzYnRPmRvG', 1, 1, 1, '2017-05-22 15:59:23', '2017-05-22 15:59:23', 0, 1499187151, 1499158961, 1498773437, 7, 1, '7f000001', NULL, NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -10948,7 +11188,18 @@ INSERT INTO `WorkflowProgressHistory` (`wphID`, `wpID`, `timestamp`, `object`) V
 (184, 39, '2017-06-30 15:05:33', 'O:48:"Concrete\\Core\\Workflow\\Request\\DeletePageRequest":7:{s:14:"\0*\0wrStatusNum";i:100;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"39";s:5:"error";s:0:"";s:4:"pkID";s:2:"12";s:3:"cID";s:3:"196";}'),
 (185, 40, '2017-06-30 15:05:37', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"40";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"162";s:4:"cvID";s:1:"2";}'),
 (186, 41, '2017-06-30 15:06:54', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"41";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"198";s:4:"cvID";s:1:"1";}'),
-(187, 42, '2017-06-30 15:08:07', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"42";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:2:"26";}');
+(187, 42, '2017-06-30 15:08:07', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"42";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:2:"26";}'),
+(188, 31, '2017-07-04 11:38:43', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"31";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"198";s:4:"cvID";s:1:"2";}'),
+(189, 32, '2017-07-04 11:47:42', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"32";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"198";s:4:"cvID";s:1:"3";}'),
+(190, 33, '2017-07-04 13:32:08', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"33";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"198";s:4:"cvID";s:1:"4";}'),
+(191, 34, '2017-07-04 14:12:19', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"34";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"198";s:4:"cvID";s:1:"5";}'),
+(192, 35, '2017-07-04 14:27:04', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"35";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"198";s:4:"cvID";s:1:"6";}'),
+(193, 36, '2017-07-04 14:58:14', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"36";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"198";s:4:"cvID";s:1:"7";}'),
+(194, 37, '2017-07-04 16:26:26', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"37";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"198";s:4:"cvID";s:1:"8";}'),
+(195, 38, '2017-07-04 16:27:39', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"38";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"198";s:4:"cvID";s:1:"9";}'),
+(196, 39, '2017-07-04 16:34:47', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"39";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"198";s:4:"cvID";s:2:"10";}'),
+(197, 40, '2017-07-04 16:35:46', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"40";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"198";s:4:"cvID";s:2:"11";}'),
+(198, 41, '2017-07-04 16:52:19', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"41";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"199";s:4:"cvID";s:1:"1";}');
 
 -- --------------------------------------------------------
 
@@ -13239,7 +13490,7 @@ ALTER TABLE `AreaLayoutThemeGridColumns`
 -- AUTO_INCREMENT for table `Areas`
 --
 ALTER TABLE `Areas`
-  MODIFY `arID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=122;
+  MODIFY `arID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=125;
 --
 -- AUTO_INCREMENT for table `atSelectedSocialLinks`
 --
@@ -13249,7 +13500,7 @@ ALTER TABLE `atSelectedSocialLinks`
 -- AUTO_INCREMENT for table `atSelectedTopics`
 --
 ALTER TABLE `atSelectedTopics`
-  MODIFY `avTreeTopicNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
+  MODIFY `avTreeTopicNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
 --
 -- AUTO_INCREMENT for table `atSelectOptionLists`
 --
@@ -13284,7 +13535,7 @@ ALTER TABLE `AttributeTypes`
 -- AUTO_INCREMENT for table `AttributeValues`
 --
 ALTER TABLE `AttributeValues`
-  MODIFY `avID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1628;
+  MODIFY `avID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1860;
 --
 -- AUTO_INCREMENT for table `AuthenticationTypes`
 --
@@ -13304,7 +13555,7 @@ ALTER TABLE `BannedWords`
 -- AUTO_INCREMENT for table `Blocks`
 --
 ALTER TABLE `Blocks`
-  MODIFY `bID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=218;
+  MODIFY `bID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=233;
 --
 -- AUTO_INCREMENT for table `BlockTypes`
 --
@@ -13339,7 +13590,7 @@ ALTER TABLE `btFormQuestions`
 -- AUTO_INCREMENT for table `btImageSliderEntries`
 --
 ALTER TABLE `btImageSliderEntries`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 --
 -- AUTO_INCREMENT for table `btShareThisPage`
 --
@@ -13364,7 +13615,7 @@ ALTER TABLE `btSurveyResults`
 -- AUTO_INCREMENT for table `Collections`
 --
 ALTER TABLE `Collections`
-  MODIFY `cID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=199;
+  MODIFY `cID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=200;
 --
 -- AUTO_INCREMENT for table `ConversationDiscussions`
 --
@@ -13449,17 +13700,17 @@ ALTER TABLE `FileImageThumbnailTypes`
 -- AUTO_INCREMENT for table `Files`
 --
 ALTER TABLE `Files`
-  MODIFY `fID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `fID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 --
 -- AUTO_INCREMENT for table `FileSetFiles`
 --
 ALTER TABLE `FileSetFiles`
-  MODIFY `fsfID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `fsfID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 --
 -- AUTO_INCREMENT for table `FileSets`
 --
 ALTER TABLE `FileSets`
-  MODIFY `fsID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `fsID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `FileStorageLocations`
 --
@@ -13544,7 +13795,7 @@ ALTER TABLE `JobsLog`
 -- AUTO_INCREMENT for table `Logs`
 --
 ALTER TABLE `Logs`
-  MODIFY `logID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
+  MODIFY `logID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 --
 -- AUTO_INCREMENT for table `MailImporters`
 --
@@ -13584,7 +13835,7 @@ ALTER TABLE `PageFeeds`
 -- AUTO_INCREMENT for table `PagePaths`
 --
 ALTER TABLE `PagePaths`
-  MODIFY `ppID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=191;
+  MODIFY `ppID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=192;
 --
 -- AUTO_INCREMENT for table `PageTemplates`
 --
@@ -13769,7 +14020,7 @@ ALTER TABLE `SystemDatabaseQueryLog`
 -- AUTO_INCREMENT for table `TreeFileNodes`
 --
 ALTER TABLE `TreeFileNodes`
-  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 --
 -- AUTO_INCREMENT for table `TreeGroupNodes`
 --
@@ -13779,7 +14030,7 @@ ALTER TABLE `TreeGroupNodes`
 -- AUTO_INCREMENT for table `TreeNodes`
 --
 ALTER TABLE `TreeNodes`
-  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 --
 -- AUTO_INCREMENT for table `TreeNodeTypes`
 --
@@ -13839,7 +14090,7 @@ ALTER TABLE `UserValidationHashes`
 -- AUTO_INCREMENT for table `WorkflowProgress`
 --
 ALTER TABLE `WorkflowProgress`
-  MODIFY `wpID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `wpID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 --
 -- AUTO_INCREMENT for table `WorkflowProgressCategories`
 --
@@ -13849,12 +14100,12 @@ ALTER TABLE `WorkflowProgressCategories`
 -- AUTO_INCREMENT for table `WorkflowProgressHistory`
 --
 ALTER TABLE `WorkflowProgressHistory`
-  MODIFY `wphID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=188;
+  MODIFY `wphID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=199;
 --
 -- AUTO_INCREMENT for table `WorkflowRequestObjects`
 --
 ALTER TABLE `WorkflowRequestObjects`
-  MODIFY `wrID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `wrID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 --
 -- AUTO_INCREMENT for table `Workflows`
 --

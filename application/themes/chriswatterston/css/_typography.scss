@@ -724,6 +724,31 @@ ul.pagination {
 						display:inline-block;
 						width:$col-one;
 					}
+					.casestudy-slider {
+						.ccm-image-slider {
+							.ccm-image-slider-inner {
+								ul.rslides_tabs {
+									margin-left:20px;
+									li, li.rslides_here {
+										a {
+											width:20px;
+											height:20px;
+											border-radius:0 !important;
+											margin-right:5px;
+											background:$col-grey;
+											opacity:0.4;
+										}
+									}
+									li.rslides_here {
+										a {
+											background:$col-grey;
+											opacity:1;
+										}
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 		}

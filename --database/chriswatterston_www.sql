@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 27, 2017 at 01:42 PM
+-- Generation Time: Jul 27, 2017 at 05:18 PM
 -- Server version: 5.7.13
--- PHP Version: 5.6.24
+-- PHP Version: 5.6.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -811,7 +811,18 @@ INSERT INTO `atDefault` (`value`, `avID`) VALUES
 ('Ford van graphical sign writing', 1854),
 ('An extension of our relationship with CD Surveys, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials but still ensure that the design caught everyones eye.', 1855),
 ('graphical sign writing, ford sign writing, van design', 1856),
-('CD Surveys Ltd', 1859);
+('CD Surveys Ltd', 1859),
+('While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', 1865),
+('While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', 1868),
+('While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', 1870),
+('News, Updates and Bits', 1872),
+('Services', 1875),
+('I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', 1876),
+('trust design, trusted design studio', 1877),
+('Surveying up a Website Redesign with CD Surveys Ltd', 1899),
+('I\'ve had a long running relationship with CD Surveys Ltd for many years now, resulting in a multitude of large and small projects. Ranging from small development changes, through to their network infrastructure. Working with CD Surveys always gets me exciting because they are open to ideas and moving forward with technology.', 1900),
+('website redesign, company website, surveying, design, web development, web project', 1901),
+('CD Surveys Ltd', 1904);
 
 -- --------------------------------------------------------
 
@@ -944,6 +955,9 @@ INSERT INTO `atFile` (`fID`, `avID`) VALUES
 (16, 1517),
 (16, 1531),
 (16, 1559),
+(16, 1867),
+(16, 1869),
+(16, 1871),
 (19, 1579),
 (19, 1584),
 (19, 1589),
@@ -951,7 +965,9 @@ INSERT INTO `atFile` (`fID`, `avID`) VALUES
 (19, 1625),
 (19, 1735),
 (19, 1759),
-(21, 1857);
+(21, 1857),
+(22, 1878),
+(23, 1902);
 
 -- --------------------------------------------------------
 
@@ -1030,7 +1046,11 @@ INSERT INTO `atNumber` (`value`, `avID`) VALUES
 ('1441.0000', 1628),
 ('1137.0000', 1629),
 ('595.0000', 1840),
-('450.0000', 1841);
+('450.0000', 1841),
+('1190.0000', 1873),
+('200.0000', 1874),
+('580.0000', 1891),
+('214.0000', 1892);
 
 -- --------------------------------------------------------
 
@@ -1135,7 +1155,8 @@ INSERT INTO `atSelectedTopics` (`avTreeTopicNodeID`, `treeNodeID`, `avID`) VALUE
 (85, 21, 1626),
 (103, 21, 1736),
 (107, 21, 1760),
-(109, 20, 1858);
+(109, 20, 1858),
+(113, 21, 1903);
 
 -- --------------------------------------------------------
 
@@ -1316,7 +1337,8 @@ INSERT INTO `atTopic` (`avID`) VALUES
 (1626),
 (1736),
 (1760),
-(1858);
+(1858),
+(1903);
 
 -- --------------------------------------------------------
 
@@ -1629,6 +1651,9 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1732, 1),
 (1756, 1),
 (1854, 1),
+(1872, 1),
+(1875, 1),
+(1899, 1),
 (205, 2),
 (210, 2),
 (211, 2),
@@ -1696,6 +1721,11 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1733, 2),
 (1757, 2),
 (1855, 2),
+(1865, 2),
+(1868, 2),
+(1870, 2),
+(1876, 2),
+(1900, 2),
 (2, 3),
 (3, 3),
 (4, 3),
@@ -1842,6 +1872,8 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1734, 3),
 (1758, 3),
 (1856, 3),
+(1877, 3),
+(1901, 3),
 (117, 4),
 (124, 4),
 (118, 5),
@@ -1908,6 +1940,8 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1574, 16),
 (1628, 16),
 (1840, 16),
+(1873, 16),
+(1891, 16),
 (188, 17),
 (334, 17),
 (336, 17),
@@ -1929,6 +1963,8 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1575, 17),
 (1629, 17),
 (1841, 17),
+(1874, 17),
+(1892, 17),
 (206, 20),
 (212, 20),
 (215, 20),
@@ -1999,6 +2035,11 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1735, 20),
 (1759, 20),
 (1857, 20),
+(1867, 20),
+(1869, 20),
+(1871, 20),
+(1878, 20),
+(1902, 20),
 (235, 21),
 (268, 21),
 (331, 21),
@@ -2072,6 +2113,7 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1736, 22),
 (1760, 22),
 (1858, 22),
+(1903, 22),
 (341, 23),
 (347, 23),
 (357, 23),
@@ -2088,7 +2130,8 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1627, 24),
 (1737, 24),
 (1761, 24),
-(1859, 24);
+(1859, 24),
+(1904, 24);
 
 -- --------------------------------------------------------
 
@@ -2508,7 +2551,12 @@ INSERT INTO `Blocks` (`bID`, `bName`, `bDateAdded`, `bDateModified`, `bFilename`
 (226, '', '2017-07-04 15:55:51', '2017-07-04 15:58:11', NULL, '1', 14, 1, NULL),
 (230, '', '2017-07-04 17:26:03', '2017-07-04 17:26:22', NULL, '1', 14, 1, NULL),
 (231, '', '2017-07-04 17:27:35', '2017-07-04 17:27:35', NULL, '1', 14, 1, NULL),
-(232, '', '2017-07-04 17:29:52', '2017-07-04 17:29:52', 'chris-watterston-image-slider', '1', 38, 1, NULL);
+(232, '', '2017-07-04 17:29:52', '2017-07-04 17:29:52', 'chris-watterston-image-slider', '1', 38, 1, NULL),
+(234, '', '2017-07-27 15:42:50', '2017-07-27 15:42:50', NULL, '0', 14, 1, NULL),
+(235, '', '2017-07-27 15:52:30', '2017-07-27 15:52:39', NULL, '0', 14, 1, NULL),
+(236, '', '2017-07-27 15:53:36', '2017-07-27 15:53:36', NULL, '1', 14, 1, NULL),
+(237, '', '2017-07-27 16:29:59', '2017-07-27 16:30:11', 'chris-watterston-blog-list', '0', 35, 1, NULL),
+(238, '', '2017-07-27 16:31:05', '2017-07-27 16:31:05', 'chris-watterston-blog-list', '1', 35, 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -2884,7 +2932,10 @@ INSERT INTO `btContentLocal` (`bID`, `content`) VALUES
 (223, '<h3>Project goal</h3>\r\n\r\n<p>Spending time discssing previous CD Surveys Ltd&nbsp;website with the directors, David and Andrew, it became clear that CD Surveys Ltd&nbsp;were stuck in the past in terms of their online &quot;message&quot;, web presence and technology. The website was being maintained and built in-house, with personnel that were not familar with technologies, nor pushing their website forward - afterall, their day job was being skilled in <a href="https://en.wikipedia.org/wiki/Surveying" target="_blank">Surveying</a> and <a href="https://en.wikipedia.org/wiki/Computer-aided_design" target="_blank">CAD</a> (Computer Aided Design).</p>\r\n\r\n<p>There was a need for us to take a level of control and ownership, to ensure areas didn&#39;t break or full behind. A full re-design and rebuild was actioned, with a clear messions that the visitor should feel that they have known CD Surveys Ltd for years. A blog was introduced, including more simplified copy and intuitive imagry.</p>\r\n'),
 (226, '<h3>Conclusion</h3>\r\n\r\n<p>We feel that this project has not yet come to a close, but will continue to &quot;roll&quot; and improve, alongside CD Surveys Ltd. As technology imrpoves, we have plans to continue to implement.</p>\r\n\r\n<p>The outcome was fantastic. Every idea presented within the van concept was achieved. Make sure you keep your eyes peels.</p>\r\n'),
 (230, '<h3>Conclusion</h3>\r\n\r\n<p>We feel that this project has not yet come to a close, but will continue to &quot;roll&quot; and improve, alongside CD Surveys Ltd. As technology imrpoves, we have plans to continue to implement.</p>\r\n\r\n<p>We look forward to see how this project will grow over time!</p>\r\n'),
-(231, '<h3>Conclusion</h3>\r\n\r\n<p>We feel that this project has not yet come to a close, but will continue to &quot;roll&quot; and improve, alongside CD Surveys Ltd. As technology imrpoves, we have plans to continue to implement.</p>\r\n\r\n<p>We look forward to see how this project will grow over time!</p>\r\n\r\n<p><a class="abtn" href="http://www.cdsurveys.com/" target="_blank">Take a look at their website</a></p>\r\n');
+(231, '<h3>Conclusion</h3>\r\n\r\n<p>We feel that this project has not yet come to a close, but will continue to &quot;roll&quot; and improve, alongside CD Surveys Ltd. As technology imrpoves, we have plans to continue to implement.</p>\r\n\r\n<p>We look forward to see how this project will grow over time!</p>\r\n\r\n<p><a class="abtn" href="http://www.cdsurveys.com/" target="_blank">Take a look at their website</a></p>\r\n'),
+(234, ''),
+(235, ''),
+(236, '<ol>\r\n	<li>Annodata Limited</li>\r\n	<li><a data-concrete5-link-type="ajax" href="https://ewww.chriswatterston.com/our-work/tesla-installations-ltd">Tesla Installations Ltd</a></li>\r\n	<li><a data-concrete5-link-type="ajax" href="https://ewww.chriswatterston.com/our-work/designated-pa">Designated PA</a></li>\r\n	<li><a data-concrete5-link-type="ajax" href="https://ewww.chriswatterston.com/our-work/moorfields-corporate-recovery">Moorfields Corporate Recovery Ltd</a></li>\r\n	<li>Pavilion Day Nursery</li>\r\n	<li>Sammy&#39;s Sunflower Fund</li>\r\n	<li>Spelthorne Schools Together</li>\r\n	<li>Reading Cricket Club</li>\r\n	<li>Perpool</li>\r\n	<li><a data-concrete5-link-type="ajax" href="https://ewww.chriswatterston.com/our-work/intelligent-transport-services">Instyle Building and Design</a></li>\r\n	<li>John Lucas</li>\r\n	<li>JAC Data Ltd</li>\r\n	<li>JCC Wheat Construction</li>\r\n	<li>M&amp;Y Air Systems Ltd</li>\r\n	<li>HMS Commercials</li>\r\n	<li>Michael Woodford Motorsport</li>\r\n	<li>Nicholson Plumbing and Heating</li>\r\n	<li>Char-asha Boutique</li>\r\n	<li>Bimu - Beauty In Make-Up</li>\r\n	<li>CD Surveys Ltd</li>\r\n	<li><a data-concrete5-link-type="ajax" href="https://ewww.chriswatterston.com/our-work/intelligent-transport-services">Intelligent Transport Services Ltd</a></li>\r\n	<li>Feaver &amp; Dust</li>\r\n	<li>Sally Watterston</li>\r\n	<li>Surrey Secondary Heads</li>\r\n	<li>Virginia Plumbing</li>\r\n	<li>Westworld Marine</li>\r\n	<li>UCC Coffee UK ltd</li>\r\n	<li>St Paul&#39;s Catholic College</li>\r\n	<li>Bushy-Hill Primary School</li>\r\n	<li>St. Ignatius Catholic Primary School</li>\r\n	<li>Our Lady of the Rosary Primary School</li>\r\n	<li><a data-concrete5-link-type="ajax" href="https://ewww.chriswatterston.com/our-work/salesian-school">Salesian School</a></li>\r\n	<li>Innervate Career Services Ltd</li>\r\n	<li>St Michael&#39;s R C Primary School</li>\r\n	<li><a data-concrete5-link-type="ajax" href="https://ewww.chriswatterston.com/our-work/saint-john-bosco-college-website-design">Saint John Bosco College</a></li>\r\n	<li>The Marist Roman Catholic Primary School</li>\r\n	<li>St Paul&#39;s Connect</li>\r\n	<li>Midas Touch Landscapes</li>\r\n	<li>Old Blue Moses</li>\r\n</ol>\r\n');
 
 -- --------------------------------------------------------
 
@@ -3421,7 +3472,9 @@ INSERT INTO `btPageList` (`bID`, `num`, `orderBy`, `cParentID`, `cThis`, `cThisP
 (193, 3, 'chrono_desc', 161, 1, 0, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, '', 1, 300),
 (194, 2, 'chrono_desc', 161, 1, 0, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, '', 1, 300),
 (195, 8, 'chrono_desc', 161, 1, 0, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, '', 1, 300),
-(217, 4, 'chrono_desc', 162, 0, 0, 0, '', '', 0, 1, '', 0, NULL, NULL, '', 'post_topics', 8, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, '', 1, 230);
+(217, 4, 'chrono_desc', 162, 0, 0, 0, '', '', 0, 1, '', 0, NULL, NULL, '', 'post_topics', 8, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, '', 1, 230),
+(237, 8, 'chrono_desc', 162, 1, 0, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 1, 1, 0, 0, 0, 0, 0, 8, 0, 0, 0, '', 1, 0),
+(238, 8, 'chrono_desc', 162, 1, 0, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 1, 1, 0, 0, 0, 0, 0, 8, 0, 1, 0, '', 1, 300);
 
 -- --------------------------------------------------------
 
@@ -4339,9 +4392,21 @@ INSERT INTO `CollectionAttributeValues` (`cID`, `cvID`, `akID`, `avID`) VALUES
 (160, 4, 3, 1562),
 (160, 4, 20, 1563),
 (162, 2, 1, 1570),
+(162, 3, 1, 1570),
+(162, 4, 1, 1570),
+(162, 5, 1, 1570),
 (162, 2, 2, 1571),
+(162, 3, 2, 1571),
+(162, 4, 2, 1571),
+(162, 5, 2, 1571),
 (162, 2, 3, 1572),
+(162, 3, 3, 1572),
+(162, 4, 3, 1572),
+(162, 5, 3, 1572),
 (162, 2, 20, 1573),
+(162, 3, 20, 1573),
+(162, 4, 20, 1573),
+(162, 5, 20, 1573),
 (195, 1, 1, 1576),
 (195, 1, 2, 1577),
 (195, 1, 3, 1578),
@@ -4457,7 +4522,28 @@ INSERT INTO `CollectionAttributeValues` (`cID`, `cvID`, `akID`, `avID`) VALUES
 (199, 1, 3, 1856),
 (199, 1, 20, 1857),
 (199, 1, 22, 1858),
-(199, 1, 24, 1859);
+(199, 1, 24, 1859),
+(161, 15, 2, 1865),
+(161, 15, 20, 1867),
+(161, 16, 2, 1868),
+(161, 16, 20, 1869),
+(161, 17, 2, 1870),
+(161, 17, 20, 1871),
+(161, 17, 1, 1872),
+(159, 9, 1, 1875),
+(159, 10, 1, 1875),
+(159, 9, 2, 1876),
+(159, 10, 2, 1876),
+(159, 9, 3, 1877),
+(159, 10, 3, 1877),
+(159, 9, 20, 1878),
+(159, 10, 20, 1878),
+(198, 12, 1, 1899),
+(198, 12, 2, 1900),
+(198, 12, 3, 1901),
+(198, 12, 20, 1902),
+(198, 12, 22, 1903),
+(198, 12, 24, 1904);
 
 -- --------------------------------------------------------
 
@@ -4634,10 +4720,10 @@ INSERT INTO `Collections` (`cID`, `cDateAdded`, `cDateModified`, `cHandle`) VALU
 (156, '2017-05-22 16:01:21', '2017-05-25 08:59:53', 'footer-legal'),
 (157, '2017-05-22 16:01:21', '2017-05-23 15:25:44', 'footer-navigation'),
 (158, '2017-05-22 16:01:21', '2017-05-24 10:09:24', 'footer-contact'),
-(159, '2017-05-23 15:30:41', '2017-06-27 13:27:15', ''),
+(159, '2017-05-23 15:30:41', '2017-07-27 15:53:39', ''),
 (160, '2017-05-23 15:30:55', '2017-06-27 17:27:31', ''),
-(161, '2017-05-23 15:31:03', '2017-06-27 21:17:22', ''),
-(162, '2017-05-23 15:31:17', '2017-06-30 16:05:37', ''),
+(161, '2017-05-23 15:31:03', '2017-07-27 15:45:14', ''),
+(162, '2017-05-23 15:31:17', '2017-07-27 16:31:09', ''),
 (163, '2017-05-23 15:31:28', '2017-05-23 15:31:28', ''),
 (164, '2017-05-23 15:32:36', '2017-05-23 15:32:56', ''),
 (165, '2017-05-24 10:14:23', '2017-05-25 11:00:39', 'social-links'),
@@ -4664,7 +4750,7 @@ INSERT INTO `Collections` (`cID`, `cDateAdded`, `cDateModified`, `cHandle`) VALU
 (187, '2017-06-20 15:38:24', '2017-06-21 13:50:21', ''),
 (188, '2017-06-20 16:07:36', '2017-06-21 17:28:24', ''),
 (189, '2017-06-20 16:17:15', '2017-06-21 17:29:51', ''),
-(190, '2017-06-21 14:11:13', '2017-06-27 16:24:39', ''),
+(190, '2017-06-21 14:11:13', '2017-07-27 15:39:59', ''),
 (191, '2017-06-21 14:42:01', '2017-06-21 14:48:23', 'working-together'),
 (192, '2017-06-21 15:26:57', '2017-06-21 15:36:56', ''),
 (193, '2017-06-27 13:13:43', '2017-06-27 13:13:43', NULL),
@@ -4672,7 +4758,7 @@ INSERT INTO `Collections` (`cID`, `cDateAdded`, `cDateModified`, `cHandle`) VALU
 (195, '2017-06-30 15:37:14', '2017-06-30 15:37:46', ''),
 (196, '2017-06-30 15:37:39', '2017-06-30 16:05:33', ''),
 (197, '2017-06-30 15:50:37', '2017-06-30 15:50:37', NULL),
-(198, '2017-06-30 16:05:49', '2017-07-04 17:35:46', ''),
+(198, '2017-06-30 16:05:49', '2017-07-27 16:56:46', ''),
 (199, '2017-07-04 17:47:26', '2017-07-04 17:52:19', '');
 
 -- --------------------------------------------------------
@@ -4821,9 +4907,9 @@ INSERT INTO `CollectionSearchIndexAttributes` (`cID`, `ak_meta_title`, `ak_meta_
 (149, NULL, NULL, NULL, '0.0000', 0, 'fa fa-edit', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
 (150, NULL, NULL, NULL, '0.0000', 0, 'fa fa-th', 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
 (152, NULL, NULL, NULL, '1.0000', 1, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
-(159, '', '', '', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(159, 'Services', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', 'trust design, trusted design studio', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
 (160, 'Meta Title', 'Meta Description', 'Meta Keywords', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
-(161, NULL, 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
+(161, 'News, Updates and Bits', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
 (162, 'Case Studie', '', '', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL),
 (168, NULL, 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Posts/News||/Latest Feed||', NULL, NULL, NULL),
 (169, NULL, 'Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat. Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in.', 'hello, world', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 1, '||/Posts/Family||/Latest Feed||', NULL, NULL, NULL),
@@ -5086,6 +5172,25 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (159, 8, 187, 'Main Body Two : 16', 104, 0, 0, 0, 0, 0, 0, 0),
 (159, 8, 188, 'Main Body Three', 105, 0, 0, 0, 0, 0, 0, 0),
 (159, 8, 189, 'Main Body Three', 106, 1, 1, 0, 0, 0, 0, 0),
+(159, 9, 113, 'Main', 53, 0, 0, 0, 0, 0, 0, 0),
+(159, 9, 114, 'Main Body One', 54, 0, 0, 0, 0, 0, 0, 0),
+(159, 9, 182, 'Main Body Two', 100, 0, 0, 0, 0, 0, 0, 0),
+(159, 9, 184, 'Main Body Two : 13', 101, 0, 0, 0, 0, 0, 0, 0),
+(159, 9, 185, 'Main Body Two : 14', 102, 0, 0, 0, 0, 0, 0, 0),
+(159, 9, 186, 'Main Body Two : 15', 103, 0, 0, 0, 0, 0, 0, 0),
+(159, 9, 187, 'Main Body Two : 16', 104, 0, 0, 0, 0, 0, 0, 0),
+(159, 9, 188, 'Main Body Three', 105, 0, 0, 0, 0, 0, 0, 0),
+(159, 9, 189, 'Main Body Three', 106, 1, 0, 0, 0, 0, 0, 0),
+(159, 10, 113, 'Main', 53, 0, 0, 0, 0, 0, 0, 0),
+(159, 10, 114, 'Main Body One', 54, 0, 0, 0, 0, 0, 0, 0),
+(159, 10, 182, 'Main Body Two', 100, 0, 0, 0, 0, 0, 0, 0),
+(159, 10, 184, 'Main Body Two : 13', 101, 0, 0, 0, 0, 0, 0, 0),
+(159, 10, 185, 'Main Body Two : 14', 102, 0, 0, 0, 0, 0, 0, 0),
+(159, 10, 186, 'Main Body Two : 15', 103, 0, 0, 0, 0, 0, 0, 0),
+(159, 10, 187, 'Main Body Two : 16', 104, 0, 0, 0, 0, 0, 0, 0),
+(159, 10, 188, 'Main Body Three', 105, 0, 0, 0, 0, 0, 0, 0),
+(159, 10, 235, 'Main Description', 124, 0, 1, 0, 0, 0, 0, 0),
+(159, 10, 236, 'Main Body Three', 106, 1, 1, 0, 0, 0, 0, 0),
 (160, 1, 27, 'Main', 24, 0, 1, 0, 0, 0, 0, 0),
 (160, 2, 27, 'Main', 24, 0, 0, 0, 0, 0, 0, 0),
 (160, 3, 27, 'Main', 24, 0, 0, 0, 0, 0, 0, 0),
@@ -5128,8 +5233,22 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (161, 14, 195, 'Main Body Two', 110, 0, 0, 0, 0, 0, 0, 0),
 (161, 14, 200, 'Main', 112, 0, 0, 0, 0, 0, 0, 0),
 (161, 14, 206, 'Main Description', 109, 0, 1, 0, 0, 0, 0, 0),
+(161, 15, 195, 'Main Body Two', 110, 0, 0, 0, 0, 0, 0, 0),
+(161, 15, 206, 'Main Description', 109, 0, 0, 0, 0, 0, 0, 0),
+(161, 15, 234, 'Main', 123, 0, 1, 0, 0, 0, 0, 0),
+(161, 16, 195, 'Main Body Two', 110, 0, 0, 0, 0, 0, 0, 0),
+(161, 16, 206, 'Main Description', 109, 0, 0, 0, 0, 0, 0, 0),
+(161, 16, 234, 'Main', 123, 0, 0, 0, 0, 0, 0, 0),
+(161, 17, 195, 'Main Body Two', 110, 0, 0, 0, 0, 0, 0, 0),
+(161, 17, 206, 'Main Description', 109, 0, 0, 0, 0, 0, 0, 0),
+(161, 17, 234, 'Main', 123, 0, 0, 0, 0, 0, 0, 0),
 (162, 1, 31, 'Main', 26, 0, 1, 0, 0, 0, 0, 0),
 (162, 2, 208, 'Main', 115, 0, 1, 0, 0, 0, 0, 0),
+(162, 3, 208, 'Main', 115, 0, 0, 0, 0, 0, 0, 0),
+(162, 4, 208, 'Main', 115, 0, 0, 0, 0, 0, 0, 0),
+(162, 4, 237, 'Main Body Two', 125, 0, 1, 0, 0, 0, 0, 0),
+(162, 5, 208, 'Main', 115, 0, 0, 0, 0, 0, 0, 0),
+(162, 5, 238, 'Main Body Two', 125, 0, 1, 0, 0, 0, 0, 0),
 (163, 1, 33, 'Main', 27, 0, 1, 0, 0, 0, 0, 0),
 (164, 1, 35, 'Main', 28, 0, 1, 0, 0, 0, 0, 0),
 (164, 2, 35, 'Main', 28, 0, 0, 0, 0, 0, 0, 0),
@@ -5433,6 +5552,9 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (198, 11, 223, 'Main Body', 117, 0, 0, 0, 0, 0, 0, 0),
 (198, 11, 231, 'Main Body Three', 121, 0, 0, 0, 0, 0, 0, 0),
 (198, 11, 232, 'Main Body Two', 122, 0, 0, 0, 0, 0, 0, 0),
+(198, 12, 223, 'Main Body', 117, 0, 0, 0, 0, 0, 0, 0),
+(198, 12, 231, 'Main Body Three', 121, 0, 0, 0, 0, 0, 0, 0),
+(198, 12, 232, 'Main Body Two', 122, 0, 0, 0, 0, 0, 0, 0),
 (199, 1, 211, 'Main Body', 117, 0, 0, 0, 0, 0, 0, 0),
 (199, 1, 212, 'Main Body', 118, 1, 0, 0, 0, 0, 0, 0),
 (199, 1, 213, 'Main Body Three', 119, 0, 0, 0, 0, 0, 0, 0),
@@ -5864,7 +5986,9 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (159, 5, 'Services', 'services', '', '2017-05-23 15:30:41', '2017-06-27 13:13:29', 'Version 5', 0, 0, 1, 1, 2, 8, NULL, NULL),
 (159, 6, 'Services', 'services', '', '2017-05-23 15:30:41', '2017-06-27 13:15:30', 'Version 6', 0, 0, 1, 1, 2, 8, NULL, NULL),
 (159, 7, 'Services', 'services', '', '2017-05-23 15:30:41', '2017-06-27 13:20:56', 'Version 7', 0, 0, 1, 1, 2, 8, NULL, NULL),
-(159, 8, 'Services', 'services', '', '2017-05-23 15:30:41', '2017-06-27 13:27:11', 'Version 8', 1, 0, 1, 1, 2, 8, NULL, NULL),
+(159, 8, 'Services', 'services', '', '2017-05-23 15:30:41', '2017-06-27 13:27:11', 'Version 8', 0, 0, 1, 1, 2, 8, NULL, NULL),
+(159, 9, 'Services', 'services', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-07-27 15:50:59', 'New Version 9', 0, 0, 1, 1, 2, 8, NULL, NULL),
+(159, 10, 'Services', 'services', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-07-27 15:52:30', 'Version 10', 1, 0, 1, 1, 2, 8, NULL, NULL),
 (160, 1, 'About Us', 'about-us', '', '2017-05-23 15:30:55', '2017-05-23 15:30:55', 'Initial Version', 0, 0, 1, 1, 2, 4, NULL, NULL),
 (160, 2, 'About Us', 'about-us', 'Description', '2017-05-23 15:30:00', '2017-06-20 14:23:02', 'New Version 2', 0, 0, 1, 1, 2, 4, NULL, NULL),
 (160, 3, 'About Us', 'about-us', 'Description', '2017-05-23 15:30:00', '2017-06-20 14:29:25', 'Version 3', 0, 0, 1, 1, 2, 4, NULL, NULL),
@@ -5882,9 +6006,15 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (161, 11, 'News', 'blog', '', '2017-05-23 15:31:00', '2017-06-27 16:43:13', 'Version 11', 0, 0, 1, 1, 2, 9, NULL, NULL),
 (161, 12, 'News', 'blog', '', '2017-05-23 15:31:00', '2017-06-27 17:17:31', 'Version 12', 0, 0, 1, 1, 2, 9, NULL, NULL),
 (161, 13, 'News', 'blog', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', '2017-05-23 15:31:00', '2017-06-27 17:18:33', 'New Version 13', 0, 0, 1, 1, 2, 9, NULL, NULL),
-(161, 14, 'News', 'blog', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', '2017-05-23 15:31:00', '2017-06-27 21:17:18', 'Version 14', 1, 0, 1, 1, 2, 9, NULL, NULL),
+(161, 14, 'News', 'blog', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', '2017-05-23 15:31:00', '2017-06-27 21:17:18', 'Version 14', 0, 0, 1, 1, 2, 9, NULL, NULL),
+(161, 15, 'News, Updates and Bits', 'blog', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', '2017-05-23 15:31:00', '2017-07-27 15:42:49', 'New Version 15', 0, 0, 1, 1, 2, 9, NULL, NULL),
+(161, 16, 'News', 'blog', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', '2017-05-23 15:31:00', '2017-07-27 15:44:55', 'New Version 16', 0, 0, 1, 1, 2, 9, NULL, NULL),
+(161, 17, 'News', 'blog', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', '2017-05-23 15:31:00', '2017-07-27 15:45:14', 'New Version 17', 1, 0, 1, 1, 2, 9, NULL, NULL),
 (162, 1, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-05-23 15:31:17', 'Initial Version', 0, 0, 1, 1, 2, 4, NULL, NULL),
-(162, 2, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-06-30 12:02:12', 'New Version 2', 1, 0, 1, 1, 2, 8, NULL, NULL),
+(162, 2, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-06-30 12:02:12', 'New Version 2', 0, 0, 1, 1, 2, 8, NULL, NULL),
+(162, 3, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-07-27 16:29:20', 'New Version 3', 0, 0, 1, 1, 2, 9, NULL, NULL),
+(162, 4, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-07-27 16:29:59', 'Version 4', 0, 0, 1, 1, 2, 9, NULL, NULL),
+(162, 5, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-07-27 16:31:05', 'Version 5', 1, 0, 1, 1, 2, 9, NULL, NULL),
 (163, 1, 'Store', 'store', '', '2017-05-23 15:31:28', '2017-05-23 15:31:28', 'Initial Version', 1, 0, 1, 1, 2, 4, NULL, NULL),
 (164, 1, 'get in contact', 'get-in-contact', '', '2017-05-23 15:32:36', '2017-05-23 15:32:36', 'Initial Version', 0, 0, 1, 1, 2, 4, NULL, NULL),
 (164, 2, 'Get in Contact', 'get-in-contact', '', '2017-05-23 15:32:00', '2017-05-23 15:32:46', 'New Version 2', 0, 0, 1, 1, 2, 4, NULL, NULL),
@@ -5920,7 +6050,8 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (173, 3, '1970\'s speed boat restoration project almost complete', '1970s-speed-boat-project-finally-finish', 'Morbi sit amet odio est. Etiam ex quam, viverra ac porta ut, lobortis non ipsum. Praesent sollicitudin orci in ante placerat, eu gravida massa iaculis. Phasellus a est varius, imperdiet mi nec, hendrerit tortor. Nulla tincidunt magna nec tincidunt vehicula. Phasellus tristique tempor diam, vitae luctus enim aliquam eu. Cras dapibus vehicula libero quis interdum.', '2017-05-02 13:41:00', '2017-06-21 16:21:23', 'New Version 3', 1, 0, 1, 1, 0, 6, NULL, NULL),
 (174, 1, 'Recognition', 'recognition', '', '2017-06-02 14:58:31', '2017-06-02 14:58:31', 'Initial Version', 0, 0, 1, 1, 2, 4, NULL, NULL),
 (174, 2, 'Products', 'recognition', '', '2017-06-02 14:58:00', '2017-06-02 15:20:09', 'New Version 2', 0, 0, 1, 1, 2, 4, NULL, NULL),
-(174, 3, 'Products', 'products', '', '2017-06-02 14:58:00', '2017-06-02 15:20:21', 'New Version 3', 1, 0, 1, 1, 2, 4, NULL, NULL),
+(174, 3, 'Products', 'products', '', '2017-06-02 14:58:00', '2017-06-02 15:20:21', 'New Version 3', 1, 0, 1, 1, 2, 4, NULL, NULL);
+INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescription`, `cvDatePublic`, `cvDateCreated`, `cvComments`, `cvIsApproved`, `cvIsNew`, `cvAuthorUID`, `cvApproverUID`, `pThemeID`, `pTemplateID`, `cvActivateDatetime`, `cvPublishDate`) VALUES
 (175, 1, '', NULL, NULL, '2017-06-02 15:09:34', '2017-06-02 15:09:34', 'Initial Version', 1, 0, NULL, NULL, 0, 7, NULL, NULL),
 (176, 1, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:48', '2017-06-02 15:13:48', 'Initial Version', 0, 0, 1, 1, 2, 7, NULL, NULL),
 (176, 2, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-02 15:17:36', 'New Version 2', 0, 0, 1, 1, 2, 7, NULL, NULL),
@@ -5930,8 +6061,7 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (176, 6, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-06 14:56:15', 'New Version 6', 0, 0, 1, 1, 2, 7, NULL, NULL),
 (176, 7, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-06 14:56:44', 'New Version 7', 0, 0, 1, 1, 2, 7, NULL, NULL),
 (176, 8, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-19 16:33:28', 'New Version 8', 0, 0, 1, 1, 2, 7, NULL, NULL),
-(176, 9, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-19 16:43:30', 'New Version 9', 0, 0, 1, 1, 2, 7, NULL, NULL);
-INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescription`, `cvDatePublic`, `cvDateCreated`, `cvComments`, `cvIsApproved`, `cvIsNew`, `cvAuthorUID`, `cvApproverUID`, `pThemeID`, `pTemplateID`, `cvActivateDatetime`, `cvPublishDate`) VALUES
+(176, 9, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-19 16:43:30', 'New Version 9', 0, 0, 1, 1, 2, 7, NULL, NULL),
 (176, 10, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-19 16:59:11', 'Version 10', 0, 0, 1, 1, 2, 7, NULL, NULL),
 (176, 11, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-19 17:03:04', 'Version 11', 0, 0, 1, 1, 2, 7, NULL, NULL),
 (176, 12, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-19 17:05:45', 'New Version 12', 0, 0, 1, 1, 2, 7, NULL, NULL),
@@ -5987,8 +6117,8 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (190, 3, 'Your New Website Statistics Dashboard', 'your-new-website-statistics-dashboard', 'Since the new year, we\'ve been working hard between projects to improve features and services that we provide to you - more specifically, within your Content Management System (CMS). One of the biggest changes you\'ll notice is our brand new \'Statistics Dashboard\'. You\'ll soon be able to look over your website ‘Views’, ‘Storage’, ‘Traffic’, ‘Uptime’ and a ton more. All live time!', '2016-04-13 14:11:00', '2017-06-21 14:40:19', 'Version 3', 0, 0, 1, 1, 0, 6, NULL, NULL),
 (190, 4, 'Your New Website Statistics Dashboard', 'your-new-website-statistics-dashboard', 'Since the new year, we\'ve been working hard between projects to improve features and services that we provide to you - more specifically, within your Content Management System (CMS). One of the biggest changes you\'ll notice is our brand new \'Statistics Dashboard\'. You\'ll soon be able to look over your website ‘Views’, ‘Storage’, ‘Traffic’, ‘Uptime’ and a ton more. All live time!', '2016-04-13 14:11:00', '2017-06-21 15:23:32', 'New Version 4', 0, 0, 1, 1, 0, 6, NULL, NULL),
 (190, 5, 'Your New Website Statistics Dashboard', 'your-new-website-statistics-dashboard', 'Since the new year, we\'ve been working hard between projects to improve features and services that we provide to you - more specifically, within your Content Management System (CMS). One of the biggest changes you\'ll notice is our brand new \'Statistics Dashboard\'. You\'ll soon be able to look over your website ‘Views’, ‘Storage’, ‘Traffic’, ‘Uptime’ and a ton more. All live time!', '2016-04-13 14:11:00', '2017-06-21 15:24:57', 'New Version 5', 0, 0, 1, 1, 0, 6, NULL, NULL),
-(190, 6, 'Your New Website Statistics Dashboard', 'your-new-website-statistics-dashboard', 'Since the new year, we\'ve been working hard between projects to improve features and services that we provide to you - more specifically, within your Content Management System (CMS). One of the biggest changes you\'ll notice is our brand new \'Statistics Dashboard\'. You\'ll soon be able to look over your website ‘Views’, ‘Storage’, ‘Traffic’, ‘Uptime’ and a ton more. All live time!', '2016-04-13 14:11:00', '2017-06-27 16:24:36', 'New Version 6', 1, 0, 1, 1, 0, 6, NULL, NULL),
-(190, 7, 'Your New Website Statistics Dashboard', 'your-new-website-statistics-dashboard', 'Since the new year, we\'ve been working hard between projects to improve features and services that we provide to you - more specifically, within your Content Management System (CMS). One of the biggest changes you\'ll notice is our brand new \'Statistics Dashboard\'. You\'ll soon be able to look over your website ‘Views’, ‘Storage’, ‘Traffic’, ‘Uptime’ and a ton more. All live time!', '2016-04-13 14:11:00', '2017-06-27 16:24:39', 'New Version 7', 0, 1, 1, NULL, 0, 6, NULL, NULL),
+(190, 6, 'Your New Website Statistics Dashboard', 'your-new-website-statistics-dashboard', 'Since the new year, we\'ve been working hard between projects to improve features and services that we provide to you - more specifically, within your Content Management System (CMS). One of the biggest changes you\'ll notice is our brand new \'Statistics Dashboard\'. You\'ll soon be able to look over your website ‘Views’, ‘Storage’, ‘Traffic’, ‘Uptime’ and a ton more. All live time!', '2016-04-13 14:11:00', '2017-06-27 16:24:36', 'New Version 6', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(190, 7, 'Your New Website Statistics Dashboard', 'your-new-website-statistics-dashboard', 'Since the new year, we\'ve been working hard between projects to improve features and services that we provide to you - more specifically, within your Content Management System (CMS). One of the biggest changes you\'ll notice is our brand new \'Statistics Dashboard\'. You\'ll soon be able to look over your website ‘Views’, ‘Storage’, ‘Traffic’, ‘Uptime’ and a ton more. All live time!', '2016-04-13 14:11:00', '2017-06-27 16:24:39', 'New Version 7', 1, 0, 1, 1, 0, 6, NULL, NULL),
 (191, 1, 'Working Together', 'working-together', NULL, '2017-06-21 14:42:01', '2017-06-21 14:42:01', 'Initial Version', 0, 0, 1, NULL, 2, 0, NULL, NULL),
 (191, 2, 'Working Together', 'working-together', NULL, '2017-06-21 14:42:01', '2017-06-21 14:45:14', 'New Version 2', 0, 0, 1, 1, 2, 0, NULL, NULL),
 (191, 3, 'Working Together', 'working-together', NULL, '2017-06-21 14:42:01', '2017-06-21 14:45:53', 'New Version 3', 0, 0, 1, NULL, 2, 0, NULL, NULL),
@@ -6020,7 +6150,8 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (198, 8, 'Surveying up a Website Redesign', 'cd-surves-ltd-surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 16:05:00', '2017-07-04 17:25:05', 'Version 8', 0, 0, 1, 1, 0, 10, NULL, NULL),
 (198, 9, 'Surveying up a Website Redesign', 'cd-surves-ltd-surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 16:05:00', '2017-07-04 17:27:35', 'Version 9', 0, 0, 1, 1, 0, 10, NULL, NULL),
 (198, 10, 'Surveying up a Website Redesign', 'cd-surves-ltd-surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys Ltd for many years now, resulting in a multitude of large and small projects. Ranging from small development changes, right through to displaying database on their wall screening systems. Working with CD Surveys always gets me exciting because they are open to ideas and moving forward with technology. ', '2016-09-09 16:05:00', '2017-07-04 17:29:52', 'New Version 10', 0, 0, 1, 1, 0, 10, NULL, NULL),
-(198, 11, 'Surveying up a Website Redesign', 'cd-surves-ltd-surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys Ltd for many years now, resulting in a multitude of large and small projects. Ranging from small development changes, through to their network infrastructure. Working with CD Surveys always gets me exciting because they are open to ideas and moving forward with technology. ', '2016-09-09 16:05:00', '2017-07-04 17:35:20', 'New Version 11', 1, 0, 1, 1, 0, 10, NULL, NULL),
+(198, 11, 'Surveying up a Website Redesign', 'cd-surves-ltd-surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys Ltd for many years now, resulting in a multitude of large and small projects. Ranging from small development changes, through to their network infrastructure. Working with CD Surveys always gets me exciting because they are open to ideas and moving forward with technology. ', '2016-09-09 16:05:00', '2017-07-04 17:35:20', 'New Version 11', 0, 0, 1, 1, 0, 10, NULL, NULL),
+(198, 12, 'Surveying up a Website Redesign', 'cd-surves-ltd-surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys Ltd for many years now, resulting in a multitude of large and small projects. Ranging from small development changes, through to their network infrastructure. Working with CD Surveys always gets me exciting because they are open to ideas and moving forward with technology. ', '2016-09-09 16:05:00', '2017-07-27 16:56:23', 'New Version 12', 1, 0, 1, 1, 0, 10, NULL, NULL),
 (199, 1, 'Ford van graphical sign writing', 'cd-surveys-ltd-ford-van-graphical-sign-writing', 'An extension of our relationship with CD Surveys, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials but still ensure that the design caught everyones eye.', '2017-07-04 17:47:00', '2017-07-04 17:47:26', 'Initial Version', 1, 0, 1, 1, 0, 10, NULL, NULL);
 
 -- --------------------------------------------------------
@@ -6695,7 +6826,11 @@ INSERT INTO `FileAttributeValues` (`fID`, `fvID`, `akID`, `avID`) VALUES
 (20, 1, 16, 1628),
 (20, 1, 17, 1629),
 (21, 1, 16, 1840),
-(21, 1, 17, 1841);
+(21, 1, 17, 1841),
+(22, 1, 16, 1873),
+(22, 1, 17, 1874),
+(23, 1, 16, 1891),
+(23, 1, 17, 1892);
 
 -- --------------------------------------------------------
 
@@ -6758,7 +6893,11 @@ INSERT INTO `FileImageThumbnailPaths` (`fileID`, `fileVersionID`, `thumbnailType
 (20, 1, 'file_manager_listing', 1, '/thumbnails/file_manager_listing/5814/9916/8291/cd-surveys-ltd-homepage-website-design.jpg', 1),
 (20, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/5814/9916/8291/cd-surveys-ltd-homepage-website-design.jpg', 1),
 (21, 1, 'file_manager_listing', 1, '/thumbnails/file_manager_listing/4014/9918/7104/cdsurveysltd-company-van-signwriting-side.jpg', 1),
-(21, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/4014/9918/7104/cdsurveysltd-company-van-signwriting-side.jpg', 1);
+(21, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/4014/9918/7104/cdsurveysltd-company-van-signwriting-side.jpg', 1),
+(22, 1, 'file_manager_listing', 1, '/thumbnails/file_manager_listing/5415/0116/7049/header-whatwedo.jpg', 1),
+(22, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/5415/0116/7049/header-whatwedo.jpg', 1),
+(23, 1, 'file_manager_listing', 1, '/thumbnails/file_manager_listing/1015/0117/0996/cdsurveys-pattern.jpg', 1),
+(23, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/1015/0117/0996/cdsurveys-pattern.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -6874,7 +7013,9 @@ INSERT INTO `Files` (`fID`, `fDateAdded`, `fPassword`, `fOverrideSetPermissions`
 (18, '2017-06-27 17:32:01', NULL, 0, 0, 7, 1, 1),
 (19, '2017-06-30 15:36:37', NULL, 0, 0, 7, 1, 1),
 (20, '2017-07-04 12:38:11', NULL, 0, 0, 7, 1, 1),
-(21, '2017-07-04 17:51:44', NULL, 0, 0, 7, 1, 1);
+(21, '2017-07-04 17:51:44', NULL, 0, 0, 7, 1, 1),
+(22, '2017-07-27 15:50:49', NULL, 0, 0, 7, 1, 1),
+(23, '2017-07-27 16:56:36', NULL, 0, 0, 7, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -6914,7 +7055,9 @@ INSERT INTO `FileSearchIndexAttributes` (`fID`, `ak_width`, `ak_height`, `ak_dur
 (18, '454.0000', '327.0000', '0.0000'),
 (19, '580.0000', '215.0000', '0.0000'),
 (20, '1441.0000', '1137.0000', '0.0000'),
-(21, '595.0000', '450.0000', '0.0000');
+(21, '595.0000', '450.0000', '0.0000'),
+(22, '1190.0000', '200.0000', '0.0000'),
+(23, '580.0000', '214.0000', '0.0000');
 
 -- --------------------------------------------------------
 
@@ -6953,7 +7096,9 @@ INSERT INTO `FileSetFiles` (`fsfID`, `fID`, `fsID`, `timestamp`, `fsDisplayOrder
 (16, 18, 1, '2017-06-27 16:32:20', 13),
 (17, 19, 2, '2017-06-30 14:36:45', 2),
 (18, 20, 3, '2017-07-04 11:38:24', 0),
-(19, 21, 3, '2017-07-04 16:51:52', 1);
+(19, 21, 3, '2017-07-04 16:51:52', 1),
+(20, 22, 2, '2017-07-27 14:50:54', 3),
+(21, 23, 2, '2017-07-27 15:56:41', 4);
 
 -- --------------------------------------------------------
 
@@ -7148,7 +7293,9 @@ INSERT INTO `FileVersions` (`fvID`, `fvFilename`, `fvPrefix`, `fvDateAdded`, `fv
 (1, 'there-is-no-cloud-stats.gif', '351498581121', '2017-06-27 17:32:01', '2017-06-27 17:32:01', 1, 1, 9884, 1, 'there-is-no-cloud-stats.gif', '', 'gif', 1, '', 1, 1, 18),
 (1, 'cdsurveys-scanner.jpg', '141498833397', '2017-06-30 15:36:37', '2017-06-30 15:36:37', 1, 1, 13594, 1, 'cdsurveys-scanner.jpg', '', 'jpg', 1, '', 1, 1, 19),
 (1, 'cd-surveys-ltd-homepage-website-design.jpg', '581499168291', '2017-07-04 12:38:11', '2017-07-04 12:38:11', 1, 1, 150023, 1, 'cd-surveys-ltd-homepage-website-design.jpg', '', 'jpg', 1, '', 1, 1, 20),
-(1, 'cdsurveysltd-company-van-signwriting-side.jpg', '401499187104', '2017-07-04 17:51:44', '2017-07-04 17:51:44', 1, 1, 38313, 1, 'cdsurveysltd-company-van-signwriting-side.jpg', '', 'jpg', 1, '', 1, 1, 21);
+(1, 'cdsurveysltd-company-van-signwriting-side.jpg', '401499187104', '2017-07-04 17:51:44', '2017-07-04 17:51:44', 1, 1, 38313, 1, 'cdsurveysltd-company-van-signwriting-side.jpg', '', 'jpg', 1, '', 1, 1, 21),
+(1, 'header-whatwedo.jpg', '541501167049', '2017-07-27 15:50:49', '2017-07-27 15:50:49', 1, 1, 42660, 1, 'header-whatwedo.jpg', '', 'jpg', 1, '', 1, 1, 22),
+(1, 'cdsurveys-pattern.jpg', '101501170996', '2017-07-27 16:56:36', '2017-07-27 16:56:36', 1, 1, 14423, 1, 'cdsurveys-pattern.jpg', '', 'jpg', 1, '', 1, 1, 23);
 
 -- --------------------------------------------------------
 
@@ -8621,10 +8768,10 @@ INSERT INTO `PageSearchIndex` (`cID`, `content`, `cName`, `cDescription`, `cPath
 (156, 'Copyright © 2017 Chris Watterston. All rights reserved. \r\n ', 'Footer Legal', NULL, '/!stacks/footer-legal', '2017-05-22 16:01:21', '2017-05-25 08:59:55', NULL, 0),
 (157, '', 'Footer Navigation', NULL, '/!stacks/footer-navigation', '2017-05-22 16:01:21', '2017-05-23 15:25:45', NULL, 0),
 (158, '\r\n	become a client\r\n	let’s talk?\r\n\r\n Contact.\r\n ', 'Footer Contact', NULL, '/!stacks/footer-contact', '2017-05-22 16:01:21', '2017-05-24 10:09:26', NULL, 0),
-(159, ' We are a design studio and we kick perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that never fails. \r\n\r\n And no, we’re not single minded. To us it doesn’t matter whether you’re within the educational sector, private sector, charity or just starting out on an exciting new road to success. We\'d love to have a chat. \r\n Branding\r\n\r\n\r\n	Brand Identity Design\r\n	Brand Guidelines\r\n	Brand Naming\r\n	Logo Design\r\n\r\n Digital\r\n\r\n\r\n	Website Design and Development\r\n	eCommerce Design\r\n	HTML Email Design\r\n\r\n Print\r\n\r\n\r\n	Print Communications\r\n	Brochure and Prospectus Design\r\n	Report Design\r\n	Stationery and Material Design\r\n\r\n Support\r\n\r\n\r\n	Managed Website Hosting\r\n	Website Support\r\n\r\n Clients\r\n\r\n We couldn’t thank these lovely lot enough, we’re so fortunate to have worked with them. They’ve kept us sane and allowed us to grow into what we’ve become today. \r\n \r\n	Annodata Limited\r\n	Tesla Installations Ltd\r\n	Designated PA\r\n	Moorfields Corporate Recovery Ltd\r\n	Pavilion Day Nursery\r\n	Sammy\'s Sunflower Fund\r\n	Spelthorne Schools Together\r\n	Reading Cricket Club\r\n	Perpool\r\n	Instyle Building and Design\r\n	John Lucas\r\n	JAC Data Ltd\r\n	JCC Wheat Construction\r\n	M&Y Air Systems Ltd\r\n\r\n\r\n\r\n	HMS Commercials\r\n	Michael Woodford Motorsport\r\n	Nicholson Plumbing and Heating\r\n	Char-asha Boutique\r\n	Bimu - Beauty In Make-Up\r\n	CD Surveys Ltd\r\n	Intelligent Transport Services Ltd\r\n	Feaver & Dust\r\n	Sally Watterston\r\n	Surrey Secondary Heads\r\n	Virginia Plumbing\r\n	Westworld Marine\r\n	UCC Coffee UK ltd\r\n\r\n\r\n\r\n	St Paul\'s Catholic College\r\n	Bushy-Hill Primary School\r\n	St. Ignatius Catholic Primary School\r\n	Our Lady of the Rosary Primary School\r\n	Salesian School\r\n	Innervate Career Services Ltd\r\n	St Michael\'s R C Primary School\r\n	Saint John Bosco College\r\n	The Marist Roman Catholic Primary School\r\n	St Paul\'s Connect\r\n	Midas Touch Landscapes\r\n	Old Blue Moses\r\n\r\n ', 'Services', '', '/services', '2017-05-23 15:30:41', '2017-06-27 13:27:17', NULL, 0),
+(159, ' We are a design studio and we kick perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that never fails. \r\n\r\n And no, we’re not single minded. To us it doesn’t matter whether you’re within the educational sector, private sector, charity or just starting out on an exciting new road to success. We\'d love to have a chat. \r\n Branding\r\n\r\n\r\n	Brand Identity Design\r\n	Brand Guidelines\r\n	Brand Naming\r\n	Logo Design\r\n\r\n Digital\r\n\r\n\r\n	Website Design and Development\r\n	eCommerce Design\r\n	HTML Email Design\r\n\r\n Print\r\n\r\n\r\n	Print Communications\r\n	Brochure and Prospectus Design\r\n	Report Design\r\n	Stationery and Material Design\r\n\r\n Support\r\n\r\n\r\n	Managed Website Hosting\r\n	Website Support\r\n\r\n Clients\r\n\r\n We couldn’t thank these lovely lot enough, we’re so fortunate to have worked with them. They’ve kept us sane and allowed us to grow into what we’ve become today. \r\n \r\n	Annodata Limited\r\n	Tesla Installations Ltd\r\n	Designated PA\r\n	Moorfields Corporate Recovery Ltd\r\n	Pavilion Day Nursery\r\n	Sammy\'s Sunflower Fund\r\n	Spelthorne Schools Together\r\n	Reading Cricket Club\r\n	Perpool\r\n	Instyle Building and Design\r\n	John Lucas\r\n	JAC Data Ltd\r\n	JCC Wheat Construction\r\n	M&Y Air Systems Ltd\r\n	HMS Commercials\r\n	Michael Woodford Motorsport\r\n	Nicholson Plumbing and Heating\r\n	Char-asha Boutique\r\n	Bimu - Beauty In Make-Up\r\n	CD Surveys Ltd\r\n	Intelligent Transport Services Ltd\r\n	Feaver & Dust\r\n	Sally Watterston\r\n	Surrey Secondary Heads\r\n	Virginia Plumbing\r\n	Westworld Marine\r\n	UCC Coffee UK ltd\r\n	St Paul\'s Catholic College\r\n	Bushy-Hill Primary School\r\n	St. Ignatius Catholic Primary School\r\n	Our Lady of the Rosary Primary School\r\n	Salesian School\r\n	Innervate Career Services Ltd\r\n	St Michael\'s R C Primary School\r\n	Saint John Bosco College\r\n	The Marist Roman Catholic Primary School\r\n	St Paul\'s Connect\r\n	Midas Touch Landscapes\r\n	Old Blue Moses\r\n\r\n ', 'Services', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '/services', '2017-05-23 15:30:00', '2017-07-27 15:53:40', NULL, 0),
 (160, ' That feeling when you’d happily live your life and work for free, but know that doing so sadly won’t pay the bills. If you’ve considered it and then received a slap around your chops to bring you back to reality, then you know you’ve chosen the right path in life and love what you do - That’s how we roll. \r\n\r\n I’m Chris Watterston, an independent designer working, living and probably lacking sleep in Surrey, UK. With my years of experience, I specialise in Brand Identity Design, Web Design and Front-End Development. \r\n\r\n Besides running my day-to-day design business, I’m also fortunate enough to invest and co-found an amazing family. My loving partner and our 2 beautiful daughters. \r\n\r\n Being an internet based design business, we’re not limited to working only with the residents of not so sunny Surrey. But also the surrounding areas, far and beyond, and more commonly across the seas. \r\n\r\n As you get to know us further and we spark our working relationship, you’ll start to recognise that I refer to me, myself and my business as ‘We’ - Why? Because I put everything we can and have to offer into every project and solution. \r\n\r\n I think that\'s enough of the ins and outs of us. Tell me about yourself. How are you, where are you from, your interests? \r\n\r\n Send us a friendly message to hello@chriswatterston.com. You’ll probably regret it if you don’t. \r\n ', 'About Us', 'Description', '/about-us', '2017-05-23 15:30:00', '2017-06-27 17:27:33', NULL, 0),
-(161, 'While I\'m not knee deep in enjoyment with the undertaking of projects, I like to keep my clients and visitors up to date with the latest news and work from our studio and home in London, United Kingdom. Whether it\'s work life, client problem solving, learning new things, personal or family life - I enjoy telling stories.\r\n\r\n Join our conversation online and subscribe to receive our monthly newsletters. \r\nI’ll only email you with important bits, never spam - pinky promise! \r\n ', 'News', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', '/blog', '2017-05-23 15:31:00', '2017-06-27 21:17:25', NULL, 0),
-(162, '', 'Case Studies', '', '/case-studies', '2017-05-23 15:31:17', '2017-06-30 16:05:38', NULL, 0),
+(161, 'While I\'m not knee deep in enjoyment with the undertaking of projects, I like to keep my clients and visitors up to date with the latest news and work from our studio and home in London, United Kingdom. Whether it\'s work life, client problem solving, learning new things, personal or family life - I enjoy telling stories.\r\n\r\n Join our conversation online and subscribe to receive our monthly newsletters. \r\nI’ll only email you with important bits, never spam - pinky promise! \r\n ', 'News', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', '/blog', '2017-05-23 15:31:00', '2017-07-27 15:45:19', NULL, 0),
+(162, '', 'Case Studies', '', '/case-studies', '2017-05-23 15:31:17', '2017-07-27 16:31:10', NULL, 0),
 (163, '', 'Store', '', '/store', '2017-05-23 15:31:28', '2017-05-23 15:31:50', NULL, 0),
 (164, '', 'Get in Contact', '', '/get-in-contact', '2017-05-23 15:32:00', '2017-05-23 15:34:18', NULL, 0),
 (165, '', 'Social Links', NULL, '/!stacks/social-links', '2017-05-24 10:14:23', '2017-05-25 11:00:42', NULL, 0),
@@ -8643,11 +8790,11 @@ INSERT INTO `PageSearchIndex` (`cID`, `content`, `cName`, `cDescription`, `cPath
 INSERT INTO `PageSearchIndex` (`cID`, `content`, `cName`, `cDescription`, `cPath`, `cDatePublic`, `cDateLastIndexed`, `cDateLastSitemapped`, `cRequiresReindex`) VALUES
 (188, ' We were unique in what we did, not only did we supported our base school, but 30+ other schools and businesses in and around the Surrey, UK areas. That doesn\'t sound a lot compared to some larger companies, but bear in mind we were just an IT team based within a school. \r\n\r\n Moving "Onwards and Upwards" as they say, before getting into to much about the past... all that had come to an unfortunate end, and non of our team of 14 wanted or wished for it. Many of the team moved on to further their careers and love for IT, but for me, this is was when I possibly made the biggest decision of my career. \r\n\r\n Making a decision to become an self-employed designer could be an easy hit for someone who\'s only 24 years of age, living at home with parents, paying no rent, no responsibilities, with thousands of pounds of disposable income each month, going out drinking and partying 7 night a week, with a partner who also has thousands of pounds of disposable income. Sounds like an easy life, doesn\'t it? Now let\'s spice things up a wee bit, what about if that someone was 24 years of age, lived with their partner who\'s a full time mum on an annual salary of £0, with their 2 loveable children, bills to pay, food on the table every day without fail, luxuries, running a car and motorbike, insurance, the list goes on, as you know. So has the decision become any easier? \r\n\r\n When you have a love for what you do, believe in yourself, and dreamt about working for yourself for years and years, the decision becomes easier. Before finalising my decision I spent hours reading articles on the net about what to expect, what\'s recommended, how much money you should have saved to cover yourself for a few months, the pros and cons, etc. But I still had my mind set, I wanted and needed to work for myself, and there was an opportunity slapping me right around my chops to do so. So I did! \r\n\r\n My first day of what some refer to as "Total Freedom", started on 1st September 2013. I woke up at 6:30, yes6:30am, with a smile on my face. The gut feeling of being my own boss was thrilling! And as time when on, weeks flew by, pre job stress faded away, my hair started to grow back (I\'m sure of it), more time for my family appeared out of thin air, I felt and became much happier. I started being myself again. Life was perfect! \r\nIt wasn\'t that I didn\'t love or enjoy my previous job, Don\'t get me wrong, I did. It\'s just that it became a routine, those who know me know I HATE routine. Now everyday is a different day. \r\n\r\n So, the question everyones asking me these days is "How successful have you been in starting out on your own". Well, incase you\'re wondering the same question , I\'ve laid out a couple of stats below to give you a rough idea... \r\n ', '4th Month Into Self-Employment', 'Jee. Taking a step back, it\'s been almost 4 months already. Holy Crap! Cutting a 5 year story into a nut shell, I previously worked for a secondary school within an IT department. It wasn\'t any ordinary IT department within a school, ow nooo.', '/blog/4th-month-into-self-employment', '2014-02-14 16:07:00', '2017-06-21 17:28:29', NULL, 0),
 (189, ' Enough time has passed now for me to settle into my new role, career, life, and I feel it\'s the perfect time to set myself some goals for 2014. So here they are, in no particular order... \r\n \r\n	Minimise on business and personal outgoings.\r\n	Provide design and development solutions to a minimum of two charities.\r\n	Write more. Post at least one blog article per month.\r\n	Design, develop and launch completed personal projects for everyone to use and benefit.\r\n	Increase involvement within online communities. Targeting Dribbble, GitHut and Conrete5.\r\n\r\n  So, there it is. Now let\'s dig a wee deeper look into each one... \r\n\r\n 1. Minimise on business and personal outgoings. This seams reasonable, doesn\'t it? Everyone knows businesses require money to make money, so I\'ve decided to cancel a few service that I\'d subscribed to over the years to save some pennies. \r\n\r\n The first sacrifice being Evernote. I signed up to Evernote\'s Premium Subscription back in 2011, I used to use it for everything at my pervious place of work, but boy have things changed since becoming self employed. I can honestly say, I don\'t even remember the last time I opened up my Evernote app to create or read a note. Really, really! I used to be a hourly user and had a tone of projects, notes, PSD files, wireframes, pictures, the list goes on, all from my pervious work place and personal life. Boom, I archived the lot off, and canceled my Premium Subscription. That\'s £30 per year i\'m now saving. Woop! \r\n\r\n My second sacrifice was Netflix. Don\'t get me wrong, Netflix is a great service if you like watching films that are 2+ years old, or you have kids that\'ll watch cartoons on the iPad. I personally like to watch new films that I don\'t have to blow the dust off to watch, I already have them all on DVD. Here\'s an actual example, my other half, the love of my life, has never watched Gladiator, what a film! Which I\'d like to add, is now 14 years old....AND IT\'S NOT EVEN ON NETFLIX! Excuse my french, but are you shitting me? So frustrating! So, you get the picture. That\'s another £5.99 per month, £71.88(ish) per year. \r\n\r\n Smiles all around, we\'re only on the 7th of January, and I\'ve already minimise my outgoing by £101.88 per year. Not bad going so far. \r\n\r\n 2. Provide design and development solutions to at least two charities. I\'ve always enjoyed helping others, it makes me feel all good and warm inside. Like wearing a onesie fully zipped to the neck, with the heating cranked up to 30° and your wood burner blazing! People who know me will know I very rarely say No, or hate having to say it. I\'ll find any reason to avoid the word, I\'d say this is probably a weakness of mine. So, moving onwards and upwards, I\'d give a lot of time for any individual or group with a lot of time for others. And with charities landing within this category, I\'ve always wanted to help a charity that needs an extra helping hand online. So, this year I\'m going to make sure I give my time to a minimum of two. Promise! \r\n\r\n 3. Write more. Post at least one blog article per month. I\'ll admit, my writing and grammar is crap! It always has been, and I hope it always won\'t be. This particular goal\'s to help increase my poor grammar, spelling, writing, etc, as you\'ve probably already noticed while reading this. You savvy lot, you! So, I\'ll be writing a minimum of one blog post per month. Lucky you! \r\n\r\n 4. Design, develop and launch completed personal projects for everyone to use and benefit. I\'ve always had an active mind, a thinker, and thought up a few pretty good ideas in the past for personal web projects. But with a full time job, I never did get around to completing them due to lack of time, the same old story. I could easily jump back on the bandwagon, finishing what I\'d started, but they\'re all out of date and wouldn\'t have any benefits or future. \r\n\r\n The first web app idea I came up with back in 2010, and was called My Child\'s Diary. MCD\'s vision was to provide an in the cloud diary for parents to log and remember the facts, millstones, photos, events and much more, of their kids, all through the internet, phone or tablet. Allowing it to be shared with family and friends, with an added feature so parents can get the final logged experience to be exported as a PDF download or to be printed on a hardback book. But, I never got around to finishing it. \r\n\r\n The second web app idea was called FancyE.at, which started late 2012, and again never did get finished. FE\'s vision was to bring the subject of quality, food, service and networking all into a simple, easy to use and social web app. The app would provide details such as the closest place to eat via a categorised search, personal favourite hot spots, reviews, menus, photos, share a scheduled dinner with friends, booking of tables, locations, discounts....bla, bla, bla. \r\n\r\n My new idea, which I\'ll admit did hurt a wee bit when it hit me, inspired by my other half, is already under way, with I hope to launch by 1st April 2014. The vision is aimed at new and expecting parents, with others benefiting also. BUT, I\'m saying no more! You\'ll have to wait and see once it\'s been launched. \r\n\r\n 5. Increase involvement within online communities. Targeting Dribbble, GitHut and Conrete5. I\'ve always wanted to hit three communities hard, well not hard but with my online presence, Dribbble, GitHut and Conrete5. I have accounts on all but over the years things have been stopping me doing just that. They are as follows...Dribbble, haven\'t been invited yet....please? GitHub and Concrete5, just not enough time. Now that times on my side, I can correct these areas and join all these other beautiful lot. \r\n\r\n So, thats that. Now you know my five goals for 2014, have you set any goals? If yes, then what are yours? \r\n ', 'Setting 5 Goals For 2014', 'A warm welcome to 2014, I wish you all a happy New Year. It\'s the start of a New Year for us all, and funny enough it\'s also that time where 99.9% of us feel the need to set ourself new year resolutions, goals, targets, or whatever you call it. For me, I\'ve just rolled into my 5th month of self employment and it still feels incredible, just as it did on day one.', '/blog/setting-5-goals-2014', '2014-02-01 16:17:00', '2017-06-21 17:29:56', NULL, 0),
-(190, ' With every website or application we design, develop and launch, we integrate 24/7/365 monitoring, Analytics, Support, Online Style Guideline - and the list goes on. \r\n\r\n Throughout March and April, we will be rolling out our brand new \'Statistics Dashboard\'. This means that you will be able to log into your Content Management System (CMS) and see all kind of useful information that you never saw before - see for yourself. \r\n  What do you think, first impressions? Take another look below - from top to bottom. \r\n\r\n The \'Statistics Dashboard\' will be an ongoing development so will be improved and grow as time goes on. But until then, we\'ll let you know when yours is ready. \r\n Interested in working together?\r\n\r\n We love meeting new people, so shall we build something bigger together? \r\n\r\n Start today \r\n ', 'Your New Website Statistics Dashboard', 'Since the new year, we\'ve been working hard between projects to improve features and services that we provide to you - more specifically, within your Content Management System (CMS). One of the biggest changes you\'ll notice is our brand new \'Statistics Dashboard\'. You\'ll soon be able to look over your website ‘Views’, ‘Storage’, ‘Traffic’, ‘Uptime’ and a ton more. All live time!', '/blog/your-new-website-statistics-dashboard', '2016-04-13 14:11:00', '2017-06-27 16:24:40', NULL, 0),
+(190, ' With every website or application we design, develop and launch, we integrate 24/7/365 monitoring, Analytics, Support, Online Style Guideline - and the list goes on. \r\n\r\n Throughout March and April, we will be rolling out our brand new \'Statistics Dashboard\'. This means that you will be able to log into your Content Management System (CMS) and see all kind of useful information that you never saw before - see for yourself. \r\n  What do you think, first impressions? Take another look below - from top to bottom. \r\n\r\n The \'Statistics Dashboard\' will be an ongoing development so will be improved and grow as time goes on. But until then, we\'ll let you know when yours is ready. \r\n Interested in working together?\r\n\r\n We love meeting new people, so shall we build something bigger together? \r\n\r\n Start today \r\n ', 'Your New Website Statistics Dashboard', 'Since the new year, we\'ve been working hard between projects to improve features and services that we provide to you - more specifically, within your Content Management System (CMS). One of the biggest changes you\'ll notice is our brand new \'Statistics Dashboard\'. You\'ll soon be able to look over your website ‘Views’, ‘Storage’, ‘Traffic’, ‘Uptime’ and a ton more. All live time!', '/blog/your-new-website-statistics-dashboard', '2016-04-13 14:11:00', '2017-07-27 15:40:01', NULL, 0),
 (191, 'Interested in working together?\r\n\r\n We love meeting new people, so shall we build something bigger together? \r\n\r\n Start today \r\n ', 'Working Together', NULL, '/!stacks/working-together', '2017-06-21 14:42:01', '2017-06-21 14:48:28', NULL, 0),
 (192, ' But what do the top selling designs have in common? Is there a secret? What can other sellers learn? \r\n\r\nThere is no cloud\r\n\r\n We connected with Chris Watterston the creator of the now famous and #1 bestselling "There is no cloud" sticker to answer those questions. \r\n\r\n Read the full story on Sticker Mule \r\n ', 'There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 'The Sticker Mule marketplace has been growing rapidly over the past couple of years. Sticker Mule loves seeing applications and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers.', '/blog/there-no-cloud-getting-1-sticker-mule-marketplace', '2016-04-21 15:26:00', '2017-06-21 15:37:05', NULL, 0),
 (196, '', 'Surveying up a Website Redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '/case-studies/surveying-up-a-website-redesign', '2016-09-09 15:30:00', '2017-06-30 16:05:28', NULL, 0),
-(198, 'Project goal\r\n\r\n Spending time discssing previous CD Surveys Ltd website with the directors, David and Andrew, it became clear that CD Surveys Ltd were stuck in the past in terms of their online "message", web presence and technology. The website was being maintained and built in-house, with personnel that were not familar with technologies, nor pushing their website forward - afterall, their day job was being skilled in Surveying and CAD (Computer Aided Design). \r\n\r\n There was a need for us to take a level of control and ownership, to ensure areas didn\'t break or full behind. A full re-design and rebuild was actioned, with a clear messions that the visitor should feel that they have known CD Surveys Ltd for years. A blog was introduced, including more simplified copy and intuitive imagry. \r\n Conclusion\r\n\r\n We feel that this project has not yet come to a close, but will continue to "roll" and improve, alongside CD Surveys Ltd. As technology imrpoves, we have plans to continue to implement. \r\n\r\n We look forward to see how this project will grow over time! \r\n\r\n Take a look at their website \r\n Jumping straight to the point  We designed the websites homepage to tell the visitor their message instantly, providing them a service in which they require. \r\n  ', 'Surveying up a Website Redesign', 'I\'ve had a long running relationship with CD Surveys Ltd for many years now, resulting in a multitude of large and small projects. Ranging from small development changes, through to their network infrastructure. Working with CD Surveys always gets me exciting because they are open to ideas and moving forward with technology. ', '/case-studies/cd-surves-ltd-surveying-up-a-website-redesign', '2016-09-09 16:05:00', '2017-07-04 17:35:48', NULL, 0),
+(198, 'Project goal\r\n\r\n Spending time discssing previous CD Surveys Ltd website with the directors, David and Andrew, it became clear that CD Surveys Ltd were stuck in the past in terms of their online "message", web presence and technology. The website was being maintained and built in-house, with personnel that were not familar with technologies, nor pushing their website forward - afterall, their day job was being skilled in Surveying and CAD (Computer Aided Design). \r\n\r\n There was a need for us to take a level of control and ownership, to ensure areas didn\'t break or full behind. A full re-design and rebuild was actioned, with a clear messions that the visitor should feel that they have known CD Surveys Ltd for years. A blog was introduced, including more simplified copy and intuitive imagry. \r\n Conclusion\r\n\r\n We feel that this project has not yet come to a close, but will continue to "roll" and improve, alongside CD Surveys Ltd. As technology imrpoves, we have plans to continue to implement. \r\n\r\n We look forward to see how this project will grow over time! \r\n\r\n Take a look at their website \r\n Jumping straight to the point  We designed the websites homepage to tell the visitor their message instantly, providing them a service in which they require. \r\n  ', 'Surveying up a Website Redesign', 'I\'ve had a long running relationship with CD Surveys Ltd for many years now, resulting in a multitude of large and small projects. Ranging from small development changes, through to their network infrastructure. Working with CD Surveys always gets me exciting because they are open to ideas and moving forward with technology. ', '/case-studies/cd-surves-ltd-surveying-up-a-website-redesign', '2016-09-09 16:05:00', '2017-07-27 16:56:48', NULL, 0),
 (199, 'Project goal\r\n\r\n Content here... define your broad project goal early in the case study, with a focus on larger issues like community, the environment or empowerment. \r\n Process and reseach \r\n\r\n Next is a look at how we can focus on process before artifact. Show Research In Clear, Process-Oriented Chunks. Show your research with photos, charts or a list of findings, even if it is not packaged neatly. \r\n Lessons Learned\r\n\r\n As we looked at before, case studies should emphasize design knowledge and creative processes. Of course, that includes visual, code and UX assumptions that didn’t hold up. There will always be lessons learned during projects, and sharing those is crucial so that others can learn from them. \r\n Testimonials\r\n\r\nThere’s something powerful about hearing directly from users, team members and clients. Short quotes that contain personal observations about the project are often the most accessible to readers.\r\n Conclusion\r\n\r\n I’ve tried to show that by focusing on process rather than artifact, we can build and share in-depth case studies. The studies allow us to reframe the conversation around design process and the humanity in what we create, rather than perfect deliverables. \r\n Slide Image 1  Vestibulum quis molestie quam. Mauris quis tortor nec metus ornare tincidunt eu et nunc. Ut fringilla luctus convallis. \r\n Slide Image 2  Mauris quis tortor nec metus ornare tincidunt eu et nunc. Ut fringilla luctus convallis. Vestibulum quis molestie quam. \r\n  ', 'Ford van graphical sign writing', 'An extension of our relationship with CD Surveys, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials but still ensure that the design caught everyones eye.', '/case-studies/cd-surveys-ltd-ford-van-graphical-sign-writing', '2017-07-04 17:47:00', '2017-07-04 17:52:21', NULL, 0);
 
 -- --------------------------------------------------------
@@ -8874,7 +9021,8 @@ INSERT INTO `PageTypeComposerOutputBlocks` (`ptComposerOutputBlockID`, `cID`, `c
 (18, 161, 3, 'Main', 0, 6, 191),
 (19, 161, 13, 'Main', 0, 6, 200),
 (20, 160, 4, 'Main', 0, 6, 201),
-(22, 162, 2, 'Main', 0, 6, 208);
+(22, 162, 2, 'Main', 0, 6, 208),
+(24, 161, 15, 'Main', 0, 6, 234);
 
 -- --------------------------------------------------------
 
@@ -10439,7 +10587,9 @@ INSERT INTO `TreeFileNodes` (`treeNodeID`, `fID`) VALUES
 (48, 18),
 (49, 19),
 (50, 20),
-(51, 21);
+(51, 21),
+(52, 22),
+(53, 23);
 
 -- --------------------------------------------------------
 
@@ -10567,7 +10717,9 @@ INSERT INTO `TreeNodes` (`treeNodeID`, `treeNodeTypeID`, `treeID`, `treeNodePare
 (48, 6, 3, 7, 17, '', '2017-06-27 17:32:01', '2017-06-27 17:32:01', 0, 7),
 (49, 6, 3, 7, 18, '', '2017-06-30 15:36:37', '2017-06-30 15:36:37', 0, 7),
 (50, 6, 3, 7, 19, '', '2017-07-04 12:38:11', '2017-07-04 12:38:11', 0, 7),
-(51, 6, 3, 7, 20, '', '2017-07-04 17:51:44', '2017-07-04 17:51:44', 0, 7);
+(51, 6, 3, 7, 20, '', '2017-07-04 17:51:44', '2017-07-04 17:51:44', 0, 7),
+(52, 6, 3, 7, 21, '', '2017-07-27 15:50:49', '2017-07-27 15:50:49', 0, 7),
+(53, 6, 3, 7, 22, '', '2017-07-27 16:56:36', '2017-07-27 16:56:36', 0, 7);
 
 -- --------------------------------------------------------
 
@@ -10872,7 +11024,7 @@ CREATE TABLE `Users` (
 --
 
 INSERT INTO `Users` (`uID`, `uName`, `uEmail`, `uPassword`, `uIsActive`, `uIsFullRecord`, `uIsValidated`, `uDateAdded`, `uLastPasswordChange`, `uHasAvatar`, `uLastOnline`, `uLastLogin`, `uPreviousLogin`, `uNumLogins`, `uLastAuthTypeID`, `uLastIP`, `uTimezone`, `uDefaultLanguage`, `uIsPasswordReset`) VALUES
-(1, 'admin', 'hello@chriswatterston.com', '$2a$12$kJV9yqhfCBt8k6DX6w7xxuSypfc/T0vGL5u2G3M2LTUpzYnRPmRvG', 1, 1, 1, '2017-05-22 15:59:23', '2017-05-22 15:59:23', 0, 1499446665, 1499158961, 1498773437, 7, 1, '7f000001', NULL, NULL, 0);
+(1, 'admin', 'hello@chriswatterston.com', '$2a$12$kJV9yqhfCBt8k6DX6w7xxuSypfc/T0vGL5u2G3M2LTUpzYnRPmRvG', 1, 1, 1, '2017-05-22 15:59:23', '2017-05-22 15:59:23', 0, 1501172285, 1499158961, 1498773437, 7, 1, '7f000001', NULL, NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -11199,7 +11351,17 @@ INSERT INTO `WorkflowProgressHistory` (`wphID`, `wpID`, `timestamp`, `object`) V
 (195, 38, '2017-07-04 16:27:39', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"38";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"198";s:4:"cvID";s:1:"9";}'),
 (196, 39, '2017-07-04 16:34:47', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"39";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"198";s:4:"cvID";s:2:"10";}'),
 (197, 40, '2017-07-04 16:35:46', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"40";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"198";s:4:"cvID";s:2:"11";}'),
-(198, 41, '2017-07-04 16:52:19', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"41";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"199";s:4:"cvID";s:1:"1";}');
+(198, 41, '2017-07-04 16:52:19', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"41";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"199";s:4:"cvID";s:1:"1";}'),
+(199, 31, '2017-07-27 14:39:59', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"31";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"190";s:4:"cvID";s:1:"7";}'),
+(200, 32, '2017-07-27 14:42:50', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"32";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"161";s:4:"cvID";s:2:"15";}'),
+(201, 33, '2017-07-27 14:44:55', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"33";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"161";s:4:"cvID";s:2:"16";}'),
+(202, 34, '2017-07-27 14:45:14', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"34";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"161";s:4:"cvID";s:2:"17";}'),
+(203, 35, '2017-07-27 14:50:59', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"35";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"159";s:4:"cvID";s:1:"9";}'),
+(204, 36, '2017-07-27 14:53:39', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"36";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"159";s:4:"cvID";s:2:"10";}'),
+(205, 37, '2017-07-27 15:29:22', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"37";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"162";s:4:"cvID";s:1:"3";}'),
+(206, 38, '2017-07-27 15:30:13', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"38";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"162";s:4:"cvID";s:1:"4";}'),
+(207, 39, '2017-07-27 15:31:09', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"39";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"162";s:4:"cvID";s:1:"5";}'),
+(208, 40, '2017-07-27 15:56:46', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"40";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"198";s:4:"cvID";s:2:"12";}');
 
 -- --------------------------------------------------------
 
@@ -13500,7 +13662,7 @@ ALTER TABLE `atSelectedSocialLinks`
 -- AUTO_INCREMENT for table `atSelectedTopics`
 --
 ALTER TABLE `atSelectedTopics`
-  MODIFY `avTreeTopicNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
+  MODIFY `avTreeTopicNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=114;
 --
 -- AUTO_INCREMENT for table `atSelectOptionLists`
 --
@@ -13535,7 +13697,7 @@ ALTER TABLE `AttributeTypes`
 -- AUTO_INCREMENT for table `AttributeValues`
 --
 ALTER TABLE `AttributeValues`
-  MODIFY `avID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1860;
+  MODIFY `avID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1905;
 --
 -- AUTO_INCREMENT for table `AuthenticationTypes`
 --
@@ -13555,7 +13717,7 @@ ALTER TABLE `BannedWords`
 -- AUTO_INCREMENT for table `Blocks`
 --
 ALTER TABLE `Blocks`
-  MODIFY `bID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=233;
+  MODIFY `bID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=239;
 --
 -- AUTO_INCREMENT for table `BlockTypes`
 --
@@ -13700,12 +13862,12 @@ ALTER TABLE `FileImageThumbnailTypes`
 -- AUTO_INCREMENT for table `Files`
 --
 ALTER TABLE `Files`
-  MODIFY `fID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `fID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 --
 -- AUTO_INCREMENT for table `FileSetFiles`
 --
 ALTER TABLE `FileSetFiles`
-  MODIFY `fsfID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `fsfID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 --
 -- AUTO_INCREMENT for table `FileSets`
 --
@@ -13865,7 +14027,7 @@ ALTER TABLE `PageTypeComposerFormLayoutSets`
 -- AUTO_INCREMENT for table `PageTypeComposerOutputBlocks`
 --
 ALTER TABLE `PageTypeComposerOutputBlocks`
-  MODIFY `ptComposerOutputBlockID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `ptComposerOutputBlockID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 --
 -- AUTO_INCREMENT for table `PageTypeComposerOutputControls`
 --
@@ -14020,7 +14182,7 @@ ALTER TABLE `SystemDatabaseQueryLog`
 -- AUTO_INCREMENT for table `TreeFileNodes`
 --
 ALTER TABLE `TreeFileNodes`
-  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 --
 -- AUTO_INCREMENT for table `TreeGroupNodes`
 --
@@ -14030,7 +14192,7 @@ ALTER TABLE `TreeGroupNodes`
 -- AUTO_INCREMENT for table `TreeNodes`
 --
 ALTER TABLE `TreeNodes`
-  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 --
 -- AUTO_INCREMENT for table `TreeNodeTypes`
 --
@@ -14090,7 +14252,7 @@ ALTER TABLE `UserValidationHashes`
 -- AUTO_INCREMENT for table `WorkflowProgress`
 --
 ALTER TABLE `WorkflowProgress`
-  MODIFY `wpID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `wpID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 --
 -- AUTO_INCREMENT for table `WorkflowProgressCategories`
 --
@@ -14100,12 +14262,12 @@ ALTER TABLE `WorkflowProgressCategories`
 -- AUTO_INCREMENT for table `WorkflowProgressHistory`
 --
 ALTER TABLE `WorkflowProgressHistory`
-  MODIFY `wphID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=199;
+  MODIFY `wphID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=209;
 --
 -- AUTO_INCREMENT for table `WorkflowRequestObjects`
 --
 ALTER TABLE `WorkflowRequestObjects`
-  MODIFY `wrID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `wrID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 --
 -- AUTO_INCREMENT for table `Workflows`
 --

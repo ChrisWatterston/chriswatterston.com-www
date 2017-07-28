@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 27, 2017 at 05:18 PM
+-- Generation Time: Jul 28, 2017 at 03:28 PM
 -- Server version: 5.7.13
 -- PHP Version: 5.6.23
 
@@ -58,7 +58,9 @@ INSERT INTO `AreaLayoutColumns` (`arLayoutColumnID`, `arLayoutID`, `arLayoutColu
 (19, 9, 0, 100, 13),
 (20, 9, 1, 101, 14),
 (21, 9, 2, 102, 15),
-(22, 9, 3, 103, 16);
+(22, 9, 3, 103, 16),
+(23, 10, 0, 125, 17),
+(24, 10, 1, 126, 18);
 
 -- --------------------------------------------------------
 
@@ -133,7 +135,8 @@ INSERT INTO `AreaLayouts` (`arLayoutID`, `arLayoutSpacing`, `arLayoutIsCustom`, 
 (5, 30, 0, 0, 0, 0),
 (6, 0, 0, 1, 0, 0),
 (8, 30, 0, 0, 0, 0),
-(9, 30, 0, 0, 0, 0);
+(9, 30, 0, 0, 0, 0),
+(10, 0, 0, 1, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -152,7 +155,9 @@ CREATE TABLE `AreaLayoutsUsingPresets` (
 
 INSERT INTO `AreaLayoutsUsingPresets` (`arLayoutID`, `preset`) VALUES
 (6, '5'),
-(7, '5');
+(7, '5'),
+(10, '5'),
+(11, '5');
 
 -- --------------------------------------------------------
 
@@ -359,7 +364,9 @@ INSERT INTO `Areas` (`arID`, `cID`, `arHandle`, `arOverrideCollectionPermissions
 (121, 198, 'Main Body Three', 0, 0, 0, 0),
 (122, 199, 'Main Body', 0, 0, 0, 0),
 (123, 199, 'Main Body Two', 0, 0, 0, 0),
-(124, 199, 'Main Body Three', 0, 0, 0, 0);
+(124, 199, 'Main Body Three', 0, 0, 0, 0),
+(125, 163, 'Main Body Two : 17', 0, 0, 0, 92),
+(126, 163, 'Main Body Two : 18', 0, 0, 0, 92);
 
 -- --------------------------------------------------------
 
@@ -2556,7 +2563,12 @@ INSERT INTO `Blocks` (`bID`, `bName`, `bDateAdded`, `bDateModified`, `bFilename`
 (235, '', '2017-07-27 15:52:30', '2017-07-27 15:52:39', NULL, '0', 14, 1, NULL),
 (236, '', '2017-07-27 15:53:36', '2017-07-27 15:53:36', NULL, '1', 14, 1, NULL),
 (237, '', '2017-07-27 16:29:59', '2017-07-27 16:30:11', 'chris-watterston-blog-list', '0', 35, 1, NULL),
-(238, '', '2017-07-27 16:31:05', '2017-07-27 16:31:05', 'chris-watterston-blog-list', '1', 35, 1, NULL);
+(238, '', '2017-07-27 16:31:05', '2017-07-27 16:31:05', 'chris-watterston-blog-list', '1', 35, 1, NULL),
+(239, '', '2017-07-28 13:53:21', '2017-07-28 13:53:21', NULL, '0', 1, 1, NULL),
+(240, '', '2017-07-28 13:53:47', '2017-07-28 13:53:47', NULL, '0', 30, 1, NULL),
+(243, '', '2017-07-28 15:25:27', '2017-07-28 15:25:27', NULL, '1', 14, 1, NULL),
+(244, '', '2017-07-28 15:25:55', '2017-07-28 15:26:38', NULL, '1', 14, 1, NULL),
+(245, '', '2017-07-28 15:27:09', '2017-07-28 15:27:09', NULL, '0', 30, 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -2935,7 +2947,12 @@ INSERT INTO `btContentLocal` (`bID`, `content`) VALUES
 (231, '<h3>Conclusion</h3>\r\n\r\n<p>We feel that this project has not yet come to a close, but will continue to &quot;roll&quot; and improve, alongside CD Surveys Ltd. As technology imrpoves, we have plans to continue to implement.</p>\r\n\r\n<p>We look forward to see how this project will grow over time!</p>\r\n\r\n<p><a class="abtn" href="http://www.cdsurveys.com/" target="_blank">Take a look at their website</a></p>\r\n'),
 (234, ''),
 (235, ''),
-(236, '<ol>\r\n	<li>Annodata Limited</li>\r\n	<li><a data-concrete5-link-type="ajax" href="https://ewww.chriswatterston.com/our-work/tesla-installations-ltd">Tesla Installations Ltd</a></li>\r\n	<li><a data-concrete5-link-type="ajax" href="https://ewww.chriswatterston.com/our-work/designated-pa">Designated PA</a></li>\r\n	<li><a data-concrete5-link-type="ajax" href="https://ewww.chriswatterston.com/our-work/moorfields-corporate-recovery">Moorfields Corporate Recovery Ltd</a></li>\r\n	<li>Pavilion Day Nursery</li>\r\n	<li>Sammy&#39;s Sunflower Fund</li>\r\n	<li>Spelthorne Schools Together</li>\r\n	<li>Reading Cricket Club</li>\r\n	<li>Perpool</li>\r\n	<li><a data-concrete5-link-type="ajax" href="https://ewww.chriswatterston.com/our-work/intelligent-transport-services">Instyle Building and Design</a></li>\r\n	<li>John Lucas</li>\r\n	<li>JAC Data Ltd</li>\r\n	<li>JCC Wheat Construction</li>\r\n	<li>M&amp;Y Air Systems Ltd</li>\r\n	<li>HMS Commercials</li>\r\n	<li>Michael Woodford Motorsport</li>\r\n	<li>Nicholson Plumbing and Heating</li>\r\n	<li>Char-asha Boutique</li>\r\n	<li>Bimu - Beauty In Make-Up</li>\r\n	<li>CD Surveys Ltd</li>\r\n	<li><a data-concrete5-link-type="ajax" href="https://ewww.chriswatterston.com/our-work/intelligent-transport-services">Intelligent Transport Services Ltd</a></li>\r\n	<li>Feaver &amp; Dust</li>\r\n	<li>Sally Watterston</li>\r\n	<li>Surrey Secondary Heads</li>\r\n	<li>Virginia Plumbing</li>\r\n	<li>Westworld Marine</li>\r\n	<li>UCC Coffee UK ltd</li>\r\n	<li>St Paul&#39;s Catholic College</li>\r\n	<li>Bushy-Hill Primary School</li>\r\n	<li>St. Ignatius Catholic Primary School</li>\r\n	<li>Our Lady of the Rosary Primary School</li>\r\n	<li><a data-concrete5-link-type="ajax" href="https://ewww.chriswatterston.com/our-work/salesian-school">Salesian School</a></li>\r\n	<li>Innervate Career Services Ltd</li>\r\n	<li>St Michael&#39;s R C Primary School</li>\r\n	<li><a data-concrete5-link-type="ajax" href="https://ewww.chriswatterston.com/our-work/saint-john-bosco-college-website-design">Saint John Bosco College</a></li>\r\n	<li>The Marist Roman Catholic Primary School</li>\r\n	<li>St Paul&#39;s Connect</li>\r\n	<li>Midas Touch Landscapes</li>\r\n	<li>Old Blue Moses</li>\r\n</ol>\r\n');
+(236, '<ol>\r\n	<li>Annodata Limited</li>\r\n	<li><a data-concrete5-link-type="ajax" href="https://ewww.chriswatterston.com/our-work/tesla-installations-ltd">Tesla Installations Ltd</a></li>\r\n	<li><a data-concrete5-link-type="ajax" href="https://ewww.chriswatterston.com/our-work/designated-pa">Designated PA</a></li>\r\n	<li><a data-concrete5-link-type="ajax" href="https://ewww.chriswatterston.com/our-work/moorfields-corporate-recovery">Moorfields Corporate Recovery Ltd</a></li>\r\n	<li>Pavilion Day Nursery</li>\r\n	<li>Sammy&#39;s Sunflower Fund</li>\r\n	<li>Spelthorne Schools Together</li>\r\n	<li>Reading Cricket Club</li>\r\n	<li>Perpool</li>\r\n	<li><a data-concrete5-link-type="ajax" href="https://ewww.chriswatterston.com/our-work/intelligent-transport-services">Instyle Building and Design</a></li>\r\n	<li>John Lucas</li>\r\n	<li>JAC Data Ltd</li>\r\n	<li>JCC Wheat Construction</li>\r\n	<li>M&amp;Y Air Systems Ltd</li>\r\n	<li>HMS Commercials</li>\r\n	<li>Michael Woodford Motorsport</li>\r\n	<li>Nicholson Plumbing and Heating</li>\r\n	<li>Char-asha Boutique</li>\r\n	<li>Bimu - Beauty In Make-Up</li>\r\n	<li>CD Surveys Ltd</li>\r\n	<li><a data-concrete5-link-type="ajax" href="https://ewww.chriswatterston.com/our-work/intelligent-transport-services">Intelligent Transport Services Ltd</a></li>\r\n	<li>Feaver &amp; Dust</li>\r\n	<li>Sally Watterston</li>\r\n	<li>Surrey Secondary Heads</li>\r\n	<li>Virginia Plumbing</li>\r\n	<li>Westworld Marine</li>\r\n	<li>UCC Coffee UK ltd</li>\r\n	<li>St Paul&#39;s Catholic College</li>\r\n	<li>Bushy-Hill Primary School</li>\r\n	<li>St. Ignatius Catholic Primary School</li>\r\n	<li>Our Lady of the Rosary Primary School</li>\r\n	<li><a data-concrete5-link-type="ajax" href="https://ewww.chriswatterston.com/our-work/salesian-school">Salesian School</a></li>\r\n	<li>Innervate Career Services Ltd</li>\r\n	<li>St Michael&#39;s R C Primary School</li>\r\n	<li><a data-concrete5-link-type="ajax" href="https://ewww.chriswatterston.com/our-work/saint-john-bosco-college-website-design">Saint John Bosco College</a></li>\r\n	<li>The Marist Roman Catholic Primary School</li>\r\n	<li>St Paul&#39;s Connect</li>\r\n	<li>Midas Touch Landscapes</li>\r\n	<li>Old Blue Moses</li>\r\n</ol>\r\n'),
+(240, '<div id=\'product-component-9abe5551a25\'></div>\r\n<script type="text/javascript">\r\n/*<![CDATA[*/\r\n\r\n(function () {\r\n  var scriptURL = \'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js\';\r\n  if (window.ShopifyBuy) {\r\n    if (window.ShopifyBuy.UI) {\r\n      ShopifyBuyInit();\r\n    } else {\r\n      loadScript();\r\n    }\r\n  } else {\r\n    loadScript();\r\n  }\r\n\r\n  function loadScript() {\r\n    var script = document.createElement(\'script\');\r\n    script.async = true;\r\n    script.src = scriptURL;\r\n    (document.getElementsByTagName(\'head\')[0] || document.getElementsByTagName(\'body\')[0]).appendChild(script);\r\n    script.onload = ShopifyBuyInit;\r\n  }\r\n\r\n  function ShopifyBuyInit() {\r\n    var client = ShopifyBuy.buildClient({\r\n      domain: \'chris-watterston.myshopify.com\',\r\n      apiKey: \'4513effbe12a7d7cd4c3289699fa6229\',\r\n      appId: \'6\',\r\n    });\r\n\r\n    ShopifyBuy.UI.onReady(client).then(function (ui) {\r\n      ui.createComponent(\'product\', {\r\n        id: [11471652998],\r\n        node: document.getElementById(\'product-component-9abe5551a25\'),\r\n        moneyFormat: \'%C2%A3%7B%7Bamount%7D%7D\',\r\n        options: {\r\n  "product": {\r\n    "layout": "horizontal",\r\n    "variantId": "all",\r\n    "width": "100%",\r\n    "contents": {\r\n      "img": false,\r\n      "imgWithCarousel": true,\r\n      "variantTitle": false,\r\n      "description": true,\r\n      "buttonWithQuantity": true,\r\n      "button": false,\r\n      "quantity": false\r\n    },\r\n    "text": {\r\n      "button": "Add to Basket"\r\n    },\r\n    "styles": {\r\n      "product": {\r\n        "text-align": "left",\r\n        "@media (min-width: 601px)": {\r\n          "max-width": "100%",\r\n          "margin-left": "0",\r\n          "margin-bottom": "50px"\r\n        }\r\n      },\r\n      "button": {\r\n        "background-color": "#06d6a0",\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-size": "14px",\r\n        "padding-top": "15px",\r\n        "padding-bottom": "15px",\r\n        "padding-left": "45px",\r\n        "padding-right": "45px",\r\n        ":hover": {\r\n          "background-color": "#05c190"\r\n        },\r\n        "border-radius": "0px",\r\n        ":focus": {\r\n          "background-color": "#05c190"\r\n        },\r\n        "font-weight": "bold"\r\n      },\r\n      "variantTitle": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "color": "#454851",\r\n        "font-weight": "normal"\r\n      },\r\n      "title": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-size": "26px",\r\n        "color": "#454851"\r\n      },\r\n      "description": {\r\n        "color": "#454851",\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-weight": "normal"\r\n      },\r\n      "price": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-size": "20px",\r\n        "color": "#454851",\r\n        "font-weight": "normal"\r\n      },\r\n      "quantityInput": {\r\n        "font-size": "14px",\r\n        "padding-top": "15px",\r\n        "padding-bottom": "15px"\r\n      },\r\n      "compareAt": {\r\n        "font-size": "17px",\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-weight": "normal",\r\n        "color": "#454851"\r\n      }\r\n    },\r\n    "googleFonts": [\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans"\r\n    ]\r\n  },\r\n  "cart": {\r\n    "contents": {\r\n      "button": true\r\n    },\r\n    "text": {\r\n      "title": "Your Basket",\r\n      "button": "Checkout",\r\n      "empty": "Your basket is empty."\r\n    },\r\n    "styles": {\r\n      "button": {\r\n        "background-color": "#06d6a0",\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-size": "14px",\r\n        "padding-top": "15px",\r\n        "padding-bottom": "15px",\r\n        ":hover": {\r\n          "background-color": "#05c190"\r\n        },\r\n        "border-radius": "0px",\r\n        ":focus": {\r\n          "background-color": "#05c190"\r\n        },\r\n        "font-weight": "bold"\r\n      },\r\n      "title": {\r\n        "color": "#454851"\r\n      },\r\n      "footer": {\r\n        "background-color": "#ffffff"\r\n      },\r\n      "header": {\r\n        "color": "#454851"\r\n      },\r\n      "lineItems": {\r\n        "color": "#454851"\r\n      },\r\n      "subtotalText": {\r\n        "color": "#454851"\r\n      },\r\n      "subtotal": {\r\n        "color": "#454851"\r\n      },\r\n      "notice": {\r\n        "color": "#454851"\r\n      },\r\n      "currency": {\r\n        "color": "#454851"\r\n      },\r\n      "close": {\r\n        ":hover": {\r\n          "color": "#454851"\r\n        },\r\n        "color": "#454851"\r\n      },\r\n      "emptyCart": {\r\n        "color": "#454851"\r\n      }\r\n    },\r\n    "googleFonts": [\r\n      "Open Sans"\r\n    ]\r\n  },\r\n  "modalProduct": {\r\n    "contents": {\r\n      "img": false,\r\n      "imgWithCarousel": true,\r\n      "variantTitle": false,\r\n      "buttonWithQuantity": true,\r\n      "button": false,\r\n      "quantity": false\r\n    },\r\n    "styles": {\r\n      "product": {\r\n        "@media (min-width: 601px)": {\r\n          "max-width": "100%",\r\n          "margin-left": "0px",\r\n          "margin-bottom": "0px"\r\n        }\r\n      },\r\n      "button": {\r\n        "background-color": "#06d6a0",\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-size": "14px",\r\n        "padding-top": "15px",\r\n        "padding-bottom": "15px",\r\n        "padding-left": "45px",\r\n        "padding-right": "45px",\r\n        ":hover": {\r\n          "background-color": "#05c190"\r\n        },\r\n        "border-radius": "0px",\r\n        ":focus": {\r\n          "background-color": "#05c190"\r\n        },\r\n        "font-weight": "bold"\r\n      },\r\n      "variantTitle": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-weight": "normal"\r\n      },\r\n      "title": {\r\n        "font-family": "Open Sans, sans-serif"\r\n      },\r\n      "description": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-weight": "normal"\r\n      },\r\n      "price": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-weight": "normal"\r\n      },\r\n      "quantityInput": {\r\n        "font-size": "14px",\r\n        "padding-top": "15px",\r\n        "padding-bottom": "15px"\r\n      },\r\n      "compareAt": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-weight": "normal"\r\n      }\r\n    },\r\n    "googleFonts": [\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans"\r\n    ]\r\n  },\r\n  "toggle": {\r\n    "styles": {\r\n      "toggle": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "background-color": "#06d6a0",\r\n        ":hover": {\r\n          "background-color": "#05c190"\r\n        },\r\n        ":focus": {\r\n          "background-color": "#05c190"\r\n        },\r\n        "font-weight": "bold"\r\n      },\r\n      "count": {\r\n        "font-size": "14px",\r\n        "color": "#ffffff",\r\n        ":hover": {\r\n          "color": "#ffffff"\r\n        }\r\n      },\r\n      "iconPath": {\r\n        "fill": "#ffffff"\r\n      }\r\n    },\r\n    "googleFonts": [\r\n      "Open Sans"\r\n    ]\r\n  },\r\n  "option": {\r\n    "styles": {\r\n      "label": {\r\n        "font-family": "Open Sans, sans-serif"\r\n      },\r\n      "select": {\r\n        "font-family": "Open Sans, sans-serif"\r\n      }\r\n    },\r\n    "googleFonts": [\r\n      "Open Sans",\r\n      "Open Sans"\r\n    ]\r\n  },\r\n  "productSet": {\r\n    "styles": {\r\n      "products": {\r\n        "@media (min-width: 601px)": {\r\n          "margin-left": "-20px"\r\n        }\r\n      }\r\n    }\r\n  },\r\n  "lineItem": {\r\n    "styles": {\r\n      "variantTitle": {\r\n        "color": "#454851"\r\n      },\r\n      "title": {\r\n        "color": "#454851"\r\n      },\r\n      "price": {\r\n        "color": "#454851"\r\n      },\r\n      "quantity": {\r\n        "color": "#454851"\r\n      },\r\n      "quantityIncrement": {\r\n        "color": "#454851",\r\n        "border-color": "#454851"\r\n      },\r\n      "quantityDecrement": {\r\n        "color": "#454851",\r\n        "border-color": "#454851"\r\n      },\r\n      "quantityInput": {\r\n        "color": "#454851",\r\n        "border-color": "#454851"\r\n      }\r\n    }\r\n  }\r\n}\r\n      });\r\n    });\r\n  }\r\n})();\r\n/*]]>*/\r\n</script>'),
+(243, '<h2>We are a design studio and we kick perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that never fails.</h2>\r\n'),
+(244, '<h2><strong>We are a design studio and we kick perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that never fails.</strong></h2>\r\n');
+INSERT INTO `btContentLocal` (`bID`, `content`) VALUES
+(245, '<div id=\'product-component-9abe5551a25\'></div>\r\n<script type="text/javascript">\r\n/*<![CDATA[*/\r\n\r\n(function () {\r\n  var scriptURL = \'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js\';\r\n  if (window.ShopifyBuy) {\r\n    if (window.ShopifyBuy.UI) {\r\n      ShopifyBuyInit();\r\n    } else {\r\n      loadScript();\r\n    }\r\n  } else {\r\n    loadScript();\r\n  }\r\n\r\n  function loadScript() {\r\n    var script = document.createElement(\'script\');\r\n    script.async = true;\r\n    script.src = scriptURL;\r\n    (document.getElementsByTagName(\'head\')[0] || document.getElementsByTagName(\'body\')[0]).appendChild(script);\r\n    script.onload = ShopifyBuyInit;\r\n  }\r\n\r\n  function ShopifyBuyInit() {\r\n    var client = ShopifyBuy.buildClient({\r\n      domain: \'chris-watterston.myshopify.com\',\r\n      apiKey: \'4513effbe12a7d7cd4c3289699fa6229\',\r\n      appId: \'6\',\r\n    });\r\n\r\n    ShopifyBuy.UI.onReady(client).then(function (ui) {\r\n      ui.createComponent(\'product\', {\r\n        id: [11471652998],\r\n        node: document.getElementById(\'product-component-9abe5551a25\'),\r\n        moneyFormat: \'%C2%A3%7B%7Bamount%7D%7D\',\r\n        options: {\r\n  "product": {\r\n    "layout": "horizontal",\r\n    "variantId": "all",\r\n    "width": "100%",\r\n    "contents": {\r\n      "img": false,\r\n      "imgWithCarousel": true,\r\n      "variantTitle": false,\r\n      "description": true,\r\n      "buttonWithQuantity": true,\r\n      "button": false,\r\n      "quantity": false\r\n    },\r\n    "text": {\r\n      "button": "Add to Basket"\r\n    },\r\n    "styles": {\r\n      "product": {\r\n        "text-align": "left",\r\n        "@media (min-width: 601px)": {\r\n          "max-width": "100%",\r\n          "margin-left": "0",\r\n          "margin-bottom": "50px"\r\n        }\r\n      },\r\n      "button": {\r\n        "background-color": "#06d6a0",\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-size": "14px",\r\n        "padding-top": "15px",\r\n        "padding-bottom": "15px",\r\n        "padding-left": "45px",\r\n        "padding-right": "45px",\r\n        ":hover": {\r\n          "background-color": "#05c190"\r\n        },\r\n        "border-radius": "0px",\r\n        ":focus": {\r\n          "background-color": "#05c190"\r\n        },\r\n        "font-weight": "bold"\r\n      },\r\n      "variantTitle": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "color": "#454851",\r\n        "font-weight": "normal"\r\n      },\r\n      "title": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-size": "26px",\r\n        "color": "#454851"\r\n      },\r\n      "description": {\r\n        "color": "#454851",\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-weight": "normal"\r\n      },\r\n      "price": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-size": "20px",\r\n        "color": "#454851",\r\n        "font-weight": "normal"\r\n      },\r\n      "quantityInput": {\r\n        "font-size": "14px",\r\n        "padding-top": "15px",\r\n        "padding-bottom": "15px"\r\n      },\r\n      "compareAt": {\r\n        "font-size": "17px",\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-weight": "normal",\r\n        "color": "#454851"\r\n      }\r\n    },\r\n    "googleFonts": [\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans"\r\n    ]\r\n  },\r\n  "cart": {\r\n    "contents": {\r\n      "button": true\r\n    },\r\n    "text": {\r\n      "title": "Your Basket",\r\n      "button": "Checkout",\r\n      "empty": "Your basket is empty."\r\n    },\r\n    "styles": {\r\n      "button": {\r\n        "background-color": "#06d6a0",\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-size": "14px",\r\n        "padding-top": "15px",\r\n        "padding-bottom": "15px",\r\n        ":hover": {\r\n          "background-color": "#05c190"\r\n        },\r\n        "border-radius": "0px",\r\n        ":focus": {\r\n          "background-color": "#05c190"\r\n        },\r\n        "font-weight": "bold"\r\n      },\r\n      "title": {\r\n        "color": "#454851"\r\n      },\r\n      "footer": {\r\n        "background-color": "#ffffff"\r\n      },\r\n      "header": {\r\n        "color": "#454851"\r\n      },\r\n      "lineItems": {\r\n        "color": "#454851"\r\n      },\r\n      "subtotalText": {\r\n        "color": "#454851"\r\n      },\r\n      "subtotal": {\r\n        "color": "#454851"\r\n      },\r\n      "notice": {\r\n        "color": "#454851"\r\n      },\r\n      "currency": {\r\n        "color": "#454851"\r\n      },\r\n      "close": {\r\n        ":hover": {\r\n          "color": "#454851"\r\n        },\r\n        "color": "#454851"\r\n      },\r\n      "emptyCart": {\r\n        "color": "#454851"\r\n      }\r\n    },\r\n    "googleFonts": [\r\n      "Open Sans"\r\n    ]\r\n  },\r\n  "modalProduct": {\r\n    "contents": {\r\n      "img": false,\r\n      "imgWithCarousel": true,\r\n      "variantTitle": false,\r\n      "buttonWithQuantity": true,\r\n      "button": false,\r\n      "quantity": false\r\n    },\r\n    "styles": {\r\n      "product": {\r\n        "@media (min-width: 601px)": {\r\n          "max-width": "100%",\r\n          "margin-left": "0px",\r\n          "margin-bottom": "0px"\r\n        }\r\n      },\r\n      "button": {\r\n        "background-color": "#06d6a0",\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-size": "14px",\r\n        "padding-top": "15px",\r\n        "padding-bottom": "15px",\r\n        "padding-left": "45px",\r\n        "padding-right": "45px",\r\n        ":hover": {\r\n          "background-color": "#05c190"\r\n        },\r\n        "border-radius": "0px",\r\n        ":focus": {\r\n          "background-color": "#05c190"\r\n        },\r\n        "font-weight": "bold"\r\n      },\r\n      "variantTitle": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-weight": "normal"\r\n      },\r\n      "title": {\r\n        "font-family": "Open Sans, sans-serif"\r\n      },\r\n      "description": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-weight": "normal"\r\n      },\r\n      "price": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-weight": "normal"\r\n      },\r\n      "quantityInput": {\r\n        "font-size": "14px",\r\n        "padding-top": "15px",\r\n        "padding-bottom": "15px"\r\n      },\r\n      "compareAt": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-weight": "normal"\r\n      }\r\n    },\r\n    "googleFonts": [\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans"\r\n    ]\r\n  },\r\n  "toggle": {\r\n    "styles": {\r\n      "toggle": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "background-color": "#06d6a0",\r\n        ":hover": {\r\n          "background-color": "#05c190"\r\n        },\r\n        ":focus": {\r\n          "background-color": "#05c190"\r\n        },\r\n        "font-weight": "bold"\r\n      },\r\n      "count": {\r\n        "font-size": "14px",\r\n        "color": "#ffffff",\r\n        ":hover": {\r\n          "color": "#ffffff"\r\n        }\r\n      },\r\n      "iconPath": {\r\n        "fill": "#ffffff"\r\n      }\r\n    },\r\n    "googleFonts": [\r\n      "Open Sans"\r\n    ]\r\n  },\r\n  "option": {\r\n    "styles": {\r\n      "label": {\r\n        "font-family": "Open Sans, sans-serif"\r\n      },\r\n      "select": {\r\n        "font-family": "Open Sans, sans-serif"\r\n      }\r\n    },\r\n    "googleFonts": [\r\n      "Open Sans",\r\n      "Open Sans"\r\n    ]\r\n  },\r\n  "productSet": {\r\n    "styles": {\r\n      "products": {\r\n        "@media (min-width: 601px)": {\r\n          "margin-left": "-20px"\r\n        }\r\n      }\r\n    }\r\n  },\r\n  "lineItem": {\r\n    "styles": {\r\n      "variantTitle": {\r\n        "color": "#454851"\r\n      },\r\n      "title": {\r\n        "color": "#454851"\r\n      },\r\n      "price": {\r\n        "color": "#454851"\r\n      },\r\n      "quantity": {\r\n        "color": "#454851"\r\n      },\r\n      "quantityIncrement": {\r\n        "color": "#454851",\r\n        "border-color": "#454851"\r\n      },\r\n      "quantityDecrement": {\r\n        "color": "#454851",\r\n        "border-color": "#454851"\r\n      },\r\n      "quantityInput": {\r\n        "color": "#454851",\r\n        "border-color": "#454851"\r\n      }\r\n    }\r\n  }\r\n}\r\n      });\r\n    });\r\n  }\r\n})();\r\n/*]]>*/\r\n</script>');
 
 -- --------------------------------------------------------
 
@@ -2960,7 +2977,8 @@ INSERT INTO `btCoreAreaLayout` (`bID`, `arLayoutID`) VALUES
 (108, 5),
 (175, 6),
 (181, 8),
-(182, 9);
+(182, 9),
+(239, 10);
 
 -- --------------------------------------------------------
 
@@ -4532,12 +4550,20 @@ INSERT INTO `CollectionAttributeValues` (`cID`, `cvID`, `akID`, `avID`) VALUES
 (161, 17, 1, 1872),
 (159, 9, 1, 1875),
 (159, 10, 1, 1875),
+(159, 11, 1, 1875),
+(159, 12, 1, 1875),
 (159, 9, 2, 1876),
 (159, 10, 2, 1876),
+(159, 11, 2, 1876),
+(159, 12, 2, 1876),
 (159, 9, 3, 1877),
 (159, 10, 3, 1877),
+(159, 11, 3, 1877),
+(159, 12, 3, 1877),
 (159, 9, 20, 1878),
 (159, 10, 20, 1878),
+(159, 11, 20, 1878),
+(159, 12, 20, 1878),
 (198, 12, 1, 1899),
 (198, 12, 2, 1900),
 (198, 12, 3, 1901),
@@ -4720,11 +4746,11 @@ INSERT INTO `Collections` (`cID`, `cDateAdded`, `cDateModified`, `cHandle`) VALU
 (156, '2017-05-22 16:01:21', '2017-05-25 08:59:53', 'footer-legal'),
 (157, '2017-05-22 16:01:21', '2017-05-23 15:25:44', 'footer-navigation'),
 (158, '2017-05-22 16:01:21', '2017-05-24 10:09:24', 'footer-contact'),
-(159, '2017-05-23 15:30:41', '2017-07-27 15:53:39', ''),
+(159, '2017-05-23 15:30:41', '2017-07-28 15:26:41', ''),
 (160, '2017-05-23 15:30:55', '2017-06-27 17:27:31', ''),
 (161, '2017-05-23 15:31:03', '2017-07-27 15:45:14', ''),
 (162, '2017-05-23 15:31:17', '2017-07-27 16:31:09', ''),
-(163, '2017-05-23 15:31:28', '2017-05-23 15:31:28', ''),
+(163, '2017-05-23 15:31:28', '2017-07-28 15:27:13', ''),
 (164, '2017-05-23 15:32:36', '2017-05-23 15:32:56', ''),
 (165, '2017-05-24 10:14:23', '2017-05-25 11:00:39', 'social-links'),
 (166, '2017-05-24 10:15:54', '2017-05-25 10:12:59', 'social-feed'),
@@ -4759,7 +4785,8 @@ INSERT INTO `Collections` (`cID`, `cDateAdded`, `cDateModified`, `cHandle`) VALU
 (196, '2017-06-30 15:37:39', '2017-06-30 16:05:33', ''),
 (197, '2017-06-30 15:50:37', '2017-06-30 15:50:37', NULL),
 (198, '2017-06-30 16:05:49', '2017-07-27 16:56:46', ''),
-(199, '2017-07-04 17:47:26', '2017-07-04 17:52:19', '');
+(199, '2017-07-04 17:47:26', '2017-07-04 17:52:19', ''),
+(200, '2017-07-28 14:39:19', '2017-07-28 14:39:19', NULL);
 
 -- --------------------------------------------------------
 
@@ -5191,6 +5218,26 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (159, 10, 188, 'Main Body Three', 105, 0, 0, 0, 0, 0, 0, 0),
 (159, 10, 235, 'Main Description', 124, 0, 1, 0, 0, 0, 0, 0),
 (159, 10, 236, 'Main Body Three', 106, 1, 1, 0, 0, 0, 0, 0),
+(159, 11, 113, 'Main', 53, 0, 0, 0, 0, 0, 0, 0),
+(159, 11, 114, 'Main Body One', 54, 0, 0, 0, 0, 0, 0, 0),
+(159, 11, 182, 'Main Body Two', 100, 0, 0, 0, 0, 0, 0, 0),
+(159, 11, 184, 'Main Body Two : 13', 101, 0, 0, 0, 0, 0, 0, 0),
+(159, 11, 185, 'Main Body Two : 14', 102, 0, 0, 0, 0, 0, 0, 0),
+(159, 11, 186, 'Main Body Two : 15', 103, 0, 0, 0, 0, 0, 0, 0),
+(159, 11, 187, 'Main Body Two : 16', 104, 0, 0, 0, 0, 0, 0, 0),
+(159, 11, 188, 'Main Body Three', 105, 0, 0, 0, 0, 0, 0, 0),
+(159, 11, 236, 'Main Body Three', 106, 1, 0, 0, 0, 0, 0, 0),
+(159, 11, 243, 'Main Description', 124, 0, 1, 0, 0, 0, 0, 0),
+(159, 12, 113, 'Main', 53, 0, 0, 0, 0, 0, 0, 0),
+(159, 12, 114, 'Main Body One', 54, 0, 0, 0, 0, 0, 0, 0),
+(159, 12, 182, 'Main Body Two', 100, 0, 0, 0, 0, 0, 0, 0),
+(159, 12, 184, 'Main Body Two : 13', 101, 0, 0, 0, 0, 0, 0, 0),
+(159, 12, 185, 'Main Body Two : 14', 102, 0, 0, 0, 0, 0, 0, 0),
+(159, 12, 186, 'Main Body Two : 15', 103, 0, 0, 0, 0, 0, 0, 0),
+(159, 12, 187, 'Main Body Two : 16', 104, 0, 0, 0, 0, 0, 0, 0),
+(159, 12, 188, 'Main Body Three', 105, 0, 0, 0, 0, 0, 0, 0),
+(159, 12, 236, 'Main Body Three', 106, 1, 0, 0, 0, 0, 0, 0),
+(159, 12, 244, 'Main Description', 124, 0, 1, 0, 0, 0, 0, 0),
 (160, 1, 27, 'Main', 24, 0, 1, 0, 0, 0, 0, 0),
 (160, 2, 27, 'Main', 24, 0, 0, 0, 0, 0, 0, 0),
 (160, 3, 27, 'Main', 24, 0, 0, 0, 0, 0, 0, 0),
@@ -5250,6 +5297,12 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (162, 5, 208, 'Main', 115, 0, 0, 0, 0, 0, 0, 0),
 (162, 5, 238, 'Main Body Two', 125, 0, 1, 0, 0, 0, 0, 0),
 (163, 1, 33, 'Main', 27, 0, 1, 0, 0, 0, 0, 0),
+(163, 2, 33, 'Main', 27, 0, 0, 0, 0, 0, 0, 0),
+(163, 2, 239, 'Main Body Two', 126, 0, 1, 0, 0, 0, 0, 0),
+(163, 2, 240, 'Main Body Two : 17', 127, 0, 1, 0, 0, 0, 0, 0),
+(163, 3, 33, 'Main', 27, 0, 0, 0, 0, 0, 0, 0),
+(163, 4, 33, 'Main', 27, 0, 0, 0, 0, 0, 0, 0),
+(163, 4, 245, 'Main Body Two', 128, 0, 1, 0, 0, 0, 0, 0),
 (164, 1, 35, 'Main', 28, 0, 1, 0, 0, 0, 0, 0),
 (164, 2, 35, 'Main', 28, 0, 0, 0, 0, 0, 0, 0),
 (164, 3, 35, 'Main', 28, 0, 0, 0, 0, 0, 0, 0),
@@ -5988,7 +6041,9 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (159, 7, 'Services', 'services', '', '2017-05-23 15:30:41', '2017-06-27 13:20:56', 'Version 7', 0, 0, 1, 1, 2, 8, NULL, NULL),
 (159, 8, 'Services', 'services', '', '2017-05-23 15:30:41', '2017-06-27 13:27:11', 'Version 8', 0, 0, 1, 1, 2, 8, NULL, NULL),
 (159, 9, 'Services', 'services', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-07-27 15:50:59', 'New Version 9', 0, 0, 1, 1, 2, 8, NULL, NULL),
-(159, 10, 'Services', 'services', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-07-27 15:52:30', 'Version 10', 1, 0, 1, 1, 2, 8, NULL, NULL),
+(159, 10, 'Services', 'services', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-07-27 15:52:30', 'Version 10', 0, 0, 1, 1, 2, 8, NULL, NULL),
+(159, 11, 'Services', 'services', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-07-28 15:25:27', 'Version 11', 0, 0, 1, 1, 2, 8, NULL, NULL),
+(159, 12, 'Services', 'services', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-07-28 15:25:55', 'Version 12', 1, 0, 1, 1, 2, 8, NULL, NULL),
 (160, 1, 'About Us', 'about-us', '', '2017-05-23 15:30:55', '2017-05-23 15:30:55', 'Initial Version', 0, 0, 1, 1, 2, 4, NULL, NULL),
 (160, 2, 'About Us', 'about-us', 'Description', '2017-05-23 15:30:00', '2017-06-20 14:23:02', 'New Version 2', 0, 0, 1, 1, 2, 4, NULL, NULL),
 (160, 3, 'About Us', 'about-us', 'Description', '2017-05-23 15:30:00', '2017-06-20 14:29:25', 'Version 3', 0, 0, 1, 1, 2, 4, NULL, NULL),
@@ -6015,7 +6070,10 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (162, 3, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-07-27 16:29:20', 'New Version 3', 0, 0, 1, 1, 2, 9, NULL, NULL),
 (162, 4, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-07-27 16:29:59', 'Version 4', 0, 0, 1, 1, 2, 9, NULL, NULL),
 (162, 5, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-07-27 16:31:05', 'Version 5', 1, 0, 1, 1, 2, 9, NULL, NULL),
-(163, 1, 'Store', 'store', '', '2017-05-23 15:31:28', '2017-05-23 15:31:28', 'Initial Version', 1, 0, 1, 1, 2, 4, NULL, NULL),
+(163, 1, 'Store', 'store', '', '2017-05-23 15:31:28', '2017-05-23 15:31:28', 'Initial Version', 0, 0, 1, 1, 2, 4, NULL, NULL),
+(163, 2, 'Store', 'store', '', '2017-05-23 15:31:28', '2017-07-28 13:53:21', 'Version 2', 0, 0, 1, 1, 2, 4, NULL, NULL),
+(163, 3, 'Store', 'store', '', '2017-05-23 15:31:28', '2017-07-28 14:39:00', 'Version 3', 0, 0, 1, 1, 2, 4, NULL, NULL),
+(163, 4, 'Store', 'store', '', '2017-05-23 15:31:28', '2017-07-28 15:27:09', 'Version 4', 1, 0, 1, 1, 2, 4, NULL, NULL),
 (164, 1, 'get in contact', 'get-in-contact', '', '2017-05-23 15:32:36', '2017-05-23 15:32:36', 'Initial Version', 0, 0, 1, 1, 2, 4, NULL, NULL),
 (164, 2, 'Get in Contact', 'get-in-contact', '', '2017-05-23 15:32:00', '2017-05-23 15:32:46', 'New Version 2', 0, 0, 1, 1, 2, 4, NULL, NULL),
 (164, 3, 'Get in Contact', 'get-in-contact', '', '2017-05-23 15:32:00', '2017-05-23 15:32:56', 'New Version 3', 1, 0, 1, 1, 2, 4, NULL, NULL),
@@ -6045,13 +6103,13 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (171, 6, 'Entering 2017 with a new desk and mindset', 'entering-2017-with-a-new-desk-and-mindset', 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', '2017-05-24 11:08:00', '2017-06-16 15:03:45', 'New Version 6', 0, 0, 1, 1, 0, 6, NULL, NULL),
 (171, 7, 'Entering 2017 with a new desk and mindset', 'entering-2017-with-a-new-desk-and-mindset', 'Adipiscing ante faucibus dictum ut at eu scelerisque orci a turpis quam imperdiet natoque malesuada suspendisse adipiscing suscipit habitasse ullamcorper pharetra vestibulum a viverra potenti dictumst in. Fusce ullamcorper maecenas turpis vestibulum arcu a nulla ornare parturient vestibulum ad ad class ac malesuada ut. Dis gravida a a curabitur parturient fringilla convallis hac at vehicula mus a auctor a mattis aliquam penatibus a vestibulum magna ante volutpat.', '2017-05-24 11:08:00', '2017-06-19 15:50:10', 'New Version 7', 1, 0, 1, 1, 0, 6, NULL, NULL),
 (172, 1, '', NULL, NULL, '2017-05-25 12:53:39', '2017-05-25 12:53:39', 'Initial Version', 1, 0, NULL, NULL, 0, 5, NULL, NULL),
-(173, 1, '1970\'s Speed boat project finally finish!', '1970s-speed-boat-project-finally-finish', 'Morbi sit amet odio est. Etiam ex quam, viverra ac porta ut, lobortis non ipsum. Praesent sollicitudin orci in ante placerat, eu gravida massa iaculis. Phasellus a est varius, imperdiet mi nec, hendrerit tortor. Nulla tincidunt magna nec tincidunt vehicula. Phasellus tristique tempor diam, vitae luctus enim aliquam eu. Cras dapibus vehicula libero quis interdum.', '2017-05-02 13:41:00', '2017-05-30 13:41:33', 'Initial Version', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(173, 1, '1970\'s Speed boat project finally finish!', '1970s-speed-boat-project-finally-finish', 'Morbi sit amet odio est. Etiam ex quam, viverra ac porta ut, lobortis non ipsum. Praesent sollicitudin orci in ante placerat, eu gravida massa iaculis. Phasellus a est varius, imperdiet mi nec, hendrerit tortor. Nulla tincidunt magna nec tincidunt vehicula. Phasellus tristique tempor diam, vitae luctus enim aliquam eu. Cras dapibus vehicula libero quis interdum.', '2017-05-02 13:41:00', '2017-05-30 13:41:33', 'Initial Version', 0, 0, 1, 1, 0, 6, NULL, NULL);
+INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescription`, `cvDatePublic`, `cvDateCreated`, `cvComments`, `cvIsApproved`, `cvIsNew`, `cvAuthorUID`, `cvApproverUID`, `pThemeID`, `pTemplateID`, `cvActivateDatetime`, `cvPublishDate`) VALUES
 (173, 2, '1970\'s Speed boat project finally finish!', '1970s-speed-boat-project-finally-finish', 'Morbi sit amet odio est. Etiam ex quam, viverra ac porta ut, lobortis non ipsum. Praesent sollicitudin orci in ante placerat, eu gravida massa iaculis. Phasellus a est varius, imperdiet mi nec, hendrerit tortor. Nulla tincidunt magna nec tincidunt vehicula. Phasellus tristique tempor diam, vitae luctus enim aliquam eu. Cras dapibus vehicula libero quis interdum.', '2017-05-02 13:41:00', '2017-05-30 13:43:34', 'New Version 2', 0, 0, 1, 1, 0, 6, NULL, NULL),
 (173, 3, '1970\'s speed boat restoration project almost complete', '1970s-speed-boat-project-finally-finish', 'Morbi sit amet odio est. Etiam ex quam, viverra ac porta ut, lobortis non ipsum. Praesent sollicitudin orci in ante placerat, eu gravida massa iaculis. Phasellus a est varius, imperdiet mi nec, hendrerit tortor. Nulla tincidunt magna nec tincidunt vehicula. Phasellus tristique tempor diam, vitae luctus enim aliquam eu. Cras dapibus vehicula libero quis interdum.', '2017-05-02 13:41:00', '2017-06-21 16:21:23', 'New Version 3', 1, 0, 1, 1, 0, 6, NULL, NULL),
 (174, 1, 'Recognition', 'recognition', '', '2017-06-02 14:58:31', '2017-06-02 14:58:31', 'Initial Version', 0, 0, 1, 1, 2, 4, NULL, NULL),
 (174, 2, 'Products', 'recognition', '', '2017-06-02 14:58:00', '2017-06-02 15:20:09', 'New Version 2', 0, 0, 1, 1, 2, 4, NULL, NULL),
-(174, 3, 'Products', 'products', '', '2017-06-02 14:58:00', '2017-06-02 15:20:21', 'New Version 3', 1, 0, 1, 1, 2, 4, NULL, NULL);
-INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescription`, `cvDatePublic`, `cvDateCreated`, `cvComments`, `cvIsApproved`, `cvIsNew`, `cvAuthorUID`, `cvApproverUID`, `pThemeID`, `pTemplateID`, `cvActivateDatetime`, `cvPublishDate`) VALUES
+(174, 3, 'Products', 'products', '', '2017-06-02 14:58:00', '2017-06-02 15:20:21', 'New Version 3', 1, 0, 1, 1, 2, 4, NULL, NULL),
 (175, 1, '', NULL, NULL, '2017-06-02 15:09:34', '2017-06-02 15:09:34', 'Initial Version', 1, 0, NULL, NULL, 0, 7, NULL, NULL),
 (176, 1, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:48', '2017-06-02 15:13:48', 'Initial Version', 0, 0, 1, 1, 2, 7, NULL, NULL),
 (176, 2, 'A mobile app for every side of education. Starting with your SKOOL', 'a-mobile-app-for-every-side-of-education-starting-with-your-skool', '', '2017-06-02 15:13:00', '2017-06-02 15:17:36', 'New Version 2', 0, 0, 1, 1, 2, 7, NULL, NULL),
@@ -6152,7 +6210,8 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (198, 10, 'Surveying up a Website Redesign', 'cd-surves-ltd-surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys Ltd for many years now, resulting in a multitude of large and small projects. Ranging from small development changes, right through to displaying database on their wall screening systems. Working with CD Surveys always gets me exciting because they are open to ideas and moving forward with technology. ', '2016-09-09 16:05:00', '2017-07-04 17:29:52', 'New Version 10', 0, 0, 1, 1, 0, 10, NULL, NULL),
 (198, 11, 'Surveying up a Website Redesign', 'cd-surves-ltd-surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys Ltd for many years now, resulting in a multitude of large and small projects. Ranging from small development changes, through to their network infrastructure. Working with CD Surveys always gets me exciting because they are open to ideas and moving forward with technology. ', '2016-09-09 16:05:00', '2017-07-04 17:35:20', 'New Version 11', 0, 0, 1, 1, 0, 10, NULL, NULL),
 (198, 12, 'Surveying up a Website Redesign', 'cd-surves-ltd-surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys Ltd for many years now, resulting in a multitude of large and small projects. Ranging from small development changes, through to their network infrastructure. Working with CD Surveys always gets me exciting because they are open to ideas and moving forward with technology. ', '2016-09-09 16:05:00', '2017-07-27 16:56:23', 'New Version 12', 1, 0, 1, 1, 0, 10, NULL, NULL),
-(199, 1, 'Ford van graphical sign writing', 'cd-surveys-ltd-ford-van-graphical-sign-writing', 'An extension of our relationship with CD Surveys, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials but still ensure that the design caught everyones eye.', '2017-07-04 17:47:00', '2017-07-04 17:47:26', 'Initial Version', 1, 0, 1, 1, 0, 10, NULL, NULL);
+(199, 1, 'Ford van graphical sign writing', 'cd-surveys-ltd-ford-van-graphical-sign-writing', 'An extension of our relationship with CD Surveys, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials but still ensure that the design caught everyones eye.', '2017-07-04 17:47:00', '2017-07-04 17:47:26', 'Initial Version', 1, 0, 1, 1, 0, 10, NULL, NULL),
+(200, 1, '', NULL, NULL, '2017-07-28 14:39:19', '2017-07-28 14:39:19', 'Initial Version', 1, 0, NULL, NULL, 0, 4, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -8590,7 +8649,8 @@ INSERT INTO `Pages` (`cID`, `siteTreeID`, `ptID`, `cIsTemplate`, `uID`, `cIsChec
 (196, 0, 8, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 0, 0, 8, 140, 0, 162, -1, '0', 0, 1),
 (197, 1, 8, 1, NULL, 0, NULL, NULL, NULL, 1, 197, 'OVERRIDE', NULL, 0, NULL, 0, 1, 0, 0, 0, 0, 0, -1, '0', 0, 0),
 (198, 1, 8, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 6, 162, 0, 162, -1, '0', 0, 0),
-(199, 1, 8, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 7, 162, 0, 162, -1, '0', 0, 0);
+(199, 1, 8, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 7, 162, 0, 162, -1, '0', 0, 0),
+(200, 1, 5, 1, NULL, 0, NULL, NULL, NULL, 1, 200, 'OVERRIDE', NULL, 0, NULL, 0, 1, 0, 0, 0, 0, 0, -1, '0', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -8768,11 +8828,11 @@ INSERT INTO `PageSearchIndex` (`cID`, `content`, `cName`, `cDescription`, `cPath
 (156, 'Copyright © 2017 Chris Watterston. All rights reserved. \r\n ', 'Footer Legal', NULL, '/!stacks/footer-legal', '2017-05-22 16:01:21', '2017-05-25 08:59:55', NULL, 0),
 (157, '', 'Footer Navigation', NULL, '/!stacks/footer-navigation', '2017-05-22 16:01:21', '2017-05-23 15:25:45', NULL, 0),
 (158, '\r\n	become a client\r\n	let’s talk?\r\n\r\n Contact.\r\n ', 'Footer Contact', NULL, '/!stacks/footer-contact', '2017-05-22 16:01:21', '2017-05-24 10:09:26', NULL, 0),
-(159, ' We are a design studio and we kick perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that never fails. \r\n\r\n And no, we’re not single minded. To us it doesn’t matter whether you’re within the educational sector, private sector, charity or just starting out on an exciting new road to success. We\'d love to have a chat. \r\n Branding\r\n\r\n\r\n	Brand Identity Design\r\n	Brand Guidelines\r\n	Brand Naming\r\n	Logo Design\r\n\r\n Digital\r\n\r\n\r\n	Website Design and Development\r\n	eCommerce Design\r\n	HTML Email Design\r\n\r\n Print\r\n\r\n\r\n	Print Communications\r\n	Brochure and Prospectus Design\r\n	Report Design\r\n	Stationery and Material Design\r\n\r\n Support\r\n\r\n\r\n	Managed Website Hosting\r\n	Website Support\r\n\r\n Clients\r\n\r\n We couldn’t thank these lovely lot enough, we’re so fortunate to have worked with them. They’ve kept us sane and allowed us to grow into what we’ve become today. \r\n \r\n	Annodata Limited\r\n	Tesla Installations Ltd\r\n	Designated PA\r\n	Moorfields Corporate Recovery Ltd\r\n	Pavilion Day Nursery\r\n	Sammy\'s Sunflower Fund\r\n	Spelthorne Schools Together\r\n	Reading Cricket Club\r\n	Perpool\r\n	Instyle Building and Design\r\n	John Lucas\r\n	JAC Data Ltd\r\n	JCC Wheat Construction\r\n	M&Y Air Systems Ltd\r\n	HMS Commercials\r\n	Michael Woodford Motorsport\r\n	Nicholson Plumbing and Heating\r\n	Char-asha Boutique\r\n	Bimu - Beauty In Make-Up\r\n	CD Surveys Ltd\r\n	Intelligent Transport Services Ltd\r\n	Feaver & Dust\r\n	Sally Watterston\r\n	Surrey Secondary Heads\r\n	Virginia Plumbing\r\n	Westworld Marine\r\n	UCC Coffee UK ltd\r\n	St Paul\'s Catholic College\r\n	Bushy-Hill Primary School\r\n	St. Ignatius Catholic Primary School\r\n	Our Lady of the Rosary Primary School\r\n	Salesian School\r\n	Innervate Career Services Ltd\r\n	St Michael\'s R C Primary School\r\n	Saint John Bosco College\r\n	The Marist Roman Catholic Primary School\r\n	St Paul\'s Connect\r\n	Midas Touch Landscapes\r\n	Old Blue Moses\r\n\r\n ', 'Services', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '/services', '2017-05-23 15:30:00', '2017-07-27 15:53:40', NULL, 0),
+(159, ' We are a design studio and we kick perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that never fails. \r\n\r\n And no, we’re not single minded. To us it doesn’t matter whether you’re within the educational sector, private sector, charity or just starting out on an exciting new road to success. We\'d love to have a chat. \r\n Branding\r\n\r\n\r\n	Brand Identity Design\r\n	Brand Guidelines\r\n	Brand Naming\r\n	Logo Design\r\n\r\n Digital\r\n\r\n\r\n	Website Design and Development\r\n	eCommerce Design\r\n	HTML Email Design\r\n\r\n Print\r\n\r\n\r\n	Print Communications\r\n	Brochure and Prospectus Design\r\n	Report Design\r\n	Stationery and Material Design\r\n\r\n Support\r\n\r\n\r\n	Managed Website Hosting\r\n	Website Support\r\n\r\n Clients\r\n\r\n We couldn’t thank these lovely lot enough, we’re so fortunate to have worked with them. They’ve kept us sane and allowed us to grow into what we’ve become today. \r\n \r\n	Annodata Limited\r\n	Tesla Installations Ltd\r\n	Designated PA\r\n	Moorfields Corporate Recovery Ltd\r\n	Pavilion Day Nursery\r\n	Sammy\'s Sunflower Fund\r\n	Spelthorne Schools Together\r\n	Reading Cricket Club\r\n	Perpool\r\n	Instyle Building and Design\r\n	John Lucas\r\n	JAC Data Ltd\r\n	JCC Wheat Construction\r\n	M&Y Air Systems Ltd\r\n	HMS Commercials\r\n	Michael Woodford Motorsport\r\n	Nicholson Plumbing and Heating\r\n	Char-asha Boutique\r\n	Bimu - Beauty In Make-Up\r\n	CD Surveys Ltd\r\n	Intelligent Transport Services Ltd\r\n	Feaver & Dust\r\n	Sally Watterston\r\n	Surrey Secondary Heads\r\n	Virginia Plumbing\r\n	Westworld Marine\r\n	UCC Coffee UK ltd\r\n	St Paul\'s Catholic College\r\n	Bushy-Hill Primary School\r\n	St. Ignatius Catholic Primary School\r\n	Our Lady of the Rosary Primary School\r\n	Salesian School\r\n	Innervate Career Services Ltd\r\n	St Michael\'s R C Primary School\r\n	Saint John Bosco College\r\n	The Marist Roman Catholic Primary School\r\n	St Paul\'s Connect\r\n	Midas Touch Landscapes\r\n	Old Blue Moses\r\n\r\n We are a design studio and we kick perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that never fails.\r\n ', 'Services', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '/services', '2017-05-23 15:30:00', '2017-07-28 15:26:42', NULL, 0),
 (160, ' That feeling when you’d happily live your life and work for free, but know that doing so sadly won’t pay the bills. If you’ve considered it and then received a slap around your chops to bring you back to reality, then you know you’ve chosen the right path in life and love what you do - That’s how we roll. \r\n\r\n I’m Chris Watterston, an independent designer working, living and probably lacking sleep in Surrey, UK. With my years of experience, I specialise in Brand Identity Design, Web Design and Front-End Development. \r\n\r\n Besides running my day-to-day design business, I’m also fortunate enough to invest and co-found an amazing family. My loving partner and our 2 beautiful daughters. \r\n\r\n Being an internet based design business, we’re not limited to working only with the residents of not so sunny Surrey. But also the surrounding areas, far and beyond, and more commonly across the seas. \r\n\r\n As you get to know us further and we spark our working relationship, you’ll start to recognise that I refer to me, myself and my business as ‘We’ - Why? Because I put everything we can and have to offer into every project and solution. \r\n\r\n I think that\'s enough of the ins and outs of us. Tell me about yourself. How are you, where are you from, your interests? \r\n\r\n Send us a friendly message to hello@chriswatterston.com. You’ll probably regret it if you don’t. \r\n ', 'About Us', 'Description', '/about-us', '2017-05-23 15:30:00', '2017-06-27 17:27:33', NULL, 0),
 (161, 'While I\'m not knee deep in enjoyment with the undertaking of projects, I like to keep my clients and visitors up to date with the latest news and work from our studio and home in London, United Kingdom. Whether it\'s work life, client problem solving, learning new things, personal or family life - I enjoy telling stories.\r\n\r\n Join our conversation online and subscribe to receive our monthly newsletters. \r\nI’ll only email you with important bits, never spam - pinky promise! \r\n ', 'News', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', '/blog', '2017-05-23 15:31:00', '2017-07-27 15:45:19', NULL, 0),
 (162, '', 'Case Studies', '', '/case-studies', '2017-05-23 15:31:17', '2017-07-27 16:31:10', NULL, 0),
-(163, '', 'Store', '', '/store', '2017-05-23 15:31:28', '2017-05-23 15:31:50', NULL, 0),
+(163, ' \r\n\r\n/**/\r\n ', 'Store', '', '/store', '2017-05-23 15:31:28', '2017-07-28 15:27:14', NULL, 0),
 (164, '', 'Get in Contact', '', '/get-in-contact', '2017-05-23 15:32:00', '2017-05-23 15:34:18', NULL, 0),
 (165, '', 'Social Links', NULL, '/!stacks/social-links', '2017-05-24 10:14:23', '2017-05-25 11:00:42', NULL, 0),
 (166, 'Instagram.\r\n Instagram feed here... ', 'Social Feed', NULL, '/!stacks/social-feed', '2017-05-24 10:15:54', '2017-05-25 10:13:01', NULL, 0),
@@ -9072,7 +9132,8 @@ INSERT INTO `PageTypePageTemplateDefaultPages` (`pTemplateID`, `ptID`, `cID`) VA
 (6, 8, 182),
 (8, 5, 193),
 (9, 5, 194),
-(10, 8, 197);
+(10, 8, 197),
+(4, 5, 200);
 
 -- --------------------------------------------------------
 
@@ -11024,7 +11085,7 @@ CREATE TABLE `Users` (
 --
 
 INSERT INTO `Users` (`uID`, `uName`, `uEmail`, `uPassword`, `uIsActive`, `uIsFullRecord`, `uIsValidated`, `uDateAdded`, `uLastPasswordChange`, `uHasAvatar`, `uLastOnline`, `uLastLogin`, `uPreviousLogin`, `uNumLogins`, `uLastAuthTypeID`, `uLastIP`, `uTimezone`, `uDefaultLanguage`, `uIsPasswordReset`) VALUES
-(1, 'admin', 'hello@chriswatterston.com', '$2a$12$kJV9yqhfCBt8k6DX6w7xxuSypfc/T0vGL5u2G3M2LTUpzYnRPmRvG', 1, 1, 1, '2017-05-22 15:59:23', '2017-05-22 15:59:23', 0, 1501172285, 1499158961, 1498773437, 7, 1, '7f000001', NULL, NULL, 0);
+(1, 'admin', 'hello@chriswatterston.com', '$2a$12$kJV9yqhfCBt8k6DX6w7xxuSypfc/T0vGL5u2G3M2LTUpzYnRPmRvG', 1, 1, 1, '2017-05-22 15:59:23', '2017-05-22 15:59:23', 0, 1501252031, 1501243652, 1499158961, 8, 1, '7f000001', NULL, NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -11361,7 +11422,12 @@ INSERT INTO `WorkflowProgressHistory` (`wphID`, `wpID`, `timestamp`, `object`) V
 (205, 37, '2017-07-27 15:29:22', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"37";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"162";s:4:"cvID";s:1:"3";}'),
 (206, 38, '2017-07-27 15:30:13', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"38";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"162";s:4:"cvID";s:1:"4";}'),
 (207, 39, '2017-07-27 15:31:09', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"39";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"162";s:4:"cvID";s:1:"5";}'),
-(208, 40, '2017-07-27 15:56:46', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"40";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"198";s:4:"cvID";s:2:"12";}');
+(208, 40, '2017-07-27 15:56:46', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"40";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"198";s:4:"cvID";s:2:"12";}'),
+(209, 31, '2017-07-28 12:54:13', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"31";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"163";s:4:"cvID";s:1:"2";}'),
+(210, 32, '2017-07-28 13:58:24', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"32";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"163";s:4:"cvID";s:1:"3";}'),
+(211, 33, '2017-07-28 14:25:29', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"33";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"159";s:4:"cvID";s:2:"11";}'),
+(212, 34, '2017-07-28 14:26:41', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"34";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"159";s:4:"cvID";s:2:"12";}'),
+(213, 35, '2017-07-28 14:27:13', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"35";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"163";s:4:"cvID";s:1:"4";}');
 
 -- --------------------------------------------------------
 
@@ -13627,7 +13693,7 @@ ALTER TABLE `WorkflowTypes`
 -- AUTO_INCREMENT for table `AreaLayoutColumns`
 --
 ALTER TABLE `AreaLayoutColumns`
-  MODIFY `arLayoutColumnID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `arLayoutColumnID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 --
 -- AUTO_INCREMENT for table `AreaLayoutCustomColumns`
 --
@@ -13642,7 +13708,7 @@ ALTER TABLE `AreaLayoutPresets`
 -- AUTO_INCREMENT for table `AreaLayouts`
 --
 ALTER TABLE `AreaLayouts`
-  MODIFY `arLayoutID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `arLayoutID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `AreaLayoutThemeGridColumns`
 --
@@ -13652,7 +13718,7 @@ ALTER TABLE `AreaLayoutThemeGridColumns`
 -- AUTO_INCREMENT for table `Areas`
 --
 ALTER TABLE `Areas`
-  MODIFY `arID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=125;
+  MODIFY `arID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=127;
 --
 -- AUTO_INCREMENT for table `atSelectedSocialLinks`
 --
@@ -13717,7 +13783,7 @@ ALTER TABLE `BannedWords`
 -- AUTO_INCREMENT for table `Blocks`
 --
 ALTER TABLE `Blocks`
-  MODIFY `bID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=239;
+  MODIFY `bID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=246;
 --
 -- AUTO_INCREMENT for table `BlockTypes`
 --
@@ -13777,7 +13843,7 @@ ALTER TABLE `btSurveyResults`
 -- AUTO_INCREMENT for table `Collections`
 --
 ALTER TABLE `Collections`
-  MODIFY `cID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=200;
+  MODIFY `cID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=201;
 --
 -- AUTO_INCREMENT for table `ConversationDiscussions`
 --
@@ -14252,7 +14318,7 @@ ALTER TABLE `UserValidationHashes`
 -- AUTO_INCREMENT for table `WorkflowProgress`
 --
 ALTER TABLE `WorkflowProgress`
-  MODIFY `wpID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `wpID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 --
 -- AUTO_INCREMENT for table `WorkflowProgressCategories`
 --
@@ -14262,12 +14328,12 @@ ALTER TABLE `WorkflowProgressCategories`
 -- AUTO_INCREMENT for table `WorkflowProgressHistory`
 --
 ALTER TABLE `WorkflowProgressHistory`
-  MODIFY `wphID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=209;
+  MODIFY `wphID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=214;
 --
 -- AUTO_INCREMENT for table `WorkflowRequestObjects`
 --
 ALTER TABLE `WorkflowRequestObjects`
-  MODIFY `wrID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `wrID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 --
 -- AUTO_INCREMENT for table `Workflows`
 --

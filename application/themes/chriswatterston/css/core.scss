@@ -674,6 +674,10 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 				}
 			}
 		}
+		.border-orange {
+			border:3px solid $col-yellow;
+			padding:10px 20px;
+		}
 	}
 
 	footer.main {

@@ -50,7 +50,7 @@
 	hr {
 		border:none;
 		border-top:3px solid #E7E9EE;
-		margin:10px 0 30px 0;
+		margin:60px 0 60px 0;
 	}
 
 	/* Images */
@@ -281,6 +281,20 @@
 	.list-lower-alpha, .list-lower-alpha * {list-style-type:lower-alpha;}
 	.list-upper-alpha, .list-upper-alpha * {list-style-type:upper-alpha;}
 	.list-none, .list-none * {list-style-type:none;}
+	.pcontent .list-compressed {
+		margin-top:0;
+		margin-bottom:0;
+		margin-left:0;
+		li {
+			list-style:none;
+			display:inline-block;
+			padding:0 2px;
+			&:before {
+				content:"\005C \00a0";
+				margin-right:2px;
+			}
+		}
+	}
 
 	// Tables
 	.table-default {

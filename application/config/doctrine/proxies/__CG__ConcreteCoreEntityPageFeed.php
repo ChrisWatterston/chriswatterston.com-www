@@ -341,6 +341,17 @@ class Feed extends \Concrete\Core\Entity\Page\Feed implements \Doctrine\ORM\Prox
     /**
      * {@inheritDoc}
      */
+    public function getFeedDisplayTitle($format = 'html')
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getFeedDisplayTitle', [$format]);
+
+        return parent::getFeedDisplayTitle($format);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function getCustomTopicAttributeKeyHandle()
     {
 

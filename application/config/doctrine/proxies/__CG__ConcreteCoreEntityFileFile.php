@@ -562,7 +562,7 @@ class File extends \Concrete\Core\Entity\File\File implements \Doctrine\ORM\Prox
     /**
      * {@inheritDoc}
      */
-    public function inFileSet($fs)
+    public function inFileSet(\Concrete\Core\File\Set\Set $fs)
     {
 
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'inFileSet', [$fs]);

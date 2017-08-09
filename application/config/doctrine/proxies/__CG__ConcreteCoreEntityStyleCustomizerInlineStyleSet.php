@@ -64,10 +64,10 @@ class StyleSet extends \Concrete\Core\Entity\StyleCustomizer\Inline\StyleSet imp
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'issID', 'customClass', 'customID', 'backgroundColor', 'backgroundImageFileID', 'backgroundRepeat', 'backgroundSize', 'backgroundPosition', 'borderColor', 'borderStyle', 'borderWidth', 'borderRadius', 'baseFontSize', 'alignment', 'textColor', 'linkColor', 'marginTop', 'marginBottom', 'marginLeft', 'marginRight', 'paddingTop', 'paddingBottom', 'paddingLeft', 'paddingRight', 'rotate', 'boxShadowHorizontal', 'boxShadowVertical', 'boxShadowBlur', 'boxShadowSpread', 'boxShadowColor', 'hideOnExtraSmallDevice', 'hideOnSmallDevice', 'hideOnMediumDevice', 'hideOnLargeDevice'];
+            return ['__isInitialized__', 'issID', 'customClass', 'customID', 'customElementAttribute', 'backgroundColor', 'backgroundImageFileID', 'backgroundRepeat', 'backgroundSize', 'backgroundPosition', 'borderColor', 'borderStyle', 'borderWidth', 'borderRadius', 'baseFontSize', 'alignment', 'textColor', 'linkColor', 'marginTop', 'marginBottom', 'marginLeft', 'marginRight', 'paddingTop', 'paddingBottom', 'paddingLeft', 'paddingRight', 'rotate', 'boxShadowHorizontal', 'boxShadowVertical', 'boxShadowBlur', 'boxShadowSpread', 'boxShadowColor', 'hideOnExtraSmallDevice', 'hideOnSmallDevice', 'hideOnMediumDevice', 'hideOnLargeDevice'];
         }
 
-        return ['__isInitialized__', 'issID', 'customClass', 'customID', 'backgroundColor', 'backgroundImageFileID', 'backgroundRepeat', 'backgroundSize', 'backgroundPosition', 'borderColor', 'borderStyle', 'borderWidth', 'borderRadius', 'baseFontSize', 'alignment', 'textColor', 'linkColor', 'marginTop', 'marginBottom', 'marginLeft', 'marginRight', 'paddingTop', 'paddingBottom', 'paddingLeft', 'paddingRight', 'rotate', 'boxShadowHorizontal', 'boxShadowVertical', 'boxShadowBlur', 'boxShadowSpread', 'boxShadowColor', 'hideOnExtraSmallDevice', 'hideOnSmallDevice', 'hideOnMediumDevice', 'hideOnLargeDevice'];
+        return ['__isInitialized__', 'issID', 'customClass', 'customID', 'customElementAttribute', 'backgroundColor', 'backgroundImageFileID', 'backgroundRepeat', 'backgroundSize', 'backgroundPosition', 'borderColor', 'borderStyle', 'borderWidth', 'borderRadius', 'baseFontSize', 'alignment', 'textColor', 'linkColor', 'marginTop', 'marginBottom', 'marginLeft', 'marginRight', 'paddingTop', 'paddingBottom', 'paddingLeft', 'paddingRight', 'rotate', 'boxShadowHorizontal', 'boxShadowVertical', 'boxShadowBlur', 'boxShadowSpread', 'boxShadowColor', 'hideOnExtraSmallDevice', 'hideOnSmallDevice', 'hideOnMediumDevice', 'hideOnLargeDevice'];
     }
 
     /**
@@ -215,6 +215,28 @@ class StyleSet extends \Concrete\Core\Entity\StyleCustomizer\Inline\StyleSet imp
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCustomID', []);
 
         return parent::getCustomID();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setCustomElementAttribute($customElementAttribute)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCustomElementAttribute', [$customElementAttribute]);
+
+        return parent::setCustomElementAttribute($customElementAttribute);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getCustomElementAttribute()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCustomElementAttribute', []);
+
+        return parent::getCustomElementAttribute();
     }
 
     /**

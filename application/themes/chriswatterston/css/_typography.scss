@@ -71,6 +71,15 @@
 			border:0;
 		}
 	}
+	.img-standard-size {
+		padding:0 !important;
+		img.ccm-image-block {
+			margin:0 !important;
+			border:0 !important;
+			width:auto !important;
+			height:auto !important;
+		}
+	}
 
 	/* Icons */
 	i.icon {

@@ -198,17 +198,6 @@ class AttributeKeyControl extends \Concrete\Core\Entity\Express\Control\Attribut
     /**
      * {@inheritDoc}
      */
-    public function getControlRenderer(\Concrete\Core\Express\Form\Context\ContextInterface $context)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getControlRenderer', [$context]);
-
-        return parent::getControlRenderer($context);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function getControlLabel()
     {
 
@@ -248,6 +237,17 @@ class AttributeKeyControl extends \Concrete\Core\Entity\Express\Control\Attribut
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getExporter', []);
 
         return parent::getExporter();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getControlView(\Concrete\Core\Form\Context\ContextInterface $context)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getControlView', [$context]);
+
+        return parent::getControlView($context);
     }
 
     /**

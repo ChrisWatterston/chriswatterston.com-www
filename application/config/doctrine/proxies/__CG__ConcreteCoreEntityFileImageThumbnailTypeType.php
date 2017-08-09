@@ -64,10 +64,10 @@ class Type extends \Concrete\Core\Entity\File\Image\Thumbnail\Type\Type implemen
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'ftTypeHandle', 'ftTypeName', 'ftTypeWidth', 'ftTypeHeight', 'ftTypeIsRequired', 'ftTypeID'];
+            return ['__isInitialized__', 'ftTypeHandle', 'ftTypeName', 'ftTypeWidth', 'ftTypeHeight', 'ftTypeSizingMode', 'ftTypeIsRequired', 'ftTypeID'];
         }
 
-        return ['__isInitialized__', 'ftTypeHandle', 'ftTypeName', 'ftTypeWidth', 'ftTypeHeight', 'ftTypeIsRequired', 'ftTypeID'];
+        return ['__isInitialized__', 'ftTypeHandle', 'ftTypeName', 'ftTypeWidth', 'ftTypeHeight', 'ftTypeSizingMode', 'ftTypeIsRequired', 'ftTypeID'];
     }
 
     /**
@@ -248,6 +248,39 @@ class Type extends \Concrete\Core\Entity\File\Image\Thumbnail\Type\Type implemen
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getName', []);
 
         return parent::getName();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setSizingMode($ftTypeSizingMode = 'proportional')
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setSizingMode', [$ftTypeSizingMode]);
+
+        return parent::setSizingMode($ftTypeSizingMode);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getSizingMode()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSizingMode', []);
+
+        return parent::getSizingMode();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getSizingModeDisplayName()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSizingModeDisplayName', []);
+
+        return parent::getSizingModeDisplayName();
     }
 
     /**

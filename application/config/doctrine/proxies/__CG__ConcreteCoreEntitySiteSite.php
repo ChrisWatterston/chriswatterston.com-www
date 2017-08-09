@@ -176,6 +176,50 @@ class Site extends \Concrete\Core\Entity\Site\Site implements \Doctrine\ORM\Prox
     /**
      * {@inheritDoc}
      */
+    public function getPermissionObjectIdentifier()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPermissionObjectIdentifier', []);
+
+        return parent::getPermissionObjectIdentifier();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getPermissionResponseClassName()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPermissionResponseClassName', []);
+
+        return parent::getPermissionResponseClassName();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getPermissionAssignmentClassName()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPermissionAssignmentClassName', []);
+
+        return parent::getPermissionAssignmentClassName();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getPermissionObjectKeyCategoryHandle()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPermissionObjectKeyCategoryHandle', []);
+
+        return parent::getPermissionObjectKeyCategoryHandle();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function getObjectAttributeCategory()
     {
 
@@ -406,6 +450,28 @@ class Site extends \Concrete\Core\Entity\Site\Site implements \Doctrine\ORM\Prox
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSiteCanonicalURL', []);
 
         return parent::getSiteCanonicalURL();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getSiteAlternativeCanonicalURL()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSiteAlternativeCanonicalURL', []);
+
+        return parent::getSiteAlternativeCanonicalURL();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getSiteSSLCanonicalURL()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSiteSSLCanonicalURL', []);
+
+        return parent::getSiteSSLCanonicalURL();
     }
 
     /**

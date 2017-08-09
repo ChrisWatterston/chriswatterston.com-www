@@ -228,4 +228,15 @@ class NewPrivateMessageNotification extends \Concrete\Core\Entity\Notification\N
         return parent::setNotificationDate($nDate);
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    public function getAlerts()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getAlerts', []);
+
+        return parent::getAlerts();
+    }
+
 }

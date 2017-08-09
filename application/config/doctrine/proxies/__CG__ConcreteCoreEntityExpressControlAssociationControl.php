@@ -187,6 +187,17 @@ class AssociationControl extends \Concrete\Core\Entity\Express\Control\Associati
     /**
      * {@inheritDoc}
      */
+    public function getControlView(\Concrete\Core\Form\Context\ContextInterface $context)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getControlView', [$context]);
+
+        return parent::getControlView($context);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function setAssociationEntityLabelMask($association_entity_label_mask)
     {
 
@@ -215,17 +226,6 @@ class AssociationControl extends \Concrete\Core\Entity\Express\Control\Associati
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setAssociation', [$association]);
 
         return parent::setAssociation($association);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getControlRenderer(\Concrete\Core\Express\Form\Context\ContextInterface $context)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getControlRenderer', [$context]);
-
-        return parent::getControlRenderer($context);
     }
 
     /**

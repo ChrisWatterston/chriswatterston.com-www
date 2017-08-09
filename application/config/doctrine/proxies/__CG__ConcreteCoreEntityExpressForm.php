@@ -268,6 +268,17 @@ class Form extends \Concrete\Core\Entity\Express\Form implements \Doctrine\ORM\P
     /**
      * {@inheritDoc}
      */
+    public function getControlView(\Concrete\Core\Form\Context\ContextInterface $context)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getControlView', [$context]);
+
+        return parent::getControlView($context);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function getControls()
     {
 

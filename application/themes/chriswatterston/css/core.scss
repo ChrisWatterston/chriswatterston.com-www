@@ -239,7 +239,8 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 		&.page-blog,
 		&.page-bloglist,
 		&.page-recognition,
-		&.page-default {
+		&.page-default,
+		&.page-landing {
 			position:relative;
 			height:370px;
 			background-image:none;
@@ -271,6 +272,21 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 		&.page-bloglist {
 			height:250px;
 			section.introduction-wrap {margin-top:35px;}
+		}
+		&.page-landing {
+			height:auto;
+			section.introduction-wrap {
+				margin-top:35px;
+				margin-bottom:35px;
+			}
+			&#landing-shopify {
+				background:-webkit-linear-gradient(bottom, rgba(92,106,196,1), rgba(48,55,59,.8));
+				background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(92,106,196,1)), to(rgba(48,55,59,.8)));
+				background:-webkit-linear-gradient(bottom, rgba(92,106,196,1), rgba(48,55,59,.8));
+				background:-moz-linear-gradient(bottom, rgba(92,106,196,1), rgba(48,55,59,.8));
+				background:-ms-linear-gradient(bottom, rgba(92,106,196,1), rgba(48,55,59,.8));
+				background:-o-linear-gradient(bottom, rgba(92,106,196,1), rgba(48,55,59,.8));
+			}
 		}
 	}
 
@@ -671,6 +687,13 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 							}
 						}
 					}
+				}
+			}
+		}
+		&#landing-shopify {
+			section.services-wrap {
+				.services-desc {
+					background-image:url("../img/cons/bkgrnd-bodyfeed-shopify.svg");
 				}
 			}
 		}

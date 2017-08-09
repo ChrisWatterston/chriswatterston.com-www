@@ -64,10 +64,10 @@ class OneAssociation extends \Concrete\Core\Entity\Express\Entry\OneAssociation 
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'id', 'entry', 'association', 'selectedEntries'];
+            return ['__isInitialized__', 'id', 'entry', 'association', 'selectedEntries', 'sorted'];
         }
 
-        return ['__isInitialized__', 'id', 'entry', 'association', 'selectedEntries'];
+        return ['__isInitialized__', 'id', 'entry', 'association', 'selectedEntries', 'sorted'];
     }
 
     /**
@@ -193,6 +193,17 @@ class OneAssociation extends \Concrete\Core\Entity\Express\Entry\OneAssociation 
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setSelectedEntry', [$selected_entry]);
 
         return parent::setSelectedEntry($selected_entry);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function clearSelectedEntry()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'clearSelectedEntry', []);
+
+        return parent::clearSelectedEntry();
     }
 
     /**

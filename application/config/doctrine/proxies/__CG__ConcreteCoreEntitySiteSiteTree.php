@@ -231,17 +231,6 @@ class SiteTree extends \Concrete\Core\Entity\Site\SiteTree implements \Doctrine\
     /**
      * {@inheritDoc}
      */
-    public function getLocaleCollection()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getLocaleCollection', []);
-
-        return parent::getLocaleCollection();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function getSiteHomePageID()
     {
 

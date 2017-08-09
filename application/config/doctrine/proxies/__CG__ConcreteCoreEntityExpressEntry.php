@@ -64,10 +64,10 @@ class Entry extends \Concrete\Core\Entity\Express\Entry implements \Doctrine\ORM
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'exEntryID', 'exEntryDisplayOrder', 'exEntryDateCreated', 'entity', 'attributes', 'associations', 'containing_associations'];
+            return ['__isInitialized__', 'entryFormatter', 'exEntryID', 'exEntryDisplayOrder', 'exEntryDateCreated', 'entity', 'attributes', 'associations', 'containing_associations'];
         }
 
-        return ['__isInitialized__', 'exEntryID', 'exEntryDisplayOrder', 'exEntryDateCreated', 'entity', 'attributes', 'associations', 'containing_associations'];
+        return ['__isInitialized__', 'entryFormatter', 'exEntryID', 'exEntryDisplayOrder', 'exEntryDateCreated', 'entity', 'attributes', 'associations', 'containing_associations'];
     }
 
     /**
@@ -286,6 +286,17 @@ class Entry extends \Concrete\Core\Entity\Express\Entry implements \Doctrine\ORM
     /**
      * {@inheritDoc}
      */
+    public function setID($exEntryID)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setID', [$exEntryID]);
+
+        return parent::setID($exEntryID);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function getAttributes()
     {
 
@@ -358,6 +369,17 @@ class Entry extends \Concrete\Core\Entity\Express\Entry implements \Doctrine\ORM
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getAssociation', [$handle]);
 
         return parent::getAssociation($handle);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getEntryAssociation(\Concrete\Core\Entity\Express\Association $association)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getEntryAssociation', [$association]);
+
+        return parent::getEntryAssociation($association);
     }
 
     /**

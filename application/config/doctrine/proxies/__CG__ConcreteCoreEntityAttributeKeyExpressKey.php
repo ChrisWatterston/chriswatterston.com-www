@@ -451,6 +451,17 @@ class ExpressKey extends \Concrete\Core\Entity\Attribute\Key\ExpressKey implemen
     /**
      * {@inheritDoc}
      */
+    public function getControlView(\Concrete\Core\Form\Context\ContextInterface $context)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getControlView', [$context]);
+
+        return parent::getControlView($context);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function render($view = 'view', $value = false, $return = false)
     {
 

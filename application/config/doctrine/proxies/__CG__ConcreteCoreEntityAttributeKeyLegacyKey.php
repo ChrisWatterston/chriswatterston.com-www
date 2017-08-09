@@ -462,6 +462,17 @@ class LegacyKey extends \Concrete\Core\Entity\Attribute\Key\LegacyKey implements
     /**
      * {@inheritDoc}
      */
+    public function getControlView(\Concrete\Core\Form\Context\ContextInterface $context)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getControlView', [$context]);
+
+        return parent::getControlView($context);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function render($view = 'view', $value = false, $return = false)
     {
 

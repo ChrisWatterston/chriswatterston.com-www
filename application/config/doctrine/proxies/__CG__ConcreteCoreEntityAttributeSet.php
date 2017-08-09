@@ -187,6 +187,17 @@ class Set extends \Concrete\Core\Entity\Attribute\Set implements \Doctrine\ORM\P
     /**
      * {@inheritDoc}
      */
+    public function getExporter()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getExporter', []);
+
+        return parent::getExporter();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function getAttributeKeys()
     {
 

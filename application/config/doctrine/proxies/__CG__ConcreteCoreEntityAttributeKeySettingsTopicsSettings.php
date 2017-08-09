@@ -64,10 +64,10 @@ class TopicsSettings extends \Concrete\Core\Entity\Attribute\Key\Settings\Topics
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'akTopicParentNodeID', 'akTopicTreeID', 'key'];
+            return ['__isInitialized__', 'akTopicParentNodeID', 'akTopicTreeID', 'akTopicAllowMultipleValues', 'key'];
         }
 
-        return ['__isInitialized__', 'akTopicParentNodeID', 'akTopicTreeID', 'key'];
+        return ['__isInitialized__', 'akTopicParentNodeID', 'akTopicTreeID', 'akTopicAllowMultipleValues', 'key'];
     }
 
     /**
@@ -226,6 +226,28 @@ class TopicsSettings extends \Concrete\Core\Entity\Attribute\Key\Settings\Topics
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getTopicTreeObject', []);
 
         return parent::getTopicTreeObject();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function allowMultipleValues()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'allowMultipleValues', []);
+
+        return parent::allowMultipleValues();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setAllowMultipleValues($allowMultipleValues)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setAllowMultipleValues', [$allowMultipleValues]);
+
+        return parent::setAllowMultipleValues($allowMultipleValues);
     }
 
     /**

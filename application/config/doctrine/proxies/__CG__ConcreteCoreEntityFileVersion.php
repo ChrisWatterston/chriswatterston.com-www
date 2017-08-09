@@ -64,10 +64,10 @@ class Version extends \Concrete\Core\Entity\File\Version implements \Doctrine\OR
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'file', 'fvID', 'fvFilename', 'fvPrefix', 'fvDateAdded', 'fvActivateDateTime', 'fvIsApproved', 'fvAuthorUID', 'fvSize', 'fvApproverUID', 'fvTitle', 'fvDescription', 'fvExtension', 'fvType', 'fvTags', 'fvHasListingThumbnail', 'fvHasDetailThumbnail'];
+            return ['__isInitialized__', 'file', 'fvID', 'fvFilename', 'fvPrefix', 'fvDateAdded', 'fvActivateDateTime', 'fvIsApproved', 'fvAuthorUID', 'fvSize', 'fvApproverUID', 'fvTitle', 'fvDescription', 'fvExtension', 'fvType', 'fvTags', 'fvHasListingThumbnail', 'fvHasDetailThumbnail', '' . "\0" . 'Concrete\\Core\\Entity\\File\\Version' . "\0" . 'imagineImage'];
         }
 
-        return ['__isInitialized__', 'file', 'fvID', 'fvFilename', 'fvPrefix', 'fvDateAdded', 'fvActivateDateTime', 'fvIsApproved', 'fvAuthorUID', 'fvSize', 'fvApproverUID', 'fvTitle', 'fvDescription', 'fvExtension', 'fvType', 'fvTags', 'fvHasListingThumbnail', 'fvHasDetailThumbnail'];
+        return ['__isInitialized__', 'file', 'fvID', 'fvFilename', 'fvPrefix', 'fvDateAdded', 'fvActivateDateTime', 'fvIsApproved', 'fvAuthorUID', 'fvSize', 'fvApproverUID', 'fvTitle', 'fvDescription', 'fvExtension', 'fvType', 'fvTags', 'fvHasListingThumbnail', 'fvHasDetailThumbnail', '' . "\0" . 'Concrete\\Core\\Entity\\File\\Version' . "\0" . 'imagineImage'];
     }
 
     /**
@@ -666,6 +666,17 @@ class Version extends \Concrete\Core\Entity\File\Version implements \Doctrine\OR
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getImagineImage', []);
 
         return parent::getImagineImage();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function releaseImagineImage()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'releaseImagineImage', []);
+
+        return parent::releaseImagineImage();
     }
 
     /**

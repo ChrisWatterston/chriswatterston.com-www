@@ -231,23 +231,23 @@ class TextControl extends \Concrete\Core\Entity\Express\Control\TextControl impl
     /**
      * {@inheritDoc}
      */
-    public function getControlRenderer(\Concrete\Core\Express\Form\Context\ContextInterface $context)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getControlRenderer', [$context]);
-
-        return parent::getControlRenderer($context);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function getControlLabel()
     {
 
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getControlLabel', []);
 
         return parent::getControlLabel();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getControlView(\Concrete\Core\Form\Context\ContextInterface $context)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getControlView', [$context]);
+
+        return parent::getControlView($context);
     }
 
     /**

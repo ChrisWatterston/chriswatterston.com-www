@@ -64,10 +64,10 @@ class DateTimeSettings extends \Concrete\Core\Entity\Attribute\Key\Settings\Date
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'akDateDisplayMode', 'key'];
+            return ['__isInitialized__', 'akUseNowIfEmpty', 'akDateDisplayMode', 'akTimeResolution', 'key'];
         }
 
-        return ['__isInitialized__', 'akDateDisplayMode', 'key'];
+        return ['__isInitialized__', 'akUseNowIfEmpty', 'akDateDisplayMode', 'akTimeResolution', 'key'];
     }
 
     /**
@@ -176,6 +176,28 @@ class DateTimeSettings extends \Concrete\Core\Entity\Attribute\Key\Settings\Date
     /**
      * {@inheritDoc}
      */
+    public function getUseNowIfEmpty()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUseNowIfEmpty', []);
+
+        return parent::getUseNowIfEmpty();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setUseNowIfEmpty($value)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setUseNowIfEmpty', [$value]);
+
+        return parent::setUseNowIfEmpty($value);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function getMode()
     {
 
@@ -193,6 +215,28 @@ class DateTimeSettings extends \Concrete\Core\Entity\Attribute\Key\Settings\Date
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setMode', [$mode]);
 
         return parent::setMode($mode);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getTimeResolution()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getTimeResolution', []);
+
+        return parent::getTimeResolution();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setTimeResolution($value)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setTimeResolution', [$value]);
+
+        return parent::setTimeResolution($value);
     }
 
     /**

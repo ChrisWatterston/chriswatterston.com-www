@@ -64,10 +64,10 @@ class ManyAssociation extends \Concrete\Core\Entity\Express\Entry\ManyAssociatio
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'id', 'entry', 'association', 'selectedEntries'];
+            return ['__isInitialized__', 'id', 'entry', 'association', 'selectedEntries', 'sorted'];
         }
 
-        return ['__isInitialized__', 'id', 'entry', 'association', 'selectedEntries'];
+        return ['__isInitialized__', 'id', 'entry', 'association', 'selectedEntries', 'sorted'];
     }
 
     /**

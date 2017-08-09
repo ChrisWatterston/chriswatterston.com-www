@@ -64,10 +64,10 @@ class Entity extends \Concrete\Core\Entity\Express\Entity implements \Doctrine\O
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'id', 'name', 'handle', 'plural_handle', 'supports_custom_display_order', 'description', 'result_column_set', 'include_in_public_list', 'entity_results_node_id', 'attributes', 'associations', 'forms', 'default_view_form', 'default_edit_form', 'entries', 'created_date', 'package'];
+            return ['__isInitialized__', 'id', 'name', 'handle', 'plural_handle', 'label_mask', 'supports_custom_display_order', 'description', 'result_column_set', 'include_in_public_list', 'entity_results_node_id', 'attributes', 'associations', 'forms', 'default_view_form', 'default_edit_form', 'entries', 'created_date', 'package'];
         }
 
-        return ['__isInitialized__', 'id', 'name', 'handle', 'plural_handle', 'supports_custom_display_order', 'description', 'result_column_set', 'include_in_public_list', 'entity_results_node_id', 'attributes', 'associations', 'forms', 'default_view_form', 'default_edit_form', 'entries', 'created_date', 'package'];
+        return ['__isInitialized__', 'id', 'name', 'handle', 'plural_handle', 'label_mask', 'supports_custom_display_order', 'description', 'result_column_set', 'include_in_public_list', 'entity_results_node_id', 'attributes', 'associations', 'forms', 'default_view_form', 'default_edit_form', 'entries', 'created_date', 'package'];
     }
 
     /**
@@ -297,6 +297,28 @@ class Entity extends \Concrete\Core\Entity\Express\Entity implements \Doctrine\O
     /**
      * {@inheritDoc}
      */
+    public function getLabelMask()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getLabelMask', []);
+
+        return parent::getLabelMask();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setLabelMask($label_mask)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setLabelMask', [$label_mask]);
+
+        return parent::setLabelMask($label_mask);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function getDescription()
     {
 
@@ -314,6 +336,17 @@ class Entity extends \Concrete\Core\Entity\Express\Entity implements \Doctrine\O
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setDescription', [$description]);
 
         return parent::setDescription($description);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getEntityDisplayDescription($format = 'html')
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getEntityDisplayDescription', [$format]);
+
+        return parent::getEntityDisplayDescription($format);
     }
 
     /**
@@ -450,6 +483,17 @@ class Entity extends \Concrete\Core\Entity\Express\Entity implements \Doctrine\O
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setName', [$name]);
 
         return parent::setName($name);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getEntityDisplayName($format = 'html')
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getEntityDisplayName', [$format]);
+
+        return parent::getEntityDisplayName($format);
     }
 
     /**
@@ -615,6 +659,17 @@ class Entity extends \Concrete\Core\Entity\Express\Entity implements \Doctrine\O
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getExporter', []);
 
         return parent::getExporter();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getController()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getController', []);
+
+        return parent::getController();
     }
 
     /**

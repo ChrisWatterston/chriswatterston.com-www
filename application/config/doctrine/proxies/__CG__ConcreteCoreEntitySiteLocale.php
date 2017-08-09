@@ -221,49 +221,12 @@ class Locale extends \Concrete\Core\Entity\Site\Locale implements \Doctrine\ORM\
     /**
      * {@inheritDoc}
      */
-    public function getSiteLocaleID()
-    {
-        if ($this->__isInitialized__ === false) {
-            return (int)  parent::getSiteLocaleID();
-        }
-
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSiteLocaleID', []);
-
-        return parent::getSiteLocaleID();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getLanguage()
+    public function getLocaleID()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getLanguage', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getLocaleID', []);
 
-        return parent::getLanguage();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setLanguage($msLanguage)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setLanguage', [$msLanguage]);
-
-        return parent::setLanguage($msLanguage);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getCountry()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCountry', []);
-
-        return parent::getCountry();
+        return parent::getLocaleID();
     }
 
     /**
@@ -291,72 +254,6 @@ class Locale extends \Concrete\Core\Entity\Site\Locale implements \Doctrine\ORM\
     /**
      * {@inheritDoc}
      */
-    public function setCountry($msCountry)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCountry', [$msCountry]);
-
-        return parent::setCountry($msCountry);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getNumPlurals()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getNumPlurals', []);
-
-        return parent::getNumPlurals();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setNumPlurals($msNumPlurals)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setNumPlurals', [$msNumPlurals]);
-
-        return parent::setNumPlurals($msNumPlurals);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getPluralRule()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPluralRule', []);
-
-        return parent::getPluralRule();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setPluralRule($msPluralRule)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setPluralRule', [$msPluralRule]);
-
-        return parent::setPluralRule($msPluralRule);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getPluralCases()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPluralCases', []);
-
-        return parent::getPluralCases();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function getSite()
     {
 
@@ -374,17 +271,6 @@ class Locale extends \Concrete\Core\Entity\Site\Locale implements \Doctrine\ORM\
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setSite', [$site]);
 
         return parent::setSite($site);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setPluralCases($msPluralCases)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setPluralCases', [$msPluralCases]);
-
-        return parent::setPluralCases($msPluralCases);
     }
 
     /**
@@ -412,6 +298,50 @@ class Locale extends \Concrete\Core\Entity\Site\Locale implements \Doctrine\ORM\
     /**
      * {@inheritDoc}
      */
+    public function getSiteTreeID()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSiteTreeID', []);
+
+        return parent::getSiteTreeID();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getSiteTreeObject()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSiteTreeObject', []);
+
+        return parent::getSiteTreeObject();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getLanguage()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getLanguage', []);
+
+        return parent::getLanguage();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getCountry()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCountry', []);
+
+        return parent::getCountry();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function getLocale()
     {
 
@@ -423,12 +353,111 @@ class Locale extends \Concrete\Core\Entity\Site\Locale implements \Doctrine\ORM\
     /**
      * {@inheritDoc}
      */
+    public function getNumPlurals()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getNumPlurals', []);
+
+        return parent::getNumPlurals();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getPluralCases()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPluralCases', []);
+
+        return parent::getPluralCases();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getPluralRule()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPluralRule', []);
+
+        return parent::getPluralRule();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setNumPlurals($msNumPlurals)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setNumPlurals', [$msNumPlurals]);
+
+        return parent::setNumPlurals($msNumPlurals);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setPluralCases($msPluralCases)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setPluralCases', [$msPluralCases]);
+
+        return parent::setPluralCases($msPluralCases);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setPluralRule($msPluralRule)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setPluralRule', [$msPluralRule]);
+
+        return parent::setPluralRule($msPluralRule);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function getLanguageText($locale = NULL)
     {
 
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getLanguageText', [$locale]);
 
         return parent::getLanguageText($locale);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setLanguage($msLanguage)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setLanguage', [$msLanguage]);
+
+        return parent::setLanguage($msLanguage);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setCountry($msCountry)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCountry', [$msCountry]);
+
+        return parent::setCountry($msCountry);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getExporter()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getExporter', []);
+
+        return parent::getExporter();
     }
 
 }

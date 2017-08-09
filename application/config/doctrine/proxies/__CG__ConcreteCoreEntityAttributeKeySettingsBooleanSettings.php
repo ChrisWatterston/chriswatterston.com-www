@@ -64,10 +64,10 @@ class BooleanSettings extends \Concrete\Core\Entity\Attribute\Key\Settings\Boole
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'akCheckedByDefault', 'key'];
+            return ['__isInitialized__', 'akCheckedByDefault', 'checkboxLabel', 'key'];
         }
 
-        return ['__isInitialized__', 'akCheckedByDefault', 'key'];
+        return ['__isInitialized__', 'akCheckedByDefault', 'checkboxLabel', 'key'];
     }
 
     /**
@@ -173,6 +173,28 @@ class BooleanSettings extends \Concrete\Core\Entity\Attribute\Key\Settings\Boole
     }
 
     
+    /**
+     * {@inheritDoc}
+     */
+    public function getCheckboxLabel()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCheckboxLabel', []);
+
+        return parent::getCheckboxLabel();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setCheckboxLabel($checkboxLabel)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCheckboxLabel', [$checkboxLabel]);
+
+        return parent::setCheckboxLabel($checkboxLabel);
+    }
+
     /**
      * {@inheritDoc}
      */

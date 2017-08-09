@@ -506,12 +506,12 @@ class BlockType extends \Concrete\Core\Entity\Block\BlockType\BlockType implemen
     /**
      * {@inheritDoc}
      */
-    public function getBlockTypeCustomTemplates()
+    public function getBlockTypeCustomTemplates(\Concrete\Core\Block\Block $b)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getBlockTypeCustomTemplates', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getBlockTypeCustomTemplates', [$b]);
 
-        return parent::getBlockTypeCustomTemplates();
+        return parent::getBlockTypeCustomTemplates($b);
     }
 
     /**

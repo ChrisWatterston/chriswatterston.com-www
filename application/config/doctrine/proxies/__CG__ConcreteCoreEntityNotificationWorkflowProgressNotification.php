@@ -228,4 +228,15 @@ class WorkflowProgressNotification extends \Concrete\Core\Entity\Notification\Wo
         return parent::setNotificationDate($nDate);
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    public function getAlerts()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getAlerts', []);
+
+        return parent::getAlerts();
+    }
+
 }

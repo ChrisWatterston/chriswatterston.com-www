@@ -595,6 +595,31 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 							.st-label {padding-top:8px;}
 						}
 					}
+					.landing-form {
+						form {
+							width:$col-one;
+							.cols {
+								padding:0;
+								.col {
+									float:left;
+									width:$col-one / 2;
+									margin-bottom:10px;
+									input[type="text"], textarea, select {background:rgba(69,72,81,0.1);}
+									&:nth-child(odd) {
+										padding-right:10px;
+									}
+									&:nth-child(even) {
+										padding-left:10px;
+									}
+									&.full {
+										float:none;
+										width:$col-one;
+										padding:0;
+									}
+								}
+							}
+						}
+					}
 				}
 				.cols {
 					padding:0 40px 0 160px;
@@ -694,6 +719,62 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 			section.services-wrap {
 				.services-desc {
 					background-image:url("../img/cons/bkgrnd-bodyfeed-shopify.svg");
+					.bkgrnd-shopify {
+						min-height:130px;
+						margin-bottom:15px;
+						padding:10px 0 10px 140px;
+						background-position:left 7px;
+						background-repeat:no-repeat;
+						background-color:transparent;
+						&.store {
+							background-image:url("../img/cons/icon-store.svg");
+							background-size:190px auto;
+							padding:20px 0 20px 220px;
+							margin:60px 0;
+						}
+						&.mobile {
+							background-image:url("../img/cons/icon-mobile.svg");
+							background-size:115px auto;
+						}
+						&.shipping {
+							background-image:url("../img/cons/icon-shipping.svg");
+							background-size:115px auto;
+						}
+						&.payment {
+							background-image:url("../img/cons/icon-payment.svg");
+							background-size:115px auto;
+						}
+						&.sellsocial {
+							background-image:url("../img/cons/icon-sellsocial.svg");
+							background-size:115px auto;
+						}
+						&.voucher {
+							background-image:url("../img/cons/icon-voucher.svg");
+							background-size:115px auto;
+						}
+						&.products {
+							background-image:url("../img/cons/icon-products.svg");
+							background-size:115px auto;
+						}
+						&.seo {
+							background-image:url("../img/cons/icon-basket.svg");
+							background-size:115px auto;
+						}
+						&.instore {
+							background-image:url("../img/cons/icon-pos.svg");
+							background-size:115px auto;
+						}
+						&.report {
+							background-image:url("../img/cons/icon-report.svg");
+							background-size:115px auto;
+						}
+						&.growing {
+							background-image:url("../img/cons/icon-growing.svg");
+							background-size:115px auto;
+							// margin:0 140px;
+							padding:10px 0 10px 140px;
+						}
+					}
 				}
 			}
 		}
@@ -821,7 +902,19 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 @import '_print.scss';
 
 // Others
-form#ccm-block-form.action .ccm-edit-block-submit {
+form#ccm-block-form.validate input#ccm-form-submit-button {
 	display:none !important;
 	visibility:hidden !important;
+}
+
+ul.ccm-edit-mode-inline-commands {
+	li {
+		position:relative;
+		z-index:+999999999999 !important;
+		a {
+			display:block;
+			position:absolute;
+			z-index:+999999999999 !important;
+		}
+	}
 }

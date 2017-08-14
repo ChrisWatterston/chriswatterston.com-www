@@ -20,7 +20,7 @@
 	</section>
 	<section class="introduction-wrap">
 		<div class="intro">
-			intro
+			<?php echo $innerContent; ?>
 		</div>
 	</section>
 	<section class="latestupdates-wrap">

@@ -6,7 +6,7 @@
 		    limit: '4',
 		    userId: '3422386301',
 		    accessToken: '3422386301.1677ed0.88235c51522143ba86647d6cabe7818c',
-		    template:'<a href={{link}} target="_blank"><span>{{likes}}</span><img src={{image}} alt=""/></a>'
+		    template:'<a href={{link}} target="_blank" title="Follow me to find out what im up to on Instagram"><span>{{likes}}</span><img src={{image}} alt=""/></a>'
     });
     feed.run();
 </script>

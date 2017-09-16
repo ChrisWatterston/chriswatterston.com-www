@@ -53,6 +53,12 @@
 		margin:60px 0 60px 0;
 	}
 
+	p a {background:url("../img/cons/bkgrnd-link-white.png") bottom left repeat-x transparent;}
+	.colour-grey p a,
+	.colour-black p a {
+		background-image:url("../img/cons/bkgrnd-link-grey.png");
+	}
+
 	/* Images */
 	img.ccm-image-block {
 		width:$col-one;
@@ -94,19 +100,19 @@
 		background-size:contain;
 	}
 	i.icon.arrow-right-white {
-		background-image:url('../img/cons/icon-arrow-right-white.svg');
+		background-image:url('../img/icns/icon-arrow-right-white.svg');
 	}
 	i.icon.arrow-right-grey {
-		background-image:url('../img/cons/icon-arrow-right-grey.svg');
+		background-image:url('../img/icns/icon-arrow-right-grey.svg');
 	}
 	i.icon.arrow-top-white {
-		background-image:url('../img/cons/icon-arrow-top-white.svg');
+		background-image:url('../img/icns/icon-arrow-top-white.svg');
 	}
 	i.icon.arrow-top-grey {
-		background-image:url('../img/cons/icon-arrow-top-grey.svg');
+		background-image:url('../img/icns/icon-arrow-top-grey.svg');
 	}
 	i.icon.ampersand {
-		background-image:url('../img/cons/icon-ampersand.svg');
+		background-image:url('../img/icns/icon-ampersand.svg');
 		display:inline;
 		margin:0 8px;
 		font-size:0.7em;
@@ -116,14 +122,22 @@
 	/* Text Colours and Styles */
 	*.colour-green, .colour-green * {color:$col-green;}
 	*.colour-lime, .colour-lime * {color:$col-lime;}
+	*.colour-lime-dark, .colour-lime-dark * {color:$col-lime-dark;}
 	*.colour-blue, .colour-blue * {color:$col-blue;}
+	*.colour-blue-dark, .colour-blue-dark * {color:$col-blue-dark;}
 	*.colour-yellow, .colour-yellow * {color:$col-yellow;}
+	*.colour-yellow-dark, .colour-yellow-dark * {color:$col-yellow-dark;}
 	*.colour-grey, .colour-grey * {color:$col-grey;}
 	*.colour-white, .colour-white * {color:$col-white;}
 	*.colour-black, .colour-black * {color:$col-black;}
+	*.colour-orange, .colour-orange * {color:$col-orange;}
+	*.colour-orange-dark, .colour-orange-dark * {color:$col-orange-dark;}
+
 
 	*.colour-facebook, .colour-facebook * {color:$col-facebook;}
 	*.colour-skoolping, .colour-skoolping * {color:$col-skoolping;}
+	*.colour-shopify, .colour-shopify * {color:$col-shopify;}
+	*.colour-shopify-dark, .colour-shopify-dark * {color:$col-shopify-dark;}
 
 	*.type-xsml, .type-xsml {font-size:$type-xsml;}
 
@@ -189,9 +203,11 @@
 	}
 	label {
 		display:block;
-		color:$col-white;
 		width:$col-one;
 		padding-bottom:2px;
+		color:$col-grey;
+		text-transform:uppercase;
+		font-weight:600;
 	}
 	.radioList, .checkboxList {
 		display:inline-block;
@@ -237,6 +253,9 @@
 		color:$col-white;
 		font-weight:600;
 	}
+	.form-grey {
+		input, select, textarea {background:rgba(69,72,81,0.1);}
+	}
 
 	/* Buttons */
 	.abtn, input[type='submit'] {
@@ -248,6 +267,7 @@
 		padding:14px 60px;
 		font-weight:600;
 		cursor:pointer !important;
+		text-decoration:none;
 		-webkit-transition-duration:$abtn-speed;
 		-moz-transition-duration:$abtn-speed;
 		-o-transition-duration:$abtn-speed;
@@ -256,14 +276,19 @@
 	.abtn.green {background:$col-green;}
 	.abtn.lime {background:$col-lime;}
 	.abtn.blue {background:$col-blue;}
+	.abtn.blue-dark {background:$col-blue-dark;}
 	.abtn.yellow {background:$col-yellow;}
 	.abtn.grey {background:$col-grey;}
 	.abtn.black {background:$col-black;}
+	.abtn.orange {background:$col-orange;}
+	.abtn.orange-dark {background:$col-orange-dark;}
 	.abtn.facebook {background:$col-facebook;}
 	.abtn.skoolping {background:$col-skoolping;}
-	.abtn.shopify {background:#94C03C;}
+	.abtn.shopify {background:$col-shopify;}
+	.abtn.shopifydark{background:$col-shopify-dark;}
 
-	.abtn.small {padding:11px 50px;}
+
+	.abtn.small {padding:11px 35px;}
 	.abtn.spaced {margin:10px 0;}
 
 	.abtn:hover, input[type="submit"]:hover {opacity:$abtn-trans;}
@@ -593,7 +618,7 @@ ul.pagination {
 							}
 							a.nav-trigger {
 								padding-right:40px;
-								background:url('../img/cons/icon-navigation.svg') right center no-repeat;
+								background:url('../img/icns/icon-navigation.svg') right center no-repeat;
 							}
 						}
 						nav#cd-lateral-nav {
@@ -663,6 +688,8 @@ ul.pagination {
 			.feed-body {
 				.contain {
 					.cols.newsfeed-entrys {
+						z-index:+999;
+						min-height:100px;
 						.col.newsfeed-entry {
 							.news-content-wrap {
 								p.date-tag {

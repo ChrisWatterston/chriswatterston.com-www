@@ -55,18 +55,17 @@ q:before, q:after {
 
 a {
 	cursor:pointer;
-    margin:0;
-    padding:0;
-    border:0;
-    vertical-align:baseline;
-    background:transparent;
-    text-decoration:none;
-    color:$col-green;
-    font-weight:600;
+  margin:0;
+  padding:0;
+  border:0;
+  vertical-align:baseline;
+  background:transparent;
+	text-decoration:none;
+  color:$col-green;
+  font-weight:600;
 }
 a * {cursor:pointer;}
 a:hover {color:$col-green;}
-
 table {
     border-collapse:collapse;
     border-spacing:0;

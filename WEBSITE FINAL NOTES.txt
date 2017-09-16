@@ -1,0 +1,13 @@
+- Update terms and conditions
+- style terms and conditions agreement form
+- sort overflow button
+- 
+- fix responsiveness
+- create legal pages (cookie, terms of use, accessibility, etc)
+- check mail chimp signup form submissions
+- check validation of all forms
+- create headers for pages without unique banner image
+- check final SEO areas
+- create remaining case study posts
+- compress files ready for launch
+- 

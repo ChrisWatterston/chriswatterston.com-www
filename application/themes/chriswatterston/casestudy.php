@@ -58,7 +58,7 @@
 		<div class="intro type-center">
 			<h2 class="colour-white type-light"><?php echo $date; ?> <span class="type-closetag" style="font-size:0.9em;"></span> <?php echo $microposttag, $posttypetitlefirst, " <span class='type-closetag' style='font-size:0.9em;'> Case Study"; ?></h2>
 			<h1 class="colour-white type-semibold type-uppercase"><?php echo $pageName; ?></h1>
-			<h2 class="colour-white type-semibold type-uppercase"><?php echo $pageClient; ?></h2>
+			<h2 class="colour-white type-semibold"><?php echo $pageClient; ?></h2>
 		</div>
 	</section>
 </header>

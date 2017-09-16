@@ -47,8 +47,8 @@
 			</div>
 			<div class="sidebar-link-wrap">
 				<div class="rotate-fix">
-					<a href="#" class="sidebar-link type-uppercase colour-white family-table type-semibold type-right" title="View All Updates">View All Updates <i class="icon arrow-top-white"></i></a>
-					<a href="#" class="rotate-link" title="View All Updates"></a>
+					<a href="/index.php/blog" class="sidebar-link type-uppercase colour-white family-table type-semibold type-right" title="View all blog updates">All updates <i class="icon arrow-top-white"></i></a>
+					<a href="/index.php/blog" class="rotate-link" title="View all blog updates"></a>
 				</div>
 			</div>
 		</div>
@@ -58,13 +58,13 @@
 <section class="body">
 	<section class="services-wrap">
 		<div class="services-header">
-			<h1 class="main-heading colour-yellow type-uppercase">
+			<h1 class="main-heading colour-yellow-dark type-uppercase">
 				<strong>Creating trusted solutions.</strong> Grown from your ideas.
 			</h1>
 			<h2 class="sub-heading colour-grey title-sub"><strong>Solutions that help achieve your expectations and dreams, in a fluid and rootlike way.</strong></h2>
 		</div>
 		<div class="services-desc">
-			<p class="sub-heading colour-grey">Chris Watterston will help achieving your ideas and dreams in a proper way. The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online presence has never been so important.</p>
+			<p class="sub-heading colour-grey">I provide guaranteed solutions to individuals, start-ups and established brands, that will get you off the ground. Many years of mastery and experience go into each and every project for both the public and private sectors, each completed with passion and determination.</p>
 		</div>
 		<div class="services-body">
 			<div class="contain">
@@ -95,8 +95,8 @@
 				</div>
 				<div class="sidebar-link-wrap">
 					<div class="rotate-fix">
-						<a href="#" class="sidebar-link type-uppercase colour-white family-table type-semibold type-right" title="All Services">All Services <i class="icon arrow-top-white"></i></a>
-						<a href="#" class="rotate-link" title="All Services"></a>
+						<a href="/index.php/design-development-solutions-and-services" class="sidebar-link type-uppercase colour-white family-table type-semibold type-right" title="See all solutions">All solutions <i class="icon arrow-top-white"></i></a>
+						<a href="/index.php/design-development-solutions-and-services" class="rotate-link" title="All solutions"></a>
 					</div>
 				</div>
 			</div>
@@ -120,12 +120,12 @@
 
 	<section class="feed-wrap negg lime" id="feed-casestudies">
 		<div class="feed-header">
-			<h1 class="main-heading colour-lime type-uppercase">
-				<strong>Recent case studies.</strong> Show and tell.
+			<h1 class="main-heading colour-lime-dark type-uppercase">
+				<strong>Case studies.</strong> A small insight into successful solutions.
 			</h1>
 		</div>
 		<div class="feed-desc">
-			<p class="sub-heading colour-white">The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online presence has never been so important.</p>
+			<p class="sub-heading colour-white">Every design or development project are non-identical. These require different tacktical methods with slightly different solutions - each completed with passion and determination. Here are a few of my clients projects that not only delivered great client satisfaction, but have exceeded the above and beyond.</p>
 		</div>
 		<div class="feed-body">
 			<div class="contain">
@@ -158,16 +158,16 @@
 
 	<section class="feed-wrap blue" id="feed-recognition">
 		<div class="feed-header">
-			<h1 class="main-heading colour-blue type-uppercase">
-				<strong>Recognition.</strong> Success isn’t built overnight.
+			<h1 class="main-heading colour-blue-dark type-uppercase">
+				<strong>Personal Projects.</strong> Visions that take the longest to create.
 			</h1>
 		</div>
 		<div class="feed-desc">
-			<p class="sub-heading colour-white">The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online presence has never been so important.</p>
+			<p class="sub-heading colour-white">Not only do I have a need and passion to work on some of the most exciting projects brought forward by my clients, but I also thrive to bring my own ideas and visions to life. It's not often that I have free time to work on these projects, amongst family life - but when I do, I give them every last ounce of attention that I have.</p>
 		</div>
 		<div class="feed-body">
 			<div class="contain">
-				<div class="cols newsfeed-entrys flex-row">
+				<div class="cols newsfeed-entrys">
 					<?php
 					    $bcf3 = new Area('Content Area Two');
 					    $bcf3->display($c);
@@ -181,7 +181,7 @@
 					<div class="cols">
 						<div class="col title facebook type-right">
 							<h3 class="colour-facebook type-uppercase type-semibold">Friendly Facebook</h3>
-							<a href="https://www.facebook.com/chriswatterston.co" class="abtn facebook small spaced" target="_blank">Let’s Connect</a>
+							<a href="https://www.facebook.com/chriswatterston.co" class="abtn facebook small spaced" target="_blank" title="Like me on Facebook">Let’s Connect</a>
 						</div>
 						<div class="col facebook">
 							<div class="cols">

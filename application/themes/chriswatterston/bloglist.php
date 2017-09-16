@@ -41,7 +41,11 @@
 	</section>
 	<section class="introduction-wrap">
 		<div class="intro type-center">
-			<h1 class="colour-white type-semibold type-uppercase"><?php echo $pageName; ?></h1>
+			<?php
+				$mttc = new Area('Title Content');
+				$mttc->display($c);
+			?>
+			<!-- <h1 class="colour-white type-semibold type-uppercase"><?php if ($pageMeta) { echo $pageMeta; } else { echo $pageName; } ?></h1> -->
 		</div>
 	</section>
 </header>

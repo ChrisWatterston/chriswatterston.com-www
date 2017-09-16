@@ -1,7 +1,0 @@
-TO DO ----------
-- check images throughout pages
-- check links and link titles throughout site
-- check meta data on all pages
-- read over all website content to ensure everything is perfect, improve where possible.
-
-- I like these HREF styles - http://danmall.me/articles/stealing-your-way-to-original-designs/

@@ -1,13 +1,20 @@
-- Update terms and conditions
-- style terms and conditions agreement form
-- sort overflow button
-- 
-- fix responsiveness
-- create legal pages (cookie, terms of use, accessibility, etc)
 - check mail chimp signup form submissions
 - check validation of all forms
-- create headers for pages without unique banner image
-- check final SEO areas
 - create remaining case study posts
-- compress files ready for launch
-- 
+- create Instagram 'like' icon for image posts
+- darken SKOOLping bkgrnd image more
+- improve area background (pixel, http://chriswatterston.com-www.dev/index.php/blog
+- shipping on magnet (Shopify)
+- create a 'mobileapp' icon
+
+- check that the comments works on the blog posts
+- check final SEO areas
+- Resolve social share meta within header.php 
+
+
+
+Terms updates include --- updated 18th September 2017 @ 09:36AM
+- Change in offered service to broaden
+- Change in 'backup / restoration' and 'cancelation' fee
+- Service warranty period update
+- Added new section for '7. Services Communication Timeline Terms'

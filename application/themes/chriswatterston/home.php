@@ -4,7 +4,6 @@
 
 	$enableFullFooter = true;
 ?>
-
 <header class="main">
 	<section class="navigation-wrap">
 		<script type="text/javascript">
@@ -17,7 +16,9 @@
 		</script>
 		<div class="cols">
 			<div class="col branding">
-				<img src="<?php echo $view->getThemePath()?>/img/brnd/chriswatterston-logo.svg" class="logo" />
+				<a href="<?php echo DIR_REL?>/" style="border:0;" title="Back to the start">
+					<img src="<?php echo $view->getThemePath()?>/img/brnd/chriswatterston-logo.svg" class="logo" />
+				</a>
 			</div>
 			<div class="col navigation">
 				<nav class="main">
@@ -54,7 +55,6 @@
 		</div>
 	</section>
 </header>
-
 <section class="body">
 	<section class="services-wrap">
 		<div class="services-header">
@@ -68,56 +68,48 @@
 		</div>
 		<div class="services-body">
 			<div class="contain">
+				<div class="cols">
 
-				<div class="service-one type-right">
-					<?php
-					    $sa1 = new Area('Services Area One');
-					    $sa1->display($c);
-				    ?>
-				</div>
-				<div class="service-two type-right">
-					<?php
-					    $sa2 = new Area('Services Area Two');
-					    $sa2->display($c);
-				    ?>
-				</div>
-				<div class="service-three">
-					<?php
-					    $sa3 = new Area('Services Area Three');
-					    $sa3->display($c);
-				    ?>
-				</div>
-				<div class="service-four">
-					<?php
-					    $sa4 = new Area('Services Area Four');
-					    $sa4->display($c);
-				    ?>
-				</div>
-				<div class="sidebar-link-wrap">
-					<div class="rotate-fix">
-						<a href="/index.php/design-development-solutions-and-services" class="sidebar-link type-uppercase colour-white family-table type-semibold type-right" title="See all solutions">All solutions <i class="icon arrow-top-white"></i></a>
-						<a href="/index.php/design-development-solutions-and-services" class="rotate-link" title="All solutions"></a>
+					<div class="col service-one">
+						<?php
+						    $sa1 = new Area('Services Area One');
+						    $sa1->display($c);
+					    ?>
+					</div>
+					<div class="col service-two">
+						<?php
+						    $sa2 = new Area('Services Area Two');
+						    $sa2->display($c);
+					    ?>
+					</div>
+					<div class="col service-three">
+						<?php
+						    $sa3 = new Area('Services Area Three');
+						    $sa3->display($c);
+					    ?>
+					</div>
+					<div class="col service-four">
+						<?php
+						    $sa4 = new Area('Services Area Four');
+						    $sa4->display($c);
+					    ?>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
 	<script type="text/javascript">
 		$(document).ready(function() {
 			var feedCaseStudies = $('#feed-casestudies .feed-body').height();
 			var feedCaseStudiesFooter = $('#feed-casestudies .feed-footer .feed-stroke .contain .cols').height();
-
 			$('#feed-casestudies .feed-footer .feed-stroke').height(feedCaseStudies + feedCaseStudiesFooter  - 100);
 			$('#feed-casestudies .feed-footer').css('margin-top', '-' + (feedCaseStudies - 129) + 'px');
-
 			var feedRecognition = $('#feed-recognition .feed-body').height();
 			var feedRecognitionFooter = $('#feed-recognition .feed-footer .feed-stroke .contain .cols').height();
 			$('#feed-recognition .feed-footer .feed-stroke').height(feedRecognition + feedRecognitionFooter - 75);
 			$('#feed-recognition .feed-footer').css('margin-top', '-' + (feedRecognition - 101) + 'px');
 		});
 	</script>
-
 	<section class="feed-wrap negg lime" id="feed-casestudies">
 		<div class="feed-header">
 			<h1 class="main-heading colour-lime-dark type-uppercase">
@@ -155,7 +147,6 @@
 			</div>
 		</div>
 	</section>
-
 	<section class="feed-wrap blue" id="feed-recognition">
 		<div class="feed-header">
 			<h1 class="main-heading colour-blue-dark type-uppercase">
@@ -196,7 +187,5 @@
 			</div>
 		</div>
 	</section>
-
 </section>
-
 <?php include('inc/footer.php'); ?>

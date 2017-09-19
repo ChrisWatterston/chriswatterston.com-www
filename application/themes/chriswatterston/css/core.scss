@@ -34,8 +34,8 @@ $type-xsml: 0.6em;
 $type-sml: 0.8em;
 $type-def: 1em;
 $type-med: 1.3em;
-$type-lrg: 1.7em;
-$type-xlrg: 2.7em;
+$type-lrg: 1.6em;
+$type-xlrg: 2.6em;
 
 // Animation
 $abtn-speed: 1.0s;
@@ -60,11 +60,11 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 	transition-duration:$abtn-speed;
 	background:$col-white;
 	&.lateral-menu-is-open {
-	  -webkit-transform:translateX(-350px);
-	  -moz-transform:translateX(-350px);
-	  -ms-transform:translateX(-350px);
-	  -o-transform:translateX(-350px);
-	  transform:translateX(-350px);
+	  -webkit-transform:translateX(-320px);
+	  -moz-transform:translateX(-320px);
+	  -ms-transform:translateX(-320px);
+	  -o-transform:translateX(-320px);
+	  transform:translateX(-320px);
 	}
 	header, section, footer {
 		width:$col-one;
@@ -140,11 +140,11 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 						#cd-lateral-nav {
 						  position:fixed;
 						  height:$col-one;
-						  right:-350px;
+						  right:-320px;
 						  top:0;
 						  visibility:hidden;
 						  z-index:+100;
-						  width:350px;
+						  width:320px;
 						  background-color:$col-grey;
 							background-color:rgba(69,72,81,0.90);
 						  overflow-y:auto;
@@ -153,11 +153,11 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 						  -webkit-transition:-webkit-transform .6s 0s, visibility 0s .4s;
 						  -moz-transition:-moz-transform .6s 0s, visibility 0s .4s;
 						  transition:transform .6s 0s, visibility 0s .4s;
-						  -webkit-transform:translateX(350px);
-						  -moz-transform:translateX(350px);
-						  -ms-transform:translateX(350px);
-						  -o-transform:translateX(350px);
-						  transform:translateX(350px);
+						  -webkit-transform:translateX(320px);
+						  -moz-transform:translateX(320px);
+						  -ms-transform:translateX(320px);
+						  -o-transform:translateX(320px);
+						  transform:translateX(320px);
 						}
 						#cd-lateral-nav.lateral-menu-is-open {
 						  -webkit-transform:translateX(0);
@@ -192,6 +192,7 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 			.contain {
 				.cols.newsfeed-entrys {
 					position:relative;
+					padding:0 30px;
 					.col.newsfeed-entry {
 						position:relative;
 						display:inline-block;
@@ -310,7 +311,7 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 			.services-header,
 			.feed-header {
 				position:relative;
-				width:$col-one - 25;
+				width:$col-one - 15;
 				padding:0 60px;
 			}
 			.services-header {margin-bottom:20px;}
@@ -348,6 +349,8 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 			.feed-body {
 				position:relative;
 				margin-top:-100px;
+				z-index:+10;
+				padding:0 30px;
 				.contain {
 					.cols.newsfeed-entrys {
 
@@ -471,57 +474,43 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 					width:$col-max;
 					height:300px;
 					margin-top:-80px;
-					.service-one,
-					.service-two,
-					.service-three,
-					.service-four {
-						position:absolute;
-						background-image:url('../img/cons/bkgrnd-services-yellow.svg');
-						background-repeat:no-repeat;
-					}
-					.service-one {
-						top:0;
-						left:0;
-						background-position:right 5px;
-						width:$col-one / 3 - 1.5;
-						padding-right:20px;
-					}
-					.service-two {
-						bottom:5%;
-						left:2%;
-						background-position:right 5px;
-						width:$col-one / 3 + 1;
-						padding-right:20px;
-					}
-					.service-three {
-						top:10%;
-						left:43%;
-						background-position:left 5px;
-						width:$col-one / 3;
-						padding-left:20px;
-					}
-					.service-four {
-						bottom:0;
-						left:46%;
-						background-position:left 5px;
-						width:$col-one / 3 - 1;
-						padding-left:20px;
-					}
-					.sidebar-link-wrap {
-						background:-webkit-linear-gradient(top, rgba(246,189,96,0.4), rgba(246,189,96,0.9));
-						background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(246,189,96,0.4)), to(rgba(246,189,96,0.9)));
-						background:-webkit-linear-gradient(top, rgba(246,189,96,0.4), rgba(246,189,96,0.9));
-						background:-moz-linear-gradient(top, rgba(246,189,96,0.4), rgba(246,189,96,0.9));
-						background:-ms-linear-gradient(top, rgba(246,189,96,0.4), rgba(246,189,96,0.9));
-						background:-o-linear-gradient(top, rgba(246,189,96,0.4), rgba(246,189,96,0.9));
+					.cols {
+						.col.service-one,
+						.col.service-two,
+						.col.service-three,
+						.col.service-four {
+							float:left;
+							width:$col-one / 2;
+							// margin-bottom:20px;
+							// background-image:url('../img/cons/bkgrnd-services-yellow.svg');
+							// background-repeat:no-repeat;
+						}
+						// .col.service-one {
+						// 	// background-position:right 5px;
+						// 	padding-right:20px;
+						// }
+						// .col.service-two {
+						// 	background-position:right 5px;
+						// }
+						// .col.service-three {
+						// 	background-position:left 5px;
+						// 	padding-left:20px;
+						// }
+						// .col.service-four {
+						// 	background-position:left 5px;
+						// 	padding-left:20px;
+						// }
 					}
 				}
 			}
 			.feed-footer {
 				position:relative;
 				padding:20px;
+				z-index:0;
 				.feed-stroke {
+					position:relative;
 					padding-bottom:60px;
+					z-index:0;
 					.contain {
 						position:relative;
 						height:$col-one;
@@ -567,7 +556,7 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 		}
 		section.services-wrap {
 			background-image:url('../img/cons/bkgrnd-plantgrowth.jpg');
-			background-position:right bottom;
+			background-position:115% bottom;
 			background-repeat:no-repeat;
 		}
 		section.negg {margin-top:-100px;}
@@ -579,9 +568,7 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 			.feed-footer {
 				.feed-stroke {
 					border:2px solid $col-green;
-					.contain .cols .col.title {
-						background-image:url('../img/cons/bkgrnd-services-green.svg');
-					}
+					.contain .cols .col.title {background-image:url('../img/cons/bkgrnd-services-green.svg');}
 				}
 			}
 		}
@@ -593,9 +580,7 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 			.feed-footer {
 				.feed-stroke {
 					border:2px solid $col-lime;
-					.contain .cols .col.title {
-						background-image:url('../img/cons/bkgrnd-services-lime.svg');
-					}
+					.contain .cols .col.title {background-image:url('../img/cons/bkgrnd-services-lime.svg');}
 				}
 			}
 		}
@@ -608,9 +593,7 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 			.feed-footer {
 				.feed-stroke {
 					border:2px solid $col-blue;
-					.contain .cols .col.title {
-						background-image:url('../img/cons/bkgrnd-services-blue.svg');
-					}
+					.contain .cols .col.title {background-image:url('../img/cons/bkgrnd-services-blue.svg');}
 				}
 			}
 		}
@@ -622,9 +605,7 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 			.feed-footer {
 				.feed-stroke {
 					border:2px solid $col-yellow;
-					.contain .cols .col.title {
-						background-image:url('../img/cons/bkgrnd-services-yellow.svg');
-					}
+					.contain .cols .col.title {background-image:url('../img/cons/bkgrnd-services-yellow.svg');}
 				}
 			}
 		}
@@ -638,6 +619,7 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 			}
 		}
 	}
+	section.body,
 	section.body.page-blog,
 	section.body.page-recognition,
 	section.body.page-oversize,
@@ -975,7 +957,6 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 			background-repeat:no-repeat;
 			background-color:transparent;
 			background-size:115px auto;
-
 			&.large {
 				background-size:190px auto !important;
 				padding:20px 0 20px 220px !important;
@@ -994,6 +975,7 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 			&.report {background-image:url("../img/icns/icon-report.svg");}
 			&.growing {background-image:url("../img/icns/icon-growing.svg");}
 			&.mobile {background-image:url("../img/icns/icon-mobile.svg");}
+			&.mobileapp {background-image:url("../img/icns/icon-mobileapp.svg");}
 			&.website {background-image:url("../img/icns/icon-website.svg");}
 			&.map {background-image:url("../img/icns/icon-map.svg");}
 			&.programming {background-image:url("../img/icns/icon-programming.svg");}
@@ -1044,6 +1026,7 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 		section.social-wrap {
 			position:relative;
 			z-index:+9;
+			padding:0 60px;
 			.contain {
 				padding:20px 0;
 				.cols {
@@ -1119,7 +1102,7 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 			background-repeat:no-repeat;
 			background-position:right bottom;
 			background-size:contain;
-			padding:60px 0;
+			padding:60px;
 			.contain {
 				.cols {
 					.col {

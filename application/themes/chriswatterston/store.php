@@ -8,9 +8,6 @@
 	$c = Page::getCurrentPage();
 	$ih = Loader::helper('image');
 
-	$pageMeta = $c->getAttribute('meta_title');
-	$pageName = $c->getCollectionName();
-	$pageID = strtolower(str_replace(" ", "-", $pageName));
 	$pageDesc = $c->getAttribute('meta_description');
 	$pageURL = $c->getCollectionPath();
 
@@ -25,7 +22,9 @@
 	<section class="navigation-wrap">
 		<div class="cols">
 			<div class="col branding">
-				<img src="<?php echo $view->getThemePath()?>/img/brnd/chriswatterston-logo.svg" class="logo" />
+				<a href="<?php echo DIR_REL?>/" style="border:0;" title="Back to the start">
+					<img src="<?php echo $view->getThemePath()?>/img/brnd/chriswatterston-logo.svg" class="logo" />
+				</a>
 			</div>
 			<div class="col navigation">
 				<nav class="main">
@@ -43,13 +42,11 @@
 				$mttc = new Area('Title Content');
 				$mttc->display($c);
 			?>
-			<!-- <h1 class="colour-white type-semibold type-uppercase"><?php if ($pageMeta) { echo $pageMeta; } else { echo $pageName; } ?></h1> -->
 		</div>
 	</section>
 </header>
 <section class="body page-oversize">
 	<section class="services-wrap">
-
 		<div class="service-section featured">
 			<div class="service-header">
 				<h1 class="main-heading colour-blue-dark type-uppercase">
@@ -67,10 +64,9 @@
 				</div>
 			</div>
 		</div>
-
 		<div class="service-section full">
 			<div class="service-desc">
-				<div class="content">
+				<div class="content store-list">
 					<?php
 						$mbco = new Area('Main Body');
 						$mbco->display($c);

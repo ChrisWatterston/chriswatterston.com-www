@@ -2,51 +2,42 @@
 	defined('C5_EXECUTE') or die("Access Denied.");
 	include('inc/header.php');
 
-	$enableFullFooter = false;
-?>
+	$enableFullFooter = True;
 
-<header class="main">
+	$th = Loader::helper('text');
+	$c = Page::getCurrentPage();
+
+	$pageDesc = $c->getAttribute('meta_description');
+	$pageURL = $c->getCollectionPath();
+
+?>
+<header class="main page-default" style="height:auto !important;">
 	<section class="navigation-wrap">
 		<div class="cols">
 			<div class="col branding">
-				logo
+				<a href="<?php echo DIR_REL?>/" style="border:0;" title="Back to the start">
+					<img src="<?php echo $view->getThemePath()?>/img/brnd/chriswatterston-logo.svg" class="logo" />
+				</a>
 			</div>
 			<div class="col navigation">
 				<nav class="main">
-					nav
+					<?php
+						$hmn = Stack::getByName('Header Navigation');
+						$hmn->display();
+					?>
 				</nav>
 			</div>
 		</div>
 	</section>
 	<section class="introduction-wrap">
-		<div class="intro">
-			<?php echo $innerContent; ?>
-		</div>
-	</section>
-	<section class="latestupdates-wrap">
-		<div class="contain">
-			<div class="cols">
-				<div class="col latest">
-					latest posts
-				</div>
-			</div>
+		<div class="intro type-center colour-white">
+			<?php
+				echo $innerContent;
+
+				$mttc = new Area('Title Content');
+				$mttc->display($c);
+			?>
 		</div>
 	</section>
 </header>
-
-<section class="body">
-	<section class="feed-wrap">
-		<div class="feed-header">
-			<h2>Heading</h2>
-			<p>introduction</p>
-		</div>
-		<div class="feed-body">
-			feed
-		</div>
-		<div class="feed-footer">
-			footer
-		</div>
-	</section>
-</section>
-
 <?php include('inc/footer.php'); ?>

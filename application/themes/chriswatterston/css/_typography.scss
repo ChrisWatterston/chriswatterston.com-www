@@ -264,6 +264,7 @@
 		width:auto !important;
 		background:$col-orange;
 		color:$col-white;
+		margin-bottom:5px;
 		padding:14px 60px;
 		font-weight:600;
 		cursor:pointer !important;
@@ -272,6 +273,7 @@
 		-moz-transition-duration:$abtn-speed;
 		-o-transition-duration:$abtn-speed;
 		transition-duration:$abtn-speed;
+		text-align:center;
 	}
 	.abtn.green {background:$col-green;}
 	.abtn.lime {background:$col-lime;}
@@ -297,7 +299,7 @@
 	.pcontent ul {
 		margin-top:15px;
 		margin-bottom:20px;
-		margin-left:70px;
+		margin-left:40px;
 		li {
 			list-style:disc;
 			list-style-position:outside;
@@ -308,7 +310,7 @@
 	.pcontent ol {
 		margin-top:15px;
 		margin-bottom:20px;
-		margin-left:70px;
+		margin-left:40px;
 		li {
 			list-style:decimal;
 			list-style-position:outside;

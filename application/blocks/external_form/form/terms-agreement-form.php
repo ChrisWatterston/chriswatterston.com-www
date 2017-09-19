@@ -16,14 +16,66 @@
     try {
       $message = array(
           'html' => '
-                    </p>
-                      <strong>Name:</strong> '.$clientName.'<br />
-                      <strong>Email:</strong> '.$clientEmail.'<br />
-                      <strong>Organisation:</strong> '.$clientOrganisation.'<br />
-                      <strong>Project Number:</strong> '.$clientProjectNo.'<br />
-                      <strong>Agreement:</strong> '.$clientAgreement.'<br />
-                      <strong>Agreement Date:</strong> '.$clientDate.'
-                    </p>
+                    <!DOCTYPE html>
+                    <html style="font-family: Verdana,sans-serif; font-size: 100%; margin: 0; padding: 0;">
+                    <head>
+                    <meta name="viewport" content="width=device-width">
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                    <title>'.$clientProjectNo.' Terms Agreement - Form Submission</title>
+                    </head>
+                    <body bgcolor="#ffffff" style="font-family:Verdana,sans-serif; font-size:90%; -webkit-font-smoothing: antialiased; height: 100%; -webkit-text-size-adjust: none; width: 100% !important; margin: 0; padding: 0;background-color:#ffffff;">
+                      <table style="width:650px;" cellpadding="0" cellspacing="0" border="0" align="center">
+                        <tr>
+                          <td style="padding:50px 50px 50px 50px;"><center>
+                            <table style="width:100%;" cellpadding="0" cellspacing="0">
+                              <tr>
+                                <td style="background-color:#009788;padding:15px 10px 15px 10px;">
+                                  <a style="border:none;" href="http://www.chriswatterston.com/" title="Chris Watterston" target="_blank">
+                                    <img src="http://chriswatterston.com-www.dev/application/themes/chriswatterston/img/brnd/chriswatterston-logo.svg" title="Chris Watterston" width="199" height="42" />
+                                  </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><hr style="border:none;border-top:3px #ebebeb solid;margin:0;" /></td>
+                              </tr>
+                              <tr>
+                                <td style="width:100%;text-align:center;">
+                                  <p style="padding:8px 15px 0 15px;color:#454851;font-size:13px;">This is an automated confirmation email stating the services Terms and Conditions decision that was submitted by <strong style="font-weight:600;"><a style="color:#454851;font-size:13px;" href="mailto:'.$clientEmail.'">'.$clientName.'</a></strong> from <strong style="font-weight:600;">'.$clientOrganisation.'</strong>, confirming that all items included within these Terms and Conditions have been received, acknowledged and Understood.</p>
+                                  <p style="padding:2px 15px 15px 15px;color:#454851;font-size:13px;">Decision was made on <strong style="font-weight:600;">'.$clientDate.'</strong>.</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width:100%;text-align:center;background:#06d6a0;">
+                                  <p style="padding:15px 0 0 0;color:#ffffff;font-size:12px;font-weight:600;">Decision Outcome:</p>
+                                  <h1 style="padding:0 0 15px 0;color:#FFFFFF;font-size:30px;font-weight:400;text-transform:uppercase;">'.$clientAgreement.'</h1>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width:100%;text-align:center;background:#ebebeb;">
+                                  <p style="padding:15px 0 0 0;color:#454851;font-size:12px;font-weight:600;">Proposal / Project Number:</p>
+                                  <h1 style="padding:0 0 15px 0;color:#454851;font-size:25px;text-align:center;font-weight:400;text-transform:uppercase;">'.$clientProjectNo.'</h1>
+                                </td>
+                              </tr>
+                              <td style="width:100%;text-align:center;">
+                                <p style="padding:15px 15px 15px 15px;color:#454851;font-size:13px;">The full and up-to-date version of the Terms and Conditions for Services by Chris Watterston can be found at <a style="color:#454851;font-size:13px;" href="http://www.chriswatterston.com/legal-documentation/terms-and-conditions" title="Terms and Conditions" target="_blank">www.chriswatterston.com/legal-documentation/terms-and-conditions</a>.</p>
+                              </td>
+                              <tr>
+                                <td><hr style="border:none;border-top:3px #ebebeb solid;margin:0;" /></td>
+                              </tr>
+                              <tr>
+                                <td style="width:100%;text-align:center;">
+                                  <p style="padding:8px 15px 8px 15px;color:#454851;font-size:10px;">Copyright © 2017 Chris Watterston. All rights reserved.</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><hr style="border:none;border-top:3px #ebebeb solid;margin:0;" /></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </body>
+                    </html>
                   ',
           'subject' => ''.$clientProjectNo.' Terms Agreement - Form Submission',
           'from_email' => 'noreply@chriswatterston.com',
@@ -33,15 +85,10 @@
                   'email' => ''.$clientEmail.'',
                   'name' => ''.$clientName.'',
                   'type' => 'to'
-              ),
-              array(
-                  'email' => 'forms@chriswatterston.com',
-                  'name' => 'Chris Watterston',
-                  'type' => 'cc'
               )
           ),
-          'headers' => array('Reply-To' => 'noreply@chriswatterston.com'),
-          'important' => false,
+          'headers' => array('Reply-To' => 'hello@chriswatterston.com'),
+          'important' => true,
           'track_opens' => null,
           'track_clicks' => null,
           'auto_text' => null,
@@ -50,7 +97,7 @@
           'url_strip_qs' => null,
           'preserve_recipients' => null,
           'view_content_link' => null,
-          'bcc_address' => '',
+          'bcc_address' => 'forms@chriswatterston.com',
           'tracking_domain' => null,
           'signing_domain' => null,
           'return_path_domain' => null,

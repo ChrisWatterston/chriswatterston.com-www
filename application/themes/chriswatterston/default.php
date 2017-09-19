@@ -8,9 +8,6 @@
 	$c = Page::getCurrentPage();
 	$ih = Loader::helper('image');
 
-	$pageMeta = $c->getAttribute('meta_title');
-	$pageName = $c->getCollectionName();
-	$pageID = strtolower(str_replace(" ", "-", $pageName));
 	$pageDesc = $c->getAttribute('meta_description');
 	$pageURL = $c->getCollectionPath();
 
@@ -20,13 +17,14 @@
 		$tagSrc = $thumb->src;
 	}
 ?>
-
 <header class="main page-default">
 	<div class="bkgrnd-img" style="background-image:url('<?php echo $tagSrc; ?>');"></div>
 	<section class="navigation-wrap">
 		<div class="cols">
 			<div class="col branding">
-				<img src="<?php echo $view->getThemePath()?>/img/brnd/chriswatterston-logo.svg" class="logo" />
+				<a href="<?php echo DIR_REL?>/" style="border:0;" title="Back to the start">
+					<img src="<?php echo $view->getThemePath()?>/img/brnd/chriswatterston-logo.svg" class="logo" />
+				</a>
 			</div>
 			<div class="col navigation">
 				<nav class="main">
@@ -44,11 +42,9 @@
 				$mttc = new Area('Title Content');
 				$mttc->display($c);
 			?>
-			<!-- <h1 class="colour-white type-semibold type-uppercase"><?php if ($pageMeta) { echo $pageMeta; } else { echo $pageName; } ?></h1> -->
 		</div>
 	</section>
 </header>
-
 <section class="body page-default">
 	<section class="services-wrap">
 		<div class="services-header">
@@ -79,5 +75,4 @@
 		</div>
 	</section>
 </section>
-
 <?php include('inc/footer.php'); ?>

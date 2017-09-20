@@ -203,7 +203,7 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 						box-shadow:$box-shadow;
 						.news-img {
 							position:absolute;
-							width:$col-one - 30;
+							width:$col-one / 2;
 							height:$col-one;
 							right:0;
 							bottom:0;
@@ -353,8 +353,6 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 				padding:0 30px;
 				.contain {
 					.cols.newsfeed-entrys {
-
-
 						.bkgrnd-personalprojects {
 							position:relative;
 							margin-bottom:20px;
@@ -408,11 +406,6 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 								background: -o-linear-gradient(right, rgba(31,197,183,0.2), rgba(31,197,183,1));
 							}
 						}
-
-
-
-
-
 						.col.newsfeed-entry {
 							position:relative;
 							display:inline-block;
@@ -422,7 +415,7 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 							box-shadow:$box-shadow;
 							.news-img {
 								position:absolute;
-								width:$col-one - 30;
+								width:$col-one / 2;
 								height:$col-one;
 								right:0;
 								bottom:0;
@@ -684,7 +677,7 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 						box-shadow:$box-shadow;
 						.news-img {
 							position:absolute;
-							width:$col-one - 30;
+							width:$col-one / 2;
 							height:$col-one;
 							right:0;
 							bottom:0;

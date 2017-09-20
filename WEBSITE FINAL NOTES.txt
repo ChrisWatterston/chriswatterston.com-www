@@ -1,15 +1,9 @@
-- check mail chimp signup form submissions
-- check validation of all forms
 - create remaining case study posts
-- create Instagram 'like' icon for image posts
 - darken SKOOLping bkgrnd image more
-- improve area background (pixel, http://chriswatterston.com-www.dev/index.php/blog
-- shipping on magnet (Shopify)
-- create a 'mobileapp' icon
 
-- check that the comments works on the blog posts
+- check that the comments works on the blog posts (finish variables)
 - check final SEO areas
-- Resolve social share meta within header.php 
+- style subscription form (http://eepurl.com/bfCjXj)
 
 
 

@@ -256,6 +256,10 @@
 	.form-grey {
 		input, select, textarea {background:rgba(69,72,81,0.1);}
 	}
+	.g-recaptcha {
+		float:left;
+		width:$col-one !important;
+	}
 
 	/* Buttons */
 	.abtn, input[type='submit'] {

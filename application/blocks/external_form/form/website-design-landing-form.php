@@ -85,6 +85,7 @@
   <?php
   if ($result[0][status] === 'sent') {
     echo "<p class='alert-success'>Thank you for your Website Design form submission. Once received, we'll be back in touch as soon as we can - speak soon!</p>";
+    echo "<style>.general-form{display:none!important;}</style>";
   }
   if ($result[0][status] === 'queued') {
     echo "<p class='alert-success'>Thank you for your Website Design form submission. Once received, we'll be back in touch as soon as we can - speak soon!</p>";

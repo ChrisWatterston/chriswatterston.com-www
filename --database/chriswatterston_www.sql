@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 19, 2017 at 11:52 PM
+-- Generation Time: Sep 20, 2017 at 03:33 PM
 -- Server version: 5.7.13
 -- PHP Version: 5.6.24
 
@@ -614,7 +614,12 @@ INSERT INTO `Areas` (`arID`, `cID`, `arHandle`, `arOverrideCollectionPermissions
 (259, 219, 'Main Description', 0, 0, 0, 0),
 (260, 219, 'Main Body One', 0, 0, 0, 0),
 (261, 219, 'Main Body Two', 0, 0, 0, 0),
-(262, 219, 'Main Body Three', 0, 0, 0, 0);
+(262, 219, 'Main Body Three', 0, 0, 0, 0),
+(263, 220, 'Title Content', 0, 0, 0, 0),
+(264, 220, 'Main Description', 0, 0, 0, 0),
+(265, 220, 'Main Body One', 0, 0, 0, 0),
+(266, 220, 'Main Body Two', 0, 0, 0, 0),
+(267, 220, 'Main Body Three', 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -742,7 +747,33 @@ INSERT INTO `atBoolean` (`value`, `avID`) VALUES
 (1, 2180),
 (1, 2181),
 (1, 2195),
-(1, 2196);
+(1, 2196),
+(1, 2255),
+(1, 2261),
+(1, 2297),
+(1, 2303),
+(0, 2323),
+(0, 2337),
+(0, 2349),
+(1, 2355),
+(1, 2357),
+(1, 2358),
+(1, 2359),
+(1, 2360),
+(1, 2361),
+(1, 2366),
+(1, 2367),
+(1, 2370),
+(1, 2371),
+(1, 2374),
+(1, 2375),
+(1, 2379),
+(1, 2380),
+(1, 2384),
+(1, 2385),
+(1, 2386),
+(1, 2387),
+(1, 2389);
 
 -- --------------------------------------------------------
 
@@ -1221,7 +1252,53 @@ INSERT INTO `atDefault` (`value`, `avID`) VALUES
 ('Cookie Policy', 2199),
 ('Terms of Use', 2201),
 ('Accessibility', 2205),
-('Case Studie', 2209);
+('Case Studie', 2209),
+('My \'There Is No Cloud\' Sticker', 2245),
+('Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global! Like many others, I’ve had the pleasure of setting up many smartphones and tablets over the years and when It comes to the cloud storage part of the set-up (iCloud of OneDrive), the device owner look at me blankly and says “What, yes, whatever?!”. We are well and truly past the Nokia 5110 times of just popping in your SIM card and making a call with your market flashing arial.', 2246),
+('there is no cloud, sticker, stickermule', 2247),
+('4th Month Into Self-Employment', 2251),
+('Jee. Taking a step back, it\'s been almost 4 months already. Holy Crap! Cutting a 5 year story into a nut shell, I previously worked for a secondary school within an IT department. It wasn\'t any ordinary IT department within a school, ow nooo. We were unique in what we did, not only did we supported our base school, but 30+ other schools and businesses in and around the Surrey, UK areas.', 2252),
+('4 months, IT department, self employment', 2253),
+('There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 2257),
+('The Sticker Mule marketplace has been growing rapidly over the past couple of years. Sticker Mule loves seeing applications and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers. But what do the top selling designs have in common? Is there a secret? What can other sellers learn?', 2258),
+('sticker mule, marketplace, sticker design', 2259),
+('There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 2293),
+('The Sticker Mule marketplace has been growing rapidly over the past couple of years. Sticker Mule loves seeing applications and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers. And Chris Watterston\'s sticker did just that!', 2294),
+('sticker mule, marketplace, sticker design', 2295),
+('There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 2299),
+('The Sticker Mule marketplace has been growing rapidly over the past couple of years. Sticker Mule loves seeing applications and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers. Chris Watterston\'s sticker did just that!', 2300),
+('sticker mule, marketplace, sticker design', 2301),
+('Like every Tom, Dick and Harry in the land, I set myself new targets and challenges at the start of every year. Do I ever achieve them, behave yourself! It’s so frustrating telling you that, but even more so with myself for not achieving. *sigh*', 2308),
+('2016, new challenges, new start, new targets', 2309),
+('Like every Tom, Dick and Harry in the land, I set myself new targets and challenges at the start of every year. Do I ever achieve them, behave yourself! It’s so frustrating telling you that, but even more so with myself for not achieving. *sigh*', 2314),
+('2016, new challenges, new start, new targets', 2315),
+('', 2319),
+('Like every Tom, Dick and Harry in the land, I set myself new targets and challenges at the start of every year. Do I ever achieve them, behave yourself! It’s so frustrating telling you that, but even more so with myself for not achieving. *sigh*', 2320),
+('2016, new challenges, new start, new targets', 2321),
+('\'There Is No Cloud\' Copyright Protection', 2327),
+('I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO! That would place myself in the same category as the thieving scummy $&£#’ers that stole my design and many other honest designers work also - and that’s me being polite against them!', 2328),
+('stealing designers work, my design', 2329),
+('\'There Is No Cloud\' Copyright Protection', 2333),
+('I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO! That would place myself in the same category as the thieving scummy $&£#’ers that stole my design and many other honest designers work also - and that’s me being polite against them!', 2334),
+('stealing designers work, my design', 2335),
+('My \'There Is No Cloud\' Sticker', 2339),
+('Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global! Like many others, I’ve had the pleasure of setting up many smartphones and tablets over the years and when It comes to the cloud storage part of the set-up (iCloud of OneDrive), the device owner look at me blankly and says “What, yes, whatever?!”. We are well and truly past the Nokia 5110 times of just popping in your SIM card and making a call with your market flashing arial.', 2340),
+('there is no cloud, sticker, stickermule', 2341),
+('My \'There Is No Cloud\' Sticker', 2345),
+('Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global! Like many others, I’ve had the pleasure of setting up many smartphones and tablets over the years and when It comes to the cloud storage part of the set-up (iCloud of OneDrive), the device owner look at me blankly and says “What, yes, whatever?!”. We are well and truly past the Nokia 5110 times of just popping in your SIM card and making a call with your market flashing arial.', 2346),
+('there is no cloud, sticker, stickermule', 2347),
+('Shipping, Returns and Refund Policy', 2351),
+('This website is operated by Chris Watterston. Throughout the site, the terms “we”, “us” and “our” refer to Chris Watterston. Chris Watterston offers this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.', 2352),
+('Cookie Policy', 2362),
+('Cookie Policy', 2363),
+('Cookie Policy', 2364),
+('Terms of Use', 2368),
+('Accessibility', 2372),
+('Shipping, Returns and Refund Policy', 2376),
+('This website is operated by Chris Watterston. Throughout the site, the terms “we”, “us” and “our” refer to Chris Watterston. Chris Watterston offers this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.', 2377),
+('', 2381),
+('', 2382),
+('', 2383);
 
 -- --------------------------------------------------------
 
@@ -1328,12 +1405,18 @@ INSERT INTO `atFile` (`fID`, `avID`) VALUES
 (1, 1336),
 (1, 1491),
 (1, 1563),
+(1, 2248),
 (5, 1535),
 (5, 1541),
 (13, 1186),
 (13, 1468),
 (13, 1486),
 (13, 2232),
+(13, 2260),
+(13, 2296),
+(13, 2302),
+(13, 2342),
+(13, 2348),
 (14, 1547),
 (14, 1553),
 (16, 1378),
@@ -1355,6 +1438,14 @@ INSERT INTO `atFile` (`fID`, `avID`) VALUES
 (16, 2204),
 (16, 2208),
 (16, 2212),
+(16, 2254),
+(16, 2354),
+(16, 2356),
+(16, 2365),
+(16, 2369),
+(16, 2373),
+(16, 2378),
+(16, 2388),
 (19, 1579),
 (19, 1584),
 (19, 1589),
@@ -1382,7 +1473,12 @@ INSERT INTO `atFile` (`fID`, `avID`) VALUES
 (35, 2077),
 (36, 2086),
 (44, 2149),
-(49, 2216);
+(49, 2216),
+(53, 2310),
+(53, 2316),
+(53, 2322),
+(54, 2330),
+(54, 2336);
 
 -- --------------------------------------------------------
 
@@ -1515,7 +1611,11 @@ INSERT INTO `atNumber` (`value`, `avID`) VALUES
 ('1400.0000', 2163),
 ('300.0000', 2164),
 ('2124.0000', 2165),
-('632.0000', 2166);
+('632.0000', 2166),
+('1440.0000', 2305),
+('250.0000', 2306),
+('1440.0000', 2325),
+('250.0000', 2326);
 
 -- --------------------------------------------------------
 
@@ -1621,7 +1721,19 @@ INSERT INTO `atSelectedTopics` (`avTreeTopicNodeID`, `treeNodeID`, `avID`) VALUE
 (103, 21, 1736),
 (107, 21, 1760),
 (109, 20, 1858),
-(113, 21, 1903);
+(113, 21, 1903),
+(116, 11, 2250),
+(117, 11, 2256),
+(118, 11, 2262),
+(124, 11, 2298),
+(125, 11, 2304),
+(126, 18, 2312),
+(127, 18, 2318),
+(128, 18, 2324),
+(129, 26, 2332),
+(130, 26, 2338),
+(131, 11, 2344),
+(132, 11, 2350);
 
 -- --------------------------------------------------------
 
@@ -1808,7 +1920,19 @@ INSERT INTO `atTopic` (`avID`) VALUES
 (1736),
 (1760),
 (1858),
-(1903);
+(1903),
+(2250),
+(2256),
+(2262),
+(2298),
+(2304),
+(2312),
+(2318),
+(2324),
+(2332),
+(2338),
+(2344),
+(2350);
 
 -- --------------------------------------------------------
 
@@ -2172,6 +2296,22 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (2201, 1),
 (2205, 1),
 (2209, 1),
+(2245, 1),
+(2251, 1),
+(2257, 1),
+(2293, 1),
+(2299, 1),
+(2319, 1),
+(2327, 1),
+(2333, 1),
+(2339, 1),
+(2345, 1),
+(2351, 1),
+(2362, 1),
+(2368, 1),
+(2372, 1),
+(2376, 1),
+(2381, 1),
 (205, 2),
 (210, 2),
 (211, 2),
@@ -2275,6 +2415,22 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (2127, 2),
 (2191, 2),
 (2198, 2),
+(2246, 2),
+(2252, 2),
+(2258, 2),
+(2294, 2),
+(2300, 2),
+(2308, 2),
+(2314, 2),
+(2320, 2),
+(2328, 2),
+(2334, 2),
+(2340, 2),
+(2346, 2),
+(2352, 2),
+(2363, 2),
+(2377, 2),
+(2382, 2),
 (2, 3),
 (3, 3),
 (4, 3),
@@ -2444,6 +2600,20 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (2128, 3),
 (2192, 3),
 (2199, 3),
+(2247, 3),
+(2253, 3),
+(2259, 3),
+(2295, 3),
+(2301, 3),
+(2309, 3),
+(2315, 3),
+(2321, 3),
+(2329, 3),
+(2335, 3),
+(2341, 3),
+(2347, 3),
+(2364, 3),
+(2383, 3),
 (117, 4),
 (124, 4),
 (118, 5),
@@ -2482,7 +2652,11 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (2016, 7),
 (2179, 7),
 (2196, 7),
+(2355, 7),
+(2384, 7),
 (2180, 8),
+(2358, 8),
+(2385, 8),
 (344, 9),
 (350, 9),
 (354, 9),
@@ -2507,6 +2681,12 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (64, 12),
 (109, 12),
 (2181, 12),
+(2359, 12),
+(2367, 12),
+(2371, 12),
+(2375, 12),
+(2380, 12),
+(2386, 12),
 (345, 13),
 (351, 13),
 (355, 13),
@@ -2526,6 +2706,12 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (2066, 13),
 (2085, 13),
 (2177, 13),
+(2360, 13),
+(2366, 13),
+(2370, 13),
+(2374, 13),
+(2379, 13),
+(2387, 13),
 (187, 16),
 (617, 16),
 (619, 16),
@@ -2574,6 +2760,8 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (2159, 16),
 (2163, 16),
 (2165, 16),
+(2305, 16),
+(2325, 16),
 (188, 17),
 (618, 17),
 (620, 17),
@@ -2622,6 +2810,8 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (2160, 17),
 (2164, 17),
 (2166, 17),
+(2306, 17),
+(2326, 17),
 (206, 20),
 (212, 20),
 (215, 20),
@@ -2725,6 +2915,25 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (2212, 20),
 (2216, 20),
 (2232, 20),
+(2248, 20),
+(2254, 20),
+(2260, 20),
+(2296, 20),
+(2302, 20),
+(2310, 20),
+(2316, 20),
+(2322, 20),
+(2330, 20),
+(2336, 20),
+(2342, 20),
+(2348, 20),
+(2354, 20),
+(2356, 20),
+(2365, 20),
+(2369, 20),
+(2373, 20),
+(2378, 20),
+(2388, 20),
 (235, 21),
 (268, 21),
 (331, 21),
@@ -2748,6 +2957,13 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1542, 21),
 (1548, 21),
 (1554, 21),
+(2255, 21),
+(2261, 21),
+(2297, 21),
+(2303, 21),
+(2323, 21),
+(2337, 21),
+(2349, 21),
 (208, 22),
 (213, 22),
 (216, 22),
@@ -2799,6 +3015,18 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (1760, 22),
 (1858, 22),
 (1903, 22),
+(2250, 22),
+(2256, 22),
+(2262, 22),
+(2298, 22),
+(2304, 22),
+(2312, 22),
+(2318, 22),
+(2324, 22),
+(2332, 22),
+(2338, 22),
+(2344, 22),
+(2350, 22),
 (341, 23),
 (347, 23),
 (357, 23),
@@ -2828,8 +3056,11 @@ INSERT INTO `AttributeValues` (`avID`, `akID`) VALUES
 (2078, 25),
 (2087, 25),
 (2178, 30),
+(2361, 30),
+(2389, 30),
 (2172, 31),
-(2195, 31);
+(2195, 31),
+(2357, 31);
 
 -- --------------------------------------------------------
 
@@ -2976,18 +3207,32 @@ INSERT INTO `BlockFeatureAssignments` (`cID`, `cvID`, `bID`, `faID`) VALUES
 (187, 10, 147, 12),
 (187, 11, 151, 13),
 (187, 12, 151, 13),
+(187, 13, 151, 13),
+(187, 14, 151, 13),
 (187, 11, 152, 14),
 (187, 12, 152, 14),
+(187, 13, 152, 14),
+(187, 14, 152, 14),
 (187, 11, 153, 15),
 (187, 12, 153, 15),
+(187, 13, 153, 15),
+(187, 14, 153, 15),
 (187, 11, 154, 16),
 (187, 12, 154, 16),
+(187, 13, 154, 16),
+(187, 14, 154, 16),
 (187, 11, 155, 17),
 (187, 12, 155, 17),
+(187, 13, 155, 17),
+(187, 14, 155, 17),
 (187, 11, 156, 18),
 (187, 12, 156, 18),
+(187, 13, 156, 18),
+(187, 14, 156, 18),
 (187, 11, 157, 19),
 (187, 12, 157, 19),
+(187, 13, 157, 19),
+(187, 14, 157, 19),
 (190, 2, 162, 20),
 (190, 2, 164, 21),
 (190, 3, 165, 22),
@@ -3002,12 +3247,16 @@ INSERT INTO `BlockFeatureAssignments` (`cID`, `cvID`, `bID`, `faID`) VALUES
 (190, 7, 166, 23),
 (188, 3, 174, 24),
 (188, 4, 174, 24),
+(188, 5, 174, 24),
 (181, 4, 202, 25),
 (181, 5, 202, 25),
 (181, 6, 202, 25),
 (181, 5, 203, 26),
 (181, 6, 204, 27),
 (181, 7, 204, 27),
+(181, 8, 204, 27),
+(181, 9, 204, 27),
+(181, 10, 204, 27),
 (201, 40, 298, 28),
 (201, 41, 298, 28),
 (201, 42, 298, 28),
@@ -4085,7 +4334,23 @@ INSERT INTO `Blocks` (`bID`, `bName`, `bDateAdded`, `bDateModified`, `bFilename`
 (936, '', '2017-09-19 23:22:36', '2017-09-19 23:22:36', NULL, '1', 14, 1, NULL),
 (937, '', '2017-09-19 23:27:12', '2017-09-19 23:27:12', NULL, '0', 14, 1, NULL),
 (938, '', '2017-09-19 23:28:05', '2017-09-19 23:28:05', NULL, '0', 14, 1, NULL),
-(942, '', '2017-09-19 23:28:55', '2017-09-19 23:28:55', NULL, '0', 14, 1, NULL);
+(942, '', '2017-09-19 23:28:55', '2017-09-19 23:28:55', NULL, '0', 14, 1, NULL),
+(943, '', '2017-09-20 08:42:08', '2017-09-20 08:42:08', '', '1', 14, 1, NULL),
+(944, '', '2017-09-20 09:19:47', '2017-09-20 09:19:47', '', '1', 14, 1, NULL),
+(945, '', '2017-09-20 09:20:41', '2017-09-20 09:20:41', '', '1', 14, 1, NULL),
+(946, '', '2017-09-20 12:34:27', '2017-09-20 12:34:27', 'chris-watterston-blog-list', '1', 35, 1, NULL),
+(947, '', '2017-09-20 12:38:49', '2017-09-20 12:38:50', 'chris-watterston-blog-list', '1', 35, 1, NULL),
+(948, '', '2017-09-20 12:39:24', '2017-09-20 12:39:24', 'chris-watterston-blog-list', '1', 35, 1, NULL),
+(949, '', '2017-09-20 12:40:09', '2017-09-20 12:40:09', 'chris-watterston-blog-list', '1', 35, 1, NULL),
+(950, '', '2017-09-20 12:56:08', '2017-09-20 12:56:26', 'chris-watterston-latest-case-studies', '1', 35, 1, NULL),
+(951, '', '2017-09-20 14:16:03', '2017-09-20 14:16:04', '', '1', 30, 1, NULL),
+(952, '', '2017-09-20 15:00:30', '2017-09-20 15:00:36', NULL, '0', 14, 1, NULL),
+(953, '', '2017-09-20 15:19:53', '2017-09-20 15:19:53', NULL, '0', 14, 1, NULL),
+(954, '', '2017-09-20 15:23:01', '2017-09-20 15:23:36', NULL, '0', 14, 1, NULL),
+(955, '', '2017-09-20 15:25:33', '2017-09-20 15:25:33', NULL, '1', 14, 1, NULL),
+(956, '', '2017-09-20 15:26:22', '2017-09-20 15:26:22', NULL, '1', 14, 1, NULL),
+(957, '', '2017-09-20 15:27:13', '2017-09-20 15:27:13', NULL, '1', 14, 1, NULL),
+(958, '', '2017-09-20 15:31:43', '2017-09-20 15:31:43', NULL, '1', 14, 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -5060,7 +5325,18 @@ INSERT INTO `btContentLocal` (`bID`, `content`) VALUES
 (936, '<p class="colour-white family-table">Copyright &copy; 2017 Chris Watterston. All rights reserved.</p>\r\n\r\n<p class="colour-white family-table"><a class="colour-white" href="{CCM:CID_217}" title="Cookie Policy">Cookie Policy</a>&nbsp;&nbsp;<a class="colour-white" href="{CCM:CID_218}" title="Terms of Use">Terms of Use</a>&nbsp; &nbsp;<a class="colour-white" href="{CCM:CID_219}" title="Accessibility">Accessibility</a></p>\r\n'),
 (937, ''),
 (938, ''),
-(942, '');
+(942, ''),
+(943, '<h2><strong>Your mobile app, launch it.</strong> Let&#39;s take it to your already mobile addicted audience.</h2>\r\n\r\n<p>There are already so many mobile applications on the market that are identical from one another, you want something unique, something branded - that&#39;s what I do. I listen to individuals, start-ups and brands, to uniquely help them prepare them for what hungry excitement lies ahead. From the collaborative planning, through to design, development, testing and launch. Let me create something beautiful for you and your audience.&nbsp;</p>\r\n\r\n<p><strong>DID YOU KNOW - </strong>a&nbsp;study showed that the average user spends 67 hours a month browsing on their mobile device, with 90% of that time used within third-party installed&nbsp;applications.</p>\r\n\r\n<p><a class="abtn mobileapp" href="#mobileapp-form" title="Enquiry about your mobile application today">Don&#39;t regret it, chat about your mobile application project today</a></p>\r\n'),
+(944, '<h2><strong>Every design or development project are non-identical. These require&nbsp;different tacktical methods with slightly different solutions -&nbsp;each completed with passion and determination.&nbsp;Here are a few of my clients projects that not only delivered great client satisfaction, but have exceeded the above and beyond.</strong></h2>\r\n\r\n<p>Join our conversation online and&nbsp;<a data-concrete5-link-lightbox="iframe" href="http://eepurl.com/bfCjXj" target="lightbox" title="subscribe">subscribe&nbsp;to receive our monthly newsletters</a>.<br />\r\nI&rsquo;ll only email you with important bits, never spam - that&#39;s a&nbsp;pinky promise!</p>\r\n'),
+(945, '<h2 class="sub-heading colour-grey title-sub"><strong>While I&#39;m not knee deep in enjoyment with the undertaking of projects, I like to keep my clients and visitors up to date with the latest news and work from my studio and home in London, United Kingdom. Whether it&#39;s work life, client problem solving, learning new things, personal or family life - I enjoy telling stories.</strong></h2>\r\n\r\n<p>Join our conversation online and&nbsp;<a data-concrete5-link-lightbox="iframe" href="http://eepurl.com/bfCjXj" target="lightbox" title="subscribe">subscribe&nbsp;to receive our monthly newsletters</a>.<br />\r\nI&rsquo;ll only email you with important bits, never spam - that&#39;s a&nbsp;pinky promise!</p>\r\n'),
+(951, '<div id=\'product-component-6c80fcb6af9\'></div>\r\n<script type="text/javascript">\r\n/*<![CDATA[*/\r\n\r\n(function () {\r\n  var scriptURL = \'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js\';\r\n  if (window.ShopifyBuy) {\r\n    if (window.ShopifyBuy.UI) {\r\n      ShopifyBuyInit();\r\n    } else {\r\n      loadScript();\r\n    }\r\n  } else {\r\n    loadScript();\r\n  }\r\n\r\n  function loadScript() {\r\n    var script = document.createElement(\'script\');\r\n    script.async = true;\r\n    script.src = scriptURL;\r\n    (document.getElementsByTagName(\'head\')[0] || document.getElementsByTagName(\'body\')[0]).appendChild(script);\r\n    script.onload = ShopifyBuyInit;\r\n  }\r\n\r\n  function ShopifyBuyInit() {\r\n    var client = ShopifyBuy.buildClient({\r\n      domain: \'chris-watterston.myshopify.com\',\r\n      apiKey: \'4513effbe12a7d7cd4c3289699fa6229\',\r\n      appId: \'6\',\r\n    });\r\n\r\n    ShopifyBuy.UI.onReady(client).then(function (ui) {\r\n      ui.createComponent(\'product\', {\r\n        id: [11471652998],\r\n        node: document.getElementById(\'product-component-6c80fcb6af9\'),\r\n        moneyFormat: \'%C2%A3%7B%7Bamount%7D%7D\',\r\n        options: {\r\n  "product": {\r\n    "buttonDestination": "checkout",\r\n    "variantId": "all",\r\n    "width": "240px",\r\n    "contents": {\r\n      "img": false,\r\n      "imgWithCarousel": false,\r\n      "title": false,\r\n      "variantTitle": false,\r\n      "price": false,\r\n      "description": false,\r\n      "buttonWithQuantity": true,\r\n      "button": false,\r\n      "quantity": false\r\n    },\r\n    "text": {\r\n      "button": "Buy this magnet"\r\n    },\r\n    "styles": {\r\n      "product": {\r\n        "text-align": "left",\r\n        "@media (min-width: 601px)": {\r\n          "max-width": "100%",\r\n          "margin-left": "0",\r\n          "margin-bottom": "50px"\r\n        }\r\n      },\r\n      "button": {\r\n        "background-color": "#000000",\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-size": "14px",\r\n        "padding-top": "15px",\r\n        "padding-bottom": "15px",\r\n        "padding-left": "35px",\r\n        "padding-right": "35px",\r\n        ":hover": {\r\n          "background-color": "#000000"\r\n        },\r\n        "border-radius": "0px",\r\n        ":focus": {\r\n          "background-color": "#000000"\r\n        },\r\n        "font-weight": "bold"\r\n      },\r\n      "variantTitle": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "color": "#454851",\r\n        "font-weight": "normal"\r\n      },\r\n      "title": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "color": "#454851"\r\n      },\r\n      "description": {\r\n        "color": "#454851",\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-weight": "normal"\r\n      },\r\n      "price": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "color": "#454851",\r\n        "font-weight": "normal"\r\n      },\r\n      "quantityInput": {\r\n        "font-size": "14px",\r\n        "padding-top": "15px",\r\n        "padding-bottom": "15px"\r\n      },\r\n      "compareAt": {\r\n        "font-size": "12px",\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-weight": "normal",\r\n        "color": "#454851"\r\n      }\r\n    },\r\n    "googleFonts": [\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans"\r\n    ]\r\n  },\r\n  "cart": {\r\n    "contents": {\r\n      "button": true\r\n    },\r\n    "text": {\r\n      "title": "Your Basket",\r\n      "button": "Checkout",\r\n      "empty": "Your basket is empty."\r\n    },\r\n    "styles": {\r\n      "button": {\r\n        "background-color": "#000000",\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-size": "14px",\r\n        "padding-top": "15px",\r\n        "padding-bottom": "15px",\r\n        ":hover": {\r\n          "background-color": "#000000"\r\n        },\r\n        "border-radius": "0px",\r\n        ":focus": {\r\n          "background-color": "#000000"\r\n        },\r\n        "font-weight": "bold"\r\n      },\r\n      "title": {\r\n        "color": "#454851"\r\n      },\r\n      "footer": {\r\n        "background-color": "#ffffff"\r\n      },\r\n      "header": {\r\n        "color": "#454851"\r\n      },\r\n      "lineItems": {\r\n        "color": "#454851"\r\n      },\r\n      "subtotalText": {\r\n        "color": "#454851"\r\n      },\r\n      "subtotal": {\r\n        "color": "#454851"\r\n      },\r\n      "notice": {\r\n        "color": "#454851"\r\n      },\r\n      "currency": {\r\n        "color": "#454851"\r\n      },\r\n      "close": {\r\n        ":hover": {\r\n          "color": "#454851"\r\n        },\r\n        "color": "#454851"\r\n      },\r\n      "emptyCart": {\r\n        "color": "#454851"\r\n      }\r\n    },\r\n    "googleFonts": [\r\n      "Open Sans"\r\n    ]\r\n  },\r\n  "modalProduct": {\r\n    "contents": {\r\n      "img": false,\r\n      "imgWithCarousel": true,\r\n      "variantTitle": false,\r\n      "buttonWithQuantity": true,\r\n      "button": false,\r\n      "quantity": false\r\n    },\r\n    "styles": {\r\n      "product": {\r\n        "@media (min-width: 601px)": {\r\n          "max-width": "100%",\r\n          "margin-left": "0px",\r\n          "margin-bottom": "0px"\r\n        }\r\n      },\r\n      "button": {\r\n        "background-color": "#000000",\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-size": "14px",\r\n        "padding-top": "15px",\r\n        "padding-bottom": "15px",\r\n        "padding-left": "35px",\r\n        "padding-right": "35px",\r\n        ":hover": {\r\n          "background-color": "#000000"\r\n        },\r\n        "border-radius": "0px",\r\n        ":focus": {\r\n          "background-color": "#000000"\r\n        },\r\n        "font-weight": "bold"\r\n      },\r\n      "variantTitle": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-weight": "normal"\r\n      },\r\n      "title": {\r\n        "font-family": "Open Sans, sans-serif"\r\n      },\r\n      "description": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-weight": "normal"\r\n      },\r\n      "price": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-weight": "normal"\r\n      },\r\n      "quantityInput": {\r\n        "font-size": "14px",\r\n        "padding-top": "15px",\r\n        "padding-bottom": "15px"\r\n      },\r\n      "compareAt": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "font-weight": "normal"\r\n      }\r\n    },\r\n    "googleFonts": [\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans",\r\n      "Open Sans"\r\n    ]\r\n  },\r\n  "toggle": {\r\n    "styles": {\r\n      "toggle": {\r\n        "font-family": "Open Sans, sans-serif",\r\n        "background-color": "#000000",\r\n        ":hover": {\r\n          "background-color": "#000000"\r\n        },\r\n        ":focus": {\r\n          "background-color": "#000000"\r\n        },\r\n        "font-weight": "bold"\r\n      },\r\n      "count": {\r\n        "font-size": "14px",\r\n        "color": "#ffffff",\r\n        ":hover": {\r\n          "color": "#ffffff"\r\n        }\r\n      },\r\n      "iconPath": {\r\n        "fill": "#ffffff"\r\n      }\r\n    },\r\n    "googleFonts": [\r\n      "Open Sans"\r\n    ]\r\n  },\r\n  "option": {\r\n    "styles": {\r\n      "label": {\r\n        "font-family": "Open Sans, sans-serif"\r\n      },\r\n      "select": {\r\n        "font-family": "Open Sans, sans-serif"\r\n      }\r\n    },\r\n    "googleFonts": [\r\n      "Open Sans",\r\n      "Open Sans"\r\n    ]\r\n  },\r\n  "productSet": {\r\n    "styles": {\r\n      "products": {\r\n        "@media (min-width: 601px)": {\r\n          "margin-left": "-20px"\r\n        }\r\n      }\r\n    }\r\n  },\r\n  "lineItem": {\r\n    "styles": {\r\n      "variantTitle": {\r\n        "color": "#454851"\r\n      },\r\n      "title": {\r\n        "color": "#454851"\r\n      },\r\n      "price": {\r\n        "color": "#454851"\r\n      },\r\n      "quantity": {\r\n        "color": "#454851"\r\n      },\r\n      "quantityIncrement": {\r\n        "color": "#454851",\r\n        "border-color": "#454851"\r\n      },\r\n      "quantityDecrement": {\r\n        "color": "#454851",\r\n        "border-color": "#454851"\r\n      },\r\n      "quantityInput": {\r\n        "color": "#454851",\r\n        "border-color": "#454851"\r\n      }\r\n    }\r\n  }\r\n}\r\n      });\r\n    });\r\n  }\r\n})();\r\n/*]]>*/\r\n</script>'),
+(952, '<h1 class="colour-white"><strong>Shipping, Returns and Refund Policy.</strong></h1>\r\n'),
+(953, '<h2><strong>Section 1 - shipping</strong></h2>\r\n\r\n<p>My primary shipping service is <a href="http://www.royalmail.com/" target="_blank" title="Royal Mail">Royal Mail</a> or ParcelForce Worldwide. Both are services that are operated by Royal Mail Group Limited. Most of my products ship from from our business location in Middlesex, UK.</p>\r\n\r\n<p>Every product is usually shipped within two (2) days, but generally within 24 hours. Deliveries will be made within 1 to 10 working days dependant upon weight and service requested. I do my best to ship items out as quickly as possible, so I often get orders out more quickly than is noted by the timeframe stated. Additionally, please note that delivery time is also based on &quot;business&quot; days.</p>\r\n\r\n<p>I do not profit from shipping, but prices within your invoice may differ compaired that of the offical shipping service.&nbsp;If we&#39;re shipping your order within the UK or internationally, your shipping cost are likely to be the same as we are charged by whichever shipping company is used to deliver your package. Shipping costs are calculated on the website automatically during checkout based on the weight of the items you are purchasing. While an effort is made to&nbsp;try and keep shipping costs up-to-date, I cannot guarantee this.</p>\r\n\r\n<p>Delivery will be made to the delivery address submitted at time of purchase. If your delivery address has been submitted incorrectly, you must contact me within 4 hours of your purchase to update us with your correct delivery address.</p>\r\n\r\n<p>If a customer inputs any incorrect address details on their order, which causes the parcel to be delivered incorrectly. I will not hold any responsibility for this parcel.ie, the customer will have to try and retrieve the parcel themselves at their cost.</p>\r\n\r\n<p>If my shipping services are unable to gain access to the agreed delivery address, the shipping services&nbsp;will return the goods to a local/ our warehouse and make contact with you to re-arrange delivery.&nbsp; Unfortunately in these circumstances I may have to charge you a further delivery fee.</p>\r\n\r\n<p>Depending on chosen shipping, goods must be signed for to confirm receipt. If you are unavailable at this time, I recommend a responsible adult is available to sign on your behalf.</p>\r\n\r\n<p>I do not send to PO BOX addresses.</p>\r\n\r\n<h2><strong>Section 2 - Shipping Errors</strong></h2>\r\n\r\n<p>Shipping errors must be reported within 1 day of date of delivery. All orders, are checked and double checked before leaving for delivery. If you are a UK customer and you have not received your order within 7 days of dispatch date, then you must notify me within these 7 days. If you notify me after these 7 days then we will not be responsible for its location, and we may not be able to claim for the parcel if it lost/stolen.</p>\r\n\r\n<p>If you have received your parcel in poor condition/damaged or have items missing. You must keep all outer packaging so that the courier can collect the parcel for their investigation.</p>\r\n\r\n<h2><strong>Section 3 - Returns</strong></h2>\r\n\r\n<p>You have 14 calendar days to return an item from the date you received it. To be eligible for a return, your item must be unused and in the same condition that you received it.&nbsp;Your item must be in the original unopened shipping packaging. Your item needs to have the receipt or proof of purchase.</p>\r\n\r\n<h2><strong>Section 4 - Refunds</strong></h2>\r\n\r\n<p>Once I have received your item, it will be inspected and you will be notified that I have received your returned item. I will immediately notify you on the status of your refund after inspecting the item.</p>\r\n\r\n<p>If your return is approved, I will initiate a refund to your original method of payment. You will receive the credit within a certain amount of days, depending on your original payment method issuer&#39;s policies.</p>\r\n\r\n<p>You will be responsible for paying for your own shipping costs for returning your item. Shipping costs are non&shy;refundable. If you receive a refund, the cost of return shipping will be deducted from your refund.</p>\r\n\r\n<h2><strong>Section 5 - Contact Information</strong></h2>\r\n\r\n<p>This website is owned and operated by myself,&nbsp;Chris Watterston.</p>\r\n\r\n<p>My principal place of business is at &lsquo;Pentire - Stable 2, Fordbridge Road, Sunbury-on-Thames, Middlesex, TW16 6AX, United Kingdom&rsquo;.</p>\r\n\r\n<p>Questions about the Terms of Service should be sent to me at <a href="mailto:hello@chriswatterston.com">hello@chriswatterston.com</a>.</p>\r\n'),
+(954, '<h2><strong>IMPORTANT:</strong> This policy is for products printed and distributed through this website&nbsp;by myself, Chris Watterston. This policy does not apply to third-parties such as, but not limited to; Sticker Mule, Spreadshirt and &nbsp;Society6.</h2>\r\n'),
+(955, '<p class="colour-white family-table">Copyright &copy; 2017 Chris Watterston. All rights reserved.</p>\r\n\r\n<p class="colour-white family-table"><a class="colour-white" href="{CCM:CID_217}" title="Cookie Policy">Cookie Policy</a>&nbsp;&nbsp;<a class="colour-white" href="{CCM:CID_218}" title="Terms of Use">Terms of Use</a>&nbsp; &nbsp;<a class="colour-white" href="{CCM:CID_219}" title="Accessibility">Accessibility</a>&nbsp; &nbsp;<a href="{CCM:CID_220}" title="Store and products terms">Store &amp; Products Terms</a></p>\r\n'),
+(956, '<h1 class="colour-white"><strong>Shipping, Returns and Refund Policy.</strong> Store &amp; Products.</h1>\r\n'),
+(957, '<p class="colour-white family-table">Copyright &copy; 2017 Chris Watterston. All rights reserved.</p>\r\n\r\n<p class="colour-white family-table"><a class="colour-white" href="{CCM:CID_217}" title="Cookie Policy">Cookie Policy</a>&nbsp;&nbsp;<a class="colour-white" href="{CCM:CID_218}" title="Terms of Use">Terms of Use</a>&nbsp; &nbsp;<a class="colour-white" href="{CCM:CID_219}" title="Accessibility">Accessibility</a>&nbsp; &nbsp;<a href="{CCM:CID_220}" title="Store and products policy">Store &amp; Products Policy</a></p>\r\n'),
+(958, '<p class="colour-white family-table">Copyright &copy; 2017 Chris Watterston. All rights reserved.</p>\r\n\r\n<p class="colour-white family-table"><a class="colour-white" href="{CCM:CID_217}" title="Cookie Policy">Cookie Policy</a>&nbsp;&nbsp;<a class="colour-white" href="{CCM:CID_218}" title="Terms of Use">Terms of Use</a>&nbsp; &nbsp;<a class="colour-white" href="{CCM:CID_219}" title="Accessibility">Accessibility</a>&nbsp; &nbsp;<a href="{CCM:CID_220}" title="Store policy">Store Policy</a></p>\r\n');
 
 -- --------------------------------------------------------
 
@@ -5662,7 +5938,12 @@ INSERT INTO `btPageList` (`bID`, `num`, `orderBy`, `cParentID`, `cThis`, `cThisP
 (238, 8, 'chrono_desc', 162, 1, 0, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 1, 1, 0, 0, 0, 0, 0, 8, 0, 1, 0, '', 1, 300),
 (796, 10, 'chrono_desc', 161, 1, 0, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, '', 1, 300),
 (802, 10, 'chrono_desc', 162, 1, 0, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 1, 1, 0, 1, 0, 0, 0, 8, 0, 1, 0, '', 1, 300),
-(871, 10, 'chrono_desc', 162, 1, 0, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 1, 1, 0, 1, 0, 0, 1, 8, 0, 1, 0, '', 1, 300);
+(871, 10, 'chrono_desc', 162, 1, 0, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 1, 1, 0, 1, 0, 0, 1, 8, 0, 1, 0, '', 1, 300),
+(946, 10, 'chrono_desc', 161, 1, 0, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, '', 1, 250),
+(947, 10, 'chrono_desc', 161, 1, 0, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, '', 1, 275),
+(948, 10, 'chrono_desc', 161, 1, 0, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, '', 1, 200),
+(949, 10, 'chrono_desc', 162, 1, 0, 0, '', '', 0, 0, '', 0, NULL, NULL, '', '', 0, 1, 1, 1, 0, 1, 0, 0, 1, 8, 0, 1, 0, '', 1, 200),
+(950, 4, 'chrono_desc', 162, 0, 0, 0, '', '', 0, 1, '', 0, NULL, NULL, '', 'post_topics', 8, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, '', 1, 200);
 
 -- --------------------------------------------------------
 
@@ -6320,6 +6601,7 @@ INSERT INTO `CollectionAttributeValues` (`cID`, `cvID`, `akID`, `avID`) VALUES
 (1, 37, 2, 422),
 (1, 38, 2, 422),
 (1, 39, 2, 422),
+(1, 40, 2, 422),
 (1, 25, 3, 423),
 (1, 26, 3, 423),
 (1, 27, 3, 423),
@@ -6335,6 +6617,7 @@ INSERT INTO `CollectionAttributeValues` (`cID`, `cvID`, `akID`, `avID`) VALUES
 (1, 37, 3, 423),
 (1, 38, 3, 423),
 (1, 39, 3, 423),
+(1, 40, 3, 423),
 (1, 25, 1, 424),
 (1, 26, 1, 424),
 (1, 27, 1, 424),
@@ -6350,6 +6633,7 @@ INSERT INTO `CollectionAttributeValues` (`cID`, `cvID`, `akID`, `avID`) VALUES
 (1, 37, 1, 424),
 (1, 38, 1, 424),
 (1, 39, 1, 424),
+(1, 40, 1, 424),
 (159, 2, 20, 428),
 (159, 3, 1, 429),
 (159, 4, 1, 429),
@@ -6855,14 +7139,26 @@ INSERT INTO `CollectionAttributeValues` (`cID`, `cvID`, `akID`, `avID`) VALUES
 (161, 18, 2, 1870),
 (161, 19, 2, 1870),
 (161, 20, 2, 1870),
+(161, 21, 2, 1870),
+(161, 22, 2, 1870),
+(161, 23, 2, 1870),
+(161, 24, 2, 1870),
 (161, 17, 20, 1871),
 (161, 18, 20, 1871),
 (161, 19, 20, 1871),
 (161, 20, 20, 1871),
+(161, 21, 20, 1871),
+(161, 22, 20, 1871),
+(161, 23, 20, 1871),
+(161, 24, 20, 1871),
 (161, 17, 1, 1872),
 (161, 18, 1, 1872),
 (161, 19, 1, 1872),
 (161, 20, 1, 1872),
+(161, 21, 1, 1872),
+(161, 22, 1, 1872),
+(161, 23, 1, 1872),
+(161, 24, 1, 1872),
 (159, 9, 1, 1875),
 (159, 10, 1, 1875),
 (159, 11, 1, 1875),
@@ -7999,6 +8295,7 @@ INSERT INTO `CollectionAttributeValues` (`cID`, `cvID`, `akID`, `avID`) VALUES
 (211, 110, 9, 2049),
 (211, 111, 9, 2049),
 (211, 112, 9, 2049),
+(211, 113, 9, 2049),
 (211, 103, 13, 2050),
 (211, 104, 13, 2050),
 (211, 105, 13, 2050),
@@ -8009,6 +8306,7 @@ INSERT INTO `CollectionAttributeValues` (`cID`, `cvID`, `akID`, `avID`) VALUES
 (211, 110, 13, 2050),
 (211, 111, 13, 2050),
 (211, 112, 13, 2050),
+(211, 113, 13, 2050),
 (212, 120, 1, 2051),
 (212, 120, 2, 2052),
 (212, 120, 9, 2053),
@@ -8138,6 +8436,7 @@ INSERT INTO `CollectionAttributeValues` (`cID`, `cvID`, `akID`, `avID`) VALUES
 (211, 110, 1, 2074),
 (211, 111, 1, 2074),
 (211, 112, 1, 2074),
+(211, 113, 1, 2074),
 (211, 105, 2, 2075),
 (211, 106, 2, 2075),
 (211, 107, 2, 2075),
@@ -8146,6 +8445,7 @@ INSERT INTO `CollectionAttributeValues` (`cID`, `cvID`, `akID`, `avID`) VALUES
 (211, 110, 2, 2075),
 (211, 111, 2, 2075),
 (211, 112, 2, 2075),
+(211, 113, 2, 2075),
 (211, 105, 3, 2076),
 (211, 106, 3, 2076),
 (211, 107, 3, 2076),
@@ -8154,6 +8454,7 @@ INSERT INTO `CollectionAttributeValues` (`cID`, `cvID`, `akID`, `avID`) VALUES
 (211, 110, 3, 2076),
 (211, 111, 3, 2076),
 (211, 112, 3, 2076),
+(211, 113, 3, 2076),
 (211, 105, 20, 2077),
 (211, 106, 20, 2077),
 (211, 107, 20, 2077),
@@ -8162,6 +8463,7 @@ INSERT INTO `CollectionAttributeValues` (`cID`, `cvID`, `akID`, `avID`) VALUES
 (211, 110, 20, 2077),
 (211, 111, 20, 2077),
 (211, 112, 20, 2077),
+(211, 113, 20, 2077),
 (211, 105, 25, 2078),
 (211, 106, 25, 2078),
 (211, 107, 25, 2078),
@@ -8170,6 +8472,7 @@ INSERT INTO `CollectionAttributeValues` (`cID`, `cvID`, `akID`, `avID`) VALUES
 (211, 110, 25, 2078),
 (211, 111, 25, 2078),
 (211, 112, 25, 2078),
+(211, 113, 25, 2078),
 (212, 121, 1, 2081),
 (212, 122, 1, 2081),
 (212, 123, 1, 2081),
@@ -8555,9 +8858,126 @@ INSERT INTO `CollectionAttributeValues` (`cID`, `cvID`, `akID`, `avID`) VALUES
 (219, 1, 20, 2208),
 (219, 2, 20, 2208),
 (162, 13, 1, 2209),
+(162, 14, 1, 2209),
+(162, 15, 1, 2209),
 (162, 13, 20, 2212),
+(162, 14, 20, 2212),
+(162, 15, 20, 2212),
 (163, 34, 20, 2216),
-(163, 35, 20, 2232);
+(163, 35, 20, 2232),
+(163, 36, 20, 2232),
+(181, 8, 1, 2245),
+(181, 8, 2, 2246),
+(181, 8, 3, 2247),
+(181, 8, 20, 2248),
+(181, 8, 22, 2250),
+(188, 5, 1, 2251),
+(188, 5, 2, 2252),
+(188, 5, 3, 2253),
+(188, 5, 20, 2254),
+(188, 5, 21, 2255),
+(188, 5, 22, 2256),
+(192, 6, 1, 2257),
+(192, 6, 2, 2258),
+(192, 6, 3, 2259),
+(192, 6, 20, 2260),
+(192, 6, 21, 2261),
+(192, 6, 22, 2262),
+(192, 7, 1, 2293),
+(192, 7, 2, 2294),
+(192, 7, 3, 2295),
+(192, 7, 20, 2296),
+(192, 7, 21, 2297),
+(192, 7, 22, 2298),
+(192, 8, 1, 2299),
+(192, 8, 2, 2300),
+(192, 8, 3, 2301),
+(192, 8, 20, 2302),
+(192, 8, 21, 2303),
+(192, 8, 22, 2304),
+(185, 3, 2, 2308),
+(185, 3, 3, 2309),
+(185, 3, 20, 2310),
+(185, 3, 22, 2312),
+(185, 4, 2, 2314),
+(185, 4, 3, 2315),
+(185, 4, 20, 2316),
+(185, 4, 22, 2318),
+(185, 5, 1, 2319),
+(185, 5, 2, 2320),
+(185, 5, 3, 2321),
+(185, 5, 20, 2322),
+(185, 5, 21, 2323),
+(185, 5, 22, 2324),
+(187, 13, 1, 2327),
+(187, 13, 2, 2328),
+(187, 13, 3, 2329),
+(187, 13, 20, 2330),
+(187, 13, 22, 2332),
+(187, 14, 1, 2333),
+(187, 14, 2, 2334),
+(187, 14, 3, 2335),
+(187, 14, 20, 2336),
+(187, 14, 21, 2337),
+(187, 14, 22, 2338),
+(181, 9, 1, 2339),
+(181, 9, 2, 2340),
+(181, 9, 3, 2341),
+(181, 9, 20, 2342),
+(181, 9, 22, 2344),
+(181, 10, 1, 2345),
+(181, 10, 2, 2346),
+(181, 10, 3, 2347),
+(181, 10, 20, 2348),
+(181, 10, 21, 2349),
+(181, 10, 22, 2350),
+(220, 1, 1, 2351),
+(220, 2, 1, 2351),
+(220, 3, 1, 2351),
+(220, 4, 1, 2351),
+(220, 1, 2, 2352),
+(220, 2, 2, 2352),
+(220, 3, 2, 2352),
+(220, 4, 2, 2352),
+(220, 1, 20, 2354),
+(220, 2, 20, 2354),
+(220, 3, 20, 2354),
+(220, 4, 20, 2354),
+(215, 4, 7, 2355),
+(215, 4, 20, 2356),
+(215, 4, 31, 2357),
+(215, 4, 8, 2358),
+(215, 4, 12, 2359),
+(215, 4, 13, 2360),
+(215, 4, 30, 2361),
+(217, 5, 1, 2362),
+(217, 5, 2, 2363),
+(217, 5, 3, 2364),
+(217, 5, 20, 2365),
+(217, 5, 13, 2366),
+(217, 5, 12, 2367),
+(218, 4, 1, 2368),
+(218, 4, 20, 2369),
+(218, 4, 13, 2370),
+(218, 4, 12, 2371),
+(219, 3, 1, 2372),
+(219, 3, 20, 2373),
+(219, 3, 13, 2374),
+(219, 3, 12, 2375),
+(220, 5, 1, 2376),
+(220, 5, 2, 2377),
+(220, 5, 20, 2378),
+(220, 5, 13, 2379),
+(220, 5, 12, 2380),
+(216, 21, 1, 2381),
+(216, 21, 2, 2382),
+(216, 21, 3, 2383),
+(216, 21, 7, 2384),
+(216, 21, 8, 2385),
+(216, 21, 12, 2386),
+(216, 21, 13, 2387),
+(216, 21, 20, 2388),
+(216, 21, 30, 2389);
 
 -- --------------------------------------------------------
 
@@ -8577,7 +8997,7 @@ CREATE TABLE `Collections` (
 --
 
 INSERT INTO `Collections` (`cID`, `cDateAdded`, `cDateModified`, `cHandle`) VALUES
-(1, '2017-05-22 15:59:25', '2017-09-19 09:02:57', NULL),
+(1, '2017-05-22 15:59:25', '2017-09-20 12:56:34', NULL),
 (2, '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'dashboard'),
 (3, '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'sitemap'),
 (4, '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'full'),
@@ -8728,14 +9148,14 @@ INSERT INTO `Collections` (`cID`, `cDateAdded`, `cDateModified`, `cHandle`) VALU
 (152, '2017-05-22 16:00:00', '2017-05-22 16:00:00', 'desktop'),
 (154, '2017-05-22 16:01:20', '2017-09-15 16:08:42', 'header-site-title'),
 (155, '2017-05-22 16:01:21', '2017-06-19 11:20:58', 'header-navigation'),
-(156, '2017-05-22 16:01:21', '2017-09-19 23:22:37', 'footer-legal'),
+(156, '2017-05-22 16:01:21', '2017-09-20 15:31:45', 'footer-legal'),
 (157, '2017-05-22 16:01:21', '2017-05-23 15:25:44', 'footer-navigation'),
 (158, '2017-05-22 16:01:21', '2017-05-24 10:09:24', 'footer-contact'),
 (159, '2017-05-23 15:30:41', '2017-09-19 10:10:11', ''),
 (160, '2017-05-23 15:30:55', '2017-07-31 14:57:22', ''),
-(161, '2017-05-23 15:31:03', '2017-09-15 11:06:03', ''),
-(162, '2017-05-23 15:31:17', '2017-09-19 23:27:12', ''),
-(163, '2017-05-23 15:31:28', '2017-09-19 23:28:56', ''),
+(161, '2017-05-23 15:31:03', '2017-09-20 12:39:32', ''),
+(162, '2017-05-23 15:31:17', '2017-09-20 12:40:14', ''),
+(163, '2017-05-23 15:31:28', '2017-09-20 14:16:08', ''),
 (164, '2017-05-23 15:32:36', '2017-09-13 20:28:02', ''),
 (165, '2017-05-24 10:14:23', '2017-05-25 11:00:39', 'social-links'),
 (166, '2017-05-24 10:15:54', '2017-05-25 10:12:59', 'social-feed'),
@@ -8753,17 +9173,17 @@ INSERT INTO `Collections` (`cID`, `cDateAdded`, `cDateModified`, `cHandle`) VALU
 (178, '2017-06-20 14:55:31', '2017-08-09 08:24:50', ''),
 (179, '2017-06-20 14:56:55', '2017-08-09 08:24:54', ''),
 (180, '2017-06-20 14:58:30', '2017-08-09 08:24:57', ''),
-(181, '2017-06-20 14:59:12', '2017-06-27 18:38:23', ''),
+(181, '2017-06-20 14:59:12', '2017-09-20 14:51:48', ''),
 (182, '2017-06-20 15:19:11', '2017-06-20 15:19:11', NULL),
 (183, '2017-06-20 15:19:11', '2017-08-09 08:25:01', ''),
-(185, '2017-06-20 15:19:35', '2017-06-20 15:25:13', ''),
+(185, '2017-06-20 15:19:35', '2017-09-20 14:47:38', ''),
 (186, '2017-06-20 15:26:44', '2017-06-27 21:58:06', ''),
-(187, '2017-06-20 15:38:24', '2017-06-21 13:50:21', ''),
-(188, '2017-06-20 16:07:36', '2017-06-21 17:28:24', ''),
+(187, '2017-06-20 15:38:24', '2017-09-20 14:50:33', ''),
+(188, '2017-06-20 16:07:36', '2017-09-20 12:36:06', ''),
 (189, '2017-06-20 16:17:15', '2017-06-21 17:29:51', ''),
 (190, '2017-06-21 14:11:13', '2017-07-27 15:39:59', ''),
 (191, '2017-06-21 14:42:01', '2017-09-15 11:15:30', 'working-together'),
-(192, '2017-06-21 15:26:57', '2017-09-19 22:29:16', ''),
+(192, '2017-06-21 15:26:57', '2017-09-20 12:38:11', ''),
 (193, '2017-06-27 13:13:43', '2017-06-27 13:13:43', NULL),
 (194, '2017-06-27 14:31:47', '2017-06-27 14:31:47', NULL),
 (195, '2017-06-30 15:37:14', '2017-06-30 15:37:46', ''),
@@ -8781,15 +9201,16 @@ INSERT INTO `Collections` (`cID`, `cDateAdded`, `cDateModified`, `cHandle`) VALU
 (208, '2017-08-09 09:20:38', '2017-08-09 09:20:38', 'update'),
 (209, '2017-08-09 09:20:38', '2017-08-09 09:20:38', 'update'),
 (210, '2017-08-09 09:21:00', '2017-08-09 09:21:00', 'range'),
-(211, '2017-09-06 13:29:47', '2017-09-19 14:48:51', NULL),
+(211, '2017-09-06 13:29:47', '2017-09-20 08:42:12', NULL),
 (212, '2017-09-11 08:47:11', '2017-09-19 14:49:29', NULL),
 (213, '2017-09-12 12:57:42', '2017-09-12 12:57:42', NULL),
 (214, '2017-09-13 22:04:35', '2017-09-13 22:04:35', NULL),
-(215, '2017-09-16 12:09:48', '2017-09-16 21:42:53', ''),
-(216, '2017-09-16 12:14:43', '2017-09-18 09:36:39', ''),
-(217, '2017-09-19 22:32:59', '2017-09-19 23:08:16', ''),
-(218, '2017-09-19 22:52:05', '2017-09-19 23:07:06', ''),
-(219, '2017-09-19 23:10:48', '2017-09-19 23:20:25', '');
+(215, '2017-09-16 12:09:48', '2017-09-20 15:28:04', ''),
+(216, '2017-09-16 12:14:43', '2017-09-20 15:29:26', ''),
+(217, '2017-09-19 22:32:59', '2017-09-20 15:28:37', ''),
+(218, '2017-09-19 22:52:05', '2017-09-20 15:28:55', ''),
+(219, '2017-09-19 23:10:48', '2017-09-20 15:29:07', ''),
+(220, '2017-09-20 14:59:33', '2017-09-20 15:29:18', '');
 
 -- --------------------------------------------------------
 
@@ -8949,14 +9370,14 @@ INSERT INTO `CollectionSearchIndexAttributes` (`cID`, `ak_meta_title`, `ak_meta_
 (174, '', '', NULL, '0.0000', 0, NULL, 0, 0, '', NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, 0),
 (176, NULL, '', '', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, '<h2>A mobile app for every side of education.<br />\n<strong>Starting with your <span class="colour-skoolping">SKOOL</span></strong></h2>\n\n<p>Areas of education are turning digital, and so are parent demands. Parents like to be updated in a convenient way. A way that doesn&#39;t always require them to visit a blog, download a document or search your website relentlessly.</p>\n\n<p><a class="abtn skoolping" href="#">Find Out More</a></p>\n', NULL, 0),
 (177, '', '', NULL, '0.0000', 0, NULL, 0, 0, '', NULL, 0, 0, 0, 0, NULL, NULL, '<h2><strong>The Original.</strong> The Unique.<br />\n#TherIsNoCloud</h2>\n\n<p>Over 20,000 printed units sold globally, the words are spreading far and wide!</p>\n\n<p>&quot;There is no cloud. It&#39;s just someone else&#39;s computer&quot; It&#39;s only the truth, but I wonder how many people really think there really is a &quot;cloud&quot; that stores all our data?</p>\n\n<p><a class="abtn black" href="#">Find Out More</a></p>\n', NULL, 0),
-(181, 'My \'There Is No Cloud\' Sticker', 'Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global!', 'there is no cloud, sticker, stickermule', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Posts/News||', NULL, NULL, NULL, 0),
-(185, NULL, 'Like every Tom, Dick and Harry in the land, I set myself new targets and challenges at the start of every year. Do I ever achieve them, behave yourself! It’s so frustrating telling you that, but even more so with myself for not achieving. *sigh*', '2016, new challenges, new start, new targets', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Posts/Inspirational||', NULL, NULL, NULL, 0),
+(181, 'My \'There Is No Cloud\' Sticker', 'Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global! Like many others, I’ve had the pleasure of setting up many smartphones and tablets over the years and when It comes to the cloud storage part of the set-up (iCloud of OneDrive), the device owner look at me blankly and says “What, yes, whatever?!”. We are well and truly past the Nokia 5110 times of just popping in your SIM card and making a call with your market flashing arial.', 'there is no cloud, sticker, stickermule', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, '||/Posts/News||', NULL, NULL, NULL, 0),
+(185, '', 'Like every Tom, Dick and Harry in the land, I set myself new targets and challenges at the start of every year. Do I ever achieve them, behave yourself! It’s so frustrating telling you that, but even more so with myself for not achieving. *sigh*', '2016, new challenges, new start, new targets', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, '||/Posts/Inspirational||', NULL, NULL, NULL, 0),
 (186, 'A much needed Spotify widget for the Notification Center', 'Since installing the new operating system, OS X Yosemite, like many I\'ve noticed a hell of a lot of new great features and design. But, being an every day MacBook user, I\'m finding some pretty cool, but some also pretty annoying.', 'Spotify widget, Notification Centre, iOS widget', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 1, '||/Posts/Inspirational||', NULL, NULL, NULL, 0),
-(187, '\'There Is No Cloud\' Copyright Protection', 'I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO! That would place myself in the same category as the thieving scummy $&£#’ers that stole my design and many other honest designers work also - and that’s me being polite against them!', 'stealing designers work, my design', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, NULL, '||/Latest Feed||', NULL, NULL, NULL, 0),
-(188, '4th Month Into Self-Employment', 'Jee. Taking a step back, it\'s been almost 4 months already. Holy Crap! Cutting a 5 year story into a nut shell, I previously worked for a secondary school within an IT department. It wasn\'t any ordinary IT department within a school, ow nooo.', '4 months, IT department, self employment', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 1, '||/Posts/News||', NULL, NULL, NULL, 0),
+(187, '\'There Is No Cloud\' Copyright Protection', 'I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO! That would place myself in the same category as the thieving scummy $&£#’ers that stole my design and many other honest designers work also - and that’s me being polite against them!', 'stealing designers work, my design', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, '||/Latest Feed||', NULL, NULL, NULL, 0),
+(188, '4th Month Into Self-Employment', 'Jee. Taking a step back, it\'s been almost 4 months already. Holy Crap! Cutting a 5 year story into a nut shell, I previously worked for a secondary school within an IT department. It wasn\'t any ordinary IT department within a school, ow nooo. We were unique in what we did, not only did we supported our base school, but 30+ other schools and businesses in and around the Surrey, UK areas.', '4 months, IT department, self employment', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 1, '||/Posts/News||', NULL, NULL, NULL, 0),
 (189, 'Setting 5 Goals For 2014', 'A warm welcome to 2014, I wish you all a happy New Year. It\'s the start of a New Year for us all, and funny enough it\'s also that time where 99.9% of us feel the need to set ourself new year resolutions, goals, targets, or whatever you call it. For me, I\'ve just rolled into my 5th month of self employment and it still feels incredible, just as it did on day one.', 'welcome to 2014', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, '||/Posts/Inspirational||', NULL, NULL, NULL, 0),
 (190, 'Your New Website Statistics Dashboard', 'Since the new year, we\'ve been working hard between projects to improve features and services that we provide to you - more specifically, within your Content Management System (CMS). One of the biggest changes you\'ll notice is our brand new \'Statistics Dashboard\'. You\'ll soon be able to look over your website ‘Views’, ‘Storage’, ‘Traffic’, ‘Uptime’ and a ton more. All live time!', 'cms, status dashboard', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 1, '||/Latest Feed||', NULL, NULL, NULL, 0),
-(192, 'There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 'The Sticker Mule marketplace has been growing rapidly over the past couple of years. Sticker Mule loves seeing applications and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers.', 'sticker mule, marketplace, sticker design', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 1, '||/Posts/News||', NULL, NULL, NULL, 0),
+(192, 'There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 'The Sticker Mule marketplace has been growing rapidly over the past couple of years. Sticker Mule loves seeing applications and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers. Chris Watterston\'s sticker did just that!', 'sticker mule, marketplace, sticker design', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 1, '||/Posts/News||', NULL, NULL, NULL, 0),
 (195, 'Surveying up a Website Redesign with CD Surveys Ltd', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', 'website redesign, company website, surveying, design, web development, web project', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, '||/Posts/Web Design||', NULL, NULL, NULL, 0),
 (196, 'Surveying up a Website Redesign with CD Surveys Ltd', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', 'website redesign, company website, surveying, design, web development, web project', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, '||/Posts/Web Design||', NULL, NULL, 'CD Surveys Ltd', 0),
 (198, 'Surveying up a Website Redesign with CD Surveys Ltd', 'I\'ve had a long running relationship with CD Surveys Ltd for many years now, resulting in a multitude of large and small projects. Ranging from small development changes, through to their network infrastructure. Working with CD Surveys always gets me exciting because they are open to ideas and moving forward with technology.', 'website redesign, company website, surveying, design, web development, web project', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, '||/Posts/Web Design||', NULL, NULL, 'CD Surveys Ltd', 0),
@@ -8971,11 +9392,12 @@ INSERT INTO `CollectionSearchIndexAttributes` (`cID`, `ak_meta_title`, `ak_meta_
 (210, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, 0),
 (211, 'Mobile Application Development', 'Mobile Application Development Solution', 'Mobile App Development Service', '0.0000', 0, NULL, 0, 0, '', NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, 0),
 (212, 'Bespoke Website Designer', 'Bespoke Website Designer solution', 'Bespoke Website Design Service', '0.0000', 0, NULL, 0, 0, '', NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, 0),
-(215, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, 1),
+(215, NULL, NULL, NULL, '0.0000', 0, NULL, 1, 1, NULL, NULL, 0, 1, 1, 0, NULL, NULL, NULL, NULL, 1),
 (216, '', '', '', '0.0000', 0, NULL, 1, 1, NULL, NULL, 0, 1, 1, 0, NULL, NULL, NULL, NULL, 0),
-(217, 'Cookie Policy', 'Cookie Policy', 'Cookie Policy', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, 0),
-(218, 'Terms of Use', NULL, NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, 0),
-(219, 'Accessibility', NULL, NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, 0);
+(217, 'Cookie Policy', 'Cookie Policy', 'Cookie Policy', '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 1, 1, 0, NULL, NULL, NULL, NULL, 0),
+(218, 'Terms of Use', NULL, NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 1, 1, 0, NULL, NULL, NULL, NULL, 0),
+(219, 'Accessibility', NULL, NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 1, 1, 0, NULL, NULL, NULL, NULL, 0),
+(220, 'Shipping, Returns and Refund Policy', 'This website is operated by Chris Watterston. Throughout the site, the terms “we”, “us” and “our” refer to Chris Watterston. Chris Watterston offers this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.', NULL, '0.0000', 0, NULL, 0, 0, NULL, NULL, 0, 1, 1, 0, NULL, NULL, NULL, NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -9252,6 +9674,16 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (1, 39, 912, 'Services Area Two', 43, 0, 0, 0, 0, 0, 0, 0),
 (1, 39, 913, 'Services Area Three', 44, 0, 0, 0, 0, 0, 0, 0),
 (1, 39, 915, 'Services Area Four', 45, 0, 1, 0, 0, 0, 0, 0),
+(1, 40, 55, 'Header Latest Feed', 34, 0, 0, 0, 0, 0, 0, 0),
+(1, 40, 78, 'Content Area Footer Two', 38, 0, 0, 0, 0, 0, 0, 0),
+(1, 40, 863, 'Content Area Two', 239, 0, 0, 0, 0, 0, 0, 0),
+(1, 40, 866, 'Content Area Two', 263, 1, 0, 0, 0, 0, 0, 0),
+(1, 40, 872, 'Content Area Footer One', 37, 0, 0, 0, 0, 0, 0, 0),
+(1, 40, 911, 'Services Area One', 42, 0, 0, 0, 0, 0, 0, 0),
+(1, 40, 912, 'Services Area Two', 43, 0, 0, 0, 0, 0, 0, 0),
+(1, 40, 913, 'Services Area Three', 44, 0, 0, 0, 0, 0, 0, 0),
+(1, 40, 915, 'Services Area Four', 45, 0, 0, 0, 0, 0, 0, 0),
+(1, 40, 950, 'Content Area One', 35, 0, 1, 0, 0, 0, 0, 0),
 (138, 1, 1, 'Main', 1, 0, 1, 0, 0, 0, 0, 0),
 (138, 1, 2, 'Main', 2, 1, 1, 0, 0, 0, 0, 0),
 (138, 1, 3, 'Main : 1', 3, 0, 1, 0, 0, 0, 0, 0),
@@ -9321,6 +9753,9 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (156, 3, 58, 'Main', 18, 0, 1, 0, 0, 0, 0, 0),
 (156, 4, 59, 'Main', 18, 0, 1, 0, 0, 0, 0, 0),
 (156, 5, 936, 'Main', 18, 0, 1, 0, 0, 0, 0, 0),
+(156, 6, 955, 'Main', 18, 0, 1, 0, 0, 0, 0, 0),
+(156, 7, 957, 'Main', 18, 0, 1, 0, 0, 0, 0, 0),
+(156, 8, 958, 'Main', 18, 0, 1, 0, 0, 0, 0, 0),
 (157, 2, 19, 'Main', 19, 0, 1, 0, 0, 0, 0, 0),
 (157, 3, 60, 'Main', 19, 0, 1, 0, 0, 0, 0, 0),
 (157, 4, 61, 'Main', 19, 0, 1, 0, 0, 0, 0, 0),
@@ -9848,7 +10283,8 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (159, 49, 615, 'Main eCommerce Area : 41', 190, 0, 0, 0, 0, 0, 0, 0),
 (159, 49, 616, 'Main eCommerce Area : 42', 192, 0, 0, 0, 0, 0, 0, 0),
 (159, 49, 623, 'Main eCommerce Area', 187, 0, 1, 0, 0, 0, 0, 0),
-(159, 50, 250, 'Main', 130, 0, 0, 0, 0, 0, 0, 0),
+(159, 50, 250, 'Main', 130, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRelationID`, `cbDisplayOrder`, `isOriginal`, `cbOverrideAreaPermissions`, `cbIncludeAll`, `cbOverrideBlockTypeCacheSettings`, `cbOverrideBlockTypeContainerSettings`, `cbEnableBlockContainer`) VALUES
 (159, 50, 567, 'Main eCommerce Area', 188, 1, 0, 0, 0, 0, 0, 0),
 (159, 50, 570, 'Main eCommerce Area', 191, 2, 0, 0, 0, 0, 0, 0),
 (159, 50, 583, 'Main Mobile App Area', 196, 1, 0, 0, 0, 0, 0, 0),
@@ -9859,8 +10295,7 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (159, 50, 603, 'Main Website Design Area', 203, 0, 0, 0, 0, 0, 0, 0),
 (159, 50, 604, 'Main Website Design Area', 204, 1, 0, 0, 0, 0, 0, 0),
 (159, 50, 605, 'Main Website Design Area', 205, 2, 0, 0, 0, 0, 0, 0),
-(159, 50, 606, 'Main Website Design Area', 206, 3, 0, 0, 0, 0, 0, 0);
-INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRelationID`, `cbDisplayOrder`, `isOriginal`, `cbOverrideAreaPermissions`, `cbIncludeAll`, `cbOverrideBlockTypeCacheSettings`, `cbOverrideBlockTypeContainerSettings`, `cbEnableBlockContainer`) VALUES
+(159, 50, 606, 'Main Website Design Area', 206, 3, 0, 0, 0, 0, 0, 0),
 (159, 50, 607, 'Main Website Design Area : 48', 207, 0, 0, 0, 0, 0, 0, 0),
 (159, 50, 608, 'Main Website Design Area : 49', 208, 0, 0, 0, 0, 0, 0, 0),
 (159, 50, 609, 'Main Website Design Area : 50', 209, 0, 0, 0, 0, 0, 0, 0),
@@ -10613,7 +11048,8 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (161, 17, 195, 'Main Body Two', 110, 0, 0, 0, 0, 0, 0, 0),
 (161, 17, 206, 'Main Description', 109, 0, 0, 0, 0, 0, 0, 0),
 (161, 17, 234, 'Main', 123, 0, 0, 0, 0, 0, 0, 0),
-(161, 18, 195, 'Main Body Two', 110, 0, 0, 0, 0, 0, 0, 0),
+(161, 18, 195, 'Main Body Two', 110, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRelationID`, `cbDisplayOrder`, `isOriginal`, `cbOverrideAreaPermissions`, `cbIncludeAll`, `cbOverrideBlockTypeCacheSettings`, `cbOverrideBlockTypeContainerSettings`, `cbEnableBlockContainer`) VALUES
 (161, 18, 234, 'Main', 123, 0, 0, 0, 0, 0, 0, 0),
 (161, 18, 794, 'Title Content', 235, 0, 1, 0, 0, 0, 0, 0),
 (161, 18, 795, 'Main Description', 109, 0, 1, 0, 0, 0, 0, 0),
@@ -10625,10 +11061,25 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (161, 20, 794, 'Title Content', 235, 0, 0, 0, 0, 0, 0, 0),
 (161, 20, 796, 'Main Body Two', 110, 0, 0, 0, 0, 0, 0, 0),
 (161, 20, 870, 'Main Description', 109, 0, 1, 0, 0, 0, 0, 0),
+(161, 21, 234, 'Main', 123, 0, 0, 0, 0, 0, 0, 0),
+(161, 21, 794, 'Title Content', 235, 0, 0, 0, 0, 0, 0, 0),
+(161, 21, 796, 'Main Body Two', 110, 0, 0, 0, 0, 0, 0, 0),
+(161, 21, 945, 'Main Description', 109, 0, 1, 0, 0, 0, 0, 0),
+(161, 22, 234, 'Main', 123, 0, 0, 0, 0, 0, 0, 0),
+(161, 22, 794, 'Title Content', 235, 0, 0, 0, 0, 0, 0, 0),
+(161, 22, 945, 'Main Description', 109, 0, 0, 0, 0, 0, 0, 0),
+(161, 22, 946, 'Main Body Two', 110, 0, 1, 0, 0, 0, 0, 0),
+(161, 23, 234, 'Main', 123, 0, 0, 0, 0, 0, 0, 0),
+(161, 23, 794, 'Title Content', 235, 0, 0, 0, 0, 0, 0, 0),
+(161, 23, 945, 'Main Description', 109, 0, 0, 0, 0, 0, 0, 0),
+(161, 23, 947, 'Main Body Two', 110, 0, 1, 0, 0, 0, 0, 0),
+(161, 24, 234, 'Main', 123, 0, 0, 0, 0, 0, 0, 0),
+(161, 24, 794, 'Title Content', 235, 0, 0, 0, 0, 0, 0, 0),
+(161, 24, 945, 'Main Description', 109, 0, 0, 0, 0, 0, 0, 0),
+(161, 24, 948, 'Main Body Two', 110, 0, 1, 0, 0, 0, 0, 0),
 (162, 1, 31, 'Main', 26, 0, 1, 0, 0, 0, 0, 0),
 (162, 2, 208, 'Main', 115, 0, 1, 0, 0, 0, 0, 0),
-(162, 3, 208, 'Main', 115, 0, 0, 0, 0, 0, 0, 0);
-INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRelationID`, `cbDisplayOrder`, `isOriginal`, `cbOverrideAreaPermissions`, `cbIncludeAll`, `cbOverrideBlockTypeCacheSettings`, `cbOverrideBlockTypeContainerSettings`, `cbEnableBlockContainer`) VALUES
+(162, 3, 208, 'Main', 115, 0, 0, 0, 0, 0, 0, 0),
 (162, 4, 208, 'Main', 115, 0, 0, 0, 0, 0, 0, 0),
 (162, 4, 237, 'Main Body Two', 125, 0, 1, 0, 0, 0, 0, 0),
 (162, 5, 208, 'Main', 115, 0, 0, 0, 0, 0, 0, 0),
@@ -10672,6 +11123,16 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (162, 13, 869, 'Main Description', 238, 0, 0, 0, 0, 0, 0, 0),
 (162, 13, 871, 'Main Body Two', 125, 0, 0, 0, 0, 0, 0, 0),
 (162, 13, 937, 'Main', 282, 0, 1, 0, 0, 0, 0, 0),
+(162, 14, 797, 'Title Content', 236, 0, 0, 0, 0, 0, 0, 0),
+(162, 14, 798, 'Title Content', 237, 1, 0, 0, 0, 0, 0, 0),
+(162, 14, 871, 'Main Body Two', 125, 0, 0, 0, 0, 0, 0, 0),
+(162, 14, 937, 'Main', 282, 0, 0, 0, 0, 0, 0, 0),
+(162, 14, 944, 'Main Description', 238, 0, 1, 0, 0, 0, 0, 0),
+(162, 15, 797, 'Title Content', 236, 0, 0, 0, 0, 0, 0, 0),
+(162, 15, 798, 'Title Content', 237, 1, 0, 0, 0, 0, 0, 0),
+(162, 15, 937, 'Main', 282, 0, 0, 0, 0, 0, 0, 0),
+(162, 15, 944, 'Main Description', 238, 0, 0, 0, 0, 0, 0, 0),
+(162, 15, 949, 'Main Body Two', 125, 0, 1, 0, 0, 0, 0, 0),
 (163, 1, 33, 'Main', 27, 0, 1, 0, 0, 0, 0, 0),
 (163, 2, 33, 'Main', 27, 0, 0, 0, 0, 0, 0, 0),
 (163, 2, 239, 'Main Body Two', 126, 0, 1, 0, 0, 0, 0, 0),
@@ -10999,6 +11460,21 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (163, 35, 920, 'Main Body', 258, 1, 0, 0, 0, 0, 0, 0),
 (163, 35, 924, 'Main Body', 262, 3, 0, 0, 0, 0, 0, 0),
 (163, 35, 942, 'Main', 284, 0, 1, 0, 0, 0, 0, 0),
+(163, 36, 805, 'Title Content', 240, 1, 0, 0, 0, 0, 0, 0),
+(163, 36, 806, 'Title Content', 241, 0, 0, 0, 0, 0, 0, 0),
+(163, 36, 812, 'Main Body', 245, 0, 0, 0, 0, 0, 0, 0),
+(163, 36, 819, 'Main Feature Area', 248, 1, 0, 0, 0, 0, 0, 0),
+(163, 36, 823, 'Main Feature Area', 246, 0, 0, 0, 0, 0, 0, 0),
+(163, 36, 824, 'Main Feature Area', 247, 4, 0, 0, 0, 0, 0, 0),
+(163, 36, 825, 'Main Feature Area', 249, 2, 0, 0, 0, 0, 0, 0),
+(163, 36, 835, 'Main Body : 56', 255, 0, 0, 0, 0, 0, 0, 0),
+(163, 36, 836, 'Main Body : 57', 256, 0, 0, 0, 0, 0, 0, 0),
+(163, 36, 838, 'Main Body : 58', 257, 0, 0, 0, 0, 0, 0, 0),
+(163, 36, 844, 'Main Body', 259, 2, 0, 0, 0, 0, 0, 0),
+(163, 36, 920, 'Main Body', 258, 1, 0, 0, 0, 0, 0, 0),
+(163, 36, 924, 'Main Body', 262, 3, 0, 0, 0, 0, 0, 0),
+(163, 36, 942, 'Main', 284, 0, 0, 0, 0, 0, 0, 0),
+(163, 36, 951, 'Main Feature Area', 244, 3, 1, 0, 0, 0, 0, 0),
 (164, 1, 35, 'Main', 28, 0, 1, 0, 0, 0, 0, 0),
 (164, 2, 35, 'Main', 28, 0, 0, 0, 0, 0, 0, 0),
 (164, 3, 35, 'Main', 28, 0, 0, 0, 0, 0, 0, 0),
@@ -11157,11 +11633,41 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (181, 7, 119, 'Main Body', 59, 4, 0, 0, 0, 0, 0, 0),
 (181, 7, 120, 'Main Body', 60, 3, 0, 0, 0, 0, 0, 0),
 (181, 7, 204, 'Main Body', 114, 1, 0, 0, 0, 0, 0, 0),
+(181, 8, 116, 'Main Body', 56, 0, 0, 0, 0, 0, 0, 0),
+(181, 8, 118, 'Main Body', 58, 2, 0, 0, 0, 0, 0, 0),
+(181, 8, 119, 'Main Body', 59, 4, 0, 0, 0, 0, 0, 0),
+(181, 8, 120, 'Main Body', 60, 3, 0, 0, 0, 0, 0, 0),
+(181, 8, 204, 'Main Body', 114, 1, 0, 0, 0, 0, 0, 0),
+(181, 9, 116, 'Main Body', 56, 0, 0, 0, 0, 0, 0, 0),
+(181, 9, 118, 'Main Body', 58, 2, 0, 0, 0, 0, 0, 0),
+(181, 9, 119, 'Main Body', 59, 4, 0, 0, 0, 0, 0, 0),
+(181, 9, 120, 'Main Body', 60, 3, 0, 0, 0, 0, 0, 0),
+(181, 9, 204, 'Main Body', 114, 1, 0, 0, 0, 0, 0, 0),
+(181, 10, 116, 'Main Body', 56, 0, 0, 0, 0, 0, 0, 0),
+(181, 10, 118, 'Main Body', 58, 2, 0, 0, 0, 0, 0, 0),
+(181, 10, 119, 'Main Body', 59, 4, 0, 0, 0, 0, 0, 0),
+(181, 10, 120, 'Main Body', 60, 3, 0, 0, 0, 0, 0, 0),
+(181, 10, 204, 'Main Body', 114, 1, 0, 0, 0, 0, 0, 0),
 (185, 2, 122, 'Main Body', 61, 0, 1, 0, 0, 0, 0, 0),
 (185, 2, 123, 'Main Body', 62, 1, 1, 0, 0, 0, 0, 0),
 (185, 2, 124, 'Main Body', 63, 2, 1, 0, 0, 0, 0, 0),
 (185, 2, 125, 'Main Body', 64, 3, 1, 0, 0, 0, 0, 0),
 (185, 2, 126, 'Main Body', 65, 4, 1, 0, 0, 0, 0, 0),
+(185, 3, 122, 'Main Body', 61, 0, 0, 0, 0, 0, 0, 0),
+(185, 3, 123, 'Main Body', 62, 1, 0, 0, 0, 0, 0, 0),
+(185, 3, 124, 'Main Body', 63, 2, 0, 0, 0, 0, 0, 0),
+(185, 3, 125, 'Main Body', 64, 3, 0, 0, 0, 0, 0, 0),
+(185, 3, 126, 'Main Body', 65, 4, 0, 0, 0, 0, 0, 0),
+(185, 4, 122, 'Main Body', 61, 0, 0, 0, 0, 0, 0, 0),
+(185, 4, 123, 'Main Body', 62, 1, 0, 0, 0, 0, 0, 0),
+(185, 4, 124, 'Main Body', 63, 2, 0, 0, 0, 0, 0, 0),
+(185, 4, 125, 'Main Body', 64, 3, 0, 0, 0, 0, 0, 0),
+(185, 4, 126, 'Main Body', 65, 4, 0, 0, 0, 0, 0, 0),
+(185, 5, 122, 'Main Body', 61, 0, 0, 0, 0, 0, 0, 0),
+(185, 5, 123, 'Main Body', 62, 1, 0, 0, 0, 0, 0, 0),
+(185, 5, 124, 'Main Body', 63, 2, 0, 0, 0, 0, 0, 0),
+(185, 5, 125, 'Main Body', 64, 3, 0, 0, 0, 0, 0, 0),
+(185, 5, 126, 'Main Body', 65, 4, 0, 0, 0, 0, 0, 0),
 (186, 2, 127, 'Main Body', 66, 0, 1, 0, 0, 0, 0, 0),
 (186, 2, 128, 'Main Body', 67, 1, 1, 0, 0, 0, 0, 0),
 (186, 2, 129, 'Main Body', 68, 2, 1, 0, 0, 0, 0, 0),
@@ -11271,12 +11777,42 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (187, 12, 158, 'Main Body', 75, 0, 1, 0, 0, 0, 0, 0),
 (187, 12, 159, 'Main Body', 77, 2, 1, 0, 0, 0, 0, 0),
 (187, 12, 160, 'Main Body', 86, 11, 1, 0, 0, 0, 0, 0),
+(187, 13, 137, 'Main Body', 76, 1, 0, 0, 0, 0, 0, 0),
+(187, 13, 140, 'Main Body', 79, 4, 0, 0, 0, 0, 0, 0),
+(187, 13, 149, 'Main Body', 87, 13, 0, 0, 0, 0, 0, 0),
+(187, 13, 150, 'Main Body', 88, 12, 0, 0, 0, 0, 0, 0),
+(187, 13, 151, 'Main Body', 78, 3, 0, 0, 0, 0, 0, 0),
+(187, 13, 152, 'Main Body', 80, 5, 0, 0, 0, 0, 0, 0),
+(187, 13, 153, 'Main Body', 81, 6, 0, 0, 0, 0, 0, 0),
+(187, 13, 154, 'Main Body', 82, 7, 0, 0, 0, 0, 0, 0),
+(187, 13, 155, 'Main Body', 83, 8, 0, 0, 0, 0, 0, 0),
+(187, 13, 156, 'Main Body', 84, 9, 0, 0, 0, 0, 0, 0),
+(187, 13, 157, 'Main Body', 85, 10, 0, 0, 0, 0, 0, 0),
+(187, 13, 158, 'Main Body', 75, 0, 0, 0, 0, 0, 0, 0),
+(187, 13, 159, 'Main Body', 77, 2, 0, 0, 0, 0, 0, 0),
+(187, 13, 160, 'Main Body', 86, 11, 0, 0, 0, 0, 0, 0),
+(187, 14, 137, 'Main Body', 76, 1, 0, 0, 0, 0, 0, 0),
+(187, 14, 140, 'Main Body', 79, 4, 0, 0, 0, 0, 0, 0),
+(187, 14, 149, 'Main Body', 87, 13, 0, 0, 0, 0, 0, 0),
+(187, 14, 150, 'Main Body', 88, 12, 0, 0, 0, 0, 0, 0),
+(187, 14, 151, 'Main Body', 78, 3, 0, 0, 0, 0, 0, 0),
+(187, 14, 152, 'Main Body', 80, 5, 0, 0, 0, 0, 0, 0),
+(187, 14, 153, 'Main Body', 81, 6, 0, 0, 0, 0, 0, 0),
+(187, 14, 154, 'Main Body', 82, 7, 0, 0, 0, 0, 0, 0),
+(187, 14, 155, 'Main Body', 83, 8, 0, 0, 0, 0, 0, 0),
+(187, 14, 156, 'Main Body', 84, 9, 0, 0, 0, 0, 0, 0),
+(187, 14, 157, 'Main Body', 85, 10, 0, 0, 0, 0, 0, 0),
+(187, 14, 158, 'Main Body', 75, 0, 0, 0, 0, 0, 0, 0),
+(187, 14, 159, 'Main Body', 77, 2, 0, 0, 0, 0, 0, 0),
+(187, 14, 160, 'Main Body', 86, 11, 0, 0, 0, 0, 0, 0),
 (188, 2, 130, 'Main Body', 69, 0, 1, 0, 0, 0, 0, 0),
 (188, 2, 131, 'Main Body', 70, 1, 1, 0, 0, 0, 0, 0),
 (188, 3, 130, 'Main Body', 69, 0, 0, 0, 0, 0, 0, 0),
 (188, 3, 174, 'Main Body', 70, 1, 1, 0, 0, 0, 0, 0),
 (188, 4, 130, 'Main Body', 69, 0, 0, 0, 0, 0, 0, 0),
 (188, 4, 174, 'Main Body', 70, 1, 0, 0, 0, 0, 0, 0),
+(188, 5, 130, 'Main Body', 69, 0, 0, 0, 0, 0, 0, 0),
+(188, 5, 174, 'Main Body', 70, 1, 0, 0, 0, 0, 0, 0),
 (189, 2, 132, 'Main Body', 71, 0, 1, 0, 0, 0, 0, 0),
 (189, 2, 133, 'Main Body', 72, 1, 1, 0, 0, 0, 0, 0),
 (189, 2, 134, 'Main Body', 73, 2, 1, 0, 0, 0, 0, 0),
@@ -11334,6 +11870,9 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (192, 3, 172, 'Main Body', 96, 0, 0, 0, 0, 0, 0, 0),
 (192, 4, 173, 'Main Body', 96, 0, 1, 0, 0, 0, 0, 0),
 (192, 5, 925, 'Main Body', 96, 0, 1, 0, 0, 0, 0, 0),
+(192, 6, 925, 'Main Body', 96, 0, 0, 0, 0, 0, 0, 0),
+(192, 7, 925, 'Main Body', 96, 0, 0, 0, 0, 0, 0, 0),
+(192, 8, 925, 'Main Body', 96, 0, 0, 0, 0, 0, 0, 0),
 (196, 5, 209, 'Main Body', 116, 0, 1, 0, 0, 0, 0, 0),
 (197, 1, 211, 'Main Body', 117, 0, 1, 0, 0, 0, 0, 0),
 (197, 1, 212, 'Main Body', 118, 1, 1, 0, 0, 0, 0, 0),
@@ -11424,7 +11963,8 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (201, 7, 182, 'Main Body Two', 100, 0, 0, 0, 0, 0, 0, 0),
 (201, 7, 184, 'Main Body Two : 13', 101, 0, 0, 0, 0, 0, 0, 0),
 (201, 7, 185, 'Main Body Two : 14', 102, 0, 0, 0, 0, 0, 0, 0),
-(201, 7, 186, 'Main Body Two : 15', 103, 0, 0, 0, 0, 0, 0, 0),
+(201, 7, 186, 'Main Body Two : 15', 103, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRelationID`, `cbDisplayOrder`, `isOriginal`, `cbOverrideAreaPermissions`, `cbIncludeAll`, `cbOverrideBlockTypeCacheSettings`, `cbOverrideBlockTypeContainerSettings`, `cbEnableBlockContainer`) VALUES
 (201, 7, 187, 'Main Body Two : 16', 104, 0, 0, 0, 0, 0, 0, 0),
 (201, 7, 188, 'Main Body Three', 105, 0, 0, 0, 0, 0, 0, 0),
 (201, 8, 113, 'Main', 53, 0, 0, 0, 0, 0, 0, 0),
@@ -11532,8 +12072,7 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (201, 18, 187, 'Main Body Two : 16', 104, 0, 0, 0, 0, 0, 0, 0),
 (201, 18, 188, 'Main Body Three', 105, 0, 0, 0, 0, 0, 0, 0),
 (201, 18, 236, 'Main Body Three', 106, 1, 0, 0, 0, 0, 0, 0),
-(201, 18, 250, 'Main', 130, 0, 0, 0, 0, 0, 0, 0);
-INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRelationID`, `cbDisplayOrder`, `isOriginal`, `cbOverrideAreaPermissions`, `cbIncludeAll`, `cbOverrideBlockTypeCacheSettings`, `cbOverrideBlockTypeContainerSettings`, `cbEnableBlockContainer`) VALUES
+(201, 18, 250, 'Main', 130, 0, 0, 0, 0, 0, 0, 0),
 (201, 18, 252, 'Main Description', 124, 0, 0, 0, 0, 0, 0, 0),
 (201, 18, 253, 'Main Body One', 54, 0, 0, 0, 0, 0, 0, 0),
 (201, 19, 182, 'Main Body Two', 100, 0, 0, 0, 0, 0, 0, 0),
@@ -12261,7 +12800,8 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (202, 20, 342, 'Title Content', 152, 1, 0, 0, 0, 0, 0, 0),
 (202, 20, 345, 'Main Description', 153, 0, 1, 0, 0, 0, 0, 0),
 (202, 21, 341, 'Title Content', 151, 0, 0, 0, 0, 0, 0, 0),
-(202, 21, 342, 'Title Content', 152, 1, 0, 0, 0, 0, 0, 0),
+(202, 21, 342, 'Title Content', 152, 1, 0, 0, 0, 0, 0, 0);
+INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRelationID`, `cbDisplayOrder`, `isOriginal`, `cbOverrideAreaPermissions`, `cbIncludeAll`, `cbOverrideBlockTypeCacheSettings`, `cbOverrideBlockTypeContainerSettings`, `cbEnableBlockContainer`) VALUES
 (202, 21, 345, 'Main Description', 153, 0, 0, 0, 0, 0, 0, 0),
 (202, 21, 346, 'Main Body One', 154, 0, 1, 0, 0, 0, 0, 0),
 (202, 21, 347, 'Main Body Two', 155, 0, 1, 0, 0, 0, 0, 0),
@@ -12367,8 +12907,7 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (202, 29, 341, 'Title Content', 151, 0, 0, 0, 0, 0, 0, 0),
 (202, 29, 342, 'Title Content', 152, 1, 0, 0, 0, 0, 0, 0),
 (202, 29, 347, 'Main Body Two', 155, 0, 0, 0, 0, 0, 0, 0),
-(202, 29, 350, 'Main Body Two', 158, 1, 0, 0, 0, 0, 0, 0);
-INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRelationID`, `cbDisplayOrder`, `isOriginal`, `cbOverrideAreaPermissions`, `cbIncludeAll`, `cbOverrideBlockTypeCacheSettings`, `cbOverrideBlockTypeContainerSettings`, `cbEnableBlockContainer`) VALUES
+(202, 29, 350, 'Main Body Two', 158, 1, 0, 0, 0, 0, 0, 0),
 (202, 29, 353, 'Main Body Two', 161, 2, 0, 0, 0, 0, 0, 0),
 (202, 29, 364, 'Main Body One', 154, 0, 0, 0, 0, 0, 0, 0),
 (202, 29, 366, 'Main Body Two : 27', 157, 0, 0, 0, 0, 0, 0, 0),
@@ -13098,7 +13637,8 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (202, 73, 445, 'Main Body Two', 154, 1, 0, 0, 0, 0, 0, 0),
 (202, 73, 447, 'Main Body Two', 156, 0, 0, 0, 0, 0, 0, 0),
 (202, 73, 448, 'Main Body Three', 169, 0, 0, 0, 0, 0, 0, 0),
-(202, 73, 455, 'Main Body Three', 173, 1, 0, 0, 0, 0, 0, 0),
+(202, 73, 455, 'Main Body Three', 173, 1, 0, 0, 0, 0, 0, 0);
+INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRelationID`, `cbDisplayOrder`, `isOriginal`, `cbOverrideAreaPermissions`, `cbIncludeAll`, `cbOverrideBlockTypeCacheSettings`, `cbOverrideBlockTypeContainerSettings`, `cbEnableBlockContainer`) VALUES
 (202, 74, 341, 'Title Content', 151, 0, 0, 0, 0, 0, 0, 0),
 (202, 74, 342, 'Title Content', 152, 1, 0, 0, 0, 0, 0, 0),
 (202, 74, 347, 'Main Body Two', 155, 2, 0, 0, 0, 0, 0, 0),
@@ -13204,8 +13744,7 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (202, 78, 464, 'Main Description', 153, 0, 1, 0, 0, 0, 0, 0),
 (202, 78, 465, 'Title Content', 152, 1, 1, 0, 0, 0, 0, 0),
 (202, 78, 466, 'Main Body Two', 168, 6, 1, 0, 0, 0, 0, 0),
-(202, 79, 341, 'Title Content', 151, 0, 0, 0, 0, 0, 0, 0);
-INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRelationID`, `cbDisplayOrder`, `isOriginal`, `cbOverrideAreaPermissions`, `cbIncludeAll`, `cbOverrideBlockTypeCacheSettings`, `cbOverrideBlockTypeContainerSettings`, `cbEnableBlockContainer`) VALUES
+(202, 79, 341, 'Title Content', 151, 0, 0, 0, 0, 0, 0, 0),
 (202, 79, 347, 'Main Body Two', 155, 2, 0, 0, 0, 0, 0, 0),
 (202, 79, 350, 'Main Body Two', 158, 3, 0, 0, 0, 0, 0, 0),
 (202, 79, 353, 'Main Body Two', 161, 4, 0, 0, 0, 0, 0, 0),
@@ -13937,7 +14476,8 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (211, 44, 353, 'Main Body Two', 161, 4, 0, 0, 0, 0, 0, 0),
 (211, 44, 375, 'Main Description', 153, 0, 0, 0, 0, 0, 0, 0),
 (211, 44, 379, 'Main Body Two : 27', 162, 0, 0, 0, 0, 0, 0, 0),
-(211, 44, 381, 'Main Body Two : 29', 160, 0, 0, 0, 0, 0, 0, 0),
+(211, 44, 381, 'Main Body Two : 29', 160, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRelationID`, `cbDisplayOrder`, `isOriginal`, `cbOverrideAreaPermissions`, `cbIncludeAll`, `cbOverrideBlockTypeCacheSettings`, `cbOverrideBlockTypeContainerSettings`, `cbEnableBlockContainer`) VALUES
 (211, 44, 390, 'Main Body Two', 154, 1, 0, 0, 0, 0, 0, 0),
 (211, 44, 394, 'Main Body Two', 156, 0, 0, 0, 0, 0, 0, 0),
 (211, 44, 395, 'Main Body Two : 26', 157, 0, 0, 0, 0, 0, 0, 0),
@@ -14043,8 +14583,7 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (211, 50, 414, 'Main Body Two', 156, 0, 0, 0, 0, 0, 0, 0),
 (211, 51, 341, 'Title Content', 151, 0, 0, 0, 0, 0, 0, 0),
 (211, 51, 342, 'Title Content', 152, 1, 0, 0, 0, 0, 0, 0),
-(211, 51, 347, 'Main Body Two', 155, 2, 0, 0, 0, 0, 0, 0);
-INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRelationID`, `cbDisplayOrder`, `isOriginal`, `cbOverrideAreaPermissions`, `cbIncludeAll`, `cbOverrideBlockTypeCacheSettings`, `cbOverrideBlockTypeContainerSettings`, `cbEnableBlockContainer`) VALUES
+(211, 51, 347, 'Main Body Two', 155, 2, 0, 0, 0, 0, 0, 0),
 (211, 51, 350, 'Main Body Two', 158, 3, 0, 0, 0, 0, 0, 0),
 (211, 51, 353, 'Main Body Two', 161, 4, 0, 0, 0, 0, 0, 0),
 (211, 51, 375, 'Main Description', 153, 0, 0, 0, 0, 0, 0, 0),
@@ -14775,7 +15314,8 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (211, 88, 472, 'Main Body Three', 169, 0, 0, 0, 0, 0, 0, 0),
 (211, 88, 473, 'Main Body Two', 156, 0, 0, 0, 0, 0, 0, 0),
 (211, 88, 477, 'Title Content', 152, 1, 1, 0, 0, 0, 0, 0),
-(211, 88, 478, 'Title Content', 151, 0, 1, 0, 0, 0, 0, 0),
+(211, 88, 478, 'Title Content', 151, 0, 1, 0, 0, 0, 0, 0);
+INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRelationID`, `cbDisplayOrder`, `isOriginal`, `cbOverrideAreaPermissions`, `cbIncludeAll`, `cbOverrideBlockTypeCacheSettings`, `cbOverrideBlockTypeContainerSettings`, `cbEnableBlockContainer`) VALUES
 (211, 88, 479, 'Main Description', 153, 0, 1, 0, 0, 0, 0, 0),
 (211, 89, 347, 'Main Body Two', 155, 2, 0, 0, 0, 0, 0, 0),
 (211, 89, 350, 'Main Body Two', 158, 3, 0, 0, 0, 0, 0, 0),
@@ -14881,8 +15421,7 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (211, 93, 481, 'Title Content', 151, 0, 0, 0, 0, 0, 0, 0),
 (211, 93, 482, 'Title Content', 152, 1, 0, 0, 0, 0, 0, 0),
 (211, 93, 483, 'Main Body Two', 154, 1, 0, 0, 0, 0, 0, 0),
-(211, 93, 484, 'Main Body Two : 26', 157, 0, 1, 0, 0, 0, 0, 0);
-INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRelationID`, `cbDisplayOrder`, `isOriginal`, `cbOverrideAreaPermissions`, `cbIncludeAll`, `cbOverrideBlockTypeCacheSettings`, `cbOverrideBlockTypeContainerSettings`, `cbEnableBlockContainer`) VALUES
+(211, 93, 484, 'Main Body Two : 26', 157, 0, 1, 0, 0, 0, 0, 0),
 (211, 94, 347, 'Main Body Two', 155, 2, 0, 0, 0, 0, 0, 0),
 (211, 94, 350, 'Main Body Two', 158, 3, 0, 0, 0, 0, 0, 0),
 (211, 94, 353, 'Main Body Two', 161, 4, 0, 0, 0, 0, 0, 0),
@@ -15324,6 +15863,31 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (211, 112, 766, 'Main Body Two : 34', 178, 0, 0, 0, 0, 0, 0, 0),
 (211, 112, 767, 'Main Body Two : 35', 179, 0, 0, 0, 0, 0, 0, 0),
 (211, 112, 922, 'Main Body Two', 156, 0, 1, 0, 0, 0, 0, 0),
+(211, 113, 347, 'Main Body Two', 155, 2, 0, 0, 0, 0, 0, 0),
+(211, 113, 350, 'Main Body Two', 158, 3, 0, 0, 0, 0, 0, 0),
+(211, 113, 353, 'Main Body Two', 161, 4, 0, 0, 0, 0, 0, 0),
+(211, 113, 402, 'Main Body Two', 165, 5, 0, 0, 0, 0, 0, 0),
+(211, 113, 479, 'Main Description', 153, 0, 0, 0, 0, 0, 0, 0),
+(211, 113, 481, 'Title Content', 151, 0, 0, 0, 0, 0, 0, 0),
+(211, 113, 482, 'Title Content', 152, 1, 0, 0, 0, 0, 0, 0),
+(211, 113, 495, 'Main Body Two', 177, 6, 0, 0, 0, 0, 0, 0),
+(211, 113, 521, 'Main Body Three', 176, 2, 0, 0, 0, 0, 0, 0),
+(211, 113, 523, 'Main Body Three', 169, 0, 0, 0, 0, 0, 0, 0),
+(211, 113, 647, 'Main Body Two', 154, 1, 0, 0, 0, 0, 0, 0),
+(211, 113, 671, 'Main Body Three', 173, 1, 0, 0, 0, 0, 0, 0),
+(211, 113, 691, 'Main Body Two', 214, 8, 0, 0, 0, 0, 0, 0),
+(211, 113, 692, 'Main Body Two', 215, 7, 0, 0, 0, 0, 0, 0),
+(211, 113, 758, 'Main Body Two : 26', 157, 0, 0, 0, 0, 0, 0, 0),
+(211, 113, 759, 'Main Body Two : 27', 162, 0, 0, 0, 0, 0, 0, 0),
+(211, 113, 760, 'Main Body Two : 28', 159, 0, 0, 0, 0, 0, 0, 0),
+(211, 113, 761, 'Main Body Two : 29', 167, 0, 0, 0, 0, 0, 0, 0),
+(211, 113, 762, 'Main Body Two : 30', 164, 0, 0, 0, 0, 0, 0, 0),
+(211, 113, 763, 'Main Body Two : 31', 163, 0, 0, 0, 0, 0, 0, 0),
+(211, 113, 764, 'Main Body Two : 32', 166, 0, 0, 0, 0, 0, 0, 0),
+(211, 113, 765, 'Main Body Two : 33', 160, 0, 0, 0, 0, 0, 0, 0),
+(211, 113, 766, 'Main Body Two : 34', 178, 0, 0, 0, 0, 0, 0, 0),
+(211, 113, 767, 'Main Body Two : 35', 179, 0, 0, 0, 0, 0, 0, 0),
+(211, 113, 943, 'Main Body Two', 156, 0, 1, 0, 0, 0, 0, 0),
 (212, 9, 332, 'Title Content', 150, 0, 0, 0, 0, 0, 0, 0),
 (212, 10, 333, 'Title Content', 150, 0, 0, 0, 0, 0, 0, 0),
 (212, 11, 335, 'Title Content', 151, 0, 0, 0, 0, 0, 0, 0),
@@ -15582,7 +16146,8 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (212, 38, 382, 'Main Body Two : 31', 163, 0, 0, 0, 0, 0, 0, 0),
 (212, 38, 386, 'Main Body Two : 30', 164, 0, 0, 0, 0, 0, 0, 0),
 (212, 38, 389, 'Main Body Two', 156, 0, 0, 0, 0, 0, 0, 0),
-(212, 38, 390, 'Main Body Two', 154, 1, 0, 0, 0, 0, 0, 0),
+(212, 38, 390, 'Main Body Two', 154, 1, 0, 0, 0, 0, 0, 0);
+INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRelationID`, `cbDisplayOrder`, `isOriginal`, `cbOverrideAreaPermissions`, `cbIncludeAll`, `cbOverrideBlockTypeCacheSettings`, `cbOverrideBlockTypeContainerSettings`, `cbEnableBlockContainer`) VALUES
 (212, 39, 341, 'Title Content', 151, 0, 0, 0, 0, 0, 0, 0),
 (212, 39, 342, 'Title Content', 152, 1, 0, 0, 0, 0, 0, 0),
 (212, 39, 347, 'Main Body Two', 155, 2, 0, 0, 0, 0, 0, 0),
@@ -15713,8 +16278,7 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (212, 47, 409, 'Main Body Two : 28', 159, 0, 0, 0, 0, 0, 0, 0),
 (212, 47, 410, 'Main Body Two : 27', 162, 0, 0, 0, 0, 0, 0, 0),
 (212, 47, 411, 'Main Body Two : 26', 157, 0, 0, 0, 0, 0, 0, 0),
-(212, 48, 341, 'Title Content', 151, 0, 0, 0, 0, 0, 0, 0);
-INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRelationID`, `cbDisplayOrder`, `isOriginal`, `cbOverrideAreaPermissions`, `cbIncludeAll`, `cbOverrideBlockTypeCacheSettings`, `cbOverrideBlockTypeContainerSettings`, `cbEnableBlockContainer`) VALUES
+(212, 48, 341, 'Title Content', 151, 0, 0, 0, 0, 0, 0, 0),
 (212, 48, 342, 'Title Content', 152, 1, 0, 0, 0, 0, 0, 0),
 (212, 48, 347, 'Main Body Two', 155, 2, 0, 0, 0, 0, 0, 0),
 (212, 48, 350, 'Main Body Two', 158, 3, 0, 0, 0, 0, 0, 0),
@@ -16420,7 +16984,8 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (212, 85, 347, 'Main Body Two', 155, 2, 0, 0, 0, 0, 0, 0),
 (212, 85, 350, 'Main Body Two', 158, 3, 0, 0, 0, 0, 0, 0),
 (212, 85, 353, 'Main Body Two', 161, 4, 0, 0, 0, 0, 0, 0),
-(212, 85, 402, 'Main Body Two', 165, 5, 0, 0, 0, 0, 0, 0),
+(212, 85, 402, 'Main Body Two', 165, 5, 0, 0, 0, 0, 0, 0);
+INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRelationID`, `cbDisplayOrder`, `isOriginal`, `cbOverrideAreaPermissions`, `cbIncludeAll`, `cbOverrideBlockTypeCacheSettings`, `cbOverrideBlockTypeContainerSettings`, `cbEnableBlockContainer`) VALUES
 (212, 85, 425, 'Main Body Two : 26', 157, 0, 0, 0, 0, 0, 0, 0),
 (212, 85, 426, 'Main Body Two : 27', 162, 0, 0, 0, 0, 0, 0, 0),
 (212, 85, 427, 'Main Body Two : 28', 159, 0, 0, 0, 0, 0, 0, 0),
@@ -16551,8 +17116,7 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (212, 91, 427, 'Main Body Two : 28', 159, 0, 0, 0, 0, 0, 0, 0),
 (212, 91, 429, 'Main Body Two : 30', 164, 0, 0, 0, 0, 0, 0, 0),
 (212, 91, 430, 'Main Body Two : 31', 163, 0, 0, 0, 0, 0, 0, 0),
-(212, 91, 431, 'Main Body Two : 32', 166, 0, 0, 0, 0, 0, 0, 0);
-INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRelationID`, `cbDisplayOrder`, `isOriginal`, `cbOverrideAreaPermissions`, `cbIncludeAll`, `cbOverrideBlockTypeCacheSettings`, `cbOverrideBlockTypeContainerSettings`, `cbEnableBlockContainer`) VALUES
+(212, 91, 431, 'Main Body Two : 32', 166, 0, 0, 0, 0, 0, 0, 0),
 (212, 91, 438, 'Main Body Two : 29', 167, 0, 0, 0, 0, 0, 0, 0),
 (212, 91, 439, 'Main Body Two : 33', 160, 0, 0, 0, 0, 0, 0, 0),
 (212, 91, 445, 'Main Body Two', 154, 1, 0, 0, 0, 0, 0, 0),
@@ -17247,7 +17811,8 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (212, 120, 519, 'Main Body Three', 176, 2, 0, 0, 0, 0, 0, 0),
 (212, 120, 525, 'Main Body Three', 173, 1, 0, 0, 0, 0, 0, 0),
 (212, 120, 526, 'Main Body Three', 169, 0, 0, 0, 0, 0, 0, 0),
-(212, 120, 527, 'Main Body Two', 154, 1, 0, 0, 0, 0, 0, 0),
+(212, 120, 527, 'Main Body Two', 154, 1, 0, 0, 0, 0, 0, 0);
+INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRelationID`, `cbDisplayOrder`, `isOriginal`, `cbOverrideAreaPermissions`, `cbIncludeAll`, `cbOverrideBlockTypeCacheSettings`, `cbOverrideBlockTypeContainerSettings`, `cbEnableBlockContainer`) VALUES
 (212, 120, 540, 'Main Body Two', 181, 7, 0, 0, 0, 0, 0, 0),
 (212, 120, 543, 'Main Body Two', 184, 8, 0, 0, 0, 0, 0, 0),
 (212, 120, 549, 'Main Body Two', 156, 0, 0, 0, 0, 0, 0, 0),
@@ -17375,8 +17940,7 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (212, 124, 559, 'Main Body Two : 37', 183, 0, 0, 0, 0, 0, 0, 0),
 (212, 124, 560, 'Main Body Two : 38', 185, 0, 0, 0, 0, 0, 0, 0),
 (212, 124, 562, 'Main Body Two : 26', 159, 0, 0, 0, 0, 0, 0, 0),
-(212, 124, 563, 'Main Body Two : 27', 167, 0, 0, 0, 0, 0, 0, 0);
-INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRelationID`, `cbDisplayOrder`, `isOriginal`, `cbOverrideAreaPermissions`, `cbIncludeAll`, `cbOverrideBlockTypeCacheSettings`, `cbOverrideBlockTypeContainerSettings`, `cbEnableBlockContainer`) VALUES
+(212, 124, 563, 'Main Body Two : 27', 167, 0, 0, 0, 0, 0, 0, 0),
 (212, 124, 564, 'Main Body Two : 36', 182, 0, 0, 0, 0, 0, 0, 0),
 (212, 124, 565, 'Main Body Two : 39', 186, 0, 0, 0, 0, 0, 0, 0),
 (212, 124, 627, 'Main Body Two', 156, 0, 0, 0, 0, 0, 0, 0),
@@ -17801,6 +18365,15 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (216, 20, 907, 'Main Body Two', 268, 0, 0, 0, 0, 0, 0, 0),
 (216, 20, 908, 'Main Body Two', 269, 1, 0, 0, 0, 0, 0, 0),
 (216, 20, 909, 'Title Content', 267, 1, 1, 0, 0, 0, 0, 0),
+(216, 21, 884, 'Title Content', 264, 0, 0, 0, 0, 0, 0, 0),
+(216, 21, 885, 'Main Description', 265, 0, 0, 0, 0, 0, 0, 0),
+(216, 21, 886, 'Main Description', 266, 1, 0, 0, 0, 0, 0, 0),
+(216, 21, 890, 'Main Body Three', 270, 0, 0, 0, 0, 0, 0, 0),
+(216, 21, 894, 'Main Body Three', 271, 2, 0, 0, 0, 0, 0, 0),
+(216, 21, 900, 'Main Body Three', 272, 1, 0, 0, 0, 0, 0, 0),
+(216, 21, 907, 'Main Body Two', 268, 0, 0, 0, 0, 0, 0, 0),
+(216, 21, 908, 'Main Body Two', 269, 1, 0, 0, 0, 0, 0, 0),
+(216, 21, 909, 'Title Content', 267, 1, 0, 0, 0, 0, 0, 0),
 (217, 2, 926, 'Title Content', 273, 0, 1, 0, 0, 0, 0, 0),
 (217, 2, 927, 'Main Description', 274, 0, 1, 0, 0, 0, 0, 0),
 (217, 2, 928, 'Main Body Two', 275, 0, 1, 0, 0, 0, 0, 0),
@@ -17810,15 +18383,35 @@ INSERT INTO `CollectionVersionBlocks` (`cID`, `cvID`, `bID`, `arHandle`, `cbRela
 (217, 4, 926, 'Title Content', 273, 0, 0, 0, 0, 0, 0, 0),
 (217, 4, 927, 'Main Description', 274, 0, 0, 0, 0, 0, 0, 0),
 (217, 4, 929, 'Main Body One', 275, 0, 0, 0, 0, 0, 0, 0),
+(217, 5, 926, 'Title Content', 273, 0, 0, 0, 0, 0, 0, 0),
+(217, 5, 927, 'Main Description', 274, 0, 0, 0, 0, 0, 0, 0),
+(217, 5, 929, 'Main Body One', 275, 0, 0, 0, 0, 0, 0, 0),
 (218, 2, 930, 'Main Description', 276, 0, 1, 0, 0, 0, 0, 0),
 (218, 2, 931, 'Title Content', 277, 0, 1, 0, 0, 0, 0, 0),
 (218, 2, 932, 'Main Body Two', 278, 0, 1, 0, 0, 0, 0, 0),
 (218, 3, 930, 'Main Description', 276, 0, 0, 0, 0, 0, 0, 0),
 (218, 3, 931, 'Title Content', 277, 0, 0, 0, 0, 0, 0, 0),
 (218, 3, 932, 'Main Body One', 278, 0, 0, 0, 0, 0, 0, 0),
+(218, 4, 930, 'Main Description', 276, 0, 0, 0, 0, 0, 0, 0),
+(218, 4, 931, 'Title Content', 277, 0, 0, 0, 0, 0, 0, 0),
+(218, 4, 932, 'Main Body One', 278, 0, 0, 0, 0, 0, 0, 0),
 (219, 2, 933, 'Title Content', 279, 0, 1, 0, 0, 0, 0, 0),
 (219, 2, 934, 'Main Description', 280, 0, 1, 0, 0, 0, 0, 0),
-(219, 2, 935, 'Main Body One', 281, 0, 1, 0, 0, 0, 0, 0);
+(219, 2, 935, 'Main Body One', 281, 0, 1, 0, 0, 0, 0, 0),
+(219, 3, 933, 'Title Content', 279, 0, 0, 0, 0, 0, 0, 0),
+(219, 3, 934, 'Main Description', 280, 0, 0, 0, 0, 0, 0, 0),
+(219, 3, 935, 'Main Body One', 281, 0, 0, 0, 0, 0, 0, 0),
+(220, 2, 952, 'Title Content', 285, 0, 1, 0, 0, 0, 0, 0),
+(220, 2, 953, 'Main Body One', 286, 0, 1, 0, 0, 0, 0, 0),
+(220, 3, 952, 'Title Content', 285, 0, 0, 0, 0, 0, 0, 0),
+(220, 3, 953, 'Main Body One', 286, 0, 0, 0, 0, 0, 0, 0),
+(220, 3, 954, 'Main Description', 287, 0, 1, 0, 0, 0, 0, 0),
+(220, 4, 953, 'Main Body One', 286, 0, 0, 0, 0, 0, 0, 0),
+(220, 4, 954, 'Main Description', 287, 0, 0, 0, 0, 0, 0, 0),
+(220, 4, 956, 'Title Content', 285, 0, 1, 0, 0, 0, 0, 0),
+(220, 5, 953, 'Main Body One', 286, 0, 0, 0, 0, 0, 0, 0),
+(220, 5, 954, 'Main Description', 287, 0, 0, 0, 0, 0, 0, 0),
+(220, 5, 956, 'Title Content', 285, 0, 0, 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -17883,8 +18476,13 @@ INSERT INTO `CollectionVersionBlockStyles` (`cID`, `cvID`, `bID`, `arHandle`, `i
 (187, 10, 137, 'Main Body', 6),
 (187, 11, 137, 'Main Body', 6),
 (187, 12, 137, 'Main Body', 6),
+(187, 13, 137, 'Main Body', 6),
+(187, 14, 137, 'Main Body', 6),
 (181, 6, 204, 'Main Body', 7),
 (181, 7, 204, 'Main Body', 7),
+(181, 8, 204, 'Main Body', 7),
+(181, 9, 204, 'Main Body', 7),
+(181, 10, 204, 'Main Body', 7),
 (159, 26, 270, 'Main Body Three', 8),
 (159, 27, 270, 'Main Body Three', 8),
 (159, 28, 270, 'Main Body Three', 8),
@@ -18503,6 +19101,7 @@ INSERT INTO `CollectionVersionBlockStyles` (`cID`, `cvID`, `bID`, `arHandle`, `i
 (211, 110, 647, 'Main Body Two', 33),
 (211, 111, 647, 'Main Body Two', 33),
 (211, 112, 647, 'Main Body Two', 33),
+(211, 113, 647, 'Main Body Two', 33),
 (212, 25, 364, 'Main Body One', 33),
 (212, 26, 364, 'Main Body One', 33),
 (212, 27, 364, 'Main Body One', 33),
@@ -19185,12 +19784,12 @@ INSERT INTO `CollectionVersionBlockStyles` (`cID`, `cvID`, `bID`, `arHandle`, `i
 (212, 86, 429, 'Main Body Two : 30', 51),
 (212, 87, 429, 'Main Body Two : 30', 51),
 (212, 88, 429, 'Main Body Two : 30', 51),
-(212, 89, 429, 'Main Body Two : 30', 51),
+(212, 89, 429, 'Main Body Two : 30', 51);
+INSERT INTO `CollectionVersionBlockStyles` (`cID`, `cvID`, `bID`, `arHandle`, `issID`) VALUES
 (212, 90, 429, 'Main Body Two : 30', 51),
 (212, 91, 429, 'Main Body Two : 30', 51),
 (212, 92, 429, 'Main Body Two : 30', 51),
-(212, 93, 429, 'Main Body Two : 30', 51);
-INSERT INTO `CollectionVersionBlockStyles` (`cID`, `cvID`, `bID`, `arHandle`, `issID`) VALUES
+(212, 93, 429, 'Main Body Two : 30', 51),
 (212, 94, 429, 'Main Body Two : 30', 51),
 (212, 95, 429, 'Main Body Two : 30', 51),
 (212, 96, 491, 'Main Body Two : 30', 51),
@@ -20468,12 +21067,12 @@ INSERT INTO `CollectionVersionBlockStyles` (`cID`, `cvID`, `bID`, `arHandle`, `i
 (211, 109, 649, 'Main Body Two : 27', 74),
 (212, 99, 503, 'Main Body Two : 27', 74),
 (212, 100, 503, 'Main Body Two : 27', 74),
-(212, 101, 503, 'Main Body Two : 27', 74),
+(212, 101, 503, 'Main Body Two : 27', 74);
+INSERT INTO `CollectionVersionBlockStyles` (`cID`, `cvID`, `bID`, `arHandle`, `issID`) VALUES
 (212, 102, 503, 'Main Body Two : 27', 74),
 (212, 103, 503, 'Main Body Two : 27', 74),
 (212, 104, 503, 'Main Body Two : 27', 74),
-(212, 105, 503, 'Main Body Two : 27', 74);
-INSERT INTO `CollectionVersionBlockStyles` (`cID`, `cvID`, `bID`, `arHandle`, `issID`) VALUES
+(212, 105, 503, 'Main Body Two : 27', 74),
 (212, 106, 503, 'Main Body Two : 27', 74),
 (212, 107, 503, 'Main Body Two : 27', 74),
 (212, 108, 503, 'Main Body Two : 27', 74),
@@ -20704,6 +21303,7 @@ INSERT INTO `CollectionVersionBlockStyles` (`cID`, `cvID`, `bID`, `arHandle`, `i
 (211, 110, 523, 'Main Body Three', 84),
 (211, 111, 523, 'Main Body Three', 84),
 (211, 112, 523, 'Main Body Three', 84),
+(211, 113, 523, 'Main Body Three', 84),
 (212, 108, 526, 'Main Body Three', 85),
 (212, 109, 526, 'Main Body Three', 85),
 (212, 110, 526, 'Main Body Three', 85),
@@ -21610,12 +22210,12 @@ INSERT INTO `CollectionVersionBlockStyles` (`cID`, `cvID`, `bID`, `arHandle`, `i
 (159, 70, 729, 'Main Website Design Area : 50', 150),
 (159, 71, 729, 'Main Website Design Area : 50', 150),
 (159, 72, 729, 'Main Website Design Area : 50', 150),
-(159, 73, 729, 'Main Website Design Area : 50', 150),
+(159, 73, 729, 'Main Website Design Area : 50', 150);
+INSERT INTO `CollectionVersionBlockStyles` (`cID`, `cvID`, `bID`, `arHandle`, `issID`) VALUES
 (159, 74, 729, 'Main Website Design Area : 50', 150),
 (159, 67, 730, 'Main Website Design Area : 51', 151),
 (159, 68, 730, 'Main Website Design Area : 51', 151),
-(159, 69, 730, 'Main Website Design Area : 51', 151);
-INSERT INTO `CollectionVersionBlockStyles` (`cID`, `cvID`, `bID`, `arHandle`, `issID`) VALUES
+(159, 69, 730, 'Main Website Design Area : 51', 151),
 (159, 70, 730, 'Main Website Design Area : 51', 151),
 (159, 71, 730, 'Main Website Design Area : 51', 151),
 (159, 72, 730, 'Main Website Design Area : 51', 151),
@@ -21730,33 +22330,43 @@ INSERT INTO `CollectionVersionBlockStyles` (`cID`, `cvID`, `bID`, `arHandle`, `i
 (211, 110, 758, 'Main Body Two : 26', 181),
 (211, 111, 758, 'Main Body Two : 26', 181),
 (211, 112, 758, 'Main Body Two : 26', 181),
+(211, 113, 758, 'Main Body Two : 26', 181),
 (211, 110, 759, 'Main Body Two : 27', 182),
 (211, 111, 759, 'Main Body Two : 27', 182),
 (211, 112, 759, 'Main Body Two : 27', 182),
+(211, 113, 759, 'Main Body Two : 27', 182),
 (211, 110, 760, 'Main Body Two : 28', 183),
 (211, 111, 760, 'Main Body Two : 28', 183),
 (211, 112, 760, 'Main Body Two : 28', 183),
+(211, 113, 760, 'Main Body Two : 28', 183),
 (211, 110, 761, 'Main Body Two : 29', 184),
 (211, 111, 761, 'Main Body Two : 29', 184),
 (211, 112, 761, 'Main Body Two : 29', 184),
+(211, 113, 761, 'Main Body Two : 29', 184),
 (211, 110, 762, 'Main Body Two : 30', 185),
 (211, 111, 762, 'Main Body Two : 30', 185),
 (211, 112, 762, 'Main Body Two : 30', 185),
+(211, 113, 762, 'Main Body Two : 30', 185),
 (211, 110, 763, 'Main Body Two : 31', 186),
 (211, 111, 763, 'Main Body Two : 31', 186),
 (211, 112, 763, 'Main Body Two : 31', 186),
+(211, 113, 763, 'Main Body Two : 31', 186),
 (211, 110, 764, 'Main Body Two : 32', 187),
 (211, 111, 764, 'Main Body Two : 32', 187),
 (211, 112, 764, 'Main Body Two : 32', 187),
+(211, 113, 764, 'Main Body Two : 32', 187),
 (211, 110, 765, 'Main Body Two : 33', 188),
 (211, 111, 765, 'Main Body Two : 33', 188),
 (211, 112, 765, 'Main Body Two : 33', 188),
+(211, 113, 765, 'Main Body Two : 33', 188),
 (211, 110, 766, 'Main Body Two : 34', 189),
 (211, 111, 766, 'Main Body Two : 34', 189),
 (211, 112, 766, 'Main Body Two : 34', 189),
+(211, 113, 766, 'Main Body Two : 34', 189),
 (211, 110, 767, 'Main Body Two : 35', 190),
 (211, 111, 767, 'Main Body Two : 35', 190),
 (211, 112, 767, 'Main Body Two : 35', 190),
+(211, 113, 767, 'Main Body Two : 35', 190),
 (164, 11, 769, 'Main Body One', 191),
 (164, 12, 770, 'Main Body One', 191),
 (164, 13, 771, 'Main Body One', 191),
@@ -21781,6 +22391,7 @@ INSERT INTO `CollectionVersionBlockStyles` (`cID`, `cvID`, `bID`, `arHandle`, `i
 (163, 33, 833, 'Main Feature Area', 193),
 (163, 34, 833, 'Main Feature Area', 193),
 (163, 35, 833, 'Main Feature Area', 193),
+(163, 36, 951, 'Main Feature Area', 193),
 (163, 30, 849, 'Main Body', 201),
 (163, 31, 850, 'Main Body', 205),
 (163, 32, 850, 'Main Body', 205),
@@ -21794,18 +22405,26 @@ INSERT INTO `CollectionVersionBlockStyles` (`cID`, `cvID`, `bID`, `arHandle`, `i
 (1, 37, 863, 'Content Area Two', 209),
 (1, 38, 863, 'Content Area Two', 209),
 (1, 39, 863, 'Content Area Two', 209),
+(1, 40, 863, 'Content Area Two', 209),
 (1, 34, 864, 'Content Area Two', 210),
 (1, 35, 865, 'Content Area Two', 211),
 (1, 36, 866, 'Content Area Two', 211),
 (1, 37, 866, 'Content Area Two', 211),
 (1, 38, 866, 'Content Area Two', 211),
 (1, 39, 866, 'Content Area Two', 211),
+(1, 40, 866, 'Content Area Two', 211),
 (159, 73, 868, 'Main General Area', 212),
 (159, 74, 868, 'Main General Area', 212),
 (162, 11, 869, 'Main Description', 213),
 (162, 12, 869, 'Main Description', 213),
 (162, 13, 869, 'Main Description', 213),
+(162, 14, 944, 'Main Description', 213),
+(162, 15, 944, 'Main Description', 213),
 (161, 20, 870, 'Main Description', 214),
+(161, 21, 945, 'Main Description', 214),
+(161, 22, 945, 'Main Description', 214),
+(161, 23, 945, 'Main Description', 214),
+(161, 24, 945, 'Main Description', 214),
 (216, 7, 893, 'Main Body Three', 215),
 (216, 9, 895, 'Main Body Three', 216),
 (216, 10, 895, 'Main Body Three', 216),
@@ -21819,14 +22438,19 @@ INSERT INTO `CollectionVersionBlockStyles` (`cID`, `cvID`, `bID`, `arHandle`, `i
 (216, 18, 900, 'Main Body Three', 216),
 (216, 19, 900, 'Main Body Three', 216),
 (216, 20, 900, 'Main Body Three', 216),
+(216, 21, 900, 'Main Body Three', 216),
 (1, 38, 911, 'Services Area One', 217),
 (1, 39, 911, 'Services Area One', 217),
+(1, 40, 911, 'Services Area One', 217),
 (1, 38, 912, 'Services Area Two', 220),
 (1, 39, 912, 'Services Area Two', 220),
+(1, 40, 912, 'Services Area Two', 220),
 (1, 38, 913, 'Services Area Three', 221),
 (1, 39, 913, 'Services Area Three', 221),
+(1, 40, 913, 'Services Area Three', 221),
 (1, 38, 914, 'Services Area Four', 222),
 (1, 39, 915, 'Services Area Four', 225),
+(1, 40, 915, 'Services Area Four', 225),
 (159, 74, 916, 'Main eCommerce Area', 226),
 (159, 74, 917, 'Main Mobile App Area', 227),
 (159, 74, 918, 'Main Website Design Area', 228),
@@ -21836,9 +22460,12 @@ INSERT INTO `CollectionVersionBlockStyles` (`cID`, `cvID`, `bID`, `arHandle`, `i
 (163, 33, 920, 'Main Body', 231),
 (163, 34, 920, 'Main Body', 231),
 (163, 35, 920, 'Main Body', 231),
+(163, 36, 920, 'Main Body', 231),
 (163, 33, 924, 'Main Body', 232),
 (163, 34, 924, 'Main Body', 232),
-(163, 35, 924, 'Main Body', 232);
+(163, 35, 924, 'Main Body', 232),
+(163, 36, 924, 'Main Body', 232),
+(211, 113, 943, 'Main Body Two', 233);
 
 -- --------------------------------------------------------
 
@@ -21899,18 +22526,32 @@ INSERT INTO `CollectionVersionFeatureAssignments` (`cID`, `cvID`, `faID`) VALUES
 (187, 10, 12),
 (187, 11, 13),
 (187, 12, 13),
+(187, 13, 13),
+(187, 14, 13),
 (187, 11, 14),
 (187, 12, 14),
+(187, 13, 14),
+(187, 14, 14),
 (187, 11, 15),
 (187, 12, 15),
+(187, 13, 15),
+(187, 14, 15),
 (187, 11, 16),
 (187, 12, 16),
+(187, 13, 16),
+(187, 14, 16),
 (187, 11, 17),
 (187, 12, 17),
+(187, 13, 17),
+(187, 14, 17),
 (187, 11, 18),
 (187, 12, 18),
+(187, 13, 18),
+(187, 14, 18),
 (187, 11, 19),
 (187, 12, 19),
+(187, 13, 19),
+(187, 14, 19),
 (190, 2, 20),
 (190, 2, 21),
 (190, 3, 22),
@@ -21925,12 +22566,16 @@ INSERT INTO `CollectionVersionFeatureAssignments` (`cID`, `cvID`, `faID`) VALUES
 (190, 7, 23),
 (188, 3, 24),
 (188, 4, 24),
+(188, 5, 24),
 (181, 4, 25),
 (181, 5, 25),
 (181, 6, 25),
 (181, 5, 26),
 (181, 6, 27),
 (181, 7, 27),
+(181, 8, 27),
+(181, 9, 27),
+(181, 10, 27),
 (201, 40, 28),
 (201, 41, 28),
 (201, 42, 28),
@@ -22194,7 +22839,8 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (1, 36, 'Home', '', 'Welcome to Chris Watterston', '2017-05-22 15:59:00', '2017-09-15 10:42:50', 'Version 36', 0, 0, 1, 1, 2, 5, NULL, NULL),
 (1, 37, 'Home', '', 'Welcome to Chris Watterston', '2017-05-22 15:59:00', '2017-09-15 11:08:11', 'Version 37', 0, 0, 1, 1, 2, 5, NULL, NULL),
 (1, 38, 'Home', '', 'Welcome to Chris Watterston', '2017-05-22 15:59:00', '2017-09-19 08:47:54', 'Version 38', 0, 0, 1, 1, 2, 5, NULL, NULL),
-(1, 39, 'Home', '', 'Welcome to Chris Watterston', '2017-05-22 15:59:00', '2017-09-19 09:01:41', 'Version 39', 1, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 39, 'Home', '', 'Welcome to Chris Watterston', '2017-05-22 15:59:00', '2017-09-19 09:01:41', 'Version 39', 0, 0, 1, 1, 2, 5, NULL, NULL),
+(1, 40, 'Home', '', 'Welcome to Chris Watterston', '2017-05-22 15:59:00', '2017-09-20 12:56:08', 'Version 40', 1, 0, 1, 1, 2, 5, NULL, NULL),
 (2, 1, 'Dashboard', 'dashboard', '', '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'Initial Version', 1, 0, 1, NULL, 0, 0, NULL, NULL),
 (3, 1, 'Sitemap', 'sitemap', 'Whole world at a glance.', '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'Initial Version', 1, 0, 1, NULL, 0, 0, NULL, NULL),
 (4, 1, 'Full Sitemap', 'full', '', '2017-05-22 15:59:51', '2017-05-22 15:59:51', 'Initial Version', 1, 0, 1, NULL, 0, 0, NULL, NULL),
@@ -22378,7 +23024,10 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (156, 2, 'Footer Legal', 'footer-legal', NULL, '2017-05-22 16:01:21', '2017-05-23 15:22:20', 'New Version 2', 0, 0, 1, 1, 2, 0, NULL, NULL),
 (156, 3, 'Footer Legal', 'footer-legal', NULL, '2017-05-22 16:01:21', '2017-05-25 08:59:34', 'New Version 3', 0, 0, 1, NULL, 2, 0, NULL, NULL),
 (156, 4, 'Footer Legal', 'footer-legal', NULL, '2017-05-22 16:01:21', '2017-05-25 08:59:52', 'New Version 4', 0, 0, 1, 1, 2, 0, NULL, NULL),
-(156, 5, 'Footer Legal', 'footer-legal', NULL, '2017-05-22 16:01:21', '2017-09-19 23:22:36', 'New Version 5', 1, 0, 1, 1, 2, 0, NULL, NULL),
+(156, 5, 'Footer Legal', 'footer-legal', NULL, '2017-05-22 16:01:21', '2017-09-19 23:22:36', 'New Version 5', 0, 0, 1, 1, 2, 0, NULL, NULL),
+(156, 6, 'Footer Legal', 'footer-legal', NULL, '2017-05-22 16:01:21', '2017-09-20 15:25:33', 'New Version 6', 0, 0, 1, 1, 2, 0, NULL, NULL),
+(156, 7, 'Footer Legal', 'footer-legal', NULL, '2017-05-22 16:01:21', '2017-09-20 15:27:13', 'New Version 7', 0, 0, 1, 1, 2, 0, NULL, NULL),
+(156, 8, 'Footer Legal', 'footer-legal', NULL, '2017-05-22 16:01:21', '2017-09-20 15:31:43', 'New Version 8', 1, 0, 1, 1, 2, 0, NULL, NULL),
 (157, 1, 'Footer Navigation', 'footer-navigation', NULL, '2017-05-22 16:01:21', '2017-05-22 16:01:21', 'Initial Version', 0, 0, 1, NULL, 2, 0, NULL, NULL),
 (157, 2, 'Footer Navigation', 'footer-navigation', NULL, '2017-05-22 16:01:21', '2017-05-23 15:25:30', 'New Version 2', 1, 0, 1, 1, 2, 0, NULL, NULL),
 (157, 3, 'Footer Navigation', 'footer-navigation', NULL, '2017-05-22 16:01:21', '2017-05-25 09:00:40', 'New Version 3', 0, 0, 1, NULL, 2, 0, NULL, NULL),
@@ -22440,10 +23089,10 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (159, 46, 'Services', 'services', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-09-12 15:40:46', 'Version 46', 0, 0, 1, 1, 2, 12, NULL, NULL),
 (159, 47, 'Solutions for Design and Development', 'design-development-solutions-and-services', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-09-12 15:52:38', 'New Version 47', 0, 0, 1, 1, 2, 12, NULL, NULL),
 (159, 48, 'Solutions', 'design-development-solutions-and-services', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-09-12 15:53:09', 'New Version 48', 0, 0, 1, 1, 2, 12, NULL, NULL),
-(159, 49, 'Solutions', 'design-development-solutions-and-services', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-09-12 16:04:53', 'Version 49', 0, 0, 1, 1, 2, 12, NULL, NULL),
-(159, 50, 'Solutions', 'design-development-solutions-and-services', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-09-12 16:09:24', 'Version 50', 0, 0, 1, 1, 2, 12, NULL, NULL),
-(159, 51, 'Solutions', 'design-development-solutions-and-services', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-09-12 17:40:50', 'Version 51', 0, 0, 1, 1, 2, 12, NULL, NULL);
+(159, 49, 'Solutions', 'design-development-solutions-and-services', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-09-12 16:04:53', 'Version 49', 0, 0, 1, 1, 2, 12, NULL, NULL);
 INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescription`, `cvDatePublic`, `cvDateCreated`, `cvComments`, `cvIsApproved`, `cvIsNew`, `cvAuthorUID`, `cvApproverUID`, `pThemeID`, `pTemplateID`, `cvActivateDatetime`, `cvPublishDate`) VALUES
+(159, 50, 'Solutions', 'design-development-solutions-and-services', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-09-12 16:09:24', 'Version 50', 0, 0, 1, 1, 2, 12, NULL, NULL),
+(159, 51, 'Solutions', 'design-development-solutions-and-services', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-09-12 17:40:50', 'Version 51', 0, 0, 1, 1, 2, 12, NULL, NULL),
 (159, 52, 'Solutions', 'design-development-solutions-and-services', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-09-12 17:51:58', 'Version 52', 0, 0, 1, 1, 2, 12, NULL, NULL),
 (159, 53, 'Solutions', 'design-development-solutions-and-services', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-09-13 07:49:37', 'Version 53', 0, 0, 1, 1, 2, 12, NULL, NULL),
 (159, 54, 'Solutions', 'design-development-solutions-and-services', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-09-13 07:55:50', 'Version 54', 0, 0, 1, 1, 2, 12, NULL, NULL),
@@ -22490,7 +23139,11 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (161, 17, 'News', 'blog', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', '2017-05-23 15:31:00', '2017-07-27 15:45:14', 'New Version 17', 0, 0, 1, 1, 2, 9, NULL, NULL),
 (161, 18, 'News', 'blog', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', '2017-05-23 15:31:00', '2017-09-13 20:51:15', 'Version 18', 0, 0, 1, 1, 2, 9, NULL, NULL),
 (161, 19, 'News', 'blog', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', '2017-05-23 15:31:00', '2017-09-13 20:55:58', 'New Version 19', 0, 0, 1, 1, 2, 9, NULL, NULL),
-(161, 20, 'News', 'blog', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', '2017-05-23 15:31:00', '2017-09-15 11:05:59', 'Version 20', 1, 0, 1, 1, 2, 9, NULL, NULL),
+(161, 20, 'News', 'blog', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', '2017-05-23 15:31:00', '2017-09-15 11:05:59', 'Version 20', 0, 0, 1, 1, 2, 9, NULL, NULL),
+(161, 21, 'News', 'blog', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', '2017-05-23 15:31:00', '2017-09-20 09:20:41', 'Version 21', 0, 0, 1, 1, 2, 9, NULL, NULL),
+(161, 22, 'News', 'blog', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', '2017-05-23 15:31:00', '2017-09-20 12:34:27', 'Version 22', 0, 0, 1, 1, 2, 9, NULL, NULL),
+(161, 23, 'News', 'blog', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', '2017-05-23 15:31:00', '2017-09-20 12:38:49', 'Version 23', 0, 0, 1, 1, 2, 9, NULL, NULL),
+(161, 24, 'News', 'blog', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', '2017-05-23 15:31:00', '2017-09-20 12:39:23', 'Version 24', 1, 0, 1, 1, 2, 9, NULL, NULL),
 (162, 1, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-05-23 15:31:17', 'Initial Version', 0, 0, 1, 1, 2, 4, NULL, NULL),
 (162, 2, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-06-30 12:02:12', 'New Version 2', 0, 0, 1, 1, 2, 8, NULL, NULL),
 (162, 3, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-07-27 16:29:20', 'New Version 3', 0, 0, 1, 1, 2, 9, NULL, NULL),
@@ -22503,7 +23156,9 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (162, 10, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-09-14 22:24:13', 'Version 10', 0, 0, 1, 1, 2, 9, NULL, NULL),
 (162, 11, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-09-15 11:05:14', 'Version 11', 0, 0, 1, 1, 2, 9, NULL, NULL),
 (162, 12, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-09-15 11:07:23', 'Version 12', 0, 0, 1, 1, 2, 9, NULL, NULL),
-(162, 13, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-09-19 23:27:12', 'New Version 13', 1, 0, 1, 1, 2, 9, NULL, NULL),
+(162, 13, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-09-19 23:27:12', 'New Version 13', 0, 0, 1, 1, 2, 9, NULL, NULL),
+(162, 14, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-09-20 09:19:47', 'Version 14', 0, 0, 1, 1, 2, 9, NULL, NULL),
+(162, 15, 'Case Studies', 'case-studies', '', '2017-05-23 15:31:17', '2017-09-20 12:40:09', 'Version 15', 1, 0, 1, 1, 2, 9, NULL, NULL),
 (163, 1, 'Store', 'store', '', '2017-05-23 15:31:28', '2017-05-23 15:31:28', 'Initial Version', 0, 0, 1, 1, 2, 4, NULL, NULL),
 (163, 2, 'Store', 'store', '', '2017-05-23 15:31:28', '2017-07-28 13:53:21', 'Version 2', 0, 0, 1, 1, 2, 4, NULL, NULL),
 (163, 3, 'Store', 'store', '', '2017-05-23 15:31:28', '2017-07-28 14:39:00', 'Version 3', 0, 0, 1, 1, 2, 4, NULL, NULL),
@@ -22538,7 +23193,8 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (163, 32, 'Store', 'store', '', '2017-05-23 15:31:00', '2017-09-19 12:01:14', 'Version 32', 0, 0, 1, 1, 2, 13, NULL, NULL),
 (163, 33, 'Store', 'store', '', '2017-05-23 15:31:00', '2017-09-19 15:33:33', 'Version 33', 0, 0, 1, 1, 2, 13, NULL, NULL),
 (163, 34, 'Store', 'store', '', '2017-05-23 15:31:00', '2017-09-19 23:28:05', 'New Version 34', 0, 0, 1, 1, 2, 13, NULL, NULL),
-(163, 35, 'Store', 'store', '', '2017-05-23 15:31:00', '2017-09-19 23:28:07', 'New Version 35', 1, 0, 1, 1, 2, 13, NULL, NULL),
+(163, 35, 'Store', 'store', '', '2017-05-23 15:31:00', '2017-09-19 23:28:07', 'New Version 35', 0, 0, 1, 1, 2, 13, NULL, NULL),
+(163, 36, 'Store', 'store', '', '2017-05-23 15:31:00', '2017-09-20 14:16:03', 'Version 36', 1, 0, 1, 1, 2, 13, NULL, NULL),
 (164, 1, 'get in contact', 'get-in-contact', '', '2017-05-23 15:32:36', '2017-05-23 15:32:36', 'Initial Version', 0, 0, 1, 1, 2, 4, NULL, NULL),
 (164, 2, 'Get in Contact', 'get-in-contact', '', '2017-05-23 15:32:00', '2017-05-23 15:32:46', 'New Version 2', 0, 0, 1, 1, 2, 4, NULL, NULL),
 (164, 3, 'Get in Contact', 'get-in-contact', '', '2017-05-23 15:32:00', '2017-05-23 15:32:56', 'New Version 3', 0, 0, 1, 1, 2, 4, NULL, NULL),
@@ -22618,12 +23274,19 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (181, 4, 'My \'There Is No Cloud\' Sticker', 'my-there-is-no-cloud-sticker', 'Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global!', '2016-02-13 14:59:00', '2017-06-27 17:33:08', 'Version 4', 0, 0, 1, 1, 0, 6, NULL, NULL),
 (181, 5, 'My \'There Is No Cloud\' Sticker', 'my-there-is-no-cloud-sticker', 'Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global!', '2016-02-13 14:59:00', '2017-06-27 17:35:31', 'Version 5', 0, 0, 1, 1, 0, 6, NULL, NULL),
 (181, 6, 'My \'There Is No Cloud\' Sticker', 'my-there-is-no-cloud-sticker', 'Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global!', '2016-02-13 14:59:00', '2017-06-27 18:36:20', 'Version 6', 0, 0, 1, 1, 0, 6, NULL, NULL),
-(181, 7, 'My \'There Is No Cloud\' Sticker', 'my-there-is-no-cloud-sticker', 'Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global!', '2016-02-13 14:59:00', '2017-06-27 18:38:19', 'Version 7', 1, 0, 1, 1, 0, 6, NULL, NULL),
+(181, 7, 'My \'There Is No Cloud\' Sticker', 'my-there-is-no-cloud-sticker', 'Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global!', '2016-02-13 14:59:00', '2017-06-27 18:38:19', 'Version 7', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(181, 8, 'My \'There Is No Cloud\' Sticker', 'my-there-is-no-cloud-sticker', 'Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global! Like many others, I’ve had the pleasure of setting up many smartphones and tablets over the years and when It comes to the cloud storage part of the set-up (iCloud of OneDrive), the device owner look at me blankly and says “What, yes, whatever?!”. We are well and truly past the Nokia 5110 times of just popping in your SIM card and making a call with your market flashing arial.', '2016-02-13 14:59:00', '2017-09-20 12:35:14', 'New Version 8', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(181, 9, 'My \'There Is No Cloud\' Sticker', 'my-there-is-no-cloud-sticker', 'Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global! Like many others, I’ve had the pleasure of setting up many smartphones and tablets over the years and when It comes to the cloud storage part of the set-up (iCloud of OneDrive), the device owner look at me blankly and says “What, yes, whatever?!”. We are well and truly past the Nokia 5110 times of just popping in your SIM card and making a call with your market flashing arial.', '2016-02-13 14:59:00', '2017-09-20 14:51:33', 'New Version 9', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(181, 10, 'My \'There Is No Cloud\' Sticker', 'my-there-is-no-cloud-sticker', 'Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global! Like many others, I’ve had the pleasure of setting up many smartphones and tablets over the years and when It comes to the cloud storage part of the set-up (iCloud of OneDrive), the device owner look at me blankly and says “What, yes, whatever?!”. We are well and truly past the Nokia 5110 times of just popping in your SIM card and making a call with your market flashing arial.', '2016-02-13 14:59:00', '2017-09-20 14:51:34', 'New Version 10', 1, 0, 1, 1, 0, 6, NULL, NULL),
 (182, 1, '', NULL, NULL, '2017-06-20 15:19:11', '2017-06-20 15:19:11', 'Initial Version', 1, 0, NULL, NULL, 0, 6, NULL, NULL),
 (183, 1, '', '', NULL, '2017-06-20 15:19:11', '2017-06-20 15:19:11', 'Initial Version', 0, 1, 1, NULL, 0, 6, NULL, NULL),
 (185, 1, 'Starting 2016 with old challenges', 'starting-2016-old-challenges', 'Like every Tom, Dick and Harry in the land, I set myself new targets and challenges at the start of every year. Do I ever achieve them, behave yourself! It’s so frustrating telling you that, but even more so with myself for not achieving. *sigh*', '2017-06-20 15:19:00', '2017-06-20 15:19:35', 'Initial Version', 0, 0, 1, 1, 0, 6, NULL, NULL),
-(185, 2, 'Starting 2016 with old challenges', 'starting-2016-old-challenges', 'Like every Tom, Dick and Harry in the land, I set myself new targets and challenges at the start of every year. Do I ever achieve them, behave yourself! It’s so frustrating telling you that, but even more so with myself for not achieving. *sigh*', '2017-06-20 15:19:00', '2017-06-20 15:22:10', 'Version 2', 1, 0, 1, 1, 0, 6, NULL, NULL),
-(186, 1, 'A much needed Spotify widget for the Notification Centre', 'a-much-needed-spotify-widget-for-the-notification-centre', 'Since installing the new operating system, OS X Yosemite, like many I\'ve noticed a hell of a lot of new great features and design. But, being an every day MacBook user, I\'m finding some pretty cool, but some also pretty annoying.', '2017-06-20 15:26:00', '2017-06-20 15:26:44', 'Initial Version', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(185, 2, 'Starting 2016 with old challenges', 'starting-2016-old-challenges', 'Like every Tom, Dick and Harry in the land, I set myself new targets and challenges at the start of every year. Do I ever achieve them, behave yourself! It’s so frustrating telling you that, but even more so with myself for not achieving. *sigh*', '2017-06-20 15:19:00', '2017-06-20 15:22:10', 'Version 2', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(185, 3, 'Starting 2016 with old challenges', 'starting-2016-old-challenges', 'Like every Tom, Dick and Harry in the land, I set myself new targets and challenges at the start of every year. Do I ever achieve them, behave yourself! It’s so frustrating telling you that, but even more so with myself for not achieving. *sigh*', '2017-06-20 15:19:00', '2017-09-20 14:47:32', 'New Version 3', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(185, 4, 'Starting 2016 with old challenges', 'starting-2016-old-challenges', 'Like every Tom, Dick and Harry in the land, I set myself new targets and challenges at the start of every year. Do I ever achieve them, behave yourself! It’s so frustrating telling you that, but even more so with myself for not achieving. *sigh*', '2017-06-20 15:19:00', '2017-09-20 14:47:33', 'New Version 4', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(185, 5, 'Starting 2016 with old challenges', 'starting-2016-old-challenges', 'Like every Tom, Dick and Harry in the land, I set myself new targets and challenges at the start of every year. Do I ever achieve them, behave yourself! It’s so frustrating telling you that, but even more so with myself for not achieving. *sigh*', '2017-06-20 15:19:00', '2017-09-20 14:47:34', 'New Version 5', 1, 0, 1, 1, 0, 6, NULL, NULL),
+(186, 1, 'A much needed Spotify widget for the Notification Centre', 'a-much-needed-spotify-widget-for-the-notification-centre', 'Since installing the new operating system, OS X Yosemite, like many I\'ve noticed a hell of a lot of new great features and design. But, being an every day MacBook user, I\'m finding some pretty cool, but some also pretty annoying.', '2017-06-20 15:26:00', '2017-06-20 15:26:44', 'Initial Version', 0, 0, 1, 1, 0, 6, NULL, NULL);
+INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescription`, `cvDatePublic`, `cvDateCreated`, `cvComments`, `cvIsApproved`, `cvIsNew`, `cvAuthorUID`, `cvApproverUID`, `pThemeID`, `pTemplateID`, `cvActivateDatetime`, `cvPublishDate`) VALUES
 (186, 2, 'A much needed Spotify widget for the Notification Centre', 'a-much-needed-spotify-widget-for-the-notification-centre', 'Since installing the new operating system, OS X Yosemite, like many I\'ve noticed a hell of a lot of new great features and design. But, being an every day MacBook user, I\'m finding some pretty cool, but some also pretty annoying.', '2017-06-20 15:26:00', '2017-06-20 15:29:51', 'Version 2', 0, 0, 1, 1, 0, 6, NULL, NULL),
 (186, 3, 'A much needed Spotify widget for the Notification Center', 'a-much-needed-spotify-widget-for-the-notification-center', 'Since installing the new operating system, OS X Yosemite, like many I\'ve noticed a hell of a lot of new great features and design. But, being an every day MacBook user, I\'m finding some pretty cool, but some also pretty annoying.', '2017-06-20 15:26:00', '2017-06-20 15:37:47', 'New Version 3', 0, 0, 1, 1, 0, 6, NULL, NULL),
 (186, 4, 'A much needed Spotify widget for the Notification Center', 'a-much-needed-spotify-widget-for-the-notification-center', 'Since installing the new operating system, OS X Yosemite, like many I\'ve noticed a hell of a lot of new great features and design. But, being an every day MacBook user, I\'m finding some pretty cool, but some also pretty annoying.', '2017-06-20 15:26:00', '2017-06-27 16:21:00', 'New Version 4', 0, 0, 1, 1, 0, 6, NULL, NULL),
@@ -22637,14 +23300,16 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (187, 7, '\'There Is No Cloud\' Copyright Protection', 'there-no-cloud-copyright-protection', 'I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO! That would place myself in the same category as the thieving scummy $&£#’ers that stole my design and many other honest designers work also - and that’s me being polite against them!', '2016-09-10 15:38:00', '2017-06-21 09:08:12', 'Version 7', 0, 0, 1, 1, 0, 6, NULL, NULL),
 (187, 8, '\'There Is No Cloud\' Copyright Protection', 'there-no-cloud-copyright-protection', 'I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO! That would place myself in the same category as the thieving scummy $&£#’ers that stole my design and many other honest designers work also - and that’s me being polite against them!', '2016-09-10 15:38:00', '2017-06-21 09:23:02', 'Version 8', 0, 0, 1, 1, 0, 6, NULL, NULL),
 (187, 9, '\'There Is No Cloud\' Copyright Protection', 'there-no-cloud-copyright-protection', 'I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO! That would place myself in the same category as the thieving scummy $&£#’ers that stole my design and many other honest designers work also - and that’s me being polite against them!', '2016-09-12 15:38:00', '2017-06-21 09:29:05', 'New Version 9', 0, 0, 1, 1, 0, 6, NULL, NULL),
-(187, 10, '\'There Is No Cloud\' Copyright Protection', 'there-no-cloud-copyright-protection', 'I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO! That would place myself in the same category as the thieving scummy $&£#’ers that stole my design and many other honest designers work also - and that’s me being polite against them!', '2016-09-12 15:38:00', '2017-06-21 09:29:07', 'New Version 10', 0, 0, 1, 1, 0, 6, NULL, NULL);
-INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescription`, `cvDatePublic`, `cvDateCreated`, `cvComments`, `cvIsApproved`, `cvIsNew`, `cvAuthorUID`, `cvApproverUID`, `pThemeID`, `pTemplateID`, `cvActivateDatetime`, `cvPublishDate`) VALUES
+(187, 10, '\'There Is No Cloud\' Copyright Protection', 'there-no-cloud-copyright-protection', 'I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO! That would place myself in the same category as the thieving scummy $&£#’ers that stole my design and many other honest designers work also - and that’s me being polite against them!', '2016-09-12 15:38:00', '2017-06-21 09:29:07', 'New Version 10', 0, 0, 1, 1, 0, 6, NULL, NULL),
 (187, 11, '\'There Is No Cloud\' Copyright Protection', 'there-no-cloud-copyright-protection', 'I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO! That would place myself in the same category as the thieving scummy $&£#’ers that stole my design and many other honest designers work also - and that’s me being polite against them!', '2016-09-12 15:38:00', '2017-06-21 13:20:48', 'Version 11', 0, 0, 1, 1, 0, 6, NULL, NULL),
-(187, 12, '\'There Is No Cloud\' Copyright Protection', 'there-no-cloud-copyright-protection', 'I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO! That would place myself in the same category as the thieving scummy $&£#’ers that stole my design and many other honest designers work also - and that’s me being polite against them!', '2016-09-12 15:38:00', '2017-06-21 13:23:51', 'Version 12', 1, 0, 1, 1, 0, 6, NULL, NULL),
+(187, 12, '\'There Is No Cloud\' Copyright Protection', 'there-no-cloud-copyright-protection', 'I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO! That would place myself in the same category as the thieving scummy $&£#’ers that stole my design and many other honest designers work also - and that’s me being polite against them!', '2016-09-12 15:38:00', '2017-06-21 13:23:51', 'Version 12', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(187, 13, '\'There Is No Cloud\' Copyright Protection', 'there-no-cloud-copyright-protection', 'I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO! That would place myself in the same category as the thieving scummy $&£#’ers that stole my design and many other honest designers work also - and that’s me being polite against them!', '2016-09-12 15:38:00', '2017-09-20 14:50:31', 'New Version 13', 1, 0, 1, 1, 0, 6, NULL, NULL),
+(187, 14, '\'There Is No Cloud\' Copyright Protection', 'there-no-cloud-copyright-protection', 'I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO! That would place myself in the same category as the thieving scummy $&£#’ers that stole my design and many other honest designers work also - and that’s me being polite against them!', '2016-09-12 15:38:00', '2017-09-20 14:50:33', 'New Version 14', 0, 1, 1, NULL, 0, 6, NULL, NULL),
 (188, 1, '4th Month Into Self-Employment', '4th-month-into-self-employment', 'Jee. Taking a step back, it\'s been almost 4 months already. Holy Crap! Cutting a 5 year story into a nut shell, I previously worked for a secondary school within an IT department. It wasn\'t any ordinary IT department within a school, ow nooo.', '2014-02-14 16:07:00', '2017-06-20 16:07:36', 'Initial Version', 0, 0, 1, 1, 0, 6, NULL, NULL),
 (188, 2, '4th Month Into Self-Employment', '4th-month-into-self-employment', 'Jee. Taking a step back, it\'s been almost 4 months already. Holy Crap! Cutting a 5 year story into a nut shell, I previously worked for a secondary school within an IT department. It wasn\'t any ordinary IT department within a school, ow nooo.', '2014-02-14 16:07:00', '2017-06-20 16:13:32', 'Version 2', 0, 0, 1, 1, 0, 6, NULL, NULL),
 (188, 3, '4th Month Into Self-Employment', '4th-month-into-self-employment', 'Jee. Taking a step back, it\'s been almost 4 months already. Holy Crap! Cutting a 5 year story into a nut shell, I previously worked for a secondary school within an IT department. It wasn\'t any ordinary IT department within a school, ow nooo.', '2014-02-14 16:07:00', '2017-06-21 17:25:21', 'Version 3', 0, 0, 1, 1, 0, 6, NULL, NULL),
-(188, 4, '4th Month Into Self-Employment', '4th-month-into-self-employment', 'Jee. Taking a step back, it\'s been almost 4 months already. Holy Crap! Cutting a 5 year story into a nut shell, I previously worked for a secondary school within an IT department. It wasn\'t any ordinary IT department within a school, ow nooo.', '2014-02-14 16:07:00', '2017-06-21 17:28:22', 'New Version 4', 1, 0, 1, 1, 0, 6, NULL, NULL),
+(188, 4, '4th Month Into Self-Employment', '4th-month-into-self-employment', 'Jee. Taking a step back, it\'s been almost 4 months already. Holy Crap! Cutting a 5 year story into a nut shell, I previously worked for a secondary school within an IT department. It wasn\'t any ordinary IT department within a school, ow nooo.', '2014-02-14 16:07:00', '2017-06-21 17:28:22', 'New Version 4', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(188, 5, '4th Month Into Self-Employment', '4th-month-into-self-employment', 'Jee. Taking a step back, it\'s been almost 4 months already. Holy Crap! Cutting a 5 year story into a nut shell, I previously worked for a secondary school within an IT department. It wasn\'t any ordinary IT department within a school, ow nooo. We were unique in what we did, not only did we supported our base school, but 30+ other schools and businesses in and around the Surrey, UK areas.', '2014-02-14 16:07:00', '2017-09-20 12:36:05', 'New Version 5', 1, 0, 1, 1, 0, 6, NULL, NULL),
 (189, 1, 'Setting 5 Goals For 2014', 'setting-5-goals-2014', 'A warm welcome to 2014, I wish you all a happy New Year. It\'s the start of a New Year for us all, and funny enough it\'s also that time where 99.9% of us feel the need to set ourself new year resolutions, goals, targets, or whatever you call it. For me, I\'ve just rolled into my 5th month of self employment and it still feels incredible, just as it did on day one.', '2014-02-01 16:17:00', '2017-06-20 16:17:15', 'Initial Version', 0, 0, 1, 1, 0, 6, NULL, NULL),
 (189, 2, 'Setting 5 Goals For 2014', 'setting-5-goals-2014', 'A warm welcome to 2014, I wish you all a happy New Year. It\'s the start of a New Year for us all, and funny enough it\'s also that time where 99.9% of us feel the need to set ourself new year resolutions, goals, targets, or whatever you call it. For me, I\'ve just rolled into my 5th month of self employment and it still feels incredible, just as it did on day one.', '2014-02-01 16:17:00', '2017-06-20 16:18:45', 'Version 2', 0, 0, 1, 1, 0, 6, NULL, NULL),
 (189, 3, 'Setting 5 Goals For 2014', 'setting-5-goals-2014', 'A warm welcome to 2014, I wish you all a happy New Year. It\'s the start of a New Year for us all, and funny enough it\'s also that time where 99.9% of us feel the need to set ourself new year resolutions, goals, targets, or whatever you call it. For me, I\'ve just rolled into my 5th month of self employment and it still feels incredible, just as it did on day one.', '2014-02-01 16:17:00', '2017-06-21 17:28:56', 'New Version 3', 0, 0, 1, 1, 0, 6, NULL, NULL),
@@ -22669,7 +23334,10 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (192, 2, 'There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 'there-no-cloud-getting-1-sticker-mule-marketplace', 'The Sticker Mule marketplace has been growing rapidly over the past couple of years. We love seeing applications (apply here) and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers.', '2016-04-21 15:26:00', '2017-06-21 15:32:59', 'Version 2', 0, 0, 1, 1, 0, 6, NULL, NULL),
 (192, 3, 'There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 'there-no-cloud-getting-1-sticker-mule-marketplace', 'The Sticker Mule marketplace has been growing rapidly over the past couple of years. Sticker Mule loves seeing applications and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers.', '2016-04-21 15:26:00', '2017-06-21 15:33:51', 'New Version 3', 0, 0, 1, 1, 0, 6, NULL, NULL),
 (192, 4, 'There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 'there-no-cloud-getting-1-sticker-mule-marketplace', 'The Sticker Mule marketplace has been growing rapidly over the past couple of years. Sticker Mule loves seeing applications and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers.', '2016-04-21 15:26:00', '2017-06-21 15:36:47', 'Version 4', 0, 0, 1, 1, 0, 6, NULL, NULL),
-(192, 5, 'There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 'there-no-cloud-getting-1-sticker-mule-marketplace', 'The Sticker Mule marketplace has been growing rapidly over the past couple of years. Sticker Mule loves seeing applications and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers.', '2016-04-21 15:26:00', '2017-09-19 22:29:12', 'Version 5', 1, 0, 1, 1, 0, 6, NULL, NULL),
+(192, 5, 'There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 'there-no-cloud-getting-1-sticker-mule-marketplace', 'The Sticker Mule marketplace has been growing rapidly over the past couple of years. Sticker Mule loves seeing applications and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers.', '2016-04-21 15:26:00', '2017-09-19 22:29:12', 'Version 5', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(192, 6, 'There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 'there-no-cloud-getting-1-sticker-mule-marketplace', 'The Sticker Mule marketplace has been growing rapidly over the past couple of years. Sticker Mule loves seeing applications and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers. But what do the top selling designs have in common? Is there a secret? What can other sellers learn?', '2016-04-21 15:26:00', '2017-09-20 12:36:43', 'New Version 6', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(192, 7, 'There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 'there-no-cloud-getting-1-sticker-mule-marketplace', 'The Sticker Mule marketplace has been growing rapidly over the past couple of years. Sticker Mule loves seeing applications and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers. And Chris Watterston\'s sticker did just that!', '2016-04-21 15:26:00', '2017-09-20 12:37:08', 'New Version 7', 0, 0, 1, 1, 0, 6, NULL, NULL),
+(192, 8, 'There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 'there-no-cloud-getting-1-sticker-mule-marketplace', 'The Sticker Mule marketplace has been growing rapidly over the past couple of years. Sticker Mule loves seeing applications and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers. Chris Watterston\'s sticker did just that!', '2016-04-21 15:26:00', '2017-09-20 12:38:10', 'New Version 8', 1, 0, 1, 1, 0, 6, NULL, NULL),
 (193, 1, '', NULL, NULL, '2017-06-27 13:13:43', '2017-06-27 13:13:43', 'Initial Version', 1, 0, NULL, NULL, 0, 8, NULL, NULL),
 (194, 1, '', NULL, NULL, '2017-06-27 14:31:47', '2017-06-27 14:31:47', 'Initial Version', 1, 0, NULL, NULL, 0, 9, NULL, NULL),
 (195, 1, 'Surveying up a Website Redesign', 'surveying-up-a-website-redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '2016-09-09 15:30:00', '2017-06-30 15:37:14', 'Initial Version', 1, 0, 1, 1, 2, 6, NULL, NULL),
@@ -22745,7 +23413,8 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (201, 48, 'What we do', 'what-we-do', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-08-01 10:15:27', 'Version 48', 0, 0, 1, 1, 2, 8, NULL, NULL),
 (201, 49, 'What we do', 'what-we-do', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-08-01 17:47:22', 'Version 49', 0, 0, 1, 1, 2, 8, NULL, NULL),
 (201, 50, 'What we do', 'what-we-do', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-08-01 17:52:11', 'Version 50', 0, 0, 1, 1, 2, 8, NULL, NULL),
-(201, 51, 'What we do', 'what-we-do', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-08-01 18:27:46', 'Version 51', 0, 0, 1, 1, 2, 8, NULL, NULL),
+(201, 51, 'What we do', 'what-we-do', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-08-01 18:27:46', 'Version 51', 0, 0, 1, 1, 2, 8, NULL, NULL);
+INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescription`, `cvDatePublic`, `cvDateCreated`, `cvComments`, `cvIsApproved`, `cvIsNew`, `cvAuthorUID`, `cvApproverUID`, `pThemeID`, `pTemplateID`, `cvActivateDatetime`, `cvPublishDate`) VALUES
 (201, 52, 'What we do', 'what-we-do', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-08-01 18:31:33', 'Version 52', 0, 0, 1, 1, 2, 8, NULL, NULL),
 (201, 53, 'What we do', 'what-we-do', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-08-01 18:37:44', 'Version 53', 0, 0, 1, 1, 2, 8, NULL, NULL),
 (201, 54, 'What we do', 'what-we-do', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '2017-05-23 15:30:00', '2017-08-01 18:43:00', 'Version 54', 0, 0, 1, 1, 2, 8, NULL, NULL),
@@ -22783,8 +23452,7 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (202, 24, 'Shopify eCommerce Web Design Service', 'shopify-ecommerce-website-design-service', 'Shopify eCommerce Web Design Service', '2017-08-09 07:46:00', '2017-08-09 11:06:23', 'Version 24', 0, 0, 1, 1, 2, 11, NULL, NULL),
 (202, 25, 'Shopify eCommerce Web Design Service', 'shopify-ecommerce-website-design-service', 'Shopify eCommerce Web Design Service', '2017-08-09 07:46:00', '2017-08-09 11:07:34', 'Version 25', 0, 0, 1, 1, 2, 11, NULL, NULL),
 (202, 26, 'Shopify eCommerce Web Design Service', 'shopify-ecommerce-website-design-service', 'Shopify eCommerce Web Design Service', '2017-08-09 07:46:00', '2017-08-09 11:08:39', 'Version 26', 0, 0, 1, 1, 2, 11, NULL, NULL),
-(202, 27, 'Shopify eCommerce Web Design Service', 'shopify-ecommerce-website-design-service', 'Shopify eCommerce Web Design Service', '2017-08-09 07:46:00', '2017-08-09 11:15:10', 'Version 27', 0, 0, 1, 1, 2, 11, NULL, NULL);
-INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescription`, `cvDatePublic`, `cvDateCreated`, `cvComments`, `cvIsApproved`, `cvIsNew`, `cvAuthorUID`, `cvApproverUID`, `pThemeID`, `pTemplateID`, `cvActivateDatetime`, `cvPublishDate`) VALUES
+(202, 27, 'Shopify eCommerce Web Design Service', 'shopify-ecommerce-website-design-service', 'Shopify eCommerce Web Design Service', '2017-08-09 07:46:00', '2017-08-09 11:15:10', 'Version 27', 0, 0, 1, 1, 2, 11, NULL, NULL),
 (202, 28, 'Shopify eCommerce Web Design Service', 'shopify-ecommerce-website-design-service', 'Shopify eCommerce Web Design Service', '2017-08-09 07:46:00', '2017-08-09 11:16:02', 'Version 28', 0, 0, 1, 1, 2, 11, NULL, NULL),
 (202, 29, 'Shopify eCommerce Web Design Service', 'shopify-ecommerce-website-design-service', 'Shopify eCommerce Web Design Service', '2017-08-09 07:46:00', '2017-08-09 11:32:56', 'Version 29', 0, 0, 1, 1, 2, 11, NULL, NULL),
 (202, 30, 'Shopify eCommerce Web Design Service', 'shopify-ecommerce-website-design-service', 'Shopify eCommerce Web Design Service', '2017-08-09 07:46:00', '2017-08-09 11:33:29', 'Version 30', 0, 0, 1, 1, 2, 11, NULL, NULL),
@@ -22968,12 +23636,14 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (211, 104, 'Mobile Application Development', 'mobile-application-development-solution', 'Mobile App Development Service', '2017-08-09 07:46:00', '2017-09-12 16:22:03', 'New Version 104', 0, 0, 1, 1, 2, 11, NULL, NULL),
 (211, 105, 'Mobile Application Development', 'mobile-application-development-solution', 'Mobile App Development Service', '2017-08-09 07:46:00', '2017-09-12 16:22:05', 'New Version 105', 0, 0, 1, 1, 2, 11, NULL, NULL),
 (211, 106, 'Mobile Application Development', 'mobile-application-development-solution', 'Mobile App Development Service', '2017-08-09 07:46:00', '2017-09-12 17:13:15', 'Version 106', 0, 0, 1, 1, 2, 11, NULL, NULL),
-(211, 107, 'Mobile Application Development', 'mobile-application-development-solution', 'Mobile App Development Service', '2017-08-09 07:46:00', '2017-09-12 17:23:48', 'Version 107', 0, 0, 1, 1, 2, 11, NULL, NULL),
+(211, 107, 'Mobile Application Development', 'mobile-application-development-solution', 'Mobile App Development Service', '2017-08-09 07:46:00', '2017-09-12 17:23:48', 'Version 107', 0, 0, 1, 1, 2, 11, NULL, NULL);
+INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescription`, `cvDatePublic`, `cvDateCreated`, `cvComments`, `cvIsApproved`, `cvIsNew`, `cvAuthorUID`, `cvApproverUID`, `pThemeID`, `pTemplateID`, `cvActivateDatetime`, `cvPublishDate`) VALUES
 (211, 108, 'Mobile Application Development', 'mobile-application-development-solution', 'Mobile App Development Service', '2017-08-09 07:46:00', '2017-09-12 17:47:40', 'Version 108', 0, 0, 1, 1, 2, 11, NULL, NULL),
 (211, 109, 'Mobile Application Development', 'mobile-application-development-solution', 'Mobile App Development Service', '2017-08-09 07:46:00', '2017-09-13 09:15:38', 'Version 109', 0, 0, 1, 1, 2, 11, NULL, NULL),
 (211, 110, 'Mobile Application Development', 'mobile-application-development-solution', 'Mobile App Development Service', '2017-08-09 07:46:00', '2017-09-13 16:01:02', 'Version 110', 0, 0, 1, 1, 2, 11, NULL, NULL),
 (211, 111, 'Mobile Application Development', 'mobile-application-development-solution', 'Mobile App Development Service', '2017-08-09 07:46:00', '2017-09-15 09:13:28', 'Version 111', 0, 0, 1, 1, 2, 11, NULL, NULL),
-(211, 112, 'Mobile Application Development', 'mobile-application-development-solution', 'Mobile App Development Service', '2017-08-09 07:46:00', '2017-09-19 14:48:48', 'Version 112', 1, 0, 1, 1, 2, 11, NULL, NULL),
+(211, 112, 'Mobile Application Development', 'mobile-application-development-solution', 'Mobile App Development Service', '2017-08-09 07:46:00', '2017-09-19 14:48:48', 'Version 112', 0, 0, 1, 1, 2, 11, NULL, NULL),
+(211, 113, 'Mobile Application Development', 'mobile-application-development-solution', 'Mobile App Development Service', '2017-08-09 07:46:00', '2017-09-20 08:42:08', 'Version 113', 1, 0, 1, 1, 2, 11, NULL, NULL),
 (212, 1, 'Shopify Website Design Service', 'shopify-website-design-service', 'Shopify Website Design Service', '2017-08-09 07:46:37', '2017-09-11 08:47:12', 'Initial Version', 0, 0, 1, NULL, 0, 8, NULL, NULL),
 (212, 2, 'Shopify Website Design Service', 'shopify-website-design-service', 'Shopify Website Design Service', '2017-08-09 07:46:37', '2017-09-11 08:47:13', 'New Version 2', 0, 0, 1, NULL, 2, 8, NULL, NULL),
 (212, 3, 'Shopify Website Design Service', 'shopify-website-design-service', 'Shopify Website Design Service', '2017-08-09 07:46:37', '2017-09-11 08:47:14', 'New Version 3', 0, 0, 1, NULL, 2, 11, NULL, NULL),
@@ -23011,8 +23681,7 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (212, 35, 'Shopify eCommerce Web Design Service', 'shopify-ecommerce-website-design-service', 'Shopify eCommerce Web Design Service', '2017-08-09 07:46:00', '2017-09-11 08:47:47', 'Version 35', 0, 0, 1, NULL, 2, 11, NULL, NULL),
 (212, 36, 'Shopify eCommerce Web Design Service', 'shopify-ecommerce-website-design-service', 'Shopify eCommerce Web Design Service', '2017-08-09 07:46:00', '2017-09-11 08:47:48', 'Version 36', 0, 0, 1, NULL, 2, 11, NULL, NULL),
 (212, 37, 'Shopify eCommerce Web Design Service', 'shopify-ecommerce-website-design-service', 'Shopify eCommerce Web Design Service', '2017-08-09 07:46:00', '2017-09-11 08:47:49', 'Version 37', 0, 0, 1, NULL, 2, 11, NULL, NULL),
-(212, 38, 'Shopify eCommerce Web Design Service', 'shopify-ecommerce-website-design-service', 'Shopify eCommerce Web Design Service', '2017-08-09 07:46:00', '2017-09-11 08:47:50', 'Version 38', 0, 0, 1, NULL, 2, 11, NULL, NULL);
-INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescription`, `cvDatePublic`, `cvDateCreated`, `cvComments`, `cvIsApproved`, `cvIsNew`, `cvAuthorUID`, `cvApproverUID`, `pThemeID`, `pTemplateID`, `cvActivateDatetime`, `cvPublishDate`) VALUES
+(212, 38, 'Shopify eCommerce Web Design Service', 'shopify-ecommerce-website-design-service', 'Shopify eCommerce Web Design Service', '2017-08-09 07:46:00', '2017-09-11 08:47:50', 'Version 38', 0, 0, 1, NULL, 2, 11, NULL, NULL),
 (212, 39, 'Shopify eCommerce Web Design Service', 'shopify-ecommerce-website-design-service', 'Shopify eCommerce Web Design Service', '2017-08-09 07:46:00', '2017-09-11 08:47:51', 'Version 39', 0, 0, 1, NULL, 2, 11, NULL, NULL),
 (212, 40, 'Shopify eCommerce Web Design Service', 'shopify-ecommerce-website-design-service', 'Shopify eCommerce Web Design Service', '2017-08-09 07:46:00', '2017-09-11 08:47:52', 'Version 40', 0, 0, 1, NULL, 2, 11, NULL, NULL),
 (212, 41, 'Shopify eCommerce Web Design Service', 'shopify-ecommerce-website-design-service', 'Shopify eCommerce Web Design Service', '2017-08-09 07:46:00', '2017-09-11 08:47:53', 'Version 41', 0, 0, 1, NULL, 2, 11, NULL, NULL),
@@ -23112,7 +23781,8 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (214, 1, '', NULL, NULL, '2017-09-13 22:04:35', '2017-09-13 22:04:35', 'Initial Version', 1, 0, NULL, NULL, 0, 13, NULL, NULL),
 (215, 1, 'Legal Documentation', 'legal-documentation', '', '2017-09-16 12:09:48', '2017-09-16 12:09:48', 'Initial Version', 0, 0, 1, 1, 2, 8, NULL, NULL),
 (215, 2, 'Legal Documentation', 'legal-documentation', '', '2017-09-16 12:09:00', '2017-09-16 12:12:52', 'New Version 2', 0, 0, 1, 1, 2, 8, NULL, NULL),
-(215, 3, 'Legal Documentation', 'legal-documentation', '', '2017-09-16 12:09:00', '2017-09-16 21:42:52', 'New Version 3', 1, 0, 1, 1, 2, 8, NULL, NULL),
+(215, 3, 'Legal Documentation', 'legal-documentation', '', '2017-09-16 12:09:00', '2017-09-16 21:42:52', 'New Version 3', 0, 0, 1, 1, 2, 8, NULL, NULL),
+(215, 4, 'Legal Documentation', 'legal-documentation', '', '2017-09-16 12:09:00', '2017-09-20 15:28:04', 'New Version 4', 1, 0, 1, 1, 2, 8, NULL, NULL),
 (216, 1, 'Terms and Conditions', 'terms-and-conditions', '', '2017-09-16 12:14:43', '2017-09-16 12:14:43', 'Initial Version', 0, 0, 1, 1, 2, 8, NULL, NULL),
 (216, 2, 'Terms and Conditions', 'terms-and-conditions', '', '2017-09-16 12:14:00', '2017-09-16 12:15:19', 'New Version 2', 0, 0, 1, 1, 2, 8, NULL, NULL),
 (216, 3, 'Terms and Conditions', 'terms-and-conditions', '', '2017-09-16 12:14:00', '2017-09-16 12:16:03', 'New Version 3', 0, 0, 1, 1, 2, 8, NULL, NULL),
@@ -23132,16 +23802,25 @@ INSERT INTO `CollectionVersions` (`cID`, `cvID`, `cvName`, `cvHandle`, `cvDescri
 (216, 17, 'Terms and Conditions', 'terms-and-conditions', '', '2017-09-16 12:14:00', '2017-09-17 14:44:12', 'Version 17', 0, 0, 1, 1, 2, 8, NULL, NULL),
 (216, 18, 'Terms and Conditions', 'terms-and-conditions', '', '2017-09-16 12:14:00', '2017-09-17 20:46:37', 'Version 18', 0, 0, 1, 1, 2, 8, NULL, NULL),
 (216, 19, 'Terms and Conditions', 'terms-and-conditions', '', '2017-09-16 12:14:00', '2017-09-17 21:17:53', 'Version 19', 0, 0, 1, 1, 2, 8, NULL, NULL),
-(216, 20, 'Terms and Conditions', 'terms-and-conditions', '', '2017-09-16 12:14:00', '2017-09-18 09:36:27', 'Version 20', 1, 0, 1, 1, 2, 8, NULL, NULL),
+(216, 20, 'Terms and Conditions', 'terms-and-conditions', '', '2017-09-16 12:14:00', '2017-09-18 09:36:27', 'Version 20', 0, 0, 1, 1, 2, 8, NULL, NULL),
+(216, 21, 'Terms and Conditions', 'terms-and-conditions', '', '2017-09-16 12:14:00', '2017-09-20 15:29:25', 'New Version 21', 1, 0, 1, 1, 2, 8, NULL, NULL),
 (217, 1, 'Cookie Policy', 'cookie-policy', 'Cookie Policy', '2017-09-19 22:32:59', '2017-09-19 22:32:59', 'Initial Version', 0, 0, 1, 1, 2, 8, NULL, NULL),
 (217, 2, 'Cookie Policy', 'cookie-policy', 'Cookie Policy', '2017-09-19 22:32:59', '2017-09-19 22:35:08', 'Version 2', 0, 0, 1, 1, 2, 8, NULL, NULL),
 (217, 3, 'Cookie Policy', 'cookie-policy', 'Cookie Policy', '2017-09-19 22:32:59', '2017-09-19 22:50:03', 'Version 3', 0, 0, 1, 1, 2, 8, NULL, NULL),
-(217, 4, 'Cookie Policy', 'cookie-policy', 'Cookie Policy', '2017-09-19 22:32:59', '2017-09-19 23:08:07', 'Version 4', 1, 0, 1, 1, 2, 8, NULL, NULL),
+(217, 4, 'Cookie Policy', 'cookie-policy', 'Cookie Policy', '2017-09-19 22:32:59', '2017-09-19 23:08:07', 'Version 4', 0, 0, 1, 1, 2, 8, NULL, NULL),
+(217, 5, 'Cookie Policy', 'cookie-policy', 'Cookie Policy', '2017-09-19 22:32:00', '2017-09-20 15:28:37', 'New Version 5', 1, 0, 1, 1, 2, 8, NULL, NULL),
 (218, 1, 'Terms of Use', 'terms-of-use', 'Terms of Use', '2017-09-19 22:52:05', '2017-09-19 22:52:05', 'Initial Version', 0, 0, 1, 1, 2, 8, NULL, NULL),
 (218, 2, 'Terms of Use', 'terms-of-use', 'Terms of Use', '2017-09-19 22:52:05', '2017-09-19 22:52:39', 'Version 2', 0, 0, 1, 1, 2, 8, NULL, NULL),
-(218, 3, 'Terms of Use', 'terms-of-use', 'Terms of Use', '2017-09-19 22:52:05', '2017-09-19 23:06:49', 'Version 3', 1, 0, 1, 1, 2, 8, NULL, NULL),
+(218, 3, 'Terms of Use', 'terms-of-use', 'Terms of Use', '2017-09-19 22:52:05', '2017-09-19 23:06:49', 'Version 3', 0, 0, 1, 1, 2, 8, NULL, NULL),
+(218, 4, 'Terms of Use', 'terms-of-use', 'Terms of Use', '2017-09-19 22:52:00', '2017-09-20 15:28:55', 'New Version 4', 1, 0, 1, 1, 2, 8, NULL, NULL),
 (219, 1, 'Accessibility', 'accessibility', 'Accessibility', '2017-09-19 23:10:48', '2017-09-19 23:10:48', 'Initial Version', 0, 0, 1, 1, 2, 8, NULL, NULL),
-(219, 2, 'Accessibility', 'accessibility', 'Accessibility', '2017-09-19 23:10:48', '2017-09-19 23:12:59', 'Version 2', 1, 0, 1, 1, 2, 8, NULL, NULL);
+(219, 2, 'Accessibility', 'accessibility', 'Accessibility', '2017-09-19 23:10:48', '2017-09-19 23:12:59', 'Version 2', 0, 0, 1, 1, 2, 8, NULL, NULL),
+(219, 3, 'Accessibility', 'accessibility', 'Accessibility', '2017-09-19 23:10:00', '2017-09-20 15:29:07', 'New Version 3', 1, 0, 1, 1, 2, 8, NULL, NULL),
+(220, 1, 'Shipping, Returns and Refund Policy', 'shipping-returns-and-refund-policy', 'This website is operated by Chris Watterston. Throughout the site, the terms “we”, “us” and “our” refer to Chris Watterston. Chris Watterston offers this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.', '2017-09-20 14:59:33', '2017-09-20 14:59:33', 'Initial Version', 0, 0, 1, 1, 2, 8, NULL, NULL),
+(220, 2, 'Shipping, Returns and Refund Policy', 'shipping-returns-and-refund-policy', 'This website is operated by Chris Watterston. Throughout the site, the terms “we”, “us” and “our” refer to Chris Watterston. Chris Watterston offers this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.', '2017-09-20 14:59:33', '2017-09-20 15:00:30', 'Version 2', 0, 0, 1, 1, 2, 8, NULL, NULL),
+(220, 3, 'Shipping, Returns and Refund Policy', 'shipping-returns-and-refund-policy', 'This website is operated by Chris Watterston. Throughout the site, the terms “we”, “us” and “our” refer to Chris Watterston. Chris Watterston offers this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.', '2017-09-20 14:59:33', '2017-09-20 15:23:01', 'Version 3', 0, 0, 1, 1, 2, 8, NULL, NULL),
+(220, 4, 'Shipping, Returns and Refund Policy', 'shipping-returns-and-refund-policy', 'This website is operated by Chris Watterston. Throughout the site, the terms “we”, “us” and “our” refer to Chris Watterston. Chris Watterston offers this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.', '2017-09-20 14:59:33', '2017-09-20 15:26:22', 'Version 4', 0, 0, 1, 1, 2, 8, NULL, NULL),
+(220, 5, 'Shipping, Returns and Refund Policy', 'shipping-returns-and-refund-policy', 'This website is operated by Chris Watterston. Throughout the site, the terms “we”, “us” and “our” refer to Chris Watterston. Chris Watterston offers this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.', '2017-09-20 14:59:00', '2017-09-20 15:29:18', 'New Version 5', 1, 0, 1, 1, 2, 8, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -23956,7 +24635,11 @@ INSERT INTO `FileAttributeValues` (`fID`, `fvID`, `akID`, `avID`) VALUES
 (51, 1, 16, 2163),
 (51, 1, 17, 2164),
 (52, 1, 16, 2165),
-(52, 1, 17, 2166);
+(52, 1, 17, 2166),
+(53, 1, 16, 2305),
+(53, 1, 17, 2306),
+(54, 1, 16, 2325),
+(54, 1, 17, 2326);
 
 -- --------------------------------------------------------
 
@@ -24079,7 +24762,11 @@ INSERT INTO `FileImageThumbnailPaths` (`fileID`, `fileVersionID`, `thumbnailType
 (51, 1, 'file_manager_listing', 1, '/thumbnails/file_manager_listing/1215/0540/0492/banner-thereisnocloud-clothing.jpg', 0, NULL, NULL),
 (51, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/1215/0540/0492/banner-thereisnocloud-clothing.jpg', 0, NULL, NULL),
 (52, 1, 'file_manager_listing', 1, '/thumbnails/file_manager_listing/9015/0546/7928/banner-skoolping.jpg', 0, NULL, NULL),
-(52, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/9015/0546/7928/banner-skoolping.jpg', 0, NULL, NULL);
+(52, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/9015/0546/7928/banner-skoolping.jpg', 0, NULL, NULL),
+(53, 1, 'file_manager_listing', 1, '/thumbnails/file_manager_listing/9615/0591/5226/banner-2016tagets.jpg', 0, NULL, NULL),
+(53, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/9615/0591/5226/banner-2016tagets.jpg', 0, NULL, NULL),
+(54, 1, 'file_manager_listing', 1, '/thumbnails/file_manager_listing/6515/0591/5404/banner-secure.jpg', 0, NULL, NULL),
+(54, 1, 'file_manager_listing_2x', 1, '/thumbnails/file_manager_listing_2x/6515/0591/5404/banner-secure.jpg', 0, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -24223,7 +24910,9 @@ INSERT INTO `Files` (`fID`, `fDateAdded`, `fPassword`, `fOverrideSetPermissions`
 (48, '2017-09-14 09:23:10', NULL, 0, 0, 7, 1, 1),
 (49, '2017-09-14 09:23:10', NULL, 0, 0, 7, 1, 1),
 (51, '2017-09-14 15:48:12', NULL, 0, 0, 7, 1, 1),
-(52, '2017-09-15 10:32:08', NULL, 0, 0, 7, 1, 1);
+(52, '2017-09-15 10:32:08', NULL, 0, 0, 7, 1, 1),
+(53, '2017-09-20 14:47:06', NULL, 0, 0, 7, 1, 1),
+(54, '2017-09-20 14:50:04', NULL, 0, 0, 7, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -24290,7 +24979,9 @@ INSERT INTO `FileSearchIndexAttributes` (`fID`, `ak_width`, `ak_height`, `ak_dur
 (48, '600.0000', '467.0000', '0.0000'),
 (49, '600.0000', '467.0000', '0.0000'),
 (51, '1400.0000', '300.0000', '0.0000'),
-(52, '2124.0000', '632.0000', '0.0000');
+(52, '2124.0000', '632.0000', '0.0000'),
+(53, '1440.0000', '250.0000', '0.0000'),
+(54, '1440.0000', '250.0000', '0.0000');
 
 -- --------------------------------------------------------
 
@@ -24363,7 +25054,9 @@ INSERT INTO `FileSetFiles` (`fsfID`, `fID`, `fsID`, `timestamp`, `fsDisplayOrder
 (51, 46, 6, '2017-09-14 08:24:57', 3),
 (52, 45, 6, '2017-09-14 08:24:57', 4),
 (54, 51, 5, '2017-09-14 14:48:25', 6),
-(55, 52, 2, '2017-09-15 09:32:23', 9);
+(55, 52, 2, '2017-09-15 09:32:23', 9),
+(56, 53, 2, '2017-09-20 13:47:13', 10),
+(57, 54, 2, '2017-09-20 13:50:14', 11);
 
 -- --------------------------------------------------------
 
@@ -24620,7 +25313,9 @@ INSERT INTO `FileVersions` (`fvID`, `fvFilename`, `fvPrefix`, `fvDateAdded`, `fv
 (1, 'thereisnocloud-magnet-4.jpg', '451505377390', '2017-09-14 09:23:10', '2017-09-14 09:23:10', 1, 1, 28053, 1, 'thereisnocloud-magnet-4.jpg', '', 'jpg', 1, '', 1, 0, 48),
 (1, 'thereisnocloud-magnet-2.jpg', '871505377390', '2017-09-14 09:23:10', '2017-09-14 09:23:10', 1, 1, 36688, 1, 'thereisnocloud-magnet-2.jpg', '', 'jpg', 1, '', 1, 0, 49),
 (1, 'banner-thereisnocloud-clothing.jpg', '121505400492', '2017-09-14 15:48:13', '2017-09-14 15:48:13', 1, 1, 43349, 1, 'banner-thereisnocloud-clothing.jpg', '', 'jpg', 1, '', 1, 0, 51),
-(1, 'banner-skoolping.jpg', '901505467928', '2017-09-15 10:32:08', '2017-09-15 10:32:08', 1, 1, 22818, 1, 'banner-skoolping.jpg', '', 'jpg', 1, '', 1, 0, 52);
+(1, 'banner-skoolping.jpg', '901505467928', '2017-09-15 10:32:08', '2017-09-15 10:32:08', 1, 1, 22818, 1, 'banner-skoolping.jpg', '', 'jpg', 1, '', 1, 0, 52),
+(1, 'banner-2016tagets.jpg', '961505915226', '2017-09-20 14:47:06', '2017-09-20 14:47:06', 1, 1, 21459, 1, 'banner-2016tagets.jpg', '', 'jpg', 1, '', 1, 0, 53),
+(1, 'banner-secure.jpg', '651505915404', '2017-09-20 14:50:04', '2017-09-20 14:50:04', 1, 1, 3685, 1, 'banner-secure.jpg', '', 'jpg', 1, '', 1, 0, 54);
 
 -- --------------------------------------------------------
 
@@ -25640,7 +26335,8 @@ INSERT INTO `PagePaths` (`cPath`, `ppID`, `cID`, `ppIsCanonical`, `ppGeneratedFr
 ('/legal-documentation/terms-and-conditions', 212, 216, 1, 1),
 ('/legal-documentation/cookie-policy', 213, 217, 1, 1),
 ('/legal-documentation/terms-of-use', 214, 218, 1, 1),
-('/legal-documentation/accessibility', 215, 219, 1, 1);
+('/legal-documentation/accessibility', 215, 219, 1, 1),
+('/legal-documentation/shipping-returns-and-refund-policy', 216, 220, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -26025,11 +26721,12 @@ INSERT INTO `Pages` (`cID`, `siteTreeID`, `ptID`, `cIsTemplate`, `uID`, `cIsChec
 (212, 1, 10, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 2, 159, 0, 0, -1, '0', 0, 0),
 (213, 1, 5, 1, NULL, 0, NULL, NULL, NULL, 1, 213, 'OVERRIDE', NULL, 0, NULL, 0, 1, 0, 0, 0, 0, 0, -1, '0', 0, 0),
 (214, 1, 5, 1, NULL, 0, NULL, NULL, NULL, 1, 214, 'OVERRIDE', NULL, 0, NULL, 0, 1, 0, 0, 0, 0, 0, -1, '0', 0, 0),
-(215, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 4, 7, 1, 0, 1, -1, '0', 0, 0),
-(216, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 1, 215, 0, 215, -1, '0', 0, 0),
-(217, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 2, 215, 0, 215, -1, '0', 0, 0),
-(218, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 3, 215, 0, 215, -1, '0', 0, 0),
-(219, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 4, 215, 0, 215, -1, '0', 0, 0);
+(215, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 5, 7, 1, 0, 1, -1, '0', 0, 0),
+(216, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 4, 215, 0, 215, -1, '0', 0, 0),
+(217, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 0, 215, 0, 215, -1, '0', 0, 0),
+(218, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 1, 215, 0, 215, -1, '0', 0, 0),
+(219, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 2, 215, 0, 215, -1, '0', 0, 0),
+(220, 1, 5, 0, 1, 0, NULL, NULL, NULL, 1, 1, 'PARENT', NULL, 0, NULL, 0, 1, 0, 3, 215, 0, 215, -1, '0', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -26054,7 +26751,7 @@ CREATE TABLE `PageSearchIndex` (
 --
 
 INSERT INTO `PageSearchIndex` (`cID`, `content`, `cName`, `cDescription`, `cPath`, `cDatePublic`, `cDateLastIndexed`, `cDateLastSitemapped`, `cRequiresReindex`) VALUES
-(1, 'Facebook feed here... The Original. The Unique. \r\n#TherIsNoCloud\r\n\r\nNever in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global! Over 20,000 printed units sold globally, the words are spreading far and wide.  \r\n\r\n"There is no cloud. It\'s just someone else\'s computer" It\'s only the truth, but I wonder how many people really think there really is a "cloud" that stores all our data? \r\n\r\n More about the \'There is no Cloud\' design Shop \'There is no Cloud\' products \r\n A mobile app for every side of education. \r\nStarting with your SKOOL.\r\n\r\nAreas of education are turning digital, and so are parent demands. Parents like to be updated in a convenient way. A way that doesn\'t always require them to visit a blog, download a document or search your website relentlessly. \r\n\r\nSKOOLping® is bringing the forefront of today’s technology to your finger tips. Through an easy to use web interface built into your website’s content management system, you\'ll seamlessly and directly be connecting to your community. Enabling you to ping updates for Events, News, Directions, Notifications, Pictures, Links, Documents, Forms - and much more. \r\n\r\n COMING SOON in 2017 \r\n Website Design\r\n\r\n I take pride in ensuring that the online appearance of individuals, start-ups and established brands, go above and beyond compared to competitors. Let me create something beautiful for you and your audience. \r\n Mobile App\r\n\r\n There are already so many mobile applications on the market that are identical from one another, you want something unique, something branded - that\'s what I do. Let me create something beautiful for you and your audience. \r\n eCommerce Design\r\n\r\n Your shop, your brand. I bring your eCommerce store to life and integrate into Shopify. Your online store should be your store. Shopify allows me to take years of experience, and apply a bespoke solution to your store. \r\n Let\'s chat about your solution\r\n\r\n find out about my solutions \r\n ', 'Home', 'Welcome to Chris Watterston', '', '2017-05-22 15:59:00', '2017-09-19 09:03:00', NULL, 0),
+(1, 'Facebook feed here... The Original. The Unique. \r\n#TherIsNoCloud\r\n\r\nNever in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global! Over 20,000 printed units sold globally, the words are spreading far and wide.  \r\n\r\n"There is no cloud. It\'s just someone else\'s computer" It\'s only the truth, but I wonder how many people really think there really is a "cloud" that stores all our data? \r\n\r\n More about the \'There is no Cloud\' design Shop \'There is no Cloud\' products \r\n A mobile app for every side of education. \r\nStarting with your SKOOL.\r\n\r\nAreas of education are turning digital, and so are parent demands. Parents like to be updated in a convenient way. A way that doesn\'t always require them to visit a blog, download a document or search your website relentlessly. \r\n\r\nSKOOLping® is bringing the forefront of today’s technology to your finger tips. Through an easy to use web interface built into your website’s content management system, you\'ll seamlessly and directly be connecting to your community. Enabling you to ping updates for Events, News, Directions, Notifications, Pictures, Links, Documents, Forms - and much more. \r\n\r\n COMING SOON in 2017 \r\n Website Design\r\n\r\n I take pride in ensuring that the online appearance of individuals, start-ups and established brands, go above and beyond compared to competitors. Let me create something beautiful for you and your audience. \r\n Mobile App\r\n\r\n There are already so many mobile applications on the market that are identical from one another, you want something unique, something branded - that\'s what I do. Let me create something beautiful for you and your audience. \r\n eCommerce Design\r\n\r\n Your shop, your brand. I bring your eCommerce store to life and integrate into Shopify. Your online store should be your store. Shopify allows me to take years of experience, and apply a bespoke solution to your store. \r\n Let\'s chat about your solution\r\n\r\n find out about my solutions \r\n ', 'Home', 'Welcome to Chris Watterston', '', '2017-05-22 15:59:00', '2017-09-20 12:56:41', NULL, 0),
 (2, '', 'Dashboard', '', '/dashboard', '2017-05-22 15:59:51', '2017-05-22 16:08:35', NULL, 0),
 (3, '', 'Sitemap', 'Whole world at a glance.', '/dashboard/sitemap', '2017-05-22 15:59:51', '2017-05-22 16:08:35', NULL, 0),
 (4, '', 'Full Sitemap', '', '/dashboard/sitemap/full', '2017-05-22 15:59:51', '2017-05-22 16:08:35', NULL, 0),
@@ -26201,18 +26898,18 @@ INSERT INTO `PageSearchIndex` (`cID`, `content`, `cName`, `cDescription`, `cPath
 (152, '', 'Welcome Back', '', '/account/welcome', '2017-05-22 16:00:00', '2017-05-22 16:09:30', NULL, 0),
 (154, 'Websites, eCommerce & Mobile Apps\r\n I\'m an individual passionate about partnering with brands, while using design to grow customer relationship.\r\n\r\nI care about family, the outdoors, and the design & creation of\r\n ', 'Header Site Title', NULL, '/!stacks/header-site-title', '2017-05-22 16:01:20', '2017-09-15 16:08:44', NULL, 0),
 (155, '', 'Header Navigation', NULL, '/!stacks/header-navigation', '2017-05-22 16:01:21', '2017-06-19 11:21:03', NULL, 0),
-(156, 'Copyright © 2017 Chris Watterston. All rights reserved. \r\n\r\nCookie Policy  Terms of Use   Accessibility \r\n ', 'Footer Legal', NULL, '/!stacks/footer-legal', '2017-05-22 16:01:21', '2017-09-19 23:22:39', NULL, 0),
+(156, 'Copyright © 2017 Chris Watterston. All rights reserved. \r\n\r\nCookie Policy  Terms of Use   Accessibility   Store Policy \r\n ', 'Footer Legal', NULL, '/!stacks/footer-legal', '2017-05-22 16:01:21', '2017-09-20 15:31:46', NULL, 0),
 (157, '', 'Footer Navigation', NULL, '/!stacks/footer-navigation', '2017-05-22 16:01:21', '2017-05-23 15:25:45', NULL, 0),
 (158, '\r\n	become a client\r\n	let’s talk?\r\n\r\n Contact.\r\n ', 'Footer Contact', NULL, '/!stacks/footer-contact', '2017-05-22 16:01:21', '2017-05-24 10:09:26', NULL, 0),
 (159, ' Time is money, find out more about eCommerce today \r\n  Don\'t delay touching your dream, find out more about you bespoke Mobile App solution \r\n  Increase your unique online presence, find out more about your Website Design solution \r\n \r\nWith knowledge and commitment. For the best and most trusted services in the industry.\r\n\r\n\r\n\r\n Your online store should be your store. With Shopify and a bespoke designed solution, your brand will be present from the core and beyond - something that doesn\'t come straight out the box. \r\n Manage your entire inventory. Track stock counts, and automatically stop selling products when inventory runs out. There\'s no limit to the number or type of products you can sell in your online store. \r\n Capture payments and fulfill your orders right from your phone. Send shipping notifications from the post office. Quickly see items that need your attention, and track trends as they happen in your store. \r\n And the list goes on... Find out more! \r\n Your app is built using the latest of OS languages, resulting in great stability and reliability on every level. This also ensures a future proofed foundation, combined with the latest frameworks. \r\n Every mobile application I design and develop is created from the ground up, with your every need in mind. I believe in a unique product for every service provided to my clients - it’s something I live by. \r\n Similar to that of the web, I integrate Google Analytics into your app. This allows you to view reports of user numbers, UI uses, what users enjoy accessing and read - all within your mobile application. \r\n And the list goes on... Find out more! \r\n Your website will be 100% responsive from the word go - promise. Built in the current mobile world, not 1998. Having to "opt-in" to receive responsive design shouldn’t be required. Your website will look great on all desktop and mobile devices. \r\n I always have you at heart, things shouldn\'t be harder than they need to be. That\'s why I have put years of trust into our CMS. It\'s ease of use and broad functionality makes it a true winner for all our clients. \r\n And the list goes on... Find out more! \r\n I truly believe and follow that all websites, no matter what, should be accessible 24/7, 365 days of the year. I monitor every single one of your websites, making sure it is online - just like it should always be. \r\n Ensuring the online appearance of individuals, start-ups and established brands.\r\n I provide trusted solutions that will get you off the ground. Guaranteed.\r\n Can\'t find what you\'re looking for? Let\'s chat, don\'t be shy.\r\n\r\n Have you seen my most common solutions? I undertake many different request variations for my clients, from the smallest of things like a logo or icon design, right through to setting up their complete start-up branding or marketing campaign, involving multiple HTML email designs and creations - so that my client are only left to final check their content and click send. \r\n\r\nIt may only take 5 minutes.\r\n\r\n Alternitivly, let me can call you. Leave your details and I\'ll call you back within a few hours, or ASAP. If in the very rare occurrence that we can\'t help, we may know a trusted person who can. \r\n Your shop, your brand. I bring your eCommerce store to life and integrate into Shopify. Your online store should be your store. Shopify allows me to take years of experience, and apply a bespoke solution to your store. Applying a bespoke designed solution, your brand will be present from the core, and beyond - something that doesn\'t come straight out the box! Bespoke domain names, everything you need in one place, a unified platform to run your store. \r\n There are already so many mobile applications on the market that are identical from one another, you want something unique, something branded - that\'s what I do. I listen to individuals, start-ups and brands, to uniquely help them prepare them for what hungry excitement lies ahead. From the collaborative planning, through to design, development, testing and launch. Let me create something beautiful for you and your audience. \r\n With the growing numbers of website on the internet, there are 100\'s, if not 1000\'s, of new comers during a month period. This means that the game gets harder with every day that passes. I take pride in ensuring that the online appearance of individuals, start-ups and established brands, go above and beyond compared to competitors. Let me create something beautiful for you and your audience. \r\n ', 'Solutions', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '/design-development-solutions-and-services', '2017-05-23 15:30:00', '2017-09-19 10:10:15', NULL, 0),
-(211, 'I started to design and develop mobile applications because I loved designing and developing for the web. The reason is simple, and I\'ve never looked back. I get a kick out of bringing your ideas and visions into a functional and seeable format. Every new project brings a different set of challenges, combining new and current technologies to guarantee performance, scaling and reliability.\r\n That feeling inside when you realise your Mobile Application is REAL.\r\n I take pleasure in envisioning, designing and bringing to life your mobile app ideas - through both iOS and Android OS.\r\n A few benefits that I include as standard into your mobile application solution, and I think you\'ll really like them.\r\n Chat about your Mobile App today. Don\'t wait.\r\n\r\n Discover the endless possibilities of your Mobile Application solution, including all of the above as standard. Become unique and unlike your competitors, let\'s have a chat about it today.  \r\n \r\nWith knowledge and commitment. For the best and most trusted services in the industry.\r\n\r\n\r\n\r\n Swift and Kotlin, always using the latest languages\r\n\r\n Your app is built using the latest of OS languages, resulting in great stability and reliability on every level. This also ensures a future proofed foundation, combined with the latest frameworks. \r\n Complete upfront app planning\r\n\r\n It’s key that we outline all desired functionality and features in place and “down on paper” before the app process begins. We’ll meet and collaborate on the app as a whole before any design and development work. \r\n 100% bespoke design and unique functionality\r\n\r\n Every mobile application I design and develop is created from the ground up, with your every need in mind. I believe in a unique product for every service provided to my clients - it’s something I live by. \r\n Complete design introduction, collaboration and satisfaction\r\n\r\n We sit down and discuss your every requirement.  After we have created your layout wireframe and initial design, we will introduce our thoughts, ideas, and continue on collaboration. \r\n Branding your App so it really is yours\r\n\r\n It’s important that your app is branded to your unique organisation. You should be able to strip your name and logo from your content and still have your users know exactly who’s mobile app they are using. \r\n Publishing to App Stores, I\'ve got this\r\n\r\n Publishing an app can be a complicated process which can waste time and cause you a headache. They involve certificates and provisioning profiles. I\'ll set up the required accounts and get everything ready for you. \r\n Bespoke App CMS, you\'ll have control\r\n\r\n Depending on your app requirements, I\'ll introduce a bespoke content management system (CMS) for your app. Enabling you to push content, notification and much more - all through to your app in live time. \r\n Keep track with integrated Analytics\r\n\r\n Similar to that of the web, I integrate Google Analytics into your app. This allows you to view reports of user numbers, UI uses, what users enjoy accessing and read - all within your mobile application. \r\n Accessibility friendly, throughout\r\n\r\n Most mobile OS’s feature built-in accessibility features, accessibility APIs and much more - and I make sure I 100% support these without fail. Supporting EVERY app user! \r\n Get involved with Beta early access\r\n\r\n I love the beta testing stage. It’s when your app really comes to life! When runnning beta tests, I can allow multiple users early access - which means even you can beta test, if you’d like? \r\n Your mobile app, launch it. Let\'s take it to your already mobile addicted audience.\r\n\r\n There are already so many mobile applications on the market that are identical from one another, you want something unique, something branded - that\'s what I do. I listen to individuals, start-ups and brands, to uniquely help them prepare them for what hungry excitement lies ahead. From the collaborative planning, through to design, development, testing and launch. Let me create something beautiful for you and your audience.  \r\n\r\n DID YOU KNOW - a study showed that the average user spends 67 hours a month browsing on their mobile device, with 90% of that time used within third-party installed applications. \r\n\r\n Don\'t regret it, chat about your mobile application project today \r\n ', 'Mobile Application Development', 'Mobile App Development Service', '/design-development-solutions-and-services/mobile-application-development-solution', '2017-08-09 07:46:00', '2017-09-19 14:48:55', NULL, 0),
+(211, 'I started to design and develop mobile applications because I loved designing and developing for the web. The reason is simple, and I\'ve never looked back. I get a kick out of bringing your ideas and visions into a functional and seeable format. Every new project brings a different set of challenges, combining new and current technologies to guarantee performance, scaling and reliability.\r\n That feeling inside when you realise your Mobile Application is REAL.\r\n I take pleasure in envisioning, designing and bringing to life your mobile app ideas - through both iOS and Android OS.\r\n A few benefits that I include as standard into your mobile application solution, and I think you\'ll really like them.\r\n Chat about your Mobile App today. Don\'t wait.\r\n\r\n Discover the endless possibilities of your Mobile Application solution, including all of the above as standard. Become unique and unlike your competitors, let\'s have a chat about it today.  \r\n \r\nWith knowledge and commitment. For the best and most trusted services in the industry.\r\n\r\n\r\n\r\n Swift and Kotlin, always using the latest languages\r\n\r\n Your app is built using the latest of OS languages, resulting in great stability and reliability on every level. This also ensures a future proofed foundation, combined with the latest frameworks. \r\n Complete upfront app planning\r\n\r\n It’s key that we outline all desired functionality and features in place and “down on paper” before the app process begins. We’ll meet and collaborate on the app as a whole before any design and development work. \r\n 100% bespoke design and unique functionality\r\n\r\n Every mobile application I design and develop is created from the ground up, with your every need in mind. I believe in a unique product for every service provided to my clients - it’s something I live by. \r\n Complete design introduction, collaboration and satisfaction\r\n\r\n We sit down and discuss your every requirement.  After we have created your layout wireframe and initial design, we will introduce our thoughts, ideas, and continue on collaboration. \r\n Branding your App so it really is yours\r\n\r\n It’s important that your app is branded to your unique organisation. You should be able to strip your name and logo from your content and still have your users know exactly who’s mobile app they are using. \r\n Publishing to App Stores, I\'ve got this\r\n\r\n Publishing an app can be a complicated process which can waste time and cause you a headache. They involve certificates and provisioning profiles. I\'ll set up the required accounts and get everything ready for you. \r\n Bespoke App CMS, you\'ll have control\r\n\r\n Depending on your app requirements, I\'ll introduce a bespoke content management system (CMS) for your app. Enabling you to push content, notification and much more - all through to your app in live time. \r\n Keep track with integrated Analytics\r\n\r\n Similar to that of the web, I integrate Google Analytics into your app. This allows you to view reports of user numbers, UI uses, what users enjoy accessing and read - all within your mobile application. \r\n Accessibility friendly, throughout\r\n\r\n Most mobile OS’s feature built-in accessibility features, accessibility APIs and much more - and I make sure I 100% support these without fail. Supporting EVERY app user! \r\n Get involved with Beta early access\r\n\r\n I love the beta testing stage. It’s when your app really comes to life! When runnning beta tests, I can allow multiple users early access - which means even you can beta test, if you’d like? \r\n Your mobile app, launch it. Let\'s take it to your already mobile addicted audience.\r\n\r\n There are already so many mobile applications on the market that are identical from one another, you want something unique, something branded - that\'s what I do. I listen to individuals, start-ups and brands, to uniquely help them prepare them for what hungry excitement lies ahead. From the collaborative planning, through to design, development, testing and launch. Let me create something beautiful for you and your audience.  \r\n\r\n DID YOU KNOW - a study showed that the average user spends 67 hours a month browsing on their mobile device, with 90% of that time used within third-party installed applications. \r\n\r\n Don\'t regret it, chat about your mobile application project today \r\n ', 'Mobile Application Development', 'Mobile App Development Service', '/design-development-solutions-and-services/mobile-application-development-solution', '2017-08-09 07:46:00', '2017-09-20 08:42:16', NULL, 0),
 (204, '', 'Mobile App Development', NULL, '/services/mobile-app-development', '2017-08-09 08:22:00', '2017-08-09 08:35:38', NULL, 0),
 (205, '', 'Bespoke Website Design', NULL, '/services/bespoke-website-design', '2017-08-09 08:23:00', '2017-08-09 08:35:38', NULL, 0),
 (202, 'Shopify and I are like best friends; companions, chums, homies - we\'re like dippy egg and soldiers. Why?\r\n\r\nShopify provides eCommerce software that is, well... I\'ve seen eCommerce made more complicated than it needs be, Shopify brings no dead end. Combined, we create and provide a scalable eCommerce solution.\r\n Shopify has a mission, and I\'ve teamed up with them to help carry that through - to make eCommerce better for everyone.\r\n Get straight to growing your business\r\n\r\n Let me handle the rest. When I say it’s never been easier to start a business, we mean it. Shopify handles everything from marketing and payments, to secure checkout and shipping. Now you can focus on the things you love and let me handel the "getting you up and running" side of things.  \r\n Reasons why I love building our successful eCommere design solutions on top of Shopify.\r\n Your product + beautiful design  +    = success\r\n Chat about your eCommerce store today. Don\'t wait.\r\n\r\n Discover the endless possibilities and benefits of your eCommerce Design solution, including all of the above as standard. Become unique and unlike your competitors, let\'s have a chat about it today.  \r\n \r\nWith knowledge and commitment. For the best and most trusted services in the industry.\r\n\r\n\r\n\r\n Unlimited product inventory and customer data\r\n\r\n Manage your entire inventory. Track stock counts, and automatically stop selling products when inventory runs out. There\'s no limit to the number or type of products you can sell in your online store. \r\n Securely accept credit cards instantly with Shopify Payments\r\n\r\n Accept Visa, Mastercard, Discover, and American Express the minute you launch your shop. From bitcoin to PayPal to iDEAL, a solution that integrates with over 70 external payment gateways from around the world. \r\n Automate your process with 3rd party shipping apps\r\n\r\n Receive automatic shipping rates from major shipping carriers like UPS, USPS, and FedEx. Set up shipping rates by fixed-price, tiered pricing, weight-based, and location-based rates. Setting up shipping details is now easy. \r\n Run your business wherever you are on the mobile app\r\n\r\n Capture payments and fulfill your orders right from your phone. Send shipping notifications from the post office. Quickly see items that need your attention, and track trends as they happen in your store. \r\n Detailed reporting, track sales and growth trends\r\n\r\n Analyze and gain insight into your store\'s growth. See which products are selling — and which ones aren\'t. See where your visitors come from, and how they found your online store, exporting reports for further analysis. \r\n Sell online and accept payments in-store with POS\r\n\r\n POS software makes it easy to swipe credit cards and take cash offline, in your store standing by your customers side. Your Shopify Payments account is set up in less than 5 minutes, letting you process your customers’ credit cards directly through Shopify. \r\n Discount codes, coupons and gift cards\r\n\r\n Run sales and promotions by offering coupon codes that save customers money. Choose whether the discount is for money off, a percentage off, free shipping, etc. Your customers are able to purchase a gift card for someone from your store, or you can use gift cards as store credit. \r\n Sell on Facebook and more with social media integration\r\n\r\n All Shopify solutions include social media integration, such as Pinterest, Instagram, Facebook, Twitter, and Tumblr. Your Facebook fans can browse your products and make a purchase without even leaving Facebook. \r\n  \r\nAn eCommerce platform that is continuously growing, even if you can\'t see it. Regular updates, SSL security, 99.99% uptime and more...\r\n\r\n With so many features, Shopify really doe hits the nail on the head. And here are a few more; \r\nFull blogging platform, free SSL certificate, automatic taxes, abandoned checkout recovery, customer accounts and profiles, refunds, email templates, product reviews, email marketing, import/export, multiple images, unlimited bandwidth, 99.99% uptime and 24/7 monitoring, traffic/referral reports, export reports, email or call customers, dedicated support team, and the list goes on. \r\n \r\n Your shop, your brand. I bring your eCommerce store to life and integrate into Shopify.\r\n\r\n Your online store should be your store. Shopify allows me to take years of experience, and apply a bespoke solution to your store. Applying a bespoke designed solution, your brand will be present from the core, and beyond - something that doesn\'t come straight out the box! Bespoke domain names, everything you need in one place, a unified platform to run your store. \r\n\r\n DID YOU KNOW - a study showed that 94% of users disTRUSTED a website because of the DESIGN made them uneasy. \r\n\r\n Build trust, Chat about your Shopify eCommerce project today. \r\n ', 'Shopify eCommerce Website Designer', 'Shopify eCommerce Web Design Service', '/design-development-solutions-and-services/shopify-ecommerce-website-designer-solution', '2017-08-09 07:46:00', '2017-09-19 14:48:05', NULL, 0),
 (160, ' That feeling when you’d happily live your life and work for free, but know that doing so sadly won’t pay the bills. If you’ve considered it and then received a slap around your chops to bring you back to reality, then you know you’ve chosen the right path in life and love what you do - That’s how we roll. \r\n\r\n I’m Chris Watterston, an independent designer working, living and probably lacking sleep in Surrey, UK. With my years of experience, I specialise in Brand Identity Design, Web Design and Front-End Development. \r\n\r\n Besides running my day-to-day design business, I’m also fortunate enough to invest and co-found an amazing family. My loving partner and our 2 beautiful daughters. \r\n\r\n Being an internet based design business, we’re not limited to working only with the residents of not so sunny Surrey. But also the surrounding areas, far and beyond, and more commonly across the seas. \r\n\r\n As you get to know us further and we spark our working relationship, you’ll start to recognise that I refer to me, myself and my business as ‘We’ - Why? Because I put everything we can and have to offer into every project and solution. \r\n\r\n I think that\'s enough of the ins and outs of us. Tell me about yourself. How are you, where are you from, your interests? \r\n\r\n Send us a friendly message to hello@chriswatterston.com. You’ll probably regret it if you don’t. \r\n ', 'About Us', 'Description', '/about-us', '2017-05-23 15:30:00', '2017-06-27 17:27:33', NULL, 0),
-(161, 'Latest news and updates. From my studio, my home and my life.\r\n While I\'m not knee deep in enjoyment with the undertaking of projects, I like to keep my clients and visitors up to date with the latest news and work from my studio and home in London, United Kingdom. Whether it\'s work life, client problem solving, learning new things, personal or family life - I enjoy telling stories.\r\n\r\n Join our conversation online and subscribe to receive our monthly newsletters. \r\nI’ll only email you with important bits, never spam - that\'s a pinky promise! \r\n ', 'News', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', '/blog', '2017-05-23 15:31:00', '2017-09-15 11:06:08', NULL, 0),
-(162, 'Project case studies I think you\'ll enjoy. A small insight into successful solutions.\r\n Solutions that are built from my clients ideas, dreams and requirments - even uncertainty.\r\n Every design or development project are non-identical. These require different tacktical methods with slightly different solutions - each completed with passion and determination. Here are a few of my clients projects that not only delivered great client satisfaction, but have exceeded the above and beyond.\r\n\r\n Join our conversation online and subscribe to receive our monthly newsletters. \r\nI’ll only email you with important bits, never spam - that\'s a pinky promise! \r\n ', 'Case Studies', '', '/case-studies', '2017-05-23 15:31:17', '2017-09-19 23:27:14', NULL, 0),
-(163, 'My store includes products I\'ve created in my spare time - which let\'s be honest, I have very little of.\r\n The Original. The Unique.\r\n There is no Cloud. Die Cut Magnet.\r\n I celebrated 15,000 units sold - now I\'m back for flying over the BIG 20,000! \r\nLimited number of indoor die cut flexible "There is no cloud. It\'s just someone else\'s computer" magnets now available. It\'s a limited product, this means first come, first served... \r\n\r\nTo celebrate our run up to selling over an incredible 20,000 printed units of our #ThereIsNoCloud product through the fantastic guys over at StickerMule, Society6 and Spreadshirt, we have stocked more of our indoor die cut magnets. These magnets are shit hot and perfect for slapping on your home or office fridges, server or switch cabinets, computer towers, magnetic white boards - as well as millions of other metal surfaces that can be magnetised. \r\n £3.99\r\n\r\n(exc. delivery) - Dimensions: 80x64x1 mm \r\n  \r\n\r\n/**/\r\n \r\nThere is no Cloud. Die Cut Sticker.\r\n\r\n  \r\n\r\n£3.33 (exc. delivery)\r\n\r\n Your single Die-cut vinyl sticker is cut precisely to the design, with a small white border. Your sticker will be made of thick, durable vinyl with a UV laminate that protects the die-cut stickers from scratches, rain and sunlight. \r\n \r\nDimensions: 80x64 mm \r\n\r\n Buy this sticker \r\n\r\n \r\nThere is no Cloud. Die Cut Sticker Sheet.\r\n\r\n  \r\n\r\n£12 (exc. delivery)\r\n\r\n Sticker sheets include several different version of our original design, to one sheet. Each sticker is kiss cut so that you can peel each one off individually. Your sticker sheets will be made from thick, durable vinyl with a UV laminate to stand up to rain, wind and sun without fading. \r\n \r\nDimensions: 286x222 mm \r\n\r\n Buy this sticker sheet \r\n\r\n \r\nInternet Privacy is Trash. Die Cut Sticker.\r\n\r\n  \r\n\r\n£3.34 (exc. delivery)\r\n\r\n Your single Die-cut vinyl sticker is cut precisely to the design, with a small white border. Your sticker will be made of thick, durable vinyl with a UV laminate that protects the die-cut stickers from scratches, rain and sunlight. \r\n \r\nDimensions: 80x64 mm \r\n\r\n Buy this sticker \r\n\r\n Unique Clothing. On quality garments.\r\n\r\n View available clothing \r\n ', 'Store', '', '/store', '2017-05-23 15:31:00', '2017-09-19 23:28:59', NULL, 0),
+(161, 'Latest news and updates. From my studio, my home and my life.\r\n While I\'m not knee deep in enjoyment with the undertaking of projects, I like to keep my clients and visitors up to date with the latest news and work from my studio and home in London, United Kingdom. Whether it\'s work life, client problem solving, learning new things, personal or family life - I enjoy telling stories.\r\n\r\n Join our conversation online and subscribe to receive our monthly newsletters. \r\nI’ll only email you with important bits, never spam - that\'s a pinky promise! \r\n ', 'News', 'While we\'re not knee deep in enjoyment with the undertaking of projects, we like to keep readers and clients up to date with our latest news and work from Chris Watterston in London, United Kingdom. Whether it\'s work life, client problem solving, personal projects or family life - we enjoy telling stories.', '/blog', '2017-05-23 15:31:00', '2017-09-20 12:39:36', NULL, 0),
+(162, 'Project case studies I think you\'ll enjoy. A small insight into successful solutions.\r\n Solutions that are built from my clients ideas, dreams and requirments - even uncertainty.\r\n Every design or development project are non-identical. These require different tacktical methods with slightly different solutions - each completed with passion and determination. Here are a few of my clients projects that not only delivered great client satisfaction, but have exceeded the above and beyond.\r\n\r\n Join our conversation online and subscribe to receive our monthly newsletters. \r\nI’ll only email you with important bits, never spam - that\'s a pinky promise! \r\n ', 'Case Studies', '', '/case-studies', '2017-05-23 15:31:17', '2017-09-20 12:40:18', NULL, 0),
+(163, 'My store includes products I\'ve created in my spare time - which let\'s be honest, I have very little of.\r\n The Original. The Unique.\r\n There is no Cloud. Die Cut Magnet.\r\n I celebrated 15,000 units sold - now I\'m back for flying over the BIG 20,000! \r\nLimited number of indoor die cut flexible "There is no cloud. It\'s just someone else\'s computer" magnets now available. It\'s a limited product, this means first come, first served... \r\n\r\nTo celebrate our run up to selling over an incredible 20,000 printed units of our #ThereIsNoCloud product through the fantastic guys over at StickerMule, Society6 and Spreadshirt, we have stocked more of our indoor die cut magnets. These magnets are shit hot and perfect for slapping on your home or office fridges, server or switch cabinets, computer towers, magnetic white boards - as well as millions of other metal surfaces that can be magnetised. \r\n £3.99\r\n\r\n(exc. delivery) - Dimensions: 80x64x1 mm \r\n \r\nThere is no Cloud. Die Cut Sticker.\r\n\r\n  \r\n\r\n£3.33 (exc. delivery)\r\n\r\n Your single Die-cut vinyl sticker is cut precisely to the design, with a small white border. Your sticker will be made of thick, durable vinyl with a UV laminate that protects the die-cut stickers from scratches, rain and sunlight. \r\n \r\nDimensions: 80x64 mm \r\n\r\n Buy this sticker \r\n\r\n \r\nThere is no Cloud. Die Cut Sticker Sheet.\r\n\r\n  \r\n\r\n£12 (exc. delivery)\r\n\r\n Sticker sheets include several different version of our original design, to one sheet. Each sticker is kiss cut so that you can peel each one off individually. Your sticker sheets will be made from thick, durable vinyl with a UV laminate to stand up to rain, wind and sun without fading. \r\n \r\nDimensions: 286x222 mm \r\n\r\n Buy this sticker sheet \r\n\r\n \r\nInternet Privacy is Trash. Die Cut Sticker.\r\n\r\n  \r\n\r\n£3.34 (exc. delivery)\r\n\r\n Your single Die-cut vinyl sticker is cut precisely to the design, with a small white border. Your sticker will be made of thick, durable vinyl with a UV laminate that protects the die-cut stickers from scratches, rain and sunlight. \r\n \r\nDimensions: 80x64 mm \r\n\r\n Buy this sticker \r\n\r\n Unique Clothing. On quality garments.\r\n\r\n View available clothing \r\n  \r\n\r\n/**/\r\n ', 'Store', '', '/store', '2017-05-23 15:31:00', '2017-09-20 14:16:11', NULL, 0),
 (164, 'Understanding the solution you need is not essential right now, what is essential is that you understand where you want to be, allowing me to help you. Helping you in a way that allows me to recognise your needs and tell you how you\'re going to get to where you want to be - that\'s how some of the most beautiful things start.\r\n General details of contact.\r\n\r\n (+44) 07515163815 hello@chriswatterston.com \r\n\r\nPostal Address.\r\n\r\nPentire - Stable 2 \r\nFordbridge Road \r\nSunbury-on-Thames \r\nMiddlesex \r\nTW16 6AX \r\nUnited Kingdom \r\n It will ONLY take a minute.\r\n\r\n Have you seen my most common solutions? I undertake many different request variations for my clients, from the smallest of things like a logo or icon design, right through to setting up their complete start-up branding or marketing campaign, involving multiple HTML email designs and creations - so that my client are only left to final check their content and click send. \r\n\r\n Take a minute and fill in the form below. We can have a chat about a solution that you may require, or something you need to know about - even if you\'re not confident on what you need. \r\n What could only take a minute, may provide value in building your successful future.\r\n I enjoy providing solutions that matter to my clients, with no shortness in performance.\r\n ', 'Get in Contact', '', '/get-in-contact', '2017-05-23 15:32:00', '2017-09-13 20:28:04', NULL, 0),
 (165, '', 'Social Links', NULL, '/!stacks/social-links', '2017-05-24 10:14:23', '2017-05-25 11:00:42', NULL, 0),
 (166, 'Instagram.\r\n Instagram feed here... ', 'Social Feed', NULL, '/!stacks/social-feed', '2017-05-24 10:15:54', '2017-05-25 10:13:01', NULL, 0),
@@ -26224,26 +26921,26 @@ INSERT INTO `PageSearchIndex` (`cID`, `content`, `cName`, `cDescription`, `cPath
 (176, ' Chris Watterston will help achieving your ideas and dreams in a proper way. The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online presence has never been so important. \r\n  Chris Watterston will help achieving your ideas and dreams in a proper way. The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online presence has never been so important. \r\n A mobile app for every side of education. \r\nStarting with your SKOOL\r\n\r\n Areas of education are turning digital, and so are parent demands. Parents like to be updated in a convenient way. A way that doesn\'t always require them to visit a blog, download a document or search your website relentlessly. \r\n\r\n Visit SKOOLping.co.uk \r\n  Chris Watterston will help achieving your ideas and dreams in a proper way. The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online presence has never been so important. \r\n  Chris Watterston will help achieving your ideas and dreams in a proper way. The number of internet users have well and truly flown past 3 billion. And now is definitely that time when a website is a must have. Investing time and resources into your online presence has never been so important. \r\n ', 'A mobile app for every side of education. Starting with your SKOOL', '', '/products/a-mobile-app-for-every-side-of-education-starting-with-your-skool', '2017-06-02 15:13:00', '2017-06-27 13:17:29', NULL, 0),
 (177, '', 'The Original. The Unique. #TherIsNoCloud', '', '/products/The-Original-The-Unique-TherIsNoCloud', '2017-06-02 15:13:00', '2017-06-06 14:58:12', NULL, 0);
 INSERT INTO `PageSearchIndex` (`cID`, `content`, `cName`, `cDescription`, `cPath`, `cDatePublic`, `cDateLastIndexed`, `cDateLastSitemapped`, `cRequiresReindex`) VALUES
-(181, 'Why? What? When? Where?\r\n\r\n Like many others, I’ve had the pleasure of setting up many smartphones and tablets over the years and when It comes to the cloud storage part of the set-up (iCloud of OneDrive), the device owner look at me blankly and says “What, yes, whatever?!”. We are well and truly past the Nokia 5110 times of just popping in your SIM card and making a call with your market flashing arial. \r\n\r\n It’s actually rather scary how many people don’t have a bloody clue on what the ‘Cloud’ actually is. Let’s break it down for you…. it’s basically a computer that is located in a mostly unknown location that is connect to you via the internet which you’re able to store you personal data on it. Wow! \r\n\r\n A bit like your homes computer, but you don’t own it or have physical access to it. \r\nI tell you what, if you just pop all your finance data and holiday snaps onto a USB memory stick, i’ll look after them for you? \r\n\r\n That’s all great, now a bit more technical for you more understanding bunch. Although you should already know what it’s all about; \r\n\r\nCloud computing, also known as \'on-demand computing\', is a kind of Internet-based computing, where shared resources, data and information are provided to computers and other devices on-demand.Cloud computing is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications and services) that can be rapidly provisioned and released with minimal management effort.\r\n\r\n Quoted from Wikipedia, https://en.wikipedia.org/wiki/Cloud_computing \r\n\r\n My frustration sparked in late 2014, over how business would use the phrase but not explain the term, resulting in many not have a clue about the cloud and what it actually is. Which is why I decided to design and send a sticker off to the printers, StickerMule. It’s sometimes quicker and more fun highlighting a fact for awareness with a sticker. I would of never guessed in a million years how popular and well known my sticker would become. \r\n\r\n Here are the current statistics from the guys over at StickerMule, where you can grab your own ‘There Is No Cloud’ stickers. Or maybe a t-shirt or mug? \r\n  The number of; shares, likes, photos, retweets, mentions, links, hashtags, bla bla. that relate to my sticker is mind blowing and unfortunately unknown. \r\n\r\n Here are a few randomly picked tweets from all around the world. \r\n\r\nThank you!!\r\n There is no cloud! It\'s just someone else\'s computer... pic.twitter.com/u4arumoep4 — Sticker Mule (@stickermule) July 10, 2015\r\n\r\n\r\n\r\nMelbourne, Australia\r\nThis, everytime someone says "the cloud": pic.twitter.com/6BmeER68rq — Asher Wolf (@Asher_Wolf) April 18, 2015\r\n\r\n\r\nToronto, Ontario\r\nI need these. https://t.co/efXGilRU9n pic.twitter.com/yWh6OyMjpz — Paul Reinheimer (@preinheimer) April 16, 2015\r\n\r\n\r\nSan Francisco, California\r\nTell me again about your mythical cloud thingy (cc @g33kspeed) pic.twitter.com/XKQKWxVWgj — Jessy Irwin (@jessysaurusrex) August 16, 2015\r\n\r\n\r\nRome, Italy\r\nThere is no cloud... pic.twitter.com/k4kk1VlYMM — Luca Matteis (@lmatteis) June 22, 2015\r\n\r\n\r\nBerlin, Germany\r\nOh @stickermule your samples are so purdy ?? pic.twitter.com/54aOW5LP8D — Timea Konya (@timiiggy) January 5, 2016\r\n\r\n\r\n\r\nBoston, Massachusetts\r\nMy 1st sticker. I\'ve given away 2 of the 4 extras I bought. :) @stickermule @gl33p @chriswatterston pic.twitter.com/T0T8HfLULw — Rob Reed (@robreed) December 24, 2015\r\n\r\n\r\n\r\nEurope\r\nHey, my @stickermule stickers arrived! Thanks guys, they look great :-) pic.twitter.com/pMEbd2eB2U — Marek Jan | ??? (@marek_koza) December 19, 2015\r\n\r\n\r\n\r\nDublin, Republic of Ireland\r\nHaha brilliant ! "There is no cloud, it\'s just someone else\'s computer" pic.twitter.com/IThaVkD2Sm — Juan Pernia (@juanrules) November 4, 2015\r\n\r\n\r\n\r\nGulf of Mexico\r\nI\'m totally digging the stickers I received from @stickermule $1 sample pack! pic.twitter.com/Wyo7PmYOBO — @jason_ (@jason_) December 17, 2015\r\n\r\n\r\n\r\nMilwaukee, Wisconsin\r\n@stickermule @avocode @electronjs looks like they would go good with my collection ???? pic.twitter.com/9HEAuUDYbS — Jordan Jones (@jordan_jones98) December 16, 2015\r\n\r\n\r\n\r\nVirgina Beach, Virginia\r\nAmazing stickers, as always! Thanks from Madrid @stickermule! pic.twitter.com/XxHYJmzhPq — Jorge Carriazo (@JorgeCarriazous) December 15, 2015\r\n\r\n\r\n\r\nKranj, Slovenia\r\nNew sticker thanks to @stickermule pic.twitter.com/xnNqORLEFw — Miha Rekar (@mr_foto) December 4, 2015\r\n\r\n\r\n\r\nWest Virginia, US\r\nNew iPad case sticker from @stickermule showed up today! pic.twitter.com/3zZagCJLeM — Jim Jones (@k00laidIT) October 2, 2015\r\n\r\n\r\n\r\nLos Altos, California\r\nFriends keep asking for these stickers, so just got another shipment from @stickermule pic.twitter.com/9P9IIzRuif — Jim Fenton (@jimfenton) August 31, 2015\r\n\r\n\r\n\r\nHamburg, Germany\r\n@stickermule finally the cloud sticker is here pic.twitter.com/GSIlVs2z5r — Hurricane Computing (@Hurricane_corp) August 26, 2015\r\n\r\n\r\n\r\nDen Bosch, Netherlands\r\nSo happy with my stickers from @stickermule! Great service and personal thank you. 100 #MODX stickers for @MODXpo pic.twitter.com/mVt400O6Zs — Menno Pietersen (@MennoPP) August 26, 2015\r\n\r\n\r\n\r\nMadison, Wisconsin\r\nhooray for new sticker from @stickermule (thx Jen!) http://t.co/42qeVBOZxd pic.twitter.com/GlcuiO3vpo — Ogre McClubbin\' (@rogerogeroger) August 9, 2015\r\n\r\n\r\n\r\nJapan, East Asia\r\nJust ordered this awesome sticker from @stickermule pic.twitter.com/xnzwBIkQxO — Zeke (@devilsx) August 8, 2015\r\n\r\n\r\n\r\nDundee, Scotland\r\nCheers @stickermule ???? pic.twitter.com/wJXIXfku4Y — Michael Jack (@MikeyJck) June 22, 2015\r\n\r\n\r\n\r\nNorthern Virginia\r\nGot my stickers order from @stickermule today. Turned out great! pic.twitter.com/XvmPa08ySI — Clayton O\'Neill (@clayton_oneill) April 20, 2015\r\n\r\n\r\n\r\nMinnesota, US\r\nFun times ahead courtesy of @stickermule and a nudge from @lusis! pic.twitter.com/aTbUmB4XG1 — WestJonWest (@WestJonWest) March 31, 2015\r\n\r\n\r\n\r\nWellington, New Zealand\r\nGot my @stickermule stickers! Fast delivery as well pic.twitter.com/744mBBOKut — Phillip (@sitharus) June 29, 2015\r\n\r\n\r\n\r\nAustin, Texas\r\n. @MikeTalonNYC @jilljubs pic.twitter.com/etlNNKyRWz — Damian Karlson (@sixfootdad) August 28, 2015\r\n\r\n\r\n\r\nMechelen, Belgium\r\n#thereisnocloud thanks for the fast delivery @stickermule pic.twitter.com/5w6gPKYQug — Jeroen Lambrichts (@jlambrichts) June 29, 2015\r\n\r\n\r\n\r\nSaint Paul, Minnesota\r\nLivened up my monitor stand a bit with help from @lindseybieda @chriswatterston and @stickermule pic.twitter.com/57zu5T7kXk — Fire Wally (@fire_wally) June 29, 2015\r\n\r\n\r\n\r\nSan Francisco, California\r\nNice job on printing these stickers!! @stickermule pic.twitter.com/XWBGjBwbh6 — Jennifer Basalone (@zombiegator) June 23, 2015\r\n\r\n\r\n\r\nSimi Valley, California\r\nLatest from @stickermule. Lots of geeky goodness in their marketplace. Yes, @nikiacosta, I have a "no cloud" for you. pic.twitter.com/KSEOJLdJDT — Gary Kevorkian (@GARY805) August 6, 2015\r\n\r\n\r\n\r\nMountain View, California\r\n<3 stickers @stickermule #thereIsNoCloud pic.twitter.com/aWr5o87fN8 — starbreiz (@starbreiz) July 14, 2015\r\n\r\n\r\n\r\nMichigan, US\r\nIt\'s true. #ThereIsNoCloud @stickermule pic.twitter.com/YAllKd0KTH — Rockey (@analoghumanoid) July 13, 2015\r\n\r\n\r\nSticker order from @stickermule arrived today. Helping to build cloud awareness, one person at a time. pic.twitter.com/1o6C6iIZ4p — Aaron (@Aaron2012R2) June 29, 2015\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nOthers\r\nThere is no #cloud - it’s just someone else’s computer. < Saw on @LinkedIn #Classic :-) @Steve_Lockstep pic.twitter.com/zHr4jmRaXG — Chris Olive (@ChrisEOlive) May 13, 2015\r\n\r\n\r\nThere is no cloud... (via @Asher_Wolf) pic.twitter.com/RhyXgys8vx — J. Grenzfurthner (@johannes_mono) April 21, 2015\r\n\r\n\r\nThis sticker wins @stickermule ? pic.twitter.com/GhOOfJXwy7 — ?Dorkfeast? (@DorkfeastTeam) December 23, 2015\r\n\r\n\r\nIf you buy a ThinkPad, you have to cover it in stickers, that\'s the law. @stickermule pic.twitter.com/oS52qGF5Nr — Fredrik (@ique) December 10, 2015\r\n\r\n\r\nThis came today....h/t to @Kym_Possible for leading me to them...cc:@stickermule pic.twitter.com/2JTaFivsaN — John Stauffacher (@g33kspeed) July 28, 2015\r\n\r\n\r\nA little tongue-in-cheek humor on my work laptop, courtesy of @stickermule pic.twitter.com/MBXD1zZ1w0 — Sam Ferguson (@samuelferguson) June 28, 2015\r\n\r\n\r\nHappy Saturday to me! My sweet new sticker from @stickermule arrived pic.twitter.com/FITjRdoX5M — Erin O\'Brien (@erinogirl123) June 28, 2015\r\n\r\n\r\nAnother great sticker from @stickermule thanks Jen! #CIO #Cloud pic.twitter.com/WrktRssnFY — Ryan Fay (@ryancfay) June 26, 2015\r\n\r\n\r\nWork laptop looking good with new stickers from @ejgreenberg pic.twitter.com/NVYSprZRP3 — ¯\\_(?)_/¯ (@SeanTAllen) October 3, 2015\r\n\r\n\r\nEli Neiburger: there is no cloud, it\'s just someone else\'s computer #alaac15 pic.twitter.com/DfAUIrruOJ — janelofton (@jane_librarian) June 27, 2015\r\n\r\n\r\nMy new laptop sticker, courtesy of @lusis pic.twitter.com/d31RSYNHrm — Randall Degges (@rdegges) June 23, 2015\r\n\r\n\r\nCruise pup pic.twitter.com/iD2Rt3LbZ2 — Jessy Irwin (@jessysaurusrex) January 26, 2016\r\n\r\n\r\nMy new cool laptop stickers just arrived, @stickermule ???? pic.twitter.com/JhRwIbSpD3 — Amr Reda (@AmrReda) September 15, 2015\r\n ', 'My \'There Is No Cloud\' Sticker', 'Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global!', '/blog/my-there-is-no-cloud-sticker', '2016-02-13 14:59:00', '2017-06-27 18:38:31', NULL, 0),
-(185, ' Finding the time to achieve in 2014/15 seemed almost impossible when I look back. Supporting and spending time with my 2 beautiful girls and partner, building a loving home, paying bills, working as an independent self employed designer, marketing, paperwork, trying to socialise with friends, exercising, cycling, gardening, 6 ducks, running 2 cars, selling 1 car, restoring my old 1980\'s Broom Speedboat and my MK1 Fiesta XR2... bla, bla, bla. (UPDATE: and now drone / quadcopter flying with HD camera) \r\n\r\n With that being said, these were my past targets and challenges… \r\n 2014 (this was the start of my first full year self employed)\r\n\r\n\r\n	Minimise on business and personal outgoings.\r\n	Provide design and development solutions to a minimum of two charities.\r\n	Write more. Post at least one blog article per month.\r\n	Design, develop and launch completed personal projects for everyone to use and benefit.\r\n	Increase involvement within online communities. Targeting Dribbble, GitHut and Conrete5.\r\n\r\n  For 2015, I never did set any out in stone. But they were to continue with the explosion of work at that current time and continue with the targets and challenges from 2014. \r\n\r\nSo, how did I do?\r\n\r\n Starting was a positive, target one was a success. Too right, this was my main point. Cutting costs meant I could use these “savings” else where. Like marketing for example. Areas I cut or altered and made massive savings on were; server environments, domain names, everyday work and office space, cycling instead of driving when I could, and I also cut a number of online third-party services that I didn’t really need but thought it would be nice to have. You know the ones. \r\n\r\n Secondly, provide design and development solutions to at least two charities. Unfortunately this didn’t happen. Everything was in place ready for promotion, but I was just to busy at that particular time. People would say “make the time”, but running my ‘one-man band’ business, having a family and spending time with them and living, plus everything else. I just really couldn’t find the time. Maybe this year? \r\n\r\n Write more. Post at least one blog article per month. No comment…. \r\n\r\n I’m now pushing and going for a post a week, starting today. This will be interesting! \r\n\r\n Fourth. To design, develop and launch completed personal projects for everyone to use and benefit. This had been started, but didn’t launch. Reason, I felt it was outdated and not great. \r\n2016… watch this space! \r\n\r\n Lastly. Increase involvement within online communities. This was my lowest priority and kind of got forgotten about. \r\n Now for 2016. In no particular order and with all extra hight priority…\r\n\r\n\r\n	Learn Swift (programming language)\r\n	Launch new personal project, currently labeled ‘ersttt.it’\r\n	Develop a “dashboard” type area which display a number of service overview(s) I provide to clients, right through to their CMS. This means learning multiple third-party API’s.\r\n	Invest in more advertising, in more areas, with more time. You know the score.\r\n	Blog at least once a week. This may cover; what I’ve learnt that particular week, everyday business news, new projects I’ve launch, personal life news, etc.\r\n\r\n  And what is even more exciting, every single new target and challenge is already in motion! \r\n ', 'Starting 2016 with old challenges', 'Like every Tom, Dick and Harry in the land, I set myself new targets and challenges at the start of every year. Do I ever achieve them, behave yourself! It’s so frustrating telling you that, but even more so with myself for not achieving. *sigh*', '/blog/starting-2016-old-challenges', '2017-06-20 15:19:00', '2017-06-20 15:25:19', NULL, 0),
+(181, 'Why? What? When? Where?\r\n\r\n Like many others, I’ve had the pleasure of setting up many smartphones and tablets over the years and when It comes to the cloud storage part of the set-up (iCloud of OneDrive), the device owner look at me blankly and says “What, yes, whatever?!”. We are well and truly past the Nokia 5110 times of just popping in your SIM card and making a call with your market flashing arial. \r\n\r\n It’s actually rather scary how many people don’t have a bloody clue on what the ‘Cloud’ actually is. Let’s break it down for you…. it’s basically a computer that is located in a mostly unknown location that is connect to you via the internet which you’re able to store you personal data on it. Wow! \r\n\r\n A bit like your homes computer, but you don’t own it or have physical access to it. \r\nI tell you what, if you just pop all your finance data and holiday snaps onto a USB memory stick, i’ll look after them for you? \r\n\r\n That’s all great, now a bit more technical for you more understanding bunch. Although you should already know what it’s all about; \r\n\r\nCloud computing, also known as \'on-demand computing\', is a kind of Internet-based computing, where shared resources, data and information are provided to computers and other devices on-demand.Cloud computing is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications and services) that can be rapidly provisioned and released with minimal management effort.\r\n\r\n Quoted from Wikipedia, https://en.wikipedia.org/wiki/Cloud_computing \r\n\r\n My frustration sparked in late 2014, over how business would use the phrase but not explain the term, resulting in many not have a clue about the cloud and what it actually is. Which is why I decided to design and send a sticker off to the printers, StickerMule. It’s sometimes quicker and more fun highlighting a fact for awareness with a sticker. I would of never guessed in a million years how popular and well known my sticker would become. \r\n\r\n Here are the current statistics from the guys over at StickerMule, where you can grab your own ‘There Is No Cloud’ stickers. Or maybe a t-shirt or mug? \r\n  The number of; shares, likes, photos, retweets, mentions, links, hashtags, bla bla. that relate to my sticker is mind blowing and unfortunately unknown. \r\n\r\n Here are a few randomly picked tweets from all around the world. \r\n\r\nThank you!!\r\n There is no cloud! It\'s just someone else\'s computer... pic.twitter.com/u4arumoep4 — Sticker Mule (@stickermule) July 10, 2015\r\n\r\n\r\n\r\nMelbourne, Australia\r\nThis, everytime someone says "the cloud": pic.twitter.com/6BmeER68rq — Asher Wolf (@Asher_Wolf) April 18, 2015\r\n\r\n\r\nToronto, Ontario\r\nI need these. https://t.co/efXGilRU9n pic.twitter.com/yWh6OyMjpz — Paul Reinheimer (@preinheimer) April 16, 2015\r\n\r\n\r\nSan Francisco, California\r\nTell me again about your mythical cloud thingy (cc @g33kspeed) pic.twitter.com/XKQKWxVWgj — Jessy Irwin (@jessysaurusrex) August 16, 2015\r\n\r\n\r\nRome, Italy\r\nThere is no cloud... pic.twitter.com/k4kk1VlYMM — Luca Matteis (@lmatteis) June 22, 2015\r\n\r\n\r\nBerlin, Germany\r\nOh @stickermule your samples are so purdy ?? pic.twitter.com/54aOW5LP8D — Timea Konya (@timiiggy) January 5, 2016\r\n\r\n\r\n\r\nBoston, Massachusetts\r\nMy 1st sticker. I\'ve given away 2 of the 4 extras I bought. :) @stickermule @gl33p @chriswatterston pic.twitter.com/T0T8HfLULw — Rob Reed (@robreed) December 24, 2015\r\n\r\n\r\n\r\nEurope\r\nHey, my @stickermule stickers arrived! Thanks guys, they look great :-) pic.twitter.com/pMEbd2eB2U — Marek Jan | ??? (@marek_koza) December 19, 2015\r\n\r\n\r\n\r\nDublin, Republic of Ireland\r\nHaha brilliant ! "There is no cloud, it\'s just someone else\'s computer" pic.twitter.com/IThaVkD2Sm — Juan Pernia (@juanrules) November 4, 2015\r\n\r\n\r\n\r\nGulf of Mexico\r\nI\'m totally digging the stickers I received from @stickermule $1 sample pack! pic.twitter.com/Wyo7PmYOBO — @jason_ (@jason_) December 17, 2015\r\n\r\n\r\n\r\nMilwaukee, Wisconsin\r\n@stickermule @avocode @electronjs looks like they would go good with my collection ???? pic.twitter.com/9HEAuUDYbS — Jordan Jones (@jordan_jones98) December 16, 2015\r\n\r\n\r\n\r\nVirgina Beach, Virginia\r\nAmazing stickers, as always! Thanks from Madrid @stickermule! pic.twitter.com/XxHYJmzhPq — Jorge Carriazo (@JorgeCarriazous) December 15, 2015\r\n\r\n\r\n\r\nKranj, Slovenia\r\nNew sticker thanks to @stickermule pic.twitter.com/xnNqORLEFw — Miha Rekar (@mr_foto) December 4, 2015\r\n\r\n\r\n\r\nWest Virginia, US\r\nNew iPad case sticker from @stickermule showed up today! pic.twitter.com/3zZagCJLeM — Jim Jones (@k00laidIT) October 2, 2015\r\n\r\n\r\n\r\nLos Altos, California\r\nFriends keep asking for these stickers, so just got another shipment from @stickermule pic.twitter.com/9P9IIzRuif — Jim Fenton (@jimfenton) August 31, 2015\r\n\r\n\r\n\r\nHamburg, Germany\r\n@stickermule finally the cloud sticker is here pic.twitter.com/GSIlVs2z5r — Hurricane Computing (@Hurricane_corp) August 26, 2015\r\n\r\n\r\n\r\nDen Bosch, Netherlands\r\nSo happy with my stickers from @stickermule! Great service and personal thank you. 100 #MODX stickers for @MODXpo pic.twitter.com/mVt400O6Zs — Menno Pietersen (@MennoPP) August 26, 2015\r\n\r\n\r\n\r\nMadison, Wisconsin\r\nhooray for new sticker from @stickermule (thx Jen!) http://t.co/42qeVBOZxd pic.twitter.com/GlcuiO3vpo — Ogre McClubbin\' (@rogerogeroger) August 9, 2015\r\n\r\n\r\n\r\nJapan, East Asia\r\nJust ordered this awesome sticker from @stickermule pic.twitter.com/xnzwBIkQxO — Zeke (@devilsx) August 8, 2015\r\n\r\n\r\n\r\nDundee, Scotland\r\nCheers @stickermule ???? pic.twitter.com/wJXIXfku4Y — Michael Jack (@MikeyJck) June 22, 2015\r\n\r\n\r\n\r\nNorthern Virginia\r\nGot my stickers order from @stickermule today. Turned out great! pic.twitter.com/XvmPa08ySI — Clayton O\'Neill (@clayton_oneill) April 20, 2015\r\n\r\n\r\n\r\nMinnesota, US\r\nFun times ahead courtesy of @stickermule and a nudge from @lusis! pic.twitter.com/aTbUmB4XG1 — WestJonWest (@WestJonWest) March 31, 2015\r\n\r\n\r\n\r\nWellington, New Zealand\r\nGot my @stickermule stickers! Fast delivery as well pic.twitter.com/744mBBOKut — Phillip (@sitharus) June 29, 2015\r\n\r\n\r\n\r\nAustin, Texas\r\n. @MikeTalonNYC @jilljubs pic.twitter.com/etlNNKyRWz — Damian Karlson (@sixfootdad) August 28, 2015\r\n\r\n\r\n\r\nMechelen, Belgium\r\n#thereisnocloud thanks for the fast delivery @stickermule pic.twitter.com/5w6gPKYQug — Jeroen Lambrichts (@jlambrichts) June 29, 2015\r\n\r\n\r\n\r\nSaint Paul, Minnesota\r\nLivened up my monitor stand a bit with help from @lindseybieda @chriswatterston and @stickermule pic.twitter.com/57zu5T7kXk — Fire Wally (@fire_wally) June 29, 2015\r\n\r\n\r\n\r\nSan Francisco, California\r\nNice job on printing these stickers!! @stickermule pic.twitter.com/XWBGjBwbh6 — Jennifer Basalone (@zombiegator) June 23, 2015\r\n\r\n\r\n\r\nSimi Valley, California\r\nLatest from @stickermule. Lots of geeky goodness in their marketplace. Yes, @nikiacosta, I have a "no cloud" for you. pic.twitter.com/KSEOJLdJDT — Gary Kevorkian (@GARY805) August 6, 2015\r\n\r\n\r\n\r\nMountain View, California\r\n<3 stickers @stickermule #thereIsNoCloud pic.twitter.com/aWr5o87fN8 — starbreiz (@starbreiz) July 14, 2015\r\n\r\n\r\n\r\nMichigan, US\r\nIt\'s true. #ThereIsNoCloud @stickermule pic.twitter.com/YAllKd0KTH — Rockey (@analoghumanoid) July 13, 2015\r\n\r\n\r\nSticker order from @stickermule arrived today. Helping to build cloud awareness, one person at a time. pic.twitter.com/1o6C6iIZ4p — Aaron (@Aaron2012R2) June 29, 2015\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nOthers\r\nThere is no #cloud - it’s just someone else’s computer. < Saw on @LinkedIn #Classic :-) @Steve_Lockstep pic.twitter.com/zHr4jmRaXG — Chris Olive (@ChrisEOlive) May 13, 2015\r\n\r\n\r\nThere is no cloud... (via @Asher_Wolf) pic.twitter.com/RhyXgys8vx — J. Grenzfurthner (@johannes_mono) April 21, 2015\r\n\r\n\r\nThis sticker wins @stickermule ? pic.twitter.com/GhOOfJXwy7 — ?Dorkfeast? (@DorkfeastTeam) December 23, 2015\r\n\r\n\r\nIf you buy a ThinkPad, you have to cover it in stickers, that\'s the law. @stickermule pic.twitter.com/oS52qGF5Nr — Fredrik (@ique) December 10, 2015\r\n\r\n\r\nThis came today....h/t to @Kym_Possible for leading me to them...cc:@stickermule pic.twitter.com/2JTaFivsaN — John Stauffacher (@g33kspeed) July 28, 2015\r\n\r\n\r\nA little tongue-in-cheek humor on my work laptop, courtesy of @stickermule pic.twitter.com/MBXD1zZ1w0 — Sam Ferguson (@samuelferguson) June 28, 2015\r\n\r\n\r\nHappy Saturday to me! My sweet new sticker from @stickermule arrived pic.twitter.com/FITjRdoX5M — Erin O\'Brien (@erinogirl123) June 28, 2015\r\n\r\n\r\nAnother great sticker from @stickermule thanks Jen! #CIO #Cloud pic.twitter.com/WrktRssnFY — Ryan Fay (@ryancfay) June 26, 2015\r\n\r\n\r\nWork laptop looking good with new stickers from @ejgreenberg pic.twitter.com/NVYSprZRP3 — ¯\\_(?)_/¯ (@SeanTAllen) October 3, 2015\r\n\r\n\r\nEli Neiburger: there is no cloud, it\'s just someone else\'s computer #alaac15 pic.twitter.com/DfAUIrruOJ — janelofton (@jane_librarian) June 27, 2015\r\n\r\n\r\nMy new laptop sticker, courtesy of @lusis pic.twitter.com/d31RSYNHrm — Randall Degges (@rdegges) June 23, 2015\r\n\r\n\r\nCruise pup pic.twitter.com/iD2Rt3LbZ2 — Jessy Irwin (@jessysaurusrex) January 26, 2016\r\n\r\n\r\nMy new cool laptop stickers just arrived, @stickermule ???? pic.twitter.com/JhRwIbSpD3 — Amr Reda (@AmrReda) September 15, 2015\r\n ', 'My \'There Is No Cloud\' Sticker', 'Never in a million years did I expect my sticker, ‘There is No Cloud’, to go the way it did. It’s just a pretty simple 8.13 x 6.45 cm die cut sticker. But unbelievably it went global! Like many others, I’ve had the pleasure of setting up many smartphones and tablets over the years and when It comes to the cloud storage part of the set-up (iCloud of OneDrive), the device owner look at me blankly and says “What, yes, whatever?!”. We are well and truly past the Nokia 5110 times of just popping in your SIM card and making a call with your market flashing arial.', '/blog/my-there-is-no-cloud-sticker', '2016-02-13 14:59:00', '2017-09-20 14:51:55', NULL, 0),
+(185, ' Finding the time to achieve in 2014/15 seemed almost impossible when I look back. Supporting and spending time with my 2 beautiful girls and partner, building a loving home, paying bills, working as an independent self employed designer, marketing, paperwork, trying to socialise with friends, exercising, cycling, gardening, 6 ducks, running 2 cars, selling 1 car, restoring my old 1980\'s Broom Speedboat and my MK1 Fiesta XR2... bla, bla, bla. (UPDATE: and now drone / quadcopter flying with HD camera) \r\n\r\n With that being said, these were my past targets and challenges… \r\n 2014 (this was the start of my first full year self employed)\r\n\r\n\r\n	Minimise on business and personal outgoings.\r\n	Provide design and development solutions to a minimum of two charities.\r\n	Write more. Post at least one blog article per month.\r\n	Design, develop and launch completed personal projects for everyone to use and benefit.\r\n	Increase involvement within online communities. Targeting Dribbble, GitHut and Conrete5.\r\n\r\n  For 2015, I never did set any out in stone. But they were to continue with the explosion of work at that current time and continue with the targets and challenges from 2014. \r\n\r\nSo, how did I do?\r\n\r\n Starting was a positive, target one was a success. Too right, this was my main point. Cutting costs meant I could use these “savings” else where. Like marketing for example. Areas I cut or altered and made massive savings on were; server environments, domain names, everyday work and office space, cycling instead of driving when I could, and I also cut a number of online third-party services that I didn’t really need but thought it would be nice to have. You know the ones. \r\n\r\n Secondly, provide design and development solutions to at least two charities. Unfortunately this didn’t happen. Everything was in place ready for promotion, but I was just to busy at that particular time. People would say “make the time”, but running my ‘one-man band’ business, having a family and spending time with them and living, plus everything else. I just really couldn’t find the time. Maybe this year? \r\n\r\n Write more. Post at least one blog article per month. No comment…. \r\n\r\n I’m now pushing and going for a post a week, starting today. This will be interesting! \r\n\r\n Fourth. To design, develop and launch completed personal projects for everyone to use and benefit. This had been started, but didn’t launch. Reason, I felt it was outdated and not great. \r\n2016… watch this space! \r\n\r\n Lastly. Increase involvement within online communities. This was my lowest priority and kind of got forgotten about. \r\n Now for 2016. In no particular order and with all extra hight priority…\r\n\r\n\r\n	Learn Swift (programming language)\r\n	Launch new personal project, currently labeled ‘ersttt.it’\r\n	Develop a “dashboard” type area which display a number of service overview(s) I provide to clients, right through to their CMS. This means learning multiple third-party API’s.\r\n	Invest in more advertising, in more areas, with more time. You know the score.\r\n	Blog at least once a week. This may cover; what I’ve learnt that particular week, everyday business news, new projects I’ve launch, personal life news, etc.\r\n\r\n  And what is even more exciting, every single new target and challenge is already in motion! \r\n ', 'Starting 2016 with old challenges', 'Like every Tom, Dick and Harry in the land, I set myself new targets and challenges at the start of every year. Do I ever achieve them, behave yourself! It’s so frustrating telling you that, but even more so with myself for not achieving. *sigh*', '/blog/starting-2016-old-challenges', '2017-06-20 15:19:00', '2017-09-20 14:47:40', NULL, 0),
 (186, ' The first two that jumped out at me within a matter of minutes of using the new update were the very annoying \'Fetching...\' when selecting \'Open With\' on a chosen file, and lastly the \'Where\' data when viewing a files info! \r\n\r\n Pushing that aside, one of the new potential-injected features of the latest release, is the new Notification Center. Third-party developers have the power to throw bespoke widgets at this from all kinds of angles! With this in mind, I decided to take a screen shot of the OS X Yosemite NC, and stick together a little something that would bring a smile to my face (including many others) if the guys over at Spotify brought something similar to life.... hint, hint, nudge nudge. \r\n\r\n IMPORTANT: Please understand and acknowledge that this application / widget concept is an unofficial design of the Spotify Widget. You cannot buy, subscribe or download Spotify services or products here. Brand credits to Spotify USA Inc. \r\n\r\n Created by Chris Watterston just for fun and an idea I would love to see come to life. \r\n\r\n Enjoy, and don\'t forget to let me know what you think? \r\n ', 'A much needed Spotify widget for the Notification Center', 'Since installing the new operating system, OS X Yosemite, like many I\'ve noticed a hell of a lot of new great features and design. But, being an every day MacBook user, I\'m finding some pretty cool, but some also pretty annoying.', '/blog/a-much-needed-spotify-widget-for-the-notification-center', '2017-06-20 15:26:00', '2017-06-27 21:58:08', NULL, 0),
-(187, 'Number of Registration: 5002004 \r\nInternational Design Classification LOC (07) Cl. 99-00 \r\n\r\nTitle: There Is No Cloud \r\nShort Description: A worried looking cloud above the truth filled copy "There is no cloud, it\'s just someone else\'s computer". \r\n\r\nDisclaimer: No claim made on the typeface and colouring. Colouring and align variations are not limited to that shown in design. \r\n  and then more - they just kept coming from really great folk from all over the world! \r\n   Buy this sticker   \r\n\r\n  Buy this sticker     What I don’t get is how people think they can steal another persons property, design work in my case, and sell it as their own with not a single creditation or liaising to the original owner - or even tweak it slightly and think thats "OK". \r\n\r\n I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO, I wasn\'t brought up like that, it\'s wrong in every shape and form. I would make me become a low life scrounger. That would place myself in the same category as these thieving scummy low $&£#’ers that stole my design and many other honest designers work also - and that’s me being polite against them! \r\n\r\n So for anyone that would like to enquire or is just passing through my website and is thinking of stealing my PROTECTED design, I encourage you to be smart and contact me via hello@chriswatterston.com before you even right click and ‘Save image as…’ on your desktop, laptop or handheld device. I really don\'t want to be forced to tag the original design with a copyright stamp or my name as a watermark - come on. \r\n When did I realise?\r\n\r\n I first noticed my design was stolen back in March 2016, when I saw a photo on Twitter of my ‘There Is No Cloud’ sticker design on a users laptop but something was odd very about it. I noticed that the typeface didn’t quite match that of my original design. After clicking on the photo, I was shocked to see that the user had actually targeted the photo to another Twitter user. I clicked through to this targeted user to find that they where actually a sticker printing company, in Turkey, selling and making a profit from my design. \r\n\r\n I took a deep breath and contacted the company in a professional manor - who after being updated about the registered protection on the design, did removed the sticker design in a matter of minutes. \r\n\r\n Another 5 months passed since and thinking everything had blown over, I received an email from a good fella from Washington; \r\n  And the friendly and valuable emails just kept coming - including messages through social media. To put it into perspective, since receiving the first email on 16th August 2016, until writing this post (24 days later) - I have submitted 70+ infringement claims against companies such as; eBay, Facebook, Amazon, Stickker, Teespring, SunFrog, TeeChip and Teezily about my stolen ‘There Is No Cloud’ design. \r\n\r\nUnbelievable!\r\n\r\n If you would like to enquire about using my \'There Is No Cloud\' design, please contact me directly via, hello@chriswatterston.com. \r\n ', '\'There Is No Cloud\' Copyright Protection', 'I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO! That would place myself in the same category as the thieving scummy $&£#’ers that stole my design and many other honest designers work also - and that’s me being polite against them!', '/blog/there-no-cloud-copyright-protection', '2016-09-12 15:38:00', '2017-06-21 13:50:26', NULL, 0),
-(188, ' We were unique in what we did, not only did we supported our base school, but 30+ other schools and businesses in and around the Surrey, UK areas. That doesn\'t sound a lot compared to some larger companies, but bear in mind we were just an IT team based within a school. \r\n\r\n Moving "Onwards and Upwards" as they say, before getting into to much about the past... all that had come to an unfortunate end, and non of our team of 14 wanted or wished for it. Many of the team moved on to further their careers and love for IT, but for me, this is was when I possibly made the biggest decision of my career. \r\n\r\n Making a decision to become an self-employed designer could be an easy hit for someone who\'s only 24 years of age, living at home with parents, paying no rent, no responsibilities, with thousands of pounds of disposable income each month, going out drinking and partying 7 night a week, with a partner who also has thousands of pounds of disposable income. Sounds like an easy life, doesn\'t it? Now let\'s spice things up a wee bit, what about if that someone was 24 years of age, lived with their partner who\'s a full time mum on an annual salary of £0, with their 2 loveable children, bills to pay, food on the table every day without fail, luxuries, running a car and motorbike, insurance, the list goes on, as you know. So has the decision become any easier? \r\n\r\n When you have a love for what you do, believe in yourself, and dreamt about working for yourself for years and years, the decision becomes easier. Before finalising my decision I spent hours reading articles on the net about what to expect, what\'s recommended, how much money you should have saved to cover yourself for a few months, the pros and cons, etc. But I still had my mind set, I wanted and needed to work for myself, and there was an opportunity slapping me right around my chops to do so. So I did! \r\n\r\n My first day of what some refer to as "Total Freedom", started on 1st September 2013. I woke up at 6:30, yes6:30am, with a smile on my face. The gut feeling of being my own boss was thrilling! And as time when on, weeks flew by, pre job stress faded away, my hair started to grow back (I\'m sure of it), more time for my family appeared out of thin air, I felt and became much happier. I started being myself again. Life was perfect! \r\nIt wasn\'t that I didn\'t love or enjoy my previous job, Don\'t get me wrong, I did. It\'s just that it became a routine, those who know me know I HATE routine. Now everyday is a different day. \r\n\r\n So, the question everyones asking me these days is "How successful have you been in starting out on your own". Well, incase you\'re wondering the same question , I\'ve laid out a couple of stats below to give you a rough idea... \r\n ', '4th Month Into Self-Employment', 'Jee. Taking a step back, it\'s been almost 4 months already. Holy Crap! Cutting a 5 year story into a nut shell, I previously worked for a secondary school within an IT department. It wasn\'t any ordinary IT department within a school, ow nooo.', '/blog/4th-month-into-self-employment', '2014-02-14 16:07:00', '2017-06-21 17:28:29', NULL, 0),
+(187, 'Number of Registration: 5002004 \r\nInternational Design Classification LOC (07) Cl. 99-00 \r\n\r\nTitle: There Is No Cloud \r\nShort Description: A worried looking cloud above the truth filled copy "There is no cloud, it\'s just someone else\'s computer". \r\n\r\nDisclaimer: No claim made on the typeface and colouring. Colouring and align variations are not limited to that shown in design. \r\n  and then more - they just kept coming from really great folk from all over the world! \r\n   Buy this sticker   \r\n\r\n  Buy this sticker     What I don’t get is how people think they can steal another persons property, design work in my case, and sell it as their own with not a single creditation or liaising to the original owner - or even tweak it slightly and think thats "OK". \r\n\r\n I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO, I wasn\'t brought up like that, it\'s wrong in every shape and form. I would make me become a low life scrounger. That would place myself in the same category as these thieving scummy low $&£#’ers that stole my design and many other honest designers work also - and that’s me being polite against them! \r\n\r\n So for anyone that would like to enquire or is just passing through my website and is thinking of stealing my PROTECTED design, I encourage you to be smart and contact me via hello@chriswatterston.com before you even right click and ‘Save image as…’ on your desktop, laptop or handheld device. I really don\'t want to be forced to tag the original design with a copyright stamp or my name as a watermark - come on. \r\n When did I realise?\r\n\r\n I first noticed my design was stolen back in March 2016, when I saw a photo on Twitter of my ‘There Is No Cloud’ sticker design on a users laptop but something was odd very about it. I noticed that the typeface didn’t quite match that of my original design. After clicking on the photo, I was shocked to see that the user had actually targeted the photo to another Twitter user. I clicked through to this targeted user to find that they where actually a sticker printing company, in Turkey, selling and making a profit from my design. \r\n\r\n I took a deep breath and contacted the company in a professional manor - who after being updated about the registered protection on the design, did removed the sticker design in a matter of minutes. \r\n\r\n Another 5 months passed since and thinking everything had blown over, I received an email from a good fella from Washington; \r\n  And the friendly and valuable emails just kept coming - including messages through social media. To put it into perspective, since receiving the first email on 16th August 2016, until writing this post (24 days later) - I have submitted 70+ infringement claims against companies such as; eBay, Facebook, Amazon, Stickker, Teespring, SunFrog, TeeChip and Teezily about my stolen ‘There Is No Cloud’ design. \r\n\r\nUnbelievable!\r\n\r\n If you would like to enquire about using my \'There Is No Cloud\' design, please contact me directly via, hello@chriswatterston.com. \r\n ', '\'There Is No Cloud\' Copyright Protection', 'I wouldn’t dream of stealing another designers work and reselling it as my own. HELL NO! That would place myself in the same category as the thieving scummy $&£#’ers that stole my design and many other honest designers work also - and that’s me being polite against them!', '/blog/there-no-cloud-copyright-protection', '2016-09-12 15:38:00', '2017-09-20 14:50:35', NULL, 0),
+(188, ' We were unique in what we did, not only did we supported our base school, but 30+ other schools and businesses in and around the Surrey, UK areas. That doesn\'t sound a lot compared to some larger companies, but bear in mind we were just an IT team based within a school. \r\n\r\n Moving "Onwards and Upwards" as they say, before getting into to much about the past... all that had come to an unfortunate end, and non of our team of 14 wanted or wished for it. Many of the team moved on to further their careers and love for IT, but for me, this is was when I possibly made the biggest decision of my career. \r\n\r\n Making a decision to become an self-employed designer could be an easy hit for someone who\'s only 24 years of age, living at home with parents, paying no rent, no responsibilities, with thousands of pounds of disposable income each month, going out drinking and partying 7 night a week, with a partner who also has thousands of pounds of disposable income. Sounds like an easy life, doesn\'t it? Now let\'s spice things up a wee bit, what about if that someone was 24 years of age, lived with their partner who\'s a full time mum on an annual salary of £0, with their 2 loveable children, bills to pay, food on the table every day without fail, luxuries, running a car and motorbike, insurance, the list goes on, as you know. So has the decision become any easier? \r\n\r\n When you have a love for what you do, believe in yourself, and dreamt about working for yourself for years and years, the decision becomes easier. Before finalising my decision I spent hours reading articles on the net about what to expect, what\'s recommended, how much money you should have saved to cover yourself for a few months, the pros and cons, etc. But I still had my mind set, I wanted and needed to work for myself, and there was an opportunity slapping me right around my chops to do so. So I did! \r\n\r\n My first day of what some refer to as "Total Freedom", started on 1st September 2013. I woke up at 6:30, yes6:30am, with a smile on my face. The gut feeling of being my own boss was thrilling! And as time when on, weeks flew by, pre job stress faded away, my hair started to grow back (I\'m sure of it), more time for my family appeared out of thin air, I felt and became much happier. I started being myself again. Life was perfect! \r\nIt wasn\'t that I didn\'t love or enjoy my previous job, Don\'t get me wrong, I did. It\'s just that it became a routine, those who know me know I HATE routine. Now everyday is a different day. \r\n\r\n So, the question everyones asking me these days is "How successful have you been in starting out on your own". Well, incase you\'re wondering the same question , I\'ve laid out a couple of stats below to give you a rough idea... \r\n ', '4th Month Into Self-Employment', 'Jee. Taking a step back, it\'s been almost 4 months already. Holy Crap! Cutting a 5 year story into a nut shell, I previously worked for a secondary school within an IT department. It wasn\'t any ordinary IT department within a school, ow nooo. We were unique in what we did, not only did we supported our base school, but 30+ other schools and businesses in and around the Surrey, UK areas.', '/blog/4th-month-into-self-employment', '2014-02-14 16:07:00', '2017-09-20 12:36:08', NULL, 0),
 (189, ' Enough time has passed now for me to settle into my new role, career, life, and I feel it\'s the perfect time to set myself some goals for 2014. So here they are, in no particular order... \r\n \r\n	Minimise on business and personal outgoings.\r\n	Provide design and development solutions to a minimum of two charities.\r\n	Write more. Post at least one blog article per month.\r\n	Design, develop and launch completed personal projects for everyone to use and benefit.\r\n	Increase involvement within online communities. Targeting Dribbble, GitHut and Conrete5.\r\n\r\n  So, there it is. Now let\'s dig a wee deeper look into each one... \r\n\r\n 1. Minimise on business and personal outgoings. This seams reasonable, doesn\'t it? Everyone knows businesses require money to make money, so I\'ve decided to cancel a few service that I\'d subscribed to over the years to save some pennies. \r\n\r\n The first sacrifice being Evernote. I signed up to Evernote\'s Premium Subscription back in 2011, I used to use it for everything at my pervious place of work, but boy have things changed since becoming self employed. I can honestly say, I don\'t even remember the last time I opened up my Evernote app to create or read a note. Really, really! I used to be a hourly user and had a tone of projects, notes, PSD files, wireframes, pictures, the list goes on, all from my pervious work place and personal life. Boom, I archived the lot off, and canceled my Premium Subscription. That\'s £30 per year i\'m now saving. Woop! \r\n\r\n My second sacrifice was Netflix. Don\'t get me wrong, Netflix is a great service if you like watching films that are 2+ years old, or you have kids that\'ll watch cartoons on the iPad. I personally like to watch new films that I don\'t have to blow the dust off to watch, I already have them all on DVD. Here\'s an actual example, my other half, the love of my life, has never watched Gladiator, what a film! Which I\'d like to add, is now 14 years old....AND IT\'S NOT EVEN ON NETFLIX! Excuse my french, but are you shitting me? So frustrating! So, you get the picture. That\'s another £5.99 per month, £71.88(ish) per year. \r\n\r\n Smiles all around, we\'re only on the 7th of January, and I\'ve already minimise my outgoing by £101.88 per year. Not bad going so far. \r\n\r\n 2. Provide design and development solutions to at least two charities. I\'ve always enjoyed helping others, it makes me feel all good and warm inside. Like wearing a onesie fully zipped to the neck, with the heating cranked up to 30° and your wood burner blazing! People who know me will know I very rarely say No, or hate having to say it. I\'ll find any reason to avoid the word, I\'d say this is probably a weakness of mine. So, moving onwards and upwards, I\'d give a lot of time for any individual or group with a lot of time for others. And with charities landing within this category, I\'ve always wanted to help a charity that needs an extra helping hand online. So, this year I\'m going to make sure I give my time to a minimum of two. Promise! \r\n\r\n 3. Write more. Post at least one blog article per month. I\'ll admit, my writing and grammar is crap! It always has been, and I hope it always won\'t be. This particular goal\'s to help increase my poor grammar, spelling, writing, etc, as you\'ve probably already noticed while reading this. You savvy lot, you! So, I\'ll be writing a minimum of one blog post per month. Lucky you! \r\n\r\n 4. Design, develop and launch completed personal projects for everyone to use and benefit. I\'ve always had an active mind, a thinker, and thought up a few pretty good ideas in the past for personal web projects. But with a full time job, I never did get around to completing them due to lack of time, the same old story. I could easily jump back on the bandwagon, finishing what I\'d started, but they\'re all out of date and wouldn\'t have any benefits or future. \r\n\r\n The first web app idea I came up with back in 2010, and was called My Child\'s Diary. MCD\'s vision was to provide an in the cloud diary for parents to log and remember the facts, millstones, photos, events and much more, of their kids, all through the internet, phone or tablet. Allowing it to be shared with family and friends, with an added feature so parents can get the final logged experience to be exported as a PDF download or to be printed on a hardback book. But, I never got around to finishing it. \r\n\r\n The second web app idea was called FancyE.at, which started late 2012, and again never did get finished. FE\'s vision was to bring the subject of quality, food, service and networking all into a simple, easy to use and social web app. The app would provide details such as the closest place to eat via a categorised search, personal favourite hot spots, reviews, menus, photos, share a scheduled dinner with friends, booking of tables, locations, discounts....bla, bla, bla. \r\n\r\n My new idea, which I\'ll admit did hurt a wee bit when it hit me, inspired by my other half, is already under way, with I hope to launch by 1st April 2014. The vision is aimed at new and expecting parents, with others benefiting also. BUT, I\'m saying no more! You\'ll have to wait and see once it\'s been launched. \r\n\r\n 5. Increase involvement within online communities. Targeting Dribbble, GitHut and Conrete5. I\'ve always wanted to hit three communities hard, well not hard but with my online presence, Dribbble, GitHut and Conrete5. I have accounts on all but over the years things have been stopping me doing just that. They are as follows...Dribbble, haven\'t been invited yet....please? GitHub and Concrete5, just not enough time. Now that times on my side, I can correct these areas and join all these other beautiful lot. \r\n\r\n So, thats that. Now you know my five goals for 2014, have you set any goals? If yes, then what are yours? \r\n ', 'Setting 5 Goals For 2014', 'A warm welcome to 2014, I wish you all a happy New Year. It\'s the start of a New Year for us all, and funny enough it\'s also that time where 99.9% of us feel the need to set ourself new year resolutions, goals, targets, or whatever you call it. For me, I\'ve just rolled into my 5th month of self employment and it still feels incredible, just as it did on day one.', '/blog/setting-5-goals-2014', '2014-02-01 16:17:00', '2017-06-21 17:29:56', NULL, 0),
 (190, ' With every website or application we design, develop and launch, we integrate 24/7/365 monitoring, Analytics, Support, Online Style Guideline - and the list goes on. \r\n\r\n Throughout March and April, we will be rolling out our brand new \'Statistics Dashboard\'. This means that you will be able to log into your Content Management System (CMS) and see all kind of useful information that you never saw before - see for yourself. \r\n  What do you think, first impressions? Take another look below - from top to bottom. \r\n\r\n The \'Statistics Dashboard\' will be an ongoing development so will be improved and grow as time goes on. But until then, we\'ll let you know when yours is ready. \r\n Interested in working together?\r\n\r\n We love meeting new people, so shall we build something bigger together? \r\n\r\n Start today \r\n ', 'Your New Website Statistics Dashboard', 'Since the new year, we\'ve been working hard between projects to improve features and services that we provide to you - more specifically, within your Content Management System (CMS). One of the biggest changes you\'ll notice is our brand new \'Statistics Dashboard\'. You\'ll soon be able to look over your website ‘Views’, ‘Storage’, ‘Traffic’, ‘Uptime’ and a ton more. All live time!', '/blog/your-new-website-statistics-dashboard', '2016-04-13 14:11:00', '2017-07-27 15:40:01', NULL, 0),
 (191, 'Interested in starting something together?\r\n\r\n I love meeting new people hearing what they want to achieve. Let\'s chat about what we can build together. \r\n\r\n Get started today \r\n ', 'Working Together', NULL, '/!stacks/working-together', '2017-06-21 14:42:01', '2017-09-15 11:15:32', NULL, 0),
-(192, ' But what do the top selling designs have in common? Is there a secret? What can other sellers learn? \r\n\r\nThere is no cloud\r\n\r\n We connected with Chris Watterston the creator of the now famous and #1 bestselling "There is no cloud" sticker to answer those questions. \r\n\r\n Read the full story on Sticker Mule \r\n ', 'There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 'The Sticker Mule marketplace has been growing rapidly over the past couple of years. Sticker Mule loves seeing applications and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers.', '/blog/there-no-cloud-getting-1-sticker-mule-marketplace', '2016-04-21 15:26:00', '2017-09-19 22:29:18', NULL, 0),
+(192, ' But what do the top selling designs have in common? Is there a secret? What can other sellers learn? \r\n\r\nThere is no cloud\r\n\r\n We connected with Chris Watterston the creator of the now famous and #1 bestselling "There is no cloud" sticker to answer those questions. \r\n\r\n Read the full story on Sticker Mule \r\n ', 'There is no cloud: Getting to #1 in the Sticker Mule Marketplace', 'The Sticker Mule marketplace has been growing rapidly over the past couple of years. Sticker Mule loves seeing applications and designs being submitted every day — but in the past year a few new designs have taken off and quickly become bestsellers. Chris Watterston\'s sticker did just that!', '/blog/there-no-cloud-getting-1-sticker-mule-marketplace', '2016-04-21 15:26:00', '2017-09-20 12:38:13', NULL, 0),
 (196, '', 'Surveying up a Website Redesign', 'I\'ve had a long running relationship with CD Surveys for many years now, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials - but still ensure that the design caught passers eye.', '/case-studies/surveying-up-a-website-redesign', '2016-09-09 15:30:00', '2017-06-30 16:05:28', NULL, 0),
 (198, 'Project goal\r\n\r\n Spending time discssing previous CD Surveys Ltd website with the directors, David and Andrew, it became clear that CD Surveys Ltd were stuck in the past in terms of their online "message", web presence and technology. The website was being maintained and built in-house, with personnel that were not familar with technologies, nor pushing their website forward - afterall, their day job was being skilled in Surveying and CAD (Computer Aided Design). \r\n\r\n There was a need for us to take a level of control and ownership, to ensure areas didn\'t break or full behind. A full re-design and rebuild was actioned, with a clear messions that the visitor should feel that they have known CD Surveys Ltd for years. A blog was introduced, including more simplified copy and intuitive imagry. \r\n Jumping straight to the point  We designed the websites homepage to tell the visitor their message instantly, providing them a service in which they require. \r\n  Conclusion\r\n\r\n We feel that this project has not yet come to a close, but will continue to "roll" and improve, alongside CD Surveys Ltd. As technology imrpoves, we have plans to continue to implement. \r\n\r\n We look forward to see how this project will grow over time! \r\n\r\n Take a look at their website \r\n ', 'Surveying up a Website Redesign', 'I\'ve had a long running relationship with CD Surveys Ltd for many years now, resulting in a multitude of large and small projects. Ranging from small development changes, through to their network infrastructure. Working with CD Surveys always gets me exciting because they are open to ideas and moving forward with technology. ', '/case-studies/cd-surves-ltd-surveying-up-a-website-redesign', '2016-09-09 16:05:00', '2017-09-15 11:09:39', NULL, 0),
 (199, 'Project goal\r\n\r\n Content here... define your broad project goal early in the case study, with a focus on larger issues like community, the environment or empowerment. \r\n Process and reseach \r\n\r\n Next is a look at how we can focus on process before artifact. Show Research In Clear, Process-Oriented Chunks. Show your research with photos, charts or a list of findings, even if it is not packaged neatly. \r\n Lessons Learned\r\n\r\n As we looked at before, case studies should emphasize design knowledge and creative processes. Of course, that includes visual, code and UX assumptions that didn’t hold up. There will always be lessons learned during projects, and sharing those is crucial so that others can learn from them. \r\n Testimonials\r\n\r\nThere’s something powerful about hearing directly from users, team members and clients. Short quotes that contain personal observations about the project are often the most accessible to readers.\r\n Conclusion\r\n\r\n I’ve tried to show that by focusing on process rather than artifact, we can build and share in-depth case studies. The studies allow us to reframe the conversation around design process and the humanity in what we create, rather than perfect deliverables. \r\n Slide Image 1  Vestibulum quis molestie quam. Mauris quis tortor nec metus ornare tincidunt eu et nunc. Ut fringilla luctus convallis. \r\n Slide Image 2  Mauris quis tortor nec metus ornare tincidunt eu et nunc. Ut fringilla luctus convallis. Vestibulum quis molestie quam. \r\n  ', 'Ford van graphical sign writing', 'An extension of our relationship with CD Surveys, resulting in the creation and organisation of their brand new fleet of 5 sign written Ford vans. Our vision was to not clutter the vans with unnecessary details like way to many people do, only have the real essentials but still ensure that the design caught everyones eye.', '/case-studies/cd-surveys-ltd-ford-van-graphical-sign-writing', '2017-07-04 17:47:00', '2017-07-04 17:52:21', NULL, 0),
 (201, 'I am an independent provider of bespoke solutions. Solutions involving design and code aspects for web and mobile. Perfection is my philosophy, and been informed that I kicking ass at it. Your problems solved by collaborative discussions, building partnership and trusted reliability that performs.\r\n  Based in London, we\'re privileged to have provided both private and public sectors our expertise on a wide range of small and large projects. From small logo designs, to scalable web and mobile applications - our door is always open. \r\n  Even more clients, in no particular order; \r\n\r\n\r\n	Annodata Limited\r\n	Tesla Installations Ltd\r\n	Designated PA\r\n	Moorfields Corporate Recovery Ltd\r\n	Pavilion Day Nursery\r\n	Sammy\'s Sunflower Fund\r\n	Spelthorne Schools Together\r\n	Reading Cricket Club\r\n	Perpool\r\n	Instyle Building and Design\r\n	John Lucas\r\n	JAC Data Ltd\r\n	JCC Wheat Construction\r\n	M&Y Air Systems Ltd\r\n	HMS Commercials\r\n	Michael Woodford Motorsport\r\n	Nicholson Plumbing and Heating\r\n	Char-asha Boutique\r\n	Bimu - Beauty In Make-Up\r\n	CD Surveys Ltd\r\n	Intelligent Transport Services Ltd\r\n	Feaver & Dust\r\n	Sally Watterston\r\n	Surrey Secondary Heads\r\n	Virginia Plumbing\r\n	Westworld Marine\r\n	UCC Coffee UK ltd\r\n	St Paul\'s Catholic College\r\n	Bushy-Hill Primary School\r\n	St. Ignatius Catholic Primary School\r\n	Our Lady of the Rosary Primary School\r\n	Coopers Coffee\r\n	Salesian School\r\n	Innervate Career Services Ltd\r\n	St Michael\'s R C Primary School\r\n	The Richmond Golf Club\r\n	Saint John Bosco College\r\n	The Marist Roman Catholic Primary School\r\n	St Paul\'s Connect\r\n	Midas Touch Landscapes\r\n	Old Blue Mose\r\n	Heart Transplant\r\n	SKOOLping\r\n	Netuitive\r\n	Moorfields Advisory Ltd\r\n	Bates Wharf Marine Sales Ltd\r\n	Lime Events Ltd\r\n	Designated Group\r\n	Lyons Coffee\r\n	The British Society of Paediatric Dentistry\r\n	Avanti Forward Thinking\r\n	Avocet Furniture Design\r\n	Bailey Buttons Boutique\r\n	G & L Electrical Solutions Ltd\r\n	Heathside School\r\n	Lamington London\r\n	Wood Street Capital\r\n\r\n Subjects that I have a passion for.\r\n\r\n Creating partnerships. Understanding Problems. Creating Solutions  - and here\'s why... \r\n Clients I\'ve learned about and respect.\r\n\r\n I\'ve had the pleasure, and fortunate enough, to have built some expiring partnerships. Together, we\'ve helped to grow our knowledge and expertise to what it is today - thank you from the bottom. \r\n Creating partnerships. Understanding Problems. Creating Solutions.\r\n Creating Partnerships\r\n\r\n Meeting new clients is always a powerful time, it\'s what creation is all about. It\'s what allows our core to grow and broaden. Every clients is in a different place - whether it\'s position, size or location. I love creating, learning and building partnerships, contributing towards a clients successful future. \r\n Understanding Problems\r\n\r\n No one like to discover or fabricate a problem - including me. But the scale of problems can vary. They can cause issues as little as being unable to download documents. Or can stop clients meeting targets and growing their vision. Understanding a problem can be tricky, I desire the warmth when insight becomes clear. \r\n It\'s not what I do that matters. It\'s what I do for my clients, for you.\r\n Creating Solutions\r\n\r\n Solutions resolve problems - they resolve a clients demand. Partnerships spark when a client has a problem that requires a solution. A bespoke solution that is provide by the understanding of the problem. With commitment from clients, it\'s what I reach for, what we partner for - what feeds my passion. \r\n ', 'What I do', 'I\'m running a design studio, kicking perfect things right out the door. But before any of that, we like to not only create a collaborative relationship, but also a friendship and trust that always performs.', '/what-we-do', '2017-05-23 15:30:00', '2017-09-19 11:47:41', NULL, 0),
 (212, 'Designing and creating websites and web applications have been a passion of mine for a long time, the buzz of developing a digital product built from nothing inspires me to continuously jump into new projects. Both client website projects and personal projects. Every new project brings a different set of challenges, combining new and current technologies to guarantee performance, scaling and reliability.\r\n A few benefits that I include as standard into your website design solution, and I think you\'ll really like them.\r\n Chat about your Website today. Don\'t wait.\r\n\r\n Discover the endless possibilities and benefits of your website design solution, including all of the above as standard. Become unique and unlike your competitors, let\'s have a chat about it today.  \r\n \r\nWith knowledge and commitment. For the best and most trusted services in the industry.\r\n\r\n\r\n\r\n 100% bespoke design and unique functionality\r\n\r\n Every website designed and develop is created from the ground up, with your every need in mind. I believe in a unique product for every service provided to clients - it’s something I live by. \r\n Complete design introduction, collaboration and satisfaction\r\n\r\n We\'ll sit down and discuss your every requirement. After your layout wireframe and initial design has been designed, we\'ll introduce and express our thoughts, ideas, and continue on collaboration. \r\n 60 \'to-the-minute\' support time, nothing else\r\n\r\n Include with every solution are 60-minutes of support time each month, for 12 months. All support is timed to the minute, not in incremental jumps. This means you receive what you should, and nothing less. \r\n Responsive design to every device, uniquely responding\r\n\r\n Your website will be 100% responsive from the word go - promise. Built in the current mobile world, not 1998. Having to "opt-in" to receive responsive design shouldn’t be required. Your website will look great on all desktop and mobile devices. \r\n Online bespoke Style Guidelines, know your way\r\n\r\n With my understanding and knowledge of brand, and the importance of design consistency, we take a step further - I provide a unique online cheatsheet to all clients. Showing all your colours, typeface, short-codes and more. \r\n 24/7 Support Access, always reach for help\r\n\r\n Access support at almost any time through our fully integrated online ticketing system. Standard support operation times are 8am to 5pm, furthermore including live chat and an urgent priority for those naughty slip-ups. \r\n Full Management System (CMS), you\'ll have control\r\n\r\n I always have you at heart, things shouldn\'t be harder than they need to be. That\'s why I have put years of trust into our CMS. It\'s ease of use and broad functionality makes it a true winner for all our clients. \r\n Keep track with integrated Analytics and Reports\r\n\r\n As standard, I integrate Google Analytics (GA) into every website we develop. This allows you to view reports of visitor numbers, how visitors find you, referral websites, what visitors enjoy downloading and read on your website. \r\n Search Engine Optimisation (SEO), be crawled and found\r\n\r\n All websites should be search engine friendly, because yours will be. Fully responsive, automatic creation of titles and meta tags, URL rewriting, search engine submission and speed optimisation. \r\n Reliable Hosting, in upward of a solid 99.9% uptime\r\n\r\n I have invested time and money in finding the fastest, safest and most reliable hosting around. I can promise all of this, as well as your website using the latest of technologies in it’s class, with upward of 99.9% uptime. \r\n Disaster Recovery for your data, we have you covered\r\n\r\n Your unique website will be hosted within our unique Azure virtual Infrastructure, which is ultra fast! This enabled me to take multiple backups of your data and store it in multiple, fully encrypted, locations - leaving you completely worry free. \r\n On-Site staff CMS website training, be in the know  \r\n\r\n The best way to learn is to dive into the deep end. With 1 hour on-site (location dependant) CMS training for 2 staff members, we\'ll go through the ins and outs of adding, editing and deleting pages, adding functionality and element styling. \r\n Uptime monitoring and reporting, 24/7/365 days of the year\r\n\r\n I truly believe and follow that all websites, no matter what, should be accessible 24/7, 365 days of the year. I monitor every single one of your websites, making sure it is online - just like it should always be. \r\n Content Migration, we\'ll take some of that work load\r\n\r\n Yes, thats right! Not only do I handle all of the web design, development and technical stuff, but I also offer help during the migration of your content. Whether it\'s coming from your old site, or documentation, I really don\'t mind.  \r\n I take pleasure in envisioning, designing and bringing to life your bespoke website ideas - with both beautiful design and a functional CMS.\r\n DIY website services are limited. That\'s why CLIENTS LOVE my services.\r\n Stop dreaming, start achieving. I\'ll help make your website become reality.\r\n\r\n With the growing numbers of website on the internet, there are 100\'s, if not 1000\'s, of new comers during a month period. This means that the game gets harder with every day that passes. I take pride in ensuring that the online appearance of individuals, start-ups and established brands, go above and beyond compared to competitors. Let me create something beautiful for you and your audience. \r\n\r\n DID YOU KNOW - a study showed that 59% of consumers globally would rather engage with content that\'s beautifully designed as opposed to simply designed — even when short on time. \r\n\r\n Reach your online audience, chat about starting your website project today \r\n ', 'Bespoke Website Designer', 'Bespoke Website Design Service', '/design-development-solutions-and-services/bespoke-website-designer-solution', '2017-08-09 07:46:00', '2017-09-19 14:49:34', NULL, 0),
-(215, '', 'Legal Documentation', '', '/legal-documentation', '2017-09-16 12:09:00', '2017-09-16 21:43:05', NULL, 0),
-(216, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0);
-INSERT INTO `PageSearchIndex` (`cID`, `content`, `cName`, `cDescription`, `cPath`, `cDatePublic`, `cDateLastIndexed`, `cDateLastSitemapped`, `cRequiresReindex`) VALUES
-(217, 'Cookie Policy. It\'s not the type you can eat.\r\n Chris Watterston uses cookies for certain areas of our various websites. This document provides further detail on what you should and need to know about how we use cookies and how you can manage or remove them should you so wish to. If after reading this, you continue to use this websites without any amends to your settings, we will assume you\'re happy to continue receiving all cookies on the Chris Watterston websites.\r\n What is a Cookie\r\n\r\n A cookie is a piece of information in the form of a very small text file that is placed on an internet user\'s device storage. It is generated by a web page server, which is basically the computer that operates a web site. The information the cookie contains is set by the server and it can be used by that server whenever the user visits the site. A cookie can be thought of as an internet user\'s identification card, which tell a web site when the user has returned. \r\n\r\nSession Cookies\r\n\r\n Session Cookies are stored in the device memory only during a user\'s browsing session and are automatically deleted from the user\'s device when the browser is closed. These cookies usually store a session ID that is not personally identifiable to users, allowing the user to move from page to page without having to log-in repeatedly. \r\n\r\n Session Cookies are never written on the device hard drive and they do not collect any information from the user\'s device. Session cookies expire at the end of the user\'s browser session and can also become no longer accessible after the session has been inactive for a specified length of time, usually 20 minutes. \r\n\r\nStored Cookies\r\n\r\n Stored Cookies are stored on the user\'s device and are not deleted when the browser is closed. Permanent cookies can retain user preferences for a particular web site, allowing those preferences to be used in future browsing sessions. \r\n\r\n Permanent cookies can be used to identify individual users, so they may be used by web sites to analyse users\' surfing behaviour within the web site. These cookies can also be used to provide information about numbers of visitors, the average time spent on a particular page and generally the performance of the web site. \r\n\r\nThird Party Cookies\r\n\r\n Third Party Cookies are not set directly by Chris Watterston, but by third-party providers. Third Party Cookies may be set by providers whose services or functionality is embedded in the Chris Watterston websites. \r\n\r\nCookies Used on Chris Watterston\'s Websites\r\n\r\n Chris Watterston\'s websites uses Google Analytics to analyse the use of this website. Google Analytics generates statistical and other information about website use by means of cookies, which are stored on users\' device. The information generated relating to our website is used to create reports about the use of the website. Google will store and use this information. \r\n\r\n Analytics: We use Google Analytics, which creates a number of first-party cookies, all prefixed __utm: \r\n\r\n__utma: contains a unique and anonymous identifying ID, which allows us to ensure that subsequent visits to our website are recorded as belonging to the same (unique) visitor. This cookie expires after two years. \r\n\r\n__utmb: used to establish and continue a unique user session. Each time you request another page from the website the cookie is updated to expire after 30minutes. \r\n\r\n__utmc: works with __utmb to determine when to create a new session for a website visitor. This is a session cookie and expires when you exit the browser. \r\n\r\n__utmz: tracks how you found us and is used to calculate traffic and navigation within the website. It is updated with every new page view and expires after 6 months. \r\n\r\nYou may also sometimes find a __utmv cookie which relates to custom reporting segments, a feature which we occasionally use on Google Analytics. \r\n\r\n Full details of the cookies which Google Analytics uses can be found in Cookies & Google Analytics in documentation for Google\'s Analytics tracking code. You can also read Google\'s Privacy Policy for Google Analytics.  \r\n\r\nChanges to this Cookie Policy\r\n\r\n Chris Watterston reserves the right to change this Cookie Policy as we deem necessary or appropriate because of legal compliance requirements or changes in our business practices. If you have provided us with an email address, we will endeavour to notify you, by email to that address, of any material change to how we will use personally identifiable information. \r\n\r\nManaging Cookies\r\n\r\n The Internet browser you use on your device allows you to manage cookies. You can modify your browser to notify you when cookies are being set. You can also set it to accept or refuse some or all cookies. You can even delete cookies that have already been set. \r\n\r\n Because each device and browser are different from each other, the way you amend the settings for cookies will vary. To find out how to manage your browser, visit www.aboutcookies.org. \r\n\r\n Please be aware that completely disabling cookies on your device may not allow you to make full use of all the website features and functionality that are available. \r\n ', 'Cookie Policy', 'Cookie Policy', '/legal-documentation/cookie-policy', '2017-09-19 22:32:59', '2017-09-19 23:08:20', NULL, 0),
-(218, 'These terms and conditions govern your use of our website; by using our website, you accept these terms and conditions in full. If you disagree with these terms and conditions or any part of these terms and conditions, you must not use our website. If you are under 18, please get your parent / guardian\'s permission before you provide personal information to our website.\r\n Terms​ of Use.\r\n 2. Licence To Use Website\r\n\r\n You may view, download for caching purposes only, and print pages from the website for your own personal use, subject to the restrictions set out below and elsewhere in these terms and conditions.​ \r\n\r\n You must not: \r\n\r\n\r\n	Republish material from this website (including republication on another website).\r\n	Sell, rent or sub-license material from the website.\r\n	Show any material from the website in public.\r\n	Reproduce, duplicate, copy or otherwise exploit material on our website for a commercial purpose.\r\n	Edit or otherwise modify any material on the website.\r\n	Redistribute material from this website except for content specifically and expressly made available for redistribution (such as our newsletters).\r\n\r\n\r\n Where content is specifically made available for redistribution, it may only be redistributed. \r\n\r\n3. Acceptable Use\r\n\r\n You must not use our website in any way that causes, or may cause, damage to the website or impairment of the availability or accessibility of the website; or in any way which is unlawful, illegal, fraudulent or harmful, or in connection with any unlawful, illegal, fraudulent or harmful purpose or activity. \r\n\r\n You must not use our website to copy, store, host, transmit, send, use, publish or distribute any material which consists of (or is linked to) any spyware, computer virus, Trojan horse, worm, keystroke logger, rootkit or other malicious computer software. \r\n\r\n You must not conduct any systematic or automated data collection activities (including without limitation scraping, data mining, data extraction and data harvesting) on or in relation to our website without our express written consent. \r\n\r\n You must not use our website to transmit or send unsolicited commercial communications. \r\n\r\n You must not use our website for any purposes related to marketing without our express written consent. \r\n\r\n4. Restricted Access\r\n\r\n Access to certain areas of our website is restricted. We reserve the right to restrict access to [other] areas of our website, or indeed our whole website, at our discretion. \r\n\r\n If we provide you with a username and password to enable you to access restricted areas of our website or other content or services, you must ensure that that username and password is kept confidential. \r\n\r\n We may disable your username and password in our sole discretion without notice or explanation. \r\n\r\n5. Cookies\r\n\r\n You should note that cookies may be used on this website. Cookies are small pieces of information stored by your browser on your computer\'s hard drive. Cookies are used to keep track of your use of the website and provide you with customised content. \r\n\r\n By modifying your browser preferences, you have the choice to accept all cookies, to be notified when a cookie is set or to reject all cookies. However, you should be aware that if cookies are rejected you may not be able to use some of the online application processes provided by this site. \r\n\r\n6. Personal information collected via online forms\r\n\r\n Personal information will only be used for the purpose indicated and will be held securely. It will not be used for any other purpose without your permission and will not be kept for longer than necessary. If you are concerned about providing your personal information online please contact us and we will arrange alternative means for you to provide this information. \r\n\r\n7. Use Of IP Addresses\r\n\r\n We collect IP addresses only for the purposes of system administration and to audit the use of our site. We do not link IP addresses to anything personally identifiable, which means that if you are logged in with your username and password you will still stay anonymous to us. \r\n\r\n8. User Generated Content\r\n\r\n In these terms and conditions, "your user content" means material (including without limitation text, images, audio material, video material and audio-visual material) that you submit to our website, for whatever purpose. \r\n\r\n You grant to us a worldwide, irrevocable, non-exclusive, royalty-free licence to use, reproduce, adapt, publish, translate and distribute your user content in any existing or future media. You also grant to us the right to sub-license these rights, and the right to bring an action for infringement of these rights. \r\n\r\n Your user content must not be illegal or unlawful, must not infringe any third party\'s legal rights, and must not be capable of giving rise to legal action whether against you or us or a third party (in each case under any applicable law). \r\n\r\n You must not submit any user content to the website that is or has ever been the subject of any threatened or actual legal proceedings or other similar complaint. \r\n\r\n We reserve the right to edit or remove any material submitted to our website, or stored on our servers, or hosted or published upon our website. \r\n\r\n Notwithstanding our rights under these terms and conditions in relation to user content, we do not undertake to monitor the submission of such content to, or the publication of such content on, our website. \r\n\r\n9. Limited Warranties\r\n\r\n We do not warrant the completeness or accuracy of the information published on this website; nor do we commit to ensuring that the website remains available or that the material on the website is kept up-to-date. \r\n\r\n To the maximum extent permitted by applicable law we exclude all representations, warranties and conditions relating to this website and the use of this website (including, without limitation, any warranties implied by law of satisfactory quality, fitness for purpose and / or the use of reasonable care and skill). \r\n\r\n10. Limitations And Exclusions Of Liability\r\n\r\n Nothing in these terms and conditions will; \r\n\r\n\r\n	Limit or exclude our or your liability for death or personal injury resulting from negligence.\r\n	Limit or exclude our or your liability for fraud or fraudulent misrepresentation.\r\n	Limit any of our or your liabilities in any way that is not permitted under applicable law.\r\n	Exclude any of our or your liabilities that may not be excluded under applicable law.\r\n\r\n\r\n The limitations and exclusions of liability set out in this Section and elsewhere in these terms and conditions; \r\n\r\n\r\n	Are subject to the preceding paragraph.\r\n	Govern all liabilities arising under the terms and conditions or in relation to the subject matter of the terms and conditions, including liabilities arising in contract, in tort (including negligence) and for breach of statutory duty.\r\n\r\n\r\n To the extent that the website and the information and services on the website are provided free-of-charge, we will not be liable for any loss or damage of any nature. \r\n\r\n We will not be liable to you in respect of any losses arising out of any event or events beyond our reasonable control. \r\n\r\n We will not be liable to you in respect of any business losses, including (without limitation) loss of or damage to profits, income, revenue, use, production, anticipated savings, business, contracts, commercial opportunities or goodwill. \r\n\r\n We will not be liable to you in respect of any loss or corruption of any data, database or software. \r\n\r\n We will not be liable to you in respect of any special, indirect or consequential loss or damage. \r\n\r\n11. Indemnity\r\n\r\n You hereby indemnify us and undertake to keep us indemnified against any losses, damages, costs, liabilities and expenses (including without limitation legal expenses and any amounts paid by us to a third party in settlement of a claim or dispute on the advice of our legal advisers) incurred or suffered by us arising out of any breach by you of any provision of these terms and conditions or arising out of any claim that you have breached any provision of these terms and conditions. \r\n\r\n12. Breaches Of These Terms And Conditions\r\n\r\n Without prejudice to our other rights under these terms and conditions, if you breach these terms and conditions in any way, we may take such action as we deem appropriate to deal with the breach, including suspending your access to the website, prohibiting you from accessing the website, blocking computers using your IP address from accessing the website, contacting your internet service provider to request that they block your access to the website and / or bringing court proceedings against you. \r\n\r\n13. Variation\r\n\r\n We may revise these terms and conditions from time-to-time. Revised terms and conditions will apply to the use of our website from the date of the publication of the revised terms and conditions on our website. Please check this page regularly to ensure you are familiar with the current version. \r\n\r\n14. Assignment\r\n\r\n We may transfer, sub-contract or otherwise deal with our rights and / or obligations under these terms and conditions without notifying you or obtaining your consent. \r\n\r\n You may not transfer, sub-contract or otherwise deal with your rights and / or obligations under these terms and conditions. \r\n\r\n15. Severability\r\n\r\n If a provision of these terms and conditions is determined by any court or other competent authority to be unlawful and/or unenforceable, the other provisions will continue in effect. If any unlawful and / or unenforceable provision would be lawful or enforceable if part of it were deleted, that part will be deemed to be deleted, and the rest of the provision will continue in effect. \r\n\r\n16. Exclusion Of Third Party Rights\r\n\r\n These terms and conditions are for the benefit of you and us, and are not intended to benefit any third party or be enforceable by any third party. The exercise of our and your rights in relation to these terms and conditions is not subject to the consent of any third party. \r\n\r\n17. Entire Agreement\r\n\r\n These terms and conditions, together with our privacy policy, constitute the entire agreement between you and us in relation to your use of our website, and supersede all previous agreements in respect of your use of this website. \r\n\r\n18. Law And Jurisdiction\r\n\r\n These terms and conditions will be governed by and construed in accordance with English law, and any disputes relating to these terms and conditions will be subject to the [non-]exclusive jurisdiction of the courts of England and Wales. \r\n\r\n19. Our Details\r\n\r\n The full name of our organisation is \'Chris Watterston Designs\'. \r\n\r\n Our address is \'Pentire - Stable 2, Fordbridge Road, Sunbury-on-Thames, Middlsex, TW16 6AX, United Kingdom\'. \r\n\r\nYou can contact us by email hello@chriswatterston.com.​ \r\n ', 'Terms of Use', 'Terms of Use', '/legal-documentation/terms-of-use', '2017-09-19 22:52:05', '2017-09-19 23:07:11', NULL, 0),
-(219, 'Accessibility.\r\n I\'m constantly working towards making my websites as accessible and usable as possible. My websites does not have an accessibility view, because I try to design and develop my websites to be as accessible and usable as possible for every user.\r\n Tools and their Compatibility\r\n\r\n My websites should be compatible with the latest versions of the following screen reading software: \r\n\r\n\r\n	Jaws\r\n	ZoomText\r\n	NVDA\r\n	VoiceOver\r\n	Window Eyes\r\n	Supernova screen readers\r\n	Magicetc\r\n\r\n\r\n The site should also be compatible with: \r\n\r\n\r\n	basic operating system screen magnifiers\r\n	speech recognition software\r\n	operating system speech packages\r\n\r\n\r\n If you have any questions of have experienced issue, please contact us. \r\n ', 'Accessibility', 'Accessibility', '/legal-documentation/accessibility', '2017-09-19 23:10:48', '2017-09-19 23:20:27', NULL, 0);
+(215, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0),
+(216, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0),
+(217, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0),
+(218, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0),
+(219, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0),
+(220, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -28120,7 +28817,8 @@ INSERT INTO `StyleCustomizerInlineStyleSets` (`issID`, `customClass`, `customID`
 (229, 'respo-full', NULL, NULL, 0, 'no-repeat', 'auto', '0% 0%', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, NULL),
 (230, NULL, 'respo-full', NULL, 0, 'no-repeat', 'auto', '0% 0%', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, NULL),
 (231, NULL, 'respo-full', NULL, 0, 'no-repeat', 'auto', '0% 0%', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, NULL),
-(232, 'store-full', NULL, 'rgb(160, 207, 211)', 51, 'no-repeat', 'cover', 'left top', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '80px', '80px', '200px', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, NULL);
+(232, 'store-full', NULL, 'rgb(160, 207, 211)', 51, 'no-repeat', 'cover', 'left top', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '80px', '80px', '200px', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, NULL),
+(233, 'bkgrnd-icon large mobileapp', NULL, NULL, 0, 'no-repeat', 'auto', '0% 0%', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -28368,7 +29066,9 @@ INSERT INTO `TreeFileNodes` (`treeNodeID`, `fID`) VALUES
 (79, 48),
 (80, 49),
 (82, 51),
-(83, 52);
+(83, 52),
+(84, 53),
+(85, 54);
 
 -- --------------------------------------------------------
 
@@ -28524,7 +29224,9 @@ INSERT INTO `TreeNodes` (`treeNodeID`, `treeNodeTypeID`, `treeID`, `treeNodePare
 (79, 6, 3, 7, 46, '', '2017-09-14 09:23:10', '2017-09-14 09:23:10', 0, 7),
 (80, 6, 3, 7, 47, '', '2017-09-14 09:23:10', '2017-09-14 09:23:10', 0, 7),
 (82, 6, 3, 7, 49, '', '2017-09-14 15:48:13', '2017-09-14 15:48:13', 0, 7),
-(83, 6, 3, 7, 49, '', '2017-09-15 10:32:08', '2017-09-15 10:32:08', 0, 7);
+(83, 6, 3, 7, 49, '', '2017-09-15 10:32:08', '2017-09-15 10:32:08', 0, 7),
+(84, 6, 3, 7, 48, '', '2017-09-20 14:47:06', '2017-09-20 14:47:06', 0, 7),
+(85, 6, 3, 7, 49, '', '2017-09-20 14:50:04', '2017-09-20 14:50:04', 0, 7);
 
 -- --------------------------------------------------------
 
@@ -28814,7 +29516,7 @@ CREATE TABLE `Users` (
 --
 
 INSERT INTO `Users` (`uID`, `uName`, `uEmail`, `uPassword`, `uIsActive`, `uIsFullRecord`, `uIsValidated`, `uDateAdded`, `uLastPasswordChange`, `uHasAvatar`, `uLastOnline`, `uLastLogin`, `uPreviousLogin`, `uNumLogins`, `uLastAuthTypeID`, `uLastIP`, `uTimezone`, `uDefaultLanguage`, `uIsPasswordReset`) VALUES
-(1, 'admin', 'hello@chriswatterston.com', '$2a$12$kJV9yqhfCBt8k6DX6w7xxuSypfc/T0vGL5u2G3M2LTUpzYnRPmRvG', 1, 1, 1, '2017-05-22 15:59:23', '2017-05-22 15:59:23', 0, 1505861495, 1504625661, 1503049245, 14, 1, '7f000001', NULL, NULL, 0);
+(1, 'admin', 'hello@chriswatterston.com', '$2a$12$kJV9yqhfCBt8k6DX6w7xxuSypfc/T0vGL5u2G3M2LTUpzYnRPmRvG', 1, 1, 1, '2017-05-22 15:59:23', '2017-05-22 15:59:23', 0, 1505917870, 1504625661, 1503049245, 14, 1, '7f000001', NULL, NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -29544,7 +30246,40 @@ INSERT INTO `WorkflowProgressHistory` (`wphID`, `wpID`, `timestamp`, `object`) V
 (594, 188, '2017-09-19 22:22:37', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:3:"188";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"156";s:4:"cvID";s:1:"5";}'),
 (595, 189, '2017-09-19 22:27:12', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:3:"189";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"162";s:4:"cvID";s:2:"13";}'),
 (596, 190, '2017-09-19 22:28:05', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:3:"190";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"163";s:4:"cvID";s:2:"34";}'),
-(597, 191, '2017-09-19 22:28:56', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:3:"191";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"163";s:4:"cvID";s:2:"35";}');
+(597, 191, '2017-09-19 22:28:56', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:3:"191";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"163";s:4:"cvID";s:2:"35";}'),
+(598, 31, '2017-09-20 07:42:12', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"31";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"211";s:4:"cvID";s:3:"113";}'),
+(599, 32, '2017-09-20 08:19:49', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"32";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"162";s:4:"cvID";s:2:"14";}'),
+(600, 33, '2017-09-20 08:20:44', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"33";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"161";s:4:"cvID";s:2:"21";}'),
+(601, 34, '2017-09-20 11:34:37', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"34";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"161";s:4:"cvID";s:2:"22";}'),
+(602, 35, '2017-09-20 11:35:30', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"35";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"181";s:4:"cvID";s:1:"8";}'),
+(603, 36, '2017-09-20 11:36:06', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"36";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"188";s:4:"cvID";s:1:"5";}'),
+(604, 37, '2017-09-20 11:36:43', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"37";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"192";s:4:"cvID";s:1:"6";}'),
+(605, 38, '2017-09-20 11:37:54', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"38";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"192";s:4:"cvID";s:1:"7";}'),
+(606, 39, '2017-09-20 11:38:11', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"39";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"192";s:4:"cvID";s:1:"8";}'),
+(607, 40, '2017-09-20 11:38:54', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"40";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"161";s:4:"cvID";s:2:"23";}'),
+(608, 41, '2017-09-20 11:39:32', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"41";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"161";s:4:"cvID";s:2:"24";}'),
+(609, 42, '2017-09-20 11:40:14', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"42";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"162";s:4:"cvID";s:2:"15";}'),
+(610, 43, '2017-09-20 11:56:34', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"43";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:1:"1";s:4:"cvID";s:2:"40";}'),
+(611, 44, '2017-09-20 13:16:08', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"44";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"163";s:4:"cvID";s:2:"36";}'),
+(612, 45, '2017-09-20 13:47:32', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"45";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"185";s:4:"cvID";s:1:"3";}'),
+(613, 46, '2017-09-20 13:47:33', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"46";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"185";s:4:"cvID";s:1:"4";}'),
+(614, 47, '2017-09-20 13:47:38', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"47";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"185";s:4:"cvID";s:1:"5";}'),
+(615, 48, '2017-09-20 13:50:31', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"48";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"187";s:4:"cvID";s:2:"13";}'),
+(616, 49, '2017-09-20 13:51:34', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"49";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"181";s:4:"cvID";s:1:"9";}'),
+(617, 50, '2017-09-20 13:51:48', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"50";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"181";s:4:"cvID";s:2:"10";}'),
+(618, 51, '2017-09-20 13:59:34', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"51";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"220";s:4:"cvID";s:1:"1";}'),
+(619, 52, '2017-09-20 14:20:02', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"52";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"220";s:4:"cvID";s:1:"2";}'),
+(620, 53, '2017-09-20 14:23:39', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"53";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"220";s:4:"cvID";s:1:"3";}'),
+(621, 54, '2017-09-20 14:25:35', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"54";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"156";s:4:"cvID";s:1:"6";}'),
+(622, 55, '2017-09-20 14:26:26', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"55";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"220";s:4:"cvID";s:1:"4";}'),
+(623, 56, '2017-09-20 14:27:15', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"56";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"156";s:4:"cvID";s:1:"7";}'),
+(624, 57, '2017-09-20 14:28:04', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"57";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"215";s:4:"cvID";s:1:"4";}'),
+(625, 58, '2017-09-20 14:28:37', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"58";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"217";s:4:"cvID";s:1:"5";}'),
+(626, 59, '2017-09-20 14:28:55', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"59";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"218";s:4:"cvID";s:1:"4";}'),
+(627, 60, '2017-09-20 14:29:07', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"60";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"219";s:4:"cvID";s:1:"3";}'),
+(628, 61, '2017-09-20 14:29:18', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"61";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"220";s:4:"cvID";s:1:"5";}'),
+(629, 62, '2017-09-20 14:29:26', 'O:49:"Concrete\\Core\\Workflow\\Request\\ApprovePageRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"62";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"216";s:4:"cvID";s:2:"21";}'),
+(630, 63, '2017-09-20 14:31:45', 'O:50:"Concrete\\Core\\Workflow\\Request\\ApproveStackRequest":10:{s:14:"\0*\0wrStatusNum";i:30;s:62:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0isScheduled";b:0;s:67:"\0Concrete\\Core\\Workflow\\Request\\ApprovePageRequest\0scheduleDatetime";N;s:12:"\0*\0currentWP";N;s:6:"\0*\0uID";s:1:"1";s:7:"\0*\0wrID";s:2:"63";s:5:"error";s:0:"";s:4:"pkID";s:2:"14";s:3:"cID";s:3:"156";s:4:"cvID";s:1:"8";}');
 
 -- --------------------------------------------------------
 
@@ -31859,7 +32594,7 @@ ALTER TABLE `AreaLayoutThemeGridColumns`
 -- AUTO_INCREMENT for table `Areas`
 --
 ALTER TABLE `Areas`
-  MODIFY `arID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=263;
+  MODIFY `arID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=268;
 --
 -- AUTO_INCREMENT for table `atSelectedSocialLinks`
 --
@@ -31869,7 +32604,7 @@ ALTER TABLE `atSelectedSocialLinks`
 -- AUTO_INCREMENT for table `atSelectedTopics`
 --
 ALTER TABLE `atSelectedTopics`
-  MODIFY `avTreeTopicNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=114;
+  MODIFY `avTreeTopicNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=133;
 --
 -- AUTO_INCREMENT for table `atSelectOptionLists`
 --
@@ -31904,7 +32639,7 @@ ALTER TABLE `AttributeTypes`
 -- AUTO_INCREMENT for table `AttributeValues`
 --
 ALTER TABLE `AttributeValues`
-  MODIFY `avID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2233;
+  MODIFY `avID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2390;
 --
 -- AUTO_INCREMENT for table `AuthenticationTypes`
 --
@@ -31924,7 +32659,7 @@ ALTER TABLE `BannedWords`
 -- AUTO_INCREMENT for table `Blocks`
 --
 ALTER TABLE `Blocks`
-  MODIFY `bID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=943;
+  MODIFY `bID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=959;
 --
 -- AUTO_INCREMENT for table `BlockTypes`
 --
@@ -31989,7 +32724,7 @@ ALTER TABLE `btVividThumbGalleryThumb`
 -- AUTO_INCREMENT for table `Collections`
 --
 ALTER TABLE `Collections`
-  MODIFY `cID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=220;
+  MODIFY `cID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=221;
 --
 -- AUTO_INCREMENT for table `ConversationDiscussions`
 --
@@ -32079,12 +32814,12 @@ ALTER TABLE `FileImageThumbnailTypes`
 -- AUTO_INCREMENT for table `Files`
 --
 ALTER TABLE `Files`
-  MODIFY `fID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+  MODIFY `fID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 --
 -- AUTO_INCREMENT for table `FileSetFiles`
 --
 ALTER TABLE `FileSetFiles`
-  MODIFY `fsfID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `fsfID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 --
 -- AUTO_INCREMENT for table `FileSets`
 --
@@ -32219,7 +32954,7 @@ ALTER TABLE `PageFeeds`
 -- AUTO_INCREMENT for table `PagePaths`
 --
 ALTER TABLE `PagePaths`
-  MODIFY `ppID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=216;
+  MODIFY `ppID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=217;
 --
 -- AUTO_INCREMENT for table `PageTemplates`
 --
@@ -32379,7 +33114,7 @@ ALTER TABLE `StyleCustomizerInlineStylePresets`
 -- AUTO_INCREMENT for table `StyleCustomizerInlineStyleSets`
 --
 ALTER TABLE `StyleCustomizerInlineStyleSets`
-  MODIFY `issID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=233;
+  MODIFY `issID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=234;
 --
 -- AUTO_INCREMENT for table `StyleCustomizerValueLists`
 --
@@ -32399,7 +33134,7 @@ ALTER TABLE `SystemDatabaseQueryLog`
 -- AUTO_INCREMENT for table `TreeFileNodes`
 --
 ALTER TABLE `TreeFileNodes`
-  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
+  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
 --
 -- AUTO_INCREMENT for table `TreeGroupNodes`
 --
@@ -32409,7 +33144,7 @@ ALTER TABLE `TreeGroupNodes`
 -- AUTO_INCREMENT for table `TreeNodes`
 --
 ALTER TABLE `TreeNodes`
-  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
+  MODIFY `treeNodeID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
 --
 -- AUTO_INCREMENT for table `TreeNodeTypes`
 --
@@ -32464,7 +33199,7 @@ ALTER TABLE `UserValidationHashes`
 -- AUTO_INCREMENT for table `WorkflowProgress`
 --
 ALTER TABLE `WorkflowProgress`
-  MODIFY `wpID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=192;
+  MODIFY `wpID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
 --
 -- AUTO_INCREMENT for table `WorkflowProgressCategories`
 --
@@ -32474,12 +33209,12 @@ ALTER TABLE `WorkflowProgressCategories`
 -- AUTO_INCREMENT for table `WorkflowProgressHistory`
 --
 ALTER TABLE `WorkflowProgressHistory`
-  MODIFY `wphID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=598;
+  MODIFY `wphID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=631;
 --
 -- AUTO_INCREMENT for table `WorkflowRequestObjects`
 --
 ALTER TABLE `WorkflowRequestObjects`
-  MODIFY `wrID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=192;
+  MODIFY `wrID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
 --
 -- AUTO_INCREMENT for table `Workflows`
 --

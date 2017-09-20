@@ -1,74 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="636" height="430" viewBox="0 0 636 430">
-  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
-   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-      <rdf:Description rdf:about=""/>
-   </rdf:RDF>
-</x:xmpmeta>
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                           
-<?xpacket end="w"?></metadata>
-<defs>
-    <style>
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
-        fill: #f6bd60;
-      }
-
-      .cls-1 {
-        fill-rule: evenodd;
-      }
-
-      .cls-2 {
-        opacity: 0.6;
-      }
-
-      .cls-3 {
-        opacity: 0.85;
-      }
-
-      .cls-4 {
-        opacity: 0.4;
-      }
-
-      .cls-5 {
-        opacity: 0.95;
-      }
-
-      .cls-6 {
-        opacity: 0.7;
-      }
-    </style>
-  </defs>
-  <path class="cls-1" d="M415,824V774h50V724H565V674h50V624H715V394H79V824H415Z" transform="translate(-79 -394)"/>
-  <rect id="Rectangle_1_copy" data-name="Rectangle 1 copy" class="cls-2" x="283" y="377" width="103" height="53"/>
-  <g id="Group_2_copy" data-name="Group 2 copy">
-    <rect id="Rectangle_1_copy_2" data-name="Rectangle 1 copy 2" class="cls-3" x="383" y="327" width="53" height="53"/>
-    <rect id="Rectangle_1_copy-2" data-name="Rectangle 1 copy" class="cls-4" x="383" y="327" width="103" height="53"/>
-  </g>
-  <g id="Group_2_copy_3" data-name="Group 2 copy 3">
-    <rect id="Rectangle_1_copy_2-2" data-name="Rectangle 1 copy 2" class="cls-5" x="533" y="227" width="53" height="53"/>
-    <rect id="Rectangle_1_copy-3" data-name="Rectangle 1 copy" class="cls-4" x="533" y="227" width="103" height="53"/>
-  </g>
-  <g id="Group_2_copy_2" data-name="Group 2 copy 2">
-    <rect id="Rectangle_1_copy-4" data-name="Rectangle 1 copy" class="cls-6" x="433" y="277" width="103" height="53"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 636 430" style="enable-background:new 0 0 636 430;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F6BD60;}
+	.st1{opacity:0.8;fill:#F6BD60;enable-background:new    ;}
+	.st2{opacity:0.85;fill:#F6BD60;enable-background:new    ;}
+	.st3{opacity:0.4;fill:#F6BD60;enable-background:new    ;}
+	.st4{opacity:0.95;fill:#F6BD60;enable-background:new    ;}
+	.st5{opacity:0.7;fill:#F6BD60;enable-background:new    ;}
+	.st6{opacity:0.4;fill:#F6BD60;}
+</style>
+<path class="st0" d="M312.3,456.3l-21.7-65.6l65.6-21.7l-21.7-65.6L465.8,260l-21.7-65.6l65.6-21.7L488,107l247.8-84.4L636-279.3
+	l-951.4,317l186.6,564.4L312.3,456.3z"/>
+<rect id="Rectangle_1_copy" x="227.6" y="385.6" transform="matrix(0.9494 -0.3139 0.3139 0.9494 -117.4391 115.1601)" class="st1" width="142.4" height="73.3"/>
+<g id="Group_2_copy">
+	
+		<rect id="Rectangle_1_copy_2" x="338.9" y="287.4" transform="matrix(0.9494 -0.3139 0.3139 0.9494 -82.7336 134.2901)" class="st2" width="73.3" height="73.3"/>
+	
+		<rect id="Rectangle_1_copy-2" x="337.2" y="276.5" transform="matrix(0.9494 -0.3139 0.3139 0.9494 -77.6677 144.0441)" class="st3" width="142.4" height="73.3"/>
+</g>
+<g id="Group_2_copy_3">
+	
+		<rect id="Rectangle_1_copy_2-2" x="492.4" y="91" transform="matrix(0.9494 -0.3139 0.3139 0.9494 -13.3224 172.5502)" class="st4" width="73.3" height="73.3"/>
+	
+		<rect id="Rectangle_1_copy-3" x="487.7" y="61.6" transform="matrix(0.9494 -0.3139 0.3139 0.9494 0.3882 198.9487)" class="st3" width="260.4" height="73.3"/>
+</g>
+<g id="Group_2_copy_2">
+	
+		<rect id="Rectangle_1_copy-4" x="381.1" y="189.2" transform="matrix(0.9494 -0.3139 0.3139 0.9494 -48.028 153.4202)" class="st5" width="142.4" height="73.3"/>
+</g>
+<rect x="-9" y="-11" class="st6" width="651" height="446"/>
 </svg>

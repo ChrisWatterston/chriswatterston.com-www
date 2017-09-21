@@ -2,6 +2,13 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en-GB">
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-12746728-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+  gtag('config', 'UA-12746728-1');
+</script>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <link rel="stylesheet" type="text/css" href="<?php echo $view->getThemePath()?>/css/core.css" />
@@ -21,6 +28,30 @@
 <link rel="apple-touch-icon-precomposed" href="<?php echo $view->getThemePath()?>/img/icns/icon-57x57.png" />
 <script type="text/javascript" src="<?php echo $view->getThemePath()?>/js/slidenavigation.min.js"></script>
 <script>function isTouchDevice(){return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);}if(isTouchDevice()===true){$('html').addClass('dev-touch');}else{$('html').addClass('dev-no-touch');}</script>
+<script>
+var _prum = [['id', '55842366abe53dab7041a5a4'],
+             ['mark', 'firstbyte', (new Date()).getTime()]];
+(function() {
+    var s = document.getElementsByTagName('script')[0]
+      , p = document.createElement('script');
+    p.async = 'async';
+    p.src = '//rum-static.pingdom.net/prum.min.js';
+    s.parentNode.insertBefore(p, s);
+})();
+</script>
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1673334912907615');
+fbq('track', "PageView");
+fbq('track', 'ViewContent');
+fbq('track', 'Lead');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1673334912907615&ev=PageView&noscript=1"/></noscript>
 </head>
 <body>
 <!--[if lte IE 8]><p class="ie-upgrade">Your internet browser is outdated, for which an <a href="http://updatemybrowser.org/" title="Browsercheck - Update my browser" target="_blank">update is highly recommended</a>&#33;<br />Not doing so will cause visible issues while viewing our website, and leave you vulnerable to security threats throughout the internet.</p></p><![endif]-->

@@ -135,6 +135,9 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 					float:left;
 					width:$col-one / 2;
 				}
+				.col.branding {
+					a img.logo {height:40px;}
+				}
 				.col.navigation {
 					nav.main {
 						#cd-lateral-nav {

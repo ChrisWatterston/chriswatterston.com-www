@@ -1,66 +1,51 @@
-<svg id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="199.594" height="42.5" viewBox="0 0 199.594 42.5">
-  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
-   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-      <rdf:Description rdf:about=""/>
-   </rdf:RDF>
-</x:xmpmeta>
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                           
-<?xpacket end="w"?></metadata>
-<defs>
-    <style>
-      .cls-1, .cls-4 {
-        fill: #fff;
-      }
-
-      .cls-1, .cls-2, .cls-3, .cls-4 {
-        fill-rule: evenodd;
-      }
-
-      .cls-1 {
-        filter: url(#filter);
-      }
-
-      .cls-2 {
-        fill: #009788;
-      }
-
-      .cls-3 {
-        fill: #85c8b3;
-      }
-    </style>
-    <filter id="filter" x="60.563" y="41" width="42.469" height="42.5" filterUnits="userSpaceOnUse">
-      <feImage preserveAspectRatio="none" x="60.5625" y="41" width="42.469" height="42.5" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDIuNDY5IiBoZWlnaHQ9IjQyLjUiIHZpZXdCb3g9IjAgMCA0Mi40NjkgNDIuNSI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgb3BhY2l0eTogMC41OwogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iNDIuNDY5IiB5MT0iNDIuNDg0IiB4Mj0iMCIgeTI9IjAuMDE2IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMC40NSIgc3RvcC1jb2xvcj0iI2VkZWZmMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuNTA0IiBzdG9wLWNvbG9yPSIjZWRlZmYwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMC41MDUiIHN0b3AtY29sb3I9IiNlZGVmZjAiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuNTUiIHN0b3AtY29sb3I9IiNlZGVmZjAiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNDIuNDY5IiBoZWlnaHQ9IjQyLjUiLz4KPC9zdmc+Cg=="/>
-      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
-      <feBlend result="blend" in2="SourceGraphic"/>
-    </filter>
-  </defs>
-  <g id="Wrap">
-    <path id="Wrap-2" data-name="Wrap" class="cls-1" d="M81.791,41A21.247,21.247,0,1,1,60.552,62.249,21.243,21.243,0,0,1,81.791,41Z" transform="translate(-60.563 -41)"/>
-  </g>
-  <g id="Logo-2" data-name="Logo">
-    <path id="Uppercase_W" data-name="Uppercase W" class="cls-2" d="M67.156,66.308L80.81,79.966,99.429,61.342,85.775,47.685l-3.1,3.1,9.93,9.932-4.344,4.345-9.93-9.932L74.6,58.859l9.93,9.932-4.344,4.346L70.259,63.2Z" transform="translate(-60.563 -41)"/>
-    <path id="Uppercase_C" data-name="Uppercase C" class="cls-3" d="M67.777,59.48L78.948,48.306,92.015,61.376l-3.1,3.1-9.343-9.345L74.6,60.1l9.351,9.353-3.1,3.1Z" transform="translate(-60.563 -41)"/>
-  </g>
-  <path id="Chris_Watterston" data-name="Chris Watterston" class="cls-4" d="M118.907,65.646v2.5c0,1.25-.551,1.7-1.426,1.7s-1.426-.45-1.426-1.7V58.7c0-1.25.55-1.725,1.426-1.725s1.426,0.475,1.426,1.725v1.875h2.6v-1.7c0-2.8-1.4-4.4-4.1-4.4s-4.1,1.6-4.1,4.4v9.1c0,2.8,1.4,4.4,4.1,4.4s4.1-1.6,4.1-4.4V65.646h-2.6Zm7.031-.975h3.127v7.5h2.8v-17.5h-2.8v7.5h-3.127v-7.5h-2.752v17.5h2.752v-7.5Zm16.487,7.5a5.134,5.134,0,0,1-.3-2.124v-2.7c0-1.825-.45-3.124-1.826-3.7V63.6c1.226-.575,1.8-1.725,1.8-3.524V58.7c0-2.7-1.225-4.024-4.077-4.024H133.87v17.5h2.751V65.046h0.951c1.25,0,1.8.6,1.8,2.224V70.02a5.38,5.38,0,0,0,.25,2.15h2.8Zm-4.478-15c0.976,0,1.4.55,1.4,1.8V60.7c0,1.4-.626,1.849-1.651,1.849h-1.076V57.173h1.326Zm5.981,15h2.751v-17.5h-2.751v17.5Zm4.4-13.3c0,2,.726,3.449,3.027,5.474,1.8,1.575,2.351,2.524,2.351,3.8,0,1.25-.55,1.7-1.426,1.7s-1.425-.45-1.425-1.7V66.9h-2.6v1.075c0,2.8,1.4,4.4,4.1,4.4s4.1-1.6,4.1-4.4c0-2-.726-3.449-3.027-5.474-1.8-1.575-2.351-2.524-2.351-3.8,0-1.25.5-1.725,1.376-1.725s1.375,0.475,1.375,1.725v0.725h2.6v-0.55c0-2.8-1.376-4.4-4.053-4.4S148.331,56.074,148.331,58.873Zm20.69,13.3h3.652l1.951-17.5h-2.4l-1.4,13.9h-0.05l-1.351-13.9H166.77l-1.3,13.8h-0.05l-1.451-13.8h-2.676l1.951,17.5h3.777L168,62.847h0.05Zm13.086-17.5H178.08l-2.8,17.5H177.8L178.28,69h3.377l0.475,3.174h2.777Zm-2.176,3.1h0.05l1.3,8.848H178.63Zm5.455-.6h2.877v15h2.752v-15h2.876v-2.5h-8.5v2.5Zm8.907,0h2.877v15h2.752v-15H202.8v-2.5h-8.5v2.5Zm12.459,0h4.753v-2.5H204v17.5h7.5v-2.5h-4.753V64.546h3.778v-2.5h-3.778V57.173Zm15.011,15a5.152,5.152,0,0,1-.3-2.124v-2.7c0-1.825-.45-3.124-1.826-3.7V63.6c1.226-.575,1.8-1.725,1.8-3.524V58.7c0-2.7-1.226-4.024-4.077-4.024h-4.153v17.5h2.752V65.046h0.95c1.251,0,1.8.6,1.8,2.224V70.02a5.38,5.38,0,0,0,.25,2.15h2.8Zm-4.477-15c0.975,0,1.4.55,1.4,1.8V60.7c0,1.4-.625,1.849-1.65,1.849H215.96V57.173h1.326Zm5.63,1.7c0,2,.726,3.449,3.027,5.474,1.8,1.575,2.351,2.524,2.351,3.8,0,1.25-.55,1.7-1.425,1.7s-1.426-.45-1.426-1.7V66.9h-2.6v1.075c0,2.8,1.4,4.4,4.1,4.4s4.1-1.6,4.1-4.4c0-2-.725-3.449-3.027-5.474-1.8-1.575-2.351-2.524-2.351-3.8,0-1.25.5-1.725,1.376-1.725s1.375,0.475,1.375,1.725v0.725h2.6v-0.55c0-2.8-1.376-4.4-4.052-4.4S222.916,56.074,222.916,58.873Zm8.908-1.7H234.7v15h2.752v-15h2.876v-2.5h-8.5v2.5ZM244.057,58.7c0-1.25.551-1.725,1.426-1.725s1.426,0.475,1.426,1.725v9.448c0,1.25-.55,1.725-1.426,1.725s-1.426-.475-1.426-1.725V58.7Zm-2.751,9.273c0,2.8,1.476,4.4,4.177,4.4s4.178-1.6,4.178-4.4v-9.1c0-2.8-1.476-4.4-4.178-4.4s-4.177,1.6-4.177,4.4v9.1Zm16.012,4.2h2.826v-17.5h-2.451V65.146h-0.05l-2.777-10.472h-3.452v17.5h2.477V59.5h0.05Z" transform="translate(-60.563 -41)"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 199.6 42.5" style="enable-background:new 0 0 199.6 42.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#EAF2E3;}
+	.st2{fill:#06D6A0;}
+	.st3{fill:#009788;}
+	.st4{fill:#007C6D;}
+	.st5{fill:#04B784;}
+</style>
+<circle class="st0" cx="21.4" cy="21.3" r="21.2"/>
+<path id="Chris_Watterston" class="st0" d="M58.3,24.6v2.5c0,1.2-0.6,1.7-1.4,1.7s-1.4-0.4-1.4-1.7v-9.4c0-1.2,0.6-1.7,1.4-1.7
+	s1.4,0.5,1.4,1.7v1.9h2.6v-1.7c0-2.8-1.4-4.4-4.1-4.4s-4.1,1.6-4.1,4.4V27c0,2.8,1.4,4.4,4.1,4.4s4.1-1.6,4.1-4.4v-2.3H58.3z
+	 M65.4,23.7h3.1v7.5h2.8V13.7h-2.8v7.5h-3.1v-7.5h-2.8v17.5h2.8C65.4,31.2,65.4,23.7,65.4,23.7z M81.9,31.2
+	c-0.2-0.7-0.4-1.4-0.3-2.1v-2.7c0-1.8-0.4-3.1-1.8-3.7v0c1.2-0.6,1.8-1.7,1.8-3.5v-1.4c0-2.7-1.2-4-4.1-4h-4.2v17.5h2.8V24h1
+	c1.2,0,1.8,0.6,1.8,2.2V29c-0.1,0.7,0,1.5,0.2,2.2L81.9,31.2L81.9,31.2z M77.4,16.2c1,0,1.4,0.5,1.4,1.8v1.7c0,1.4-0.6,1.8-1.7,1.8
+	h-1.1v-5.4L77.4,16.2L77.4,16.2z M83.4,31.2h2.8V13.7h-2.8V31.2z M87.8,17.9c0,2,0.7,3.4,3,5.5c1.8,1.6,2.4,2.5,2.4,3.8
+	c0,1.2-0.6,1.7-1.4,1.7s-1.4-0.4-1.4-1.7v-1.2h-2.6V27c0,2.8,1.4,4.4,4.1,4.4s4.1-1.6,4.1-4.4c0-2-0.7-3.4-3-5.5
+	c-1.8-1.6-2.4-2.5-2.4-3.8c0-1.2,0.5-1.7,1.4-1.7s1.4,0.5,1.4,1.7v0.7h2.6v-0.5c0-2.8-1.4-4.4-4.1-4.4S87.8,15.1,87.8,17.9
+	L87.8,17.9z M108.5,31.2h3.7l2-17.5h-2.4l-1.4,13.9h-0.1l-1.4-13.9h-2.6l-1.3,13.8h-0.1l-1.5-13.8h-2.7l2,17.5h3.8l1-9.3h0.1
+	L108.5,31.2z M121.5,13.7h-4l-2.8,17.5h2.5l0.5-3.2h3.4l0.5,3.2h2.8L121.5,13.7z M119.4,16.8L119.4,16.8l1.4,8.8h-2.6L119.4,16.8z
+	 M124.8,16.2h2.9v15h2.8v-15h2.9v-2.5h-8.5L124.8,16.2L124.8,16.2z M133.7,16.2h2.9v15h2.8v-15h2.9v-2.5h-8.5L133.7,16.2L133.7,16.2
+	z M146.2,16.2h4.8v-2.5h-7.5v17.5h7.5v-2.5h-4.8v-5.1h3.8V21h-3.8L146.2,16.2L146.2,16.2z M161.2,31.2c-0.2-0.7-0.4-1.4-0.3-2.1
+	v-2.7c0-1.8-0.4-3.1-1.8-3.7v0c1.2-0.6,1.8-1.7,1.8-3.5v-1.4c0-2.7-1.2-4-4.1-4h-4.2v17.5h2.8V24h0.9c1.3,0,1.8,0.6,1.8,2.2V29
+	c-0.1,0.7,0,1.5,0.2,2.2L161.2,31.2L161.2,31.2z M156.7,16.2c1,0,1.4,0.5,1.4,1.8v1.7c0,1.4-0.6,1.8-1.6,1.8h-1.1v-5.4L156.7,16.2
+	L156.7,16.2z M162.3,17.9c0,2,0.7,3.4,3,5.5c1.8,1.6,2.4,2.5,2.4,3.8c0,1.2-0.6,1.7-1.4,1.7s-1.4-0.4-1.4-1.7v-1.2h-2.6V27
+	c0,2.8,1.4,4.4,4.1,4.4s4.1-1.6,4.1-4.4c0-2-0.7-3.4-3-5.5c-1.8-1.6-2.4-2.5-2.4-3.8c0-1.2,0.5-1.7,1.4-1.7s1.4,0.5,1.4,1.7v0.7h2.6
+	v-0.5c0-2.8-1.4-4.4-4.1-4.4S162.4,15.1,162.3,17.9L162.3,17.9z M171.3,16.2h2.9v15h2.8v-15h2.9v-2.5h-8.5L171.3,16.2L171.3,16.2z
+	 M183.5,17.7c0-1.2,0.6-1.7,1.4-1.7s1.4,0.5,1.4,1.7v9.4c0,1.2-0.6,1.7-1.4,1.7s-1.4-0.5-1.4-1.7V17.7z M180.7,27
+	c0,2.8,1.5,4.4,4.2,4.4s4.2-1.6,4.2-4.4v-9.1c0-2.8-1.5-4.4-4.2-4.4s-4.2,1.6-4.2,4.4V27z M196.8,31.2h2.8V13.7h-2.5v10.5h0
+	l-2.8-10.5h-3.5v17.5h2.5V18.5h0.1L196.8,31.2z"/>
+<g id="_x32_017">
+	<path id="Half_2_" class="st1" d="M21.8,0c3.2,0,5.9,0.9,8.8,2.3c-4.2,4.2-7.1,7.1-10.1,10.1c-2.1-2.1-5.5,0-6.9,1.4
+		c-1.2,1.2-4,3.7-1.1,6.6c-2.9,2.9-5.8,5.8-10.1,10.1C1.1,27.8,0,25.2,0,22C0,8.8,9.3,0,21.8,0z"/>
+	<polygon id="C_2_" class="st2" points="30.8,20.2 27.7,23.3 18.6,14.3 14.2,18.7 23.2,27.8 20.1,30.9 7.2,18.1 18,7.3 	"/>
+	<polygon id="W_2_" class="st3" points="7.2,25.7 10.4,22.5 20,32.1 24.4,27.7 14.8,18.1 18,14.9 27.6,24.5 32,20.1 22.4,10.5 
+		25.6,7.3 39,20.7 31.4,28.3 20.6,39.1 	"/>
+	
+		<rect id="Shadow_9_" x="14.4" y="16.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.9829 16.7046)" class="st4" width="4.5" height="0.8"/>
+	
+		<rect id="Shadow_8_" x="22" y="8.8" transform="matrix(0.7071 -0.7071 0.7071 0.7071 0.6095 19.8495)" class="st4" width="4.5" height="0.8"/>
+	
+		<rect id="Shadow_7_" x="6.8" y="24" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -14.5637 13.5646)" class="st4" width="4.5" height="0.8"/>
+	
+		<rect id="Shadow_6_" x="19.7" y="29.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -14.5299 24.1854)" class="st5" width="4.5" height="0.8"/>
+	
+		<rect id="Shadow_5_" x="27.3" y="21.6" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.9245 27.3357)" class="st5" width="4.5" height="0.8"/>
+</g>
 </svg>

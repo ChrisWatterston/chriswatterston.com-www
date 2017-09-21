@@ -1,12 +1,12 @@
 <?php
 	defined('C5_EXECUTE') or die("Access Denied.");
-	
+
 	$th = Loader::helper('text');
 	$c = Page::getCurrentPage();
 	$ih = Loader::helper('image');
 ?>
 
-		
+
 <?php if ( $c->isEditMode() && $controller->isBlockEmpty()) { ?>
 	<div class="ccm-edit-mode-disabled-item"><?php echo t('Empty Page List Block.')?></div>
 <?php } else { ?>
@@ -20,7 +20,7 @@
 		$description = $th->entities($description);
         $date = $page->getCollectionDatePublicObject()->format('jS F Y');
         $img = false;
-        
+
 		$posttypetitle = $page->getAttribute('post_topics');
 		$posttypetitlefirst = $posttypetitle[0]->getTreeNodeDisplayName();
 
@@ -29,8 +29,8 @@
 		$microposttag = "";
 		if ($micropost) {
 			$posttyperesult = "post-type-micro";
-			$microposttag = "Micro <span class='type-closetag'></span> ";
-			
+			$microposttag = "Micro Post <span class='type-closetag'></span> ";
+
 		}
 
 	    if ($displayThumbnail) {
@@ -42,7 +42,7 @@
 		}
         $i++;
 		?>
-		
+
 		<div class="col newsfeed-entry entry-<?php echo $i; ?> <?php echo $posttyperesult; ?>">
 			<div class="news-img" style="background-image:url('<?php echo $tagSrc; ?>');"></div>
 			<div class="news-content-wrap">
@@ -62,7 +62,7 @@
 			</div>
 			<a href="<?php echo $url ?>" target="_self" title="Continue reading, <?php echo $title ?>" class="hidden"></a>
 		</div>
-		
+
 	<?php endforeach; ?>
-	
+
 <?php } ?>

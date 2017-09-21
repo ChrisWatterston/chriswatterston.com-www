@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 636 430" style="enable-background:new 0 0 636 430;" xml:space="preserve">
+	 viewBox="0 0 951.4 430" style="enable-background:new 0 0 951.4 430;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
 	.st1{opacity:0.8;fill:#FFFFFF;enable-background:new    ;}
@@ -9,26 +9,25 @@
 	.st3{opacity:0.4;fill:#FFFFFF;enable-background:new    ;}
 	.st4{opacity:0.95;fill:#FFFFFF;enable-background:new    ;}
 	.st5{opacity:0.7;fill:#FFFFFF;enable-background:new    ;}
-	.st6{opacity:0.4;fill:#FFFFFF;}
 </style>
-<path class="st0" d="M312.3,456.3l-21.7-65.6l65.6-21.7l-21.7-65.6L465.8,260l-21.7-65.6l65.6-21.7L488,107l247.8-84.4L636-279.3
-	l-951.4,317l186.6,564.4L312.3,456.3z"/>
-<rect id="Rectangle_1_copy" x="227.6" y="385.6" transform="matrix(0.9494 -0.3139 0.3139 0.9494 -117.4391 115.1601)" class="st1" width="142.4" height="73.3"/>
+<path class="st0" d="M627.7,456.3L606,390.7l65.6-21.7l-21.7-65.6L781.2,260l-21.7-65.6l65.6-21.7L803.4,107l247.8-84.4l-99.8-301.9
+	L-79-11l40.5,475.1L627.7,456.3z"/>
+<rect id="Rectangle_1_copy" x="543" y="385.6" transform="matrix(0.9495 -0.3139 0.3139 0.9495 -101.5049 214.1478)" class="st1" width="142.4" height="73.3"/>
 <g id="Group_2_copy">
 	
-		<rect id="Rectangle_1_copy_2" x="338.9" y="287.4" transform="matrix(0.9494 -0.3139 0.3139 0.9494 -82.7336 134.2901)" class="st2" width="73.3" height="73.3"/>
+		<rect id="Rectangle_1_copy_2" x="654.3" y="287.4" transform="matrix(0.9495 -0.3139 0.3139 0.9495 -66.8009 233.2763)" class="st2" width="73.3" height="73.3"/>
 	
-		<rect id="Rectangle_1_copy-2" x="337.2" y="276.5" transform="matrix(0.9494 -0.3139 0.3139 0.9494 -77.6677 144.0441)" class="st3" width="142.4" height="73.3"/>
+		<rect id="Rectangle_1_copy-2" x="652.6" y="276.5" transform="matrix(0.9495 -0.3139 0.3139 0.9495 -61.7177 243.0316)" class="st3" width="142.4" height="73.3"/>
 </g>
 <g id="Group_2_copy_3">
 	
-		<rect id="Rectangle_1_copy_2-2" x="492.4" y="91" transform="matrix(0.9494 -0.3139 0.3139 0.9494 -13.3224 172.5502)" class="st4" width="73.3" height="73.3"/>
+		<rect id="Rectangle_1_copy_2-2" x="807.8" y="91" transform="matrix(0.9495 -0.3139 0.3139 0.9495 2.6069 271.5335)" class="st4" width="73.3" height="73.3"/>
 	
-		<rect id="Rectangle_1_copy-3" x="487.7" y="61.6" transform="matrix(0.9494 -0.3139 0.3139 0.9494 0.3882 198.9487)" class="st3" width="260.4" height="73.3"/>
+		<rect id="Rectangle_1_copy-3" x="803.1" y="61.6" transform="matrix(0.9495 -0.3139 0.3139 0.9495 16.3279 297.9343)" class="st3" width="260.4" height="73.3"/>
 </g>
 <g id="Group_2_copy_2">
 	
-		<rect id="Rectangle_1_copy-4" x="381.1" y="189.2" transform="matrix(0.9494 -0.3139 0.3139 0.9494 -48.028 153.4202)" class="st5" width="142.4" height="73.3"/>
+		<rect id="Rectangle_1_copy-4" x="696.5" y="189.2" transform="matrix(0.9495 -0.3139 0.3139 0.9495 -32.097 252.4049)" class="st5" width="142.4" height="73.3"/>
 </g>
-<rect x="-9" y="-11" class="st6" width="651" height="446"/>
+<rect x="306.4" y="-11" class="st3" width="651" height="446"/>
 </svg>

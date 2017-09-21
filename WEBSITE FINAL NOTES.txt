@@ -1,12 +1,5 @@
-- pixel news post background needs more work!!!
-- Check hight adjusting on header banner
-
-
-- create remaining case study posts
-
 - check that the comments works on the blog posts (finish variables)
 - check final SEO areas
-- style subscription form (http://eepurl.com/bfCjXj)
 
 
 

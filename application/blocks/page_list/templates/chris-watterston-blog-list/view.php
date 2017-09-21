@@ -29,7 +29,7 @@
 		$microposttag = "";
 		if ($micropost) {
 			$posttyperesult = "post-type-micro";
-			$microposttag = "Micro <span class='type-closetag'></span> ";
+			$microposttag = "Micro Post <span class='type-closetag'></span> ";
 
 		}
 

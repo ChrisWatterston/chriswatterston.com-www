@@ -1,6 +1,9 @@
 <?php
   defined('C5_EXECUTE') or die("Access Denied.");
 
+  $c = Page::getCurrentPage();
+  $pageURL = $c->getCollectionPath();
+
   if ($_POST['form_submit']) {
 
     $clientName = $_POST['name_input'];
@@ -85,7 +88,7 @@
   <?php
   if ($result[0][status] === 'sent') {
     echo "<p class='alert-success'>Thank you for your eCommerce form submission. Once received, we'll be back in touch as soon as we can - speak soon!</p>";
-    echo "<style>.general-form{display:none!important;}</style>";
+    echo "<style>.landing-form{display:none!important;}</style>";
   }
   if ($result[0][status] === 'queued') {
     echo "<p class='alert-success'>Thank you for your eCommerce form submission. Once received, we'll be back in touch as soon as we can - speak soon!</p>";
@@ -104,7 +107,7 @@
 
 <div class="landing-form">
 
-  <form method="post" class="form-grey colour-grey" name="form_submit" action="<?php echo $_SERVER['PHP_SELF']; ?>#ecommerce-form">
+  <form method="post" class="form-grey colour-grey" name="form_submit" action="<?php echo $pageURL; ?>#ecommerce-form">
     <div class="cols">
       <div class="col">
           <label class="control-label" for="name_input">Full name</label>

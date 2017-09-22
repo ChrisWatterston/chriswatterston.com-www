@@ -1,6 +1,9 @@
 <?php
   defined('C5_EXECUTE') or die("Access Denied.");
 
+  $c = Page::getCurrentPage();
+  $pageURL = $c->getCollectionPath();
+
   if ($_POST['form_submit']) {
 
     $clientName = $_POST['name_input'];
@@ -14,7 +17,7 @@
       $message = array(
           'html' => '
                     </p>
-                      <strong>Email:</strong> '.$clientName.'<br />
+                      <strong>Full Name:</strong> '.$clientName.'<br />
                       <strong>Phone:</strong> '.$clientPhone.'<br />
                       <strong>Message:</strong> <br />'.$clientMessage.'
                     </p>
@@ -81,7 +84,7 @@
   <?php
   if ($result[0][status] === 'sent') {
     echo "<p class='alert-success'>Thank you for your Call Back form submission. Once received, we'll be back in touch as soon as we can - speak soon!</p>";
-    echo "<style>.general-form{display:none!important;}</style>";
+    echo "<style>.callback-form{display:none!important;}</style>";
   }
   if ($result[0][status] === 'queued') {
     echo "<p class='alert-success'>Thank you for your Call Back form submission. Once received, we'll be back in touch as soon as we can - speak soon!</p>";
@@ -100,7 +103,7 @@
 
 <div class="callback-form">
 
-  <form method="post" class="form-grey colour-grey" name="form_submit" action="<?php echo $_SERVER['PHP_SELF']; ?>#callback-form">
+  <form method="post" class="form-grey colour-grey" name="form_submit" action="<?php echo $pageURL; ?>#callback-form">
     <div class="cols">
       <div class="col">
           <label class="control-label" for="name_input">Full name</label>

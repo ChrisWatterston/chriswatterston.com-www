@@ -22,7 +22,7 @@
         $img = false;
 
 		$posttypetitle = $page->getAttribute('post_topics');
-		$posttypetitlefirst = $posttypetitle[0]->getTreeNodeDisplayName();
+		$posttypetitlefirst = $posttypetitle[0]->gettreeNodeName();
 
 		$posttyperesult = "post-type-full";
 		$micropost = $page->getAttribute('micro_post');

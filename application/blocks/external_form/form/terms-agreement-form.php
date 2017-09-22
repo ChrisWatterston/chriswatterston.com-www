@@ -1,6 +1,9 @@
 <?php
   defined('C5_EXECUTE') or die("Access Denied.");
 
+  $c = Page::getCurrentPage();
+  $pageURL = $c->getCollectionPath();
+
   if ($_POST['form_submit']) {
 
     $clientName = $_POST['name_input'];
@@ -31,10 +34,10 @@
                               <tr>
                                 <td style="background-color:#009788;padding:15px 10px 15px 10px;">
                                   <a style="border:none;" href="http://www.chriswatterston.com/" title="Chris Watterston" target="_blank">
-                                    <img src="http://chriswatterston.com-www.dev/application/themes/chriswatterston/img/brnd/chriswatterston-logo.svg" title="Chris Watterston" width="199" height="42" />
+                                    <img src="http://www.chriswatterston.com/application/themes/chriswatterston/img/brnd/chriswatterston-logo.svg" title="Chris Watterston" width="199" height="42" />
                                   </a>
                                 </td>
-                              </tr>
+                              </tr>§
                               <tr>
                                 <td><hr style="border:none;border-top:3px #ebebeb solid;margin:0;" /></td>
                               </tr>
@@ -158,7 +161,7 @@
 
 <div class="general-form">
 
-  <form method="post" class="form-grey colour-grey" name="form_submit" action="<?php echo $_SERVER['PHP_SELF']; ?>#general-form">
+  <form method="post" class="form-grey colour-grey" name="form_submit" action="<?php echo $pageURL; ?>#general-form">
     <div class="cols">
       <div class="col">
           <label class="control-label" for="name_input">Full name</label>

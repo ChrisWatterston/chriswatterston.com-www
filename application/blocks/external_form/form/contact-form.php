@@ -1,6 +1,9 @@
 <?php
   defined('C5_EXECUTE') or die("Access Denied.");
 
+  $c = Page::getCurrentPage();
+  $pageURL = $c->getCollectionPath();
+
   if ($_POST['form_submit']) {
 
     $clientName = $_POST['name_input'];
@@ -106,7 +109,7 @@
 
 <div class="general-form">
 
-  <form method="post" class="form-grey colour-grey" name="form_submit" action="<?php echo $_SERVER['PHP_SELF']; ?>#general-form">
+  <form method="post" class="form-grey colour-grey" name="form_submit" action="<?php echo $pageURL; ?>#general-form">
     <div class="cols">
       <div class="col">
           <label class="control-label" for="name_input">Full name</label>

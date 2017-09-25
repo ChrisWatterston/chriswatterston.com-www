@@ -48,8 +48,8 @@
 			</div>
 			<div class="sidebar-link-wrap">
 				<div class="rotate-fix">
-					<a href="/index.php/blog" class="sidebar-link type-uppercase colour-white family-table type-semibold type-right" title="View all blog updates">All updates <i class="icon arrow-top-white"></i></a>
-					<a href="/index.php/blog" class="rotate-link" title="View all blog updates"></a>
+					<a href="/blog" class="sidebar-link type-uppercase colour-white family-table type-semibold type-right" title="View all blog updates">All updates <i class="icon arrow-top-white"></i></a>
+					<a href="/blog" class="rotate-link" title="View all blog updates"></a>
 				</div>
 			</div>
 		</div>

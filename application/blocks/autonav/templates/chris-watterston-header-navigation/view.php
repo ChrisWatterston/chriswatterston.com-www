@@ -1,6 +1,6 @@
 <div class="nav-triggers-wrap type-right">
-	<a href="/index.php/get-in-contact" title="Enquire for eCommerce, Website Design and Mobile App solutions" class="contact colour-white type-lowercase type-semibold family-table">Let’s Talk?</a>
-	<a href="/index.php/design-development-solutions-and-services" title="eCommerce, Website Design and Mobile App solutions" class="contact colour-white type-lowercase type-semibold family-table">Become a Client</a>
+	<a href="/get-in-contact" title="Enquire for eCommerce, Website Designer and Mobile App solutions" class="contact colour-white type-lowercase type-semibold family-table">Let’s Talk?</a>
+	<a href="/designer-developer-solutions-and-services" title="eCommerce, Website Designer and Mobile App solutions" class="contact colour-white type-lowercase type-semibold family-table">Become a Client</a>
 	<a href="#" title="Navigation" id="cd-menu-trigger" class="nav-trigger colour-lime type-lowercase type-semibold family-table">Nav</a>
 </div>
 

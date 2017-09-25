@@ -1,5 +1,4 @@
 - check that the comments works on the blog posts (finish variables)
-- check final SEO areas
 
 
 

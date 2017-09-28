@@ -15,11 +15,44 @@
 <script src="https://use.typekit.net/aut5day.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 <?php
+  $metaTitle = $c->getCollectionAttributeValue('meta_title');
+  if ($metaTitle) $pageTitle = $metaTitle.' - Chris Watterston';
+  if (!$pageTitle)
+  {
+      $siteName = h(\Config::get('concrete.site'));
+      $collentionName = $c->getCollectionName();
+
+      $isRoot = null;
+      $trail = $nh->getTrailToCollection($c);
+      if (is_array($trail) && count($trail) > 1) {
+          $count = count($trail);
+          array_splice($trail, $count - 1);
+          $deptC = array_pop($trail);
+          $deptName = h($deptC->getCollectionName());
+      } else {
+          $isRoot = true;
+      }
+      if ($isRoot) {
+          $pageTitle = $collentionName . ' - ' . $siteName;
+      } else {
+          $pageTitle = $collentionName . ' | ' . $deptName . ' - ' . $siteName;
+      }
+  }
+
+  $thisPageDescription = $c->getAttribute('meta_description');
+  if (!$thisPageDescription) $thisPageDescription = $c->getCollectionDescription();
+  if ($thisPageDescription) $pageDescription = $thisPageDescription;
+
+  $thisPageMetaKeywords = $c->getAttribute('meta_keywords');
+  if ($thisPageMetaKeywords) $pageMetaKeywords = $thisPageMetaKeywords;
+
 	View::element('header_required', [
-	    'pageTitle' => isset($pageTitle) ? $pageTitle : '',
+      'pageTitle' => $pageTitle,
+	    // 'pageTitle' => isset($pageTitle) ? $pageTitle : '',
 	    'pageDescription' => isset($pageDescription) ? $pageDescription : '',
 	    'pageMetaKeywords' => isset($pageMetaKeywords) ? $pageMetaKeywords : ''
 	]);
+
 	$this->requireAsset('javascript', 'jquery');
 ?>
 <link rel="shortcut icon" href="<?php echo $view->getThemePath()?>/img/icns/icon-32x32.png" />

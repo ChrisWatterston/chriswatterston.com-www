@@ -11,6 +11,7 @@
 	$pageURL = $c->getCollectionPath();
 
 ?>
+<?php include('inc/body.php'); ?>
 <header class="main page-default" style="height:auto !important;">
 	<section class="navigation-wrap">
 		<div class="cols">

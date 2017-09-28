@@ -17,6 +17,7 @@
 		$tagSrc = $thumb->src;
 	}
 ?>
+<?php include('inc/body.php'); ?>
 <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5943f9e919fdf8001169e9c3&product=inline-share-buttons' async='async'></script>
 <header class="main page-bloglist">
 	<div class="bkgrnd-img" style="background-image:url('<?php echo $tagSrc; ?>');"></div>

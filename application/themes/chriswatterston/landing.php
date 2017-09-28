@@ -18,6 +18,7 @@
 		$tagSrc = $thumb->src;
 	}
 ?>
+<?php include('inc/body.php'); ?>
 <header class="main page-landing" id="<?php if ($pageClass) {echo $pageClass;} ?>">
 	<div class="bkgrnd-img" style="background-image:url('<?php echo $tagSrc; ?>');"></div>
 	<section class="navigation-wrap">

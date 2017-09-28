@@ -17,6 +17,7 @@
 		$tagSrc = $thumb->src;
 	}
 ?>
+<?php include('inc/body.php'); ?>
 <header class="main page-oversize">
 	<div class="bkgrnd-img" style="background-image:url('<?php echo $tagSrc; ?>');"></div>
 	<section class="navigation-wrap">

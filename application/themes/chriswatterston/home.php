@@ -4,6 +4,7 @@
 
 	$enableFullFooter = true;
 ?>
+<?php include('inc/body.php'); ?>
 <header class="main">
 	<section class="navigation-wrap">
 		<script type="text/javascript">

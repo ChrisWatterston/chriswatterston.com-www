@@ -22,16 +22,16 @@
       $siteName = h(\Config::get('concrete.site'));
       $collentionName = $c->getCollectionName();
 
-      $isRoot = null;
-      $trail = $nh->getTrailToCollection($c);
-      if (is_array($trail) && count($trail) > 1) {
-          $count = count($trail);
-          array_splice($trail, $count - 1);
-          $deptC = array_pop($trail);
-          $deptName = h($deptC->getCollectionName());
-      } else {
-          $isRoot = true;
-      }
+      $isRoot = true; // default false
+      // $trail = $nh->getTrailToCollection($c);
+      // if (is_array($trail) && count($trail) > 1) {
+      //     $count = count($trail);
+      //     array_splice($trail, $count - 1);
+      //     $deptC = array_pop($trail);
+      //     $deptName = h($deptC->getCollectionName());
+      // } else {
+      //     $isRoot = true;
+      // }
       if ($isRoot) {
           $pageTitle = $collentionName . ' - ' . $siteName;
       } else {

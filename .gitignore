@@ -5,3 +5,5 @@ concrete/*
 sitemap.xml
 .htaccess
 *.zip
+access_log
+error_log

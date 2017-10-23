@@ -153,6 +153,19 @@
 				}
 			}
 		}
+		&.page-template-casestudy {
+			.casestudy-stats {
+				.ccm-layout-column-wrapper {
+					.ccm-layout-column {
+						width:$col-one / 2;
+						&:last-child {
+							width:$col-one !important;
+							opacity:0.7 !important;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 @media screen and (max-height:736px) and (max-width:1200px){
@@ -372,6 +385,14 @@
 								}
 							}
 						}
+					}
+				}
+			}
+			.casestudy-stats {
+				.ccm-layout-column-wrapper {
+					.ccm-layout-column {
+						width:$col-one !important;
+						&:last-child {opacity:1 !important;}
 					}
 				}
 			}

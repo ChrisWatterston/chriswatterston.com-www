@@ -343,6 +343,11 @@
 							padding-left:65px !important;
 							margin:0;
 							width:$col-one;
+							.cols .col {
+								margin-right:0;
+								margin-left:0;
+								width:$col-one;
+							}
 						}
 					}
 				}
@@ -358,6 +363,14 @@
 							padding-left:65px !important;
 							margin:0;
 							width:$col-one;
+							> .cols {
+								padding-left:0 !important;
+								.col {
+									margin-right:0;
+									margin-left:0;
+									width:$col-one;
+								}
+							}
 						}
 					}
 				}

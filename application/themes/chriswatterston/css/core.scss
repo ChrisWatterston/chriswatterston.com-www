@@ -670,6 +670,13 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 							}
 						}
 					}
+					.cols.more-posts {
+						margin-top:50px;
+						padding-top:50px;
+						padding-left:0;
+						padding-right:0;
+						border-top:3px solid #E7E9EE;
+					}
 				}
 				.cols {
 					padding:0 40px 0 160px;
@@ -836,7 +843,7 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 				}
 				&.featured {margin-bottom:0;}
 				&.featured .service-desc {
-					// background-image:url("http://www.chriswatterston.com/application/files/9614/9803/4221/header-thereisnocloud.jpg"); 
+					// background-image:url("http://www.chriswatterston.com/application/files/9614/9803/4221/header-thereisnocloud.jpg");
 					.bkgrnd-grad {
 						background:$col-blue;
 						// background: -webkit-linear-gradient(right, rgba(160,207,211,0.8), rgba(160,207,211,1));

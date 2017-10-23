@@ -47,9 +47,7 @@
 <meta property="og:description" content="<?php echo $pageDesc; ?>" />
 <meta property="og:image" content="<?php echo $imgSocialSrc; ?>" />
 <meta property="fb:app_id" content="325530257865510" />
-
 <?php include('inc/body.php'); ?>
-
 <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5943f9e919fdf8001169e9c3&product=inline-share-buttons' async='async'></script>
 <header class="main page-blog">
 	<div class="bkgrnd-img" style="background-image:url('<?php echo $tagSrc; ?>');"></div>

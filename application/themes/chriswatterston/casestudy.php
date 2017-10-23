@@ -34,7 +34,19 @@
 		$thumb = $ih->getThumbnail($img, 1440, 400, array('crop'=>true, 'quality'=>40));
 		$tagSrc = $thumb->src;
 	}
+
+	$imgsocial = $c->getAttribute('social_thumbnail');
+	if ($imgsocial) {
+		$thumbsocial = $ih->getThumbnail($imgsocial, 1200, 630, array('crop'=>true, 'quality'=>90));
+		$imgSocialSrc = $thumbsocial->src;
+	}
 ?>
+<meta property="og:url" content="http://<?php echo $_SERVER['SERVER_NAME'].$pageURL; ?>" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="<?php echo $pageMeta; ?>" />
+<meta property="og:description" content="<?php echo $pageDesc; ?>" />
+<meta property="og:image" content="<?php echo $imgSocialSrc; ?>" />
+<meta property="fb:app_id" content="325530257865510" />
 <?php include('inc/body.php'); ?>
 <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5943f9e919fdf8001169e9c3&product=inline-share-buttons' async='async'></script>
 <header class="main page-blog">

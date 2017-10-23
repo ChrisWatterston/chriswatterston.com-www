@@ -18,6 +18,21 @@
 		}
 	}
 }
+@media screen and (max-width:1460px){
+	#cw-wrap {
+		section.body {
+			.services-desc {
+				.cols.more-posts {
+					.col {
+						width:$col-one !important;
+						margin-right:0 !important;
+						margin-left:0 !important;
+					}
+				}
+			}
+		}
+	}
+}
 @media screen and (max-width:1200px){
 	#cw-wrap {
 		footer.main {

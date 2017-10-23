@@ -790,6 +790,21 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 						}
 					}
 				}
+				.casestudy-stats {
+					.ccm-layout-column-wrapper {
+						.ccm-layout-column {
+							padding:25px 25px 30px 25px;
+							background-color:$col-lime;
+							&:nth-child(even) {opacity:0.8;}
+						}
+					}
+					&:nth-child(even) {
+						.ccm-layout-column-wrapper {
+							&:nth-child(odd) {opacity:0.8;}
+							&:nth-child(even) {opacity:1;}
+						}
+					}
+				}
 			}
 			.service-section {
 				position:relative;
@@ -1133,14 +1148,15 @@ form#ccm-block-form.validate input#ccm-form-submit-button {
 	visibility:hidden !important;
 }
 
-ul.ccm-edit-mode-inline-commands {
+ul.ccm-edit-mode-inline-commands.ccm-ui {
 	li {
-		position:relative;
-		z-index:+999999999999 !important;
+		position:relative !important;
 		a {
-			display:block;
 			position:absolute;
-			z-index:+999999999999 !important;
+			display:block;
+			height:$col-one;
+			width:$col-one;
+			z-index:+9999999999999 !important;
 		}
 	}
 }

@@ -823,6 +823,13 @@ ul.pagination {
 				}
 			}
 		}
+		.casestudy-stats {
+			p {text-transform:uppercase;}
+			h1, p strong {font-weight:700;}
+			h1 {font-size:3em;}
+			p:last-child {margin:0 !important;padding:0 !important;}
+			* {color:$col-white;}
+		}
 	}
 	footer.main {
 		section.contact-wrap {

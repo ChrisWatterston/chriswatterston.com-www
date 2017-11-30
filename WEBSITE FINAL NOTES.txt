@@ -1,9 +1,4 @@
-- check that the comments works on the blog posts (finish variables)
-
-
-
-Terms updates include --- updated 18th September 2017 @ 09:36AM
-- Change in offered service to broaden
-- Change in 'backup / restoration' and 'cancelation' fee
-- Service warranty period update
-- Added new section for '7. Services Communication Timeline Terms'
+- Correct viewport view for 9000px high as this is what Googlebot views
+- Ensure that the menu works in every browser
+- Add cookie popup on load with subscription input
+- 

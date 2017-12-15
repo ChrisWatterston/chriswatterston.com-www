@@ -5,7 +5,7 @@ return [
     'connections' => [
         'concrete' => [
             'driver' => 'c5_pdo_mysql',
-            'server' => 'phpmyadmin.dev',
+            'server' => 'phpmyadmin.local',
             'database' => 'chriswatterston_www',
             'username' => 'root',
             'password' => 'root',

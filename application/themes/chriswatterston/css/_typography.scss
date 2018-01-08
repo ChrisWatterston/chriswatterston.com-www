@@ -235,23 +235,24 @@
 	.form-actions {padding:30px 0 0 30px;}
 	::-webkit-input-placeholder {
 		font-family:$type-pri;
-		color:$col-white;
-		font-weight:600;
+		color:$col-grey;
+		font-weight:400;
+		opacity:0.5;
 	}
 	:-moz-placeholder {
 		font-family:$type-pri;
-		color:$col-white;
-		font-weight:600;
+		color:$col-grey;
+		font-weight:400;
 	}
 	::-moz-placeholder {
 		font-family:$type-pri;
-		color:$col-white;
-		font-weight:600;
+		color:$col-grey;
+		font-weight:400;
 	}
 	:-ms-input-placeholder {
 		font-family:$type-pri;
-		color:$col-white;
-		font-weight:600;
+		color:$col-grey;
+		font-weight:400;
 	}
 	.form-grey {
 		input, select, textarea {background:rgba(69,72,81,0.1);}

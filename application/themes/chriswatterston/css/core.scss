@@ -790,6 +790,22 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 						}
 					}
 				}
+				.enquiry-form {
+					border:1px solid red;
+					form {
+						.cols {
+							padding-left:0;
+							margin-bottom:30px;
+							.col {
+								float:left;
+								width:$col-one / 2 - 1;
+								margin-right:1%;
+								padding-top:20px;
+								&.full {width:$col-one;}
+							}
+						}
+					}
+				}
 				.casestudy-stats {
 					.ccm-layout-column-wrapper {
 						display:-webkit-box;

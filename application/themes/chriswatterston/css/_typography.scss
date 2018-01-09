@@ -263,6 +263,22 @@
 		opacity:0.6;
 		color:$col-yellow-dark;
 	}
+	.col.has-error {
+		input, select, textarea {
+			border:1px solid #CA0813;
+			border-bottom:none;
+		}
+		span.help-block.form-error {
+			position:relative;
+			display:inline-block;
+			background:#CA0813;
+			margin-top:-3px;
+			padding:8px 10px;
+			color:$col-white;
+			font-weight:600;
+			width:$col-one;
+		}
+	}
 
 	/* Buttons */
 	.abtn, input[type='submit'] {

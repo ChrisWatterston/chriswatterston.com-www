@@ -102,35 +102,38 @@
 </div>
 
 <div class="enquiry-form">
+  <p>I love working on projects! It takes a lot of energy and expertise to see a project through, which is why I only work with select clients on projects that have a chance at success. If you’d like us to work together, there are a few things I need to know first. Complete my website enquiry form, as this is your opportunity to tell me a little bit about your business or organisation, and why you need a website.</p>
+  <p>We need to collect this information about yourself so that we can get back to you with the information that you require, as well as providing you with an offical quotation.</p>
+  <p>If there are any areas you are not sure about and are not required, just leave them blank and will try to help you with the question at a later stage.</p>
 
   <form method="post" class="form-grey colour-grey" name="form_submit" action="<?php echo $pageURL; ?>#enquiry-form">
     <div class="cols">
       <h1>Details about <strong>yourself...</strong></h1>
       <div class="col">
-        <label class="control-label" for="name_input">Full name</label>
+        <label class="control-label input-required" for="name_input">Full name</label>
         <input class="input-required" name="name_input" type="text" value="" required/>
       </div>
-      <div class="col">
+      <div class="col last">
         <label class="control-label" for="organisation_input">Organisation name (if applicable)</label>
         <input name="organisation_input" type="text" value=""/>
       </div>
       <div class="col">
-        <label class="control-label" for="email_input">Email address</label>
+        <label class="control-label input-required" for="email_input">Email address</label>
         <input class="input-required" name="email_input" maxlength="50" type="email" value="" required/>
       </div>
-      <div class="col">
-        <label class="control-label" for="phone_input">Phone number</label>
+      <div class="col last">
+        <label class="control-label input-required" for="phone_input">Phone number</label>
         <input class="input-required" name="phone_input" maxlength="11" type="tel" value="" required/>
       </div>
       <div class="col full">
-        <label class="control-label" for="about_input">About yourself or organisation (what do you do)</label>
-        <textarea class="input-required" name="about_input" required></textarea>
+        <label class="control-label input-required" for="about_input">About yourself or organisation (what do you do)</label>
+        <textarea class="input-required" name="about_input" placeholder="We would love to know what you or your organisation does... what are the products and services you offer..." required></textarea>
       </div>
     </div>
     <div class="cols">
       <h1>Details about <strong>project...</strong></h1>
       <div class="col">
-        <label class="control-label" for="type_input">Type</label>
+        <label class="control-label input-required" for="type_input">Type</label>
         <select class="input-required" name="type_input" title="Project Type" required>
           <option value="">Select...</option>
           <option value="Design and/or Branding" title="Design and/or Branding">Design and/or Branding</option>
@@ -143,24 +146,24 @@
           <option value="Other" title="Other">Other (specify within BRIEF OVERVIEW)</option>
         </select>
       </div>
-      <div class="col">
+      <div class="col last">
           <label class="control-label" for="deadline_input">Deadline (if applicable)</label>
           <input name="deadline_input" type="date" value=""/>
       </div>
       <div class="col full">
-        <label class="control-label" for="message_input">Brief overview</label>
-        <textarea class="input-required" name="message_input" required></textarea>
+        <label class="control-label input-required" for="message_input">Brief overview</label>
+        <textarea class="input-required" name="message_input" placeholder="Tell me about your project... share information like, why you're looking for something new, areas currently not working with your current solution, who are you competitors and do they stand out... tell me if have structured sitemaps and content ready..." required></textarea>
       </div>
       <div class="col full">
-        <label class="control-label" for="likes_input">Is there other projects in particular that you like</label>
-        <textarea name="likes_input" placeholder="Provide an indication of the design style that you like. What about a website, mobile app or a piece of art that you like..."></textarea>
+        <label class="control-label" for="likes_input">Is there other projects in particular that you like (if applicable)</label>
+        <textarea name="likes_input" placeholder="Providing an indication or links of design style that you like can help us in a big way... have you've seen a website you like, maybe even a mobile app or piece of art..."></textarea>
       </div>
       <div class="col">
-        <label class="control-label" for="domain_input">Domain name (if applicable)</label>
+        <label class="control-label" for="domain_input">Need domain name / hosting (if applicable)</label>
         <input name="domain_input" type="text" value=""/>
       </div>
-      <div class="col">
-        <label class="control-label" for="budget_input">Allocated Budget</label>
+      <div class="col last">
+        <label class="control-label input-required" for="budget_input">Budget (be honest, we can then tell you what we can or can't do)</label>
         <select class="input-required" name="budget_input" required>
           <option value="">Select...</option>
           <option value="0-2000">£0 to £2,000</option>
@@ -176,30 +179,37 @@
     <div class="cols">
       <h1>Details about <strong>goals...</strong></h1>
       <div class="col">
-        <label class="control-label" for="goalone_input">Goal #1</label>
+        <label class="control-label input-required" for="goalone_input">Goal #1</label>
         <input class="input-required" name="goalone_input" type="text" value="" required/>
       </div>
-      <div class="col">
-        <label class="control-label" for="goaltwo_input">Goal #2</label>
+      <div class="col last">
+        <label class="control-label input-required" for="goaltwo_input">Goal #2</label>
         <input class="input-required" name="goaltwo_input" type="text" value="" required/>
       </div>
       <div class="col">
-        <label class="control-label" for="goalone_input">Goal #3 (if applicable)</label>
-        <input name="goalone_input" type="text" value=""/>
+        <label class="control-label input-required" for="targetaud_input">Target audience</label>
+        <input name="targetaud_input" type="text" value="" required/>
       </div>
-      <div class="col">
-        <label class="control-label" for="goaltwo_input">Goal #4 (if applicable)</label>
-        <input name="goaltwo_input" type="text" value=""/>
+      <div class="col last">
+        <label class="control-label input-required" for="support_input">Support and ongoing maintenance</label>
+        <select name="support_input" required>
+          <option value="">Select...</option>
+          <option value="Support and Maintenance">Yes, support and maintenance</option>
+          <option value="Support only">Yes, support only</option>
+          <option value="Maintenance only">Yes, maintenance only</option>
+          <option value="No">No</option>
+        </select>
       </div>
       <div class="col full">
-        <label class="control-label" for="goalmessage_input">Goal overview</label>
-        <textarea class="input-required" name="goalmessage_input" required></textarea>
+        <label class="control-label input-required" for="goalmessage_input">Goal overview</label>
+        <textarea class="input-required" name="goalmessage_input" placeholder="Expand on general or specific measurable goals that the should be achieved... clear goals allow the the ability to focus on what will provide the most impact to your project in moving forward...
+" required></textarea>
       </div>
     </div>
     <div class="cols">
       <h1>and <strong>finally...</strong></h1>
       <div class="col">
-        <label class="control-label" for="decisionmaker_input">Are you the key decsion maker for this project?</label>
+        <label class="control-label input-required" for="decisionmaker_input">Are you the key decsion maker for this project</label>
         <select name="decisionmaker_input" required>
           <option value="">Select...</option>
           <option value="Yes">Yes</option>
@@ -207,9 +217,16 @@
           <option value="No">No, somebody else</option>
         </select>
       </div>
-      <div class="col"></div>
+      <div class="col last">
+        <label class="control-label input-required" for="newsletter_input">Can we keep you updated about news and events through email</label>
+        <select name="newsletter_input" required>
+          <option value="">Select...</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
       <div class="col full">
-        <label class="control-label" for="finalcomment_input">Any final last comments or notes</label>
+        <label class="control-label input-required" for="finalcomment_input">Any final last comments or notes</label>
         <textarea class="input-required" name="finalcomment_input" required></textarea>
       </div>
     </div>

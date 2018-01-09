@@ -800,6 +800,10 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 								width:$col-one / 2 - 1;
 								margin-right:1%;
 								padding-top:20px;
+								&.last {
+									width:$col-one / 2 !important;
+									margin-right:0 !important;
+								}
 								&.full {width:$col-one;}
 							}
 						}

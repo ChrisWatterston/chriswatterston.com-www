@@ -1,0 +1,28 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:g="http://base.google.com/ns/1.0" version="1">
+  <title>www.chriswatterston.com</title>
+  <updated>Wed, 19 Jan 2016 09:00:00 BST</updated>
+  <lastBuildDate>Wed, 19 Jan 2016 09:00:00 BST</lastBuildDate>
+
+  <entry>
+    <g:item_group_id>stickers</g:item_group_id>
+    <g:title>There is no Cloud, Die Cut Sticker - Original</g:title>
+    <g:link>http://www.chriswatterston.com/store</g:link>
+    <g:brand>Chris Watterston</g:brand>
+    <!-- <g:mpn></g:mpn> -->
+    <g:gtin>20180110170310260</g:gtin>
+    <g:condition>new</g:condition>
+    <g:image_link>https://cdn.shopify.com/s/files/1/2225/0183/products/product-mockups-cloudsticker-original--pack1_grande.jpg</g:image_link>
+    <g:quantity>1</g:quantity>
+    <g:id>Die Cut Stickers-DieCutStickers-3x4-1Pack-20180110170310260</g:id>
+    <!-- <g:google_product_category></g:google_product_category> -->
+    <!-- <g:product_type></g:product_type> -->
+    <g:price>3.30 USD</g:price>
+    <!-- <g:sale_price></g:sale_price> -->
+    <g:shipping><g:country>US</g:country>
+    <g:service>Standard</g:service>
+    <g:price>0.00 USD</g:price></g:shipping>
+    <g:availability>in stock</g:availability>
+    <g:summary>The There is no Cloud Die-cut sticker packs are ideal for those cool computer nerds and geeks - we all have a bit in us. The sticker will be made of durable vinyl with a UV laminate that protects the die-cut stickers from scratches, rain and sunlight. It's also cut precisely to the design with a small white border and is shipped in the shape of a rectangle with those excess parts. Stickers come in 2 pack styles.</g:summary>
+  </entry>
+
+</feed>

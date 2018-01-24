@@ -3,7 +3,28 @@
 	include('inc/header.php');
 
 	$enableFullFooter = true;
+
+	$th = Loader::helper('text');
+	$c = Page::getCurrentPage();
+	$ih = Loader::helper('image');
+
+	$pageMeta = $c->getAttribute('meta_title');
+	$pageName = $c->getCollectionName();
+	$pageDesc = $c->getAttribute('meta_description');
+	$pageURL = $c->getCollectionPath();
+
+	$imgsocial = $c->getAttribute('social_thumbnail');
+	if ($imgsocial) {
+		$thumbsocial = $ih->getThumbnail($imgsocial, 1200, 630, array('crop'=>true, 'quality'=>90));
+		$imgSocialSrc = $thumbsocial->src;
+	}
 ?>
+<meta property="og:url" content="http://<?php echo $_SERVER['SERVER_NAME'].$pageURL; ?>" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="<?php echo $pageMeta; ?>" />
+<meta property="og:description" content="<?php echo $pageDesc; ?>" />
+<meta property="og:image" content="<?php echo $imgSocialSrc; ?>" />
+<meta property="fb:app_id" content="325530257865510" />
 <?php include('inc/body.php'); ?>
 <header class="main">
 	<section class="navigation-wrap">

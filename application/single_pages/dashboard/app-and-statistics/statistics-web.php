@@ -41,17 +41,17 @@ Chart.defaults.global.customTooltips = function(tooltip) {
 	<!-- storage -->
 	<?php
 		$ar = getDirectorySize($client_path);
-		function getDirectorySize($client_path) { 
+		function getDirectorySize($client_path) {
 			$totalsize = 0;
 			$totalcount = 0;
 			$dircount = 0;
 			if ($handle = opendir ($client_path)) {
 				while (false !== ($file = readdir($handle))) {
 					$nextpath = $client_path . '/' . $file;
-					
+
 					if ($file != '.' && $file != '..' && !is_link ($nextpath)) {
 						if (is_dir ($nextpath)) {
-							$dircount++; 
+							$dircount++;
 							$result = getDirectorySize($nextpath);
 							$totalsize += $result['size'];
 							$totalcount += $result['count'];
@@ -64,12 +64,12 @@ Chart.defaults.global.customTooltips = function(tooltip) {
 					}
 				}
 			}
-			closedir ($handle); 
-			$total['size'] = $totalsize; 
-			$total['count'] = $totalcount; 
-			$total['dircount'] = $dircount; 
+			closedir ($handle);
+			$total['size'] = $totalsize;
+			$total['count'] = $totalcount;
+			$total['dircount'] = $dircount;
 			return $total;
-		} 
+		}
 		function sizeFormat($size) {
 		    if($size<1024) {
 		        return $size." bytes";
@@ -122,7 +122,7 @@ Chart.defaults.global.customTooltips = function(tooltip) {
 		    )
 		);
 		$service = new Google_Service_Analytics($client);
-		
+
 		try {
 		    $realtime = $service->data_realtime->get(
 		        $client_view_id,
@@ -188,7 +188,7 @@ Chart.defaults.global.customTooltips = function(tooltip) {
 		if (count($pagepathweek->getRows()) > 0) {
 			if (empty($final_pagepathweek)) $final_pagepathweek = '';
 			$final_pagepathweek .= '<table class="table-default" cellpadding="0" cellspacing="0">';
-		
+
 			foreach ($pagepathweek->getRows() as $row) {
 				$final_pagepathweek .= '<tr>';
 				foreach ($row as $cell) {
@@ -222,7 +222,7 @@ Chart.defaults.global.customTooltips = function(tooltip) {
 		if (count($channelweek->getRows()) > 0) {
 			if (empty($final_channelweek)) $final_channelweek = '';
 			$final_channelweek .= '<table class="table-default" cellpadding="0" cellspacing="0">';
-		
+
 			foreach ($channelweek->getRows() as $row) {
 				$final_channelweek .= '<tr>';
 				foreach ($row as $cell) {
@@ -256,7 +256,7 @@ Chart.defaults.global.customTooltips = function(tooltip) {
 		if (count($deviceweek->getRows()) > 0) {
 			if (empty($final_deviceweek)) $final_deviceweek = '';
 			$final_deviceweek .= '<table class="table-default" cellpadding="0" cellspacing="0">';
-		
+
 			foreach ($deviceweek->getRows() as $row) {
 				$final_deviceweek .= '<tr>';
 				foreach ($row as $cell) {
@@ -290,7 +290,7 @@ Chart.defaults.global.customTooltips = function(tooltip) {
 		if (count($browserweek->getRows()) > 0) {
 			if (empty($final_browserweek)) $final_browserweek = '';
 			$final_browserweek .= '<table class="table-default" cellpadding="0" cellspacing="0">';
-		
+
 			foreach ($browserweek->getRows() as $row) {
 				$final_browserweek .= '<tr>';
 				foreach ($row as $cell) {
@@ -324,7 +324,7 @@ Chart.defaults.global.customTooltips = function(tooltip) {
 		if (count($countryweek->getRows()) > 0) {
 			if (empty($final_countryweek)) $final_countryweek = '';
 			$final_countryweek .= '<table class="table-default" cellpadding="0" cellspacing="0">';
-		
+
 			foreach ($countryweek->getRows() as $row) {
 				$final_countryweek .= '<tr>';
 				foreach ($row as $cell) {
@@ -366,7 +366,7 @@ Chart.defaults.global.customTooltips = function(tooltip) {
 		$startofuptime = $startofyear.'-01-01T00:00:01+00:00';
 		$startofuptimeunix = strtotime($startofuptime);
 		$timecurrent = time();
-			
+
 		$apc_responseavg = apc_fetch("$client_siteid-response");
 		if ($apc_responseavg === false) {
 			$curlavg = curl_init();
@@ -386,10 +386,10 @@ Chart.defaults.global.customTooltips = function(tooltip) {
 			exit;
 		}
 		$checkavg = $responseavg['summary']['status']['totalup'];
-		
+
 		$responseavgdiff = $startofuptimeunix - $timecurrent;
 		$responseavgdiffpre = $checkavg / $responseavgdiff;
-		$responseavgdiffres = $responseavgdiffpre * 100;	
+		$responseavgdiffres = $responseavgdiffpre * 100;
 		$responseavgdiffres = number_format($responseavgdiffres, 2, '.', '');
 		$responseavg_diffres = str_replace('-','',$responseavgdiffres);
 	?>
@@ -480,15 +480,14 @@ Chart.defaults.global.customTooltips = function(tooltip) {
 						<span class="subject"><i class="fa fa-rss" title="Fresh Posts"></i>Fresh Posts</span>
 						<div class="data">
 							<?php
-/*
 								$rss = new DOMDocument();
-								$rss->load('http://www.chriswatterston.com/index.php/rss/latest_work_blog/');
-								
+								$rss->load('http://www.chriswatterston.com/rss/latestupdates');
+
 								$feed = array();
 								foreach ($rss->getElementsByTagName('item') as $node) {
-									$item = array ( 
+									$item = array (
 										'title' => $node->getElementsByTagName('title')->item(0)->nodeValue,
-										'desc' => $node->getElementsByTagName('description')->item(0)->nodeValue,
+										// 'desc' => $node->getElementsByTagName('description')->item(0)->nodeValue,
 										'link' => $node->getElementsByTagName('link')->item(0)->nodeValue,
 										'date' => $node->getElementsByTagName('pubDate')->item(0)->nodeValue,
 										);
@@ -498,22 +497,21 @@ Chart.defaults.global.customTooltips = function(tooltip) {
 								for($x=0;$x<$limit;$x++) {
 									$title = str_replace(' & ', ' &amp; ', $feed[$x]['title']);
 									$link = $feed[$x]['link'];
-									$description = $feed[$x]['desc'];
+									// $description = $feed[$x]['desc'];
 									$date = date('l F d, Y', strtotime($feed[$x]['date']));
 									echo '<div class="blog-post">';
 										echo '<p class="blog-title"><a href="'.$link.'" title="'.$title.'" target="_blank">'.$title.' <i class="fa fa-link"></i></a></p>';
 										echo '<p class="blog-date">Posted on '.$date.'</p>';
-										echo '<p class="blog-desc">'.substr($description,0,90).'...</p>';
+										// echo '<p class="blog-desc">'.substr($description,0,90).'...</p>';
 									echo '</div>';
 								}
-*/
 							?>
 						</div>
 						<span class="desc">our latest two blog posts</span>
 					</div>
 				</div>
 			</div>
-	
+
 			<div class="col rgt">
 				<div class="cwdash-item col-two">
 					<div>
@@ -536,7 +534,7 @@ Chart.defaults.global.customTooltips = function(tooltip) {
 						</span>
 						<span class="desc">condition of site is <strong><?php echo $check['status']; ?></strong></span>
 					</div>
-				</div>			
+				</div>
 				<div class="cwdash-item col-three">
 					<div>
 						<span class="subject"><i class="fa fa-hdd-o" title="Storage"></i>Storage</span>

@@ -962,12 +962,13 @@ $box-shadow: rgba(0,0,0,.15) 0 10px 10px;
 							padding:20px;
 							background-color:rgba(255,255,255,0.4);
 							img.icon {
-								max-width:90px;
+								max-width:70px;
+								margin-right:10px;
 								vertical-align:middle;
 								&.applepay,
 								&.mastercard,
 								&.amex {
-									max-height:40px;
+									max-height:35px;
 									width:auto;
 								}
 							}

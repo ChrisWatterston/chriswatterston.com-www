@@ -70,6 +70,7 @@
 							<img src="<?php echo $view->getThemePath()?>/img/icns/icon-applepay.svg" class="icon applepay" />
 							<img src="<?php echo $view->getThemePath()?>/img/icns/icon-paypal.svg" class="icon paypal" />
 							<img src="<?php echo $view->getThemePath()?>/img/icns/icon-litecoin.svg" class="icon litecoin" />
+							<img src="<?php echo $view->getThemePath()?>/img/icns/icon-ethereum.svg" class="icon ethereum" />
 							<img src="<?php echo $view->getThemePath()?>/img/icns/icon-bitcoin.svg" class="icon bitcoin" />
 							<img src="<?php echo $view->getThemePath()?>/img/icns/icon-visa.svg" class="icon visa" />
 							<img src="<?php echo $view->getThemePath()?>/img/icns/icon-mastercard.svg" class="icon mastercard" />

@@ -23,10 +23,6 @@
 					  ga('send', 'pageview');
 					</script>";
 ?>
-
-<!-- <link type="text/css" rel="stylesheet" href="//chriswatterston.com/ext-src/app-and-statistics/css/overview.css"> -->
-<!-- <link type="text/css" rel="stylesheet" href="http://framework.dev/application/single_pages/dashboard/app-and-statistics/overview.css"> -->
-<link type="text/css" rel="stylesheet" href="http://st-pauls.surrey.sch.uk-www.dev/application/single_pages/dashboard/app-and-statistics/overview.css">
+<link rel="stylesheet" href="https://use.typekit.net/jvt3jij.css">
+<link type="text/css" rel="stylesheet" href="//chriswatterston.com/ext-src/app-and-statistics/css/overview.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<script src="https://use.typekit.net/jvt3jij.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>

@@ -188,26 +188,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="feed-footer">
-			<div class="feed-stroke">
-				<div class="contain">
-					<div class="cols">
-						<div class="col title facebook type-right">
-							<h3 class="colour-facebook type-uppercase type-semibold">Friendly Facebook</h3>
-							<a href="https://www.facebook.com/chriswatterston.co" class="abtn facebook small spaced" target="_blank" title="Like me on Facebook">Let’s Connect</a>
-						</div>
-						<div class="col facebook">
-							<div class="cols">
-								<?php
-								    $bcf4 = new Area('Content Area Footer Two');
-								    $bcf4->display($c);
-							    ?>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</section>
 </section>
 <?php include('inc/footer.php'); ?>

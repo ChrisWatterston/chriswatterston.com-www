@@ -12,8 +12,6 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <link rel="stylesheet" type="text/css" href="<?php echo $view->getThemePath()?>/css/core.css" />
-<script src="https://use.typekit.net/aut5day.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
 <?php
   $metaTitle = $c->getCollectionAttributeValue('meta_title');
   if ($metaTitle) $pageTitle = $metaTitle.' - Chris Watterston';

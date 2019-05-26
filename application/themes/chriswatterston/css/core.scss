@@ -1,6 +1,7 @@
 // core.scss
-
 /* Chris Watterston - Stylesheet */
+
+@import url('https://fonts.googleapis.com/css?family=News+Cycle:400,700|Open+Sans:400,600,700&display=swap');
 
 // Colours
 $col-green: #009788;			// rgba(0,151,136,1)
@@ -26,8 +27,8 @@ $col-max: 1052px;
 $col-one: 100%;
 
 // Typeface
-$type-pri: "tablet-gothic-condensed-1","tablet-gothic-condensed-2",sans-serif;
-$type-sec: "open-sans-1","open-sans-2",sans-serif;
+$type-pri: 'News Cycle', sans-serif;
+$type-sec: 'Open Sans', sans-serif;
 
 // Typography
 $type-xsml: 0.6em;

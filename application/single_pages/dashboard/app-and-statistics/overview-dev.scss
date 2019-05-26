@@ -1,6 +1,8 @@
 // core.scss
 /* Chris Watterston - Stylesheet */
 
+@import url('https://fonts.googleapis.com/css?family=News+Cycle:400,700|Teko:700&display=swap');
+
 // Colours
 $col-green: #009788;
 $col-lightgreen: #06d6a0;
@@ -14,8 +16,8 @@ $col-one: 100%;
 $col-max: 1024px;
 
 // Typeface
-$type-pri: "bebas-neue",sans-serif;
-$type-sec: "tablet-gothic-condensed",sans-serif;
+$type-pri: 'Teko', sans-serif;
+$type-sec: 'News Cycle', sans-serif;
 
 // Typography
 $type-sml: 1.05em;

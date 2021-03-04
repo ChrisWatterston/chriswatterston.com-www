@@ -1,0 +1,13 @@
+{
+	"editor.fontSize": 9,
+	"editor.fontFamily": "Andale Mono, Monaco, 'Courier New', monospace",
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"html.format.indentInnerHtml": true,
+	"editor.tabSize": 4,
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+	"editor.detectIndentation": false,
+	"editor.fontWeight": "bold",
+	"intelephense.format.enable": true
+}

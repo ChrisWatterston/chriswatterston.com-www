@@ -1,3 +1,0 @@
-Add the following 'Single Pages'
-- App And Statistics (NAME) /dashboard/app-and-statistics (PATH)
-

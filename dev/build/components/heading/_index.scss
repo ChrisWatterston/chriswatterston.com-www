@@ -1,0 +1,64 @@
+// Copyright (c) 2022-present, Chris Watterston. All rights reserved.
+// #{$prefix-name}
+
+// Modules
+@use "sass:math";
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- HEADINGS ----------
+// ----------
+// ----------
+//
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $colour-green__default;
+  font-family: $font-family__default;
+  // Variant
+  &._green {
+    color: $colour-green__default;
+  }
+  &._yellow {
+    color: $colour-yellow__default;
+  }
+  &._purple {
+    color: $colour-purple__default;
+  }
+  &._red {
+    color: $colour-red__default;
+  }
+  &._black {
+    color: $colour-black__default;
+  }
+}
+
+h1 {
+  font-size: $font-size__large;
+  letter-spacing: -0.8rem;
+  text-transform: uppercase;
+  // Variant
+  &._stacked {
+    line-height: math.div($font-size__large, 1.7);
+    margin: 0;
+    mix-blend-mode: multiply;
+  }
+}
+
+h5 {
+  color: $colour-black__default;
+  font-size: $font-size__medium;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h6 {
+  color: $colour-black__default;
+  font-size: $font-size__default;
+  font-weight: 600;
+}

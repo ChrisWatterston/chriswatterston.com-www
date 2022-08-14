@@ -4,9 +4,15 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "PRODUCTION Compile - Compressed",
+            "label": "SASS - PRODUCTION",
             "type": "shell",
-            "command": "cd ./wp-content/themes/chriswatterston-2020/css/; sass --watch _index.scss:../style.css --no-source-map --style compressed;",
+            "command": "sass --watch ./dev/build/_core.scss:./dist/css/chriswatterston-www.min.css --no-source-map --style compressed;",
+            "problemMatcher": []
+        },
+        {
+            "label": "SASS - LIVE OVERRIDE",
+            "type": "shell",
+            "command": "sass --watch ./dev/build/_core.scss:./chriswatterston.com-www.dev-local/dist/css/chriswatterston-www.min.css --no-source-map --style compressed;",
             "problemMatcher": []
         }
     ]

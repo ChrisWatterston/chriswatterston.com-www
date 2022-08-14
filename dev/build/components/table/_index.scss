@@ -1,0 +1,328 @@
+// Copyright (c) 2022-present, Chris Watterston. All rights reserved.
+// #{$prefix-name}
+
+// Modules
+@use "sass:math";
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- TABS ----------
+// ----------
+// ----------
+//
+// .#{$prefix-name}-table-container {
+// 	// Element
+// 	.__header {
+// 		border-bottom: 1px solid $colour-grey__light;
+// 		font-size: $font-size__xsmall;
+// 		font-weight: 700;
+// 		text-transform: uppercase;
+// 		.__col {
+// 			padding: math.div($padding__small, 1.5) $padding__small;
+// 			&:nth-child(1) {
+// 				color: $colour-orange__default;
+// 			}
+// 			&:nth-child(1),
+// 			&:nth-child(2) {
+// 				text-align: center;
+// 			}
+// 		}
+// 	}
+// 	.__body {
+// 		.__row {
+// 			border-bottom: 1px solid $colour-grey__light;
+// 			.__col {
+// 				padding: $padding__small;
+// 				&:nth-child(1) {
+// 					color: $colour-orange__default;
+// 				}
+// 				&:nth-child(1),
+// 				&:nth-child(2) {
+// 					font-weight: 700;
+// 					text-align: center;
+// 				}
+// 				&:nth-child(2n + 2) {
+// 					background: $colour-white__dark;
+// 				}
+// 				strong {
+// 					display: block;
+// 				}
+// 				i {
+// 					color: $colour-grey__default;
+// 					font-size: $font-size__xsmall;
+// 				}
+// 				// Pos & Neg
+// 				&._neg {
+// 					color: $colour-red__default;
+// 				}
+// 				&._pos {
+// 					color: $colour-green__default;
+// 				}
+// 			}
+// 		}
+// 		// Modifier
+// 		&._scroll-table {
+// 			max-height: 130px;
+// 			overflow-y: scroll;
+// 			overflow: -moz-scrollbars-vertical;
+// 		}
+// 	}
+// 	.__footer {
+// 		padding: $padding__default $padding__small 0;
+// 	}
+// 	// Modifier
+// 	._column-3 {
+// 		grid-template-columns: repeat(1, 1fr 1.8fr 5fr);
+// 	}
+// 	&._scorecalc {
+// 		margin-bottom: $padding__medium;
+// 		.__header {
+// 			.__col {
+// 				&:nth-child(1) {
+// 					color: $colour-blue__default;
+// 					text-align: left;
+// 				}
+// 			}
+// 		}
+// 		.__body {
+// 			.__row {
+// 				.__col {
+// 					&:nth-child(1) {
+// 						color: $colour-blue__default;
+// 						text-align: left;
+// 						font-weight: normal;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// 	&._up-next {
+// 		padding-left: 15%;
+// 		position: relative;
+// 		&:before {
+// 			background-image: url(#{$path-images}/icons/icon-football-orange.svg);
+// 			background-position-x: right;
+// 			background-position-y: top;
+// 			background-repeat: no-repeat;
+// 			background-size: 105% auto;
+// 			content: " ";
+// 			height: 100%;
+// 			min-height: 90px;
+// 			left: -17px;
+// 			position: absolute;
+// 			top: -50px;
+// 			width: 90px;
+// 		}
+// 		._column-2 {
+// 			border-bottom: 0;
+// 			grid-template-columns: repeat(2, 1fr);
+// 			.__col {
+// 				background-color: transparent !important;
+// 				color: $colour-blue__default !important;
+// 				span {
+// 					padding: 0 math.div($padding__small, 2);
+// 				}
+// 			}
+// 		}
+// 		._team-flags {
+// 			font-weight: 400 !important;
+// 			padding-left: 0 !important;
+// 			.__flag {
+// 				background-position: center;
+// 				background-size: cover;
+// 				border-radius: $border-radius__xsmall;
+// 				border: 0;
+// 				box-shadow: $colour-black__default__shadow 0 3px 3px;
+// 				height: 35px;
+// 				margin: 0;
+// 				width: 55px;
+// 				&._op {
+// 					border: 0;
+// 					height: 26px;
+// 					width: 45px;
+// 				}
+// 			}
+// 		}
+// 		._game-details {
+// 			background-image: url(#{$path-images}/icons/icon-calendar-orange.svg);
+// 			background-position-x: right;
+// 			background-position-y: 10px;
+// 			background-repeat: no-repeat;
+// 			background-size: auto 42%;
+// 			font-size: $font-size__xsmall;
+// 			padding-left: 0 !important;
+// 			padding-right: 35px !important;
+// 			text-transform: uppercase;
+// 			section {
+// 				width: 100%;
+// 			}
+// 			span {
+// 				display: block;
+// 				padding: 0 !important;
+// 				text-align: right;
+// 				width: 100%;
+// 				&.__time,
+// 				&.__city {
+// 					font-size: $font-size__tiny;
+// 				}
+// 			}
+// 		}
+// 	}
+// 	&._season-stats,
+// 	&._season-entry {
+// 		.__col {
+// 			padding: 0 !important;
+// 			* {
+// 				color: $colour-white__default;
+// 				text-align: center;
+// 			}
+// 			.__data {
+// 				display: block;
+// 				font-size: $font-size__large;
+// 				font-weight: 600;
+// 				padding: $padding__medium 0 $padding__medium;
+// 				i {
+// 					display: block;
+// 					font-size: $font-size__default;
+// 					font-style: normal;
+// 					margin-top: -2px;
+// 				}
+// 				.__flag {
+// 					background-position: center;
+// 					background-size: cover;
+// 					border-radius: $border-radius__xsmall;
+// 					border: 0;
+// 					box-shadow: $colour-black__default__shadow 0 3px 3px;
+// 					height: 35px;
+// 					margin: 0;
+// 					width: 55px;
+// 				}
+// 				&._sub {
+// 					font-size: $font-size__large;
+// 					padding: $padding__default 0;
+// 				}
+// 				&._small,
+// 				&._label {
+// 					font-size: $font-size__small;
+// 					padding: 2px 0;
+// 				}
+// 				&._small {
+// 					color: $colour-orange__default;
+// 					text-align: right;
+// 				}
+// 				&._label {
+// 					color: $colour-blue__default;
+// 					font-weight: 400;
+// 					padding-left: $padding__small;
+// 					text-align: left;
+// 				}
+// 			}
+// 			.__title {
+// 				background-color: $colour-orange__light;
+// 				box-shadow: $colour-black__default__shadow 0 5px 20px;
+// 				display: block;
+// 				font-size: $font-size__medium;
+// 				font-weight: 600;
+// 				padding: $padding__medium 0;
+// 				position: relative;
+// 				z-index: +1;
+// 			}
+// 		}
+// 		.__general {
+// 			background-color: #006685; // background fallback
+// 			// background-image: url(#{$path-images}backgrounds/background-football-pitch-dark.jpg);
+// 			background-image: url(#{$path-images}backgrounds/background-football-pitch-womens.jpg);
+// 			background-position-x: center;
+// 			background-position-y: top;
+// 			background-repeat: no-repeat;
+// 			background-size: cover;
+// 			.__col:nth-child(1),
+// 			.__col:nth-child(4) {
+// 				background-color: rgba(35, 92, 109, 0.2);
+// 			}
+// 			.__col:nth-child(2),
+// 			.__col:nth-child(3) {
+// 				background-color: rgba(5, 60, 75, 0.25);
+// 			}
+// 		}
+// 		.__goals {
+// 			background-color: $colour-orange__light;
+// 			.__col:nth-child(2),
+// 			.__col:nth-child(3) {
+// 				background-color: #ffcb74;
+// 			}
+// 			.__col:nth-child(4),
+// 			.__col:nth-child(5),
+// 			.__col:nth-child(8) {
+// 				background-color: #ffc564;
+// 			}
+// 			.__col:nth-child(1),
+// 			.__col:nth-child(7) {
+// 				background-color: #ffbd51;
+// 			}
+// 			.__col:nth-child(6) {
+// 				background-color: #ffb63e;
+// 			}
+// 		}
+// 		.__goals-chart {
+// 			background: $colour-orange__light;
+// 			background: -moz-linear-gradient(
+// 				180deg,
+// 				$colour-orange__light 0%,
+// 				$colour-white__default 100%
+// 			);
+// 			background: -webkit-linear-gradient(
+// 				180deg,
+// 				$colour-orange__light 0%,
+// 				$colour-white__default 100%
+// 			);
+// 			background: linear-gradient(
+// 				180deg,
+// 				$colour-orange__light 0%,
+// 				$colour-white__default 100%
+// 			);
+// 			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f5a623",endColorstr="#ffffff",GradientType=1);
+// 			.__col {
+// 				padding: $padding__medium $padding__small $padding__large !important;
+// 				.__chart {
+// 					padding-left: $padding__small;
+// 				}
+// 				table.charts-css {
+// 					height: 240px;
+// 					th {
+// 						color: $colour-blue__default !important;
+// 					}
+// 					td {
+// 						padding-top: 10px;
+// 						font-style: $font-size__xsmall !important;
+// 					}
+// 					&.multiple tbody tr:nth-of-type(2n + 1) td {
+// 						background-color: #39b445;
+// 					}
+// 					&.multiple tbody tr:nth-of-type(2n + 0) td {
+// 						background-color: #66cb6c;
+// 					}
+// 				}
+// 			}
+// 		}
+// 		.__points {
+// 			background-color: $colour-green__default;
+// 		}
+// 		.__stats {
+// 			background-color: $colour-grey__light;
+// 			padding: $padding__small 0;
+// 		}
+// 		.__redyellow-cards {
+// 			.__col {
+// 				&:first-of-type .__data {
+// 					background-color: #ec3636;
+// 				}
+// 				&:last-of-type .__data {
+// 					background-color: #d4c71e;
+// 				}
+// 			}
+// 		}
+// 	}
+// }

@@ -1,0 +1,344 @@
+// Copyright (c) 2022-present, Chris Watterston. All rights reserved.
+// #{$prefix-name}
+
+// Modules
+@use "sass:math";
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- CARD  ----------
+// ----------
+// ----------
+//
+// .#{$prefix-name}-card-container {
+// 	position: relative;
+// 	padding: $padding__small $padding__small $padding__medium;
+// 	// Element
+// 	.__background {
+// 		background-color: $colour-white__default;
+// 		border-radius: $border-radius__default;
+// 		box-shadow: $colour-black__default__shadow 0 8px 40px;
+// 		margin: 0 auto;
+// 		max-width: $column-one__max;
+// 		padding: $padding__xsmall;
+// 		width: 100%;
+// 		.__title {
+// 			padding: $padding__small $padding__default
+// 				math.div($padding__small, 2);
+// 			// Modifier {
+// 			&._icon-indent {
+// 				padding-left: 100px;
+// 				padding-top: ($padding__large * 1.5);
+// 				position: relative;
+// 				&._red-yellow-cards:before {
+// 					background-image: url(#{$path-images}icons/icon-cards-redyellow-shadow.svg);
+// 					background-position-x: right;
+// 					background-position-y: top;
+// 					background-repeat: no-repeat;
+// 					background-size: contain;
+// 					content: " ";
+// 					height: 100px;
+// 					left: 0;
+// 					position: absolute;
+// 					top: 25px;
+// 					width: 100px;
+// 				}
+// 			}
+// 			&._enrol-next {
+// 				margin-top: $padding__large;
+// 			}
+// 			// Element
+// 			.__sucess-qrcode {
+// 				background-image: url(#{$path-images}backgrounds/background-qr-code-sucess-women.svg);
+// 				background-position-x: center;
+// 				background-position-y: center;
+// 				background-repeat: no-repeat;
+// 				background-size: contain;
+// 				display: block;
+// 				height: 120px;
+// 				margin-bottom: $padding__small;
+// 				margin-top: $padding__small;
+// 				width: 100%;
+// 			}
+// 			.__rank-help {
+// 				background-image: url(#{$path-images}icons/icon-help-green.svg);
+// 				background-position-x: center;
+// 				background-position-y: center;
+// 				background-repeat: no-repeat;
+// 				background-size: contain;
+// 				content: "";
+// 				height: 20px;
+// 				position: absolute;
+// 				right: 25px;
+// 				top: 25px;
+// 				width: 20px;
+// 				cursor: pointer;
+// 				a {
+// 					display: block;
+// 					width: 100%;
+// 					height: 100%;
+// 				}
+// 			}
+// 		}
+// 		.__image {
+// 			background-color: $colour-white__default;
+// 			background-repeat: no-repeat;
+// 			background-size: cover;
+// 			border-radius: $border-radius__small;
+// 			height: 180px;
+// 			width: 100%;
+// 		}
+// 		.__content {
+// 			background-color: $colour-white__default;
+// 			border-radius: $border-radius__small;
+// 			padding: $padding__default;
+// 			width: 100%;
+// 			// Modifier
+// 			&._shadow-orange {
+// 				box-shadow: $colour-orange__default__shadow 0 8px 30px;
+// 			}
+// 			&._shadow-pink {
+// 				box-shadow: $colour-pink__default__shadow 0 8px 30px;
+// 			}
+// 			&._shadow-blue {
+// 				box-shadow: $colour-blue__default__shadow 0 8px 30px;
+// 			}
+// 			&._shadow-gold {
+// 				box-shadow: $colour-orange__light__shadow 0 8px 30px;
+// 			}
+// 			&._shadow-grey {
+// 				box-shadow: $colour-black__default__shadow 0 8px 30px;
+// 			}
+// 			&._shadow-green {
+// 				box-shadow: $colour-green__default__shadow 0 8px 30px;
+// 			}
+// 			&._background-football {
+// 				background-image: url(#{$path-images}backgrounds/background-football-pitch-light.jpg);
+// 				background-position-x: center;
+// 				background-position-y: center;
+// 				background-repeat: no-repeat;
+// 				background-size: cover;
+// 				&._enrol {
+// 					margin-top: $padding__large;
+// 					padding: $padding__large;
+// 				}
+// 				&._glide {
+// 					padding-top: 2px;
+// 					padding-left: 0;
+// 					padding-right: 0;
+// 				}
+// 			}
+// 			&._background-trophy {
+// 				// background-image: url(#{$path-images}/icons/icon-trophy-gold.svg);
+// 				background-image: url(#{$path-images}icons/icon-trophy-pink.svg);
+// 				background-position-x: 97%;
+// 				background-position-y: 102%;
+// 				background-repeat: no-repeat;
+// 				background-size: auto 100px;
+// 			}
+// 			&._team-scores {
+// 				background-color: transparent;
+// 				padding-bottom: 0;
+// 				padding-top: 0;
+// 				._column-2:first-child {
+// 					margin-bottom: 20px;
+// 				}
+// 			}
+// 			&._exc-padding {
+// 				padding: 0 !important;
+// 				overflow: hidden;
+// 			}
+// 			&._image-reverse {
+// 				margin: -$padding__large $padding__small 0 !important;
+// 				width: calc(100% - ($padding__small * 2));
+// 			}
+// 		}
+// 		.__groups,
+// 		.__matches {
+// 			&._col-lft {
+// 				padding-right: ($padding__xsmall);
+// 			}
+// 			&._col-rgt {
+// 				padding-left: ($padding__xsmall);
+// 			}
+// 		}
+// 		.__groups {
+// 			margin-top: 90px;
+// 			&._team-scores {
+// 				margin-top: 0;
+// 			}
+// 		}
+// 		.__matches {
+// 			margin-top: 20px;
+// 		}
+// 		.__team-group {
+// 			padding-right: 0 !important;
+// 			padding-left: 0 !important;
+// 			&._padding-top {
+// 				margin-top: $padding__medium;
+// 			}
+// 		}
+// 		// Modifier
+// 		&._enrol {
+// 			padding: $padding__large;
+// 			@include mixinResponsive("wide-mobile") {
+// 				padding: $padding__small !important;
+// 			}
+// 		}
+// 		&._trans {
+// 			background: none !important;
+// 			padding: 0 !important;
+// 			box-shadow: none !important;
+// 			.__content {
+// 				padding: calc($padding__small * 2);
+// 			}
+// 		}
+// 	}
+// 	// Modifier
+// 	&._half {
+// 		width: 45%;
+// 		z-index: 1;
+// 	}
+// 	&._part {
+// 		width: 95%;
+// 		right: -5%;
+// 		margin-top: -140px;
+// 		.__title {
+// 			padding-left: 45%;
+// 		}
+// 	}
+// 	&._full {
+// 		margin: 0 auto;
+// 		// max-width: 600px;
+// 		width: 100%;
+// 	}
+// 	&._enrol {
+// 		margin-top: $padding__large;
+// 		padding: 0;
+// 	}
+// 	&._card-heading {
+// 		margin: $padding__xsmall 0 -20px;
+// 		padding: 0 !important;
+// 	}
+// 	&._card-return {
+// 		margin: $padding__xsmall 0 -25px;
+// 		padding-top: 0 !important;
+// 		padding-bottom: 0 !important;
+// 		z-index: +1;
+// 	}
+// 	&._strava-overview,
+// 	&._strava-entry {
+// 		padding: 0;
+// 	}
+// 	&._strava-overview {
+// 		margin-bottom: -$padding__large;
+// 		.__general .__col {
+// 			padding-bottom: $padding__large !important;
+// 		}
+// 	}
+// 	&._strava-entry {
+// 		margin-bottom: $padding__small;
+// 	}
+// 	&._live {
+// 		.__title {
+// 			position: relative;
+// 			&:after {
+// 				animation: animationLiveSlide 2s ease-in-out 0s infinite
+// 					alternate;
+// 				background-color: $colour-green__default;
+// 				bottom: 0px;
+// 				content: " ";
+// 				height: 2px;
+// 				left: -50px;
+// 				margin-left: 50%;
+// 				position: absolute;
+// 				width: 100px;
+// 			}
+// 		}
+// 		.__content {
+// 			background: $colour-gradient__blue;
+// 			overflow: hidden;
+// 			position: relative;
+// 		}
+// 		.__local,
+// 		.__visitor {
+// 			padding: 10px 0 5px !important;
+// 			z-index: +2;
+// 		}
+// 		.__vs {
+// 			left: -25px;
+// 			margin-left: 50%;
+// 			position: absolute;
+// 			top: 30px;
+// 			width: 50px;
+// 			z-index: +2;
+// 		}
+// 		.__background-dark {
+// 			background: $colour-gradient__pink;
+// 			height: 100%;
+// 			opacity: 0.5;
+// 			position: absolute;
+// 			width: 100%;
+// 			z-index: +1;
+// 		}
+// 		.__flags {
+// 			filter: blur(5px);
+// 			height: 120%;
+// 			margin-left: -10%;
+// 			margin-top: -2.5%;
+// 			opacity: 0.5;
+// 			position: absolute;
+// 			width: 120%;
+// 			.__flag {
+// 				border-radius: unset;
+// 				border: unset;
+// 				box-shadow: unset;
+// 				height: 100%;
+// 				margin: unset;
+// 				width: 100%;
+// 			}
+// 		}
+// 		.__notice {
+// 			text-align: center;
+// 			font-size: $font-size__tiny;
+// 			color: $colour-white__dark;
+// 		}
+// 		&._stacked {
+// 			.__content {
+// 				border-radius: unset;
+// 				overflow: hidden;
+// 				&:nth-child(2),
+// 				> section {
+// 					border-radius: $border-radius__default
+// 						$border-radius__default 0 0;
+// 					overflow: hidden;
+// 				}
+// 				&:last-child,
+// 				> section {
+// 					border-radius: 0 0 $border-radius__default
+// 						$border-radius__default;
+// 					overflow: hidden;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- ANIMATION ----------
+// ----------
+// ----------
+//
+@keyframes animationLiveSlide {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(-100px);
+  }
+}

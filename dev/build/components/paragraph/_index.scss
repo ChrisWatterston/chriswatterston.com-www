@@ -1,0 +1,59 @@
+// Copyright (c) 2022-present, Chris Watterston. All rights reserved.
+// #{$prefix-name}
+
+// Modules
+@use "sass:math";
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- PARAGRAPHS ----------
+// ----------
+// ----------
+//
+p {
+  font-family: $font-family__default;
+  font-weight: 300;
+  line-height: 1.5;
+  padding-bottom: $spacing__small;
+}
+
+i,
+em {
+  font-style: italic;
+  font-weight: initial;
+}
+
+b,
+strong {
+  color: inherit;
+  font-size: inherit;
+  font-weight: 600;
+}
+
+sub {
+  bottom: unset;
+}
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- LINKS ----------
+// ----------
+// ----------
+//
+a,
+a:hover,
+a:active,
+a:visited {
+  color: $colour-black__default;
+  font-family: $font-family__default;
+  font-size: inherit;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: $colour-purple__default;
+}

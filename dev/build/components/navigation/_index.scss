@@ -1,0 +1,55 @@
+// Copyright (c) 2022-present, Chris Watterston. All rights reserved.
+// #{$prefix-name}
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- NAVIGATION ----------
+// ----------
+// ----------
+//
+.#{$prefix-name}-navigation-container {
+  padding: $spacing__default $spacing__large;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: +1;
+  .__nav {
+    margin-top: $spacing__default;
+    ul {
+      padding: 0;
+      &._root {
+        li {
+          display: inline-block;
+          margin-right: $spacing__small;
+          a {
+            display: block;
+            padding: $spacing__small $spacing__default;
+            text-decoration: none;
+            text-transform: lowercase;
+            // Variant
+            &._home {
+              background-image: url(#{$path-images}icons/icon-home-black.svg);
+              background-position-x: center;
+              background-position-y: 3px;
+              background-repeat: no-repeat;
+              background-size: auto calc(100% - $spacing__default);
+              margin-right: $spacing__default;
+            }
+          }
+        }
+      }
+    }
+  }
+  .__logo {
+    background-image: url(#{$path-images}brand/logo-chris-watterston.svg);
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 60px;
+    position: relative;
+    width: 60px;
+  }
+}

@@ -1,0 +1,249 @@
+// Copyright (c) 2022-present, Chris Watterston. All rights reserved.
+// #{$prefix-name}
+
+// Modules
+@use "sass:math";
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- FORMS ----------
+// ----------
+// ----------
+//
+// .#{$prefix-name}-form-container {
+// 	background-color: $colour-white__default;
+// 	border-radius: $border-radius__small;
+// 	box-shadow: $colour-black__default__shadow 0 8px 30px;
+// 	// Element
+// 	form {
+// 		padding: $padding__large;
+// 	}
+// 	label {
+// 		display: block;
+// 		font-weight: 700;
+// 		margin-bottom: $padding__small;
+// 		margin-top: $padding__default;
+// 		text-transform: uppercase;
+// 	}
+// 	input[type="text"],
+// 	input[type="email"],
+// 	select {
+// 		border-radius: $border-radius__tiny;
+// 		border: 1px solid $colour-grey__light;
+// 		// color: $colour-grey__default;
+// 		padding: $padding__small $padding__default;
+// 		width: 100%;
+// 		&::placeholder {
+// 			color: $colour-grey__light;
+// 		}
+// 		&:focus {
+// 			opacity: 1;
+// 		}
+// 	}
+// 	.__checkbox-list {
+// 		> section {
+// 			border-bottom: 1px solid $colour-grey__light;
+// 			border-top: 1px solid $colour-grey__light;
+// 			position: relative;
+// 			&:before {
+// 				color: $colour-orange__default;
+// 				content: "Groups";
+// 				font-size: $font-size__xsmall;
+// 				font-weight: 700;
+// 				left: 0;
+// 				position: absolute;
+// 				text-transform: uppercase;
+// 				top: -22px;
+// 			}
+// 		}
+// 		.__checkbox-item {
+// 			padding-left: $padding__small;
+// 			&:nth-child(8n + 1),
+// 			&:nth-child(8n + 2),
+// 			&:nth-child(8n + 3),
+// 			&:nth-child(8n + 4) {
+// 				background: $colour-white__dark;
+// 			}
+// 			&:nth-child(4n + 1) {
+// 				// counter-increment: rowIndex;
+// 				padding-left: ($padding__large * 1.1);
+// 				position: relative;
+// 				&:before {
+// 					color: $colour-orange__default;
+// 					// content: counter(rowIndex);
+// 					font-size: $font-size__small;
+// 					font-weight: 700;
+// 					left: 16px;
+// 					position: absolute;
+// 					text-transform: uppercase;
+// 					top: 7px;
+// 				}
+// 			}
+// 			&:nth-child(1):before {
+// 				content: "A";
+// 			}
+// 			&:nth-child(5):before {
+// 				content: "B";
+// 			}
+// 			&:nth-child(9):before {
+// 				content: "C";
+// 			}
+// 			&:nth-child(13):before {
+// 				content: "D";
+// 			}
+// 			&:nth-child(17):before {
+// 				content: "E";
+// 			}
+// 			&:nth-child(21):before {
+// 				content: "F";
+// 			}
+// 			label {
+// 				display: inline-block;
+// 				font-size: $font-size__small;
+// 				font-weight: 400;
+// 				margin: math.div($padding__small, 1.2) 0;
+// 				padding-left: math.div($padding__small, 2);
+// 				text-transform: capitalize;
+// 			}
+// 			@include mixinResponsive("wide-mobile") {
+// 				&:nth-child(8n + 3),
+// 				&:nth-child(4n + 3) {
+// 					padding-left: ($padding__large * 1.1);
+// 					position: relative;
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.__language-list {
+// 		margin: $padding__large 0;
+// 		& > section._column-4 {
+// 			column-gap: $padding__default;
+// 		}
+// 		.__checkbox-item {
+// 			position: relative;
+// 			height: 110px;
+// 			padding: $padding__small;
+// 			.val-lang {
+// 				cursor: pointer;
+// 				display: block;
+// 				height: 90px;
+// 				margin-top: 5px;
+// 				position: relative;
+// 				width: 100%;
+// 				z-index: 0;
+// 			}
+// 			&:before,
+// 			&:after,
+// 			label {
+// 				content: " ";
+// 				left: 0;
+// 				margin: 0;
+// 				pointer-events: none !important;
+// 				position: absolute;
+// 				text-align: center;
+// 				top: 0;
+// 				width: calc(100% - $padding__small);
+// 				z-index: 3;
+// 			}
+// 			label {
+// 				bottom: -2px;
+// 				display: block;
+// 				font-weight: 400;
+// 				padding-bottom: $padding__small;
+// 				text-transform: none;
+// 				top: unset;
+// 			}
+// 			&:before {
+// 				background: $colour-white__default;
+// 				height: 100%;
+// 				pointer-events: none !important;
+// 			}
+// 			&:after {
+// 				background-position-x: center;
+// 				background-position-y: top;
+// 				background-repeat: no-repeat;
+// 				background-size: auto 65px;
+// 				height: 65px;
+// 				top: $padding__default;
+// 				transition: all $transition-speed__fast;
+// 			}
+// 			&[title="English"]:after {
+// 				background-image: url(#{$path-images}/flags/flag-english.svg);
+// 			}
+// 			&[title="French"]:after {
+// 				background-image: url(#{$path-images}/flags/flag-france.svg);
+// 			}
+// 			&[title="Spanish"]:after {
+// 				background-image: url(#{$path-images}/flags/flag-spain.svg);
+// 			}
+// 			&[title="Polish"]:after {
+// 				background-image: url(#{$path-images}/flags/flag-poland.svg);
+// 			}
+// 			&._selected:before {
+// 				background-color: $colour-grey__light;
+// 				border-radius: $border-radius__small;
+// 			}
+// 			&:hover {
+// 				&:after {
+// 					background-size: auto 60px;
+// 				}
+// 			}
+// 		}
+// 	}
+// 	&._support {
+// 		background-color: unset !important;
+// 		border-radius: unset !important;
+// 		border-top: 1px solid $colour-grey__light;
+// 		box-shadow: unset !important;
+// 		padding-top: $padding__default;
+// 		form.kwes-form {
+// 			padding: unset !important;
+// 		}
+// 		.__input,
+// 		.__textarea {
+// 			border-radius: $border-radius__tiny;
+// 			border: 1px solid $colour-grey__default;
+// 			font-family: $font-family__default;
+// 			font-size: $font-size__default;
+// 			margin-bottom: $padding__small;
+// 			padding: $padding__small;
+// 			position: relative;
+// 			width: 100%;
+// 		}
+// 		label {
+// 			// color: $colour-bl__default;
+// 			display: block;
+// 			font-family: $font-family__default;
+// 			font-size: $font-size__small;
+// 			padding: 0 0 3px;
+// 			text-transform: uppercase;
+// 		}
+// 		::-webkit-input-placeholder {
+// 			font-size: $font-size__small;
+// 		}
+// 		::-moz-placeholder {
+// 			font-size: $font-size__small;
+// 		}
+// 		::-ms-input-placeholder {
+// 			font-size: $font-size__small;
+// 		}
+// 	}
+// 	&._auth {
+// 		background-color: unset !important;
+// 		border-radius: unset !important;
+// 		box-shadow: unset !important;
+// 		text-align: center;
+// 		form {
+// 			padding: unset !important;
+// 		}
+// 		label {
+// 			text-transform: capitalize;
+// 			font-weight: 500;
+// 		}
+// 		input {
+// 			text-align: center;
+// 		}
+// 	}
+// }

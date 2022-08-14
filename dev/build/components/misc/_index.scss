@@ -1,0 +1,51 @@
+// Copyright (c) 2022-present, Chris Watterston. All rights reserved.
+// #{$prefix-name}
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- RESET AMD COLOUR MODE ----------
+// ----------
+// ----------
+//
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+  }
+}
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- MISCELLANEOUS ----------
+// ----------
+// ----------
+//
+.#{$prefix-name}-body-container {
+  background-color: $colour-white__default;
+  border-radius: $border-radius__default;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.#{$prefix-name}-stream-container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: 1px solid red;
+}

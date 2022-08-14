@@ -1,0 +1,41 @@
+// Copyright (c) 2022-present, Chris Watterston. All rights reserved.
+// #{$prefix-name}
+
+// Prefix name
+$prefix-name: "cwp";
+
+// Version number
+$release-version: "1.0";
+
+// Production - MUST be used for production releases.
+$path-images: "/dist/images/";
+$path-fonts: "/dist/fonts/";
+
+// Breakpoints
+$breakpoint-width: (
+  // narrow-mobile
+  xxsmall: 414px,
+  // mobile
+  xsmall: 650px,
+  // wide-mobile
+  small: 832px,
+  // tablet
+  medium: 1080px,
+  // desktop
+  large: 1440px
+);
+
+// $breakpoint-height: (
+//     small: 400px,
+//     medium: 800px,
+//     large: 1200px,
+// );
+
+// Copyright and Version comment, this MUST be present within DEVELOP and PRODUCTION complied Sass files.
+/*!
+Theme Name: Chris Watterston Portfolio
+Theme URI: https://www.chriswatterston.com/
+Author: Chris Watterston
+Version: v#{$release-version}
+Copyright (c) 2022-present, Chris Watterston. All rights reserved.
+*/

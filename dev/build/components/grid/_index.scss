@@ -1,0 +1,55 @@
+// Copyright (c) 2022-present, Chris Watterston. All rights reserved.
+// #{$prefix-name}
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- GRID ----------
+// ----------
+// ----------
+//
+.#{$prefix-name}-grid-container {
+  display: grid;
+  grid-template-rows: auto;
+  &._column-nav {
+    grid-template-columns: 1fr min-content;
+  }
+  //   &._column-sub {
+  //     grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
+  //   }
+  //   &._column-1 {
+  //     grid-template-columns: repeat(1, 1fr [col-start]);
+  //   }
+  //   &._column-2 {
+  //     grid-template-columns: repeat(2, 1fr [col-start]);
+  //   }
+  //   &._column-4 {
+  //     grid-template-columns: repeat(4, 1fr [col-start]);
+  //     @include mixinResponsive("wide-mobile") {
+  //       grid-template-columns: repeat(1, 1fr 1fr);
+  //     }
+  //   }
+}
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- FLEX ----------
+// ----------
+// ----------
+//
+.#{$prefix-name}-flex-prep {
+  height: 100vh;
+}
+
+.#{$prefix-name}-flex-container {
+  display: flex;
+  &._flex-intro {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}

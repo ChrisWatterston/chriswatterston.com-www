@@ -1,0 +1,72 @@
+// Copyright (c) 2022-present, Chris Watterston. All rights reserved.
+// #{$prefix-name}
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- RESPONSIVE
+//	          xsmall: 650px,
+//	          small: 832px,
+//	          medium: 1080px,
+//	          large: 1440px
+// ----------
+// ----------
+// ----------
+//
+@mixin mixinResponsive($target) {
+  @if $target == narrow-mobile {
+    @media only screen and (max-width: map-get($breakpoint-width, "xxsmall")) {
+      @content;
+    }
+  } @else if $target == mobile {
+    @media only screen and (max-width: map-get($breakpoint-width, "xsmall")) {
+      @content;
+    }
+  } @else if $target == wide-mobile {
+    @media only screen and (max-width: map-get($breakpoint-width, "small")) {
+      @content;
+    }
+  } @else if $target == tablet {
+    @media only screen and (max-width: map-get($breakpoint-width, "medium")) {
+      @content;
+    }
+  } @else if $target == desktop {
+    @media only screen and (max-width: map-get($breakpoint-width, "large")) {
+      @content;
+    }
+  } @else if $target == min-wide-mobile {
+    // Min-width
+    @media only screen and (min-width: map-get($breakpoint-width, "small")) {
+      @content;
+    }
+  }
+}
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ----------   ANIMATIONS  ----------
+// ----------
+// ----------
+//
+// @mixin mixinAnimationBackgroundZoom($duration: 1s, $delay: 0s) {
+// 	animation-name: fadeIn;
+// 	animation-duration: $duration;
+// 	animation-delay: $delay;
+// 	animation-direction: normal;
+// 	animation-timing-function: ease-in-out;
+// 	animation-fill-mode: forwards;
+// 	@keyframes fadeIn {
+// 		0% {
+// 			background-size: 110% auto;
+// 		}
+// 		50% {
+// 			background-size: 130% auto;
+// 		}
+// 		100% {
+// 			background-size: 110% auto;
+// 		}
+// 	}
+// }

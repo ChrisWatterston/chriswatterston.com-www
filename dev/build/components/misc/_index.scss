@@ -44,8 +44,9 @@
 }
 
 .#{$prefix-name}-stream-container {
+  bottom: 0;
+  padding-bottom: $spacing__large;
+  padding-right: $spacing__large;
   position: absolute;
   right: 0;
-  bottom: 0;
-  border: 1px solid red;
 }

@@ -22,7 +22,7 @@ $globalDomainRoot = 'http://chriswatterston.com-www.dev-local/';
 // $globalDomainRoot = 'https://1147-82-17-159-205.ngrok.io/';
 // $globalDomainRoot = 'https://www.chriswatterston.com/';
 
-$globalDomainContentful = 'TBC';
+$globalDomainContentful = 'https://cdn.contentful.com/';
 
 //
 // ------------------------------------------------------------

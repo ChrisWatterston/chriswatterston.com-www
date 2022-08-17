@@ -1,18 +1,17 @@
 {
-    "editor.fontSize": 10,
-    "editor.fontFamily": "Andale Mono, Monaco, 'Courier New', monospace",
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "html.format.indentInnerHtml": true,
-    "editor.tabSize": 4,
-    "editor.detectIndentation": false,
-    "editor.fontWeight": "bold",
-    "intelephense.format.enable": true,
-    "cSpell.words": [
-        "ribena"
-    ],
-    "[php]": {
-        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-    }
+  "editor.fontSize": 10,
+  "editor.fontFamily": "Andale Mono, Monaco, 'Courier New', monospace",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "html.format.indentInnerHtml": true,
+  "editor.tabSize": 4,
+  "editor.detectIndentation": false,
+  "editor.fontWeight": "bold",
+  "intelephense.format.enable": true,
+  "cSpell.words": ["ribena"],
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "markdown.preview.fontSize": 10
 }

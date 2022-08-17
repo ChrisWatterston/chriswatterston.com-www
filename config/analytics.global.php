@@ -1,4 +1,5 @@
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-47F9GTDJTF"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V9KJ4D564B"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -7,5 +8,5 @@
     }
     gtag('js', new Date());
 
-    gtag('config', 'G-47F9GTDJTF');
-</script> -->
+    gtag('config', 'G-V9KJ4D564B');
+</script>

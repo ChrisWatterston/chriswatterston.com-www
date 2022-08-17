@@ -14,9 +14,17 @@
 //
 p {
   font-family: $font-family__default;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   padding-bottom: $spacing__small;
+  &._post-date {
+    color: $colour-black__default;
+    font-size: $font-size__xsmall;
+    line-height: unset;
+    opacity: 0.6;
+    padding: unset;
+    text-transform: uppercase;
+  }
 }
 
 i,

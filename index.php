@@ -1,7 +1,7 @@
 <?
 // Local config
-$localMetaTitle = 'Hey, I\m Chris Watterston';
-$localMetaDesc = 'This is my page desc, it will be unique for each page';
+$localMetaTitle = 'Hey, I\'m Chris Watterston';
+$localMetaDesc = 'I am still building this site, be sure to come back soon!';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,15 +28,37 @@ $localMetaDesc = 'This is my page desc, it will be unique for each page';
         </div>
 
         <section class="<?= $globalPrefix; ?>-stream-container">
-            <article class="<?= $globalPrefix; ?>-card-container">
-                <div class="__type">
-                    <h5>Latest Post</h5>
-                </div>
-                <div class="__title">
-                    <h6>'There is no Cloud' turns NFT. How and why I'm making the design available again</h6>
-                </div>
-                <div class="__posted"><span>25th Jan 2022</span></div>
-            </article>
+            <?php
+            //
+            // ------------------------------------------------------------
+            // ------------------------------------------------------------
+            // ------------------------------------------------------------
+            // ---------- OUTPUT LATEST POST ----------
+            // ----------
+            // ----------
+            //
+            $limitList = 1;
+            $jsonContentOutput = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/data/contentful.json'), true);
+            foreach ($jsonContentOutput['items'] as $k => $v) {
+                if ($limitList === 1) {
+                    echo '
+                    <article class="' . $globalPrefix . '-card-container" data-content-id="' . $v['sys']['id'] . '" data-content-count=' . $limitList . '>
+                        <div class="__type _text-align__right">
+                            <h5>Latest Post</h5>
+                        </div>
+                        <div class="__title _text-align__right">
+                            <h6>' . $v['fields']['articleTitle'] . '</h6>
+                        </div>
+                        <div class="__posted _text-align__right"><p class="_post-date">' . date('jS M Y', strtotime($v['fields']['articleLiveDate'])) . '</p></div>
+                    </article>
+                ';
+                } else {
+                    exit;
+                }
+                // Lets loop again...
+                $limitList++;
+            }
+            ?>
         </section>
 
         <? include_once($_SERVER['DOCUMENT_ROOT'] . '/inc/footer.global.php'); ?>

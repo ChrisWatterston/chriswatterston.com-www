@@ -18,9 +18,9 @@ $globalVersion = '1.0';
 // ----------
 // ----------
 //
-$globalDomainRoot = 'http://chriswatterston.com-www.dev-local/';
+// $globalDomainRoot = 'http://chriswatterston.com-www.dev-local/';
 // $globalDomainRoot = 'https://1147-82-17-159-205.ngrok.io/';
-// $globalDomainRoot = 'https://www.chriswatterston.com/';
+$globalDomainRoot = 'https://www.chriswatterston.com/';
 
 $globalDomainContentful = 'https://cdn.contentful.com/';
 

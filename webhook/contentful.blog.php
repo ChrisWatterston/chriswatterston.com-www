@@ -4,7 +4,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . '/config/php.debug.php');
 include_once($_SERVER['DOCUMENT_ROOT'] . '/config/vars.global.php');
 include_once($_SERVER['DOCUMENT_ROOT'] . '/config/funcs.global.php');
 
-include_once($_SERVER['DOCUMENT_ROOT'] . '/keys/contentful.keys.php');
+include_once($_SERVER['DOCUMENT_ROOT'] . '/config/keys.contentful.php');
 
 //
 // ------------------------------------------------------------

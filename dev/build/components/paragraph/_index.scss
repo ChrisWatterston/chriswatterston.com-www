@@ -60,6 +60,17 @@ a:visited {
   font-family: $font-family__default;
   font-size: inherit;
   text-decoration: underline;
+  &._hidden {
+    bottom: 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: +1;
+  }
 }
 
 a:hover {

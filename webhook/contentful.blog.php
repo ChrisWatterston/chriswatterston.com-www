@@ -15,7 +15,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . '/keys/contentful.keys.php');
 // ----------
 //
 // Clear static JSON file
-file_put_contents(__DIR__ . '/../data/contentful.json', '');
+file_put_contents(__DIR__ . '/../data/contentful.blog.json', '');
 
 // $contentfulURL = $globalDomainContentful . 'spaces/' . $spaceID . '/environments/master/entries?access_token=' . $accessToken . '&order=sys.updatedAt';
 $contentfulURL = $globalDomainContentful . 'spaces/' . $spaceID . '/environments/master/entries?access_token=' . $accessToken;
@@ -31,4 +31,4 @@ $apiResult = json_decode($contentfulGET, true);
 
 // Rebuild static JSON file
 $apiOutput = json_encode($apiResult, JSON_PRETTY_PRINT); // JSON_PRETTY_PRINT : JSON_UNESCAPED_UNICODE
-file_put_contents(__DIR__ . '/../data/contentful.json', $apiOutput, FILE_APPEND);
+file_put_contents(__DIR__ . '/../data/contentful.blog.json', $apiOutput, FILE_APPEND);

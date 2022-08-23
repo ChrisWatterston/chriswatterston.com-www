@@ -45,8 +45,8 @@
 
 .#{$prefix-name}-stream-container {
   bottom: 0;
-  padding-bottom: $spacing__large;
-  padding-right: $spacing__large;
+  margin-bottom: $spacing__large;
+  margin-right: $spacing__large;
   position: absolute;
   right: 0;
 }

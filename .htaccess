@@ -1,0 +1,35 @@
+# Enabling of media types
+
+AddType image/svg+xml .svg .svgz
+AddType application/zip .zip
+AddType image/png .png
+AddType image/gif .gif
+AddType text/css .css
+AddType application/x-gzip .gz .gzip
+AddType image/x-icon .ico
+AddType image/jpeg .jpg .jpeg .jpe
+AddType application/json .json
+AddHandler application/x-httpd-php .php .html
+
+# URL rewrite
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule (.*) $1.php [L]
+</IfModule>
+
+# # Block robots from index files
+
+<FilesMatch "robots.txt">
+Header set X-Robots-Tag "noindex"
+</FilesMatch>
+<FilesMatch ".(json|svg)$">
+Header set X-Robots-Tag "noindex, noarchive, nosnippet"
+</FilesMatch>
+
+# Redirects
+
+# Redirect /data/ https://dipi.sbfe.digital/

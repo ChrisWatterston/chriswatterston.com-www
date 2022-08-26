@@ -13,5 +13,41 @@
 // ----------
 //
 .#{$prefix-name}-article-container {
-  border: 1px solid red;
+  margin: 0 auto;
+  max-width: $column-one__article;
+  padding-bottom: calc($spacing__large * 4);
+  padding-top: calc($spacing__large * 4);
+  position: relative;
+  ._post-date {
+    margin-bottom: $spacing__default;
+  }
+  h1,
+  ._article-desc,
+  ._image-caption {
+    margin-bottom: $spacing__large;
+  }
+  img,
+  ._image-caption {
+    height: auto;
+    margin-left: -5%;
+    position: relative;
+    width: 110%;
+  }
+  img {
+    border-radius: $border-radius__default $border-radius__default 0 0;
+  }
+  ._image-caption {
+    background-color: $colour-grey__default;
+    margin-top: -4px;
+    padding: $spacing__default;
+  }
+  ._article-body {
+    ul,
+    ol {
+      padding-left: $spacing__large;
+      p {
+        padding-left: $spacing__default;
+      }
+    }
+  }
 }

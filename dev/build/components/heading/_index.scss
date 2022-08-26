@@ -18,7 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $colour-green__default;
+  color: $colour-black__default;
   font-family: $font-family__default;
   // Variant
   &._green {
@@ -39,26 +39,49 @@ h6 {
 }
 
 h1 {
-  font-size: $font-size__large;
-  letter-spacing: -0.8rem;
-  text-transform: uppercase;
+  font-size: $font-size__medium;
+  text-transform: capitalize;
   // Variant
   &._stacked {
+    font-size: $font-size__large;
+    letter-spacing: -0.8rem;
     line-height: math.div($font-size__large, 1.7);
     margin: 0;
     mix-blend-mode: multiply;
+    text-transform: uppercase;
   }
 }
 
+h2 {
+  font-size: calc($font-size__default + 20%);
+  font-weight: 600;
+  line-height: calc($font-size__default + 50%);
+  margin-bottom: $spacing__large;
+}
+
+h3 {
+  font-size: calc($font-size__default + 15%);
+  font-weight: 600;
+  line-height: calc($font-size__default + 40%);
+  margin-bottom: $spacing__small;
+  text-transform: capitalize;
+}
+
+h4 {
+  font-size: calc($font-size__default + 8%);
+  font-weight: 400;
+  line-height: calc($font-size__default + 20%);
+  margin-bottom: $spacing__small;
+  text-transform: uppercase;
+}
+
 h5 {
-  color: $colour-black__default;
   font-size: $font-size__default;
   font-weight: 400;
   text-transform: uppercase;
 }
 
 h6 {
-  color: $colour-black__default;
   font-size: $font-size__default;
   font-weight: 400;
 }

@@ -41,8 +41,6 @@ $localMetaDesc = 'I am still building this site, be sure to come back soon!';
                         <a href="/article.php?article=' . $v['articleUrlSlug'] . '" class="_hidden" title="' . $v['articleTitle'] . '">&#32;</a>
                     </article>
                 ';
-                    // Lets loop again...
-                    $limitList++;
                 }
                 ?>
             </div>

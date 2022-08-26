@@ -13,11 +13,14 @@
 // ----------
 //
 p {
+  color: $colour-black__default;
   font-family: $font-family__default;
+  font-size: $font-size__default;
   font-weight: 400;
-  line-height: 1.5;
-  padding-bottom: $spacing__small;
-  &._post-date {
+  line-height: calc($font-size__default + 60%);
+  padding-bottom: $spacing__large;
+  &._post-date,
+  &._image-caption {
     color: $colour-black__default;
     font-size: $font-size__xsmall;
     line-height: unset;
@@ -25,12 +28,19 @@ p {
     padding: unset;
     text-transform: uppercase;
   }
+  &._image-caption {
+    opacity: 0.8;
+    text-align: center;
+    text-transform: unset;
+  }
 }
 
 i,
 em {
+  color: $colour-black__default;
   font-style: italic;
   font-weight: initial;
+  opacity: 0.6;
 }
 
 b,
@@ -42,6 +52,14 @@ strong {
 
 sub {
   bottom: unset;
+}
+
+hr {
+  margin-bottom: $spacing__large;
+}
+
+::marker {
+  font-family: $font-family__default;
 }
 
 //

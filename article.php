@@ -1,7 +1,30 @@
 <?
+include_once($_SERVER['DOCUMENT_ROOT'] . '/config/keys.contentful.php');
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- OUTPUT SELECTED ARTICLE ----------
+// ----------
+// ----------
+//
+$jsonContentOutput = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/data/contentful.blog.json'), true);
+$articleID = $_GET['article'];
+// Output content
+foreach ($jsonContentOutput as $k => $v) {
+    if ($v['articleUrlSlug'] == $articleID) {
+        $articleHeroImageUrl = $v['articleHeroImage']['fields']['file']['url'];
+        $articleHeroImageTitle = $v['articleHeroImage']['fields']['title'];
+        $articleTitle = $v['articleTitle'];
+        $articleDescription = $v['articleDescription'];
+        $articleLiveDate = $v['articleLiveDate'];
+        $articleBody = $v['articleBody'];
+    }
+}
+
 // Local config
-$localMetaTitle = 'Blog';
-$localMetaDesc = 'I am still building this site, be sure to come back soon!';
+$localMetaTitle = $articleTitle . ' - Chris Watterston';
+$localMetaDesc = $articleDescription;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,43 +35,25 @@ $localMetaDesc = 'I am still building this site, be sure to come back soon!';
 </head>
 
 <body>
-    <div class="<?= $globalPrefix; ?>-body-container">
+    <div class="<?= $globalPrefix; ?>-body-container _free">
         <? include_once($_SERVER['DOCUMENT_ROOT'] . '/inc/nav.global.php'); ?>
 
-        <div class="<?= $globalPrefix; ?>-flex-prep">
-            <div class="<?= $globalPrefix; ?>-flex-container _flex-intro">
-                <section class="<?= $globalPrefix; ?>-article-container">
-                    <?php
-                    //
-                    // ------------------------------------------------------------
-                    // ------------------------------------------------------------
-                    // ------------------------------------------------------------
-                    // ---------- OUTPUT SELECTED ARTICLE ----------
-                    // ----------
-                    // ----------
-                    //
-                    $jsonContentOutput = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/data/contentful.blog.json'), true);
-
-                    $articleID = $_GET['article'];
-                    foreach ($jsonContentOutput['items'] as $k => $v) {
-                        if ($v['fields']['articleUrlSlug'] == $articleID) {
-                            echo '
-                                <div class="__image" style="background-image: url(' . $globalDomainRoot, $v['fields']['articleHeroImage']['sys']['id'] . ');"></div>
-                                <div class="__content _shadow-grey _image-reverse">
-                                    <h1>' . $v['fields']['articleTitle'] . '</h1>
-                                    <p class="_article-desc">' . $v['fields']['articleDescription'] . '</p>
-                                    <p class="_article-date">' . $v['fields']['articleLiveDate'] . '</p>
-                                    
-                                    ' . $v['fields']['articleBody'] . '
-                                </div>
-                            ';
-                        }
-                    }
-
-                    ?>
-                </section>
-            </div>
-        </div>
+        <section class="<?= $globalPrefix; ?>-article-container _listing">
+            <?php
+            // Output content
+            echo '
+                <img src="' . $articleHeroImageUrl . '" title="' . $articleHeroImageTitle . '" width="200" />
+                <div class="__content _shadow-grey _image-reverse">
+                    <h1>' . $articleTitle . '</h1>
+                    <p class="_article-desc">' . $articleDescription . '</p>
+                    <p class="_article-date">' . $articleLiveDate . '</p>
+                    <div class="_article-body">
+                    ' . $articleBody . '
+                    </div>
+                </div>
+            ';
+            ?>
+        </section>
 
         <? include_once($_SERVER['DOCUMENT_ROOT'] . '/inc/footer.global.php'); ?>
     </div>

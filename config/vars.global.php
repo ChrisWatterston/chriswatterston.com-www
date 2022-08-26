@@ -26,6 +26,7 @@ if (getenv('ENVIRONMENT_STATE') === 'production') {
 }
 
 $globalDomainContentful = 'https://cdn.contentful.com/';
+$globalDomainContentfulImg = 'https://images.ctfassets.net/';
 
 //
 // ------------------------------------------------------------

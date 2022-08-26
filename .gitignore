@@ -3,6 +3,9 @@
 /--logs/access_log
 /--logs/error_log
 
+# Composer
+vendor/*
+
 # SCSS
 .sass-cache/
 *.css.map

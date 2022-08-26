@@ -41,6 +41,9 @@
   min-height: 100vh;
   position: relative;
   width: 100%;
+  &._free {
+    min-height: unset;
+  }
 }
 
 .#{$prefix-name}-stream-container {
@@ -49,4 +52,11 @@
   margin-right: $spacing__large;
   position: absolute;
   right: 0;
+  &._listing {
+    margin: 0 auto;
+    max-width: $column-one__max;
+    padding-bottom: calc($spacing__large * 4);
+    padding-top: calc($spacing__large * 4);
+    position: relative;
+  }
 }

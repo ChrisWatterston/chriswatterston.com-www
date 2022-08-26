@@ -13,9 +13,11 @@
 // ----------
 //
 .#{$prefix-name}-card-container {
+  position: relative;
   .__type,
   .__title,
-  .__posted {
+  .__posted,
+  .__thumb {
     position: relative;
     width: 100%;
     &:after {
@@ -27,15 +29,22 @@
       width: 5px;
     }
   }
+  .__thumb {
+    background-position: center;
+    background-size: cover;
+    border-radius: 0 $border-radius__default 0 0;
+    height: 120px;
+    max-width: 75%;
+  }
   .__type {
     &:after {
       background: $colour-red__default;
-      top: 4px;
+      top: 3px;
     }
   }
   .__title {
-    padding-top: 4px;
-    margin: 2px 0 6px;
+    margin: 4px 0 12px;
+    padding-top: 6px;
     &:after {
       background: $colour-green__default;
       height: 100%;
@@ -45,7 +54,21 @@
   .__posted {
     &:after {
       background: $colour-purple__default;
-      top: 4px;
+      top: 3px;
+    }
+  }
+
+  &._listing {
+    margin-bottom: $spacing__large;
+    .__type {
+      margin-left: 25%;
+      margin-bottom: $spacing__default;
+      &:after {
+        background: $colour-red__default;
+        bottom: 0;
+        right: calc(25% - $spacing__default);
+        top: unset;
+      }
     }
   }
 }

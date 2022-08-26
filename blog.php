@@ -12,37 +12,40 @@ $localMetaDesc = 'I am still building this site, be sure to come back soon!';
 </head>
 
 <body>
-    <div class="<?= $globalPrefix; ?>-body-container">
+    <div class="<?= $globalPrefix; ?>-body-container _free">
         <? include_once($_SERVER['DOCUMENT_ROOT'] . '/inc/nav.global.php'); ?>
 
-        <section class="<?= $globalPrefix; ?>-stream-container">
-            <?php
-            //
-            // ------------------------------------------------------------
-            // ------------------------------------------------------------
-            // ------------------------------------------------------------
-            // ---------- OUTPUT ALL POSTS ----------
-            // ----------
-            // ----------
-            //
-            $jsonContentOutput = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/data/contentful.blog.json'), true);
-            foreach ($jsonContentOutput['items'] as $k => $v) {
-                echo '
-                    <article class="' . $globalPrefix . '-card-container" data-content-id="' . $v['sys']['id'] . '" data-content-count=' . $limitList . '>
-                        <div class="__type _text-align__right">
-                            <h5>Latest Post</h5>
+        <section class="<?= $globalPrefix; ?>-stream-container _listing">
+            <div class="<?= $globalPrefix; ?>-grid-container _column-3 _listing">
+                <?php
+                //
+                // ------------------------------------------------------------
+                // ------------------------------------------------------------
+                // ------------------------------------------------------------
+                // ---------- OUTPUT ALL POSTS ----------
+                // ----------
+                // ----------
+                //
+                $jsonContentOutput = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/data/contentful.blog.json'), true);
+                foreach ($jsonContentOutput as $k => $v) {
+                    echo '
+                    <article class="' . $globalPrefix . '-card-container _listing">
+                        <div class="__type">
+                            <div class="__thumb" style="background-image:url(' . $v['articleHeroImage']['fields']['file']['url'] . ');" data-image-title="' . $v['articleHeroImage']['fields']['title'] . '"></div>
                         </div>
                         <div class="__title _text-align__right">
-                            <h6>' . $v['fields']['articleTitle'] . '</h6>
+                            <h3>' . $v['articleTitle'] . '</h3>
+                            <h6>' . $v['articleDescription'] . '</h6>
                         </div>
-                        <div class="__posted _text-align__right"><p class="_post-date">' . date('jS M Y', strtotime($v['fields']['articleLiveDate'])) . '</p></div>
-                        <a href="/article.php?article=' . $v['fields']['articleUrlSlug'] . '" class="_hidden" title="' . $v['fields']['articleTitle'] . '">&#32;</a>
+                        <div class="__posted _text-align__right"><p class="_post-date">' . date('jS M Y', strtotime($v['articleLiveDate'])) . '</p></div>
+                        <a href="/article.php?article=' . $v['articleUrlSlug'] . '" class="_hidden" title="' . $v['articleTitle'] . '">&#32;</a>
                     </article>
                 ';
-                // Lets loop again...
-                $limitList++;
-            }
-            ?>
+                    // Lets loop again...
+                    $limitList++;
+                }
+                ?>
+            </div>
         </section>
 
         <? include_once($_SERVER['DOCUMENT_ROOT'] . '/inc/footer.global.php'); ?>

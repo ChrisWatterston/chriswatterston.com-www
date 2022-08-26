@@ -14,7 +14,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/config/vars.global.php');
 <meta name="robots" content="index,follow" />
 
 <title><?php echo $localMetaTitle; ?></title>
-<meta name="description" content="<?php echo $localMetaTitle; ?>" />
+<meta name="description" content="<?php echo $localMetaDesc; ?>" />
 
 <link type="text/css" rel="stylesheet" href="<?php echo $globalDomainRoot; ?>dist/css/chriswatterston-www.min.css" />
 <link rel="apple-touch-icon" href="<?php echo $globalDomainRoot; ?>dist/images/device/apple-touch-icon.png">
@@ -26,7 +26,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/config/vars.global.php');
 <!-- Sharing details  -->
 <meta property="og:url" content="<?php echo $globalDomainRoot; ?>/PAGE-LINK" />
 <meta property="og:title" content="<?php echo $localMetaTitle; ?>" />
-<meta property="og:description" content="<?php echo $localMetaTitle; ?>" />
+<meta property="og:description" content="<?php echo $localMetaDesc; ?>" />
 
 <!-- Libraries -->
 <style>

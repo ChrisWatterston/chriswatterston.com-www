@@ -19,8 +19,8 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
     # Force HTTPS (exc WWW)
-    RewriteCond %{HTTPS} !=on 
-    RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R=301,L]
+    # RewriteCond %{HTTPS} !=on 
+    # RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R=301,L]
     # Default
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f

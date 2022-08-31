@@ -10,15 +10,39 @@
 // ----------
 //
 .#{$prefix-name}-footer-container {
+  position: relative;
   bottom: 0;
   padding: $spacing__default $spacing__large;
   position: absolute;
   width: 100%;
+  &:before {
+    background-color: $colour-black__default;
+    content: " ";
+    height: 180px;
+    left: 0;
+    margin-left: 50%;
+    position: absolute;
+    top: -210px;
+    width: 2px;
+  }
+  &:after {
+    background-image: url(#{$path-images}blobs/blob-option-07.svg);
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: " ";
+    height: 200px;
+    position: absolute;
+    right: -60px;
+    top: -45px;
+    width: 280px;
+  }
   .__copyright {
     width: 100%;
     p {
-      font-size: $font-size__tiny;
-      opacity: 0.6;
+      font-size: $font-size__xsmall;
+      opacity: 0.4;
     }
   }
 }

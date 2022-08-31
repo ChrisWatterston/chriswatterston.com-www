@@ -13,18 +13,42 @@
 // ----------
 //
 .#{$prefix-name}-article-container {
-  margin: 0 auto;
-  max-width: $column-one__article;
-  padding-bottom: calc($spacing__large * 4);
-  padding-top: calc($spacing__large * 4);
+  margin: 0 auto ($spacing__large * 7);
+  padding: ($spacing__large * 4) 0 ($spacing__large * 4);
   position: relative;
+  &._exc-padding {
+    margin-bottom: 0;
+    padding: 0;
+  }
+  &._inc-stream {
+    margin-bottom: 0;
+    padding-bottom: $spacing__large;
+    &:after {
+      background-color: $colour-black__default;
+      bottom: -100px;
+      content: " ";
+      height: 180px;
+      left: 0;
+      margin-left: 50%;
+      position: absolute;
+      width: 2px;
+    }
+  }
   ._post-date {
-    margin-bottom: $spacing__default;
+    margin: 0 auto $spacing__default;
+    span {
+      color: $colour-purple__default;
+    }
   }
   h1,
+  ._work-desc,
   ._article-desc,
-  ._image-caption {
-    margin-bottom: $spacing__large;
+  ._image-caption,
+  ._article-body {
+    margin: 0 auto $spacing__large;
+  }
+  ._work-body-intro {
+    margin: 0 auto $spacing__large;
   }
   img,
   ._image-caption {
@@ -40,6 +64,7 @@
     background-color: $colour-grey__default;
     margin-top: -4px;
     padding: $spacing__default;
+    border-radius: 0 0 $border-radius__default 0;
   }
   ._article-body {
     ul,
@@ -48,6 +73,54 @@
       p {
         padding-left: $spacing__default;
       }
+    }
+  }
+  ._sub-title {
+    h3 {
+      display: inline-block;
+      position: relative;
+      &:after {
+        background-image: url(#{$path-images}icons/icon-arrow-right-yellow.svg);
+        background-position-x: center;
+        background-position-y: 3px;
+        background-repeat: no-repeat;
+        content: " ";
+        height: 100%;
+        margin-left: 15px;
+        position: absolute;
+        width: 60px;
+      }
+    }
+  }
+  ._stat-headline {
+    margin-bottom: $spacing__default;
+    &:last-child {
+      margin-bottom: $spacing__large;
+    }
+    ._icon {
+      background-color: $colour-black__default;
+      border-radius: $border-radius__circle;
+      height: 60px;
+      width: 60px;
+    }
+    h2 {
+      margin-bottom: 0;
+      margin-top: $spacing__small;
+    }
+    h5 {
+      margin-bottom: 4px;
+    }
+  }
+  .__gallery {
+    margin-bottom: ($spacing__large * 2);
+    a {
+      border-radius: $border-radius__default $border-radius__default
+        $border-radius__default 0;
+      height: 150px;
+      overflow: hidden;
+    }
+    img {
+      min-height: 170px;
     }
   }
 }

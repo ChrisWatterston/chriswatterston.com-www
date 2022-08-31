@@ -27,8 +27,26 @@
     //   grid-template-columns: repeat(1, 1fr 1fr);
     // }
   }
+  &._column-about {
+    column-gap: $spacing__default;
+    grid-template-columns: 0.25fr 0.75fr;
+    margin-bottom: $spacing__large;
+  }
+  &._stat-headline {
+    column-gap: $spacing__default;
+    grid-template-columns: min-content max-content;
+  }
+  &._work-latest {
+    grid-template-columns: 0.666fr 0.333fr;
+    margin-bottom: $spacing__default;
+  }
   &._listing {
     column-gap: $spacing__large;
+    row-gap: $spacing__large;
+  }
+  &._work {
+    column-gap: $spacing__default;
+    row-gap: $spacing__default;
   }
 }
 

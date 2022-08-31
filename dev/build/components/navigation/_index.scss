@@ -10,7 +10,7 @@
 // ----------
 //
 .#{$prefix-name}-navigation-container {
-  padding: $spacing__default $spacing__large;
+  padding: $spacing__large $spacing__large;
   position: absolute;
   top: 0;
   width: 100%;
@@ -28,14 +28,15 @@
             padding: $spacing__small $spacing__default;
             text-decoration: none;
             text-transform: lowercase;
-            // Variant
             &._home {
               background-image: url(#{$path-images}icons/icon-home-black.svg);
               background-position-x: center;
               background-position-y: 3px;
               background-repeat: no-repeat;
-              background-size: auto calc(100% - $spacing__default);
+              background-size: auto calc(100% - 4px);
               margin-right: $spacing__default;
+              position: relative;
+              top: -3px;
             }
           }
         }
@@ -43,7 +44,7 @@
     }
   }
   .__logo {
-    background-image: url(#{$path-images}brand/logo-chris-watterston.svg);
+    background-image: url(#{$path-images}brands/logo-chris-watterston.svg);
     background-position-x: center;
     background-position-y: center;
     background-repeat: no-repeat;

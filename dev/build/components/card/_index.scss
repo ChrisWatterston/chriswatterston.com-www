@@ -32,9 +32,42 @@
   .__thumb {
     background-position: center;
     background-size: cover;
-    border-radius: 0 $border-radius__default 0 0;
-    height: 120px;
-    max-width: 75%;
+    border-radius: $border-radius__default $border-radius__default
+      $border-radius__default 0;
+    height: 160px;
+    width: 100%;
+    &:before {
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      bottom: -70px;
+      content: " ";
+      height: 100px;
+      opacity: 0.2;
+      position: absolute;
+      width: 100px;
+    }
+  }
+  &:nth-child(1n + 5) .__thumb::before {
+    background-image: url(#{$path-images}blobs/blob-option-01.svg);
+    left: 20px;
+  }
+  &:nth-child(2n + 4) .__thumb::before {
+    background-image: url(#{$path-images}blobs/blob-option-02.svg);
+    right: 20px;
+  }
+  &:nth-child(3n + 3) .__thumb::before {
+    background-image: url(#{$path-images}blobs/blob-option-03.svg);
+    right: 40px;
+  }
+  &:nth-child(4n + 2) .__thumb::before {
+    background-image: url(#{$path-images}blobs/blob-option-04.svg);
+    left: 40px;
+  }
+  &:nth-child(5n + 1) .__thumb::before {
+    background-image: url(#{$path-images}blobs/blob-option-05.svg);
+    left: 30px;
   }
   .__type {
     &:after {
@@ -57,17 +90,53 @@
       top: 3px;
     }
   }
-
   &._listing {
-    margin-bottom: $spacing__large;
     .__type {
-      margin-left: 25%;
-      margin-bottom: $spacing__default;
+      //   margin-bottom: $spacing__default;
+      //   margin-left: 10px;
       &:after {
         background: $colour-red__default;
-        bottom: 0;
-        right: calc(25% - $spacing__default);
+        bottom: $spacing__default;
+        right: -2px;
         top: unset;
+      }
+    }
+  }
+  &._work {
+    .__thumb:before,
+    .__title:after,
+    .__type:after {
+      display: none;
+    }
+    .__type {
+      background: $colour-black__default;
+      border-radius: $border-radius__default $border-radius__default
+        $border-radius__default 0;
+      .__thumb {
+        height: 300px;
+        opacity: 0.8;
+      }
+    }
+    .__client {
+      background-color: $colour-black__default;
+      background-position-x: center;
+      background-position-y: center;
+      background-size: cover;
+      border-radius: $border-radius__circle;
+      display: inline-block;
+      height: 60px;
+      position: absolute;
+      right: $spacing__default;
+      top: $spacing__default;
+      width: 60px;
+    }
+    .__group {
+      bottom: $spacing__default;
+      max-width: 300px;
+      position: absolute;
+      right: $spacing__default;
+      * {
+        color: $colour-white__default;
       }
     }
   }

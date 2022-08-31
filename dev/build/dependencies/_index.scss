@@ -15,7 +15,7 @@
 $font-family__default: "Khula", sans-serif;
 // $font-family__headings: -apple-system, BlinkMacSystemFont, sans-serif;
 
-$font-size__tiny: 0.6rem; // 0.642857rem = 9px
+// $font-size__tiny: 0.75rem; // 0.642857rem = 9px
 $font-size__xsmall: 0.8rem; // 0.85714rem = 12px
 $font-size__small: 0.9rem; // 0.92857rem = 13px;
 $font-size__default: 17px; // 1.286rem = 14px
@@ -30,8 +30,9 @@ $font-size__large: 6.5rem; // 4.285715rem = 60px
 // ----------
 // ----------
 //
-$column-one__max: 1180px;
+$column-one__max: 1230px;
 $column-one__article: 700px;
+$column-one__about: 1000px;
 
 // $padding__large: 40px;
 $spacing__default: 12px;

@@ -1,7 +1,7 @@
 <?
-include_once($_SERVER['DOCUMENT_ROOT'] . '/config/php.debug.php');
-include_once($_SERVER['DOCUMENT_ROOT'] . '/config/funcs.global.php');
-include_once($_SERVER['DOCUMENT_ROOT'] . '/config/keys.contentful.php');
+include_once(__DIR__ . '/../config/php.debug.php');
+include_once(__DIR__ . '/../config/funcs.global.php');
+include_once(__DIR__ . '/../config/keys.contentful.php');
 
 //
 // ------------------------------------------------------------
@@ -11,7 +11,10 @@ include_once($_SERVER['DOCUMENT_ROOT'] . '/config/keys.contentful.php');
 // ----------
 // ----------
 //
-require_once '../vendor/autoload.php';
+require_once(__DIR__ . '/../vendor/autoload.php');
+
+$query = (new Contentful\Delivery\Query())
+    ->setContentType('blogPost');
 
 $client = new \Contentful\Delivery\Client(
     $accessToken,
@@ -25,7 +28,7 @@ try {
     // Entry does not exist
 }
 
-$entriesList = $client->getEntries();
+$entriesList = $client->getEntries($query);
 
 // Default vars
 $i = 0;
@@ -33,7 +36,6 @@ $articleList = [];
 
 foreach ($entriesList as $key => $entry) {
     // Extract data
-    $articleList[$i]['articleLiveDate'] = $entry->get('articleLiveDate');
     $articleList[$i]['articleLiveDate'] = $entry->get('articleLiveDate');
     $articleList[$i]['articleUpdateDate'] = $entry->get('articleUpdateDate');
     $articleList[$i]['articleTitle'] = $entry->get('articleTitle');

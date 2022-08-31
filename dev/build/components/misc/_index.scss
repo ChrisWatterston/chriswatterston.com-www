@@ -39,6 +39,7 @@
   background-color: $colour-white__default;
   border-radius: $border-radius__default;
   min-height: 100vh;
+  overflow: hidden;
   position: relative;
   width: 100%;
   &._free {
@@ -53,11 +54,55 @@
   position: absolute;
   right: 0;
   &._listing {
-    margin: 0 auto;
-    max-width: $column-one__max;
-    padding-bottom: calc($spacing__large * 4);
-    padding-top: calc($spacing__large * 4);
+    margin: 0 auto ($spacing__large * 7);
+    padding-bottom: ($spacing__large * 4);
+    padding-top: ($spacing__large * 5);
     position: relative;
+  }
+  &._intro {
+    margin: unset;
+    padding: unset;
+  }
+}
+
+.#{$prefix-name}-intro-container {
+  &._intro {
+    margin: ($spacing__large * 4) auto ($spacing__large * 8.5);
+    position: relative;
+    &:before,
+    &:after {
+      background-color: $colour-black__default;
+      content: " ";
+      left: 0;
+      margin-left: 50%;
+      position: absolute;
+      width: 2px;
+    }
+    &:before {
+      top: -155px;
+      height: 80px;
+    }
+    &:after {
+      bottom: -230px;
+      height: 180px;
+    }
+    h4 {
+      margin-top: $spacing__default;
+    }
+  }
+  &._title {
+    margin-bottom: ($spacing__large * 3);
+    position: relative;
+    &:after {
+      background-color: $colour-black__default;
+      bottom: -60px;
+      content: " ";
+      height: 30px;
+      left: 0;
+      margin-left: 50%;
+      position: absolute;
+      width: 2px;
+    }
   }
 }
 

@@ -15,7 +15,10 @@ $localMetaDesc = 'I am still building this site, be sure to come back soon!';
     <div class="<?= $globalPrefix; ?>-body-container _free">
         <? include_once($_SERVER['DOCUMENT_ROOT'] . '/inc/nav.global.php'); ?>
 
-        <section class="<?= $globalPrefix; ?>-stream-container _listing">
+        <section class="<?= $globalPrefix; ?>-stream-container _listing _max-width__1280">
+            <section class="<?= $globalPrefix; ?>-intro-container _title _text-align__center">
+                <h1 class="_black _stacked"><?php echo $localMetaTitle; ?></h1>
+            </section>
             <div class="<?= $globalPrefix; ?>-grid-container _column-3 _listing">
                 <?php
                 //

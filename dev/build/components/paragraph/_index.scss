@@ -89,6 +89,34 @@ a:visited {
     width: 100%;
     z-index: +1;
   }
+  &._link-colour__purple {
+    font-weight: 600;
+    position: relative;
+    text-decoration: none;
+    z-index: +1;
+    &:before {
+      background-color: $colour-purple__default;
+      content: "";
+      height: 50%;
+      left: 0;
+      opacity: 0.2;
+      pointer-events: none;
+      position: absolute;
+      top: 10px;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+  &._about-social-icons {
+    display: inline-block;
+    height: 30px;
+    margin-right: $spacing__default;
+    width: 30px;
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
 }
 
 a:hover {

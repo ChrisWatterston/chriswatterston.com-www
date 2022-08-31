@@ -41,7 +41,7 @@ $localMetaDesc = 'I am still building this site, be sure to come back soon!';
                             <h6>' . $v['articleDescription'] . '</h6>
                         </div>
                         <div class="__posted _text-align__right"><p class="_post-date">' . date('jS M Y', strtotime($v['articleLiveDate'])) . '</p></div>
-                        <a href="/article.php?article=' . $v['articleUrlSlug'] . '" class="_hidden" title="' . $v['articleTitle'] . '">&#32;</a>
+                        <a href="/article/' . $v['articleUrlSlug'] . '" class="_hidden" title="' . $v['articleTitle'] . '">&#32;</a>
                     </article>
                 ';
                 }

@@ -22,7 +22,7 @@ $localMetaDesc = 'I am still building this site, be sure to come back soon!';
                 <h1 class="_purple _stacked">Build</h1>
                 <h1 class="_red _stacked">Launch</h1>
                 <h1 class="_black _stacked">Test&Learn</h1>
-                <h4>I'm a <a href="/about.php" title="Digital Product Manager" class="_link-colour__purple">Digital Product Manager</a>, with a strong background in <a href="/about.php" title="Digital design and web design background" class="_link-colour__purple">digital design and web development</a></h4>
+                <h4>I'm a <a href="/about" title="Digital Product Manager" class="_link-colour__purple">Digital Product Manager</a>, with a strong background in <a href="/about" title="Digital design and web design background" class="_link-colour__purple">digital design and web development</a></h4>
             </section>
             <div class="<?= $globalPrefix; ?>-grid-container _work-latest _listing _work">
                 <?php
@@ -56,7 +56,7 @@ $localMetaDesc = 'I am still building this site, be sure to come back soon!';
                     echo '
                                 </p>
                             </div>
-                            <a href="/case-study.php?work=' . $v['workUrlSlug'] . '" class="_hidden" title="' . $v['workTitle'] . '">&#32;</a>
+                            <a href="/work/case-study/' . $v['workUrlSlug'] . '" class="_hidden" title="' . $v['workTitle'] . '">&#32;</a>
                         </article>
                     ';
                 }
@@ -88,7 +88,7 @@ $localMetaDesc = 'I am still building this site, be sure to come back soon!';
                             <h6>' . $v['articleDescription'] . '</h6>
                         </div>
                         <div class="__posted _text-align__right"><p class="_post-date">' . date('jS M Y', strtotime($v['articleLiveDate'])) . '</p></div>
-                        <a href="/article.php?article=' . $v['articleUrlSlug'] . '" class="_hidden" title="' . $v['articleTitle'] . '">&#32;</a>
+                        <a href="/article/' . $v['articleUrlSlug'] . '" class="_hidden" title="' . $v['articleTitle'] . '">&#32;</a>
                     </article>
                 ';
                 }

@@ -51,7 +51,7 @@ $localMetaDesc = 'I am still building this page, check back soon!';
                     echo '
                                 </p>
                             </div>
-                            <a href="/case-study.php?work=' . $v['workUrlSlug'] . '" class="_hidden" title="' . $v['workTitle'] . '">&#32;</a>
+                            <a href="/work/case-study/' . $v['workUrlSlug'] . '" class="_hidden" title="' . $v['workTitle'] . '">&#32;</a>
                         </article>
                     ';
                 }
@@ -88,7 +88,7 @@ $localMetaDesc = 'I am still building this page, check back soon!';
                     echo '
                                 </p>
                             </div>
-                            <a href="/case-study.php?work=' . $v['workUrlSlug'] . '" class="_hidden" title="' . $v['workTitle'] . '">&#32;</a>
+                            <a href="/work/case-study/' . $v['workUrlSlug'] . '" class="_hidden" title="' . $v['workTitle'] . '">&#32;</a>
                         </article>
                     ';
                 }

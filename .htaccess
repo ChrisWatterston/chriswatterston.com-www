@@ -50,7 +50,7 @@
 # Redirects
 Redirect 301 /blog/interviewed-and-featured-on-an-original-podcast-command-line-heroes-by-red-hat /article/there-is-no-cloud-podcast-feature
 Redirect 301 /blog/snow-days-impact-school-websites-in-a-big-way-and-its-important-were-ready /article/snow-impacts-education-website
-Redirect 301 /blog/microsoft-azure-app-service-vs-virtual-machine-why-i-would-consider-you-choose-a-virtual-machine-for-your-hosting-solution /article/azure-web-app-vs-vm-hosting
+Redirect 301 /blog/microsoft-azure-app-service-vs-virtual-machine-why-i-would-consider-you-choose-a-virtual-machine-for-your-hosting-solution /article/azure-web-app-vs-virtual-machine-hosting
 Redirect 301 /blog/launching-the-official-skoolping-landing-page-website-design /article/beta-launch-skoolping-app-for-education
 Redirect 301 /blog/a-much-needed-spotify-widget-for-the-notification-center /article/missing-spotify-widget-mac-os
 Redirect 301 /blog/creating-pfx-certificate-files-and-installing-ssl-certificates-on-your-microsoft-azure-web-app-service /article/create-pfx-crt-install-ssl-azure-web-app

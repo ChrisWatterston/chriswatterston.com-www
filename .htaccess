@@ -48,4 +48,17 @@
 </FilesMatch>
 
 # Redirects
-# Redirect 301 /used-boats/boats-for-sale-eastbourne/ /used-boats/?office=5276
+Redirect 301 /blog/interviewed-and-featured-on-an-original-podcast-command-line-heroes-by-red-hat /article/there-is-no-cloud-podcast-feature
+Redirect 301 /blog/snow-days-impact-school-websites-in-a-big-way-and-its-important-were-ready /article/snow-impacts-education-website
+Redirect 301 /blog/microsoft-azure-app-service-vs-virtual-machine-why-i-would-consider-you-choose-a-virtual-machine-for-your-hosting-solution /article/azure-web-app-vs-vm-hosting
+Redirect 301 /blog/launching-the-official-skoolping-landing-page-website-design /article/beta-launch-skoolping-app-for-education
+Redirect 301 /blog/a-much-needed-spotify-widget-for-the-notification-center /article/missing-spotify-widget-mac-os
+Redirect 301 /blog/creating-pfx-certificate-files-and-installing-ssl-certificates-on-your-microsoft-azure-web-app-service /article/create-pfx-crt-install-ssl-azure-web-app
+Redirect 301 /blog/meltdown-and-spectre-vulnerability-update /article/meltdown-spectre-cpu-flaw-update
+Redirect 301 /blog/setting-2018-with-6-goals-what-i-will-focus-progress-and-experiment-with-throughout-2018 /article/2018-new-year-goal-setting
+Redirect 301 /blog/starting-2016-old-challenges /article/2016-new-year-goal-setting
+Redirect 301 /blog/a-breakdown-of-the-general-data-protection-regulation-gdpr-as-outlined-by-the-ico-information-commissioners-office /article/brief-breakdown-gdpr-ico
+Redirect 301 /blog/progress-on-skoolping-and-why-theres-been-a-substantial-delay /article/skoolping-app-progress-delay
+Redirect 301 /blog/the-not-so-shocking-costs-involved-for-your-design-and-development-solutions /article/no-shock-cost-of-web-design-solutions
+Redirect 301 /blog/aerial-footage-from-our-short-family-break-in-bute-scotland /article/aerial-footage-isle-bute-rothesay-scot
+Redirect 301 /blog/building-a-hobbit-adventure-for-our-kids /article/hobbit-adventure-play-house

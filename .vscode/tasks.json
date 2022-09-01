@@ -14,6 +14,12 @@
             "type": "shell",
             "command": "sass --watch ./dev/build/_core.scss:./chriswatterston.com-www.dev-local/dist/css/chriswatterston-www.min.css --no-source-map --style compressed;",
             "problemMatcher": []
+        },
+        {
+            "label": "Contentful - JSON Refresh",
+            "type": "shell",
+            "command": "composer build-contentful-json;",
+            "problemMatcher": []
         }
     ]
 }

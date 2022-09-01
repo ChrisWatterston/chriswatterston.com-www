@@ -17,15 +17,18 @@
   }
   &._column-2 {
     grid-template-columns: repeat(2, 1fr [col-start]);
-    // @include mixinResponsive("wide-mobile") {
-    //   grid-template-columns: repeat(1, 1fr 1fr);
-    // }
+    @include mixinResponsive("mobile") {
+      grid-template-columns: repeat(1, 1fr [col-start]);
+    }
   }
   &._column-3 {
     grid-template-columns: repeat(3, 1fr [col-start]);
-    // @include mixinResponsive("wide-mobile") {
-    //   grid-template-columns: repeat(1, 1fr 1fr);
-    // }
+    @include mixinResponsive("wide-mobile") {
+      grid-template-columns: repeat(2, 1fr [col-start]);
+    }
+    @include mixinResponsive("mobile") {
+      grid-template-columns: repeat(1, 1fr [col-start]);
+    }
   }
   &._column-about {
     column-gap: $spacing__default;
@@ -39,6 +42,12 @@
   &._work-latest {
     grid-template-columns: 0.666fr 0.333fr;
     margin-bottom: $spacing__default;
+    @include mixinResponsive("wide-mobile") {
+      grid-template-columns: repeat(2, 1fr [col-start]);
+    }
+    @include mixinResponsive("mobile") {
+      grid-template-columns: repeat(1, 1fr [col-start]);
+    }
   }
   &._listing {
     column-gap: $spacing__large;

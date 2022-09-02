@@ -3,6 +3,11 @@
 /--logs/access_log
 /--logs/error_log
 
+# Sitemap
+/robots.txt
+/sitemap.xml
+/sitemap.xml.gz
+
 # Composer
 vendor/*
 

@@ -20,6 +20,12 @@
             "type": "shell",
             "command": "composer build-contentful-json;",
             "problemMatcher": []
+        },
+        {
+            "label": "Sitemap - XML Refresh",
+            "type": "shell",
+            "command": "composer build-sitemap-xml;",
+            "problemMatcher": []
         }
     ]
 }

@@ -49,6 +49,11 @@ h1 {
     margin: 0;
     mix-blend-mode: multiply;
     text-transform: uppercase;
+    @include mixinResponsive("mobile") {
+      font-size: calc($font-size__large - 2.5rem);
+      letter-spacing: -0.55rem;
+      line-height: math.div($font-size__large, 2.8);
+    }
   }
 }
 

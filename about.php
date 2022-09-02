@@ -70,7 +70,7 @@ $localMetaDesc = 'I am still building this page, check back soon!';
                         </div>
                         <div class="_sub-detail">
                             <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
-                                <div class="_icon"></div>
+                                <div class="_icon" style="background-image: url(/dist/images/brands/logo-experience-suntory-gbi.jpg);"></div>
                                 <div class="_stats">
                                     <h2>Senior Developer & Digital Projects Manager</h2>
                                     <h5>Suntory Beverage & Food GB&I</h5>
@@ -81,7 +81,7 @@ $localMetaDesc = 'I am still building this page, check back soon!';
                             <p>Duis ut metus nibh. Quisque egestas efficitur magna, vel aliquam odio hendrerit et. Aenean sodales nibh urna, ac iaculis augue faucibus quis. Nulla tincidunt ligula eu mi bibendum sagittis. Phasellus sollicitudin aliquam velit, sed venenatis mi tristique ut. Maecenas a nisi venenatis, finibus lorem ac, volutpat ligula. Fusce egestas sagittis metus, a lobortis magna venenatis et.</p>
 
                             <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
-                                <div class="_icon"></div>
+                                <div class="_icon" style="background-image: url(/dist/images/brands/logo-experience-basicsss-app.jpg);"></div>
                                 <div class="_stats">
                                     <h2>Founder, CEO + Co. (Side Project)</h2>
                                     <h5>Basicsss.app</h5>
@@ -92,7 +92,7 @@ $localMetaDesc = 'I am still building this page, check back soon!';
                             <p>Duis ut metus nibh. Quisque egestas efficitur magna, vel aliquam odio hendrerit et. Aenean sodales nibh urna, ac iaculis augue faucibus quis. Nulla tincidunt ligula eu mi bibendum sagittis. Phasellus sollicitudin aliquam velit, sed venenatis mi tristique ut. Maecenas a nisi venenatis, finibus lorem ac, volutpat ligula. Fusce egestas sagittis metus, a lobortis magna venenatis et.</p>
 
                             <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
-                                <div class="_icon"></div>
+                                <div class="_icon" style="background-image: url(/dist/images/brands/logo-experience-chris-watterston.jpg);"></div>
                                 <div class="_stats">
                                     <h2>Web & Mobile Designer and Developer</h2>
                                     <h5>Freelance</h5>
@@ -103,7 +103,7 @@ $localMetaDesc = 'I am still building this page, check back soon!';
                             <p>Duis ut metus nibh. Quisque egestas efficitur magna, vel aliquam odio hendrerit et. Aenean sodales nibh urna, ac iaculis augue faucibus quis. Nulla tincidunt ligula eu mi bibendum sagittis. Phasellus sollicitudin aliquam velit, sed venenatis mi tristique ut. Maecenas a nisi venenatis, finibus lorem ac, volutpat ligula. Fusce egestas sagittis metus, a lobortis magna venenatis et.</p>
 
                             <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
-                                <div class="_icon"></div>
+                                <div class="_icon" style="background-image: url(/dist/images/brands/logo-experience-st-pauls-catholic-college.jpg);"></div>
                                 <div class="_stats">
                                     <h2>Web Design & Development Manager</h2>
                                     <h5>St Paul's Catholic College</h5>
@@ -113,7 +113,7 @@ $localMetaDesc = 'I am still building this page, check back soon!';
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum velit vel risus posuere, eget pharetra enim finibus. Pellentesque non felis eu mi interdum congue. Cras placerat odio vel felis venenatis, et varius enim cursus. Etiam ut ultrices dolor.</p>
 
                             <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
-                                <div class="_icon"></div>
+                                <div class="_icon" style="background-image: url(/dist/images/brands/logo-experience-cd-surveys.jpg);"></div>
                                 <div class="_stats">
                                     <h2>Junior Surveyor & CAD Operator</h2>
                                     <h5>CD Surveys Ltd</h5>

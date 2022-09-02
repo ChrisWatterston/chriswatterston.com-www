@@ -14,7 +14,7 @@
 //
 .#{$prefix-name}-article-container {
   margin: 0 auto ($spacing__large * 7);
-  padding: ($spacing__large * 4) 0 ($spacing__large * 4);
+  padding: ($spacing__large * 4) $spacing__large ($spacing__large * 4);
   position: relative;
   &._exc-padding {
     margin-bottom: 0;
@@ -79,6 +79,9 @@
     h3 {
       display: inline-block;
       position: relative;
+      @include mixinResponsive("mobile") {
+        margin-bottom: $spacing__default;
+      }
       &:after {
         background-image: url(#{$path-images}icons/icon-arrow-right-yellow.svg);
         background-position-x: center;
@@ -89,6 +92,13 @@
         margin-left: 15px;
         position: absolute;
         width: 60px;
+        @include mixinResponsive("mobile") {
+          background-image: url(#{$path-images}icons/icon-arrow-down-yellow.svg);
+          height: 100%;
+          width: 80px;
+          margin-left: -50px;
+          margin-top: -12px;
+        }
       }
     }
   }
@@ -99,6 +109,8 @@
     }
     ._icon {
       background-color: $colour-black__default;
+      background-position: center;
+      background-size: contain;
       border-radius: $border-radius__circle;
       height: 60px;
       width: 60px;

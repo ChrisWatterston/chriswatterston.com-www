@@ -34,6 +34,9 @@
     column-gap: $spacing__default;
     grid-template-columns: 0.25fr 0.75fr;
     margin-bottom: $spacing__large;
+    @include mixinResponsive("mobile") {
+      grid-template-columns: repeat(1, 1fr [col-start]);
+    }
   }
   &._stat-headline {
     column-gap: $spacing__default;

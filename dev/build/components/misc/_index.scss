@@ -51,6 +51,8 @@
   bottom: 0;
   margin-bottom: $spacing__large;
   margin-right: $spacing__large;
+  padding-left: $spacing__large;
+  padding-right: $spacing__large;
   position: absolute;
   right: 0;
   &._listing {
@@ -58,6 +60,9 @@
     padding-bottom: ($spacing__large * 4);
     padding-top: ($spacing__large * 5);
     position: relative;
+    @include mixinResponsive("mobile") {
+      padding-top: ($spacing__large * 3.5);
+    }
   }
   &._intro {
     margin: unset;

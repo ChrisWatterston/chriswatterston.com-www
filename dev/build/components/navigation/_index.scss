@@ -15,6 +15,9 @@
   top: 0;
   width: 100%;
   z-index: +1;
+  @include mixinResponsive("mobile") {
+    padding: $spacing__default;
+  }
   .__nav {
     margin-top: $spacing__default;
     ul {
@@ -23,6 +26,9 @@
         li {
           display: inline-block;
           margin-right: $spacing__small;
+          @include mixinResponsive("mobile") {
+            margin-right: 0;
+          }
           a {
             display: block;
             padding: $spacing__small $spacing__default;
@@ -37,6 +43,9 @@
               margin-right: $spacing__default;
               position: relative;
               top: -3px;
+              @include mixinResponsive("mobile") {
+                margin-right: $spacing__small;
+              }
             }
           }
         }
@@ -52,5 +61,10 @@
     height: 60px;
     position: relative;
     width: 60px;
+    @include mixinResponsive("mobile") {
+      width: 40px;
+      height: 40px;
+      margin-top: 4px;
+    }
   }
 }

@@ -37,12 +37,18 @@
     right: -60px;
     top: -45px;
     width: 280px;
+    z-index: 0;
   }
   .__copyright {
+    margin-bottom: $spacing__default;
+    position: relative;
     width: 100%;
+    z-index: 1;
     p {
       font-size: $font-size__xsmall;
-      opacity: 0.4;
+      line-height: normal;
+      opacity: 0.6;
+      padding-bottom: 0;
     }
   }
 }

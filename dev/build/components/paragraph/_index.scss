@@ -122,3 +122,25 @@ a:visited {
 a:hover {
   color: $colour-purple__default;
 }
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- LINKS ----------
+// ----------
+// ----------
+//
+.__role-tag {
+  display: inline-block;
+  margin: 0 $spacing__default $spacing__small 0;
+  position: relative;
+  &:after {
+    content: " - ";
+    position: absolute;
+    right: -8px;
+  }
+  &:last-child::after {
+    display: none;
+  }
+}

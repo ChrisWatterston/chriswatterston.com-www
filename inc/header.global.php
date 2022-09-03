@@ -33,11 +33,17 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/config/vars.global.php');
     @import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;800&display=swap');
 </style>
 
-<!-- PWA details -->
-<!-- <meta name="theme-color" content="#0061A0" />
-<link rel="manifest" href="<?php echo $globalDomainRoot; ?>manifest.json" />
-<script>
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./service-worker.js');
-    };
-</script> -->
+<!-- Schema Data -->
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "familyName": "Watterston",
+        "givenName": "Chris",
+        "worksFor": "https://www.chriswatterston.com/",
+        "jobTitle": "Digital Project Manager",
+        "image": "http://chriswatterston.com-www.dev-local/dist/images/brands/logo-experience-chris-watterston.jpg",
+        "gender": "http://schema.org/Male",
+        "sameAs": ["https://twitter.com/chriswatterston", "https://www.linkedin.com/in/chriswatterston/", "https://github.com/ChrisWatterston"]
+    }
+</script>

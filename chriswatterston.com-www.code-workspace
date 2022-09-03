@@ -1,10 +1,13 @@
 {
-  "folders": [
-    {
-      "path": "."
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "editor.fontSize": 9,
+        "cSpell.words": [
+            "kiteboarder"
+        ]
     }
-  ],
-  "settings": {
-    "editor.fontSize": 9
-  }
 }

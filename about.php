@@ -28,7 +28,7 @@ $localMetaDesc = 'I am still building this page, check back soon!';
                         <div class="_sub-detail">
                             <p>My name is Chris Watterston. I'm a Digital Product Manager based just outside of London (UK), with a strong background in digital design and web development.</p>
                             <p>I'm passionate about digital product design and architecture, design, development, and product growth. When it comes to digital products- I care a ton about how they look and function, grow with meaning, and teach us learnings.</p>
-                            <p>I also enjoy spending time with family and friends, stepping outdoors, and trying to find the time for kite boarding. Although with 3 kids, finding that time is near impossible.</p>
+                            <p>I also enjoy spending time with family and friends, stepping outdoors, and trying to find the time for kiteboarding. Although with 3 kids, finding that time is near impossible.</p>
                         </div>
                     </section>
                     <section class="<?= $globalPrefix; ?>-grid-container _column-about _about-body-contacting">

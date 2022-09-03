@@ -19,14 +19,14 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
     
-    # Force HTTPS (exc WWW)
-    # If we receive a forwarded http request from a proxy...
-    RewriteCond %{HTTP:X-Forwarded-Proto} =http [OR]
-    # ...or just a plain old http request directly from the client
-    RewriteCond %{HTTP:X-Forwarded-Proto} =""
-    RewriteCond %{HTTPS} !=on
-    # Redirect to https version
-    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    # # Force HTTPS (exc WWW)
+    # # If we receive a forwarded http request from a proxy...
+    # RewriteCond %{HTTP:X-Forwarded-Proto} =http [OR]
+    # # ...or just a plain old http request directly from the client
+    # RewriteCond %{HTTP:X-Forwarded-Proto} =""
+    # RewriteCond %{HTTPS} !=on
+    # # Redirect to https version
+    # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
     # Default
     RewriteCond %{REQUEST_FILENAME} !-d
@@ -62,3 +62,8 @@ Redirect 301 /blog/progress-on-skoolping-and-why-theres-been-a-substantial-delay
 Redirect 301 /blog/the-not-so-shocking-costs-involved-for-your-design-and-development-solutions /article/no-shock-cost-of-web-design-solutions
 Redirect 301 /blog/aerial-footage-from-our-short-family-break-in-bute-scotland /article/aerial-footage-isle-bute-rothesay-scot
 Redirect 301 /blog/building-a-hobbit-adventure-for-our-kids /article/hobbit-adventure-play-house
+
+# Compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
+</IfModule>

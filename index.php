@@ -1,7 +1,7 @@
 <?
 // Local config
-$localMetaTitle = 'Hey, I\'m Chris Watterston';
-$localMetaDesc = 'I am still building this site, be sure to come back soon!';
+$localMetaTitle = 'Chris Watterston - Digital Design, Dev, Product Manager, Kiteboarder + Blogger';
+$localMetaDesc = 'A Digital Product Manager, with a strong background in digital design and web development. Enjoy kiteboarding, blogging + stepping ourdoors';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,12 +17,12 @@ $localMetaDesc = 'I am still building this site, be sure to come back soon!';
 
         <section class="<?= $globalPrefix; ?>-stream-container _listing _max-width__1280 ">
             <section class="<?= $globalPrefix; ?>-intro-container _intro _text-align__center">
-                <h1 class="_green _stacked">Opportune</h1>
-                <h1 class="_yellow _stacked">Explore</h1>
-                <h1 class="_purple _stacked">Build</h1>
-                <h1 class="_red _stacked">Launch</h1>
-                <h1 class="_black _stacked">Test&Learn</h1>
-                <h4>I'm a <a href="/about" title="Digital Product Manager" class="_link-colour__purple">Digital Product Manager</a>, with a strong background in <a href="/about" title="Digital design and web design background" class="_link-colour__purple">digital design and web development</a></h4>
+                <h2 class="_green _stacked">Opportune</h2>
+                <h2 class="_yellow _stacked">Explore</h2>
+                <h2 class="_purple _stacked">Build</h2>
+                <h2 class="_red _stacked">Launch</h2>
+                <h2 class="_black _stacked">Test&Learn</h2>
+                <h1 class="_intro">I'm a <a href="/about" title="Digital Product Manager" class="_link-colour__purple">Digital Product Manager</a>, with a strong background in <a href="/about" title="Digital design and web design background" class="_link-colour__purple">digital design and web development</a></h1>
             </section>
             <div class="<?= $globalPrefix; ?>-grid-container _work-latest _listing _work">
                 <?php

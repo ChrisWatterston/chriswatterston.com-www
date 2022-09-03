@@ -1,7 +1,7 @@
 <?
 // Local config
 $localMetaTitle = 'Chris Watterston - Digital Design, Dev, Product Manager, Kiteboarder + Blogger';
-$localMetaDesc = 'A Digital Product Manager, with a strong background in digital design and web development. Enjoy kiteboarding, blogging + stepping ourdoors';
+$localMetaDesc = 'Digital Product Manager, with a strong background in digital design and web development. Enjoy kiteboarding, blogging + stepping outdoors';
 ?>
 <!DOCTYPE html>
 <html lang="en">

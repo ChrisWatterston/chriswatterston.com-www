@@ -8,7 +8,7 @@ date_default_timezone_set('Europe/London');
 require_once($_SERVER['DOCUMENT_ROOT'] . '/config/vars.global.php');
 ?>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
 <meta content="True" name="HandheldFriendly" />
 <meta name="googlebot" content="index,follow" />
 <meta name="robots" content="index,follow" />
@@ -24,7 +24,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/config/vars.global.php');
 <meta property="og:image" content="<?php echo $globalDomainRoot; ?>dist/images/share/shared-chris-watterston.jpg" />
 
 <!-- Sharing details  -->
-<meta property="og:url" content="<?php echo $globalDomainRoot; ?>/PAGE-LINK" />
+<meta property="og:url" content="<?php echo $globalDomainRoot; ?>" />
 <meta property="og:title" content="<?php echo $localMetaTitle; ?>" />
 <meta property="og:description" content="<?php echo $localMetaDesc; ?>" />
 

@@ -1,7 +1,7 @@
 <?
 // Local config
-$localMetaTitle = 'About';
-$localMetaDesc = 'I am still building this page, check back soon!';
+$localMetaTitle = 'About Chris Watterston - Digital Product Manager, Digital Design and Web Development';
+$localMetaDesc = 'Passionate about digital product design and architecture, web design, development, and product growth.';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +17,7 @@ $localMetaDesc = 'I am still building this page, check back soon!';
 
         <section class="<?= $globalPrefix; ?>-stream-container _listing _max-width__1280 ">
             <section class="<?= $globalPrefix; ?>-intro-container _title _text-align__center">
-                <h1 class="_black _stacked"><?php echo $localMetaTitle; ?></h1>
+                <h1 class="_black _stacked">About</h1>
             </section>
             <article class="<?= $globalPrefix; ?>-article-container _exc-padding _max-width__1000">
                 <div class="__content">
@@ -27,7 +27,7 @@ $localMetaDesc = 'I am still building this page, check back soon!';
                         </div>
                         <div class="_sub-detail">
                             <p>My name is Chris Watterston. I'm a Digital Product Manager based just outside of London (UK), with a strong background in digital design and web development.</p>
-                            <p>I'm passionate about digital product design and architecture, design, development, and product growth. When it comes to digital products- I care a ton about how they look and function, grow with meaning, and teach us learnings.</p>
+                            <p>I'm passionate about digital product design and architecture, web design, development, and product growth. When it comes to digital products- I care a ton about how they look and function, grow with meaning, and teach us learnings.</p>
                             <p>I also enjoy spending time with family and friends, stepping outdoors, and trying to find the time for kiteboarding. Although with 3 kids, finding that time is near impossible.</p>
                         </div>
                     </section>

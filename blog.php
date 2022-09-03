@@ -1,7 +1,7 @@
 <?
 // Local config
-$localMetaTitle = 'Blog';
-$localMetaDesc = 'I am still building this site, be sure to come back soon!';
+$localMetaTitle = 'Blog, Write and Express - Chris Watterston';
+$localMetaDesc = 'Writing about areas of interest and learnings. Such as design, development, digital, outdoors and adventures';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +17,7 @@ $localMetaDesc = 'I am still building this site, be sure to come back soon!';
 
         <section class="<?= $globalPrefix; ?>-stream-container _listing _max-width__1280">
             <section class="<?= $globalPrefix; ?>-intro-container _title _text-align__center">
-                <h1 class="_black _stacked"><?php echo $localMetaTitle; ?></h1>
+                <h1 class="_black _stacked">Blog</h1>
             </section>
             <div class="<?= $globalPrefix; ?>-grid-container _column-3 _listing">
                 <?php

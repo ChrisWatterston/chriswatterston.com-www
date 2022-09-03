@@ -47,6 +47,20 @@ h1 {
     line-height: calc($font-size__default + 50%);
     margin-bottom: $spacing__large;
   }
+  &._stacked {
+    font-size: $font-size__large;
+    font-weight: 700;
+    letter-spacing: -0.8rem;
+    line-height: math.div($font-size__large, 1.7);
+    margin: 0;
+    mix-blend-mode: multiply;
+    text-transform: uppercase;
+    @include mixinResponsive("mobile") {
+      font-size: calc($font-size__large - 2.5rem);
+      letter-spacing: -0.55rem;
+      line-height: math.div($font-size__large, 2.8);
+    }
+  }
 }
 
 h2 {

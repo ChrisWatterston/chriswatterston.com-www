@@ -1,7 +1,7 @@
 <?
 // Local config
-$localMetaTitle = 'There Is No Cloud by Chris Watterston';
-$localMetaDesc = 'I am still building this page, check back soon!';
+$localMetaTitle = 'Store Reopening Soon - Chris Watterston';
+$localMetaDesc = 'The official home of the original \'There Is No Cloud\' sticker, clothing and merchandise';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,9 +17,9 @@ $localMetaDesc = 'I am still building this page, check back soon!';
 
         <section class="<?= $globalPrefix; ?>-stream-container _listing _max-width__1280 ">
             <section class="<?= $globalPrefix; ?>-intro-container _intro _text-align__center">
-                <h1 class="_green _stacked">In Progress</h1>
-                <h1 class="_yellow _stacked">Coming</h1>
-                <h1 class="_purple _stacked">Soon</h1>
+                <h1 class="_green _stacked">Store</h1>
+                <h2 class="_yellow _stacked">Reopening</h2>
+                <h2 class="_purple _stacked">Soon</h2>
             </section>
             <div class="<?= $globalPrefix; ?>-grid-container _work-latest _listing _work">
                 <?php

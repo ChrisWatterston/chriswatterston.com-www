@@ -12,6 +12,11 @@ function orderBlogAscending($a, $b)
     return ($a['articleLiveDate'] <= $b['articleLiveDate']) ? 1 : -1;
 }
 
+function orderWorkAscending($a, $b)
+{
+    return ($a['workLiveDate'] <= $b['workLiveDate']) ? 1 : -1;
+}
+
 //
 // ------------------------------------------------------------
 // ------------------------------------------------------------

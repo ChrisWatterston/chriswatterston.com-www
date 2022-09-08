@@ -38,6 +38,13 @@ foreach ($jsonContentOutput as $k => $v) {
             $articleBody = str_replace("<p>[instagram-start:", $instaPartA, "$articleBody");
             $articleBody = str_replace(":instagram-end]</p>", $instaPartB, "$articleBody");
         }
+
+        // // EMBEDDED IMAGE - Search and build embed block
+        // $searchInsta = '<p>[image-embedded]</p>';
+        // $instaPartA = '123';
+        // if (str_contains($articleBody, $searchInsta)) {
+        //     $articleBody = str_replace("<p>[image-embedded]</p>", $instaPartA, "$articleBody");
+        // }
     }
 }
 
@@ -118,9 +125,9 @@ $localMetaDesc = $articleDescription;
                                 <h4>' . date('Y', strtotime($v['workLiveDate'])) . '</h4>
                                 <p class="_post-date">
                     ';
-                    foreach ($v['workRoleTags'] as $t) {
-                        echo '<span class="__role-tag">' . $t . '</span>';
-                    }
+                    // foreach ($v['workRoleTags'] as $t) {
+                    //     echo '<span class="__role-tag">' . $t . '</span>';
+                    // }
                     echo '
                                 </p>
                             </div>

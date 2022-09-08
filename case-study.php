@@ -113,7 +113,9 @@ $localMetaDesc = $workDescription;
                     ' . $workBodyIntro . '
                     </div>
                 ';
-            echo '
+
+            if ($workBodyObjective !== '<p>0</p>') {
+                echo '
                     <section class="' . $globalPrefix . '-grid-container _column-about _work-body-objective">
                         <div class="_sub-title">
                             <h3>Objective</h3>
@@ -122,6 +124,10 @@ $localMetaDesc = $workDescription;
                             ' . $workBodyObjective . '
                         </div>
                     </section>
+                ';
+            }
+            if ($workBodyMyRole !== '<p>0</p>') {
+                echo '
                     <section class="' . $globalPrefix . '-grid-container _column-about _work-body-role">
                         <div class="_sub-title">
                             <h3>My Role</h3>
@@ -130,21 +136,17 @@ $localMetaDesc = $workDescription;
                             ' . $workBodyMyRole . '
                             <p class="_post-date">
                     ';
-            foreach ($workRoleTags as $t) {
-                echo '<span class="__role-tag">' . $t . '</span>';
+                foreach ($workRoleTags as $t) {
+                    echo '<span class="__role-tag">' . $t . '</span>';
+                }
+                echo '
+                            </p>
+                        </div>
+                    </section>
+                ';
             }
-            echo '
-                                </p>
-                        </div>
-                    </section>
-                    <section class="' . $globalPrefix . '-grid-container _column-about _work-body-partners">
-                        <div class="_sub-title">
-                            <h3>Partners</h3>
-                        </div>
-                        <div class="_sub-detail">
-                            ' . $workBodyPartners . '
-                        </div>
-                    </section>
+            if ($workMetricsDescription !== '<p>0</p>') {
+                echo '
                     <section class="' . $globalPrefix . '-grid-container _column-about _work-body-metric-num">
                         <div class="_sub-title">
                             <h3>Metrics</h3>
@@ -175,6 +177,10 @@ $localMetaDesc = $workDescription;
                             ' . $workMetricsDescription . '
                         </div>
                     </section>
+                    ';
+            }
+            if ($workBodyLearnings !== '<p>0</p>') {
+                echo '
                     <section class="' . $globalPrefix . '-grid-container _column-about _work-body-learnings">
                         <div class="_sub-title">
                             <h3>Learnings</h3>
@@ -183,6 +189,9 @@ $localMetaDesc = $workDescription;
                             ' . $workBodyLearnings . '
                         </div>
                     </section>
+                    ';
+            }
+            echo '
                     <section class="' . $globalPrefix . '-grid-container _column-about _work-body-gallery">
                         <div class="_sub-title">
                             <h3>Gallery</h3>
@@ -204,6 +213,20 @@ $localMetaDesc = $workDescription;
                             </div>
                         </div>
                     </section>
+            ';
+            if ($workBodyPartners !== '<p>0</p>') {
+                echo '
+                    <section id="partner" class="' . $globalPrefix . '-grid-container _column-about _work-body-partners">
+                        <div class="_sub-title">
+                            <h3>Partners</h3>
+                        </div>
+                        <div class="_sub-detail">
+                            ' . $workBodyPartners . '
+                        </div>
+                    </section>
+                    ';
+            }
+            echo '
                 </div>
                 ';
             ?>
@@ -235,9 +258,9 @@ $localMetaDesc = $workDescription;
                                 <h4>' . date('Y', strtotime($v['workLiveDate'])) . '</h4>
                                 <p class="_post-date">
                     ';
-                    foreach ($v['workRoleTags'] as $t) {
-                        echo '<span class="__role-tag">' . $t . '</span>';
-                    }
+                    // foreach ($v['workRoleTags'] as $t) {
+                    //     echo '<span class="__role-tag">' . $t . '</span>';
+                    // }
                     echo '
                                 </p>
                             </div>

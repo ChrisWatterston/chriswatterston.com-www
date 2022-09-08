@@ -69,7 +69,7 @@ foreach ($entriesList as $key => $entry) {
 }
 
 // Sort and put works into live date order
-usort($workList, "orderBlogAscending");
+usort($workList, "orderWorkAscending");
 
 // Clear static JSON file
 file_put_contents(__DIR__ . '/../data/contentful.work.json', '');

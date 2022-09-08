@@ -45,9 +45,9 @@ $localMetaDesc = 'Work and case studies from throughout the years. From digital 
                                 <h4>' . date('Y', strtotime($v['workLiveDate'])) . '</h4>
                                 <p class="_post-date">
                     ';
-                    foreach ($v['workRoleTags'] as $t) {
-                        echo '<span class="__role-tag">' . $t . '</span>';
-                    }
+                    // foreach ($v['workRoleTags'] as $t) {
+                    //     echo '<span class="__role-tag">' . $t . '</span>';
+                    // }
                     echo '
                                 </p>
                             </div>
@@ -82,9 +82,9 @@ $localMetaDesc = 'Work and case studies from throughout the years. From digital 
                                 <h4>' . date('Y', strtotime($v['workLiveDate'])) . '</h4>
                                 <p class="_post-date">
                     ';
-                    foreach ($v['workRoleTags'] as $t) {
-                        echo '<span>' . $t . '</span>';
-                    }
+                    // foreach ($v['workRoleTags'] as $t) {
+                    //     echo '<span>' . $t . '</span>';
+                    // }
                     echo '
                                 </p>
                             </div>

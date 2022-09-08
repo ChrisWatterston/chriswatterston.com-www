@@ -47,9 +47,9 @@ $localMetaDesc = 'The official home of the original \'There Is No Cloud\' sticke
                                 <h4>' . date('Y', strtotime($v['workLiveDate'])) . '</h4>
                                 <p class="_post-date">
                     ';
-                    foreach ($v['workRoleTags'] as $t) {
-                        echo '<span class="__role-tag">' . $t . '</span>';
-                    }
+                    // foreach ($v['workRoleTags'] as $t) {
+                    //     echo '<span class="__role-tag">' . $t . '</span>';
+                    // }
                     echo '
                                 </p>
                             </div>

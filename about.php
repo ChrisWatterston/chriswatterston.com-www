@@ -72,13 +72,14 @@ $localMetaDesc = 'Passionate about digital product design and architecture, web 
                             <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
                                 <div class="_icon" style="background-image: url(/dist/images/brands/logo-experience-suntory-gbi.jpg);"></div>
                                 <div class="_stats">
-                                    <h2>Senior Developer & Digital Projects Manager</h2>
+                                    <h2>Sr Developer & Digital Projects Manager (TED, In-House Agency)</h2>
                                     <h5>Suntory Beverage & Food GB&I</h5>
                                     <p class="_post-date">March 2018 - Present (Remote + Uxbridge)</p>
                                 </div>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum velit vel risus posuere, eget pharetra enim finibus. Pellentesque non felis eu mi interdum congue. Cras placerat odio vel felis venenatis, et varius enim cursus. Etiam ut ultrices dolor.</p>
-                            <p>Duis ut metus nibh. Quisque egestas efficitur magna, vel aliquam odio hendrerit et. Aenean sodales nibh urna, ac iaculis augue faucibus quis. Nulla tincidunt ligula eu mi bibendum sagittis. Phasellus sollicitudin aliquam velit, sed venenatis mi tristique ut. Maecenas a nisi venenatis, finibus lorem ac, volutpat ligula. Fusce egestas sagittis metus, a lobortis magna venenatis et.</p>
+                            <p>Lucozade Energy, Lucozade Sport, Ribena, Merchants Heart, and a handful of others. The products that hydrated, supported, and clenched the thirst of millions of people.</p>
+                            <p>During my time at Suntory GB&I, I was lucky enough to work on some of the biggest FMCG digital products and campaigns. Joining the small team as a freelancer Web Design and Developer in 2018, I hung around and continued the journey to lead the Digital & Technology team 4 years later.</p>
+                            <p>This role involved several responsibilities. Agile project management, planning and scoping, designing, and building consumer web entry mechanics and interfaces (inc. websites, apps & marketing material), collaborating and supporting legal and brand- and countless other things, such as managing budgets and external agencies.</p>
 
                             <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
                                 <div class="_icon" style="background-image: url(/dist/images/brands/logo-experience-basicsss-app.jpg);"></div>
@@ -88,19 +89,21 @@ $localMetaDesc = 'Passionate about digital product design and architecture, web 
                                     <p class="_post-date">June 2022 - Present (Remote)</p>
                                 </div>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum velit vel risus posuere, eget pharetra enim finibus. Pellentesque non felis eu mi interdum congue. Cras placerat odio vel felis venenatis, et varius enim cursus. Etiam ut ultrices dolor.</p>
-                            <p>Duis ut metus nibh. Quisque egestas efficitur magna, vel aliquam odio hendrerit et. Aenean sodales nibh urna, ac iaculis augue faucibus quis. Nulla tincidunt ligula eu mi bibendum sagittis. Phasellus sollicitudin aliquam velit, sed venenatis mi tristique ut. Maecenas a nisi venenatis, finibus lorem ac, volutpat ligula. Fusce egestas sagittis metus, a lobortis magna venenatis et.</p>
+                            <p>While working for Suntory GB&I within their in-house agency, we used Wrike.com for all project management and planning. For this reason, I also became part of the small team which supported the roll out of Wrike scroll Suntory's European business units. This forced me to become very familiar with Wrike.</p>
+                            <p>During this time and using what Wrike claim to be the most powerful work management software, I quickly recognised a hole within Wrike's large audience which they hadn't tailored for. This brought on the idea of Basicsss.App.</p>
+                            <p>The idea behind Basicsss.App is to remove the noise and make Wrike basic. Continue to use the most powerful work management software but simplified for production teams.</p>
 
                             <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
                                 <div class="_icon" style="background-image: url(/dist/images/brands/logo-experience-chris-watterston.jpg);"></div>
                                 <div class="_stats">
-                                    <h2>Web & Mobile Designer and Developer</h2>
+                                    <h2>Web & Mobile Designer & Developer</h2>
                                     <h5>Freelance</h5>
                                     <p class="_post-date">Sept 2013 - Jan 2021 (Remote + On-site)</p>
                                 </div>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum velit vel risus posuere, eget pharetra enim finibus. Pellentesque non felis eu mi interdum congue. Cras placerat odio vel felis venenatis, et varius enim cursus. Etiam ut ultrices dolor.</p>
-                            <p>Duis ut metus nibh. Quisque egestas efficitur magna, vel aliquam odio hendrerit et. Aenean sodales nibh urna, ac iaculis augue faucibus quis. Nulla tincidunt ligula eu mi bibendum sagittis. Phasellus sollicitudin aliquam velit, sed venenatis mi tristique ut. Maecenas a nisi venenatis, finibus lorem ac, volutpat ligula. Fusce egestas sagittis metus, a lobortis magna venenatis et.</p>
+                            <p>A freelance journey of little over 7 years, taught me so much!</p>
+                            <p>During this period, I made myself responsible in providing a range of high-end and guaranteed solutions to my sourced clients (never via agencies). These clients ranged from small start-ups, fully established organisations, brands, and schools (both private and public)- as well as the odd individual.
+                            </p>
 
                             <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
                                 <div class="_icon" style="background-image: url(/dist/images/brands/logo-experience-st-pauls-catholic-college.jpg);"></div>
@@ -110,7 +113,6 @@ $localMetaDesc = 'Passionate about digital product design and architecture, web 
                                     <p class="_post-date">Oct 2008 - Sept 2013 (Sunbury)</p>
                                 </div>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum velit vel risus posuere, eget pharetra enim finibus. Pellentesque non felis eu mi interdum congue. Cras placerat odio vel felis venenatis, et varius enim cursus. Etiam ut ultrices dolor.</p>
 
                             <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
                                 <div class="_icon" style="background-image: url(/dist/images/brands/logo-experience-cd-surveys.jpg);"></div>

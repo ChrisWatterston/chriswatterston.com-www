@@ -28,7 +28,7 @@ $localMetaDesc = 'Passionate about digital product design and architecture, web 
                         <div class="_sub-detail">
                             <p>My name is Chris Watterston. I'm a Digital Product Manager based just outside of London (UK), with a strong background in digital design and web development.</p>
                             <p>I'm passionate about digital product design and architecture, web design, development, and product growth. When it comes to digital products- I care a ton about how they look, function, grow with meaning, and the learnings they teach.</p>
-                            <p>I also enjoy spending time with family and friends, stepping outdoors, and trying to find the time to kiteboard. <i>With a family of 3 kids, finding that time isn't easy!</i></p>
+                            <p>I also enjoy spending time with family and friends, stepping outdoors, and trying to find the time to kiteboard.</p>
                         </div>
                     </section>
                     <section class="<?= $globalPrefix; ?>-grid-container _column-about _about-body-contacting">

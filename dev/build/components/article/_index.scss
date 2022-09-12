@@ -118,19 +118,19 @@
         background-image: url(#{$path-images}icons/icon-entry-white.svg);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 30px auto;
+        background-size: 25px auto;
       }
       &._unique {
         background-image: url(#{$path-images}icons/icon-unique-white.svg);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 35px auto;
+        background-size: 28px auto;
       }
       &._winner {
         background-image: url(#{$path-images}icons/icon-winner-white.svg);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 30px auto;
+        background-size: 24px auto;
       }
     }
     h2 {

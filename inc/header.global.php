@@ -21,7 +21,6 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/config/vars.global.php');
 <link rel="icon" href="<?php echo $globalDomainRoot; ?>favicon.ico" />
 <link rel="shortcut icon" href="<?php echo $globalDomainRoot; ?>favicon.ico" />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="<?php echo $globalDomainRoot; ?>dist/images/share/shared-chris-watterston.jpg" />
 
 <!-- Sharing details  -->
 <meta property="og:url" content="<?php echo $globalDomainRoot; ?>" />

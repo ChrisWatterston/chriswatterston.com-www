@@ -58,6 +58,7 @@ $localMetaDesc = $articleDescription;
 <head>
     <? include_once($_SERVER['DOCUMENT_ROOT'] . '/inc/header.global.php'); ?>
     <meta property="og:image" content="https:<?php echo $articleHeroImageUrl; ?>" />
+    <meta property="twitter:card" content="https:<?php echo $articleHeroImageUrl; ?>" />
     <? include_once($_SERVER['DOCUMENT_ROOT'] . '/config/analytics.global.php'); ?>
 </head>
 

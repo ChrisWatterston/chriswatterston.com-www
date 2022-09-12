@@ -153,21 +153,21 @@ $localMetaDesc = $workDescription;
                         </div>
                         <div class="_sub-detail">
                             <div class="' . $globalPrefix . '-grid-container _stat-headline">
-                                <div class="_icon"></div>
+                                <div class="_icon _entry"></div>
                                 <div class="_stats">
                                     <h2>' . formatNumber($workMetricsEntriesNumber) . '</h2>
                                     <h5>Entries</h5>
                                 </div>
                             </div>
                             <div class="' . $globalPrefix . '-grid-container _stat-headline">
-                                <div class="_icon"></div>
+                                <div class="_icon _unique"></div>
                                 <div class="_stats">
                                     <h2>' . formatNumber($workMetricsUniqueNumber) . '</h2>
                                     <h5>Unique</h5>
                                 </div>
                             </div>
                             <div class="' . $globalPrefix . '-grid-container _stat-headline">
-                                <div class="_icon"></div>
+                                <div class="_icon _winner"></div>
                                 <div class="_stats">
                                     <h2>' . formatNumber($workMetricsWinnerNumber) . '</h2>
                                     <h5>Winners</h5>

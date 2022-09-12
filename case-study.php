@@ -44,7 +44,7 @@ $localMetaDesc = $workDescription;
 
 <head>
     <? include_once($_SERVER['DOCUMENT_ROOT'] . '/inc/header.global.php'); ?>
-    <meta property="og:image" content="<?php echo $workHeroImageUrl; ?>" />
+    <meta property="og:image" content="https:<?php echo $workHeroImageUrl; ?>" />
     <? include_once($_SERVER['DOCUMENT_ROOT'] . '/config/analytics.global.php'); ?>
 
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>

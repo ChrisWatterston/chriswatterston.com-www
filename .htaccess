@@ -48,39 +48,39 @@
 </FilesMatch>
 
 # Redirects
-Redirect 301 /blog/interviewed-and-featured-on-an-original-podcast-command-line-heroes-by-red-hat https://www.chriswatterston.com/article/there-is-no-cloud-podcast-feature
-Redirect 301 /blog/snow-days-impact-school-websites-in-a-big-way-and-its-important-were-ready https://www.chriswatterston.com/article/snow-impacts-education-website
-Redirect 301 /blog/microsoft-azure-app-service-vs-virtual-machine-why-i-would-consider-you-choose-a-virtual-machine-for-your-hosting-solution https://www.chriswatterston.com/article/azure-web-app-vs-virtual-machine-hosting
-Redirect 301 /blog/launching-the-official-skoolping-landing-page-website-design https://www.chriswatterston.com/article/beta-launch-skoolping-app-for-education
-Redirect 301 /blog/a-much-needed-spotify-widget-for-the-notification-center https://www.chriswatterston.com/article/missing-spotify-widget-mac-os
-Redirect 301 /blog/creating-pfx-certificate-files-and-installing-ssl-certificates-on-your-microsoft-azure-web-app-service https://www.chriswatterston.com/article/create-pfx-crt-install-ssl-azure-web-app
-Redirect 301 /blog/meltdown-and-spectre-vulnerability-update https://www.chriswatterston.com/article/meltdown-spectre-cpu-flaw-update
-Redirect 301 /blog/setting-2018-with-6-goals-what-i-will-focus-progress-and-experiment-with-throughout-2018 https://www.chriswatterston.com/article/2018-new-year-goal-setting
-Redirect 301 /blog/starting-2016-old-challenges https://www.chriswatterston.com/article/2016-new-year-goal-setting
-Redirect 301 /blog/a-breakdown-of-the-general-data-protection-regulation-gdpr-as-outlined-by-the-ico-information-commissioners-office https://www.chriswatterston.com/article/brief-breakdown-gdpr-ico
-Redirect 301 /blog/progress-on-skoolping-and-why-theres-been-a-substantial-delay https://www.chriswatterston.com/article/skoolping-app-progress-delay
-Redirect 301 /blog/the-not-so-shocking-costs-involved-for-your-design-and-development-solutions https://www.chriswatterston.com/article/no-shock-cost-of-web-design-solutions
-Redirect 301 /blog/aerial-footage-from-our-short-family-break-in-bute-scotland https://www.chriswatterston.com/article/aerial-footage-isle-bute-rothesay-scot
-Redirect 301 /blog/building-a-hobbit-adventure-for-our-kids https://www.chriswatterston.com/article/hobbit-adventure-play-house
-Redirect 301 /blog/genius-60th-birthday-gift-for-her-uncle https://www.chriswatterston.com/article/genius-birthday-gift-guinness-beer-mats
-Redirect 301 /blog/there-no-cloud-getting-1-sticker-mule-marketplace https://www.chriswatterston.com/article/my-there-is-no-cloud-sticker
-Redirect 301 /blog/my-there-is-no-cloud-sticker https://www.chriswatterston.com/article/success-of-my-there-is-no-cloud-sticker
+Redirect 301 /blog/interviewed-and-featured-on-an-original-podcast-command-line-heroes-by-red-hat https://www.chriswatterston.com/article/there-is-no-cloud-podcast-feature?utm_source=redirect
+Redirect 301 /blog/snow-days-impact-school-websites-in-a-big-way-and-its-important-were-ready https://www.chriswatterston.com/article/snow-impacts-education-website?utm_source=redirect
+Redirect 301 /blog/microsoft-azure-app-service-vs-virtual-machine-why-i-would-consider-you-choose-a-virtual-machine-for-your-hosting-solution https://www.chriswatterston.com/article/azure-web-app-vs-virtual-machine-hosting?utm_source=redirect
+Redirect 301 /blog/launching-the-official-skoolping-landing-page-website-design https://www.chriswatterston.com/article/beta-launch-skoolping-app-for-education?utm_source=redirect
+Redirect 301 /blog/a-much-needed-spotify-widget-for-the-notification-center https://www.chriswatterston.com/article/missing-spotify-widget-mac-os?utm_source=redirect
+Redirect 301 /blog/creating-pfx-certificate-files-and-installing-ssl-certificates-on-your-microsoft-azure-web-app-service https://www.chriswatterston.com/article/create-pfx-crt-install-ssl-azure-web-app?utm_source=redirect
+Redirect 301 /blog/meltdown-and-spectre-vulnerability-update https://www.chriswatterston.com/article/meltdown-spectre-cpu-flaw-update?utm_source=redirect
+Redirect 301 /blog/setting-2018-with-6-goals-what-i-will-focus-progress-and-experiment-with-throughout-2018 https://www.chriswatterston.com/article/2018-new-year-goal-setting?utm_source=redirect
+Redirect 301 /blog/starting-2016-old-challenges https://www.chriswatterston.com/article/2016-new-year-goal-setting?utm_source=redirect
+Redirect 301 /blog/a-breakdown-of-the-general-data-protection-regulation-gdpr-as-outlined-by-the-ico-information-commissioners-office https://www.chriswatterston.com/article/brief-breakdown-gdpr-ico?utm_source=redirect
+Redirect 301 /blog/progress-on-skoolping-and-why-theres-been-a-substantial-delay https://www.chriswatterston.com/article/skoolping-app-progress-delay?utm_source=redirect
+Redirect 301 /blog/the-not-so-shocking-costs-involved-for-your-design-and-development-solutions https://www.chriswatterston.com/article/no-shock-cost-of-web-design-solutions?utm_source=redirect
+Redirect 301 /blog/aerial-footage-from-our-short-family-break-in-bute-scotland https://www.chriswatterston.com/article/aerial-footage-isle-bute-rothesay-scot?utm_source=redirect
+Redirect 301 /blog/building-a-hobbit-adventure-for-our-kids https://www.chriswatterston.com/article/hobbit-adventure-play-house?utm_source=redirect
+Redirect 301 /blog/genius-60th-birthday-gift-for-her-uncle https://www.chriswatterston.com/article/genius-birthday-gift-guinness-beer-mats?utm_source=redirect
+Redirect 301 /blog/there-no-cloud-getting-1-sticker-mule-marketplace https://www.chriswatterston.com/article/my-there-is-no-cloud-sticker?utm_source=redirect
+Redirect 301 /blog/my-there-is-no-cloud-sticker https://www.chriswatterston.com/article/success-of-my-there-is-no-cloud-sticker?utm_source=redirect
 
-Redirect 301 /case-studies/creating-a-bespoke-web-based-operations-system-that-will-never-be-complete https://www.chriswatterston.com/work/case-study/cdsurveys-bespoke-web-operations-system
-Redirect 301 /case-studies/google-adwords-campaign-landing-page-design-for-land-surveying-and-engineering https://www.chriswatterston.com/work/case-study/cdsurveys-google-adword-landing-page
-Redirect 301 /case-studies/supporting-heart-transplant-related-events-causes-and-charities-with-a-simple-logo-design https://www.chriswatterston.com/work/case-study/supporting-heart-transplant-charities
-Redirect 301 /case-studies/st-pauls-escape-sharepoint-for-a-solid-responsive-web-design-solution https://www.chriswatterston.com/work/case-study/st-pauls-catholic-college-website
-Redirect 301 /case-studies/cd-surveys-ltd-ford-van-graphical-sign-writing https://www.chriswatterston.com/work/case-study/cd-surveys-ltd-van-sign-writing-design
-Redirect 301 /case-studies/events-website-design-and-graphics https://www.chriswatterston.com/work/case-study/lime-events-website-design-graphics
-Redirect 301 /case-studies/personal-assistant-design-and-graphics https://www.chriswatterston.com/work/case-study/designated-pa-graphics-design-work
-Redirect 301 /case-studies/intelligent-transport-services-its-brand-design https://www.chriswatterston.com/work/case-study/intelligent-transport-services-branding
-Redirect 301 /case-studies/moorfields-corporate-recovery-design-work https://www.chriswatterston.com/work/case-study/moorfields-corporate-recovery-design
-Redirect 301 /case-studies/sjbc-college-website-design https://www.chriswatterston.com/work/case-study/sjbc-college-website-redesign
-Redirect 301 /case-studies/my-new-bespoke-embossed-kraft-business-cards https://www.chriswatterston.com/article/bespoke-embossed-kraft-business-cards
+Redirect 301 /case-studies/creating-a-bespoke-web-based-operations-system-that-will-never-be-complete https://www.chriswatterston.com/work/case-study/cdsurveys-bespoke-web-operations-system?utm_source=redirect
+Redirect 301 /case-studies/google-adwords-campaign-landing-page-design-for-land-surveying-and-engineering https://www.chriswatterston.com/work/case-study/cdsurveys-google-adword-landing-page?utm_source=redirect
+Redirect 301 /case-studies/supporting-heart-transplant-related-events-causes-and-charities-with-a-simple-logo-design https://www.chriswatterston.com/work/case-study/supporting-heart-transplant-charities?utm_source=redirect
+Redirect 301 /case-studies/st-pauls-escape-sharepoint-for-a-solid-responsive-web-design-solution https://www.chriswatterston.com/work/case-study/st-pauls-catholic-college-website?utm_source=redirect
+Redirect 301 /case-studies/cd-surveys-ltd-ford-van-graphical-sign-writing https://www.chriswatterston.com/work/case-study/cd-surveys-ltd-van-sign-writing-design?utm_source=redirect
+Redirect 301 /case-studies/events-website-design-and-graphics https://www.chriswatterston.com/work/case-study/lime-events-website-design-graphics?utm_source=redirect
+Redirect 301 /case-studies/personal-assistant-design-and-graphics https://www.chriswatterston.com/work/case-study/designated-pa-graphics-design-work?utm_source=redirect
+Redirect 301 /case-studies/intelligent-transport-services-its-brand-design https://www.chriswatterston.com/work/case-study/intelligent-transport-services-branding?utm_source=redirect
+Redirect 301 /case-studies/moorfields-corporate-recovery-design-work https://www.chriswatterston.com/work/case-study/moorfields-corporate-recovery-design?utm_source=redirect
+Redirect 301 /case-studies/sjbc-college-website-design https://www.chriswatterston.com/work/case-study/sjbc-college-website-redesign?utm_source=redirect
+Redirect 301 /case-studies/my-new-bespoke-embossed-kraft-business-cards https://www.chriswatterston.com/article/bespoke-embossed-kraft-business-cards?utm_source=redirect
 
-Redirect 301 /case-studies/html-email-portfolio https://www.chriswatterston.com/work
-Redirect 301 /case-studies/bold-logo-design-for-hms-commercials-sales-specialises https://www.chriswatterston.com/work
-Redirect 301 /case-studies/event-programme-design-for-the-british-society-of-paediatric-dentistry-bspd https://www.chriswatterston.com/work
+Redirect 301 /case-studies/html-email-portfolio https://www.chriswatterston.com/work?utm_source=redirect
+Redirect 301 /case-studies/bold-logo-design-for-hms-commercials-sales-specialises https://www.chriswatterston.com/work?utm_source=redirect
+Redirect 301 /case-studies/event-programme-design-for-the-british-society-of-paediatric-dentistry-bspd https://www.chriswatterston.com/work?utm_source=redirect
 
 # Compression
 <IfModule mod_deflate.c>

@@ -205,11 +205,23 @@ $localMetaDesc = $workDescription;
                 $galleryImageUrl = $gi['fields']['file']['url'];
                 $galleryImageTitle = $gi['fields']['title'];
                 $galleryImageDesc = $gi['fields']['description'];
-                echo '
+                $galleryImageType = $gi['fields']['file']['contentType'];
+                // Images
+                if (str_contains($galleryImageType, 'image')) {
+                    echo '
                                 <a data-fancybox="gallery" href="' . $galleryImageUrl . '" data-caption="<p>' . $galleryImageDesc . '</p>">
                                     <img src="' . $galleryImageUrl . '" title="' . $galleryImageTitle . '" />
                                 </a>
-                ';
+                    ';
+                }
+                // Videos
+                if (str_contains($galleryImageType, 'video')) {
+                    echo '
+                                <a data-fancybox="gallery" href="' . $galleryImageUrl . '" data-caption="<p>' . $galleryImageDesc . '</p>">
+                                    <img src="' . $globalDomainRoot . '/dist/images/icons/icon-video-thumb.svg" title="' . $galleryImageTitle . '" />
+                                </a>
+                    ';
+                }
             }
             echo '  
                             </div>

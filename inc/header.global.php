@@ -41,7 +41,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/config/vars.global.php');
         "givenName": "Chris",
         "worksFor": "https://www.chriswatterston.com/",
         "jobTitle": "Digital Project Manager",
-        "image": "http://chriswatterston.com-www.dev-local/dist/images/brands/logo-experience-chris-watterston.jpg",
+        "image": "https://www.chriswatterston.com/dist/images/id/chris-watterston-self-photo.jpg",
         "gender": "http://schema.org/Male",
         "sameAs": ["https://twitter.com/chriswatterston", "https://www.linkedin.com/in/chriswatterston/", "https://github.com/ChrisWatterston"]
     }

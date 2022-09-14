@@ -114,3 +114,9 @@
 iframe {
   margin-bottom: $spacing__large;
 }
+
+.fancybox__caption {
+  p {
+    color: $colour-white__default;
+  }
+}

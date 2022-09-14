@@ -78,6 +78,6 @@ file_put_contents(__DIR__ . '/../data/contentful.work.json', '');
 if (getenv('ENVIRONMENT_STATE') === 'production') {
     $apiOutput = json_encode($workList, JSON_UNESCAPED_UNICODE); // JSON_UNESCAPED_UNICODE
 } else {
-    $apiOutput = json_encode($workList, JSON_UNESCAPED_UNICODE); // JSON_PRETTY_PRINT
+    $apiOutput = json_encode($workList, JSON_PRETTY_PRINT); // JSON_PRETTY_PRINT
 }
 file_put_contents(__DIR__ . '/../data/contentful.work.json', $apiOutput, FILE_APPEND);

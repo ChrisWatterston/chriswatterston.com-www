@@ -60,6 +60,6 @@ file_put_contents(__DIR__ . '/../data/contentful.blog.json', '');
 if (getenv('ENVIRONMENT_STATE') === 'production') {
     $apiOutput = json_encode($articleList, JSON_UNESCAPED_UNICODE); // JSON_UNESCAPED_UNICODE
 } else {
-    $apiOutput = json_encode($articleList, JSON_UNESCAPED_UNICODE); // JSON_PRETTY_PRINT
+    $apiOutput = json_encode($articleList, JSON_PRETTY_PRINT); // JSON_PRETTY_PRINT
 }
 file_put_contents(__DIR__ . '/../data/contentful.blog.json', $apiOutput, FILE_APPEND);

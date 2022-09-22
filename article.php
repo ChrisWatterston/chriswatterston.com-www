@@ -60,6 +60,25 @@ $localMetaDesc = $articleDescription;
     <meta property="og:image" content="https:<?php echo $articleHeroImageUrl; ?>" />
     <meta property="twitter:card" content="https:<?php echo $articleHeroImageUrl; ?>" />
     <? include_once($_SERVER['DOCUMENT_ROOT'] . '/config/analytics.global.php'); ?>
+
+    <!-- Schema Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "NewsArticle",
+            "headline": "<?php echo $articleTitle; ?>",
+            "image": [
+                "https:<?php echo $articleHeroImageUrl; ?>"
+            ],
+            "datePublished": "<?php echo $articleLiveDate; ?>",
+            "dateModified": "<?php echo $articleUpdateDate; ?>",
+            "author": [{
+                "@type": "Person",
+                "name": "Chris Watterston",
+                "url": "<?php echo $globalDomainRoot; ?>about"
+            }]
+        }
+    </script>
 </head>
 
 <body>

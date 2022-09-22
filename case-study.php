@@ -48,6 +48,26 @@ $localMetaDesc = $workDescription;
     <meta property="twitter:card" content="https:<?php echo $workHeroImageUrl; ?>" />
     <? include_once($_SERVER['DOCUMENT_ROOT'] . '/config/analytics.global.php'); ?>
 
+    <!-- Schema Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "NewsArticle",
+            "headline": "<?php echo $workTitle; ?>",
+            "image": [
+                "https:<?php echo $workHeroImageUrl; ?>"
+            ],
+            "datePublished": "<?php echo $workLiveDate; ?>",
+            "dateModified": "<?php echo $workUpdateDate; ?>",
+            "author": [{
+                "@type": "Person",
+                "name": "Chris Watterston",
+                "url": "<?php echo $globalDomainRoot; ?>about"
+            }]
+        }
+    </script>
+
+    <!-- fancybox -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
     <script>

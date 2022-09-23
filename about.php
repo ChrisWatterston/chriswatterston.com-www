@@ -1,6 +1,6 @@
 <?
 // Local config
-$localMetaTitle = 'About Chris Watterston - Digital Product Manager, Digital Design and Web Development';
+$localMetaTitle = 'About Chris Watterston - Digital Product Manager, Designer and Dev';
 $localMetaDesc = 'Passionate about digital product design and architecture, web design, development, and product growth.';
 ?>
 <!DOCTYPE html>
@@ -26,8 +26,8 @@ $localMetaDesc = 'Passionate about digital product design and architecture, web 
                             <h3>About Me</h3>
                         </div>
                         <div class="_sub-detail">
-                            <p>My name is Chris Watterston. I'm a Digital Product Manager based just outside of London (UK), with a strong background in digital design and web development.</p>
-                            <p>I'm passionate about digital product design and architecture, web design, development, and product growth. When it comes to digital products- I care a ton about how they look, function, grow with meaning, and the learnings they teach.</p>
+                            <p>My name is Chris Watterston. I'm a Digital Product Design & Manager based just on the outskirts of London (UK), with a strong background in digital design and web development.</p>
+                            <p>I'm passionate about agile digital product design and architecture, web design, development, and product growth. When it comes to digital products- I care a ton about how they look, function, grow with meaning, and the learnings they teach.</p>
                             <p>I also enjoy spending time with family and friends, stepping outdoors, and trying to find the time to kiteboard.</p>
                         </div>
                     </section>
@@ -78,20 +78,20 @@ $localMetaDesc = 'Passionate about digital product design and architecture, web 
                                 </div>
                             </div>
                             <p>Lucozade Energy, Lucozade Sport, Ribena, Merchants Heart, and a handful of others. The products that hydrated, supported, and clenched the thirst of millions of people.</p>
-                            <p>During my time at Suntory GB&I, I was lucky enough to work on some of the biggest FMCG digital products and campaigns. Joining the small team as a freelancer Web Design and Developer in 2018, I hung around and continued the journey to lead the Digital & Technology team 4 years later.</p>
-                            <p>This role involved several responsibilities. Agile project management, strategy and scoping, designing, UAT/QA testing, building and launching consumer web entry mechanics and interfaces (inc. websites, apps & marketing material), collaborating and supporting legal and brand- and countless other bits, such as managing budgets and external agencies.</p>
+                            <p>During my time at Suntory GB&I, I was lucky enough to work on some of the biggest FMCG digital products and campaigns for many much loved brands. Joining the small team as a freelancer Web Design and Developer in 2018, I hung around and continued the journey to lead the Digital & Technology team 4 years later in a permanent role.</p>
+                            <p>This role involved several responsibilities. Agile digital product management, strategy and scoping, data analytics, designing, UAT/QA testing, building and launching consumer web entry mechanics and interfaces (inc. websites, apps & marketing material), collaborating and supporting legal and brand- and countless other bits, such as managing budgets and external agencies.</p>
 
                             <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
-                                <div class="_icon" style="background-image: url(/dist/images/brands/logo-experience-basicsss-app.jpg);"></div>
+                                <div class="_icon" style="background-image: url(/dist/images/brands/logo-experience-wrikified-app.jpg);"></div>
                                 <div class="_stats">
-                                    <h2>Founder, CEO + Co. (Side Project)</h2>
-                                    <h5>Basicsss.app</h5>
+                                    <h2>Owner & Digital Product Designer (Side Project)</h2>
+                                    <h5>Wrikified</h5>
                                     <p class="_post-date">June 2022 - Present (Remote)</p>
                                 </div>
                             </div>
                             <p>While working for Suntory GB&I within their in-house agency, we used Wrike.com for all project management and planning. For this reason, I also became part of the small team which supported the roll out of Wrike scroll Suntory's European business units. This forced me to become very familiar with Wrike.</p>
-                            <p>During this time and using what Wrike claim to be the most powerful work management software, I quickly recognised a hole within Wrike's large audience which they hadn't tailored for. This brought on the idea of Basicsss.App.</p>
-                            <p>The idea behind Basicsss.App is to remove the noise and make Wrike basic. Continue to use the most powerful work management software but simplified for production teams.</p>
+                            <p>During this time and using what Wrike claim to be the most powerful work management software, I quickly recognised a hole within Wrike's large audience which they hadn't tailored for. This brought on the idea of Wrikified.</p>
+                            <p>The idea behind Wrikified, is to remove the noise and make Wrike simple. Continue to use the most powerful work management software but simplified for production teams.</p>
 
                             <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
                                 <div class="_icon" style="background-image: url(/dist/images/brands/logo-experience-chris-watterston.jpg);"></div>

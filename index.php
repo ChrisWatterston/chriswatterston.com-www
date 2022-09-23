@@ -1,7 +1,7 @@
 <?
 // Local config
-$localMetaTitle = 'Chris Watterston - Designer, Dev, Product Manager, Kiteboarder + Blogger';
-$localMetaDesc = 'Digital Product Manager, with a strong background in digital design and web development. Enjoys kiteboarding, blogging + stepping outdoors';
+$localMetaTitle = 'Chris Watterston - Digital Product Manager, Designer, Dev, Kiteboarder + Blogger';
+$localMetaDesc = 'Digital Product Manager, with a strong background in digital product design and web development. Enjoys kiteboarding, blogging + stepping outdoors';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +22,7 @@ $localMetaDesc = 'Digital Product Manager, with a strong background in digital d
                 <h2 class="_purple _stacked">Build</h2>
                 <h2 class="_red _stacked">Launch</h2>
                 <h2 class="_black _stacked">Test&Learn</h2>
-                <h1 class="_intro">I'm a <a href="/about" title="Digital Product Manager" class="_link-colour__purple">Digital Product Manager</a>, with a strong background in <a href="/about" title="Digital design and web design background" class="_link-colour__purple">digital design and web development</a></h1>
+                <h1 class="_intro">I'm a <a href="/about" title="Agile Digital Product Manager in London" class="_link-colour__purple">Digital Product Manager</a>, with a strong background in <a href="/about" title="Digital product design and web design background" class="_link-colour__purple">digital product design & web development</a></h1>
             </section>
             <div class="<?= $globalPrefix; ?>-grid-container _work-latest _listing _work">
                 <?php

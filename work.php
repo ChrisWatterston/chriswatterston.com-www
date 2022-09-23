@@ -1,7 +1,7 @@
 <?
 // Local config
 $localMetaTitle = 'Portfolio of Crafted and Collaborated Work - Chris Watterston';
-$localMetaDesc = 'Work and case studies from throughout the years. From digital design and development, to product design and architecture';
+$localMetaDesc = 'Work and case studies from throughout the years. From digital product design and development, to agile management and architecture';
 ?>
 <!DOCTYPE html>
 <html lang="en">

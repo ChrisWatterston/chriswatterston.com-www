@@ -1,7 +1,7 @@
 <?
 // Local config
 $localMetaTitle = 'Blog, Write and Express - Chris Watterston';
-$localMetaDesc = 'Writing about areas of interest and learnings. Such as design, development, digital, outdoors and adventures';
+$localMetaDesc = 'Writing about areas of interest and learnings. Such as product design, development, digital, outdoors and adventures';
 ?>
 <!DOCTYPE html>
 <html lang="en">

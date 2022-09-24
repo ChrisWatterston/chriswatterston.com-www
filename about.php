@@ -79,7 +79,7 @@ $localMetaDesc = 'Passionate about digital product design and architecture, web 
                             </div>
                             <p>Lucozade Energy, Lucozade Sport, Ribena, Merchants Heart, and a handful of others. The products that hydrated, supported, and clenched the thirst of millions of people.</p>
                             <p>During my time at Suntory GB&I, I was lucky enough to work on some of the biggest FMCG digital products and campaigns for many much loved brands. Joining the small team as a freelancer Web Design and Developer in 2018, I hung around and continued the journey to lead the Digital & Technology team 4 years later in a permanent role.</p>
-                            <p>This role involved several responsibilities. Agile digital product management, strategy and scoping, data analytics, designing, UAT/QA testing, building and launching consumer web entry mechanics and interfaces (inc. websites, apps & marketing material), collaborating and supporting legal and brand- and countless other bits, such as managing budgets and external agencies.</p>
+                            <p>This role involved several responsibilities. Agile digital product management, strategy and scoping, data analytics, designing, UAT/QA testing, building and launching consumer web entry mechanics and interfaces (inc. websites, apps & marketing material), collaborating and supporting legal and brand teams (stakeholders), and countless other bits, such as managing budgets and external agencies.</p>
 
                             <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
                                 <div class="_icon" style="background-image: url(/dist/images/brands/logo-experience-wrikified-app.jpg);"></div>

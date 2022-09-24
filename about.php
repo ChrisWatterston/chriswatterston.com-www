@@ -21,6 +21,14 @@ $localMetaDesc = 'Passionate about digital product design and architecture, web 
             </section>
             <article class="<?= $globalPrefix; ?>-article-container _exc-padding _max-width__1000">
                 <div class="__content">
+                    <section class="<?= $globalPrefix; ?>-grid-container _column-about _about-body-mugshot">
+                        <div class="_sub-title">
+                            <h3>Mugshot</h3>
+                        </div>
+                        <div class="_sub-detail">
+                            <img src="/dist/images/id/chris-watterston-self-photo.jpg" alt="Photo of Chris Watterston" class="_id-photo" />
+                        </div>
+                    </section>
                     <section class="<?= $globalPrefix; ?>-grid-container _column-about _about-body-aboutme">
                         <div class="_sub-title">
                             <h3>About Me</h3>

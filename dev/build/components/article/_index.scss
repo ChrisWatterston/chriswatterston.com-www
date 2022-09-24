@@ -59,6 +59,15 @@
   }
   img {
     border-radius: $border-radius__default $border-radius__default 0 0;
+    &._id-photo {
+      border-radius: $border-radius__circle;
+      margin: unset;
+      max-width: 160px;
+      @include mixinResponsive("mobile") {
+        display: block;
+        margin: 0 auto !important;
+      }
+    }
   }
   ._image-caption {
     background-color: $colour-grey__default;

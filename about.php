@@ -1,6 +1,6 @@
 <?
 // Local config
-$localMetaTitle = 'About Chris Watterston - Digital Product Manager, Designer and Dev';
+$localMetaTitle = 'About Chris Watterston - Digital Product Designer, Manager & Dev';
 $localMetaDesc = 'Passionate about digital product design and architecture, web design, development, and product growth.';
 ?>
 <!DOCTYPE html>
@@ -34,8 +34,8 @@ $localMetaDesc = 'Passionate about digital product design and architecture, web 
                             <h3>About Me</h3>
                         </div>
                         <div class="_sub-detail">
-                            <p>My name is Chris Watterston. I'm a Digital Product Design & Manager based just on the outskirts of London (UK), with a strong background in digital design and web development.</p>
-                            <p>I'm passionate about agile digital product design and architecture, web design, development, and product growth. When it comes to digital products- I care a ton about how they look, function, grow with meaning, and the learnings they teach.</p>
+                            <p>My name is Chris Watterston. I'm a Digital Product Designer & Manager based just on the outskirts of London (UK), with a strong background in digital technologies, web design and development.</p>
+                            <p>I'm passionate about agile product design and architecture, web design, development, and product growth. When it comes to digital products- I care a ton about how they look, function, grow with meaning, and the learnings they teach.</p>
                             <p>I also enjoy spending time with family and friends, stepping outdoors, and trying to find the time to kiteboard.</p>
                         </div>
                     </section>

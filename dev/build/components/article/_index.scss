@@ -162,4 +162,11 @@
       min-height: 170px;
     }
   }
+  .__inline-image {
+    margin: $spacing__default 0 $spacing__large;
+    max-width: 100%;
+  }
+  iframe {
+    max-width: 100%;
+  }
 }

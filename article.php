@@ -1,5 +1,22 @@
 <?
 include_once($_SERVER['DOCUMENT_ROOT'] . '/config/keys.contentful.php');
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$options = (new Contentful\Core\File\ImageOptions())
+    ->setProgressive(true);
+
+$client = new \Contentful\Delivery\Client(
+    $accessToken,
+    $spaceId,
+    $environmentId
+);
+
+try {
+    $entry = $client->getEntry('nyancat');
+} catch (\Contentful\Core\Exception\NotFoundException $exception) {
+    // Entry does not exist
+}
+
 //
 // ------------------------------------------------------------
 // ------------------------------------------------------------
@@ -39,12 +56,17 @@ foreach ($jsonContentOutput as $k => $v) {
             $articleBody = str_replace(":instagram-end]</p>", $instaPartB, "$articleBody");
         }
 
-        // // EMBEDDED IMAGE - Search and build embed block
-        // $searchInsta = '<p>[image-embedded]</p>';
-        // $instaPartA = '123';
-        // if (str_contains($articleBody, $searchInsta)) {
-        //     $articleBody = str_replace("<p>[image-embedded]</p>", $instaPartA, "$articleBody");
-        // }
+        // IMAGES - Search and build embed block
+        preg_match_all('/Asset#\w{18,24}/', $articleBody, $articleImageID);
+        foreach ($articleImageID[0] as $imgId) {
+            // Get image asset
+            $assetID = preg_replace('/Asset#/', '', $imgId);
+            $imgGet = $client->getAsset($assetID);
+            $imgUrlSlug = $imgGet->getFile()->getUrl($options);
+            $imgTitle = $imgGet->getFile()->getFileName();
+            // Output image asset
+            $articleBody = str_replace($imgId, '<img class="__inline-image" src="https:' . $imgUrlSlug . '" title="' . $imgTitle . '" />', "$articleBody");
+        }
     }
 }
 

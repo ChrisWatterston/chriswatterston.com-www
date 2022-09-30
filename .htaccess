@@ -49,23 +49,40 @@
 
 # Redirects
 Redirect 301 /blog/interviewed-and-featured-on-an-original-podcast-command-line-heroes-by-red-hat https://www.chriswatterston.com/article/there-is-no-cloud-podcast-feature?utm_source=redirect
+Redirect 301 /article/there-is-no-cloud-podcast-ft https://www.chriswatterston.com/article/there-is-no-cloud-podcast-feature?utm_source=redirect
+Redirect 301 /article.php?article=there-is-no-cloud-podcast-ft https://www.chriswatterston.com/article/there-is-no-cloud-podcast-feature?utm_source=redirect
 Redirect 301 /blog/snow-days-impact-school-websites-in-a-big-way-and-its-important-were-ready https://www.chriswatterston.com/article/snow-impacts-education-website?utm_source=redirect
 Redirect 301 /blog/microsoft-azure-app-service-vs-virtual-machine-why-i-would-consider-you-choose-a-virtual-machine-for-your-hosting-solution https://www.chriswatterston.com/article/azure-web-app-vs-virtual-machine-hosting?utm_source=redirect
+Redirect 301 /article.php?article=azure-web-app-vs-vm-hosting https://www.chriswatterston.com/article/azure-web-app-vs-virtual-machine-hosting?utm_source=redirect
 Redirect 301 /blog/launching-the-official-skoolping-landing-page-website-design https://www.chriswatterston.com/article/beta-launch-skoolping-app-for-education?utm_source=redirect
+Redirect 301 /article.php?article=launching-skoolping-app https://www.chriswatterston.com/article/beta-launch-skoolping-app-for-education?utm_source=redirect
 Redirect 301 /blog/a-much-needed-spotify-widget-for-the-notification-center https://www.chriswatterston.com/article/missing-spotify-widget-mac-os?utm_source=redirect
+Redirect 301 /article.php?article=missing-spotify-widget-mac-os https://www.chriswatterston.com/article/missing-spotify-widget-mac-os?utm_source=redirect
 Redirect 301 /blog/creating-pfx-certificate-files-and-installing-ssl-certificates-on-your-microsoft-azure-web-app-service https://www.chriswatterston.com/article/create-pfx-crt-install-ssl-azure-web-app?utm_source=redirect
 Redirect 301 /blog/meltdown-and-spectre-vulnerability-update https://www.chriswatterston.com/article/meltdown-spectre-cpu-flaw-update?utm_source=redirect
+Redirect 301 /article.php?article=meltdown-spectre-update https://www.chriswatterston.com/article/meltdown-spectre-cpu-flaw-update?utm_source=redirect
 Redirect 301 /blog/setting-2018-with-6-goals-what-i-will-focus-progress-and-experiment-with-throughout-2018 https://www.chriswatterston.com/article/2018-new-year-goal-setting?utm_source=redirect
 Redirect 301 /blog/starting-2016-old-challenges https://www.chriswatterston.com/article/2016-new-year-goal-setting?utm_source=redirect
 Redirect 301 /blog/a-breakdown-of-the-general-data-protection-regulation-gdpr-as-outlined-by-the-ico-information-commissioners-office https://www.chriswatterston.com/article/brief-breakdown-gdpr-ico?utm_source=redirect
+Redirect 301 /article.php?article=brief-breakdown-gdpr-ico https://www.chriswatterston.com/article/brief-breakdown-gdpr-ico?utm_source=redirect
 Redirect 301 /blog/progress-on-skoolping-and-why-theres-been-a-substantial-delay https://www.chriswatterston.com/article/skoolping-app-progress-delay?utm_source=redirect
+Redirect 301 /article.php?article=skoolping-app-progress-delay https://www.chriswatterston.com/article/skoolping-app-progress-delay?utm_source=redirect
 Redirect 301 /blog/the-not-so-shocking-costs-involved-for-your-design-and-development-solutions https://www.chriswatterston.com/article/no-shock-cost-of-web-design-solutions?utm_source=redirect
+Redirect 301 /article.php?article=cost-of-web-design-solutions https://www.chriswatterston.com/article/no-shock-cost-of-web-design-solutions?utm_source=redirect
 Redirect 301 /blog/aerial-footage-from-our-short-family-break-in-bute-scotland https://www.chriswatterston.com/article/aerial-footage-isle-bute-rothesay-scot?utm_source=redirect
+Redirect 301 /article.php?article=aerial-film-isle-bute-scotland https://www.chriswatterston.com/article/aerial-footage-isle-bute-rothesay-scot?utm_source=redirect
 Redirect 301 /blog/building-a-hobbit-adventure-for-our-kids https://www.chriswatterston.com/article/hobbit-adventure-play-house?utm_source=redirect
+Redirect 301 /article.php?article=hobbit-adventure-play-house https://www.chriswatterston.com/article/hobbit-adventure-play-house?utm_source=redirect
 Redirect 301 /blog/genius-60th-birthday-gift-for-her-uncle https://www.chriswatterston.com/article/genius-birthday-gift-guinness-beer-mats?utm_source=redirect
+Redirect 301 /article.php?article=bespoke-guinness-drink-coaster https://www.chriswatterston.com/article/genius-birthday-gift-guinness-beer-mats?utm_source=redirect
 Redirect 301 /blog/there-no-cloud-getting-1-sticker-mule-marketplace https://www.chriswatterston.com/article/my-there-is-no-cloud-sticker?utm_source=redirect
 Redirect 301 /blog/my-there-is-no-cloud-sticker https://www.chriswatterston.com/article/success-of-my-there-is-no-cloud-sticker?utm_source=redirect
 Redirect 301 /blog/my-there-no-cloud-sticker https://www.chriswatterston.com/article/success-of-my-there-is-no-cloud-sticker?utm_source=redirect
+Redirect 301 /article.php?article=snow-impacts-education-website https://www.chriswatterston.com/article/snow-impacts-education-website?utm_source=redirect
+Redirect 301 /article.php?article=get-web-mobile-design-quote https://www.chriswatterston.com/blog?utm_source=redirect
+Redirect 301 /article.php?article=create-pfx-install-ssl-azure https://www.chriswatterston.com/article/create-pfx-crt-install-ssl-azure-web-app?utm_source=redirect
+Redirect 301 /article.php?article=nail-polish-biz-card-design https://www.chriswatterston.com/article/nail-polish-biz-card-design?utm_source=redirect
+
 
 Redirect 301 /case-studies/creating-a-bespoke-web-based-operations-system-that-will-never-be-complete https://www.chriswatterston.com/work/case-study/cdsurveys-bespoke-web-operations-system?utm_source=redirect
 Redirect 301 /case-studies/google-adwords-campaign-landing-page-design-for-land-surveying-and-engineering https://www.chriswatterston.com/work/case-study/cdsurveys-google-adword-landing-page?utm_source=redirect
@@ -78,14 +95,17 @@ Redirect 301 /case-studies/intelligent-transport-services-its-brand-design https
 Redirect 301 /case-studies/moorfields-corporate-recovery-design-work https://www.chriswatterston.com/work/case-study/moorfields-corporate-recovery-design?utm_source=redirect
 Redirect 301 /case-studies/sjbc-college-website-design https://www.chriswatterston.com/work/case-study/sjbc-college-website-redesign?utm_source=redirect
 Redirect 301 /case-studies/my-new-bespoke-embossed-kraft-business-cards https://www.chriswatterston.com/article/bespoke-embossed-kraft-business-cards?utm_source=redirect
-
+Redirect 301 /work/case-study/lucozade-energy-xbox-halo-campaign4 https://www.chriswatterston.com/work/case-study/lucozade-energy-xbox-halo-drink-campaign?utm_source=redirect
+Redirect 301 /work/case-study/lucozade-energy-xbox-halo-campaign5 https://www.chriswatterston.com/work/case-study/lucozade-energy-xbox-halo-drink-campaign?utm_source=redirect
 Redirect 301 /case-studies/html-email-portfolio https://www.chriswatterston.com/work?utm_source=redirect
 Redirect 301 /case-studies/bold-logo-design-for-hms-commercials-sales-specialises https://www.chriswatterston.com/work?utm_source=redirect
 Redirect 301 /case-studies/event-programme-design-for-the-british-society-of-paediatric-dentistry-bspd https://www.chriswatterston.com/work?utm_source=redirect
+Redirect 301 /work/case-study/ribena-hasbro-monoploy-game-campaign https://www.chriswatterston.com/work/case-study/ribena-hasbro-games-fmcg-drink-campaign?utm_source=redirect
 
 Redirect 301 /built.php https://www.chriswatterston.com/work?utm_source=redirect
 Redirect 301 /built https://www.chriswatterston.com/work?utm_source=redirect
 Redirect 301 /shop https://www.chriswatterston.com/store?utm_source=redirect
+Redirect 301 /index.php/what-we-do https://www.chriswatterston.com/about?utm_source=redirect
 
 # Compression
 <IfModule mod_deflate.c>

@@ -83,6 +83,10 @@ Redirect 301 /case-studies/html-email-portfolio https://www.chriswatterston.com/
 Redirect 301 /case-studies/bold-logo-design-for-hms-commercials-sales-specialises https://www.chriswatterston.com/work?utm_source=redirect
 Redirect 301 /case-studies/event-programme-design-for-the-british-society-of-paediatric-dentistry-bspd https://www.chriswatterston.com/work?utm_source=redirect
 
+Redirect 301 /built.php https://www.chriswatterston.com/work?utm_source=redirect
+Redirect 301 /built https://www.chriswatterston.com/work?utm_source=redirect
+Redirect 301 /shop https://www.chriswatterston.com/store?utm_source=redirect
+
 # Compression
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript

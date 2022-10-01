@@ -35,7 +35,7 @@ $localMetaDesc = 'Passionate about digital product design and architecture, web 
                         </div>
                         <div class="_sub-detail">
                             <p>My name is Chris Watterston. I'm a Digital Product Designer & Manager based just on the outskirts of London (UK), with a strong background in digital technologies, web design and development.</p>
-                            <p>I'm passionate about agile product design and architecture, web design, development, and product growth. When it comes to digital products- I care a ton about how they look, function, grow with meaning, and the learnings they teach.</p>
+                            <p>I'm passionate about agile product design and architecture, web design, development, and product growth. When it comes to digital products- I care a ton about how they look, function, grow with value, and the learnings they teach us.</p>
                             <p>I also enjoy spending time with family and friends, stepping outdoors, and trying to find the time to kiteboard.</p>
                         </div>
                     </section>
@@ -92,7 +92,7 @@ $localMetaDesc = 'Passionate about digital product design and architecture, web 
                             <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
                                 <div class="_icon" style="background-image: url(/dist/images/brands/logo-experience-wrikified-app.jpg);"></div>
                                 <div class="_stats">
-                                    <h2>Owner & Digital Product Designer (Side Project)</h2>
+                                    <h2>Owner, Product Manager & Designer (Side Project)</h2>
                                     <h5>Wrikified</h5>
                                     <p class="_post-date">June 2022 - Present (Remote)</p>
                                 </div>

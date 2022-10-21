@@ -1,8 +1,11 @@
 # Output LOGS data files
 /logs/*
 
+# Date
+/data/*.json
+
 # Sitemap
-# /sitemap.xml
+/sitemap.xml
 # /sitemap.xml.gz
 
 # Composer

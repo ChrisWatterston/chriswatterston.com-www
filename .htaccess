@@ -108,6 +108,8 @@ Redirect 301 /built.php https://www.chriswatterston.com/work?utm_source=redirect
 Redirect 301 /built https://www.chriswatterston.com/work?utm_source=redirect
 Redirect 301 /shop https://www.chriswatterston.com/store?utm_source=redirect
 Redirect 301 /index.php/what-we-do https://www.chriswatterston.com/about?utm_source=redirect
+Redirect 301 /mailto:hello@chriswatterston.com https://www.chriswatterston.com/about?utm_source=redirect
+Redirect 301 /tel:+44757563815 https://www.chriswatterston.com/about?utm_source=redirect
 
 # Compression
 <IfModule mod_deflate.c>

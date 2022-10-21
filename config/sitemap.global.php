@@ -30,7 +30,7 @@ return array(
     "KEYWORDS_TO_SKIP" => array(),
 
     // Location + filename where the sitemap will be saved.
-    "SAVE_LOC" => "../sitemap.xml",
+    "SAVE_LOC" => __DIR__ . "/../sitemap.xml",
 
     // Static priority value for sitemap
     "PRIORITY" => 1,

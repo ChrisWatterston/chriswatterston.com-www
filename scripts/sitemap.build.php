@@ -11,6 +11,6 @@ include_once(__DIR__ . '/../config/funcs.global.php');
 // ----------
 //
 // Create an object of the generator class passing the config file
-$smg = new SitemapGenerator(include(__DIR__ . '/../config/sitemap.global.php'));
+$build = new SitemapGenerator(include(__DIR__ . '/../config/sitemap.global.php'));
 // Run the generator
-$smg->GenerateSitemap();
+$build->GenerateSitemap();

@@ -1,31 +1,31 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "SASS - PRODUCTION",
-            "type": "shell",
-            "command": "sass --watch ./dev/build/_core.scss:./dist/css/chriswatterston-www.min.css --no-source-map --style compressed;",
-            "problemMatcher": []
-        },
-        {
-            "label": "SASS - LIVE OVERRIDE",
-            "type": "shell",
-            "command": "sass --watch ./dev/build/_core.scss:./chriswatterston.com-www.dev-local/dist/css/chriswatterston-www.min.css --no-source-map --style compressed;",
-            "problemMatcher": []
-        },
-        {
-            "label": "Contentful - JSON Refresh",
-            "type": "shell",
-            "command": "composer build-contentful-json;",
-            "problemMatcher": []
-        },
-        {
-            "label": "Sitemap - XML Refresh",
-            "type": "shell",
-            "command": "composer build-sitemap-xml;",
-            "problemMatcher": []
-        }
-    ]
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "SASS - PRODUCTION",
+      "type": "shell",
+      "command": "sass --watch ./dev/build/_core.scss:./dist/css/chriswatterston-www.min.css --no-source-map --style compressed;",
+      "problemMatcher": []
+    },
+    {
+      "label": "SASS - LIVE OVERRIDE",
+      "type": "shell",
+      "command": "sass --watch ./dev/build/_core.scss:./chriswatterston.com-www.dev-local/dist/css/chriswatterston-www.min.css --no-source-map --style compressed;",
+      "problemMatcher": []
+    },
+    {
+      "label": "Contentful - JSON Refresh",
+      "type": "shell",
+      "command": "php composer.phar build-contentful-json;",
+      "problemMatcher": []
+    },
+    {
+      "label": "Sitemap - XML Refresh",
+      "type": "shell",
+      "command": "php composer.phar build-sitemap-xml;",
+      "problemMatcher": []
+    }
+  ]
 }

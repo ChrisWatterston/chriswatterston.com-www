@@ -1,21 +1,21 @@
 {
-    "require": {
-        "contentful/core": "^3.2",
-        "contentful/contentful": "^6.4",
-        "contentful/rich-text": "^3.4",
-        "icamys/php-sitemap-generator": "^4.4"
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "@build-contentful-json",
-            "@build-sitemap-xml"
-        ],
-        "build-contentful-json": [
-            "php -q scripts/contentful.work.php",
-            "php -q scripts/contentful.blog.php"
-        ],
-        "build-sitemap-xml": [
-            "php -q scripts/sitemap.build.php"
-        ]
-    }
+  "require": {
+    "contentful/core": "^3.2",
+    "contentful/contentful": "^6.4",
+    "contentful/rich-text": "^3.4",
+    "icamys/php-sitemap-generator": "^4.4"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "@build-contentful-json",
+      "@build-sitemap-xml"
+    ],
+    "build-contentful-json": [
+      "php -q scripts/contentful.work.php",
+      "php -q scripts/contentful.blog.php"
+    ],
+    "build-sitemap-xml": [
+      "php -q scripts/sitemap.build.php"
+    ]
+  }
 }

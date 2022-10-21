@@ -1,11 +1,9 @@
 # Output LOGS data files
-/--logs/*
-/--logs/access_log
-/--logs/error_log
+/logs/*
 
 # Sitemap
-/sitemap.xml
-/sitemap.xml.gz
+# /sitemap.xml
+# /sitemap.xml.gz
 
 # Composer
 vendor/*

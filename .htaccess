@@ -83,8 +83,9 @@ Redirect 301 /article.php?article=get-web-mobile-design-quote https://www.chrisw
 Redirect 301 /article.php?article=create-pfx-install-ssl-azure https://www.chriswatterston.com/article/create-pfx-crt-install-ssl-azure-web-app?utm_source=redirect
 Redirect 301 /article.php?article=nail-polish-biz-card-design https://www.chriswatterston.com/article/nail-polish-biz-card-design?utm_source=redirect
 Redirect 301 /designer-developer-solutions-and-services https://www.chriswatterston.com/about?utm_source=redirect
-Redirect 301 /get-in-contact https://www.chriswatterston.com/about?utm_source=redirect
-
+Redirect 301 /getting-started/project-proposal-and-quotation https://www.chriswatterston.com/about?utm_source=redirect
+Redirect 301 /blog/2017-christmas-advert-lineup-and-the-nutshell-punchline-meaning-behind-them https://www.chriswatterston.com/article/2017-christmas-adverts-and-their-meaning?utm_source=redirect
+Redirect 301 /blog/wish-you-a-merry-christmas-with-a-free-downloadable-christmas-card-design https://www.chriswatterston.com/article/2017-christmas-adverts-and-their-meaning?utm_source=redirect
 
 Redirect 301 /case-studies/creating-a-bespoke-web-based-operations-system-that-will-never-be-complete https://www.chriswatterston.com/work/case-study/cdsurveys-bespoke-web-operations-system?utm_source=redirect
 Redirect 301 /case-studies/google-adwords-campaign-landing-page-design-for-land-surveying-and-engineering https://www.chriswatterston.com/work/case-study/cdsurveys-google-adword-landing-page?utm_source=redirect
@@ -103,6 +104,7 @@ Redirect 301 /case-studies/html-email-portfolio https://www.chriswatterston.com/
 Redirect 301 /case-studies/bold-logo-design-for-hms-commercials-sales-specialises https://www.chriswatterston.com/work?utm_source=redirect
 Redirect 301 /case-studies/event-programme-design-for-the-british-society-of-paediatric-dentistry-bspd https://www.chriswatterston.com/work?utm_source=redirect
 Redirect 301 /work/case-study/ribena-hasbro-monoploy-game-campaign https://www.chriswatterston.com/work/case-study/ribena-hasbro-games-fmcg-drink-campaign?utm_source=redirect
+Redirect 301 /our-work/wood-street-capital https://www.chriswatterston.com/work?utm_source=redirect
 
 Redirect 301 /built.php https://www.chriswatterston.com/work?utm_source=redirect
 Redirect 301 /built https://www.chriswatterston.com/work?utm_source=redirect
@@ -110,6 +112,9 @@ Redirect 301 /shop https://www.chriswatterston.com/store?utm_source=redirect
 Redirect 301 /index.php/what-we-do https://www.chriswatterston.com/about?utm_source=redirect
 Redirect 301 /mailto:hello@chriswatterston.com https://www.chriswatterston.com/about?utm_source=redirect
 Redirect 301 /tel:+44757563815 https://www.chriswatterston.com/about?utm_source=redirect
+Redirect 301 /application/files/ https://www.chriswatterston.com/?utm_source=redirect
+Redirect 301 /googleshopping-productfeed-uk.xml https://www.chriswatterston.com/?utm_source=redirect
+Redirect 301 /get-in-contact https://www.chriswatterston.com/about?utm_source=redirect
 
 # Compression
 <IfModule mod_deflate.c>

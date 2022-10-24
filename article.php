@@ -101,6 +101,23 @@ $localMetaDesc = $articleDescription;
             }]
         }
     </script>
+    <script>
+        // Add anchor IDs to H1, H2, H3, H4 tags
+        document.addEventListener('DOMContentLoaded', function() {
+            Array.prototype.slice.call(document.querySelectorAll('h1,h2,h3,h4')).forEach(function(header) {
+                let chr = '-';
+                let pttn = new RegExp(/[\s_\:\/]/gi);
+                let text = header.textContent.toLowerCase().replace(pttn, chr).replace(/\-{2,}/gi, chr);
+                let existing = header.hasAttribute('id') ? header.getAttribute('id').replace(pttn, chr).replace(/\-{2,}/gi, chr) : false;
+                let id = existing ? [existing, text].join(chr) : text;
+                header.setAttribute('id', id);
+            })
+        }, {
+            capture: false,
+            once: false,
+            passive: false
+        });
+    </script>
 </head>
 
 <body>

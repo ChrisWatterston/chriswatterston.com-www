@@ -94,7 +94,7 @@ h3 {
 
 h4 {
   font-size: calc($font-size__default + 8%);
-  font-weight: 400;
+  font-weight: 600;
   line-height: calc($font-size__default + 20%);
   margin-bottom: $spacing__small;
   text-transform: uppercase;
@@ -102,11 +102,14 @@ h4 {
 
 h5 {
   font-size: $font-size__default;
-  font-weight: 400;
+  font-weight: 600;
+  margin-top: $spacing__default;
+  margin-bottom: $spacing__small;
   text-transform: uppercase;
 }
 
 h6 {
   font-size: $font-size__default;
-  font-weight: 400;
+  font-weight: 600;
+  margin-bottom: $spacing__small;
 }

@@ -55,13 +55,13 @@ sub {
 }
 
 hr {
-  margin-bottom: $spacing__large;
+  margin: $spacing__default 0 $spacing__large;
 }
 
 blockquote {
   border-left: 10px solid $colour-purple__default;
-  margin: 0 0 $spacing__large $spacing__large;
-  padding: $spacing__default 0 $spacing__default $spacing__large;
+  margin: $spacing__small 0 $spacing__large $spacing__large;
+  padding: 0 0 $spacing__small $spacing__large;
   p {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: italic;

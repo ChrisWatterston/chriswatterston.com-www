@@ -104,7 +104,7 @@ $localMetaDesc = $articleDescription;
     <script>
         // Add anchor IDs to H1, H2, H3, H4 tags
         document.addEventListener('DOMContentLoaded', function() {
-            Array.prototype.slice.call(document.querySelectorAll('h1,h2,h3,h4')).forEach(function(header) {
+            Array.prototype.slice.call(document.querySelectorAll('h1,h2,h3,h4,h5')).forEach(function(header) {
                 let chr = '-';
                 let pttn = new RegExp(/[\s_\:\/]/gi);
                 let text = header.textContent.toLowerCase().replace(pttn, chr).replace(/\-{2,}/gi, chr);

@@ -79,8 +79,26 @@
     ul,
     ol {
       padding-left: $spacing__large;
+      margin-bottom: $spacing__default;
       p {
         padding-left: $spacing__default;
+        padding-bottom: $spacing__default;
+      }
+    }
+    ol {
+      counter-reset: item;
+      li {
+        display: block;
+        position: relative;
+        &:before {
+          content: counters(item, ".") " ";
+          counter-increment: item;
+          font-family: $font-family__default;
+          font-weight: 600;
+          left: -15px;
+          position: absolute;
+          top: 5px;
+        }
       }
     }
   }

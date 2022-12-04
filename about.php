@@ -44,7 +44,7 @@ $localMetaDesc = 'Passionate about digital product design and architecture, web 
                             <h3>Contacting</h3>
                         </div>
                         <div class="_sub-detail">
-                            <p>Email me directly at <a href="mailto:hello@chriswatterston.com" title="Email Chris Watterston" class="_link-colour__purple">hello@chriswatterston.com</a> is the best way to reach out to me.</p>
+                            <p>Email me directly at <a href="mailto:hello@chriswatterston.com" title="Email Chris Watterston" class="_link-colour__purple">hello@chriswatterston.com</a>, is the best way to reach out to me.</p>
                             <p>Alternatively, you can call or message (inc. WhatsApp) me on <a href="tel:+44757563815" title="Call Chris Watterston" class="_link-colour__purple">(+44) 07515 163815</a>.</p>
                         </div>
                     </section>
@@ -80,7 +80,7 @@ $localMetaDesc = 'Passionate about digital product design and architecture, web 
                             <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
                                 <div class="_icon" style="background-image: url(/dist/images/brands/logo-experience-suntory-gbi.jpg);"></div>
                                 <div class="_stats">
-                                    <h2>Sr Developer & Digital Projects Manager (TED, In-House Agency)</h2>
+                                    <h2>Sr Developer & Digital Projects Manager (TED, Digital In-House Agency)</h2>
                                     <h5>Suntory Beverage & Food GB&I</h5>
                                     <p class="_post-date">March 2018 - November 2022 (Remote + on-site)</p>
                                 </div>

@@ -42,10 +42,11 @@ h1 {
   font-size: $font-size__medium;
   text-transform: capitalize;
   &._intro {
-    font-size: calc($font-size__default + 20%);
+    font-size: calc($font-size__default + 50%);
     font-weight: 600;
     line-height: calc($font-size__default + 50%);
-    margin-bottom: $spacing__large;
+    margin-bottom: $spacing__small;
+    margin-top: $spacing__default;
   }
   &._stacked {
     font-size: $font-size__large;
@@ -80,6 +81,7 @@ h2 {
       font-size: calc($font-size__large - 2.5rem);
       letter-spacing: -0.55rem;
       line-height: math.div($font-size__large, 2.8);
+      margin-left: -10px;
     }
   }
 }
@@ -90,6 +92,13 @@ h3 {
   line-height: calc($font-size__default + 40%);
   margin-bottom: $spacing__small;
   text-transform: capitalize;
+  &._intro {
+    font-size: calc($font-size__default + 20%);
+    font-weight: 500;
+    line-height: calc($font-size__default + 50%);
+    margin-bottom: $spacing__large;
+    text-transform: none;
+  }
 }
 
 h4 {

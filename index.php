@@ -1,6 +1,6 @@
 <?
 // Local config
-$localMetaTitle = 'Chris Watterston - Digital Product Designer, Manager, Dev, Kiteboarder + Blogger';
+$localMetaTitle = 'Agile Digital Product Designer, Manager * Dev in London - Chris Watterston';
 $localMetaDesc = 'Digital Product Designer & Manager, with a strong background in digital technologies, web design & development. Enjoys kiteboarding, blogging + stepping outdoors';
 ?>
 <!DOCTYPE html>
@@ -19,10 +19,11 @@ $localMetaDesc = 'Digital Product Designer & Manager, with a strong background i
             <section class="<?= $globalPrefix; ?>-intro-container _intro _text-align__center">
                 <h2 class="_green _stacked">Opportune</h2>
                 <h2 class="_yellow _stacked">Explore</h2>
-                <h2 class="_purple _stacked">Build</h2>
+                <h2 class="_purple _stacked">Design&Build</h2>
                 <h2 class="_red _stacked">Launch</h2>
                 <h2 class="_black _stacked">Test&Learn</h2>
-                <h1 class="_intro">I'm a <a href="/about" title="Agile Digital Product Designer & Manager in London" class="_link-colour__purple">Digital Product Designer & Manager</a>, with a strong background in <a href="/about" title="digital technologies, web design and development background" class="_link-colour__purple">digital technologies, web design & development</a></h1>
+                <h1 class="_intro">I'm an entrepreneurial spirited <a href="/about" title="Agile and entrepreneurial spirited Digital Product Designer & Manager in London" class="_link-colour__purple">Digital Product Designer & Manager</a>,</h1>
+                <h3 class="_intro">with a strong background in <a href="/about" title="Digital Technologies, Design and Web Development background" class="_link-colour__purple">Digital Technologies, Design & Web Development.</a></h3>
             </section>
             <div class="<?= $globalPrefix; ?>-grid-container _work-latest _listing _work">
                 <?php

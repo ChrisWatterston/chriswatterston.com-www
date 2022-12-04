@@ -117,7 +117,7 @@ $localMetaDesc = 'Passionate about digital product design and architecture, web 
                             <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
                                 <div class="_icon" style="background-image: url(/dist/images/brands/logo-experience-chris-watterston.jpg);"></div>
                                 <div class="_stats">
-                                    <h2>Web & Mobile Designer & Developer</h2>
+                                    <h2>Digital Designer & Developer</h2>
                                     <h5>Freelance</h5>
                                     <p class="_post-date">Sept 2013 - Jan 2021</p>
                                 </div>

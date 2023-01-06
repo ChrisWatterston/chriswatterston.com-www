@@ -13,4 +13,5 @@ if (getenv('ENVIRONMENT_STATE') === 'production') {
             gtag(\'config\', \'G-V9KJ4D564B\');
         </script>
     ';
+    echo '<script async defer src="https://scripts.withcabin.com/hello.js"></script>';
 }

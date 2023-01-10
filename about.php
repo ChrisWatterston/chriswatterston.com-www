@@ -1,7 +1,8 @@
 <?
 // Local config
-$localMetaTitle = 'About Chris Watterston - Digital Product Designer, Manager & Dev';
-$localMetaDesc = 'Passionate about digital product design and architecture, web design, development, and product growth.';
+$localMetaTitle = 'A Digital Product Designer & Manager, with a Passion for Creating Digital Products';
+$localMetaDesc = 'Chris Watterston is a London based Digital Product Designer and Manager, with a strong background in digital tech and web dev. Entrepreneurial spirit and creator of digital products.';
+$localMetaKeywords = 'London UK Digital Product Designer, London UK Digital Product Manager, Digital Design System Designer, Digital Marketing, Figma Designer, London UX Designer, Designer with web development experience, About Chris Watterston, There is No Cloud Designer, Digital Designer';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,21 +32,25 @@ $localMetaDesc = 'Passionate about digital product design and architecture, web 
                     </section>
                     <section class="<?= $globalPrefix; ?>-grid-container _column-about _about-body-aboutme">
                         <div class="_sub-title">
-                            <h3>About Me</h3>
+                            <h3>About</h3>
                         </div>
                         <div class="_sub-detail">
-                            <p>My name is Chris Watterston. I'm an entrepreneurial spirited Digital Product Designer & Manager based just on the outskirts of London (UK), with strong background in digital technologies, design and web development.</p>
-                            <p>I'm passionate about agile product design and architecture, web design, development, and product growth. When it comes to digital products- I care a ton about how they look, function, grow with value, and the learnings they teach us.</p>
-                            <p>I also enjoy spending time with family and friends, being outdoors, and trying to find the time to kiteboard.</p>
+                            <p>Chris Watterston is a Digital Product Designer and Manager, with a strong background in digital tech, UX and web dev. Today, he has over 13 years experience in bring award winning digital products to life.</p>
+                            <p>Chris started his career working for an edu. IT services provider, handling web project design and management for over 30 clients.</p>
+                            <p>5 years later, he took a leap in becoming a freelance Digital Designer and Developer. It was during this time he noticed an inner entrepreneurial spirit and passion for creating digital products.</p>
+                            <p>Next Chris joined Suntory GB&I in supporting their creative in-house agency. He continued to made headway and later lead the Digital Design & Technology team. During this time, he designed and managed some of their biggest digital campaigns and products, deploying to over 8.1 million users- winning multiple ESA Awards.</p>
+                            <p>Throughout his career, Chris has worked with some of the biggest brands. Lucozade, Ribena, Orangina, Microsoft Xbox, Hasbro Gaming, Anthony Joshua Boxing, the England football teams, Kyocera, UCC Coffee, Lyons Coffee, Metricly, and the British Society of Paediatric Dentistry to mention a few.</p>
+                            <p>Chris has built a passion for agile digital product design, UX, development, and product growth. When it comes to digital products- he cares about how they look, function, create value, and what is learnt from them.</p>
+                            <p>Outside of work, Chris enjoy spending time with family and friends, being outdoors, and trying to find the time to kite board.</p>
                         </div>
                     </section>
                     <section class="<?= $globalPrefix; ?>-grid-container _column-about _about-body-contacting">
                         <div class="_sub-title">
-                            <h3>Contacting</h3>
+                            <h3>Contact</h3>
                         </div>
                         <div class="_sub-detail">
-                            <p>Email me directly at <a href="mailto:hello@chriswatterston.com" title="Email Chris Watterston" class="_link-colour__purple">hello@chriswatterston.com</a>, is the best way to reach out to me.</p>
-                            <p>Alternatively, you can call or message (inc. WhatsApp) me on <a href="tel:+44757563815" title="Call Chris Watterston" class="_link-colour__purple">(+44) 07515 163815</a>.</p>
+                            <p>Email directly at <a href="mailto:hello@chriswatterston.com" title="Email London Product Designer and Manager Chris Watterston" class="_link-colour__purple">hello@chriswatterston.com</a>.</p>
+                            <p>Alternatively, you can call or message (inc. WhatsApp) via <a href="tel:+44757563815" title="Call London Product Designer and Manager Chris Watterston" class="_link-colour__purple">(+44) 07515 163815</a>.</p>
                         </div>
                     </section>
                     <section class="<?= $globalPrefix; ?>-grid-container _column-about _about-body-social">
@@ -86,9 +91,9 @@ $localMetaDesc = 'Passionate about digital product design and architecture, web 
                                 </div>
                             </div>
                             <div class="_article-body">
-                                <p>During my role at Suntory, I worked on some of the biggest FMCG brands, producing and launching digital products and experiences to over 8.1 million users.</p>
-                                <p>I joined their small team as a freelancer Web Design and Developer in 2018. Since then, I continued my journey to lead the Digital Design & Technology team in a permanent role.</p>
-                                <p>My role involved a vast array of responsibilities. Broadly listed, these involved;</p>
+                                <p>During Chris' time at Suntory GB&I, he designed and managed some of their biggest digital campaigns and products, deploying to over 8.1 million users- winning multiple ESA Awards.</p>
+                                <p>Chris joined Suntory in supporting their small creative in-house agency. He continued to made headway and later lead the Digital Design & Technology team.</p>
+                                <p>Chris' role involved a vast array of responsibilities. Broadly listed, these involved;</p>
                                 <ul>
                                     <li>
                                         <p>problem solving (design, technical + business),</p>
@@ -123,9 +128,9 @@ $localMetaDesc = 'Passionate about digital product design and architecture, web 
                                 </div>
                             </div>
                             <div class="_article-body">
-                                <p>While freelancing for little over 7 years, I thrived by throwing myself into the deep end- which taught and allowed me to progress!</p>
-                                <p>I was responsible for everything required to run a business. Not only did I provide high-end and guaranteed digital solutions directly to clients, but also handled marketing and finance. Clients ranged from start-ups, established organisations, schools and colleges.</p>
-                                <p>It was also during this time that I found my inner entrepreneurial spirit and passion for getting suck into creating digital products and business.</p>
+                                <p>While Chris was freelancing for over 7 years, he thrived by throwing himself into the deep end- which taught and allowed his to progress faster.</p>
+                                <p>Chris was responsible for everything required to run a business. Not only did he provide high-end and guaranteed digital solutions directly to his clients, but also handled digital marketing and finance. Clients ranged from start-ups, established organisations, schools and colleges.</p>
+                                <p>It was during this time he noticed an inner entrepreneurial spirit and passion for creating digital products.</p>
                             </div>
 
                             <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
@@ -137,9 +142,8 @@ $localMetaDesc = 'Passionate about digital product design and architecture, web 
                                 </div>
                             </div>
                             <div class="_article-body">
-                                <p>During my role within this college, I was responsible for the design and roadmap of all web products, as well as managing our two back-end devs.</p>
-                                <p>Our team designed and built digital products for over 30 different schools, colleges and private businesses.</p>
-                                <p>Some of these digital products where;</p>
+                                <p>Chris was responsible for the design and roadmap of all web products and clients, as well as managing our two back-end devs.</p>
+                                <p>The team designed and built digital products for over 30 schools, colleges and private businesses. These digital products were;</p>
                                 <ul>
                                     <li>
                                         <p>Perpool: the next generation of HR and Personnel, in it's simplest form, on the internet and with no paperwork. From holiday requests to facility bookings and right back to observation- the list goes on.</p>

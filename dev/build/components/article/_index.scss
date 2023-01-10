@@ -36,6 +36,34 @@
   }
   ._post-date {
     margin: 0 auto $spacing__default;
+    position: relative;
+    &.-active {
+      padding-left: ($spacing__default + $spacing__small);
+      &:before {
+        animation: aniActivePulse 0.5s linear 0s infinite alternate both;
+        background: $colour-green__default;
+        border-radius: 50%;
+        content: " ";
+        height: 10px;
+        left: 0;
+        position: absolute;
+        width: 10px;
+      }
+    }
+    &.-paused {
+      padding-left: ($spacing__default + $spacing__small);
+      &:before {
+        animation: aniPausedPulse 0.5s linear 0s infinite alternate both;
+        background: transparent;
+        content: " ";
+        height: 10px;
+        left: 0;
+        position: absolute;
+        width: 3px;
+        border-right: 3px solid $colour-black__default;
+        border-left: 3px solid $colour-black__default;
+      }
+    }
     span {
       color: $colour-purple__default;
     }
@@ -187,5 +215,31 @@
   }
   iframe {
     max-width: 100%;
+  }
+}
+
+//
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// ---------- ANIMATION  ----------
+// ----------
+// ----------
+//
+@keyframes aniActivePulse {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+@keyframes aniPausedPulse {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
   }
 }

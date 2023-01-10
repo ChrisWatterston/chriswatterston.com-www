@@ -1,7 +1,8 @@
 <?
 // Local config
-$localMetaTitle = 'Agile Digital Product Designer, Manager * Dev in London - Chris Watterston';
-$localMetaDesc = 'Digital Product Designer & Manager, with a strong background in digital technologies, web design & development. Enjoys kiteboarding, blogging + stepping outdoors';
+$localMetaTitle = 'Agile Digital Product Designer & Manager + UX & Dev in London - Chris Watterston';
+$localMetaDesc = 'Digital Product Designer & Manager, with a strong background in digital technologies, UX and we dev. Enjoys kite boarding, blogging + stepping outdoors';
+$localMetaKeywords = 'London UK Digital Product Designer, London UK Digital Product Manager, Digital Design System Designer, Digital Marketing, Figma Designer, London UX Designer, Designer with web development experience, Chris Watterston, There is No Cloud Sticker, Digital Designer';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,8 +23,8 @@ $localMetaDesc = 'Digital Product Designer & Manager, with a strong background i
                 <h2 class="_purple _stacked">Design&Build</h2>
                 <h2 class="_red _stacked">Launch</h2>
                 <h2 class="_black _stacked">Test&Learn</h2>
-                <h1 class="_intro">I'm an entrepreneurial spirited <a href="/about" title="Agile and entrepreneurial spirited Digital Product Designer & Manager in London" class="_link-colour__purple">Digital Product Designer & Manager</a>,</h1>
-                <h3 class="_intro">with a strong background in <a href="/about" title="Digital Technologies, Design and Web Development background" class="_link-colour__purple">Digital Technologies, Design & Web Development.</a></h3>
+                <h1 class="_intro">An entrepreneurial spirited <a href="/about" title="Agile and entrepreneurial spirited Digital Product Designer & Product Manager in London" class="_link-colour__purple">Digital Product Designer & Manager</a>,</h1>
+                <h3 class="_intro">with a strong background in <a href="/about" title="background in Digital Technologies, UX and Web Development" class="_link-colour__purple">Digital Tech, UX & Web Dev.</a></h3>
             </section>
             <div class="<?= $globalPrefix; ?>-grid-container _work-latest _listing _work">
                 <?php

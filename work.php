@@ -1,7 +1,8 @@
 <?
 // Local config
-$localMetaTitle = 'Portfolio of Crafted and Collaborated Work - Chris Watterston';
+$localMetaTitle = 'Digital Product Designer Case Studies & Portfolio of Work - Chris Watterston';
 $localMetaDesc = 'Work and case studies from throughout the years. From digital product design and development, to agile management and architecture';
+$localMetaKeywords = 'Digital Designer Work, Digital Designer Portfolio, Digital Product Design Work, Digital Product Design Portfolio, London UK Designer Work, London UK Designer Portfolio, London UK UX Designer Work, London UK UX Designer Portfolio, Chris Watterston Work Portfolio';
 ?>
 <!DOCTYPE html>
 <html lang="en">

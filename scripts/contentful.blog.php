@@ -41,6 +41,7 @@ foreach ($entriesList as $key => $entry) {
     $articleList[$i]['articleTitle'] = $entry->get('articleTitle');
     $articleList[$i]['articleUrlSlug'] = $entry->get('articleUrlSlug');
     $articleList[$i]['articleDescription'] = $entry->get('articleDescription');
+    $articleList[$i]['articleKeywords'] = $entry->get('articleKeywords');
     $articleList[$i]['articleHeroImage'] = $entry->get('articleHeroImage');
     // Extract rich text
     $renderer = new Contentful\RichText\Renderer();

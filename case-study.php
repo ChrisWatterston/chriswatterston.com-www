@@ -19,6 +19,7 @@ foreach ($jsonContentOutput as $k => $v) {
         $workHeroImageTitle = $v['workHeroImage']['fields']['title'];
         $workTitle = $v['workTitle'];
         $workDescription = $v['workDescription'];
+        $workKeywords = $v['workKeywords'];
         $workLiveDate = $v['workLiveDate'];
         $workUpdateDate = $v['workUpdateDate'];
         $workBodyIntro = $v['workBodyIntro'];
@@ -38,6 +39,7 @@ foreach ($jsonContentOutput as $k => $v) {
 // Local config
 $localMetaTitle = $workTitle . ' - Chris Watterston';
 $localMetaDesc = $workDescription;
+$localMetaKeywords = $workKeywords;
 ?>
 <!DOCTYPE html>
 <html lang="en">

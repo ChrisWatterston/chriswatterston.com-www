@@ -15,6 +15,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/config/vars.global.php');
 
 <title><?php echo $localMetaTitle; ?></title>
 <meta name="description" content="<?php echo $localMetaDesc; ?>" />
+<meta name="keywords" content="<?php echo $localMetaKeywords; ?>" />
 
 <link type="text/css" rel="stylesheet" href="<?php echo $globalDomainRoot; ?>dist/css/chriswatterston-www.min.css" />
 <link rel="apple-touch-icon" href="<?php echo $globalDomainRoot; ?>dist/images/device/apple-touch-icon.png">
@@ -40,7 +41,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/config/vars.global.php');
         "familyName": "Watterston",
         "givenName": "Chris",
         "worksFor": "https://www.chriswatterston.com/",
-        "jobTitle": "Digital Project Manager",
+        "jobTitle": "Digital Product Designer & Manager",
         "image": "https://www.chriswatterston.com/dist/images/id/chris-watterston-self-photo.jpg",
         "gender": "http://schema.org/Male",
         "sameAs": ["https://twitter.com/chriswatterston", "https://www.linkedin.com/in/chriswatterston/", "https://github.com/ChrisWatterston"]

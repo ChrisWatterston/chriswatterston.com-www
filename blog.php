@@ -1,7 +1,8 @@
 <?
 // Local config
-$localMetaTitle = 'Blog, Write and Express - Chris Watterston';
-$localMetaDesc = 'Writing about areas of interest and learnings. Such as product design, development, digital, outdoors and adventures';
+$localMetaTitle = 'Thoughts, Ideas & Expressions. Simple Words from a Digital Product Designer & Manager';
+$localMetaDesc = 'Writing about areas of interest and learnings from a Digital Product Designer. But may also cover development, outdoors, nature and adventures';
+$localMetaKeywords = 'digital product design blog, blog about digital product design field and processes, web tech blog and articles';
 ?>
 <!DOCTYPE html>
 <html lang="en">

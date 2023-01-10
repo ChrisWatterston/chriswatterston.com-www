@@ -41,6 +41,7 @@ foreach ($entriesList as $key => $entry) {
     $workList[$i]['workTitle'] = $entry->get('workTitle');
     $workList[$i]['workUrlSlug'] = $entry->get('workUrlSlug');
     $workList[$i]['workDescription'] = $entry->get('workDescription');
+    $workList[$i]['workKeywords'] = $entry->get('workKeywords');
     $workList[$i]['workHeroImage'] = $entry->get('workHeroImage');
     $workList[$i]['workClientLogo'] = $entry->get('workClientLogo');
     $workList[$i]['workRoleTags'] = $entry->get('workRoleTags');

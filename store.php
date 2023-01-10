@@ -2,6 +2,7 @@
 // Local config
 $localMetaTitle = 'Store Reopening Soon - Chris Watterston';
 $localMetaDesc = 'The official home of the original \'There Is No Cloud\' sticker, clothing and merchandise';
+$localMetaKeywords = 'There is no Cloud, There is no Cloud Sticker, There is no Cloud Merchandise, Chris Watterston Store';
 ?>
 <!DOCTYPE html>
 <html lang="en">

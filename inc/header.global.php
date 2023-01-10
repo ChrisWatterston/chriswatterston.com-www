@@ -13,20 +13,29 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/config/vars.global.php');
 <meta name="googlebot" content="index,follow" />
 <meta name="robots" content="index,follow" />
 
-<title><?php echo $localMetaTitle; ?></title>
-<meta name="description" content="<?php echo $localMetaDesc; ?>" />
-<meta name="keywords" content="<?php echo $localMetaKeywords; ?>" />
+<title><?= $localMetaTitle; ?></title>
+<meta name="description" content="<?= $localMetaDesc; ?>" />
+<meta name="keywords" content="<?= $localMetaKeywords; ?>" />
 
-<link type="text/css" rel="stylesheet" href="<?php echo $globalDomainRoot; ?>dist/css/chriswatterston-www.min.css" />
-<link rel="apple-touch-icon" href="<?php echo $globalDomainRoot; ?>dist/images/device/apple-touch-icon.png">
-<link rel="icon" href="<?php echo $globalDomainRoot; ?>favicon.ico" />
-<link rel="shortcut icon" href="<?php echo $globalDomainRoot; ?>favicon.ico" />
+<!-- Canonical details  -->
+<?php
+$a = ($_SERVER['REQUEST_URI']);
+$t = trim($a, ".php");
+$d = rtrim($t, '/') . '/';
+$canonicalURL = substr($globalDomainRoot, 0, -1) . $d;
+?>
+<link rel="canonical" href="<?= $canonicalURL ?>" />
+
+<link type="text/css" rel="stylesheet" href="<?= $globalDomainRoot; ?>dist/css/chriswatterston-www.min.css" />
+<link rel="apple-touch-icon" href="<?= $globalDomainRoot; ?>dist/images/device/apple-touch-icon.png">
+<link rel="icon" href="<?= $globalDomainRoot; ?>favicon.ico" />
+<link rel="shortcut icon" href="<?= $globalDomainRoot; ?>favicon.ico" />
 <meta property="og:type" content="website" />
 
 <!-- Sharing details  -->
-<meta property="og:url" content="<?php echo $globalDomainRoot; ?>" />
-<meta property="og:title" content="<?php echo $localMetaTitle; ?>" />
-<meta property="og:description" content="<?php echo $localMetaDesc; ?>" />
+<meta property="og:url" content="<?= $globalDomainRoot; ?>" />
+<meta property="og:title" content="<?= $localMetaTitle; ?>" />
+<meta property="og:description" content="<?= $localMetaDesc; ?>" />
 
 <!-- Libraries -->
 <style>

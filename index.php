@@ -1,6 +1,6 @@
 <?
 // Local config
-$localMetaTitle = 'Agile Digital Product Designer & Manager + UX & Dev in London - Chris Watterston';
+$localMetaTitle = 'Digital Product Designer & Manager, UX and Dev in London UK';
 $localMetaDesc = 'Digital Product Designer & Manager, with a strong background in digital technologies, UX and we dev. Enjoys kite boarding, blogging + stepping outdoors';
 $localMetaKeywords = 'London UK Digital Product Designer, London UK Digital Product Manager, Digital Design System Designer, Digital Marketing, Figma Designer, London UX Designer, Designer with web development experience, Chris Watterston, There is No Cloud Sticker, Digital Designer';
 ?>

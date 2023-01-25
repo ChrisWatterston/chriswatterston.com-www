@@ -1,8 +1,8 @@
 <?
 // Local config
-$localMetaTitle = 'Digital Product Designer & Manager, UX and Dev in London UK';
-$localMetaDesc = 'Digital Product Designer & Manager, with a strong background in digital technologies, UX and we dev. Enjoys kite boarding, blogging + stepping outdoors';
-$localMetaKeywords = 'London UK Digital Product Designer, London UK Digital Product Manager, Digital Design System Designer, Digital Marketing, Figma Designer, London UX Designer, Designer with web development experience, Chris Watterston, There is No Cloud Sticker, Digital Designer';
+$localMetaTitle = 'Agile & Visionary Digital Product Designer & Manager in London UK';
+$localMetaDesc = 'Digital Product Designer & Manager, with a strong background in digital technology, User Experience (UX), and Web Development';
+$localMetaKeywords = 'Agile and Visionary Product Designer, London UK Digital Product Designer, London UK Digital Product Manager, Digital Design System Designer, Digital Marketing, Figma Designer, London UX Designer, Designer with web development experience, Chris Watterston, There is No Cloud Sticker, Digital Designer';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,8 +23,8 @@ $localMetaKeywords = 'London UK Digital Product Designer, London UK Digital Prod
                 <h2 class="_purple _stacked">Design&Build</h2>
                 <h2 class="_red _stacked">Launch</h2>
                 <h2 class="_black _stacked">Test&Learn</h2>
-                <h1 class="_intro">An entrepreneurial spirited <a href="/about" title="Agile and entrepreneurial spirited Digital Product Designer & Product Manager in London" class="_link-colour__purple">Digital Product Designer & Manager</a>,</h1>
-                <h3 class="_intro">with a strong background in <a href="/about" title="background in Digital Technologies, UX and Web Development" class="_link-colour__purple">Digital Tech, UX & Web Dev.</a></h3>
+                <h1 class="_intro">I'm an agile & visionary <a href="/about" title="Agile and visionary Digital Product Designer & Product Manager in London" class="_link-colour__purple">Digital Product Designer & Manager</a>,</h1>
+                <h3 class="_intro">with a strong background in <a href="/about" title="background in Digital Technology, User Experience (UX), and Web Development." class="_link-colour__purple">Digital Technology, User Experience (UX), and Web Development.</a></h3>
             </section>
             <div class="<?= $globalPrefix; ?>-grid-container _work-latest _listing _work">
                 <?php

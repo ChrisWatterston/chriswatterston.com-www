@@ -36,13 +36,13 @@ $localMetaKeywords = 'Agile and Visionary Product Designer, London UK Digital Pr
                         </div>
                         <div class="_sub-detail">
                             <p>My name is Chris Watterston. I'm an agile and visionary <strong>Digital Product Designer and Manager</strong>, with a strong background in <strong>Digital Technology, User Experience (UX), and Web Development</strong>.</p>
-                            <p>As of 2023, I have over 13 years experience in bring award winning digital products to life.</p>
+                            <p>As of 2023, I have <strong>over 13 years experience in bring award winning digital products to life</strong>.</p>
+                            <p>Throughout my career, I've worked with some of the biggest brands. Lucozade, Ribena, Orangina, Microsoft Xbox, Hasbro Gaming, Anthony Joshua Boxing, the England football teams, Kyocera, UCC Coffee, Lyons Coffee, Metricly, and the British Society of Paediatric Dentistry to mention a few.</p>
                             <p>I started my career working for an educational IT services provider, handling web project design and management for over 30 clients.</p>
                             <p>5 years later, I took a leap in becoming a freelance Digital Designer and Developer. It was during this time I noticed my entrepreneurial spirit and passion for building digital solutions and products from the ground up. Understanding the foundations of business, agility, client management, and the benefits of working swiftly.</p>
                             <p>Next, I joined Suntory Beverage & Food in supporting their creative in-house agency. I continued to made headway and later lead the Digital Design & Technology team and supporting the growth of the team. During this period, <strong>I designed, managed and launched some of their biggest digital campaigns and products to date, deploying to over 8.1 million unique users- winning multiple ESA Awards</strong>.</p>
-                            <p>Throughout my career, I've worked with some of the biggest brands. Lucozade, Ribena, Orangina, Microsoft Xbox, Hasbro Gaming, Anthony Joshua Boxing, the England football teams, Kyocera, UCC Coffee, Lyons Coffee, Metricly, and the British Society of Paediatric Dentistry to mention a few.</p>
                             <p>I have built a passion for agile digital product design, UX, development, build (0-1) and growth. When it comes to digital products- I cares about how they look, function, create value, and what is learnt from them.</p>
-                            <p>Outside of work, I enjoy spending time with family and friends, being outdoors, and trying to find the time to kite board.</p>
+                            <p>Outside of work, I enjoy spending time with family and friends, being outdoors and kite boarding.</p>
                         </div>
                     </section>
                     <section class="<?= $globalPrefix; ?>-grid-container _column-about _about-body-contacting">

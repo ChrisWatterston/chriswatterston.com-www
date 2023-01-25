@@ -60,19 +60,19 @@ $localMetaKeywords = 'Agile and Visionary Product Designer, London UK Digital Pr
                         </div>
                         <div class="_sub-detail">
                             <p>
-                                <a href="https://github.com/ChrisWatterston" target="_blank" title="Visit Chris Watterston's Github Profile" class="_about-social-icons">
+                                <a href="https://github.com/ChrisWatterston?utm_source=cv" target="_blank" title="Visit Chris Watterston's Github Profile" class="_about-social-icons">
                                     <img src="/dist/images/icons/icon-github-black.svg" alt="GitHub" />
                                 </a>
-                                <a href="https://twitter.com/chriswatterston" target="_blank" title="Visit Chris Watterston's Twitter Profile" class="_about-social-icons">
+                                <a href="https://twitter.com/chriswatterston?utm_source=cv" target="_blank" title="Visit Chris Watterston's Twitter Profile" class="_about-social-icons">
                                     <img src="/dist/images/icons/icon-twitter-black.svg" alt="Twitter" />
                                 </a>
-                                <a href="https://www.linkedin.com/in/chriswatterston/" target="_blank" title="Visit Chris Watterston's LinkedIn Profile" class="_about-social-icons">
+                                <a href="https://www.linkedin.com/in/chriswatterston/?utm_source=cv" target="_blank" title="Visit Chris Watterston's LinkedIn Profile" class="_about-social-icons">
                                     <img src="/dist/images/icons/icon-linkedin-black.svg" alt="LinkedIn" />
                                 </a>
-                                <a href="https://www.figma.com/@chriswatterston" target="_blank" title="Visit Chris Watterston's Figma Profile" class="_about-social-icons">
+                                <a href="https://www.figma.com/@chriswatterston?utm_source=cv" target="_blank" title="Visit Chris Watterston's Figma Profile" class="_about-social-icons">
                                     <img src="/dist/images/icons/icon-figma-black.svg" alt="Figma" />
                                 </a>
-                                <a href="https://dribbble.com/chriswatterston" target="_blank" title="Visit Chris Watterston's Dribbble Profile" class="_about-social-icons">
+                                <a href="https://dribbble.com/chriswatterston?utm_source=cv" target="_blank" title="Visit Chris Watterston's Dribbble Profile" class="_about-social-icons">
                                     <img src="/dist/images/icons/icon-dribbble-black.svg" alt="Dribbble" />
                                 </a>
                             </p>

@@ -52,7 +52,7 @@ $localMetaKeywords = 'Digital Designer Work, Digital Designer Portfolio, Digital
                     echo '
                                 </p>
                             </div>
-                            <a href="/work/case-study/' . $v['workUrlSlug'] . '" class="_hidden" title="' . $v['workTitle'] . '">&#32;</a>
+                            <a href="/work/case-study/' . $v['workUrlSlug'] . '?utm_source=work" class="_hidden" title="' . $v['workTitle'] . '">&#32;</a>
                         </article>
                     ';
                 }
@@ -89,7 +89,7 @@ $localMetaKeywords = 'Digital Designer Work, Digital Designer Portfolio, Digital
                     echo '
                                 </p>
                             </div>
-                            <a href="/work/case-study/' . $v['workUrlSlug'] . '" class="_hidden" title="' . $v['workTitle'] . '">&#32;</a>
+                            <a href="/work/case-study/' . $v['workUrlSlug'] . '?utm_source=work" class="_hidden" title="' . $v['workTitle'] . '">&#32;</a>
                         </article>
                     ';
                 }

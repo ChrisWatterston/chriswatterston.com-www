@@ -300,7 +300,7 @@ $localMetaKeywords = $workKeywords;
                     echo '
                                 </p>
                             </div>
-                            <a href="/work/case-study/' . $v['workUrlSlug'] . '" class="_hidden" title="' . $v['workTitle'] . '">&#32;</a>
+                            <a href="/work/case-study/' . $v['workUrlSlug'] . '?utm_source=casestudy" class="_hidden" title="' . $v['workTitle'] . '">&#32;</a>
                         </article>
                     ';
                 }
@@ -332,7 +332,7 @@ $localMetaKeywords = $workKeywords;
                             <h6>' . $v['articleDescription'] . '</h6>
                         </div>
                         <div class="__posted _text-align__right"><p class="_post-date">' . date('jS M Y', strtotime($v['articleLiveDate'])) . '</p></div>
-                        <a href="/article/' . $v['articleUrlSlug'] . '" class="_hidden" title="' . $v['articleTitle'] . '">&#32;</a>
+                        <a href="/article/' . $v['articleUrlSlug'] . '?utm_source=casestudy" class="_hidden" title="' . $v['articleTitle'] . '">&#32;</a>
                     </article>
                 ';
                 }

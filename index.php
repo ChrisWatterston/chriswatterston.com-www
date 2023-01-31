@@ -1,7 +1,7 @@
 <?
 // Local config
 $localMetaTitle = 'Agile & Visionary Digital Product Designer & Manager in London UK';
-$localMetaDesc = 'Digital Product Designer & Manager, with a strong background in digital technology, User Experience (UX), and Web Development';
+$localMetaDesc = 'Digital Product Designer & Manager, with a strong background in digital marketing, User Experience (UX), and Web Development';
 $localMetaKeywords = 'Agile and Visionary Product Designer, London UK Digital Product Designer, London UK Digital Product Manager, Digital Design System Designer, Digital Marketing, Figma Designer, London UX Designer, Designer with web development experience, Chris Watterston, There is No Cloud Sticker, Digital Designer';
 ?>
 <!DOCTYPE html>
@@ -24,7 +24,7 @@ $localMetaKeywords = 'Agile and Visionary Product Designer, London UK Digital Pr
                 <h2 class="_red _stacked">Launch</h2>
                 <h2 class="_black _stacked">Test&Learn</h2>
                 <h1 class="_intro">I'm an agile & visionary <a href="/about?utm_source=intro" title="Agile and visionary Digital Product Designer & Product Manager in London" class="_link-colour__purple">Digital Product Designer & Manager</a>,</h1>
-                <h3 class="_intro">with a strong background in <a href="/about?utm_source=intro" title="background in Digital Technology, User Experience (UX), and Web Development." class="_link-colour__purple">Digital Technology, User Experience (UX), and Web Development.</a></h3>
+                <h3 class="_intro">with a strong background in <a href="/about?utm_source=intro" title="background in Digital Marketing, User Experience (UX), and Web Development." class="_link-colour__purple">Digital Marketing, User Experience (UX), and Web Development.</a></h3>
             </section>
             <div class="<?= $globalPrefix; ?>-grid-container _work-latest _listing _work">
                 <?php

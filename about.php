@@ -35,7 +35,7 @@ $localMetaKeywords = 'Agile and Visionary Product Designer, London UK Digital Pr
                             <h3>About Me</h3>
                         </div>
                         <div class="_sub-detail">
-                            <p>My name is Chris Watterston. I'm an agile and visionary <strong>Digital Product Designer and Manager</strong>, with a strong background in <strong>Digital Technology, User Experience (UX), and Web Development</strong>.</p>
+                            <p>My name is Chris Watterston. I'm an agile and visionary <strong>Digital Product Designer and Manager</strong>, with a strong background in <strong>Digital Marketing, User Experience (UX), and Web Development</strong>.</p>
                             <p>As of 2023, I have <strong>over 13 years experience in bring award winning digital products to life</strong>.</p>
                             <p>Throughout my career, I've worked with some of the biggest brands. Lucozade, Ribena, Orangina, Microsoft Xbox, Hasbro Gaming, Anthony Joshua Boxing, the England football teams, Kyocera, UCC Coffee, Lyons Coffee, Metricly, and the British Society of Paediatric Dentistry to mention a few.</p>
                             <p>I started my career working for an educational IT services provider, handling web project design and management for over 30 clients.</p>

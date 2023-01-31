@@ -54,7 +54,7 @@ $localMetaKeywords = 'There is no Cloud, There is no Cloud Sticker, There is no 
                     echo '
                                 </p>
                             </div>
-                            <a href="/work/case-study/' . $v['workUrlSlug'] . '?utm_source=store" class="_hidden" title="' . $v['workTitle'] . '">&#32;</a>
+                            <a href="/work/case-study/' . $v['workUrlSlug'] . '" data-cabin-event="Embed / Store to Work" class="_hidden" title="' . $v['workTitle'] . '">&#32;</a>
                         </article>
                     ';
                 }
@@ -86,7 +86,7 @@ $localMetaKeywords = 'There is no Cloud, There is no Cloud Sticker, There is no 
                             <h6>' . $v['articleDescription'] . '</h6>
                         </div>
                         <div class="__posted _text-align__right"><p class="_post-date">' . date('jS M Y', strtotime($v['articleLiveDate'])) . '</p></div>
-                        <a href="/article/' . $v['articleUrlSlug'] . '?utm_source=store" class="_hidden" title="' . $v['articleTitle'] . '">&#32;</a>
+                        <a href="/article/' . $v['articleUrlSlug'] . '" data-cabin-event="Embed / Store to Article" class="_hidden" title="' . $v['articleTitle'] . '">&#32;</a>
                     </article>
                 ';
                 }

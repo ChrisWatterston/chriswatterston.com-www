@@ -23,8 +23,8 @@ $localMetaKeywords = 'Agile and Visionary Product Designer, London UK Digital Pr
                 <h2 class="_purple _stacked">Design&Build</h2>
                 <h2 class="_red _stacked">Launch</h2>
                 <h2 class="_black _stacked">Test&Learn</h2>
-                <h1 class="_intro">I'm an agile & visionary <a href="/about?utm_source=intro" title="Agile and visionary Digital Product Designer & Product Manager in London" class="_link-colour__purple">Digital Product Designer & Manager</a>,</h1>
-                <h3 class="_intro">with a strong background in <a href="/about?utm_source=intro" title="background in Digital Marketing, User Experience (UX), and Web Development." class="_link-colour__purple">Digital Marketing, User Experience (UX), and Web Development.</a></h3>
+                <h1 class="_intro">I'm an agile & visionary <a href="/about" data-cabin-event="Home / Intro Main" title="Agile and visionary Digital Product Designer & Product Manager in London" class="_link-colour__purple">Digital Product Designer & Manager</a>,</h1>
+                <h3 class="_intro">with a strong background in <a href="/about" data-cabin-event="Home / Intro Sec" title="background in Digital Marketing, User Experience (UX), and Web Development." class="_link-colour__purple">Digital Marketing, User Experience (UX), and Web Development.</a></h3>
             </section>
             <div class="<?= $globalPrefix; ?>-grid-container _work-latest _listing _work">
                 <?php
@@ -58,7 +58,7 @@ $localMetaKeywords = 'Agile and Visionary Product Designer, London UK Digital Pr
                     echo '
                                 </p>
                             </div>
-                            <a href="/work/case-study/' . $v['workUrlSlug'] . '?utm_source=home" class="_hidden" title="' . $v['workTitle'] . '">&#32;</a>
+                            <a href="/work/case-study/' . $v['workUrlSlug'] . '" data-cabin-event="Embed / Home to Work" class="_hidden" title="' . $v['workTitle'] . '">&#32;</a>
                         </article>
                     ';
                 }
@@ -90,7 +90,7 @@ $localMetaKeywords = 'Agile and Visionary Product Designer, London UK Digital Pr
                             <h6>' . $v['articleDescription'] . '</h6>
                         </div>
                         <div class="__posted _text-align__right"><p class="_post-date">' . date('jS M Y', strtotime($v['articleLiveDate'])) . '</p></div>
-                        <a href="/article/' . $v['articleUrlSlug'] . '?utm_source=home" class="_hidden" title="' . $v['articleTitle'] . '">&#32;</a>
+                        <a href="/article/' . $v['articleUrlSlug'] . '" data-cabin-event="Embed / Home to Article" class="_hidden" title="' . $v['articleTitle'] . '">&#32;</a>
                     </article>
                 ';
                 }

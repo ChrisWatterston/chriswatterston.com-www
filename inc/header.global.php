@@ -22,7 +22,8 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/config/vars.global.php');
 $a = ($_SERVER['REQUEST_URI']);
 $t = trim($a, ".php");
 $d = rtrim($t, '/') . '';
-$canonicalURL = substr($globalDomainRoot, 0, -1) . $d;
+$u = strtok($d, '?');
+$canonicalURL = substr($globalDomainRoot, 0, -1) . $u;
 ?>
 <link rel="canonical" href="<?= $canonicalURL ?>" />
 

@@ -23,8 +23,8 @@ $localMetaKeywords = 'Agile and Visionary Product Designer, London UK Digital Pr
                 <h2 class="_purple _stacked">Design&Build</h2>
                 <h2 class="_red _stacked">Launch</h2>
                 <h2 class="_black _stacked">Test&Learn</h2>
-                <h1 class="_intro">I'm an agile & visionary <a href="/about" data-cabin-event="Home / Intro Main" title="Agile and visionary Digital Product Designer & Product Manager in London" class="_link-colour__purple">Digital Product Designer & Manager</a>,</h1>
-                <h3 class="_intro">with a strong background in <a href="/about" data-cabin-event="Home / Intro Sec" title="background in Digital Marketing, User Experience (UX), and Web Development." class="_link-colour__purple">Digital Marketing, User Experience (UX), and Web Development.</a></h3>
+                <h1 class="_intro">Providing <a href="https://dripfed.design/?utm_source=chriswatterston&utm_campaign=portfolio" data-cabin-event="Home / Intro Unlimited" title="Offering valuable unlimited design subscriptions, lowering your costs and bureaucracy. Drip Fed are a Design as a Service agency." class="_link-colour__purple">unlimited design</a> & building digital products @ <a href="https://dripfed.design/?utm_source=chriswatterston&utm_campaign=portfolio" data-cabin-event="Home / Intro Drip Fed" title="Unlimited design subscription agency, Design as a Service - Drip Fed" class="_link-colour__purple">Drip Fed Design</a>,</h1>
+                <h3 class="_intro">Agile & visionary <a href="/about" data-cabin-event="Home / Intro Main" title="Agile and visionary Digital Product Designer & Product Manager in London" class="_link-colour__purple">Digital Product Designer</a> with a strong background in <a href="/about" data-cabin-event="Home / Intro Sec" title="background in Digital Marketing, User Experience (UX), and Web Development." class="_link-colour__purple">Digital Marketing, UX, and Web Development.</a></h3>
             </section>
             <div class="<?= $globalPrefix; ?>-grid-container _work-latest _listing _work">
                 <?php

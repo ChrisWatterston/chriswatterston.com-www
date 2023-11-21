@@ -96,6 +96,14 @@
         margin: 0 auto !important;
       }
     }
+    &._logos-photo {
+      margin: unset;
+      max-width: calc(100% - 20px);
+      @include mixinResponsive("mobile") {
+        display: block;
+        margin: 0 auto !important;
+      }
+    }
   }
   ._image-caption {
     background-color: $colour-grey__default;

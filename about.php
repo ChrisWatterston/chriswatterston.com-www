@@ -27,7 +27,39 @@ $localMetaKeywords = 'Agile and Visionary Product Designer, London UK Digital Pr
                             <h3>Mugshot</h3>
                         </div>
                         <div class="_sub-detail">
-                            <img src="/dist/images/id/chris-watterston-self-photo.jpg" alt="Photo of Chris Watterston" class="_id-photo" />
+                            <section class="<?= $globalPrefix; ?>-grid-container _column-about-sub _listing">
+                                <img src="/dist/images/id/chris-watterston-self-photo.jpg" alt="Photo of Chris Watterston" class="_id-photo" />
+                                <section class="<?= $globalPrefix; ?>-grid-container _column-workedwith">
+                                    <div class="_sub-title">
+                                        <h3>Worked With</h3>
+                                    </div>
+                                    <div class="_sub-detail _text-align__right">
+                                        <img src="/dist/images/brands/logo-worked-with-brands.jpg" alt="Brands Chris Watterston has worked with" class="_logos-photo" />
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
+                    </section>
+                    <section class="<?= $globalPrefix; ?>-grid-container _column-about _about-body-aboutme">
+                        <div class="_sub-title">
+                            <h3>Strengths</h3>
+                        </div>
+                        <div class="_sub-detail">
+                            <p><strong>Delivering Results</strong> -<br />Experienced in product lifecycle, planning, execution, business goals, & 0-1 products.</p>
+                            <p><strong>Earning Trust from Others</strong> -<br />Share knowledge, listen carefully and speaks honestly, with empathy & oath.</p>
+                            <p><strong>Curious, Learn, Opportunity</strong> -<br />Eager to learn and improve. Quick to spot opportunities when they arise.</p>
+                        </div>
+                    </section>
+                    <section class="<?= $globalPrefix; ?>-grid-container _column-about _about-body-aboutme">
+                        <div class="_sub-title">
+                            <h3>achievements</h3>
+                        </div>
+                        <div class="_sub-detail">
+                            <section class="<?= $globalPrefix; ?>-grid-container _column-3 _listing">
+                                <p><strong>Delivered a 2,400% growth in site newsletter sign-ups</strong> for Lucozade.com within a 12 month period, using design & content.</p>
+                                <p><strong>Proved the effects of design, user accessibility & automation</strong> at Suntory, through the success of multiple internal projects.</p>
+                                <p><strong>Initiated a strategy for Digital Consumer Reaction</strong> across all digital platforms, activity gaining realtime consumer insight data.</p>
+                            </section>
                         </div>
                     </section>
                     <section class="<?= $globalPrefix; ?>-grid-container _column-about _about-body-aboutme">
@@ -35,14 +67,15 @@ $localMetaKeywords = 'Agile and Visionary Product Designer, London UK Digital Pr
                             <h3>About Me</h3>
                         </div>
                         <div class="_sub-detail">
-                            <p>My name is Chris Watterston. I'm an agile and visionary <strong>Digital Product Designer and Manager</strong>, with a strong background in <strong>Digital Marketing, User Experience (UX), and Web Development</strong>.</p>
+                            <p>My name is Chris Watterston. I'm an agile and visionary <strong>Digital Product Builder</strong>.</p>
+                            <p>At the core of my profession lies invaluable skills in <strong>Digital Product Design</strong> and <strong>Management</strong>, backed by a strong background in <strong>Web Development</strong>, <strong>User Experience (UX)</strong>, and <strong>Digital Technologies</strong>.</p>
                             <p>As of 2023, I have <strong>over 13 years experience in bring award winning digital products to life</strong>.</p>
                             <p>Throughout my career, I've worked with some of the biggest brands. Lucozade, Ribena, Orangina, Microsoft Xbox, Hasbro Gaming, Anthony Joshua Boxing, the England football teams, Kyocera, UCC Coffee, Lyons Coffee, Metricly, and the British Society of Paediatric Dentistry to mention a few.</p>
                             <p>I started my career working for an educational IT services provider, handling web project design and management for over 30 clients.</p>
                             <p>5 years later, I took a leap in becoming a freelance Digital Designer and Developer. It was during this time I noticed my entrepreneurial spirit and passion for building digital solutions and products from the ground up. Understanding the foundations of business, agility, client management, and the benefits of working swiftly.</p>
-                            <p>Next, I joined Suntory Beverage & Food in supporting their creative in-house agency. I continued to made headway and later lead the Digital Design & Technology team and supporting the growth of the team. During this period, <strong>I designed, managed and launched some of their biggest digital campaigns and products to date, deploying to over 8.1 million unique users- winning multiple ESA Awards</strong>.</p>
-                            <p>I have built a passion for agile digital product design, UX, development, build (0-1) and growth. When it comes to digital products- I cares about how they look, function, create value, and what is learnt from them.</p>
-                            <p>Outside of work, I enjoy spending time with family and friends, being outdoors and kite boarding.</p>
+                            <p>Next, I joined Suntory Beverage & Food in supporting their creative in-house agency. I continued to make headway and later lead the Digital Design & Technology team in supporting the growth of the team. During this period, <strong>I designed, built, managed, and launched some of their biggest digital products and campaigns to date, deploying to over 8.1 million unique users- winning multiple ESA Awards.</strong></p>
+                            <p>I have built a passion for agile digital product design, UX, development, build (0-1) and growth. When it comes to digital products- I care about how they look, function, create value, and what we can learn from them and their users.</p>
+                            <p>When I'm not building, I enjoy spending time with family and friends, being outdoors and kite boarding.</p>
                         </div>
                     </section>
                     <section class="<?= $globalPrefix; ?>-grid-container _column-about _about-body-contacting">
@@ -84,9 +117,33 @@ $localMetaKeywords = 'Agile and Visionary Product Designer, London UK Digital Pr
                         </div>
                         <div class="_sub-detail">
                             <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
+                                <div class="_icon" style="background-image: url(/dist/images/brands/logo-experience-drip-fed-ltd.jpg);"></div>
+                                <div class="_stats">
+                                    <h2>Digital Product Designer & Developer, Owner</h2>
+                                    <h5>Drip Fed Ltd</h5>
+                                    <p class="_post-date">May 2023 - Present</p>
+                                </div>
+                            </div>
+                            <div class="_article-body">
+                                <p>After years of expanding my knowledge and expertise in delivering best-in-class Product Design and Development, I reached a point where it was time to create something exceptional. Throughout my career, I have worked with leading brands, learning vital skills and offering solutions to a diverse array of consumer needs and challenges.</p>
+                                <p>Today, I provide agile and forward-thinking solutions in Digital Product Design, Product Management, Digital Marketing, User Experience (UX), and Web Development. I bring all these disciplines together under one roof, infusing each project with endless commitment and personality, with less bureaucracy.</p>
+                                <p>Check out what we do at Drip Fed Design at <a href="https://dripfed.design/?utm_source=chriswatterston&utm_campaign=about" data-cabin-event="About / Drip Fed Design" title="Your valued unlimited design subscription, lowering your costs and bureaucracy. Drip Fed is a Design as a Service agency." class=" _link-colour__purple" target="_blank">dripfed.design</a>.</p>
+                            </div>
+
+                            <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
+                                <div class="_icon" style="background-color:#EFEFEF;"></div>
+                                <div class="_stats">
+                                    <h2>Layoff / Position Eliminated</h2>
+                                    <h5>Career Break</h5>
+                                    <p class="_post-date">November 2023 - April 2023</p>
+                                </div>
+                            </div>
+                            <div class="_article-body"></div>
+
+                            <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
                                 <div class="_icon" style="background-image: url(/dist/images/brands/logo-experience-suntory-gbi.jpg);"></div>
                                 <div class="_stats">
-                                    <h2>Senior Dev & Digital Project Manager (TED, Digital In-House Agency)</h2>
+                                    <h2>Sr Dev & Digital Project Manager (TED, Creative In-House Agency)</h2>
                                     <h5>Suntory Beverage & Food GB&I</h5>
                                     <p class="_post-date">March 2018 - November 2022</p>
                                 </div>

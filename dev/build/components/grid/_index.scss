@@ -38,6 +38,21 @@
       grid-template-columns: repeat(1, 1fr [col-start]);
     }
   }
+  &._column-about-sub {
+    column-gap: $spacing__default;
+    grid-template-columns: max-content 1fr;
+    @include mixinResponsive("mobile") {
+      grid-template-columns: repeat(1, 1fr [col-start]);
+    }
+  }
+  &._column-workedwith {
+    column-gap: $spacing__default;
+    grid-template-columns: max-content 1fr;
+    column-gap: 100px;
+    @include mixinResponsive("mobile") {
+      grid-template-columns: repeat(1, 1fr [col-start]);
+    }
+  }
   &._stat-headline {
     column-gap: $spacing__default;
     grid-template-columns: min-content max-content;

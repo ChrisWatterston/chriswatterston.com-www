@@ -37,6 +37,18 @@ $localMetaKeywords = 'Side Project, Passion Projects, Product Designer Projects,
                             <h3>Projects</h3>
                         </div>
                         <div class="_sub-detail">
+
+                            <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
+                                <div class="_icon" style="background-image: url(/dist/images/brands/logo-sideproject-joyapplicant.jpg);"></div>
+                                <div class="_stats">
+                                    <h2>JoyApplicant</h2>
+                                    <p class="_post-date -active">Active</p>
+                                </div>
+                            </div>
+                            <p>Imagine a job and careers site that gives YOU, the applicant, the best job or career application experience possible. That is our mission at JoyApplicant: prioritise the applicant while they apply for a new job or the next step in their career. It matters!</p>
+                            <p>More details will be shared at a later date.</p>
+                            <p>Check the JoyApplicant project out at <a href="https://www.joyapplicant.com/?utm_source=chriswatterston&utm_campaign=side-project" data-cabin-event="Side Projects / Visit / JoyApplicant" title="Ensuring that YOU, the applicant, have a joyful experience while applying for a new job or career step. It matters!" class="_link-colour__purple" target="_blank">www.joyapplicant.com</a>.</p>
+
                             <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
                                 <div class="_icon" style="background-image: url(/dist/images/brands/logo-sideproject-wrikified-app.jpg);"></div>
                                 <div class="_stats">
@@ -47,23 +59,16 @@ $localMetaKeywords = 'Side Project, Passion Projects, Product Designer Projects,
                             <p>While working at Suntory, I became part of a team which rolled out the project management software Wrike. It took a few years for all business planning and projects to migrate into Wrike, but during that time I became very familiar with the platform.</p>
                             <p>After I became familiar with the features Wrike offered, it quickly became clear to me that there was something missing. I recognised a hole within Wrike's large audience which hadn't been tailored for. This is what sparked the idea of Wrikified.</p>
                             <p>Wrikified is a simple tool to use alongside Wrike. It was built for production teams, removing the noise and clutter from Wrike. It enabled managers to continue to use the most powerful work management software, but have it simplified for their production teams.</p>
-                            <!-- <p>
-                                <a href="https://github.com/Wrikified" target="_blank" title="Visit the Wrikified Github Profile" class="_about-social-icons">
-                                    <img src="/dist/images/icons/icon-github-black.svg" alt="GitHub" />
-                                </a>
-                                <a href="https://www.figma.com/file/2T7rw0gpQFvwxw9ccxZP82/wrikified-designsystem?t=M0LQzcKUeyhRne91-6" target="_blank" title="Visit the Wrikified Figma Design System" class="_about-social-icons">
-                                    <img src="/dist/images/icons/icon-figma-black.svg" alt="Figma" />
-                                </a>
-                            </p> -->
+                            <p>Check the Wrikified project out at <a href="https://www.wrikified.com/?utm_source=chriswatterston&utm_campaign=side-project" data-cabin-event="Side Projects / Visit / Wrikified" title="Wrikified simplifies Wrike task output. Remove noise from the project management software, for designers, production, and teams who just want their Wrike tasks." class="_link-colour__purple" target="_blank">www.wrikified.com</a>.</p>
 
                             <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
                                 <div class="_icon" style="background-image: url(/dist/images/brands/logo-sideproject-sidedo-app.jpg);"></div>
                                 <div class="_stats">
                                     <h2>SideDo</h2>
-                                    <p class="_post-date -active">Active</p>
+                                    <p class="_post-date -paused">Paused</p>
                                 </div>
                             </div>
-                            <p>This is a side project that I am very passionate about. It's based on an idea which I've had for a number of years, but have only now started putting pen to paper.</p>
+                            <p>This is a side project that I am very passionate about. It's based on an idea which I've had for many many years, maybe one day I'll get around to putting pen to paper.</p>
                             <p>More details will be shared at a later date.</p>
 
                             <div class="<?= $globalPrefix; ?>-grid-container _stat-headline">
